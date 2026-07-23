@@ -1,0 +1,442 @@
+quarter,time,score,team,description
+1,11:43.0,0-0,Spurs,Personal foul by L. Ball (drawn by V. Wembanyama)
+1,11:37.0,2-0,Spurs,V. Wembanyama makes 2-pt jump shot from 19 ft (assist by S. Castle)
+1,11:13.0,2-0,Hornets,Turnover by L. Ball (lost ball; steal by D. Fox)
+1,11:10.0,4-0,Spurs,S. Castle makes 2-pt dunk at rim (assist by D. Fox)
+1,11:00.0,4-3,Hornets,L. Ball makes 3-pt jump shot from 28 ft (assist by B. Miller)
+1,10:39.0,7-3,Spurs,J. Champagnie makes 3-pt jump shot from 25 ft (assist by S. Castle)
+1,10:24.0,7-6,Hornets,M. Bridges makes 3-pt jump shot from 27 ft (assist by B. Miller)
+1,10:04.0,7-6,Spurs,Turnover by V. Wembanyama (lost ball; steal by M. Bridges)
+1,9:59.0,7-6,Hornets,B. Miller misses 3-pt jump shot from 27 ft
+1,9:56.0,7-6,Hornets,Offensive rebound by K. Knueppel
+1,9:47.0,7-6,Hornets,M. Bridges misses 3-pt jump shot from 27 ft
+1,9:46.0,7-6,Hornets,Offensive rebound by Team
+1,9:40.0,7-6,Hornets,Personal foul by D. Fox (drawn by M. Diabaté)
+1,9:26.0,7-8,Hornets,M. Diabaté makes 2-pt layup from 2 ft (assist by K. Knueppel)
+1,9:07.0,10-8,Spurs,D. Vassell makes 3-pt jump shot from 27 ft (assist by S. Castle)
+1,8:54.0,10-11,Hornets,L. Ball makes 3-pt jump shot from 25 ft (assist by M. Diabaté)
+1,8:38.0,10-11,Spurs,D. Fox misses 2-pt jump shot from 5 ft
+1,8:36.0,10-11,Spurs,Offensive rebound by V. Wembanyama
+1,8:36.0,10-11,Spurs,V. Wembanyama misses 2-pt dunk at rim
+1,8:34.0,10-11,Hornets,Defensive rebound by B. Miller
+1,8:17.0,10-13,Hornets,M. Bridges makes 2-pt jump shot from 12 ft
+1,8:00.0,10-13,Spurs,V. Wembanyama misses 2-pt layup from 2 ft
+1,7:59.0,10-13,Hornets,Defensive rebound by M. Diabaté
+1,7:43.0,10-15,Hornets,K. Knueppel makes 2-pt layup from 2 ft (assist by M. Bridges)
+1,7:43.0,10-15,Spurs,San Antonio full timeout
+1,7:29.0,10-15,Spurs,D. Fox misses 2-pt layup from 1 ft
+1,7:27.0,10-15,Hornets,Defensive rebound by L. Ball
+1,7:23.0,10-15,Hornets,B. Miller misses 3-pt jump shot from 27 ft
+1,7:21.0,10-15,Spurs,Defensive rebound by S. Castle
+1,7:14.0,13-15,Spurs,D. Vassell makes 3-pt jump shot from 24 ft (assist by S. Castle)
+1,6:48.0,13-17,Hornets,M. Diabaté makes 2-pt jump shot from 7 ft (assist by L. Ball)
+1,6:29.0,16-17,Spurs,D. Fox makes 3-pt jump shot from 25 ft
+1,6:14.0,16-17,Hornets,Shooting foul by D. Fox (drawn by L. Ball)
+1,6:14.0,16-18,Hornets,L. Ball makes free throw 1 of 3
+1,6:14.0,16-19,Hornets,L. Ball makes free throw 2 of 3
+1,6:14.0,16-19,Spurs,D. Harper enters the game for D. Fox
+1,6:14.0,16-19,Spurs,L. Kornet enters the game for V. Wembanyama
+1,6:14.0,16-19,Hornets,J. Green enters the game for M. Diabaté
+1,6:14.0,16-19,Hornets,R. Kalkbrenner enters the game for K. Knueppel
+1,6:14.0,16-20,Hornets,L. Ball makes free throw 3 of 3
+1,6:03.0,16-20,Spurs,Turnover by S. Castle (bad pass)
+1,5:53.0,16-20,Hornets,Turnover by M. Bridges (traveling)
+1,5:35.0,18-20,Spurs,D. Harper makes 2-pt jump shot from 8 ft
+1,5:12.0,18-20,Hornets,B. Miller misses 2-pt jump shot from 10 ft (block by D. Vassell)
+1,5:10.0,18-20,Spurs,Defensive rebound by D. Vassell
+1,5:03.0,21-20,Spurs,J. Champagnie makes 3-pt jump shot from 26 ft (assist by D. Vassell)
+1,5:03.0,21-20,Spurs,Shooting foul by M. Bridges (drawn by J. Champagnie)
+1,5:03.0,21-20,Hornets,Charlotte full timeout
+1,5:03.0,21-20,Spurs,H. Barnes enters the game for S. Castle
+1,5:03.0,21-20,Spurs,K. Johnson enters the game for D. Vassell
+1,5:03.0,21-20,Hornets,S. James enters the game for L. Ball
+1,5:03.0,21-20,Hornets,G. Williams enters the game for M. Bridges
+1,5:03.0,22-20,Spurs,J. Champagnie makes free throw 1 of 1
+1,4:46.0,22-20,Hornets,B. Miller misses 2-pt jump shot from 10 ft
+1,4:45.0,22-20,Hornets,Offensive rebound by B. Miller
+1,4:38.0,22-20,Hornets,Shooting foul by H. Barnes (drawn by B. Miller)
+1,4:38.0,22-21,Hornets,B. Miller makes free throw 1 of 2
+1,4:38.0,22-21,Spurs,S. Castle enters the game for J. Champagnie
+1,4:38.0,22-22,Hornets,B. Miller makes free throw 2 of 2
+1,4:19.0,22-22,Spurs,H. Barnes misses 3-pt jump shot from 26 ft
+1,4:16.0,22-22,Hornets,Defensive rebound by S. James
+1,4:11.0,22-22,Hornets,B. Miller misses 2-pt jump shot from 5 ft (block by D. Harper)
+1,4:10.0,22-22,Hornets,Offensive rebound by B. Miller
+1,3:54.0,22-22,Hornets,J. Green misses 3-pt jump shot from 26 ft
+1,3:52.0,22-22,Spurs,Defensive rebound by H. Barnes
+1,3:44.0,22-22,Spurs,H. Barnes misses 2-pt jump shot from 13 ft
+1,3:42.0,22-22,Hornets,Defensive rebound by G. Williams
+1,3:24.0,22-22,Hornets,S. James misses 2-pt jump shot from 11 ft
+1,3:22.0,22-22,Spurs,Defensive rebound by L. Kornet
+1,3:17.0,22-22,Spurs,Turnover by H. Barnes (back court)
+1,3:17.0,22-22,Spurs,D. Fox enters the game for S. Castle
+1,3:17.0,22-22,Hornets,K. Knueppel enters the game for B. Miller
+1,3:04.0,22-22,Hornets,K. Knueppel misses 2-pt jump shot from 7 ft
+1,3:02.0,22-22,Hornets,Offensive rebound by J. Green
+1,2:58.0,22-24,Hornets,K. Knueppel makes 2-pt layup from 2 ft (assist by J. Green)
+1,2:38.0,24-24,Spurs,D. Harper makes 2-pt jump shot from 11 ft (assist by D. Fox)
+1,2:27.0,24-24,Hornets,Turnover by S. James (bad pass; steal by L. Kornet)
+1,2:18.0,27-24,Spurs,D. Harper makes 3-pt jump shot from 26 ft (assist by D. Fox)
+1,2:18.0,27-24,Hornets,C. Sexton enters the game for J. Green
+1,1:50.0,27-26,Hornets,R. Kalkbrenner makes 2-pt jump shot from 17 ft (assist by C. Sexton)
+1,1:39.0,27-26,Spurs,D. Harper misses 2-pt layup from 2 ft (block by R. Kalkbrenner)
+1,1:36.0,27-26,Hornets,Defensive rebound by G. Williams
+1,1:34.0,27-26,Hornets,Offensive foul by S. James (drawn by K. Johnson)
+1,1:34.0,27-26,Hornets,Turnover by S. James (offensive foul)
+1,1:11.0,27-26,Spurs,K. Johnson misses 2-pt layup from 1 ft
+1,1:07.0,27-26,Hornets,Defensive rebound by G. Williams
+1,0:53.0,27-26,Hornets,K. Knueppel misses 2-pt layup from 2 ft
+1,0:51.0,27-26,Spurs,Defensive rebound by L. Kornet
+1,0:47.0,27-26,Spurs,Shooting foul by G. Williams (drawn by K. Johnson)
+1,0:47.0,28-26,Spurs,K. Johnson makes free throw 1 of 2
+1,0:47.0,28-26,Spurs,S. Castle enters the game for D. Fox
+1,0:47.0,28-26,Hornets,L. Ball enters the game for S. James
+1,0:47.0,29-26,Spurs,K. Johnson makes free throw 2 of 2
+1,0:35.0,29-26,Hornets,Offensive foul by K. Knueppel (drawn by S. Castle)
+1,0:35.0,29-26,Hornets,Turnover by K. Knueppel (offensive foul)
+1,0:21.0,29-26,Spurs,K. Johnson misses 3-pt jump shot from 23 ft
+1,0:17.0,29-26,Spurs,Offensive rebound by S. Castle
+1,0:17.0,29-26,Spurs,S. Castle misses 2-pt layup at rim
+1,0:16.0,29-26,Hornets,Defensive rebound by L. Ball
+1,0:14.0,29-26,Hornets,Turnover by L. Ball (bad pass)
+1,0:14.0,29-26,Spurs,V. Wembanyama enters the game for L. Kornet
+1,0:14.0,29-26,Hornets,M. Diabaté enters the game for L. Ball
+1,0:14.0,29-26,Hornets,J. Green enters the game for R. Kalkbrenner
+1,0:14.0,29-26,Hornets,S. James enters the game for C. Sexton
+1,0:00.0,29-26,Spurs,Shooting foul by G. Williams (drawn by S. Castle)
+1,0:00.0,30-26,Spurs,S. Castle makes free throw 1 of 2
+1,0:00.0,30-26,Hornets,R. Kalkbrenner enters the game for G. Williams
+1,0:00.0,30-26,Spurs,S. Castle misses free throw 2 of 2
+1,0:00.0,30-26,Hornets,Defensive rebound by S. James
+2,11:40.0,30-26,Hornets,L. Ball misses 3-pt jump shot from 27 ft
+2,11:38.0,30-26,Spurs,Defensive rebound by Team
+2,11:23.0,30-26,Spurs,V. Wembanyama misses 2-pt jump shot from 19 ft
+2,11:20.0,30-26,Hornets,Defensive rebound by L. Ball
+2,11:17.0,30-26,Hornets,Personal foul by D. Harper (drawn by L. Ball)
+2,11:04.0,30-26,Hornets,Shooting foul by S. Castle (drawn by C. Sexton)
+2,11:04.0,30-27,Hornets,C. Sexton makes free throw 1 of 2
+2,11:04.0,30-28,Hornets,C. Sexton makes free throw 2 of 2
+2,10:55.0,32-28,Spurs,S. Castle makes 2-pt dunk from 1 ft (assist by V. Wembanyama)
+2,10:39.0,32-28,Hornets,Turnover by K. Knueppel (bad pass; steal by K. Johnson)
+2,10:35.0,34-28,Spurs,D. Harper makes 2-pt dunk from 1 ft (assist by K. Johnson)
+2,10:34.0,34-28,Hornets,Charlotte full timeout
+2,10:18.0,34-30,Hornets,C. Sexton makes 2-pt layup from 2 ft (assist by M. Diabaté)
+2,10:00.0,36-30,Spurs,D. Harper makes 2-pt layup at rim (assist by S. Castle)
+2,9:45.0,36-30,Hornets,Shooting foul by D. Harper (drawn by L. Ball)
+2,9:45.0,36-30,Hornets,L. Ball misses free throw 1 of 2
+2,9:45.0,36-30,Hornets,Offensive rebound by Team
+2,9:45.0,36-31,Hornets,L. Ball makes free throw 2 of 2
+2,9:32.0,38-31,Spurs,V. Wembanyama makes 2-pt dunk from 1 ft (assist by D. Harper)
+2,9:32.0,38-31,Spurs,D. Fox enters the game for S. Castle
+2,9:11.0,38-31,Hornets,L. Ball misses 3-pt jump shot from 29 ft
+2,9:09.0,38-31,Spurs,Defensive rebound by K. Johnson
+2,9:03.0,38-31,Spurs,V. Wembanyama misses 2-pt jump shot from 7 ft
+2,9:01.0,38-31,Hornets,Defensive rebound by M. Diabaté
+2,8:50.0,38-34,Hornets,C. Sexton makes 3-pt jump shot from 23 ft (assist by L. Ball)
+2,8:40.0,38-34,Spurs,Personal foul by M. Diabaté (drawn by V. Wembanyama)
+2,8:40.0,38-34,Spurs,D. Vassell enters the game for K. Johnson
+2,8:40.0,38-34,Hornets,B. Miller enters the game for K. Knueppel
+2,8:29.0,38-34,Spurs,Turnover by V. Wembanyama (lost ball; steal by M. Bridges)
+2,8:18.0,38-36,Hornets,L. Ball makes 2-pt jump shot from 13 ft (assist by M. Diabaté)
+2,8:18.0,38-36,Spurs,San Antonio full timeout
+2,8:18.0,38-36,Spurs,L. Kornet enters the game for V. Wembanyama
+2,7:58.0,40-36,Spurs,D. Fox makes 2-pt jump shot from 6 ft (assist by H. Barnes)
+2,7:44.0,40-38,Hornets,B. Miller makes 2-pt jump shot from 9 ft
+2,7:23.0,40-38,Spurs,Turnover by D. Harper (bad pass; steal by C. Sexton)
+2,7:16.0,40-41,Hornets,C. Sexton makes 3-pt jump shot from 27 ft
+2,7:07.0,40-41,Spurs,Shooting foul by B. Miller (drawn by D. Vassell)
+2,7:07.0,41-41,Spurs,D. Vassell makes free throw 1 of 2
+2,7:07.0,41-41,Spurs,S. Castle enters the game for H. Barnes
+2,7:07.0,41-41,Spurs,J. Champagnie enters the game for D. Harper
+2,7:07.0,41-41,Hornets,K. Knueppel enters the game for L. Ball
+2,7:07.0,41-41,Spurs,D. Vassell misses free throw 2 of 2
+2,7:05.0,41-41,Hornets,Defensive rebound by M. Bridges
+2,6:48.0,41-41,Hornets,M. Diabaté misses 2-pt jump shot from 6 ft
+2,6:47.0,41-41,Spurs,Defensive rebound by L. Kornet
+2,6:34.0,41-41,Spurs,Turnover by D. Fox (out of bounds lost ball)
+2,6:34.0,41-41,Hornets,R. Kalkbrenner enters the game for M. Diabaté
+2,6:24.0,41-41,Hornets,Personal foul by S. Castle (drawn by B. Miller)
+2,6:17.0,41-41,Hornets,B. Miller misses 2-pt jump shot from 15 ft
+2,6:14.0,41-41,Spurs,Defensive rebound by J. Champagnie
+2,6:07.0,41-41,Spurs,D. Vassell misses 3-pt jump shot from 23 ft
+2,6:03.0,41-41,Hornets,Defensive rebound by R. Kalkbrenner
+2,5:59.0,41-41,Hornets,K. Knueppel misses 3-pt jump shot from 26 ft
+2,5:57.0,41-41,Hornets,Offensive rebound by R. Kalkbrenner
+2,5:56.0,41-41,Hornets,R. Kalkbrenner misses 2-pt layup from 3 ft (block by J. Champagnie)
+2,5:54.0,41-41,Hornets,Offensive rebound by M. Bridges
+2,5:53.0,41-41,Hornets,Turnover by B. Miller (lost ball; steal by D. Fox)
+2,5:49.0,41-41,Spurs,Shooting foul by C. Sexton (drawn by S. Castle)
+2,5:49.0,42-41,Spurs,S. Castle makes free throw 1 of 2
+2,5:49.0,42-41,Hornets,G. Williams enters the game for M. Bridges
+2,5:49.0,43-41,Spurs,S. Castle makes free throw 2 of 2
+2,5:28.0,43-41,Hornets,K. Knueppel misses 2-pt jump shot from 9 ft
+2,5:27.0,43-41,Spurs,Defensive rebound by J. Champagnie
+2,5:17.0,43-41,Spurs,S. Castle misses 2-pt layup from 6 ft (block by B. Miller)
+2,5:13.0,43-41,Spurs,Offensive rebound by S. Castle
+2,5:12.0,43-41,Spurs,D. Vassell misses 3-pt jump shot from 26 ft
+2,5:10.0,43-41,Hornets,Defensive rebound by B. Miller
+2,5:00.0,43-41,Hornets,B. Miller misses 2-pt jump shot from 21 ft
+2,4:58.0,43-41,Spurs,Defensive rebound by D. Vassell
+2,4:47.0,43-41,Spurs,S. Castle misses 2-pt jump shot from 11 ft
+2,4:46.0,43-41,Spurs,Offensive rebound by Team
+2,4:46.0,43-41,Spurs,V. Wembanyama enters the game for L. Kornet
+2,4:46.0,43-41,Hornets,M. Diabaté enters the game for R. Kalkbrenner
+2,4:46.0,43-41,Hornets,S. James enters the game for C. Sexton
+2,4:41.0,43-41,Spurs,V. Wembanyama misses 2-pt hook shot from 5 ft
+2,4:39.0,43-41,Hornets,Defensive rebound by K. Knueppel
+2,4:34.0,43-41,Hornets,G. Williams misses 3-pt jump shot from 26 ft
+2,4:32.0,43-41,Spurs,Defensive rebound by S. Castle
+2,4:24.0,43-41,Spurs,J. Champagnie misses 3-pt jump shot from 26 ft
+2,4:21.0,43-41,Hornets,Defensive rebound by M. Diabaté
+2,4:04.0,43-43,Hornets,B. Miller makes 2-pt jump shot from 13 ft
+2,3:48.0,43-43,Spurs,J. Champagnie misses 2-pt jump shot from 7 ft
+2,3:46.0,43-43,Hornets,Defensive rebound by G. Williams
+2,3:40.0,43-45,Hornets,K. Knueppel makes 2-pt jump shot from 14 ft (assist by G. Williams)
+2,3:30.0,45-45,Spurs,S. Castle makes 2-pt layup from 2 ft
+2,3:07.0,45-45,Hornets,Shooting foul by J. Champagnie (drawn by K. Knueppel)
+2,3:07.0,45-45,Hornets,K. Knueppel misses free throw 1 of 3
+2,3:07.0,45-45,Hornets,Offensive rebound by Team
+2,3:07.0,45-46,Hornets,K. Knueppel makes free throw 2 of 3
+2,3:07.0,45-46,Spurs,D. Harper enters the game for D. Fox
+2,3:07.0,45-46,Spurs,L. Kornet enters the game for D. Vassell
+2,3:07.0,45-47,Hornets,K. Knueppel makes free throw 3 of 3
+2,2:56.0,45-47,Spurs,V. Wembanyama misses 3-pt jump shot from 25 ft
+2,2:54.0,45-47,Hornets,Defensive rebound by S. James
+2,2:47.0,45-47,Hornets,Personal foul by L. Kornet (drawn by B. Miller)
+2,2:47.0,45-48,Hornets,B. Miller makes free throw 1 of 2
+2,2:47.0,45-48,Hornets,L. Ball enters the game for S. James
+2,2:47.0,45-48,Hornets,J. Green enters the game for K. Knueppel
+2,2:47.0,45-49,Hornets,B. Miller makes free throw 2 of 2
+2,2:22.0,45-49,Spurs,Turnover by Team (shot clock)
+2,2:03.0,45-52,Hornets,B. Miller makes 3-pt jump shot from 27 ft (assist by L. Ball)
+2,1:43.0,45-52,Spurs,S. Castle misses 3-pt jump shot from 25 ft
+2,1:41.0,45-52,Hornets,Defensive rebound by L. Ball
+2,1:24.0,45-55,Hornets,B. Miller makes 3-pt jump shot from 26 ft (assist by J. Green)
+2,1:24.0,45-55,Hornets,Shooting foul by V. Wembanyama (drawn by B. Miller)
+2,1:24.0,45-55,Spurs,D. Fox enters the game for S. Castle
+2,1:24.0,45-55,Spurs,K. Johnson enters the game for V. Wembanyama
+2,1:24.0,45-56,Hornets,B. Miller makes free throw 1 of 1
+2,1:16.0,45-56,Spurs,Offensive foul by L. Kornet (drawn by J. Green)
+2,1:16.0,45-56,Spurs,Turnover by L. Kornet (offensive foul)
+2,1:05.0,45-59,Hornets,B. Miller makes 3-pt jump shot from 27 ft (assist by M. Diabaté)
+2,0:53.0,45-59,Spurs,K. Johnson misses 3-pt jump shot from 24 ft
+2,0:50.0,45-59,Hornets,Defensive rebound by M. Diabaté
+2,0:43.0,45-59,Hornets,B. Miller misses 3-pt jump shot from 27 ft
+2,0:41.0,45-59,Spurs,Defensive rebound by D. Harper
+2,0:36.0,47-59,Spurs,D. Harper makes 2-pt layup from 1 ft
+2,0:33.0,47-61,Hornets,M. Diabaté makes 2-pt dunk from 1 ft (assist by L. Ball)
+2,0:26.0,47-61,Spurs,Personal foul by M. Diabaté (drawn by L. Kornet)
+2,0:26.0,47-61,Hornets,M. Bridges enters the game for M. Diabaté
+2,0:11.0,47-61,Spurs,D. Fox misses 3-pt jump shot from 26 ft
+2,0:08.0,47-61,Hornets,Defensive rebound by L. Ball
+2,0:00.0,47-61,Hornets,G. Williams misses 2-pt hook shot from 4 ft
+2,0:00.0,47-61,Spurs,Defensive rebound by D. Fox
+3,11:37.0,47-63,Hornets,B. Miller makes 2-pt hook shot from 1 ft
+3,11:17.0,47-63,Spurs,D. Fox misses 2-pt layup from 2 ft
+3,11:15.0,47-63,Hornets,Defensive rebound by M. Diabaté
+3,10:57.0,47-65,Hornets,L. Ball makes 2-pt jump shot from 5 ft (assist by M. Diabaté)
+3,10:46.0,49-65,Spurs,V. Wembanyama makes 2-pt layup from 3 ft (assist by S. Castle)
+3,10:38.0,49-65,Hornets,M. Bridges misses 3-pt jump shot from 25 ft
+3,10:36.0,49-65,Hornets,Offensive rebound by B. Miller
+3,10:34.0,49-65,Hornets,L. Ball misses 3-pt jump shot from 26 ft
+3,10:30.0,49-65,Spurs,Defensive rebound by D. Vassell
+3,10:23.0,49-65,Spurs,V. Wembanyama misses 3-pt jump shot from 27 ft
+3,10:21.0,49-65,Hornets,Defensive rebound by B. Miller
+3,10:05.0,49-67,Hornets,M. Diabaté makes 2-pt jump shot from 6 ft (assist by L. Ball)
+3,9:45.0,49-67,Spurs,Turnover by S. Castle (step out of bounds)
+3,9:18.0,49-67,Hornets,B. Miller misses 2-pt jump shot from 6 ft (block by S. Castle)
+3,9:15.0,49-67,Hornets,Offensive rebound by M. Diabaté
+3,9:11.0,49-69,Hornets,B. Miller makes 2-pt jump shot from 4 ft (assist by M. Diabaté)
+3,8:54.0,49-69,Spurs,D. Fox misses 3-pt jump shot from 26 ft
+3,8:52.0,49-69,Hornets,Defensive rebound by M. Bridges
+3,8:39.0,49-69,Hornets,L. Ball misses 2-pt jump shot from 5 ft
+3,8:38.0,49-69,Spurs,Defensive rebound by S. Castle
+3,8:25.0,49-69,Spurs,S. Castle misses 2-pt jump shot from 6 ft
+3,8:21.0,49-69,Spurs,Offensive rebound by V. Wembanyama
+3,8:21.0,51-69,Spurs,V. Wembanyama makes 2-pt layup at rim
+3,7:55.0,51-69,Hornets,L. Ball misses 2-pt jump shot from 19 ft
+3,7:53.0,51-69,Spurs,Defensive rebound by D. Vassell
+3,7:43.0,54-69,Spurs,J. Champagnie makes 3-pt jump shot from 27 ft (assist by D. Fox)
+3,7:34.0,54-69,Hornets,B. Miller misses 3-pt jump shot from 26 ft
+3,7:31.0,54-69,Spurs,Defensive rebound by V. Wembanyama
+3,7:23.0,54-69,Spurs,Shooting foul by M. Bridges (drawn by V. Wembanyama)
+3,7:23.0,55-69,Spurs,V. Wembanyama makes free throw 1 of 2
+3,7:23.0,55-69,Spurs,D. Harper enters the game for D. Fox
+3,7:23.0,56-69,Spurs,V. Wembanyama makes free throw 2 of 2
+3,7:04.0,56-69,Hornets,Turnover by L. Ball (bad pass; steal by D. Harper)
+3,7:00.0,56-69,Spurs,Turnover by D. Harper (bad pass; steal by K. Knueppel)
+3,6:58.0,56-71,Hornets,M. Bridges makes 2-pt dunk from 2 ft (assist by L. Ball)
+3,6:40.0,56-71,Spurs,D. Vassell misses 3-pt jump shot from 23 ft
+3,6:36.0,56-71,Hornets,Defensive rebound by L. Ball
+3,6:31.0,56-71,Hornets,M. Bridges misses 3-pt jump shot from 26 ft
+3,6:28.0,56-71,Spurs,Defensive rebound by J. Champagnie
+3,6:28.0,56-71,Spurs,Personal foul by L. Ball (drawn by J. Champagnie)
+3,6:28.0,56-71,Hornets,Charlotte full timeout
+3,6:28.0,56-71,Spurs,D. Fox enters the game for D. Harper
+3,6:28.0,56-71,Hornets,Instant Replay
+3,6:28.0,56-71,Spurs,D. Harper enters the game for D. Fox
+3,6:28.0,56-71,Spurs,L. Kornet enters the game for V. Wembanyama
+3,6:28.0,56-71,Hornets,J. Green enters the game for M. Diabaté
+3,6:28.0,56-71,Hornets,R. Kalkbrenner enters the game for K. Knueppel
+3,6:25.0,56-71,Spurs,Personal foul by J. Green (drawn by S. Castle)
+3,6:11.0,59-71,Spurs,D. Harper makes 3-pt jump shot from 26 ft (assist by L. Kornet)
+3,5:51.0,59-71,Hornets,L. Ball misses 2-pt layup from 2 ft
+3,5:51.0,59-71,Hornets,Offensive rebound by R. Kalkbrenner
+3,5:47.0,59-73,Hornets,R. Kalkbrenner makes 2-pt layup at rim
+3,5:27.0,59-73,Spurs,Turnover by S. Castle (bad pass; steal by B. Miller)
+3,5:20.0,59-73,Hornets,Turnover by B. Miller (bad pass; steal by D. Vassell)
+3,5:12.0,59-73,Spurs,D. Vassell misses 3-pt jump shot from 27 ft
+3,5:10.0,59-73,Hornets,Defensive rebound by R. Kalkbrenner
+3,4:56.0,59-75,Hornets,R. Kalkbrenner makes 2-pt dunk from 1 ft (assist by M. Bridges)
+3,4:39.0,59-75,Spurs,D. Harper misses 2-pt layup from 2 ft (block by R. Kalkbrenner)
+3,4:35.0,59-75,Hornets,Defensive rebound by L. Ball
+3,4:32.0,59-75,Hornets,B. Miller misses 3-pt jump shot from 25 ft
+3,4:30.0,59-75,Spurs,Defensive rebound by D. Vassell
+3,4:21.0,61-75,Spurs,D. Vassell makes 2-pt jump shot from 11 ft
+3,4:01.0,61-75,Hornets,M. Bridges misses 2-pt jump shot from 5 ft
+3,3:59.0,61-75,Spurs,Defensive rebound by J. Champagnie
+3,3:54.0,61-75,Spurs,D. Harper misses 3-pt jump shot from 23 ft
+3,3:52.0,61-75,Hornets,Defensive rebound by L. Ball
+3,3:48.0,61-75,Hornets,L. Ball misses 3-pt jump shot from 25 ft
+3,3:44.0,61-75,Spurs,Defensive rebound by J. Champagnie
+3,3:35.0,63-75,Spurs,D. Vassell makes 2-pt jump shot from 15 ft
+3,3:19.0,63-75,Hornets,B. Miller misses 2-pt jump shot from 6 ft (block by L. Kornet)
+3,3:17.0,63-75,Spurs,Defensive rebound by L. Kornet
+3,3:15.0,66-75,Spurs,J. Champagnie makes 3-pt jump shot from 23 ft (assist by D. Vassell)
+3,2:52.0,66-75,Hornets,Shooting foul by S. Castle (drawn by B. Miller)
+3,2:52.0,66-75,Spurs,San Antonio full timeout
+3,2:52.0,66-75,Spurs,H. Barnes enters the game for S. Castle
+3,2:52.0,66-75,Spurs,D. Fox enters the game for J. Champagnie
+3,2:52.0,66-75,Spurs,K. Johnson enters the game for D. Vassell
+3,2:52.0,66-75,Hornets,C. Sexton enters the game for L. Ball
+3,2:52.0,66-75,Hornets,G. Williams enters the game for M. Bridges
+3,2:52.0,66-76,Hornets,B. Miller makes free throw 1 of 2
+3,2:52.0,66-77,Hornets,B. Miller makes free throw 2 of 2
+3,2:40.0,66-77,Spurs,K. Johnson misses 3-pt jump shot from 23 ft
+3,2:37.0,66-77,Hornets,Defensive rebound by B. Miller
+3,2:37.0,66-77,Hornets,S. James enters the game for J. Green
+3,2:37.0,66-77,Hornets,K. Knueppel enters the game for B. Miller
+3,2:15.0,66-77,Hornets,Turnover by Team (shot clock)
+3,2:00.0,68-77,Spurs,K. Johnson makes 2-pt jump shot from 2 ft (assist by H. Barnes)
+3,1:44.0,68-79,Hornets,C. Sexton makes 2-pt jump shot from 13 ft
+3,1:33.0,71-79,Spurs,H. Barnes makes 3-pt jump shot from 23 ft (assist by D. Harper)
+3,1:18.0,71-79,Hornets,C. Sexton misses 2-pt jump shot from 11 ft
+3,1:17.0,71-79,Hornets,Offensive rebound by S. James
+3,1:15.0,71-82,Hornets,C. Sexton makes 3-pt jump shot from 26 ft (assist by G. Williams)
+3,0:56.0,73-82,Spurs,D. Harper makes 2-pt jump shot from 18 ft (assist by D. Fox)
+3,0:31.0,73-85,Hornets,K. Knueppel makes 3-pt jump shot from 26 ft (assist by C. Sexton)
+3,0:22.0,75-85,Spurs,D. Harper makes 2-pt jump shot from 14 ft
+3,0:01.0,75-85,Hornets,S. James misses 2-pt layup from 2 ft
+3,0:01.0,75-85,Spurs,Defensive rebound by L. Kornet
+4,11:40.0,75-85,Spurs,D. Fox misses 2-pt jump shot from 14 ft
+4,11:38.0,75-85,Hornets,Defensive rebound by K. Knueppel
+4,11:31.0,75-85,Hornets,M. Diabaté misses 2-pt jump shot from 8 ft
+4,11:29.0,75-85,Spurs,Defensive rebound by V. Wembanyama
+4,11:21.0,77-85,Spurs,D. Fox makes 2-pt jump shot from 3 ft
+4,10:57.0,77-87,Hornets,M. Diabaté makes 2-pt jump shot from 3 ft (assist by C. Sexton)
+4,10:51.0,77-87,Spurs,D. Harper misses 2-pt layup from 2 ft (block by M. Diabaté)
+4,10:47.0,77-87,Hornets,Defensive rebound by M. Diabaté
+4,10:41.0,77-90,Hornets,C. Sexton makes 3-pt jump shot from 25 ft (assist by K. Knueppel)
+4,10:27.0,77-90,Spurs,H. Barnes misses 3-pt jump shot from 23 ft
+4,10:25.0,77-90,Spurs,Offensive rebound by K. Johnson
+4,10:23.0,77-90,Spurs,Shooting foul by C. Sexton (drawn by K. Johnson)
+4,10:23.0,77-90,Spurs,S. Castle enters the game for D. Harper
+4,10:23.0,78-90,Spurs,K. Johnson makes free throw 1 of 2
+4,10:23.0,79-90,Spurs,K. Johnson makes free throw 2 of 2
+4,10:12.0,79-90,Hornets,K. Knueppel misses 3-pt jump shot from 27 ft
+4,10:10.0,79-90,Spurs,Defensive rebound by Team
+4,9:53.0,79-90,Spurs,Shooting foul by G. Williams (drawn by V. Wembanyama)
+4,9:53.0,80-90,Spurs,V. Wembanyama makes free throw 1 of 2
+4,9:53.0,81-90,Spurs,V. Wembanyama makes free throw 2 of 2
+4,9:31.0,81-90,Hornets,G. Williams misses 3-pt jump shot from 24 ft
+4,9:29.0,81-90,Hornets,Offensive rebound by M. Diabaté
+4,9:26.0,81-93,Hornets,C. Sexton makes 3-pt jump shot from 27 ft (assist by S. James)
+4,9:05.0,83-93,Spurs,D. Fox makes 2-pt layup from 2 ft
+4,8:45.0,83-96,Hornets,G. Williams makes 3-pt jump shot from 25 ft (assist by K. Knueppel)
+4,8:45.0,83-96,Spurs,San Antonio full timeout
+4,8:45.0,83-96,Spurs,J. Champagnie enters the game for D. Fox
+4,8:45.0,83-96,Spurs,D. Vassell enters the game for K. Johnson
+4,8:45.0,83-96,Hornets,M. Bridges enters the game for S. James
+4,8:24.0,86-96,Spurs,H. Barnes makes 3-pt jump shot from 25 ft (assist by S. Castle)
+4,8:03.0,86-96,Hornets,G. Williams misses 3-pt jump shot from 24 ft
+4,8:01.0,86-96,Hornets,Offensive rebound by M. Bridges
+4,7:59.0,86-96,Hornets,K. Knueppel misses 3-pt jump shot from 25 ft
+4,7:57.0,86-96,Spurs,Defensive rebound by V. Wembanyama
+4,7:46.0,89-96,Spurs,H. Barnes makes 3-pt jump shot from 24 ft (assist by S. Castle)
+4,7:46.0,89-96,Hornets,Charlotte full timeout
+4,7:46.0,89-96,Hornets,L. Ball enters the game for C. Sexton
+4,7:46.0,89-96,Hornets,B. Miller enters the game for G. Williams
+4,7:20.0,89-98,Hornets,L. Ball makes 2-pt jump shot from 1 ft
+4,7:06.0,91-98,Spurs,V. Wembanyama makes 2-pt layup from 1 ft (assist by S. Castle)
+4,6:46.0,91-100,Hornets,K. Knueppel makes 2-pt jump shot from 7 ft (assist by L. Ball)
+4,6:32.0,94-100,Spurs,S. Castle makes 3-pt jump shot from 25 ft
+4,6:17.0,94-100,Hornets,B. Miller misses 2-pt jump shot from 14 ft
+4,6:15.0,94-100,Hornets,Offensive rebound by Team
+4,6:15.0,94-100,Spurs,Loose ball foul by V. Wembanyama (drawn by M. Diabaté)
+4,6:07.0,94-100,Hornets,M. Bridges misses 3-pt jump shot from 24 ft
+4,6:06.0,94-100,Hornets,Offensive rebound by M. Diabaté
+4,6:04.0,94-100,Hornets,M. Diabaté misses 2-pt layup from 3 ft (block by J. Champagnie)
+4,6:01.0,94-100,Spurs,Defensive rebound by H. Barnes
+4,5:55.0,96-100,Spurs,S. Castle makes 2-pt jump shot from 5 ft
+4,5:38.0,96-100,Hornets,L. Ball misses 2-pt jump shot from 10 ft
+4,5:36.0,96-100,Spurs,Defensive rebound by H. Barnes
+4,5:34.0,96-100,Spurs,S. Castle misses 2-pt layup from 4 ft (block by M. Diabaté)
+4,5:32.0,96-100,Hornets,Defensive rebound by M. Bridges
+4,5:26.0,96-100,Spurs,Violation by Team (kicked ball)
+4,5:26.0,96-100,Spurs,D. Fox enters the game for S. Castle
+4,5:26.0,96-100,Hornets,C. Sexton enters the game for K. Knueppel
+4,5:09.0,96-100,Hornets,Turnover by C. Sexton (lost ball; steal by V. Wembanyama)
+4,5:04.0,98-100,Spurs,D. Fox makes 2-pt layup from 1 ft (assist by J. Champagnie)
+4,5:03.0,98-100,Hornets,Charlotte full timeout
+4,4:50.0,98-100,Hornets,M. Bridges misses 2-pt jump shot from 13 ft
+4,4:48.0,98-100,Spurs,Defensive rebound by V. Wembanyama
+4,4:42.0,98-100,Spurs,Personal foul by M. Bridges (drawn by H. Barnes)
+4,4:27.0,98-100,Spurs,V. Wembanyama misses 2-pt jump shot from 15 ft
+4,4:25.0,98-100,Hornets,Defensive rebound by B. Miller
+4,4:10.0,98-100,Hornets,L. Ball misses 2-pt jump shot from 14 ft
+4,4:08.0,98-100,Spurs,Defensive rebound by V. Wembanyama
+4,3:56.0,98-100,Spurs,Personal foul by M. Bridges (drawn by D. Fox)
+4,3:56.0,98-100,Hornets,K. Knueppel enters the game for C. Sexton
+4,3:48.0,98-100,Spurs,J. Champagnie misses 3-pt jump shot from 26 ft
+4,3:46.0,98-100,Hornets,Defensive rebound by K. Knueppel
+4,3:30.0,98-102,Hornets,M. Bridges makes 2-pt jump shot from 6 ft (assist by K. Knueppel)
+4,3:30.0,98-102,Spurs,San Antonio full timeout
+4,3:30.0,98-102,Spurs,S. Castle enters the game for J. Champagnie
+4,3:13.0,100-102,Spurs,V. Wembanyama makes 2-pt dunk from 3 ft (assist by D. Fox)
+4,2:55.0,100-104,Hornets,M. Bridges makes 2-pt dunk from 2 ft (assist by L. Ball)
+4,2:42.0,100-104,Spurs,D. Fox misses 3-pt jump shot from 28 ft
+4,2:40.0,100-104,Hornets,Defensive rebound by M. Bridges
+4,2:25.0,100-104,Hornets,M. Bridges misses 3-pt jump shot from 25 ft
+4,2:22.0,100-104,Spurs,Defensive rebound by D. Fox
+4,2:17.0,102-104,Spurs,D. Vassell makes 2-pt jump shot from 3 ft (assist by D. Fox)
+4,1:55.0,102-104,Hornets,L. Ball misses 2-pt jump shot from 3 ft
+4,1:53.0,102-104,Hornets,Offensive rebound by M. Diabaté
+4,1:53.0,102-106,Hornets,M. Diabaté makes 2-pt layup at rim
+4,1:37.0,102-106,Spurs,Shooting foul by M. Diabaté (drawn by S. Castle)
+4,1:37.0,103-106,Spurs,S. Castle makes free throw 1 of 2
+4,1:37.0,104-106,Spurs,S. Castle makes free throw 2 of 2
+4,1:20.0,104-106,Hornets,Personal foul by D. Fox (drawn by K. Knueppel)
+4,1:07.0,104-106,Hornets,Shooting foul by H. Barnes (drawn by M. Bridges)
+4,1:07.0,104-107,Hornets,M. Bridges makes free throw 1 of 3
+4,1:07.0,104-108,Hornets,M. Bridges makes free throw 2 of 3
+4,1:07.0,104-109,Hornets,M. Bridges makes free throw 3 of 3
+4,0:58.0,104-109,Spurs,Shooting foul by L. Ball (drawn by H. Barnes)
+4,0:58.0,105-109,Spurs,H. Barnes makes free throw 1 of 2
+4,0:58.0,106-109,Spurs,H. Barnes makes free throw 2 of 2
+4,0:37.0,106-109,Hornets,B. Miller misses 3-pt jump shot from 27 ft
+4,0:36.0,106-109,Spurs,Defensive rebound by Team
+4,0:36.0,106-109,Spurs,San Antonio full timeout
+4,0:36.0,106-109,Spurs,Instant Replay (Challenge: Ruling Stands)
+4,0:27.0,106-109,Spurs,V. Wembanyama misses 3-pt jump shot from 29 ft
+4,0:24.0,106-109,Hornets,Defensive rebound by K. Knueppel
+4,0:10.0,106-109,Hornets,Personal take foul by S. Castle (drawn by B. Miller)
+4,0:10.0,106-110,Hornets,B. Miller makes free throw 1 of 2
+4,0:10.0,106-110,Spurs,L. Kornet enters the game for S. Castle
+4,0:10.0,106-110,Hornets,S. James enters the game for L. Ball
+4,0:10.0,106-111,Hornets,B. Miller makes free throw 2 of 2
+4,0:10.0,106-111,Spurs,San Antonio full timeout
+4,0:10.0,106-111,Spurs,S. Castle enters the game for L. Kornet
+4,0:08.0,106-111,Spurs,D. Fox misses 3-pt jump shot from 23 ft
+4,0:05.0,106-111,Spurs,Offensive rebound by V. Wembanyama
+4,0:03.0,106-111,Spurs,D. Vassell misses 3-pt jump shot from 27 ft
+4,0:01.0,106-111,Hornets,Defensive rebound by K. Knueppel

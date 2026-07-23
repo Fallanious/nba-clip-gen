@@ -1,0 +1,468 @@
+quarter,time,score,team,description
+1,11:42.0,0-0,Knicks,M. Bridges misses 3-pt jump shot from 22 ft
+1,11:40.0,0-0,76ers,Defensive rebound by J. Embiid
+1,11:23.0,0-0,76ers,P. George misses 2-pt jump shot from 19 ft
+1,11:21.0,0-0,Knicks,Defensive rebound by K. Towns
+1,11:08.0,0-3,Knicks,M. Bridges makes 3-pt jump shot from 23 ft (assist by J. Brunson)
+1,10:50.0,2-3,76ers,J. Embiid makes 2-pt jump shot from 18 ft
+1,10:34.0,2-3,Knicks,M. Bridges misses 2-pt jump shot from 21 ft
+1,10:30.0,2-3,76ers,Defensive rebound by D. Barlow
+1,10:24.0,2-3,76ers,Personal foul by J. Brunson (drawn by V. Edgecombe)
+1,10:10.0,4-3,76ers,P. George makes 2-pt jump shot from 21 ft
+1,9:50.0,4-3,Knicks,K. Towns misses 2-pt jump shot from 10 ft
+1,9:47.0,4-3,76ers,Defensive rebound by T. Maxey
+1,9:47.0,4-3,76ers,Shooting foul by O. Anunoby (drawn by D. Barlow)
+1,9:47.0,4-3,76ers,D. Barlow misses free throw 1 of 2
+1,9:47.0,4-3,76ers,Offensive rebound by Team
+1,9:47.0,5-3,76ers,D. Barlow makes free throw 2 of 2
+1,9:24.0,5-5,Knicks,O. Anunoby makes 2-pt dunk at rim (assist by K. Towns)
+1,9:03.0,5-5,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,9:01.0,5-5,Knicks,Defensive rebound by O. Anunoby
+1,8:53.0,5-5,Knicks,J. Brunson misses 2-pt jump shot from 12 ft
+1,8:50.0,5-5,76ers,Defensive rebound by P. George
+1,8:38.0,5-5,76ers,Offensive foul by D. Barlow (drawn by M. Bridges)
+1,8:38.0,5-5,76ers,Turnover by D. Barlow (offensive foul)
+1,8:28.0,5-7,Knicks,J. Brunson makes 2-pt jump shot from 10 ft
+1,8:28.0,5-7,Knicks,Shooting foul by T. Maxey (drawn by J. Brunson)
+1,8:28.0,5-7,Knicks,J. Brunson misses free throw 1 of 1
+1,8:26.0,5-7,76ers,Defensive rebound by T. Maxey
+1,8:14.0,5-7,76ers,Turnover by J. Embiid (lost ball; steal by M. Robinson)
+1,8:10.0,5-7,Knicks,O. Anunoby misses 2-pt layup from 1 ft
+1,8:09.0,5-7,76ers,Defensive rebound by Team
+1,8:09.0,5-7,Knicks,Loose ball foul by M. Robinson (drawn by J. Embiid)
+1,7:56.0,5-7,76ers,Turnover by T. Maxey (bad pass; steal by M. Bridges)
+1,7:51.0,5-7,Knicks,J. Brunson misses 2-pt jump shot from 8 ft
+1,7:47.0,5-7,Knicks,Offensive rebound by M. Bridges
+1,7:47.0,5-7,Knicks,M. Bridges misses 2-pt layup at rim
+1,7:47.0,5-7,76ers,Defensive rebound by T. Maxey
+1,7:45.0,5-7,76ers,T. Maxey misses 2-pt layup from 1 ft
+1,7:44.0,5-7,76ers,Offensive rebound by D. Barlow
+1,7:44.0,7-7,76ers,D. Barlow makes 2-pt dunk at rim
+1,7:33.0,7-9,Knicks,O. Anunoby makes 2-pt dunk from 1 ft (assist by M. Bridges)
+1,7:17.0,7-9,76ers,V. Edgecombe misses 2-pt layup from 4 ft
+1,7:17.0,7-9,76ers,Offensive rebound by V. Edgecombe
+1,7:16.0,9-9,76ers,V. Edgecombe makes 2-pt dunk at rim
+1,7:05.0,9-9,Knicks,M. Bridges misses 2-pt jump shot from 15 ft
+1,7:03.0,9-9,76ers,Defensive rebound by V. Edgecombe
+1,6:52.0,11-9,76ers,P. George makes 2-pt jump shot from 5 ft
+1,6:41.0,11-11,Knicks,J. Brunson makes 2-pt jump shot from 11 ft
+1,6:27.0,13-11,76ers,J. Embiid makes 2-pt layup from 3 ft
+1,6:27.0,13-11,76ers,Shooting foul by M. Robinson (drawn by J. Embiid)
+1,6:27.0,13-11,Knicks,New York full timeout
+1,6:27.0,13-11,Knicks,M. McBride enters the game for M. Robinson
+1,6:27.0,14-11,76ers,J. Embiid makes free throw 1 of 1
+1,6:14.0,14-11,Knicks,Turnover by J. Brunson (bad pass)
+1,6:02.0,16-11,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)
+1,5:51.0,16-11,Knicks,J. Brunson misses 3-pt jump shot from 26 ft
+1,5:49.0,16-11,76ers,Defensive rebound by P. George
+1,5:39.0,16-11,76ers,T. Maxey misses 2-pt layup from 2 ft
+1,5:37.0,16-11,Knicks,Defensive rebound by J. Brunson
+1,5:31.0,16-13,Knicks,M. Bridges makes 2-pt layup from 1 ft (assist by O. Anunoby)
+1,5:15.0,18-13,76ers,T. Maxey makes 2-pt layup from 2 ft (assist by J. Embiid)
+1,5:02.0,18-16,Knicks,M. McBride makes 3-pt jump shot from 26 ft (assist by O. Anunoby)
+1,4:50.0,18-16,76ers,P. George misses 2-pt jump shot from 12 ft
+1,4:48.0,18-16,Knicks,Defensive rebound by K. Towns
+1,4:36.0,18-16,Knicks,Shooting foul by D. Barlow (drawn by J. Brunson)
+1,4:36.0,18-16,76ers,Q. Grimes enters the game for D. Barlow
+1,4:36.0,18-16,76ers,J. Walker enters the game for P. George
+1,4:36.0,18-16,Knicks,A. Hukporti enters the game for O. Anunoby
+1,4:36.0,18-16,Knicks,K. McCullar enters the game for K. Towns
+1,4:36.0,18-17,Knicks,J. Brunson makes free throw 1 of 2
+1,4:36.0,18-18,Knicks,J. Brunson makes free throw 2 of 2
+1,4:26.0,21-18,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+1,4:00.0,21-21,Knicks,M. McBride makes 3-pt jump shot from 23 ft (assist by M. Bridges)
+1,3:47.0,23-21,76ers,J. Embiid makes 2-pt hook shot from 5 ft
+1,3:29.0,23-21,Knicks,J. Brunson misses 2-pt jump shot from 19 ft
+1,3:26.0,23-21,76ers,Defensive rebound by J. Embiid
+1,3:25.0,23-21,76ers,Turnover by J. Embiid (lost ball; steal by M. McBride)
+1,3:22.0,23-24,Knicks,J. Brunson makes 3-pt jump shot from 26 ft (assist by M. McBride)
+1,3:07.0,23-24,76ers,J. Embiid misses 2-pt hook shot from 5 ft
+1,3:06.0,23-24,76ers,Offensive rebound by J. Walker
+1,3:05.0,23-24,76ers,J. Walker misses 2-pt layup from 1 ft
+1,3:04.0,23-24,Knicks,Defensive rebound by M. Bridges
+1,2:52.0,23-24,Knicks,Shooting foul by J. Embiid (drawn by J. Brunson)
+1,2:52.0,23-24,76ers,Philadelphia full timeout
+1,2:52.0,23-25,Knicks,J. Brunson makes free throw 1 of 2
+1,2:52.0,23-25,76ers,A. Bona enters the game for V. Edgecombe
+1,2:52.0,23-25,76ers,J. McCain enters the game for J. Embiid
+1,2:52.0,23-25,Knicks,O. Anunoby enters the game for M. Bridges
+1,2:52.0,23-25,Knicks,G. Yabusele enters the game for K. McCullar
+1,2:52.0,23-25,Knicks,J. Brunson misses free throw 2 of 2
+1,2:50.0,23-25,Knicks,Offensive rebound by O. Anunoby
+1,2:42.0,23-25,Knicks,G. Yabusele misses 3-pt jump shot from 23 ft
+1,2:39.0,23-25,76ers,Defensive rebound by J. McCain
+1,2:24.0,23-25,76ers,Q. Grimes misses 3-pt jump shot from 24 ft
+1,2:21.0,23-25,Knicks,Defensive rebound by J. Brunson
+1,2:18.0,23-25,Knicks,Shooting foul by J. McCain (drawn by J. Brunson)
+1,2:18.0,23-25,Knicks,K. McCullar enters the game for G. Yabusele
+1,2:18.0,23-26,Knicks,J. Brunson makes free throw 1 of 2
+1,2:18.0,23-27,Knicks,J. Brunson makes free throw 2 of 2
+1,2:03.0,25-27,76ers,T. Maxey makes 2-pt jump shot from 5 ft
+1,1:50.0,25-27,Knicks,M. McBride misses 3-pt jump shot from 25 ft
+1,1:48.0,25-27,Knicks,Offensive rebound by O. Anunoby
+1,1:43.0,25-30,Knicks,K. McCullar makes 3-pt jump shot from 25 ft (assist by O. Anunoby)
+1,1:25.0,27-30,76ers,J. Walker makes 2-pt layup from 3 ft (assist by J. McCain)
+1,0:58.0,27-30,Knicks,K. McCullar misses 3-pt jump shot from 26 ft
+1,0:56.0,27-30,76ers,Defensive rebound by T. Maxey
+1,0:49.0,29-30,76ers,A. Bona makes 2-pt layup from 1 ft (assist by Q. Grimes)
+1,0:34.0,29-30,Knicks,Turnover by K. McCullar (bad pass)
+1,0:23.0,31-30,76ers,T. Maxey makes 2-pt layup from 3 ft
+1,0:05.0,31-30,Knicks,O. Anunoby misses 3-pt jump shot from 24 ft
+1,0:02.0,31-30,76ers,Defensive rebound by T. Maxey
+1,0:00.0,31-30,76ers,T. Maxey misses 2-pt jump shot from 11 ft
+1,0:00.0,31-30,76ers,Offensive rebound by Team
+2,11:46.0,31-30,76ers,P. George misses 2-pt layup from 1 ft
+2,11:45.0,31-30,Knicks,Defensive rebound by K. Towns
+2,11:39.0,31-30,Knicks,K. Towns misses 3-pt jump shot from 25 ft (block by P. George)
+2,11:37.0,31-30,76ers,Defensive rebound by Q. Grimes
+2,11:35.0,34-30,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+2,11:11.0,34-33,Knicks,O. Anunoby makes 3-pt jump shot from 24 ft (assist by M. Bridges)
+2,10:49.0,34-33,76ers,A. Bona misses 2-pt layup from 1 ft
+2,10:47.0,34-33,Knicks,Defensive rebound by M. McBride
+2,10:45.0,34-36,Knicks,J. Clarkson makes 3-pt jump shot from 26 ft (assist by M. Bridges)
+2,10:27.0,37-36,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft
+2,9:58.0,37-38,Knicks,K. Towns makes 2-pt layup from 3 ft
+2,9:49.0,37-38,76ers,J. McCain misses 2-pt layup from 2 ft
+2,9:45.0,37-38,76ers,Offensive rebound by A. Bona
+2,9:45.0,37-38,76ers,A. Bona misses 2-pt layup at rim
+2,9:45.0,37-38,Knicks,Defensive rebound by J. Clarkson
+2,9:40.0,37-38,Knicks,Turnover by O. Anunoby (out of bounds lost ball)
+2,9:29.0,37-38,76ers,Personal foul by M. McBride (drawn by P. George)
+2,9:15.0,37-38,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+2,9:15.0,37-38,76ers,Offensive rebound by Team
+2,9:15.0,37-38,76ers,Turnover by Team (shot clock)
+2,9:01.0,37-38,Knicks,K. Towns misses 3-pt jump shot from 26 ft
+2,8:59.0,37-38,76ers,Defensive rebound by Q. Grimes
+2,8:47.0,37-38,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+2,8:45.0,37-38,Knicks,Defensive rebound by K. Towns
+2,8:40.0,37-38,Knicks,Turnover by K. Towns (lost ball; steal by Q. Grimes)
+2,8:37.0,39-38,76ers,Q. Grimes makes 2-pt dunk at rim
+2,8:23.0,39-38,Knicks,K. Towns misses 2-pt layup from 4 ft (block by J. McCain)
+2,8:21.0,39-38,76ers,Defensive rebound by J. McCain
+2,8:20.0,39-38,76ers,Shooting foul by M. McBride (drawn by P. George)
+2,8:20.0,39-38,Knicks,K. McCullar enters the game for O. Anunoby
+2,8:20.0,39-38,Knicks,Technical foul by K. Towns
+2,8:20.0,39-38,76ers,P. George misses technical free throw
+2,8:20.0,39-38,76ers,Offensive rebound by Team
+2,8:20.0,40-38,76ers,P. George makes free throw 1 of 2
+2,8:20.0,41-38,76ers,P. George makes free throw 2 of 2
+2,8:02.0,41-38,Knicks,K. Towns misses 2-pt layup at rim
+2,8:00.0,41-38,Knicks,Offensive rebound by K. McCullar
+2,7:59.0,41-38,Knicks,K. McCullar misses 2-pt layup from 3 ft
+2,7:59.0,41-38,76ers,Defensive rebound by A. Bona
+2,7:47.0,43-38,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by P. George)
+2,7:39.0,43-38,Knicks,Turnover by M. McBride (bad pass; steal by Q. Grimes)
+2,7:28.0,46-38,76ers,J. McCain makes 3-pt jump shot from 29 ft (assist by Q. Grimes)
+2,7:28.0,46-38,Knicks,New York full timeout
+2,7:28.0,46-38,Knicks,T. Kolek enters the game for K. McCullar
+2,7:13.0,46-38,Knicks,Personal foul by A. Bona (drawn by K. Towns)
+2,7:02.0,46-38,Knicks,M. Bridges misses 3-pt jump shot from 26 ft
+2,6:59.0,46-38,76ers,Defensive rebound by A. Bona
+2,6:47.0,46-38,76ers,Turnover by V. Edgecombe (bad pass; steal by M. Bridges)
+2,6:43.0,46-38,Knicks,J. Clarkson misses 2-pt dunk from 2 ft (block by P. George)
+2,6:43.0,46-38,Knicks,Offensive rebound by Team
+2,6:37.0,46-41,Knicks,T. Kolek makes 3-pt jump shot from 27 ft (assist by M. McBride)
+2,6:24.0,49-41,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft
+2,6:09.0,49-41,Knicks,J. Clarkson misses 3-pt jump shot from 23 ft
+2,6:07.0,49-41,76ers,Defensive rebound by A. Bona
+2,5:58.0,49-41,76ers,P. George misses 3-pt jump shot from 28 ft
+2,5:55.0,49-41,Knicks,Defensive rebound by T. Kolek
+2,5:50.0,49-44,Knicks,M. Bridges makes 3-pt jump shot from 23 ft (assist by T. Kolek)
+2,5:37.0,49-44,76ers,Philadelphia full timeout
+2,5:37.0,49-44,76ers,J. Embiid enters the game for A. Bona
+2,5:37.0,49-44,76ers,T. Maxey enters the game for P. George
+2,5:37.0,49-44,Knicks,O. Anunoby enters the game for J. Clarkson
+2,5:37.0,49-44,Knicks,J. Brunson enters the game for M. McBride
+2,5:37.0,49-44,Knicks,M. Robinson enters the game for K. Towns
+2,5:24.0,49-44,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+2,5:21.0,49-44,Knicks,Defensive rebound by M. Bridges
+2,5:14.0,49-44,Knicks,M. Bridges misses 3-pt jump shot from 22 ft
+2,5:11.0,49-44,76ers,Defensive rebound by Q. Grimes
+2,4:55.0,51-44,76ers,T. Maxey makes 2-pt jump shot from 12 ft
+2,4:37.0,51-44,Knicks,Turnover by O. Anunoby (bad pass; steal by T. Maxey)
+2,4:34.0,53-44,76ers,T. Maxey makes 2-pt layup from 1 ft (assist by J. Embiid)
+2,4:18.0,53-44,Knicks,O. Anunoby misses 3-pt jump shot from 25 ft
+2,4:15.0,53-44,76ers,Defensive rebound by Q. Grimes
+2,4:14.0,53-44,76ers,Turnover by Q. Grimes (out of bounds lost ball)
+2,4:14.0,53-44,76ers,A. Bona enters the game for J. McCain
+2,4:14.0,53-44,Knicks,G. Yabusele enters the game for M. Bridges
+2,4:10.0,53-44,Knicks,Turnover by M. Robinson (lost ball; steal by A. Bona)
+2,3:57.0,53-44,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+2,3:55.0,53-44,76ers,Offensive rebound by J. Embiid
+2,3:54.0,55-44,76ers,J. Embiid makes 2-pt layup from 6 ft
+2,3:34.0,55-46,Knicks,J. Brunson makes 2-pt jump shot from 17 ft
+2,3:15.0,58-46,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+2,3:05.0,58-46,Knicks,G. Yabusele misses 2-pt dunk from 2 ft
+2,3:03.0,58-46,Knicks,Offensive rebound by O. Anunoby
+2,3:01.0,58-48,Knicks,O. Anunoby makes 2-pt layup at rim
+2,2:50.0,58-48,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+2,2:50.0,58-48,76ers,Offensive rebound by Team
+2,2:50.0,58-48,Knicks,Loose ball foul by G. Yabusele (drawn by A. Bona)
+2,2:50.0,58-48,Knicks,J. Clarkson enters the game for T. Kolek
+2,2:43.0,58-48,76ers,Shooting foul by M. Robinson (drawn by J. Embiid)
+2,2:43.0,58-48,Knicks,K. Towns enters the game for M. Robinson
+2,2:43.0,58-48,76ers,J. Embiid misses free throw 1 of 2
+2,2:43.0,58-48,76ers,Offensive rebound by Team
+2,2:43.0,58-48,76ers,J. Embiid misses free throw 2 of 2
+2,2:41.0,58-48,Knicks,Defensive rebound by G. Yabusele
+2,2:27.0,58-50,Knicks,J. Brunson makes 2-pt jump shot from 4 ft
+2,2:27.0,58-50,76ers,Violation by Team (def goaltending)
+2,2:19.0,61-50,76ers,T. Maxey makes 3-pt jump shot from 28 ft (assist by Q. Grimes)
+2,2:09.0,61-50,Knicks,J. Brunson misses 2-pt jump shot from 4 ft (block by Q. Grimes)
+2,2:06.0,61-50,76ers,Defensive rebound by J. Embiid
+2,2:04.0,61-50,76ers,Shooting foul by O. Anunoby (drawn by J. Embiid)
+2,2:04.0,61-50,76ers,P. George enters the game for V. Edgecombe
+2,2:04.0,62-50,76ers,J. Embiid makes free throw 1 of 2
+2,2:04.0,63-50,76ers,J. Embiid makes free throw 2 of 2
+2,1:49.0,63-53,Knicks,J. Brunson makes 3-pt jump shot from 25 ft (assist by O. Anunoby)
+2,1:33.0,66-53,76ers,Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. Embiid)
+2,1:06.0,66-53,Knicks,Turnover by J. Clarkson (step out of bounds)
+2,1:06.0,66-53,Knicks,M. Bridges enters the game for J. Clarkson
+2,1:06.0,66-53,Knicks,M. McBride enters the game for G. Yabusele
+2,0:51.0,66-53,76ers,Turnover by T. Maxey (lost ball; steal by O. Anunoby)
+2,0:48.0,66-53,Knicks,Shooting foul by Q. Grimes (drawn by J. Brunson)
+2,0:48.0,66-53,76ers,V. Edgecombe enters the game for A. Bona
+2,0:48.0,66-54,Knicks,J. Brunson makes free throw 1 of 2
+2,0:48.0,66-55,Knicks,J. Brunson makes free throw 2 of 2
+2,0:37.0,66-55,76ers,T. Maxey misses 2-pt jump shot from 9 ft
+2,0:35.0,66-55,Knicks,Defensive rebound by K. Towns
+2,0:25.0,66-58,Knicks,O. Anunoby makes 3-pt jump shot from 23 ft (assist by K. Towns)
+2,0:00.0,66-58,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+2,0:00.0,66-58,76ers,Offensive rebound by Team
+3,11:44.0,68-58,76ers,J. Embiid makes 2-pt jump shot from 18 ft
+3,11:15.0,68-58,Knicks,K. Towns misses 2-pt hook shot from 3 ft
+3,11:12.0,68-58,Knicks,Offensive rebound by K. Towns
+3,11:11.0,68-58,Knicks,Shooting foul by P. George (drawn by K. Towns)
+3,11:11.0,68-59,Knicks,K. Towns makes free throw 1 of 2
+3,11:11.0,68-60,Knicks,K. Towns makes free throw 2 of 2
+3,10:59.0,71-60,76ers,P. George makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)
+3,10:48.0,71-60,Knicks,J. Brunson misses 2-pt jump shot from 16 ft
+3,10:43.0,71-60,Knicks,Offensive rebound by M. Robinson
+3,10:43.0,71-60,Knicks,M. Robinson misses 2-pt layup at rim
+3,10:42.0,71-60,76ers,Defensive rebound by T. Maxey
+3,10:39.0,71-60,76ers,Offensive foul by D. Barlow (drawn by J. Brunson)
+3,10:39.0,71-60,76ers,Turnover by D. Barlow (offensive foul)
+3,10:18.0,71-60,Knicks,O. Anunoby misses 2-pt layup from 4 ft (block by D. Barlow)
+3,10:15.0,71-60,Knicks,Offensive rebound by K. Towns
+3,10:14.0,71-62,Knicks,K. Towns makes 2-pt layup from 1 ft
+3,9:53.0,74-62,76ers,P. George makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)
+3,9:35.0,74-62,Knicks,J. Brunson misses 2-pt jump shot from 4 ft (block by T. Maxey)
+3,9:35.0,74-62,Knicks,Offensive rebound by Team
+3,9:29.0,74-64,Knicks,M. Bridges makes 2-pt jump shot from 15 ft (assist by M. Robinson)
+3,9:16.0,74-64,76ers,Personal foul by M. Bridges (drawn by T. Maxey)
+3,9:06.0,76-64,76ers,D. Barlow makes 2-pt dunk from 1 ft (assist by J. Embiid)
+3,8:52.0,76-64,Knicks,K. Towns misses 3-pt jump shot from 25 ft
+3,8:51.0,76-64,76ers,Defensive rebound by T. Maxey
+3,8:36.0,78-64,76ers,V. Edgecombe makes 2-pt layup from 2 ft
+3,8:24.0,78-64,Knicks,Personal foul by P. George (drawn by J. Brunson)
+3,8:24.0,78-64,Knicks,M. McBride enters the game for M. Robinson
+3,8:16.0,78-64,Knicks,Turnover by J. Brunson (bad pass)
+3,8:16.0,78-64,76ers,Philadelphia full timeout
+3,8:16.0,78-64,76ers,Instant Replay (Challenge: Ruling Stands)
+3,8:06.0,81-64,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+3,7:48.0,81-64,Knicks,Shooting foul by P. George (drawn by K. Towns)
+3,7:48.0,81-65,Knicks,K. Towns makes free throw 1 of 2
+3,7:48.0,81-66,Knicks,K. Towns makes free throw 2 of 2
+3,7:36.0,83-66,76ers,T. Maxey makes 2-pt jump shot from 5 ft
+3,7:22.0,83-68,Knicks,J. Brunson makes 2-pt jump shot from 20 ft
+3,7:22.0,83-68,Knicks,Shooting foul by V. Edgecombe (drawn by J. Brunson)
+3,7:22.0,83-69,Knicks,J. Brunson makes free throw 1 of 1
+3,7:00.0,83-69,76ers,P. George misses 3-pt jump shot from 26 ft
+3,6:57.0,83-69,76ers,Offensive rebound by J. Embiid
+3,6:55.0,83-69,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+3,6:52.0,83-69,Knicks,Defensive rebound by M. McBride
+3,6:41.0,83-69,Knicks,O. Anunoby misses 2-pt layup from 2 ft (block by V. Edgecombe)
+3,6:40.0,83-69,Knicks,Offensive rebound by O. Anunoby
+3,6:40.0,83-69,Knicks,Turnover by O. Anunoby (traveling)
+3,6:27.0,86-69,76ers,T. Maxey makes 3-pt jump shot from 26 ft (assist by P. George)
+3,6:11.0,86-69,Knicks,J. Brunson misses 2-pt jump shot from 16 ft
+3,6:08.0,86-69,Knicks,Offensive rebound by M. Bridges
+3,6:06.0,86-72,Knicks,M. McBride makes 3-pt jump shot from 23 ft (assist by O. Anunoby)
+3,5:53.0,86-72,76ers,Shooting foul by K. Towns (drawn by J. Embiid)
+3,5:53.0,87-72,76ers,J. Embiid makes free throw 1 of 2
+3,5:53.0,87-72,76ers,J. Embiid misses free throw 2 of 2
+3,5:50.0,87-72,76ers,Offensive rebound by P. George
+3,5:48.0,87-72,76ers,P. George misses 2-pt jump shot from 15 ft
+3,5:47.0,87-72,Knicks,Defensive rebound by K. Towns
+3,5:42.0,87-74,Knicks,M. Bridges makes 2-pt jump shot from 9 ft (assist by J. Brunson)
+3,5:33.0,90-74,76ers,T. Maxey makes 3-pt jump shot from 28 ft
+3,5:15.0,90-74,Knicks,J. Brunson misses 2-pt layup from 2 ft
+3,5:13.0,90-74,Knicks,Offensive rebound by K. Towns
+3,5:13.0,90-74,Knicks,Shooting foul by D. Barlow (drawn by K. Towns)
+3,5:13.0,90-74,76ers,Q. Grimes enters the game for D. Barlow
+3,5:13.0,90-74,76ers,J. Walker enters the game for P. George
+3,5:13.0,90-75,Knicks,K. Towns makes free throw 1 of 2
+3,5:13.0,90-75,Knicks,K. Towns misses free throw 2 of 2
+3,5:10.0,90-75,76ers,Defensive rebound by J. Walker
+3,4:59.0,92-75,76ers,J. Embiid makes 2-pt layup at rim (assist by T. Maxey)
+3,4:53.0,92-75,Knicks,Personal foul by J. Walker (drawn by K. Towns)
+3,4:53.0,92-75,Knicks,M. Diawara enters the game for O. Anunoby
+3,4:53.0,92-76,Knicks,K. Towns makes free throw 1 of 2
+3,4:53.0,92-77,Knicks,K. Towns makes free throw 2 of 2
+3,4:36.0,92-77,76ers,J. Embiid misses 2-pt jump shot from 16 ft
+3,4:34.0,92-77,Knicks,Defensive rebound by J. Brunson
+3,4:27.0,92-77,Knicks,K. Towns misses 3-pt jump shot from 26 ft
+3,4:24.0,92-77,76ers,Defensive rebound by J. Embiid
+3,4:17.0,92-77,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+3,4:14.0,92-77,Knicks,Defensive rebound by K. Towns
+3,4:01.0,92-77,Knicks,Turnover by K. Towns (out of bounds lost ball)
+3,4:01.0,92-77,Knicks,M. Robinson enters the game for K. Towns
+3,3:48.0,94-77,76ers,J. Walker makes 2-pt dunk at rim (assist by J. Embiid)
+3,3:25.0,94-77,Knicks,J. Brunson misses 3-pt jump shot from 26 ft
+3,3:23.0,94-77,Knicks,Offensive rebound by M. Robinson
+3,3:21.0,94-77,Knicks,M. Bridges misses 3-pt jump shot from 26 ft
+3,3:18.0,94-77,76ers,Defensive rebound by J. Embiid
+3,3:13.0,94-77,76ers,Shooting foul by M. Robinson (drawn by J. Embiid)
+3,3:13.0,94-77,Knicks,J. Clarkson enters the game for M. Bridges
+3,3:13.0,95-77,76ers,J. Embiid makes free throw 1 of 2
+3,3:13.0,96-77,76ers,J. Embiid makes free throw 2 of 2
+3,2:57.0,96-77,Knicks,Turnover by M. McBride (bad pass; steal by V. Edgecombe)
+3,2:53.0,96-77,76ers,Turnover by V. Edgecombe (bad pass; steal by M. McBride)
+3,2:49.0,96-77,Knicks,M. McBride misses 3-pt jump shot from 26 ft
+3,2:47.0,96-77,Knicks,Offensive rebound by M. Robinson
+3,2:47.0,96-79,Knicks,M. Robinson makes 2-pt layup from 1 ft
+3,2:47.0,96-79,Knicks,Shooting foul by J. Embiid (drawn by M. Robinson)
+3,2:47.0,96-79,Knicks,New York full timeout
+3,2:47.0,96-79,76ers,A. Bona enters the game for V. Edgecombe
+3,2:47.0,96-79,76ers,J. McCain enters the game for J. Embiid
+3,2:47.0,96-79,Knicks,O. Anunoby enters the game for J. Brunson
+3,2:47.0,96-79,Knicks,T. Kolek enters the game for M. Diawara
+3,2:47.0,96-79,Knicks,M. Robinson misses free throw 1 of 1
+3,2:41.0,96-79,76ers,Defensive rebound by J. Walker
+3,2:36.0,96-79,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+3,2:33.0,96-79,76ers,Offensive rebound by Team
+3,2:24.0,96-79,76ers,Turnover by T. Maxey (bad pass; steal by M. Robinson)
+3,2:20.0,96-81,Knicks,M. McBride makes 2-pt layup from 1 ft (assist by M. Robinson)
+3,2:06.0,96-81,76ers,J. McCain misses 2-pt layup from 2 ft
+3,2:03.0,96-81,Knicks,Defensive rebound by M. McBride
+3,1:43.0,96-84,Knicks,T. Kolek makes 3-pt jump shot from 23 ft (assist by O. Anunoby)
+3,1:19.0,96-84,76ers,J. Walker misses 2-pt layup from 3 ft (block by O. Anunoby)
+3,1:16.0,96-84,Knicks,Defensive rebound by M. McBride
+3,1:14.0,96-84,Knicks,T. Kolek misses 3-pt jump shot from 26 ft
+3,1:14.0,96-84,76ers,Defensive rebound by A. Bona
+3,1:01.0,96-84,76ers,T. Maxey misses 2-pt jump shot from 11 ft
+3,0:58.0,96-84,Knicks,Defensive rebound by M. Robinson
+3,0:46.0,96-84,Knicks,T. Kolek misses 2-pt jump shot from 5 ft
+3,0:45.0,96-84,76ers,Defensive rebound by T. Maxey
+3,0:39.0,99-84,76ers,Q. Grimes makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+3,0:32.0,99-84,Knicks,Shooting foul by Q. Grimes (drawn by M. McBride)
+3,0:32.0,99-84,76ers,P. George enters the game for J. Walker
+3,0:32.0,99-85,Knicks,M. McBride makes free throw 1 of 3
+3,0:32.0,99-86,Knicks,M. McBride makes free throw 2 of 3
+3,0:32.0,99-87,Knicks,M. McBride makes free throw 3 of 3
+3,0:26.0,99-87,76ers,T. Maxey misses 3-pt jump shot from 28 ft
+3,0:24.0,99-87,Knicks,Defensive rebound by M. McBride
+3,0:02.0,99-87,Knicks,T. Kolek misses 3-pt jump shot from 26 ft (block by T. Maxey)
+3,0:02.0,99-87,76ers,Defensive rebound by Q. Grimes
+4,11:35.0,99-87,Knicks,M. McBride misses 2-pt layup from 2 ft
+4,11:34.0,99-87,Knicks,Offensive rebound by K. Towns
+4,11:33.0,99-89,Knicks,K. Towns makes 2-pt layup from 2 ft
+4,11:15.0,99-89,76ers,Shooting foul by K. Towns (drawn by J. Embiid)
+4,11:15.0,100-89,76ers,J. Embiid makes free throw 1 of 2
+4,11:15.0,100-89,76ers,J. Embiid misses free throw 2 of 2
+4,11:13.0,100-89,Knicks,Defensive rebound by K. Towns
+4,11:03.0,100-89,Knicks,K. Towns misses 2-pt layup from 1 ft
+4,11:00.0,100-89,76ers,Defensive rebound by J. Embiid
+4,10:53.0,100-89,76ers,J. Embiid misses 2-pt jump shot from 21 ft
+4,10:51.0,100-89,Knicks,Defensive rebound by M. Bridges
+4,10:43.0,100-89,Knicks,J. Clarkson misses 3-pt jump shot from 26 ft
+4,10:41.0,100-89,76ers,Defensive rebound by P. George
+4,10:38.0,100-89,76ers,J. McCain misses 3-pt jump shot from 26 ft
+4,10:38.0,100-89,Knicks,Defensive rebound by K. Towns
+4,10:21.0,100-91,Knicks,K. Towns makes 2-pt layup from 3 ft
+4,10:12.0,103-91,76ers,J. McCain makes 3-pt jump shot from 23 ft (assist by P. George)
+4,9:59.0,103-93,Knicks,K. Towns makes 2-pt layup from 3 ft
+4,9:59.0,103-93,Knicks,Shooting foul by J. Embiid (drawn by K. Towns)
+4,9:59.0,103-94,Knicks,K. Towns makes free throw 1 of 1
+4,9:45.0,103-94,76ers,Turnover by J. Embiid (out of bounds lost ball)
+4,9:34.0,103-94,Knicks,K. Towns misses 3-pt jump shot from 28 ft
+4,9:31.0,103-94,76ers,Defensive rebound by P. George
+4,9:19.0,103-94,76ers,J. McCain misses 3-pt jump shot from 24 ft
+4,9:16.0,103-94,Knicks,Defensive rebound by T. Kolek
+4,9:11.0,103-94,Knicks,M. Bridges misses 3-pt jump shot from 23 ft (block by V. Edgecombe)
+4,9:07.0,103-94,76ers,Defensive rebound by P. George
+4,9:04.0,105-94,76ers,V. Edgecombe makes 2-pt dunk from 1 ft (assist by P. George)
+4,9:04.0,105-94,Knicks,New York full timeout
+4,8:43.0,105-94,Knicks,T. Kolek misses 2-pt layup from 2 ft (block by Q. Grimes)
+4,8:41.0,105-94,76ers,Defensive rebound by J. Embiid
+4,8:38.0,105-94,76ers,J. McCain misses 3-pt jump shot from 27 ft
+4,8:36.0,105-94,Knicks,Defensive rebound by K. Towns
+4,8:29.0,105-94,Knicks,M. Bridges misses 3-pt jump shot from 25 ft
+4,8:25.0,105-94,76ers,Defensive rebound by P. George
+4,8:12.0,107-94,76ers,J. Embiid makes 2-pt layup from 1 ft (assist by V. Edgecombe)
+4,7:48.0,107-94,Knicks,Personal foul by P. George (drawn by K. Towns)
+4,7:48.0,107-94,76ers,T. Maxey enters the game for J. McCain
+4,7:48.0,107-94,Knicks,O. Anunoby enters the game for M. Bridges
+4,7:48.0,107-94,Knicks,J. Brunson enters the game for M. McBride
+4,7:48.0,107-94,Knicks,M. Robinson enters the game for K. Towns
+4,7:40.0,107-96,Knicks,J. Brunson makes 2-pt jump shot from 14 ft
+4,7:23.0,107-96,76ers,Q. Grimes misses 2-pt layup from 1 ft
+4,7:20.0,107-96,76ers,Offensive rebound by Q. Grimes
+4,7:17.0,109-96,76ers,J. Embiid makes 2-pt layup from 1 ft (assist by Q. Grimes)
+4,7:17.0,109-96,76ers,Shooting foul by T. Kolek (drawn by J. Embiid)
+4,7:17.0,110-96,76ers,J. Embiid makes free throw 1 of 1
+4,7:00.0,110-98,Knicks,J. Brunson makes 2-pt jump shot from 11 ft
+4,6:39.0,110-98,76ers,J. Embiid misses 2-pt jump shot from 11 ft
+4,6:36.0,110-98,Knicks,Defensive rebound by M. Robinson
+4,6:27.0,110-98,Knicks,Turnover by J. Brunson (bad pass)
+4,6:27.0,110-98,76ers,A. Bona enters the game for J. Embiid
+4,6:04.0,110-98,76ers,V. Edgecombe misses 3-pt jump shot from 29 ft
+4,6:01.0,110-98,Knicks,Defensive rebound by J. Brunson
+4,5:55.0,110-98,Knicks,T. Kolek misses 3-pt jump shot from 26 ft
+4,5:55.0,110-98,76ers,Defensive rebound by A. Bona
+4,5:51.0,110-98,76ers,Shooting foul by M. Robinson (drawn by T. Maxey)
+4,5:51.0,110-98,Knicks,M. Bridges enters the game for T. Kolek
+4,5:51.0,110-98,76ers,T. Maxey misses free throw 1 of 2
+4,5:51.0,110-98,76ers,Offensive rebound by Team
+4,5:51.0,111-98,76ers,T. Maxey makes free throw 2 of 2
+4,5:40.0,111-98,Knicks,Shooting foul by A. Bona (drawn by O. Anunoby)
+4,5:40.0,111-99,Knicks,O. Anunoby makes free throw 1 of 2
+4,5:40.0,111-100,Knicks,O. Anunoby makes free throw 2 of 2
+4,5:22.0,113-100,76ers,T. Maxey makes 2-pt layup from 1 ft
+4,4:56.0,113-100,Knicks,Offensive foul by O. Anunoby (drawn by P. George)
+4,4:56.0,113-100,Knicks,Turnover by O. Anunoby (offensive foul)
+4,4:56.0,113-100,Knicks,K. Towns enters the game for M. Robinson
+4,4:35.0,115-100,76ers,T. Maxey makes 2-pt jump shot from 16 ft
+4,4:26.0,115-102,Knicks,K. Towns makes 2-pt jump shot from 6 ft (assist by J. Brunson)
+4,4:26.0,115-102,Knicks,Shooting foul by A. Bona (drawn by K. Towns)
+4,4:26.0,115-102,Knicks,M. McBride enters the game for J. Clarkson
+4,4:26.0,115-103,Knicks,K. Towns makes free throw 1 of 1
+4,4:04.0,118-103,76ers,T. Maxey makes 3-pt jump shot from 25 ft
+4,3:49.0,118-106,Knicks,O. Anunoby makes 3-pt jump shot from 24 ft (assist by M. Bridges)
+4,3:34.0,118-106,76ers,Philadelphia full timeout
+4,3:34.0,118-106,76ers,J. Embiid enters the game for A. Bona
+4,3:22.0,118-106,76ers,J. Embiid misses 2-pt layup from 1 ft (block by M. Bridges)
+4,3:18.0,118-106,Knicks,Defensive rebound by O. Anunoby
+4,3:11.0,118-109,Knicks,M. McBride makes 3-pt jump shot from 24 ft (assist by M. Bridges)
+4,2:51.0,121-109,76ers,P. George makes 3-pt jump shot from 24 ft
+4,2:35.0,121-112,Knicks,M. McBride makes 3-pt jump shot from 26 ft (assist by J. Brunson)
+4,2:10.0,121-112,76ers,Turnover by T. Maxey (bad pass; steal by K. Towns)
+4,2:08.0,121-112,Knicks,Shooting foul by J. Embiid (drawn by O. Anunoby)
+4,2:08.0,121-113,Knicks,O. Anunoby makes free throw 1 of 2
+4,2:08.0,121-114,Knicks,O. Anunoby makes free throw 2 of 2
+4,1:48.0,121-114,76ers,Shooting foul by M. McBride (drawn by T. Maxey)
+4,1:48.0,121-114,76ers,T. Maxey misses free throw 1 of 2
+4,1:48.0,121-114,76ers,Offensive rebound by Team
+4,1:48.0,122-114,76ers,T. Maxey makes free throw 2 of 2
+4,1:38.0,122-114,Knicks,J. Brunson misses 2-pt jump shot from 8 ft
+4,1:35.0,122-114,76ers,Defensive rebound by J. Embiid
+4,1:15.0,122-114,76ers,V. Edgecombe misses 3-pt jump shot from 24 ft
+4,1:12.0,122-114,76ers,Offensive rebound by P. George
+4,1:12.0,124-114,76ers,Q. Grimes makes 2-pt layup at rim (assist by P. George)
+4,1:12.0,124-114,Knicks,Turnover by M. Bridges (bad pass; steal by V. Edgecombe)
+4,1:10.0,124-114,76ers,Philadelphia full timeout
+4,1:06.0,126-114,76ers,V. Edgecombe makes 2-pt dunk from 1 ft (assist by P. George)
+4,1:00.0,126-114,Knicks,Personal foul by V. Edgecombe (drawn by J. Brunson)
+4,1:00.0,126-114,Knicks,J. Brunson misses free throw 1 of 2
+4,1:00.0,126-114,Knicks,Offensive rebound by Team
+4,1:00.0,126-115,Knicks,J. Brunson makes free throw 2 of 2
+4,0:50.0,126-115,76ers,Personal foul by M. McBride (drawn by V. Edgecombe)
+4,0:50.0,127-115,76ers,V. Edgecombe makes free throw 1 of 2
+4,0:50.0,128-115,76ers,V. Edgecombe makes free throw 2 of 2
+4,0:42.0,128-117,Knicks,J. Brunson makes 2-pt jump shot from 8 ft
+4,0:35.0,128-117,76ers,Turnover by P. George (lost ball; steal by K. Towns)
+4,0:33.0,128-117,Knicks,Shooting foul by P. George (drawn by K. Towns)
+4,0:33.0,128-118,Knicks,K. Towns makes free throw 1 of 2
+4,0:33.0,128-119,Knicks,K. Towns makes free throw 2 of 2
+4,0:24.0,130-119,76ers,J. Embiid makes 2-pt dunk from 1 ft (assist by V. Edgecombe)
+4,0:16.0,130-119,Knicks,Turnover by J. Brunson (bad pass; steal by Q. Grimes)

@@ -1,0 +1,485 @@
+quarter,time,score,team,description
+1,11:44.0,0-0,Rockets,J. Smith misses 2-pt jump shot from 17 ft
+1,11:42.0,0-0,Rockets,Offensive rebound by Team
+1,11:42.0,0-0,Mavericks,Loose ball foul by P. Washington (drawn by A. Şengün)
+1,11:32.0,0-0,Rockets,J. Smith misses 3-pt jump shot from 26 ft
+1,11:31.0,0-0,Mavericks,Defensive rebound by N. Marshall
+1,11:19.0,2-0,Mavericks,P. Washington makes 2-pt jump shot from 5 ft
+1,11:06.0,2-0,Rockets,T. Eason misses 2-pt jump shot from 10 ft
+1,11:05.0,2-0,Rockets,Offensive rebound by A. Şengün
+1,10:59.0,2-0,Rockets,A. Thompson misses 2-pt jump shot from 14 ft
+1,10:59.0,2-0,Mavericks,Defensive rebound by N. Marshall
+1,10:44.0,2-0,Mavericks,C. Flagg misses 2-pt jump shot from 18 ft
+1,10:43.0,2-0,Rockets,Defensive rebound by K. Durant
+1,10:32.0,2-3,Rockets,T. Eason makes 3-pt jump shot from 27 ft (assist by A. Thompson)
+1,10:23.0,2-3,Mavericks,N. Marshall misses 2-pt layup from 4 ft
+1,10:22.0,2-3,Rockets,Defensive rebound by A. Şengün
+1,10:15.0,2-3,Rockets,Shooting foul by D. Gafford (drawn by A. Thompson)
+1,10:15.0,2-3,Rockets,A. Thompson misses free throw 1 of 2
+1,10:15.0,2-3,Rockets,Offensive rebound by Team
+1,10:15.0,2-4,Rockets,A. Thompson makes free throw 2 of 2
+1,10:04.0,2-4,Mavericks,C. Flagg misses 2-pt hook shot from 7 ft
+1,10:03.0,2-4,Rockets,Defensive rebound by K. Durant
+1,9:58.0,2-4,Rockets,T. Eason misses 2-pt layup from 3 ft (block by C. Flagg)
+1,9:57.0,2-4,Mavericks,Defensive rebound by C. Flagg
+1,9:49.0,2-4,Mavericks,N. Marshall misses 2-pt jump shot from 10 ft
+1,9:48.0,2-4,Rockets,Defensive rebound by K. Durant
+1,9:32.0,2-4,Rockets,A. Şengün misses 2-pt hook shot from 5 ft
+1,9:31.0,2-4,Mavericks,Defensive rebound by N. Marshall
+1,9:25.0,4-4,Mavericks,N. Marshall makes 2-pt layup from 4 ft (assist by C. Flagg)
+1,9:02.0,4-4,Rockets,A. Şengün misses 2-pt hook shot from 6 ft
+1,9:01.0,4-4,Rockets,Offensive rebound by T. Eason
+1,8:48.0,4-4,Rockets,K. Durant misses 2-pt jump shot from 20 ft
+1,8:46.0,4-4,Mavericks,Defensive rebound by D. Gafford
+1,8:40.0,4-4,Mavericks,Personal foul by T. Eason (drawn by C. Flagg)
+1,8:33.0,4-4,Mavericks,M. Christie misses 2-pt jump shot from 17 ft
+1,8:32.0,4-4,Rockets,Defensive rebound by K. Durant
+1,8:22.0,4-4,Rockets,K. Durant misses 2-pt jump shot from 9 ft
+1,8:21.0,4-4,Mavericks,Defensive rebound by P. Washington
+1,8:15.0,4-4,Mavericks,Shooting foul by A. Şengün (drawn by C. Flagg)
+1,8:15.0,5-4,Mavericks,C. Flagg makes free throw 1 of 2
+1,8:15.0,6-4,Mavericks,C. Flagg makes free throw 2 of 2
+1,8:04.0,6-4,Rockets,A. Şengün misses 2-pt layup from 5 ft
+1,8:04.0,6-4,Rockets,Offensive rebound by Team
+1,8:04.0,6-4,Mavericks,D. Powell enters the game for D. Gafford
+1,7:52.0,6-6,Rockets,K. Durant makes 2-pt jump shot from 8 ft (assist by A. Şengün)
+1,7:34.0,8-6,Mavericks,C. Flagg makes 2-pt layup from 5 ft
+1,7:18.0,8-6,Rockets,A. Şengün misses 2-pt layup from 4 ft
+1,7:17.0,8-6,Mavericks,Defensive rebound by D. Powell
+1,7:10.0,8-6,Mavericks,Shooting foul by K. Durant (drawn by N. Marshall)
+1,7:10.0,8-6,Mavericks,N. Marshall misses free throw 1 of 2
+1,7:10.0,8-6,Mavericks,Offensive rebound by Team
+1,7:10.0,8-6,Rockets,J. Okogie enters the game for J. Smith
+1,7:10.0,8-6,Mavericks,N. Marshall misses free throw 2 of 2
+1,7:10.0,8-6,Rockets,Defensive rebound by T. Eason
+1,6:54.0,8-9,Rockets,J. Okogie makes 3-pt jump shot from 23 ft (assist by K. Durant)
+1,6:42.0,8-9,Mavericks,D. Powell misses 2-pt layup from 4 ft
+1,6:41.0,8-9,Rockets,Defensive rebound by J. Okogie
+1,6:34.0,8-11,Rockets,A. Thompson makes 2-pt jump shot from 10 ft
+1,6:18.0,8-11,Mavericks,P. Washington misses 3-pt jump shot from 26 ft
+1,6:17.0,8-11,Rockets,Defensive rebound by T. Eason
+1,6:12.0,8-13,Rockets,K. Durant makes 2-pt jump shot from 12 ft (assist by T. Eason)
+1,6:12.0,8-13,Mavericks,Dallas full timeout
+1,6:12.0,8-13,Mavericks,B. Williams enters the game for N. Marshall
+1,5:56.0,8-13,Mavericks,Turnover by P. Washington (lost ball; steal by T. Eason)
+1,5:52.0,8-15,Rockets,T. Eason makes 2-pt layup from 6 ft (assist by K. Durant)
+1,5:31.0,8-15,Mavericks,B. Williams misses 3-pt jump shot from 25 ft
+1,5:30.0,8-15,Mavericks,Offensive rebound by P. Washington
+1,5:22.0,10-15,Mavericks,C. Flagg makes 2-pt jump shot from 10 ft
+1,5:22.0,10-15,Mavericks,Shooting foul by J. Okogie (drawn by C. Flagg)
+1,5:22.0,10-15,Mavericks,D. Gafford enters the game for D. Powell
+1,5:22.0,10-15,Rockets,R. Sheppard enters the game for A. Thompson
+1,5:22.0,11-15,Mavericks,C. Flagg makes free throw 1 of 1
+1,5:09.0,11-15,Rockets,J. Okogie misses 3-pt jump shot from 23 ft
+1,5:09.0,11-15,Mavericks,Defensive rebound by C. Flagg
+1,5:00.0,14-15,Mavericks,B. Williams makes 3-pt jump shot from 24 ft (assist by D. Gafford)
+1,4:47.0,14-17,Rockets,K. Durant makes 2-pt jump shot from 10 ft (assist by A. Şengün)
+1,4:34.0,14-17,Mavericks,M. Christie misses 2-pt jump shot from 23 ft
+1,4:32.0,14-17,Mavericks,Offensive rebound by P. Washington
+1,4:26.0,16-17,Mavericks,C. Flagg makes 2-pt layup from 4 ft (assist by P. Washington)
+1,4:12.0,16-17,Rockets,R. Sheppard misses 3-pt jump shot from 29 ft
+1,4:10.0,16-17,Mavericks,Defensive rebound by D. Gafford
+1,4:03.0,16-17,Mavericks,P. Washington misses 2-pt layup from 2 ft
+1,4:02.0,16-17,Mavericks,Offensive rebound by D. Gafford
+1,4:02.0,18-17,Mavericks,D. Gafford makes 2-pt dunk at rim
+1,3:45.0,18-17,Rockets,A. Şengün misses 2-pt jump shot from 11 ft
+1,3:44.0,18-17,Rockets,Offensive rebound by J. Okogie
+1,3:44.0,18-19,Rockets,J. Okogie makes 2-pt layup from 3 ft
+1,3:28.0,18-19,Mavericks,M. Christie misses 2-pt jump shot from 6 ft
+1,3:23.0,18-19,Rockets,Defensive rebound by J. Okogie
+1,3:17.0,18-21,Rockets,T. Eason makes 2-pt layup from 3 ft (assist by J. Okogie)
+1,2:58.0,20-21,Mavericks,B. Williams makes 2-pt layup from 5 ft
+1,2:46.0,20-21,Rockets,A. Şengün misses 2-pt dunk from 3 ft
+1,2:45.0,20-21,Rockets,Offensive rebound by T. Eason
+1,2:39.0,20-21,Rockets,J. Okogie misses 3-pt jump shot from 23 ft
+1,2:37.0,20-21,Mavericks,Defensive rebound by Team
+1,2:37.0,20-21,Rockets,Houston full timeout
+1,2:37.0,20-21,Mavericks,N. Marshall enters the game for M. Christie
+1,2:37.0,20-21,Mavericks,C. Martin enters the game for C. Flagg
+1,2:37.0,20-21,Mavericks,K. Thompson enters the game for P. Washington
+1,2:37.0,20-21,Rockets,C. Capela enters the game for K. Durant
+1,2:37.0,20-21,Rockets,D. Finney-Smith enters the game for T. Eason
+1,2:37.0,20-21,Rockets,J. Smith enters the game for J. Okogie
+1,2:37.0,20-21,Rockets,A. Thompson enters the game for A. Şengün
+1,2:27.0,22-21,Mavericks,B. Williams makes 2-pt layup from 4 ft
+1,2:02.0,22-21,Rockets,Turnover by R. Sheppard (bad pass; steal by C. Martin)
+1,1:57.0,22-21,Mavericks,B. Williams misses 2-pt layup from 4 ft
+1,1:57.0,22-21,Rockets,Defensive rebound by Team
+1,1:57.0,22-21,Mavericks,M. Cisse enters the game for D. Gafford
+1,1:48.0,22-23,Rockets,R. Sheppard makes 2-pt jump shot from 18 ft
+1,1:32.0,22-23,Mavericks,K. Thompson misses 3-pt jump shot from 26 ft
+1,1:31.0,22-23,Rockets,Defensive rebound by J. Smith
+1,1:14.0,22-26,Rockets,J. Smith makes 3-pt jump shot from 26 ft (assist by A. Thompson)
+1,0:56.0,25-26,Mavericks,B. Williams makes 3-pt jump shot from 25 ft (assist by C. Martin)
+1,0:39.0,25-28,Rockets,C. Capela makes 2-pt hook shot from 8 ft (assist by R. Sheppard)
+1,0:37.0,27-28,Mavericks,B. Williams makes 2-pt layup from 5 ft
+1,0:37.0,27-28,Mavericks,Shooting foul by R. Sheppard (drawn by B. Williams)
+1,0:37.0,27-28,Rockets,K. Durant enters the game for D. Finney-Smith
+1,0:37.0,28-28,Mavericks,B. Williams makes free throw 1 of 1
+1,0:21.0,28-30,Rockets,C. Capela makes 2-pt dunk from 3 ft (assist by K. Durant)
+1,0:09.0,28-30,Mavericks,Turnover by B. Williams (bad pass; steal by A. Thompson)
+1,0:09.0,28-30,Mavericks,Clear path foul by A. Thompson
+1,0:09.0,28-30,Mavericks,Instant Replay (Request: Ruling Stands)
+1,0:09.0,28-31,Rockets,A. Thompson makes clear path free throw 1 of 2
+1,0:09.0,28-31,Mavericks,M. Christie enters the game for B. Williams
+1,0:09.0,28-31,Rockets,A. Thompson misses clear path free throw 2 of 2
+1,0:09.0,28-31,Rockets,Offensive rebound by Team
+1,0:01.0,28-31,Rockets,R. Sheppard misses 3-pt jump shot from 25 ft
+1,0:00.0,28-31,Rockets,Offensive rebound by Team
+2,11:51.0,28-31,Mavericks,K. Thompson misses 3-pt jump shot from 26 ft
+2,11:50.0,28-31,Mavericks,Offensive rebound by K. Thompson
+2,11:40.0,28-31,Mavericks,N. Marshall misses 2-pt jump shot from 13 ft
+2,11:40.0,28-31,Rockets,Defensive rebound by C. Capela
+2,11:24.0,28-33,Rockets,R. Sheppard makes 2-pt jump shot from 19 ft (assist by A. Thompson)
+2,11:04.0,30-33,Mavericks,D. Gafford makes 2-pt layup from 4 ft
+2,10:43.0,30-35,Rockets,D. Finney-Smith makes 2-pt jump shot from 4 ft
+2,10:26.0,30-35,Mavericks,K. Thompson misses 2-pt jump shot from 16 ft
+2,10:26.0,30-35,Mavericks,Offensive rebound by D. Gafford
+2,10:25.0,32-35,Mavericks,D. Gafford makes 2-pt layup at rim
+2,10:12.0,32-35,Rockets,D. Finney-Smith misses 3-pt jump shot from 25 ft
+2,10:12.0,32-35,Mavericks,Defensive rebound by C. Martin
+2,9:54.0,32-35,Mavericks,D. Gafford misses 2-pt layup from 5 ft (block by R. Sheppard)
+2,9:54.0,32-35,Mavericks,Offensive rebound by Team
+2,9:52.0,35-35,Mavericks,K. Thompson makes 3-pt jump shot from 24 ft (assist by N. Marshall)
+2,9:29.0,35-37,Rockets,C. Capela makes 2-pt hook shot from 5 ft (assist by K. Durant)
+2,9:07.0,35-37,Mavericks,Turnover by K. Thompson (lost ball; steal by R. Sheppard)
+2,9:04.0,35-37,Rockets,Personal foul by N. Marshall (drawn by R. Sheppard)
+2,9:04.0,35-37,Mavericks,C. Flagg enters the game for N. Marshall
+2,9:04.0,35-37,Mavericks,R. Nembhard enters the game for C. Martin
+2,9:04.0,35-37,Mavericks,P. Washington enters the game for B. Williams
+2,9:04.0,35-37,Rockets,J. Smith enters the game for A. Thompson
+2,8:55.0,35-37,Rockets,C. Capela misses 2-pt layup from 4 ft
+2,8:54.0,35-37,Mavericks,Defensive rebound by D. Gafford
+2,8:47.0,35-37,Mavericks,D. Gafford misses 2-pt layup from 3 ft
+2,8:46.0,35-37,Rockets,Defensive rebound by K. Durant
+2,8:41.0,35-37,Rockets,K. Durant misses 3-pt jump shot from 26 ft
+2,8:38.0,35-37,Mavericks,Defensive rebound by C. Flagg
+2,8:22.0,35-37,Mavericks,C. Flagg misses 3-pt jump shot from 25 ft
+2,8:20.0,35-37,Rockets,Defensive rebound by J. Smith
+2,8:07.0,35-37,Rockets,J. Smith misses 2-pt jump shot from 14 ft
+2,8:05.0,35-37,Mavericks,Defensive rebound by D. Gafford
+2,7:59.0,37-37,Mavericks,C. Flagg makes 2-pt dunk from 4 ft (assist by R. Nembhard)
+2,7:57.0,37-37,Rockets,Houston full timeout
+2,7:57.0,37-37,Mavericks,D. Powell enters the game for D. Gafford
+2,7:57.0,37-37,Rockets,T. Eason enters the game for C. Capela
+2,7:57.0,37-37,Rockets,A. Şengün enters the game for D. Finney-Smith
+2,7:57.0,37-37,Rockets,A. Thompson enters the game for R. Sheppard
+2,7:40.0,37-37,Rockets,A. Şengün misses 2-pt jump shot from 9 ft
+2,7:39.0,37-37,Mavericks,Defensive rebound by D. Powell
+2,7:27.0,39-37,Mavericks,C. Flagg makes 2-pt jump shot from 8 ft (assist by R. Nembhard)
+2,7:16.0,39-40,Rockets,J. Smith makes 3-pt jump shot from 26 ft (assist by A. Thompson)
+2,7:01.0,39-40,Mavericks,C. Flagg misses 2-pt jump shot from 17 ft
+2,7:00.0,39-40,Rockets,Defensive rebound by J. Smith
+2,6:52.0,39-42,Rockets,J. Smith makes 2-pt jump shot from 12 ft (assist by A. Thompson)
+2,6:38.0,39-42,Mavericks,R. Nembhard misses 2-pt jump shot from 15 ft
+2,6:37.0,39-42,Rockets,Defensive rebound by J. Smith
+2,6:25.0,39-42,Rockets,J. Smith misses 2-pt jump shot from 11 ft
+2,6:24.0,39-42,Mavericks,Defensive rebound by P. Washington
+2,6:15.0,41-42,Mavericks,P. Washington makes 2-pt layup from 3 ft (assist by R. Nembhard)
+2,5:52.0,41-42,Rockets,K. Durant misses 2-pt jump shot from 9 ft
+2,5:51.0,41-42,Mavericks,Defensive rebound by D. Powell
+2,5:44.0,41-42,Mavericks,K. Thompson misses 3-pt jump shot from 26 ft
+2,5:42.0,41-42,Rockets,Defensive rebound by T. Eason
+2,5:31.0,41-42,Rockets,A. Thompson misses 2-pt layup from 6 ft
+2,5:30.0,41-42,Rockets,Offensive rebound by A. Thompson
+2,5:30.0,41-42,Rockets,Shooting foul by D. Powell (drawn by A. Thompson)
+2,5:30.0,41-43,Rockets,A. Thompson makes free throw 1 of 2
+2,5:30.0,41-43,Mavericks,M. Christie enters the game for K. Thompson
+2,5:30.0,41-43,Rockets,J. Okogie enters the game for K. Durant
+2,5:30.0,41-44,Rockets,A. Thompson makes free throw 2 of 2
+2,5:18.0,41-44,Mavericks,R. Nembhard misses 3-pt jump shot from 26 ft
+2,5:15.0,41-44,Rockets,Defensive rebound by J. Okogie
+2,5:05.0,41-46,Rockets,A. Şengün makes 2-pt hook shot from 8 ft (assist by J. Smith)
+2,5:04.0,41-46,Mavericks,Dallas full timeout
+2,5:04.0,41-46,Mavericks,N. Marshall enters the game for R. Nembhard
+2,4:49.0,41-46,Mavericks,C. Flagg misses 2-pt jump shot from 6 ft
+2,4:47.0,41-46,Rockets,Defensive rebound by A. Şengün
+2,4:38.0,41-46,Rockets,A. Şengün misses 2-pt hook shot from 9 ft
+2,4:38.0,41-46,Mavericks,Defensive rebound by C. Flagg
+2,4:32.0,41-46,Mavericks,Shooting foul by J. Smith (drawn by P. Washington)
+2,4:32.0,41-46,Mavericks,P. Washington misses free throw 1 of 2
+2,4:32.0,41-46,Mavericks,Offensive rebound by Team
+2,4:32.0,41-46,Mavericks,P. Washington misses free throw 2 of 2
+2,4:32.0,41-46,Rockets,Defensive rebound by A. Şengün
+2,4:15.0,41-46,Rockets,Shooting foul by D. Powell (drawn by A. Şengün)
+2,4:15.0,41-46,Rockets,A. Şengün misses free throw 1 of 2
+2,4:15.0,41-46,Rockets,Offensive rebound by Team
+2,4:15.0,41-46,Mavericks,D. Gafford enters the game for D. Powell
+2,4:15.0,41-47,Rockets,A. Şengün makes free throw 2 of 2
+2,3:58.0,44-47,Mavericks,M. Christie makes 3-pt jump shot from 25 ft (assist by C. Flagg)
+2,3:31.0,44-49,Rockets,A. Şengün makes 2-pt hook shot from 7 ft
+2,3:22.0,44-49,Mavericks,Turnover by P. Washington (lost ball; steal by T. Eason)
+2,3:12.0,44-49,Rockets,J. Okogie misses 2-pt layup from 2 ft
+2,3:12.0,44-49,Rockets,Offensive rebound by A. Şengün
+2,2:58.0,44-52,Rockets,J. Smith makes 3-pt jump shot from 26 ft (assist by T. Eason)
+2,2:49.0,44-52,Mavericks,Personal foul by J. Okogie (drawn by C. Flagg)
+2,2:39.0,44-52,Mavericks,P. Washington misses 2-pt layup from 4 ft
+2,2:38.0,44-52,Mavericks,Offensive rebound by D. Gafford
+2,2:38.0,46-52,Mavericks,D. Gafford makes 2-pt dunk at rim
+2,2:21.0,46-52,Rockets,T. Eason misses 2-pt jump shot from 12 ft
+2,2:20.0,46-52,Rockets,Offensive rebound by T. Eason
+2,2:20.0,46-52,Rockets,T. Eason misses 2-pt layup at rim
+2,2:19.0,46-52,Rockets,Offensive rebound by J. Smith
+2,1:59.0,46-52,Rockets,T. Eason misses 2-pt jump shot from 14 ft
+2,1:58.0,46-52,Rockets,Offensive rebound by A. Şengün
+2,1:56.0,46-52,Rockets,A. Şengün misses 2-pt layup at rim
+2,1:54.0,46-52,Rockets,Offensive rebound by A. Thompson
+2,1:53.0,46-54,Rockets,A. Thompson makes 2-pt layup from 3 ft
+2,1:40.0,48-54,Mavericks,D. Gafford makes 2-pt dunk from 3 ft (assist by N. Marshall)
+2,1:20.0,48-54,Rockets,A. Şengün misses 2-pt jump shot from 9 ft
+2,1:19.0,48-54,Mavericks,Defensive rebound by Team
+2,1:19.0,48-54,Rockets,Loose ball foul by A. Şengün (drawn by D. Gafford)
+2,1:19.0,48-54,Rockets,K. Durant enters the game for T. Eason
+2,1:03.0,48-54,Mavericks,Shooting foul by J. Smith (drawn by N. Marshall)
+2,1:03.0,48-54,Mavericks,N. Marshall misses free throw 1 of 2
+2,1:03.0,48-54,Mavericks,Offensive rebound by Team
+2,1:03.0,49-54,Mavericks,N. Marshall makes free throw 2 of 2
+2,0:51.0,49-54,Rockets,A. Thompson misses 2-pt layup from 4 ft
+2,0:51.0,49-54,Mavericks,Defensive rebound by D. Gafford
+2,0:45.0,49-54,Mavericks,M. Christie misses 2-pt layup from 6 ft (block by J. Okogie)
+2,0:45.0,49-54,Mavericks,Offensive rebound by Team
+2,0:38.0,51-54,Mavericks,N. Marshall makes 2-pt layup from 5 ft
+2,0:33.0,51-56,Rockets,J. Smith makes 2-pt dunk from 3 ft (assist by A. Thompson)
+2,0:19.0,51-56,Mavericks,C. Flagg misses 2-pt layup from 3 ft
+2,0:18.0,51-56,Rockets,Defensive rebound by A. Şengün
+2,0:06.0,51-59,Rockets,K. Durant makes 3-pt jump shot from 23 ft (assist by A. Şengün)
+2,0:01.0,51-59,Mavericks,N. Marshall misses 2-pt jump shot from 10 ft
+2,0:01.0,51-59,Mavericks,Offensive rebound by D. Gafford
+2,0:01.0,51-59,Mavericks,D. Gafford misses 2-pt layup from 1 ft
+2,0:01.0,51-59,Mavericks,Offensive rebound by Team
+3,11:49.0,51-59,Mavericks,P. Washington misses 2-pt layup from 5 ft (block by J. Smith)
+3,11:49.0,51-59,Mavericks,Offensive rebound by Team
+3,11:42.0,51-59,Mavericks,Turnover by M. Christie (out of bounds lost ball)
+3,11:32.0,51-61,Rockets,A. Şengün makes 2-pt dunk from 3 ft (assist by J. Smith)
+3,11:14.0,51-61,Mavericks,C. Flagg misses 2-pt layup from 6 ft
+3,11:13.0,51-61,Mavericks,Offensive rebound by C. Flagg
+3,11:13.0,53-61,Mavericks,C. Flagg makes 2-pt layup at rim
+3,10:50.0,53-63,Rockets,K. Durant makes 2-pt jump shot from 15 ft
+3,10:37.0,53-63,Mavericks,N. Marshall misses 3-pt jump shot from 27 ft
+3,10:36.0,53-63,Rockets,Defensive rebound by A. Thompson
+3,10:28.0,53-63,Rockets,T. Eason misses 3-pt jump shot from 25 ft
+3,10:26.0,53-63,Mavericks,Defensive rebound by M. Christie
+3,10:12.0,55-63,Mavericks,P. Washington makes 2-pt jump shot from 5 ft
+3,10:12.0,55-63,Mavericks,Shooting foul by A. Şengün (drawn by P. Washington)
+3,10:12.0,56-63,Mavericks,P. Washington makes free throw 1 of 1
+3,9:59.0,56-63,Rockets,K. Durant misses 2-pt jump shot from 10 ft
+3,9:59.0,56-63,Mavericks,Defensive rebound by N. Marshall
+3,9:49.0,56-63,Mavericks,M. Christie misses 3-pt jump shot from 23 ft
+3,9:48.0,56-63,Rockets,Defensive rebound by A. Şengün
+3,9:37.0,56-65,Rockets,A. Şengün makes 2-pt layup from 3 ft (assist by A. Thompson)
+3,9:21.0,56-65,Mavericks,Shooting foul by T. Eason (drawn by C. Flagg)
+3,9:21.0,56-65,Rockets,Houston full timeout
+3,9:21.0,56-65,Rockets,Instant Replay (Challenge: Stands)
+3,9:21.0,56-65,Mavericks,C. Flagg misses free throw 1 of 2
+3,9:21.0,56-65,Mavericks,Offensive rebound by Team
+3,9:21.0,57-65,Mavericks,C. Flagg makes free throw 2 of 2
+3,9:05.0,57-65,Rockets,A. Thompson misses 2-pt jump shot from 10 ft
+3,9:03.0,57-65,Rockets,Offensive rebound by A. Şengün
+3,8:59.0,57-65,Rockets,T. Eason misses 3-pt jump shot from 27 ft
+3,8:58.0,57-65,Rockets,Offensive rebound by A. Thompson
+3,8:58.0,57-65,Rockets,J. Smith misses 3-pt jump shot from 25 ft
+3,8:56.0,57-65,Rockets,Offensive rebound by A. Şengün
+3,8:55.0,57-65,Rockets,Shooting foul by C. Flagg (drawn by A. Thompson)
+3,8:55.0,57-66,Rockets,A. Thompson makes free throw 1 of 2
+3,8:55.0,57-67,Rockets,A. Thompson makes free throw 2 of 2
+3,8:38.0,57-67,Mavericks,P. Washington misses 2-pt layup from 4 ft
+3,8:37.0,57-67,Mavericks,Offensive rebound by D. Gafford
+3,8:37.0,59-67,Mavericks,D. Gafford makes 2-pt dunk at rim
+3,8:23.0,59-69,Rockets,A. Thompson makes 2-pt layup from 4 ft
+3,8:12.0,62-69,Mavericks,M. Christie makes 3-pt jump shot from 25 ft (assist by C. Flagg)
+3,7:57.0,62-69,Rockets,T. Eason misses 2-pt jump shot from 17 ft
+3,7:56.0,62-69,Rockets,Offensive rebound by J. Smith
+3,7:56.0,62-71,Rockets,J. Smith makes 2-pt layup at rim
+3,7:37.0,62-71,Mavericks,M. Christie misses 2-pt jump shot from 7 ft (block by J. Smith)
+3,7:37.0,62-71,Rockets,Defensive rebound by A. Şengün
+3,7:33.0,62-73,Rockets,T. Eason makes 2-pt dunk from 2 ft (assist by A. Thompson)
+3,7:13.0,64-73,Mavericks,P. Washington makes 2-pt jump shot from 6 ft
+3,6:55.0,64-76,Rockets,T. Eason makes 3-pt jump shot from 23 ft (assist by K. Durant)
+3,6:42.0,64-76,Mavericks,M. Christie misses 2-pt layup from 4 ft
+3,6:41.0,64-76,Rockets,Defensive rebound by A. Şengün
+3,6:27.0,64-76,Rockets,Shooting foul by P. Washington (drawn by A. Şengün)
+3,6:27.0,64-77,Rockets,A. Şengün makes free throw 1 of 2
+3,6:27.0,64-77,Mavericks,M. Cisse enters the game for D. Gafford
+3,6:27.0,64-77,Mavericks,K. Thompson enters the game for N. Marshall
+3,6:27.0,64-77,Rockets,J. Okogie enters the game for J. Smith
+3,6:27.0,64-77,Rockets,A. Şengün misses free throw 2 of 2
+3,6:25.0,64-77,Mavericks,Defensive rebound by C. Flagg
+3,6:08.0,67-77,Mavericks,M. Christie makes 3-pt jump shot from 26 ft (assist by C. Flagg)
+3,5:58.0,67-79,Rockets,A. Thompson makes 2-pt layup from 3 ft
+3,5:42.0,69-79,Mavericks,C. Flagg makes 2-pt jump shot from 7 ft
+3,5:29.0,69-79,Rockets,Turnover by A. Şengün (lost ball; steal by P. Washington)
+3,5:25.0,69-79,Mavericks,Turnover by P. Washington (lost ball; steal by K. Durant)
+3,5:20.0,69-82,Rockets,J. Okogie makes 3-pt jump shot from 23 ft (assist by T. Eason)
+3,5:19.0,69-82,Mavericks,Dallas full timeout
+3,5:19.0,69-82,Mavericks,C. Martin enters the game for P. Washington
+3,5:19.0,69-82,Rockets,D. Finney-Smith enters the game for T. Eason
+3,5:04.0,69-82,Mavericks,C. Martin misses 2-pt jump shot from 22 ft
+3,5:03.0,69-82,Rockets,Defensive rebound by J. Okogie
+3,4:52.0,69-82,Rockets,A. Şengün misses 2-pt jump shot from 13 ft
+3,4:51.0,69-82,Mavericks,Defensive rebound by M. Cisse
+3,4:45.0,71-82,Mavericks,M. Cisse makes 2-pt dunk from 3 ft (assist by C. Martin)
+3,4:33.0,71-82,Rockets,Personal foul by M. Cisse (drawn by A. Şengün)
+3,4:33.0,71-82,Mavericks,R. Nembhard enters the game for M. Christie
+3,4:33.0,71-82,Rockets,R. Sheppard enters the game for A. Thompson
+3,4:21.0,71-82,Rockets,K. Durant misses 2-pt jump shot from 17 ft
+3,4:18.0,71-82,Rockets,Offensive rebound by D. Finney-Smith
+3,4:15.0,71-82,Rockets,Turnover by K. Durant (lost ball; steal by C. Martin)
+3,4:12.0,71-82,Mavericks,Shooting foul by J. Okogie (drawn by C. Flagg)
+3,4:12.0,71-82,Mavericks,C. Flagg misses free throw 1 of 2
+3,4:12.0,71-82,Mavericks,Offensive rebound by Team
+3,4:12.0,72-82,Mavericks,C. Flagg makes free throw 2 of 2
+3,3:53.0,72-82,Rockets,K. Durant misses 2-pt jump shot from 12 ft
+3,3:50.0,72-82,Mavericks,Defensive rebound by C. Flagg
+3,3:35.0,72-82,Mavericks,Shooting foul by R. Sheppard (drawn by M. Cisse)
+3,3:35.0,72-82,Mavericks,M. Cisse misses free throw 1 of 2
+3,3:35.0,72-82,Mavericks,Offensive rebound by Team
+3,3:35.0,73-82,Mavericks,M. Cisse makes free throw 2 of 2
+3,3:14.0,73-84,Rockets,J. Okogie makes 2-pt dunk from 1 ft (assist by D. Finney-Smith)
+3,2:56.0,76-84,Mavericks,C. Flagg makes 3-pt jump shot from 27 ft (assist by C. Martin)
+3,2:39.0,76-84,Rockets,D. Finney-Smith misses 3-pt jump shot from 23 ft
+3,2:38.0,76-84,Mavericks,Defensive rebound by C. Martin
+3,2:25.0,78-84,Mavericks,C. Flagg makes 2-pt layup from 12 ft (assist by C. Martin)
+3,2:11.0,78-84,Rockets,K. Durant misses 2-pt jump shot from 21 ft
+3,2:10.0,78-84,Mavericks,Defensive rebound by C. Flagg
+3,2:05.0,78-84,Mavericks,C. Martin misses 2-pt layup from 4 ft (block by D. Finney-Smith)
+3,2:04.0,78-84,Rockets,Defensive rebound by A. Şengün
+3,1:58.0,78-87,Rockets,J. Okogie makes 3-pt jump shot from 23 ft (assist by A. Şengün)
+3,1:28.0,81-87,Mavericks,C. Martin makes 3-pt jump shot from 26 ft (assist by C. Flagg)
+3,1:07.0,81-87,Rockets,K. Durant misses 3-pt jump shot from 23 ft
+3,1:05.0,81-87,Rockets,Offensive rebound by A. Şengün
+3,1:04.0,81-87,Rockets,Turnover by A. Şengün (bad pass)
+3,1:04.0,81-87,Rockets,Loose ball foul by K. Durant (drawn by C. Martin)
+3,1:04.0,81-87,Mavericks,C. Martin misses free throw 1 of 2
+3,1:04.0,81-87,Mavericks,Offensive rebound by Team
+3,1:04.0,81-87,Mavericks,N. Marshall enters the game for C. Flagg
+3,1:04.0,81-87,Rockets,C. Capela enters the game for K. Durant
+3,1:04.0,81-87,Rockets,J. Smith enters the game for D. Finney-Smith
+3,1:04.0,81-87,Rockets,A. Thompson enters the game for A. Şengün
+3,1:04.0,82-87,Mavericks,C. Martin makes free throw 2 of 2
+3,0:54.0,82-87,Rockets,Personal foul by K. Thompson (drawn by A. Thompson)
+3,0:47.0,82-87,Rockets,R. Sheppard misses 3-pt jump shot from 25 ft
+3,0:46.0,82-87,Mavericks,Defensive rebound by N. Marshall
+3,0:29.0,82-87,Mavericks,R. Nembhard misses 2-pt jump shot from 8 ft
+3,0:28.0,82-87,Rockets,Defensive rebound by C. Capela
+3,0:08.0,82-87,Rockets,A. Thompson misses 2-pt jump shot from 6 ft
+3,0:07.0,82-87,Mavericks,Defensive rebound by C. Martin
+3,0:00.0,82-87,Mavericks,N. Marshall misses 2-pt jump shot from 9 ft
+3,0:00.0,82-87,Mavericks,Offensive rebound by C. Martin
+3,0:00.0,82-87,Mavericks,C. Martin misses 2-pt layup from 2 ft
+3,0:00.0,82-87,Mavericks,Offensive rebound by Team
+4,11:43.0,82-87,Rockets,C. Capela misses 2-pt hook shot from 6 ft
+4,11:42.0,82-87,Mavericks,Defensive rebound by Team
+4,11:42.0,82-87,Rockets,Loose ball foul by C. Capela (drawn by D. Gafford)
+4,11:28.0,82-87,Mavericks,Turnover by K. Thompson (bad pass; steal by R. Sheppard)
+4,11:24.0,82-87,Rockets,J. Okogie misses 3-pt jump shot from 23 ft
+4,11:23.0,82-87,Mavericks,Defensive rebound by Team
+4,11:12.0,82-87,Mavericks,Turnover by R. Nembhard (bad pass; steal by C. Capela)
+4,11:09.0,82-87,Rockets,J. Okogie misses 2-pt layup from 5 ft (block by R. Nembhard)
+4,11:09.0,82-87,Rockets,Offensive rebound by Team
+4,11:09.0,82-87,Mavericks,Dallas full timeout
+4,11:09.0,82-87,Mavericks,Instant Replay (Challenge: Stands)
+4,11:00.0,82-87,Rockets,A. Thompson misses 2-pt jump shot from 13 ft
+4,10:59.0,82-87,Mavericks,Defensive rebound by D. Gafford
+4,10:38.0,82-87,Mavericks,K. Thompson misses 3-pt jump shot from 27 ft
+4,10:37.0,82-87,Rockets,Defensive rebound by C. Capela
+4,10:25.0,82-89,Rockets,R. Sheppard makes 2-pt jump shot from 14 ft (assist by C. Capela)
+4,10:09.0,82-89,Mavericks,R. Nembhard misses 3-pt jump shot from 25 ft
+4,10:08.0,82-89,Rockets,Defensive rebound by A. Thompson
+4,10:00.0,82-89,Rockets,R. Sheppard misses 2-pt jump shot from 16 ft
+4,9:59.0,82-89,Mavericks,Defensive rebound by R. Nembhard
+4,9:54.0,82-89,Mavericks,Turnover by C. Flagg (lost ball; steal by J. Okogie)
+4,9:45.0,82-89,Rockets,C. Capela misses 2-pt layup from 4 ft
+4,9:44.0,82-89,Mavericks,Defensive rebound by C. Flagg
+4,9:30.0,82-89,Mavericks,Shooting foul by R. Sheppard (drawn by N. Marshall)
+4,9:30.0,82-89,Mavericks,N. Marshall misses free throw 1 of 2
+4,9:30.0,82-89,Mavericks,Offensive rebound by Team
+4,9:30.0,82-89,Mavericks,M. Christie enters the game for C. Flagg
+4,9:30.0,82-89,Mavericks,C. Martin enters the game for R. Nembhard
+4,9:30.0,82-89,Rockets,K. Durant enters the game for J. Okogie
+4,9:30.0,83-89,Mavericks,N. Marshall makes free throw 2 of 2
+4,9:20.0,83-89,Rockets,R. Sheppard misses 3-pt jump shot from 26 ft
+4,9:19.0,83-89,Mavericks,Defensive rebound by K. Thompson
+4,9:08.0,83-89,Mavericks,K. Thompson misses 2-pt jump shot from 15 ft
+4,9:07.0,83-89,Rockets,Defensive rebound by R. Sheppard
+4,8:58.0,83-91,Rockets,J. Smith makes 2-pt jump shot from 13 ft (assist by A. Thompson)
+4,8:47.0,83-91,Mavericks,N. Marshall misses 2-pt layup from 3 ft (block by J. Smith)
+4,8:47.0,83-91,Rockets,Defensive rebound by J. Smith
+4,8:42.0,83-93,Rockets,A. Thompson makes 2-pt layup from 4 ft (assist by K. Durant)
+4,8:42.0,83-93,Rockets,Shooting foul by M. Christie (drawn by A. Thompson)
+4,8:42.0,83-93,Mavericks,M. Cisse enters the game for D. Gafford
+4,8:42.0,83-93,Rockets,T. Eason enters the game for R. Sheppard
+4,8:42.0,83-94,Rockets,A. Thompson makes free throw 1 of 1
+4,8:31.0,83-94,Mavericks,Turnover by M. Christie (lost ball; steal by A. Thompson)
+4,8:14.0,83-94,Rockets,J. Smith misses 2-pt jump shot from 6 ft (block by M. Cisse)
+4,8:09.0,83-94,Mavericks,Defensive rebound by N. Marshall
+4,7:51.0,85-94,Mavericks,M. Christie makes 2-pt jump shot from 16 ft
+4,7:30.0,85-94,Rockets,A. Thompson misses 2-pt jump shot from 5 ft
+4,7:29.0,85-94,Mavericks,Defensive rebound by N. Marshall
+4,7:10.0,85-94,Mavericks,N. Marshall misses 2-pt jump shot from 8 ft
+4,7:09.0,85-94,Rockets,Defensive rebound by C. Capela
+4,7:02.0,85-94,Rockets,Shooting foul by M. Cisse (drawn by J. Smith)
+4,7:02.0,85-95,Rockets,J. Smith makes free throw 1 of 2
+4,7:02.0,85-95,Mavericks,C. Flagg enters the game for N. Marshall
+4,7:02.0,85-95,Rockets,A. Şengün enters the game for C. Capela
+4,7:02.0,85-96,Rockets,J. Smith makes free throw 2 of 2
+4,6:50.0,85-96,Mavericks,C. Flagg misses 3-pt jump shot from 25 ft
+4,6:49.0,85-96,Mavericks,Offensive rebound by Team
+4,6:49.0,85-96,Rockets,Loose ball foul by A. Şengün (drawn by M. Cisse)
+4,6:41.0,88-96,Mavericks,K. Thompson makes 3-pt jump shot from 25 ft (assist by M. Cisse)
+4,6:18.0,88-99,Rockets,T. Eason makes 3-pt jump shot from 25 ft (assist by A. Şengün)
+4,6:04.0,91-99,Mavericks,K. Thompson makes 3-pt jump shot from 26 ft (assist by C. Martin)
+4,5:36.0,91-99,Rockets,A. Şengün misses 2-pt hook shot from 7 ft
+4,5:35.0,91-99,Mavericks,Defensive rebound by C. Flagg
+4,5:32.0,91-99,Mavericks,C. Flagg misses 2-pt layup from 4 ft
+4,5:31.0,91-99,Rockets,Defensive rebound by Team
+4,5:31.0,91-99,Rockets,J. Okogie enters the game for J. Smith
+4,5:16.0,91-101,Rockets,A. Şengün makes 2-pt dunk from 3 ft (assist by K. Durant)
+4,5:04.0,93-101,Mavericks,C. Flagg makes 2-pt hook shot from 6 ft
+4,4:34.0,93-101,Rockets,J. Okogie misses 2-pt jump shot from 18 ft
+4,4:32.0,93-101,Rockets,Offensive rebound by A. Thompson
+4,4:31.0,93-103,Rockets,A. Thompson makes 2-pt layup at rim
+4,4:19.0,95-103,Mavericks,C. Flagg makes 2-pt jump shot from 7 ft
+4,3:46.0,95-103,Rockets,A. Şengün misses 2-pt hook shot from 9 ft
+4,3:46.0,95-103,Rockets,Offensive rebound by Team
+4,3:46.0,95-103,Rockets,Turnover by Team (shot clock)
+4,3:46.0,95-103,Mavericks,D. Gafford enters the game for M. Cisse
+4,3:39.0,97-103,Mavericks,C. Flagg makes 2-pt jump shot from 12 ft
+4,3:39.0,97-103,Mavericks,Shooting foul by J. Okogie (drawn by C. Flagg)
+4,3:39.0,97-103,Mavericks,N. Marshall enters the game for C. Martin
+4,3:39.0,97-103,Rockets,J. Smith enters the game for J. Okogie
+4,3:39.0,97-103,Mavericks,C. Flagg misses free throw 1 of 1
+4,3:39.0,97-103,Rockets,Defensive rebound by A. Thompson
+4,3:26.0,97-105,Rockets,K. Durant makes 2-pt jump shot from 13 ft (assist by A. Şengün)
+4,3:26.0,97-105,Mavericks,Dallas full timeout
+4,3:18.0,97-105,Mavericks,Turnover by C. Flagg (bad pass; steal by K. Durant)
+4,3:14.0,97-105,Rockets,Turnover by T. Eason (bad pass)
+4,3:05.0,97-105,Mavericks,Shooting foul by T. Eason (drawn by C. Flagg)
+4,3:05.0,98-105,Mavericks,C. Flagg makes free throw 1 of 2
+4,3:05.0,99-105,Mavericks,C. Flagg makes free throw 2 of 2
+4,2:47.0,99-105,Rockets,K. Durant misses 2-pt jump shot from 13 ft
+4,2:44.0,99-105,Mavericks,Defensive rebound by M. Christie
+4,2:37.0,99-105,Mavericks,Personal foul by T. Eason (drawn by D. Gafford)
+4,2:37.0,100-105,Mavericks,D. Gafford makes free throw 1 of 2
+4,2:37.0,101-105,Mavericks,D. Gafford makes free throw 2 of 2
+4,2:26.0,101-105,Rockets,K. Durant misses 3-pt jump shot from 25 ft
+4,2:25.0,101-105,Mavericks,Defensive rebound by C. Flagg
+4,2:14.0,103-105,Mavericks,D. Gafford makes 2-pt dunk from 3 ft
+4,1:54.0,103-107,Rockets,A. Thompson makes 2-pt dunk from 3 ft (assist by A. Şengün)
+4,1:34.0,105-107,Mavericks,C. Flagg makes 2-pt layup from 5 ft
+4,1:12.0,105-107,Rockets,A. Şengün misses 2-pt layup from 3 ft (block by M. Christie)
+4,1:11.0,105-107,Rockets,Offensive rebound by A. Thompson
+4,1:11.0,105-107,Rockets,A. Thompson misses 2-pt layup from 9 ft
+4,1:08.0,105-107,Mavericks,Defensive rebound by C. Flagg
+4,1:03.0,105-107,Rockets,Violation by Team (kicked ball)
+4,0:50.0,105-107,Mavericks,C. Flagg misses 2-pt jump shot from 17 ft
+4,0:49.0,105-107,Mavericks,Offensive rebound by N. Marshall
+4,0:47.0,107-107,Mavericks,N. Marshall makes 2-pt jump shot from 13 ft (assist by M. Christie)
+4,0:28.0,107-109,Rockets,A. Şengün makes 2-pt layup from 5 ft
+4,0:28.0,107-109,Mavericks,Dallas full timeout
+4,0:28.0,107-109,Rockets,J. Okogie enters the game for A. Şengün
+4,0:25.0,107-109,Mavericks,C. Flagg misses 2-pt layup from 5 ft
+4,0:24.0,107-109,Rockets,Defensive rebound by T. Eason
+4,0:14.0,107-111,Rockets,T. Eason makes 2-pt dunk from 4 ft (assist by K. Durant)
+4,0:14.0,107-111,Mavericks,Dallas full timeout
+4,0:09.0,107-111,Mavericks,C. Flagg misses 3-pt jump shot from 26 ft
+4,0:07.0,107-111,Rockets,Defensive rebound by J. Smith

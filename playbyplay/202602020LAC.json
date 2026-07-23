@@ -1,0 +1,2977 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:43.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 17 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:23.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "Turnover by K. Leonard (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:12.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:10.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Collins"
+  },
+  {
+    "quarter": 1,
+    "time": "10:52.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "J. Collins misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:49.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "10:35.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:32.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Sanders"
+  },
+  {
+    "quarter": 1,
+    "time": "10:17.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "K. Leonard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:15.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "10:12.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:10.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 1,
+    "time": "10:01.0",
+    "score": "2-0",
+    "team": "Clippers",
+    "description": "Turnover by J. Collins (lost ball; steal by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:50.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "9:44.0",
+    "score": "5-0",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:27.0",
+    "score": "5-2",
+    "team": "Clippers",
+    "description": "I. Zubac makes 2-pt dunk from 2 ft (assist by K. Leonard)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:12.0",
+    "score": "8-2",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:57.0",
+    "score": "8-2",
+    "team": "Clippers",
+    "description": "K. Leonard misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:54.0",
+    "score": "8-2",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "8:46.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 26 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:45.0",
+    "score": "11-2",
+    "team": "Clippers",
+    "description": "LA Clippers full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "8:29.0",
+    "score": "11-2",
+    "team": "Clippers",
+    "description": "Offensive foul by J. Collins (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:29.0",
+    "score": "11-2",
+    "team": "Clippers",
+    "description": "Turnover by J. Collins (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:10.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:06.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "8:06.0",
+    "score": "13-2",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "7:55.0",
+    "score": "13-2",
+    "team": "Clippers",
+    "description": "K. Dunn misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:53.0",
+    "score": "13-2",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "7:48.0",
+    "score": "15-2",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 4 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:48.0",
+    "score": "15-2",
+    "team": "76ers",
+    "description": "Shooting foul by K. Dunn (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:48.0",
+    "score": "16-2",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "7:30.0",
+    "score": "16-2",
+    "team": "Clippers",
+    "description": "J. Collins misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:25.0",
+    "score": "16-2",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "7:11.0",
+    "score": "16-2",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:09.0",
+    "score": "16-2",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 1,
+    "time": "7:04.0",
+    "score": "16-2",
+    "team": "Clippers",
+    "description": "Turnover by K. Dunn (bad pass; steal by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:01.0",
+    "score": "18-2",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:49.0",
+    "score": "18-2",
+    "team": "Clippers",
+    "description": "K. Leonard misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:48.0",
+    "score": "18-2",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "6:48.0",
+    "score": "18-2",
+    "team": "76ers",
+    "description": "Loose ball foul by D. Barlow (drawn by J. Collins)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "18-5",
+    "team": "Clippers",
+    "description": "K. Sanders makes 3-pt jump shot from 25 ft (assist by K. Leonard)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "18-5",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:17.0",
+    "score": "18-5",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "6:17.0",
+    "score": "20-5",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "6:09.0",
+    "score": "20-5",
+    "team": "Clippers",
+    "description": "Shooting foul by T. Maxey (drawn by K. Leonard)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:09.0",
+    "score": "20-6",
+    "team": "Clippers",
+    "description": "K. Leonard makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:09.0",
+    "score": "20-7",
+    "team": "Clippers",
+    "description": "K. Leonard makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "5:51.0",
+    "score": "20-7",
+    "team": "76ers",
+    "description": "Turnover by K. Oubre (lost ball; steal by K. Leonard)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:49.0",
+    "score": "20-7",
+    "team": "Clippers",
+    "description": "K. Leonard misses 2-pt dunk from 4 ft (block by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:48.0",
+    "score": "20-7",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "5:45.0",
+    "score": "20-7",
+    "team": "Clippers",
+    "description": "J. Collins misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:39.0",
+    "score": "20-7",
+    "team": "Clippers",
+    "description": "Offensive rebound by K. Sanders"
+  },
+  {
+    "quarter": 1,
+    "time": "5:39.0",
+    "score": "20-9",
+    "team": "Clippers",
+    "description": "K. Sanders makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "5:28.0",
+    "score": "20-9",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:28.0",
+    "score": "20-9",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "20-9",
+    "team": "Clippers",
+    "description": "Loose ball foul by J. Collins (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "20-9",
+    "team": "Clippers",
+    "description": "B. Lopez enters the game for J. Collins"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "22-9",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 10 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:07.0",
+    "score": "22-9",
+    "team": "Clippers",
+    "description": "K. Leonard misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "22-9",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "22-9",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "22-9",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "22-9",
+    "team": "76ers",
+    "description": "Shooting foul by I. Zubac (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "23-9",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "23-9",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "23-9",
+    "team": "Clippers",
+    "description": "N. Batum enters the game for K. Dunn"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "23-9",
+    "team": "Clippers",
+    "description": "J. Miller enters the game for K. Leonard"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "24-9",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:32.0",
+    "score": "24-11",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "24-11",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:18.0",
+    "score": "24-11",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "4:16.0",
+    "score": "24-11",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:11.0",
+    "score": "24-11",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 1,
+    "time": "4:04.0",
+    "score": "24-14",
+    "team": "Clippers",
+    "description": "B. Lopez makes 3-pt jump shot from 28 ft (assist by N. Batum)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:43.0",
+    "score": "24-14",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:41.0",
+    "score": "24-14",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Miller"
+  },
+  {
+    "quarter": 1,
+    "time": "3:35.0",
+    "score": "24-14",
+    "team": "Clippers",
+    "description": "Turnover by J. Miller (lost ball; steal by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:32.0",
+    "score": "26-14",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:07.0",
+    "score": "26-16",
+    "team": "Clippers",
+    "description": "K. Sanders makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "26-16",
+    "team": "76ers",
+    "description": "Shooting foul by I. Zubac (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "26-16",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "26-16",
+    "team": "76ers",
+    "description": "A. Bona enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "26-16",
+    "team": "76ers",
+    "description": "J. McCain enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "26-16",
+    "team": "Clippers",
+    "description": "C. Christie enters the game for I. Zubac"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "27-16",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "28-16",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:41.0",
+    "score": "28-18",
+    "team": "Clippers",
+    "description": "B. Lopez makes 2-pt hook shot from 7 ft (assist by J. Miller)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:21.0",
+    "score": "31-18",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:10.0",
+    "score": "31-18",
+    "team": "Clippers",
+    "description": "B. Lopez misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:10.0",
+    "score": "31-18",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "2:03.0",
+    "score": "31-18",
+    "team": "76ers",
+    "description": "Personal foul by C. Christie (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:03.0",
+    "score": "32-18",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:03.0",
+    "score": "33-18",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:44.0",
+    "score": "33-18",
+    "team": "Clippers",
+    "description": "Personal foul by Q. Grimes (drawn by J. Miller)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:37.0",
+    "score": "33-18",
+    "team": "Clippers",
+    "description": "Shooting foul by A. Bona (drawn by J. Miller)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:37.0",
+    "score": "33-19",
+    "team": "Clippers",
+    "description": "J. Miller makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:37.0",
+    "score": "33-19",
+    "team": "Clippers",
+    "description": "J. Miller misses free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:34.0",
+    "score": "33-19",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "1:17.0",
+    "score": "33-19",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:12.0",
+    "score": "33-19",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 1,
+    "time": "1:12.0",
+    "score": "35-19",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "0:58.0",
+    "score": "35-19",
+    "team": "Clippers",
+    "description": "Turnover by J. Miller (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:53.0",
+    "score": "38-19",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:33.0",
+    "score": "38-19",
+    "team": "Clippers",
+    "description": "B. Lopez misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:29.0",
+    "score": "38-19",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "0:10.0",
+    "score": "38-19",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "38-19",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Sanders"
+  },
+  {
+    "quarter": 1,
+    "time": "0:03.0",
+    "score": "38-19",
+    "team": "Clippers",
+    "description": "N. Batum misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "38-19",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "11:43.0",
+    "score": "38-21",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:27.0",
+    "score": "41-21",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:10.0",
+    "score": "41-21",
+    "team": "Clippers",
+    "description": "Personal foul by V. Edgecombe (drawn by B. Lopez)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:01.0",
+    "score": "41-23",
+    "team": "Clippers",
+    "description": "J. Collins makes 2-pt layup from 2 ft (assist by B. Lopez)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:46.0",
+    "score": "44-23",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 23 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:32.0",
+    "score": "44-23",
+    "team": "Clippers",
+    "description": "Personal foul by Q. Grimes (drawn by J. Miller)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:29.0",
+    "score": "44-25",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt layup from 1 ft (assist by J. Collins)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:29.0",
+    "score": "44-25",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:14.0",
+    "score": "44-25",
+    "team": "76ers",
+    "description": "Personal foul by B. Lopez (drawn by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:02.0",
+    "score": "46-25",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:49.0",
+    "score": "46-25",
+    "team": "Clippers",
+    "description": "C. Christie misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:42.0",
+    "score": "46-25",
+    "team": "Clippers",
+    "description": "Offensive rebound by K. Leonard"
+  },
+  {
+    "quarter": 2,
+    "time": "9:42.0",
+    "score": "46-27",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "9:34.0",
+    "score": "48-27",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt dunk from 2 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:22.0",
+    "score": "48-29",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt layup from 3 ft (assist by J. Miller)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:10.0",
+    "score": "48-29",
+    "team": "76ers",
+    "description": "Shooting foul by B. Lopez (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:10.0",
+    "score": "49-29",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:10.0",
+    "score": "49-29",
+    "team": "Clippers",
+    "description": "K. Dunn enters the game for C. Christie"
+  },
+  {
+    "quarter": 2,
+    "time": "9:10.0",
+    "score": "49-29",
+    "team": "Clippers",
+    "description": "I. Zubac enters the game for B. Lopez"
+  },
+  {
+    "quarter": 2,
+    "time": "9:10.0",
+    "score": "50-29",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:53.0",
+    "score": "50-32",
+    "team": "Clippers",
+    "description": "J. Collins makes 3-pt jump shot from 25 ft (assist by K. Leonard)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:38.0",
+    "score": "50-32",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:32.0",
+    "score": "50-32",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "8:32.0",
+    "score": "52-32",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "8:24.0",
+    "score": "52-35",
+    "team": "Clippers",
+    "description": "K. Leonard makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:05.0",
+    "score": "54-35",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt jump shot from 6 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:52.0",
+    "score": "54-35",
+    "team": "Clippers",
+    "description": "Personal foul by J. McCain (drawn by K. Leonard)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:52.0",
+    "score": "54-35",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "7:35.0",
+    "score": "54-35",
+    "team": "Clippers",
+    "description": "Turnover by K. Leonard (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:24.0",
+    "score": "54-35",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:22.0",
+    "score": "54-35",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "7:20.0",
+    "score": "56-35",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "7:20.0",
+    "score": "56-35",
+    "team": "Clippers",
+    "description": "LA Clippers full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "7:20.0",
+    "score": "56-35",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "7:09.0",
+    "score": "56-35",
+    "team": "Clippers",
+    "description": "Turnover by J. Miller (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:05.0",
+    "score": "58-35",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:48.0",
+    "score": "58-37",
+    "team": "Clippers",
+    "description": "J. Collins makes 2-pt jump shot from 12 ft (assist by K. Dunn)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:29.0",
+    "score": "58-37",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (bad pass; steal by K. Leonard)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:27.0",
+    "score": "58-39",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:08.0",
+    "score": "58-39",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:05.0",
+    "score": "58-39",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Collins"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "58-41",
+    "team": "Clippers",
+    "description": "I. Zubac makes 2-pt dunk at rim (assist by J. Collins)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "58-41",
+    "team": "Clippers",
+    "description": "Shooting foul by D. Barlow (drawn by I. Zubac)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "58-41",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "58-41",
+    "team": "Clippers",
+    "description": "K. Sanders enters the game for J. Miller"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "58-42",
+    "team": "Clippers",
+    "description": "I. Zubac makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "5:28.0",
+    "score": "58-42",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:24.0",
+    "score": "58-42",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Dunn"
+  },
+  {
+    "quarter": 2,
+    "time": "5:17.0",
+    "score": "58-42",
+    "team": "Clippers",
+    "description": "K. Sanders misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:13.0",
+    "score": "58-42",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "4:55.0",
+    "score": "58-42",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:52.0",
+    "score": "58-42",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Dunn"
+  },
+  {
+    "quarter": 2,
+    "time": "4:31.0",
+    "score": "58-44",
+    "team": "Clippers",
+    "description": "K. Sanders makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:21.0",
+    "score": "58-44",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "4:21.0",
+    "score": "58-44",
+    "team": "76ers",
+    "description": "T. Watford enters the game for D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "4:10.0",
+    "score": "58-44",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:08.0",
+    "score": "58-44",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 2,
+    "time": "3:59.0",
+    "score": "58-44",
+    "team": "Clippers",
+    "description": "K. Leonard misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:55.0",
+    "score": "58-44",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "3:43.0",
+    "score": "61-44",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 30 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:33.0",
+    "score": "61-44",
+    "team": "Clippers",
+    "description": "Personal foul by J. Embiid (drawn by I. Zubac)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:33.0",
+    "score": "61-44",
+    "team": "Clippers",
+    "description": "I. Zubac misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:33.0",
+    "score": "61-44",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "3:33.0",
+    "score": "61-44",
+    "team": "Clippers",
+    "description": "B. Lopez enters the game for K. Leonard"
+  },
+  {
+    "quarter": 2,
+    "time": "3:33.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "I. Zubac makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:17.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:14.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "Defensive rebound by B. Lopez"
+  },
+  {
+    "quarter": 2,
+    "time": "3:00.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "K. Dunn misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:58.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "2:57.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "Personal foul by K. Dunn (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:41.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Collins"
+  },
+  {
+    "quarter": 2,
+    "time": "2:33.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "K. Dunn misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:29.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "2:25.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:20.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 2,
+    "time": "2:16.0",
+    "score": "61-45",
+    "team": "Clippers",
+    "description": "B. Lopez misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:16.0",
+    "score": "61-45",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "2:09.0",
+    "score": "64-45",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 22 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:49.0",
+    "score": "64-45",
+    "team": "Clippers",
+    "description": "Shooting foul by K. Oubre (drawn by J. Collins)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:49.0",
+    "score": "64-45",
+    "team": "Clippers",
+    "description": "J. Collins misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:49.0",
+    "score": "64-45",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:49.0",
+    "score": "64-45",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for K. Oubre"
+  },
+  {
+    "quarter": 2,
+    "time": "1:49.0",
+    "score": "64-45",
+    "team": "Clippers",
+    "description": "J. Collins misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:46.0",
+    "score": "64-45",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "1:34.0",
+    "score": "67-45",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 24 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "67-45",
+    "team": "Clippers",
+    "description": "Shooting foul by T. Maxey (drawn by K. Dunn)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "67-46",
+    "team": "Clippers",
+    "description": "K. Dunn makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "67-46",
+    "team": "Clippers",
+    "description": "N. Batum enters the game for J. Collins"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "67-46",
+    "team": "Clippers",
+    "description": "Y. Konan Niederh\u00e4user enters the game for I. Zubac"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "67-47",
+    "team": "Clippers",
+    "description": "K. Dunn makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "67-47",
+    "team": "76ers",
+    "description": "Shooting foul by Y. Konan Niederh\u00e4user (drawn by T. Watford)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "68-47",
+    "team": "76ers",
+    "description": "T. Watford makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "68-47",
+    "team": "76ers",
+    "description": "T. Watford misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:06.0",
+    "score": "68-47",
+    "team": "Clippers",
+    "description": "Defensive rebound by N. Batum"
+  },
+  {
+    "quarter": 2,
+    "time": "0:57.0",
+    "score": "68-49",
+    "team": "Clippers",
+    "description": "B. Lopez makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "68-49",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "68-49",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "68-49",
+    "team": "Clippers",
+    "description": "Loose ball foul by B. Lopez (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "69-49",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "69-49",
+    "team": "Clippers",
+    "description": "J. Miller enters the game for B. Lopez"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "70-49",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:32.0",
+    "score": "70-49",
+    "team": "Clippers",
+    "description": "N. Batum misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:27.0",
+    "score": "70-49",
+    "team": "Clippers",
+    "description": "Offensive rebound by Y. Konan Niederh\u00e4user"
+  },
+  {
+    "quarter": 2,
+    "time": "0:26.0",
+    "score": "70-51",
+    "team": "Clippers",
+    "description": "Y. Konan Niederh\u00e4user makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:05.0",
+    "score": "70-51",
+    "team": "76ers",
+    "description": "Shooting foul by Y. Konan Niederh\u00e4user (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:05.0",
+    "score": "71-51",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:05.0",
+    "score": "71-51",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "0:05.0",
+    "score": "72-51",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "72-53",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "72-53",
+    "team": "76ers",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "72-53",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:56.0",
+    "score": "72-53",
+    "team": "Clippers",
+    "description": "Turnover by K. Sanders (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:50.0",
+    "score": "72-53",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:49.0",
+    "score": "72-53",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Collins"
+  },
+  {
+    "quarter": 3,
+    "time": "11:38.0",
+    "score": "72-56",
+    "team": "Clippers",
+    "description": "J. Collins makes 3-pt jump shot from 23 ft (assist by K. Dunn)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:25.0",
+    "score": "75-56",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:08.0",
+    "score": "75-56",
+    "team": "Clippers",
+    "description": "K. Leonard misses 2-pt hook shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:07.0",
+    "score": "75-56",
+    "team": "Clippers",
+    "description": "Offensive rebound by K. Leonard"
+  },
+  {
+    "quarter": 3,
+    "time": "11:07.0",
+    "score": "75-58",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "11:07.0",
+    "score": "75-58",
+    "team": "Clippers",
+    "description": "Shooting foul by J. Embiid (drawn by K. Leonard)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:07.0",
+    "score": "75-59",
+    "team": "Clippers",
+    "description": "K. Leonard makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "10:54.0",
+    "score": "77-59",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 14 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:44.0",
+    "score": "77-59",
+    "team": "Clippers",
+    "description": "K. Dunn misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:41.0",
+    "score": "77-59",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "10:41.0",
+    "score": "77-59",
+    "team": "Clippers",
+    "description": "Loose ball foul by J. Collins (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:28.0",
+    "score": "79-59",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 15 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "79-61",
+    "team": "Clippers",
+    "description": "K. Sanders makes 2-pt jump shot from 14 ft (assist by K. Dunn)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:48.0",
+    "score": "81-61",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 3 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:30.0",
+    "score": "81-63",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt jump shot from 11 ft (assist by I. Zubac)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:10.0",
+    "score": "81-63",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:08.0",
+    "score": "81-63",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Leonard"
+  },
+  {
+    "quarter": 3,
+    "time": "9:01.0",
+    "score": "81-63",
+    "team": "Clippers",
+    "description": "K. Leonard misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:59.0",
+    "score": "81-63",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "8:51.0",
+    "score": "81-63",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:49.0",
+    "score": "81-63",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Collins"
+  },
+  {
+    "quarter": 3,
+    "time": "8:39.0",
+    "score": "81-65",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt layup from 1 ft (assist by K. Dunn)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:30.0",
+    "score": "81-65",
+    "team": "Clippers",
+    "description": "LA Clippers full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "8:30.0",
+    "score": "81-65",
+    "team": "Clippers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:19.0",
+    "score": "81-65",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:14.0",
+    "score": "81-65",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "8:14.0",
+    "score": "84-65",
+    "team": "76ers",
+    "description": "J. Embiid makes 3-pt jump shot from 28 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:59.0",
+    "score": "84-65",
+    "team": "Clippers",
+    "description": "Turnover by K. Dunn (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:54.0",
+    "score": "84-65",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:52.0",
+    "score": "84-65",
+    "team": "Clippers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "7:28.0",
+    "score": "84-68",
+    "team": "Clippers",
+    "description": "K. Sanders makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:10.0",
+    "score": "84-68",
+    "team": "76ers",
+    "description": "Personal foul by J. Collins (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:10.0",
+    "score": "84-68",
+    "team": "76ers",
+    "description": "Instant Replay"
+  },
+  {
+    "quarter": 3,
+    "time": "7:10.0",
+    "score": "84-68",
+    "team": "Clippers",
+    "description": "LA Clippers full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "7:10.0",
+    "score": "84-68",
+    "team": "Clippers",
+    "description": "Instant Replay (Challenge: Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:07.0",
+    "score": "84-68",
+    "team": "76ers",
+    "description": "Offensive foul by T. Maxey (drawn by K. Dunn)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:07.0",
+    "score": "84-68",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:51.0",
+    "score": "84-68",
+    "team": "Clippers",
+    "description": "K. Sanders misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:45.0",
+    "score": "84-68",
+    "team": "Clippers",
+    "description": "Offensive rebound by J. Collins"
+  },
+  {
+    "quarter": 3,
+    "time": "6:45.0",
+    "score": "84-70",
+    "team": "Clippers",
+    "description": "J. Collins makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "6:26.0",
+    "score": "86-70",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 11 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:06.0",
+    "score": "86-70",
+    "team": "Clippers",
+    "description": "J. Collins misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:03.0",
+    "score": "86-70",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "5:56.0",
+    "score": "86-70",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:54.0",
+    "score": "86-70",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Leonard"
+  },
+  {
+    "quarter": 3,
+    "time": "5:39.0",
+    "score": "86-72",
+    "team": "Clippers",
+    "description": "K. Dunn makes 2-pt jump shot from 10 ft (assist by K. Leonard)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:24.0",
+    "score": "86-72",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:22.0",
+    "score": "86-72",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 3,
+    "time": "5:16.0",
+    "score": "86-74",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt layup from 1 ft (assist by K. Dunn)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:01.0",
+    "score": "86-74",
+    "team": "76ers",
+    "description": "Shooting foul by K. Dunn (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:01.0",
+    "score": "87-74",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "5:01.0",
+    "score": "88-74",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "5:01.0",
+    "score": "88-74",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "5:01.0",
+    "score": "89-74",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 3 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "4:43.0",
+    "score": "89-76",
+    "team": "Clippers",
+    "description": "K. Dunn makes 2-pt jump shot from 12 ft (assist by K. Leonard)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:26.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:22.0",
+    "score": "89-76",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 3,
+    "time": "4:19.0",
+    "score": "89-76",
+    "team": "Clippers",
+    "description": "Personal foul by T. Maxey (drawn by K. Leonard)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:19.0",
+    "score": "89-76",
+    "team": "Clippers",
+    "description": "B. Lopez enters the game for K. Leonard"
+  },
+  {
+    "quarter": 3,
+    "time": "4:09.0",
+    "score": "89-76",
+    "team": "Clippers",
+    "description": "B. Lopez misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:07.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "4:05.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:04.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "4:03.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "4:02.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "4:02.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "91-76",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "91-76",
+    "team": "76ers",
+    "description": "Shooting foul by B. Lopez (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "92-76",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "3:54.0",
+    "score": "92-76",
+    "team": "Clippers",
+    "description": "Personal foul by K. Oubre (drawn by J. Collins)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:54.0",
+    "score": "92-76",
+    "team": "Clippers",
+    "description": "J. Miller enters the game for K. Dunn"
+  },
+  {
+    "quarter": 3,
+    "time": "3:50.0",
+    "score": "92-78",
+    "team": "Clippers",
+    "description": "I. Zubac makes 2-pt layup from 3 ft (assist by K. Sanders)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:34.0",
+    "score": "94-78",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 18 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "Offensive foul by I. Zubac (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "Turnover by I. Zubac (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "94-78",
+    "team": "76ers",
+    "description": "T. Watford enters the game for K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "N. Batum enters the game for I. Zubac"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "94-78",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:09.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Miller"
+  },
+  {
+    "quarter": 3,
+    "time": "3:05.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "J. Miller misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:00.0",
+    "score": "94-78",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "2:46.0",
+    "score": "94-78",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:44.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "Defensive rebound by N. Batum"
+  },
+  {
+    "quarter": 3,
+    "time": "2:31.0",
+    "score": "94-78",
+    "team": "Clippers",
+    "description": "Personal foul by D. Barlow (drawn by J. Collins)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:31.0",
+    "score": "94-78",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "2:27.0",
+    "score": "94-80",
+    "team": "Clippers",
+    "description": "J. Collins makes 2-pt jump shot from 9 ft (assist by N. Batum)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:06.0",
+    "score": "94-80",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "94-80",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Miller"
+  },
+  {
+    "quarter": 3,
+    "time": "1:46.0",
+    "score": "94-82",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt layup at rim (assist by K. Sanders)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:46.0",
+    "score": "94-82",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "1:46.0",
+    "score": "94-82",
+    "team": "76ers",
+    "description": "J. McCain enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "1:30.0",
+    "score": "94-82",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:28.0",
+    "score": "94-82",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Collins"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "94-82",
+    "team": "Clippers",
+    "description": "Shooting foul by J. Embiid (drawn by J. Collins)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "94-83",
+    "team": "Clippers",
+    "description": "J. Collins makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "94-83",
+    "team": "Clippers",
+    "description": "J. Collins misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:14.0",
+    "score": "94-83",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "97-83",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 26 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:49.0",
+    "score": "97-85",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:35.0",
+    "score": "100-85",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 24 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "100-85",
+    "team": "Clippers",
+    "description": "B. Lopez misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:18.0",
+    "score": "100-85",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 3,
+    "time": "0:03.0",
+    "score": "100-85",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (bad pass; steal by J. Miller)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "100-87",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:43.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 6 ft (block by B. Lopez)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:39.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "Offensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:35.0",
+    "score": "100-87",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 4,
+    "time": "11:28.0",
+    "score": "100-87",
+    "team": "Clippers",
+    "description": "B. Lopez misses 2-pt jump shot from 6 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:24.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "11:17.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:14.0",
+    "score": "100-87",
+    "team": "Clippers",
+    "description": "Defensive rebound by J. Miller"
+  },
+  {
+    "quarter": 4,
+    "time": "11:06.0",
+    "score": "100-87",
+    "team": "76ers",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:06.0",
+    "score": "100-87",
+    "team": "Clippers",
+    "description": "Personal foul by A. Bona (drawn by I. Zubac)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:58.0",
+    "score": "100-87",
+    "team": "Clippers",
+    "description": "Turnover by N. Batum (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:51.0",
+    "score": "103-87",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:34.0",
+    "score": "103-90",
+    "team": "Clippers",
+    "description": "B. Lopez makes 3-pt jump shot from 23 ft (assist by I. Zubac)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:10.0",
+    "score": "105-90",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:58.0",
+    "score": "105-90",
+    "team": "76ers",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:47.0",
+    "score": "105-92",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:22.0",
+    "score": "105-92",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt jump shot from 7 ft (block by I. Zubac)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:21.0",
+    "score": "105-92",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:21.0",
+    "score": "105-92",
+    "team": "76ers",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:02.0",
+    "score": "105-92",
+    "team": "Clippers",
+    "description": "K. Leonard misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:01.0",
+    "score": "105-92",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:01.0",
+    "score": "105-92",
+    "team": "76ers",
+    "description": "Loose ball foul by A. Bona (drawn by I. Zubac)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "105-92",
+    "team": "Clippers",
+    "description": "Turnover by B. Lopez (step out of bounds)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:34.0",
+    "score": "105-92",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:29.0",
+    "score": "105-92",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "8:23.0",
+    "score": "107-92",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 5 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:23.0",
+    "score": "107-92",
+    "team": "76ers",
+    "description": "Shooting foul by B. Lopez (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:23.0",
+    "score": "108-92",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "8:05.0",
+    "score": "108-94",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:49.0",
+    "score": "111-94",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 23 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "111-97",
+    "team": "Clippers",
+    "description": "B. Lopez makes 3-pt jump shot from 23 ft (assist by K. Leonard)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "113-97",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "113-97",
+    "team": "Clippers",
+    "description": "LA Clippers full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "113-97",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "113-97",
+    "team": "Clippers",
+    "description": "J. Collins enters the game for N. Batum"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "113-97",
+    "team": "Clippers",
+    "description": "K. Dunn enters the game for B. Lopez"
+  },
+  {
+    "quarter": 4,
+    "time": "6:54.0",
+    "score": "113-100",
+    "team": "Clippers",
+    "description": "K. Leonard makes 3-pt jump shot from 27 ft (assist by K. Dunn)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:24.0",
+    "score": "115-100",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 12 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:03.0",
+    "score": "115-100",
+    "team": "Clippers",
+    "description": "Shooting foul by J. Embiid (drawn by J. Miller)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:03.0",
+    "score": "115-101",
+    "team": "Clippers",
+    "description": "J. Miller makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:03.0",
+    "score": "115-102",
+    "team": "Clippers",
+    "description": "J. Miller makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "115-102",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:43.0",
+    "score": "115-102",
+    "team": "Clippers",
+    "description": "Defensive rebound by I. Zubac"
+  },
+  {
+    "quarter": 4,
+    "time": "5:36.0",
+    "score": "115-102",
+    "team": "Clippers",
+    "description": "J. Collins misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:34.0",
+    "score": "115-102",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "5:21.0",
+    "score": "115-102",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (bad pass; steal by K. Leonard)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:19.0",
+    "score": "115-104",
+    "team": "Clippers",
+    "description": "K. Leonard makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "117-104",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 12 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "117-104",
+    "team": "Clippers",
+    "description": "Shooting foul by K. Oubre (drawn by K. Leonard)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "117-104",
+    "team": "Clippers",
+    "description": "K. Leonard misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "117-104",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "117-104",
+    "team": "Clippers",
+    "description": "K. Leonard misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:39.0",
+    "score": "117-104",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "120-104",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:24.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "LA Clippers full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:24.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "K. Brown enters the game for J. Collins"
+  },
+  {
+    "quarter": 4,
+    "time": "4:24.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "C. Christie enters the game for K. Dunn"
+  },
+  {
+    "quarter": 4,
+    "time": "4:24.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "Y. Konan Niederh\u00e4user enters the game for K. Leonard"
+  },
+  {
+    "quarter": 4,
+    "time": "4:24.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "K. Sanders enters the game for I. Zubac"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "Turnover by Y. Konan Niederh\u00e4user (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:54.0",
+    "score": "120-104",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "120-104",
+    "team": "Clippers",
+    "description": "Defensive rebound by Y. Konan Niederh\u00e4user"
+  },
+  {
+    "quarter": 4,
+    "time": "3:36.0",
+    "score": "120-106",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:17.0",
+    "score": "120-106",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:17.0",
+    "score": "120-106",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:17.0",
+    "score": "120-106",
+    "team": "76ers",
+    "description": "A. Bona enters the game for J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "3:17.0",
+    "score": "120-106",
+    "team": "76ers",
+    "description": "J. McCain enters the game for T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "3:17.0",
+    "score": "120-106",
+    "team": "76ers",
+    "description": "T. Watford enters the game for K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "3:04.0",
+    "score": "122-106",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt hook shot from 9 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:51.0",
+    "score": "122-108",
+    "team": "Clippers",
+    "description": "C. Christie makes 2-pt layup from 1 ft (assist by K. Sanders)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:30.0",
+    "score": "122-108",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:24.0",
+    "score": "122-108",
+    "team": "Clippers",
+    "description": "Defensive rebound by K. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "122-108",
+    "team": "Clippers",
+    "description": "Personal foul by T. Watford (drawn by K. Sanders)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "122-108",
+    "team": "Clippers",
+    "description": "K. Sanders misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "122-108",
+    "team": "Clippers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "122-108",
+    "team": "76ers",
+    "description": "J. Walker enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "122-109",
+    "team": "Clippers",
+    "description": "K. Sanders makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:02.0",
+    "score": "122-109",
+    "team": "76ers",
+    "description": "T. Watford misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:57.0",
+    "score": "122-109",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "1:51.0",
+    "score": "122-109",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:48.0",
+    "score": "122-109",
+    "team": "Clippers",
+    "description": "Defensive rebound by Y. Konan Niederh\u00e4user"
+  },
+  {
+    "quarter": 4,
+    "time": "1:29.0",
+    "score": "122-111",
+    "team": "Clippers",
+    "description": "J. Miller makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "124-111",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 6 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:01.0",
+    "score": "124-113",
+    "team": "Clippers",
+    "description": "K. Sanders makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:51.0",
+    "score": "124-113",
+    "team": "76ers",
+    "description": "Shooting foul by Y. Konan Niederh\u00e4user (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:51.0",
+    "score": "125-113",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:51.0",
+    "score": "126-113",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:36.0",
+    "score": "126-113",
+    "team": "Clippers",
+    "description": "K. Sanders misses 2-pt layup from 5 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:35.0",
+    "score": "126-113",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "0:30.0",
+    "score": "128-113",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 4 ft (assist by J. Walker)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:30.0",
+    "score": "128-113",
+    "team": "Clippers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:16.0",
+    "score": "128-113",
+    "team": "Clippers",
+    "description": "K. Brown misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:11.0",
+    "score": "128-113",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  }
+]

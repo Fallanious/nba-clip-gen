@@ -1,0 +1,450 @@
+quarter,time,score,team,description
+1,11:44.0,2-0,Nuggets,S. Jones makes 2-pt hook shot from 7 ft (assist by D. Holmes)
+1,11:23.0,2-0,76ers,Turnover by J. Embiid (bad pass; steal by S. Jones)
+1,11:20.0,4-0,Nuggets,S. Jones makes 2-pt dunk from 1 ft
+1,11:07.0,4-2,76ers,P. George makes 2-pt jump shot from 10 ft (assist by V. Edgecombe)
+1,10:51.0,4-2,Nuggets,Shooting foul by D. Barlow (drawn by S. Jones)
+1,10:51.0,4-2,Nuggets,S. Jones misses free throw 1 of 2
+1,10:51.0,4-2,Nuggets,Offensive rebound by Team
+1,10:51.0,5-2,Nuggets,S. Jones makes free throw 2 of 2
+1,10:31.0,5-2,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+1,10:30.0,5-2,76ers,Offensive rebound by D. Barlow
+1,10:29.0,5-2,76ers,D. Barlow misses 2-pt layup at rim
+1,10:29.0,5-2,Nuggets,Defensive rebound by J. Pickett
+1,10:17.0,8-2,Nuggets,J. Pickett makes 3-pt jump shot from 26 ft
+1,10:05.0,8-2,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,10:02.0,8-2,Nuggets,Defensive rebound by J. Pickett
+1,9:50.0,8-2,Nuggets,J. Pickett misses 2-pt layup from 3 ft
+1,9:48.0,8-2,76ers,Defensive rebound by T. Maxey
+1,9:29.0,8-2,76ers,P. George misses 2-pt jump shot from 16 ft
+1,9:25.0,8-2,Nuggets,Defensive rebound by D. Holmes
+1,9:20.0,11-2,Nuggets,S. Jones makes 3-pt jump shot from 26 ft (assist by J. Pickett)
+1,9:05.0,11-2,76ers,D. Barlow misses 3-pt jump shot from 23 ft
+1,9:03.0,11-2,76ers,Offensive rebound by V. Edgecombe
+1,9:02.0,11-4,76ers,J. Embiid makes 2-pt jump shot from 11 ft (assist by V. Edgecombe)
+1,8:44.0,11-4,Nuggets,J. Pickett misses 3-pt jump shot from 26 ft
+1,8:42.0,11-4,76ers,Defensive rebound by D. Barlow
+1,8:32.0,11-4,76ers,Turnover by J. Embiid (bad pass)
+1,8:20.0,13-4,Nuggets,P. Watson makes 2-pt layup from 2 ft
+1,7:58.0,13-6,76ers,J. Embiid makes 2-pt jump shot from 9 ft (assist by V. Edgecombe)
+1,7:58.0,13-6,76ers,Shooting foul by D. Holmes (drawn by J. Embiid)
+1,7:58.0,13-7,76ers,J. Embiid makes free throw 1 of 1
+1,7:46.0,15-7,Nuggets,B. Brown makes 2-pt jump shot from 8 ft (assist by J. Pickett)
+1,7:22.0,15-9,76ers,J. Embiid makes 2-pt dunk from 1 ft (assist by V. Edgecombe)
+1,7:10.0,15-9,Nuggets,Shooting foul by P. George (drawn by P. Watson)
+1,7:10.0,15-9,Nuggets,P. Watson misses free throw 1 of 2
+1,7:10.0,15-9,Nuggets,Offensive rebound by Team
+1,7:10.0,16-9,Nuggets,P. Watson makes free throw 2 of 2
+1,6:56.0,16-11,76ers,D. Barlow makes 2-pt layup from 1 ft (assist by J. Embiid)
+1,6:56.0,16-11,76ers,Shooting foul by B. Brown (drawn by D. Barlow)
+1,6:56.0,16-11,76ers,Philadelphia full timeout
+1,6:56.0,16-12,76ers,D. Barlow makes free throw 1 of 1
+1,6:44.0,16-12,Nuggets,D. Holmes misses 3-pt jump shot from 27 ft
+1,6:42.0,16-12,76ers,Defensive rebound by T. Maxey
+1,6:25.0,16-12,76ers,Turnover by V. Edgecombe (bad pass)
+1,6:11.0,16-12,Nuggets,J. Pickett misses 2-pt layup from 3 ft
+1,6:08.0,16-12,76ers,Defensive rebound by T. Maxey
+1,6:02.0,16-14,76ers,T. Maxey makes 2-pt jump shot from 7 ft
+1,5:39.0,19-14,Nuggets,B. Brown makes 3-pt jump shot from 27 ft (assist by P. Watson)
+1,5:23.0,19-14,76ers,D. Barlow misses 3-pt jump shot from 23 ft
+1,5:20.0,19-14,76ers,Offensive rebound by J. Embiid
+1,5:19.0,19-14,76ers,J. Embiid misses 2-pt layup from 3 ft
+1,5:19.0,19-14,76ers,Offensive rebound by J. Embiid
+1,5:18.0,19-16,76ers,J. Embiid makes 2-pt layup at rim
+1,5:03.0,19-16,Nuggets,Turnover by P. Watson (lost ball; steal by P. George)
+1,4:57.0,19-16,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+1,4:55.0,19-16,Nuggets,Defensive rebound by P. Watson
+1,4:47.0,19-16,Nuggets,Shooting foul by J. Embiid (drawn by P. Watson)
+1,4:47.0,20-16,Nuggets,P. Watson makes free throw 1 of 2
+1,4:47.0,20-16,76ers,Q. Grimes enters the game for D. Barlow
+1,4:47.0,20-16,76ers,J. Walker enters the game for P. George
+1,4:47.0,21-16,Nuggets,P. Watson makes free throw 2 of 2
+1,4:36.0,21-16,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+1,4:32.0,21-16,Nuggets,Defensive rebound by P. Watson
+1,4:18.0,21-16,Nuggets,B. Brown misses 3-pt jump shot from 27 ft
+1,4:15.0,21-16,76ers,Defensive rebound by T. Maxey
+1,4:09.0,21-19,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+1,3:51.0,24-19,Nuggets,P. Watson makes 3-pt jump shot from 27 ft (assist by S. Jones)
+1,3:36.0,24-21,76ers,J. Embiid makes 2-pt layup from 1 ft (assist by T. Maxey)
+1,3:18.0,24-21,Nuggets,D. Holmes misses 3-pt jump shot from 25 ft
+1,3:15.0,24-21,76ers,Defensive rebound by J. Embiid
+1,3:09.0,24-21,76ers,T. Maxey misses 3-pt jump shot from 29 ft
+1,3:07.0,24-21,Nuggets,Defensive rebound by S. Jones
+1,3:07.0,24-21,Nuggets,Denver full timeout
+1,3:07.0,24-21,Nuggets,C. Jones enters the game for D. Holmes
+1,3:07.0,24-21,Nuggets,Z. Nnaji enters the game for J. Pickett
+1,3:07.0,24-21,Nuggets,J. Strawther enters the game for P. Watson
+1,3:07.0,24-21,76ers,A. Bona enters the game for V. Edgecombe
+1,3:07.0,24-21,76ers,J. McCain enters the game for J. Embiid
+1,2:53.0,24-21,Nuggets,C. Jones misses 3-pt jump shot from 26 ft
+1,2:49.0,24-21,76ers,Defensive rebound by J. Walker
+1,2:43.0,24-21,76ers,Turnover by T. Maxey (bad pass)
+1,2:28.0,24-21,Nuggets,C. Jones misses 3-pt jump shot from 26 ft
+1,2:24.0,24-21,Nuggets,Offensive rebound by Z. Nnaji
+1,2:21.0,24-21,Nuggets,Z. Nnaji misses 2-pt jump shot from 17 ft
+1,2:19.0,24-21,76ers,Defensive rebound by Q. Grimes
+1,2:03.0,24-21,76ers,Q. Grimes misses 3-pt jump shot from 28 ft
+1,1:59.0,24-21,Nuggets,Defensive rebound by J. Strawther
+1,1:52.0,24-21,Nuggets,Turnover by J. Strawther (bad pass; steal by J. Walker)
+1,1:52.0,24-21,Nuggets,H. Tyson enters the game for B. Brown
+1,1:32.0,24-23,76ers,J. Walker makes 2-pt layup from 1 ft (assist by T. Maxey)
+1,1:17.0,24-23,Nuggets,S. Jones misses 3-pt jump shot from 28 ft
+1,1:15.0,24-23,76ers,Defensive rebound by A. Bona
+1,1:10.0,24-26,76ers,T. Maxey makes 3-pt jump shot from 29 ft (assist by J. McCain)
+1,0:55.0,24-26,Nuggets,Shooting foul by A. Bona (drawn by Z. Nnaji)
+1,0:55.0,25-26,Nuggets,Z. Nnaji makes free throw 1 of 2
+1,0:55.0,26-26,Nuggets,Z. Nnaji makes free throw 2 of 2
+1,0:43.0,26-26,76ers,T. Maxey misses 2-pt layup from 2 ft
+1,0:42.0,26-26,Nuggets,Defensive rebound by Team
+1,0:27.0,29-26,Nuggets,Z. Nnaji makes 3-pt jump shot from 26 ft (assist by J. Strawther)
+1,0:06.0,29-26,76ers,J. McCain misses 3-pt jump shot from 27 ft
+1,0:03.0,29-26,Nuggets,Defensive rebound by Team
+1,0:03.0,29-26,76ers,Loose ball foul by Q. Grimes (drawn by J. Strawther)
+1,0:03.0,29-26,Nuggets,J. Strawther misses free throw 1 of 2
+1,0:03.0,29-26,Nuggets,Offensive rebound by Team
+1,0:03.0,29-26,Nuggets,J. Strawther misses free throw 2 of 2
+1,0:01.0,29-26,76ers,Defensive rebound by A. Bona
+1,0:00.0,29-26,76ers,Offensive rebound by Team
+2,11:49.0,29-26,76ers,Shooting foul by J. Strawther (drawn by Q. Grimes)
+2,11:49.0,29-27,76ers,Q. Grimes makes free throw 1 of 2
+2,11:49.0,29-27,76ers,P. George enters the game for J. Walker
+2,11:49.0,29-27,76ers,Q. Grimes misses free throw 2 of 2
+2,11:46.0,29-27,Nuggets,Defensive rebound by P. Watson
+2,11:39.0,29-27,Nuggets,Personal foul by A. Bona (drawn by Z. Nnaji)
+2,11:29.0,29-27,Nuggets,Turnover by H. Tyson (bad pass; steal by P. George)
+2,11:23.0,29-29,76ers,A. Bona makes 2-pt layup from 1 ft (assist by Q. Grimes)
+2,11:07.0,29-29,Nuggets,J. Strawther misses 3-pt jump shot from 24 ft
+2,11:05.0,29-29,76ers,Defensive rebound by Q. Grimes
+2,10:58.0,29-29,76ers,Turnover by Q. Grimes (bad pass; steal by Z. Nnaji)
+2,10:50.0,29-29,Nuggets,Shooting foul by P. George (drawn by J. Strawther)
+2,10:50.0,30-29,Nuggets,J. Strawther makes free throw 1 of 2
+2,10:50.0,31-29,Nuggets,J. Strawther makes free throw 2 of 2
+2,10:35.0,31-32,76ers,P. George makes 3-pt jump shot from 28 ft
+2,10:12.0,31-32,Nuggets,P. Watson misses 2-pt jump shot from 6 ft
+2,10:11.0,31-32,76ers,Defensive rebound by V. Edgecombe
+2,10:04.0,31-32,76ers,Turnover by J. McCain (traveling)
+2,9:51.0,34-32,Nuggets,Z. Nnaji makes 3-pt jump shot from 26 ft (assist by J. Strawther)
+2,9:37.0,34-32,76ers,P. George misses 3-pt jump shot from 26 ft
+2,9:34.0,34-32,Nuggets,Defensive rebound by Z. Nnaji
+2,9:26.0,36-32,Nuggets,J. Strawther makes 2-pt layup from 3 ft
+2,9:10.0,36-32,76ers,V. Edgecombe misses 2-pt jump shot from 5 ft
+2,9:09.0,36-32,76ers,Offensive rebound by A. Bona
+2,9:08.0,36-34,76ers,A. Bona makes 2-pt dunk at rim
+2,8:41.0,39-34,Nuggets,H. Tyson makes 3-pt jump shot from 26 ft (assist by J. Strawther)
+2,8:22.0,39-34,76ers,V. Edgecombe misses 2-pt layup from 3 ft
+2,8:20.0,39-34,Nuggets,Defensive rebound by H. Tyson
+2,8:15.0,39-34,Nuggets,Z. Nnaji misses 3-pt jump shot from 23 ft
+2,8:13.0,39-34,Nuggets,Offensive rebound by Z. Nnaji
+2,8:12.0,39-34,Nuggets,Turnover by Z. Nnaji (out of bounds lost ball)
+2,7:59.0,39-37,76ers,P. George makes 3-pt jump shot from 26 ft (assist by J. McCain)
+2,7:38.0,39-37,Nuggets,J. Strawther misses 3-pt jump shot from 26 ft
+2,7:36.0,39-37,76ers,Defensive rebound by P. George
+2,7:29.0,39-39,76ers,A. Bona makes 2-pt layup from 1 ft (assist by P. George)
+2,7:29.0,39-39,76ers,Shooting foul by C. Jones (drawn by A. Bona)
+2,7:29.0,39-39,Nuggets,J. Pickett enters the game for J. Strawther
+2,7:29.0,39-39,76ers,A. Bona misses free throw 1 of 1
+2,7:26.0,39-39,Nuggets,Defensive rebound by Z. Nnaji
+2,7:06.0,41-39,Nuggets,J. Pickett makes 2-pt jump shot from 15 ft
+2,6:58.0,41-39,76ers,P. George misses 3-pt jump shot from 27 ft
+2,6:54.0,41-39,Nuggets,Defensive rebound by C. Jones
+2,6:45.0,41-39,76ers,Philadelphia full timeout
+2,6:45.0,41-39,76ers,Instant Replay (Challenge: Ruling Stands)
+2,6:45.0,41-39,Nuggets,H. Tyson misses 2-pt layup from 1 ft (block by A. Bona)
+2,6:45.0,41-39,76ers,Defensive rebound by Team
+2,6:45.0,41-39,Nuggets,B. Brown enters the game for C. Jones
+2,6:45.0,41-39,Nuggets,D. Holmes enters the game for Z. Nnaji
+2,6:45.0,41-39,Nuggets,S. Jones enters the game for P. Watson
+2,6:45.0,41-39,76ers,J. Embiid enters the game for V. Edgecombe
+2,6:45.0,41-39,76ers,T. Maxey enters the game for P. George
+2,6:35.0,41-39,76ers,T. Maxey misses 2-pt layup from 2 ft
+2,6:35.0,41-39,76ers,Offensive rebound by A. Bona
+2,6:34.0,41-39,76ers,A. Bona misses 2-pt dunk from 2 ft (block by H. Tyson)
+2,6:34.0,41-39,Nuggets,Defensive rebound by B. Brown
+2,6:32.0,41-39,Nuggets,H. Tyson misses 3-pt jump shot from 25 ft
+2,6:32.0,41-39,Nuggets,Offensive rebound by J. Pickett
+2,6:30.0,41-39,Nuggets,Turnover by D. Holmes (bad pass; steal by T. Maxey)
+2,6:22.0,41-39,76ers,Shooting foul by H. Tyson (drawn by Q. Grimes)
+2,6:22.0,41-40,76ers,Q. Grimes makes free throw 1 of 2
+2,6:22.0,41-41,76ers,Q. Grimes makes free throw 2 of 2
+2,6:07.0,44-41,Nuggets,J. Pickett makes 3-pt jump shot from 27 ft (assist by H. Tyson)
+2,5:44.0,44-44,76ers,J. McCain makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+2,5:19.0,46-44,Nuggets,H. Tyson makes 2-pt jump shot from 17 ft (assist by D. Holmes)
+2,5:05.0,46-46,76ers,T. Maxey makes 2-pt jump shot from 2 ft
+2,5:05.0,46-46,76ers,Shooting foul by S. Jones (drawn by T. Maxey)
+2,5:05.0,46-47,76ers,T. Maxey makes free throw 1 of 1
+2,4:51.0,46-47,Nuggets,D. Holmes misses 3-pt jump shot from 30 ft
+2,4:51.0,46-47,76ers,Defensive rebound by Q. Grimes
+2,4:31.0,46-49,76ers,J. Embiid makes 2-pt jump shot from 19 ft (assist by T. Maxey)
+2,4:31.0,46-49,Nuggets,Denver full timeout
+2,4:31.0,46-49,Nuggets,P. Watson enters the game for H. Tyson
+2,4:15.0,46-49,Nuggets,Turnover by J. Pickett (lost ball; steal by T. Maxey)
+2,4:07.0,46-49,76ers,J. Embiid misses 2-pt jump shot from 5 ft
+2,4:04.0,46-49,76ers,Offensive rebound by J. Embiid
+2,3:53.0,46-51,76ers,J. Embiid makes 2-pt jump shot from 9 ft
+2,3:37.0,46-51,Nuggets,S. Jones misses 3-pt jump shot from 22 ft
+2,3:33.0,46-51,76ers,Defensive rebound by J. Embiid
+2,3:31.0,46-51,76ers,J. McCain misses 3-pt jump shot from 26 ft
+2,3:30.0,46-51,76ers,Offensive rebound by A. Bona
+2,3:30.0,46-51,76ers,Turnover by A. Bona (lost ball; steal by S. Jones)
+2,3:19.0,46-51,Nuggets,Personal foul by T. Maxey (drawn by D. Holmes)
+2,3:19.0,46-51,76ers,V. Edgecombe enters the game for A. Bona
+2,3:19.0,46-51,76ers,P. George enters the game for J. McCain
+2,3:11.0,49-51,Nuggets,J. Pickett makes 3-pt jump shot from 26 ft (assist by P. Watson)
+2,2:48.0,49-51,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+2,2:44.0,49-51,Nuggets,Defensive rebound by S. Jones
+2,2:22.0,52-51,Nuggets,J. Pickett makes 3-pt jump shot from 26 ft (assist by P. Watson)
+2,2:07.0,52-51,76ers,Shooting foul by S. Jones (drawn by Q. Grimes)
+2,2:07.0,52-52,76ers,Q. Grimes makes free throw 1 of 2
+2,2:07.0,52-53,76ers,Q. Grimes makes free throw 2 of 2
+2,1:49.0,52-53,Nuggets,J. Pickett misses 2-pt layup from 2 ft (block by T. Maxey)
+2,1:49.0,52-53,Nuggets,Offensive rebound by Team
+2,1:41.0,54-53,Nuggets,P. Watson makes 2-pt jump shot from 22 ft (assist by D. Holmes)
+2,1:28.0,54-53,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+2,1:26.0,54-53,Nuggets,Defensive rebound by B. Brown
+2,1:20.0,56-53,Nuggets,D. Holmes makes 2-pt dunk from 1 ft (assist by B. Brown)
+2,1:07.0,56-53,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+2,1:04.0,56-53,Nuggets,Defensive rebound by P. Watson
+2,0:58.0,56-53,Nuggets,J. Pickett misses 3-pt jump shot from 23 ft
+2,0:54.0,56-53,76ers,Defensive rebound by V. Edgecombe
+2,0:48.0,56-55,76ers,T. Maxey makes 2-pt layup from 2 ft
+2,0:25.0,58-55,Nuggets,P. Watson makes 2-pt jump shot from 20 ft (assist by B. Brown)
+2,0:00.0,58-58,76ers,Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. Embiid)
+2,0:00.0,58-58,Nuggets,Team misses heave shot (block by V. Edgecombe)
+2,0:00.0,58-58,Nuggets,Offensive rebound by Team
+3,11:48.0,58-61,76ers,D. Barlow makes 3-pt jump shot from 22 ft (assist by V. Edgecombe)
+3,11:21.0,61-61,Nuggets,J. Pickett makes 3-pt jump shot from 26 ft
+3,10:59.0,61-64,76ers,J. Embiid makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+3,10:33.0,61-64,Nuggets,P. Watson misses 2-pt jump shot from 20 ft
+3,10:30.0,61-64,76ers,Defensive rebound by J. Embiid
+3,10:22.0,61-64,76ers,P. George misses 3-pt jump shot from 23 ft
+3,10:20.0,61-64,Nuggets,Defensive rebound by Team
+3,10:04.0,63-64,Nuggets,J. Pickett makes 2-pt layup from 3 ft (assist by D. Holmes)
+3,9:46.0,63-64,76ers,Turnover by J. Embiid (bad pass)
+3,9:37.0,63-64,Nuggets,Personal foul by D. Barlow (drawn by D. Holmes)
+3,9:23.0,63-64,Nuggets,B. Brown misses 2-pt layup from 11 ft (block by T. Maxey)
+3,9:20.0,63-64,76ers,Defensive rebound by T. Maxey
+3,9:07.0,63-64,76ers,Shooting foul by J. Pickett (drawn by J. Embiid)
+3,9:07.0,63-65,76ers,J. Embiid makes free throw 1 of 2
+3,9:07.0,63-66,76ers,J. Embiid makes free throw 2 of 2
+3,8:53.0,66-66,Nuggets,P. Watson makes 3-pt jump shot from 24 ft (assist by J. Pickett)
+3,8:31.0,66-66,76ers,D. Barlow misses 3-pt jump shot from 23 ft
+3,8:28.0,66-66,76ers,Offensive rebound by Team
+3,8:19.0,66-66,76ers,Personal foul by S. Jones (drawn by J. Embiid)
+3,8:12.0,66-66,76ers,Def 3 sec tech foul by Team
+3,8:12.0,66-66,76ers,T. Maxey misses technical free throw
+3,8:12.0,66-66,76ers,Offensive rebound by Team
+3,8:04.0,66-66,76ers,J. Embiid misses 2-pt jump shot from 12 ft
+3,8:03.0,66-66,76ers,Offensive rebound by Team
+3,8:03.0,66-66,Nuggets,Loose ball foul by J. Pickett (drawn by D. Barlow)
+3,7:53.0,66-66,76ers,T. Maxey misses 2-pt layup from 3 ft
+3,7:51.0,66-66,Nuggets,Defensive rebound by Team
+3,7:38.0,69-66,Nuggets,J. Pickett makes 3-pt jump shot from 27 ft
+3,7:31.0,69-66,76ers,Personal foul by J. Pickett (drawn by V. Edgecombe)
+3,7:19.0,69-66,76ers,P. George misses 3-pt jump shot from 25 ft
+3,7:16.0,69-66,Nuggets,Defensive rebound by P. Watson
+3,7:01.0,71-66,Nuggets,P. Watson makes 2-pt layup from 2 ft
+3,6:52.0,71-69,76ers,V. Edgecombe makes 3-pt jump shot from 24 ft (assist by P. George)
+3,6:36.0,71-69,Nuggets,Turnover by D. Holmes (out of bounds lost ball)
+3,6:36.0,71-69,76ers,Philadelphia full timeout
+3,6:36.0,71-69,Nuggets,Z. Nnaji enters the game for D. Holmes
+3,6:36.0,71-69,76ers,Q. Grimes enters the game for D. Barlow
+3,6:36.0,71-69,76ers,J. Walker enters the game for P. George
+3,6:25.0,71-69,76ers,Turnover by V. Edgecombe (bad pass; steal by Z. Nnaji)
+3,6:22.0,73-69,Nuggets,Z. Nnaji makes 2-pt layup from 3 ft (assist by J. Pickett)
+3,5:56.0,73-72,76ers,V. Edgecombe makes 3-pt jump shot from 28 ft (assist by T. Maxey)
+3,5:34.0,73-72,Nuggets,Turnover by P. Watson (out of bounds lost ball)
+3,5:21.0,73-74,76ers,T. Maxey makes 2-pt layup from 1 ft
+3,5:08.0,73-74,Nuggets,Shooting foul by J. Walker (drawn by P. Watson)
+3,5:08.0,74-74,Nuggets,P. Watson makes free throw 1 of 2
+3,5:08.0,74-74,Nuggets,P. Watson misses free throw 2 of 2
+3,5:05.0,74-74,76ers,Defensive rebound by V. Edgecombe
+3,4:53.0,74-76,76ers,T. Maxey makes 2-pt jump shot from 17 ft
+3,4:39.0,76-76,Nuggets,B. Brown makes 2-pt layup from 2 ft
+3,4:39.0,76-76,Nuggets,Shooting foul by J. Walker (drawn by B. Brown)
+3,4:39.0,77-76,Nuggets,B. Brown makes free throw 1 of 1
+3,4:18.0,77-76,76ers,Shooting foul by B. Brown (drawn by T. Maxey)
+3,4:18.0,77-76,Nuggets,J. Strawther enters the game for S. Jones
+3,4:18.0,77-77,76ers,T. Maxey makes free throw 1 of 2
+3,4:18.0,77-77,76ers,T. Maxey misses free throw 2 of 2
+3,4:17.0,77-77,76ers,Offensive rebound by J. Walker
+3,4:15.0,77-77,76ers,J. Walker misses 2-pt layup from 3 ft (block by Z. Nnaji)
+3,4:14.0,77-77,76ers,Offensive rebound by J. Walker
+3,4:14.0,77-79,76ers,J. Walker makes 2-pt layup at rim
+3,3:56.0,77-79,Nuggets,Personal foul by J. Embiid (drawn by Z. Nnaji)
+3,3:50.0,77-79,Nuggets,J. Pickett misses 3-pt jump shot from 27 ft
+3,3:49.0,77-79,Nuggets,Offensive rebound by Team
+3,3:39.0,77-79,Nuggets,Z. Nnaji misses 2-pt layup from 2 ft (block by J. Embiid)
+3,3:38.0,77-79,Nuggets,Offensive rebound by J. Strawther
+3,3:37.0,77-79,Nuggets,J. Strawther misses 2-pt layup from 2 ft (block by J. Walker)
+3,3:37.0,77-79,76ers,Defensive rebound by J. Walker
+3,3:29.0,77-79,76ers,Personal foul by J. Strawther (drawn by J. Embiid)
+3,3:29.0,77-80,76ers,J. Embiid makes free throw 1 of 2
+3,3:29.0,77-80,Nuggets,Denver full timeout
+3,3:29.0,77-80,Nuggets,H. Tyson enters the game for J. Pickett
+3,3:29.0,77-80,76ers,J. McCain enters the game for V. Edgecombe
+3,3:29.0,77-81,76ers,J. Embiid makes free throw 2 of 2
+3,3:15.0,77-81,Nuggets,Turnover by P. Watson (lost ball; steal by T. Maxey)
+3,3:10.0,77-81,76ers,Turnover by Q. Grimes (step out of bounds)
+3,2:57.0,77-81,Nuggets,B. Brown misses 2-pt jump shot from 9 ft
+3,2:55.0,77-81,Nuggets,Offensive rebound by B. Brown
+3,2:53.0,79-81,Nuggets,B. Brown makes 2-pt layup from 2 ft
+3,2:33.0,79-81,76ers,T. Maxey misses 2-pt layup from 21 ft
+3,2:32.0,79-81,76ers,Offensive rebound by J. Embiid
+3,2:32.0,79-83,76ers,J. Embiid makes 2-pt layup at rim
+3,2:14.0,79-83,Nuggets,Turnover by P. Watson (lost ball; steal by T. Maxey)
+3,2:11.0,79-86,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+3,2:10.0,79-86,Nuggets,Denver full timeout
+3,2:10.0,79-86,76ers,V. Edgecombe enters the game for T. Maxey
+3,1:51.0,79-86,Nuggets,Shooting foul by J. Walker (drawn by H. Tyson)
+3,1:51.0,80-86,Nuggets,H. Tyson makes free throw 1 of 2
+3,1:51.0,81-86,Nuggets,H. Tyson makes free throw 2 of 2
+3,1:33.0,81-88,76ers,J. Embiid makes 2-pt hook shot from 5 ft (assist by V. Edgecombe)
+3,1:17.0,81-88,Nuggets,B. Brown misses 2-pt jump shot from 16 ft
+3,1:14.0,81-88,76ers,Defensive rebound by V. Edgecombe
+3,1:10.0,81-90,76ers,J. Walker makes 2-pt layup from 1 ft (assist by J. McCain)
+3,0:55.0,84-90,Nuggets,Z. Nnaji makes 3-pt jump shot from 27 ft (assist by J. Strawther)
+3,0:50.0,84-90,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+3,0:46.0,84-90,Nuggets,Defensive rebound by P. Watson
+3,0:34.0,84-90,Nuggets,Shooting foul by V. Edgecombe (drawn by Z. Nnaji)
+3,0:34.0,84-90,Nuggets,Z. Nnaji misses free throw 1 of 2
+3,0:34.0,84-90,Nuggets,Offensive rebound by Team
+3,0:34.0,85-90,Nuggets,Z. Nnaji makes free throw 2 of 2
+3,0:29.0,85-93,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft
+3,0:10.0,87-93,Nuggets,P. Watson makes 2-pt jump shot from 8 ft
+3,0:00.0,87-93,76ers,J. Embiid misses 3-pt jump shot from 27 ft
+3,0:00.0,87-93,76ers,Offensive rebound by Team
+4,11:38.0,89-93,Nuggets,Z. Nnaji makes 2-pt layup from 2 ft (assist by J. Strawther)
+4,11:19.0,89-95,76ers,A. Bona makes 2-pt dunk from 1 ft (assist by J. McCain)
+4,11:06.0,89-95,Nuggets,H. Tyson misses 3-pt jump shot from 24 ft
+4,11:03.0,89-95,76ers,Defensive rebound by Q. Grimes
+4,11:03.0,89-95,76ers,Personal foul by H. Tyson (drawn by Q. Grimes)
+4,10:48.0,89-98,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+4,10:26.0,91-98,Nuggets,H. Tyson makes 2-pt layup from 3 ft (assist by Z. Nnaji)
+4,10:26.0,91-98,Nuggets,Shooting foul by P. George (drawn by H. Tyson)
+4,10:26.0,92-98,Nuggets,H. Tyson makes free throw 1 of 1
+4,10:09.0,92-100,76ers,Q. Grimes makes 2-pt layup from 2 ft (assist by T. Maxey)
+4,9:58.0,94-100,Nuggets,S. Jones makes 2-pt hook shot from 9 ft (assist by J. Pickett)
+4,9:41.0,94-100,76ers,T. Maxey misses 2-pt layup from 2 ft
+4,9:38.0,94-100,Nuggets,Defensive rebound by J. Strawther
+4,9:30.0,96-100,Nuggets,J. Strawther makes 2-pt layup from 2 ft
+4,9:16.0,96-100,76ers,J. McCain misses 2-pt layup from 3 ft
+4,9:15.0,96-100,Nuggets,Defensive rebound by J. Strawther
+4,8:48.0,98-100,Nuggets,J. Pickett makes 2-pt jump shot from 7 ft (assist by S. Jones)
+4,8:48.0,98-100,Nuggets,P. Watson enters the game for J. Strawther
+4,8:48.0,98-100,76ers,V. Edgecombe enters the game for J. McCain
+4,8:30.0,98-100,76ers,T. Maxey misses 3-pt jump shot from 24 ft
+4,8:28.0,98-100,Nuggets,Defensive rebound by J. Pickett
+4,8:18.0,98-100,Nuggets,P. Watson misses 3-pt jump shot from 28 ft
+4,8:14.0,98-100,76ers,Defensive rebound by A. Bona
+4,8:09.0,98-100,76ers,P. George misses 3-pt jump shot from 26 ft
+4,8:05.0,98-100,Nuggets,Defensive rebound by H. Tyson
+4,8:02.0,101-100,Nuggets,H. Tyson makes 3-pt jump shot from 26 ft
+4,8:02.0,101-100,Nuggets,Shooting foul by Q. Grimes (drawn by H. Tyson)
+4,8:02.0,102-100,Nuggets,H. Tyson makes free throw 1 of 1
+4,7:43.0,102-100,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+4,7:39.0,102-100,Nuggets,Defensive rebound by J. Pickett
+4,7:31.0,104-100,Nuggets,J. Pickett makes 2-pt layup from 3 ft
+4,7:25.0,104-100,76ers,Philadelphia full timeout
+4,7:25.0,104-100,76ers,J. Embiid enters the game for P. George
+4,7:14.0,104-100,76ers,V. Edgecombe misses 2-pt layup from 4 ft
+4,7:12.0,104-100,Nuggets,Defensive rebound by H. Tyson
+4,6:52.0,104-100,Nuggets,Shooting foul by A. Bona (drawn by P. Watson)
+4,6:52.0,104-100,76ers,Philadelphia full timeout
+4,6:52.0,104-100,76ers,Instant Replay (Challenge: Ruling Stands)
+4,6:52.0,105-100,Nuggets,P. Watson makes free throw 1 of 2
+4,6:52.0,106-100,Nuggets,P. Watson makes free throw 2 of 2
+4,6:28.0,106-100,76ers,J. Embiid misses 2-pt layup from 2 ft
+4,6:27.0,106-100,76ers,Offensive rebound by J. Embiid
+4,6:27.0,106-102,76ers,J. Embiid makes 2-pt layup at rim
+4,6:06.0,106-102,Nuggets,Z. Nnaji misses 2-pt layup from 4 ft (block by Q. Grimes)
+4,6:06.0,106-102,Nuggets,Offensive rebound by Team
+4,5:55.0,106-102,Nuggets,Turnover by Team (shot clock)
+4,5:43.0,106-104,76ers,J. Embiid makes 2-pt jump shot from 4 ft (assist by T. Maxey)
+4,5:27.0,106-104,Nuggets,Shooting foul by Q. Grimes (drawn by P. Watson)
+4,5:27.0,107-104,Nuggets,P. Watson makes free throw 1 of 2
+4,5:27.0,107-104,Nuggets,B. Brown enters the game for H. Tyson
+4,5:27.0,108-104,Nuggets,P. Watson makes free throw 2 of 2
+4,5:09.0,108-104,76ers,V. Edgecombe misses 2-pt hook shot from 8 ft
+4,5:08.0,108-104,76ers,Offensive rebound by Team
+4,5:08.0,108-104,Nuggets,Loose ball foul by Z. Nnaji (drawn by J. Embiid)
+4,5:01.0,108-107,76ers,Q. Grimes makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)
+4,4:41.0,111-107,Nuggets,Z. Nnaji makes 3-pt jump shot from 27 ft (assist by P. Watson)
+4,4:28.0,111-107,76ers,Shooting foul by S. Jones (drawn by T. Maxey)
+4,4:28.0,111-108,76ers,T. Maxey makes free throw 1 of 2
+4,4:28.0,111-108,Nuggets,Denver full timeout
+4,4:28.0,111-109,76ers,T. Maxey makes free throw 2 of 2
+4,4:14.0,111-109,Nuggets,Turnover by J. Pickett (traveling)
+4,3:56.0,111-112,76ers,V. Edgecombe makes 3-pt jump shot from 27 ft (assist by A. Bona)
+4,3:39.0,113-112,Nuggets,Z. Nnaji makes 2-pt layup from 1 ft (assist by J. Pickett)
+4,3:19.0,113-112,76ers,Turnover by J. Embiid (lost ball; steal by P. Watson)
+4,3:13.0,115-112,Nuggets,B. Brown makes 2-pt layup from 2 ft
+4,2:58.0,115-115,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by A. Bona)
+4,2:29.0,118-115,Nuggets,B. Brown makes 3-pt jump shot from 24 ft (assist by J. Pickett)
+4,2:16.0,118-115,76ers,J. Embiid misses 2-pt layup from 3 ft (block by P. Watson)
+4,2:15.0,118-115,Nuggets,Defensive rebound by Z. Nnaji
+4,1:51.0,118-115,Nuggets,Shooting foul by A. Bona (drawn by B. Brown)
+4,1:51.0,119-115,Nuggets,B. Brown makes free throw 1 of 3
+4,1:51.0,119-115,Nuggets,B. Brown misses free throw 2 of 3
+4,1:51.0,119-115,Nuggets,Offensive rebound by Team
+4,1:51.0,120-115,Nuggets,B. Brown makes free throw 3 of 3
+4,1:44.0,120-115,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft (block by P. Watson)
+4,1:42.0,120-115,Nuggets,Defensive rebound by Z. Nnaji
+4,1:42.0,120-115,Nuggets,Turnover by Z. Nnaji (bad pass)
+4,1:42.0,120-115,76ers,P. George enters the game for A. Bona
+4,1:32.0,120-118,76ers,V. Edgecombe makes 3-pt jump shot from 27 ft
+4,1:17.0,120-118,Nuggets,Turnover by J. Pickett (bad pass; steal by V. Edgecombe)
+4,1:14.0,120-118,76ers,Turnover by J. Embiid (bad pass; steal by B. Brown)
+4,0:56.0,120-118,Nuggets,B. Brown misses 3-pt jump shot from 28 ft
+4,0:53.0,120-118,76ers,Defensive rebound by V. Edgecombe
+4,0:49.0,120-120,76ers,T. Maxey makes 2-pt layup from 1 ft (assist by V. Edgecombe)
+4,0:49.0,120-120,Nuggets,Denver full timeout
+4,0:32.0,120-120,Nuggets,P. Watson misses 2-pt layup from 4 ft (block by P. George)
+4,0:29.0,120-120,Nuggets,Offensive rebound by S. Jones
+4,0:25.0,120-120,Nuggets,J. Pickett misses 3-pt jump shot from 28 ft
+4,0:22.0,120-120,76ers,Defensive rebound by P. George
+4,0:00.0,120-120,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+4,0:00.0,120-120,76ers,Offensive rebound by Team
+4,4:41.0,123-120,Nuggets,J. Pickett makes 3-pt jump shot from 27 ft
+4,4:24.0,123-120,76ers,T. Maxey misses 2-pt layup from 1 ft
+4,4:22.0,123-120,Nuggets,Defensive rebound by Z. Nnaji
+4,4:15.0,123-120,Nuggets,Turnover by P. Watson (bad pass)
+4,4:15.0,123-120,76ers,Q. Grimes enters the game for A. Bona
+4,3:58.0,123-122,76ers,J. Embiid makes 2-pt layup from 1 ft
+4,3:51.0,123-122,Nuggets,Personal foul by Q. Grimes (drawn by S. Jones)
+4,3:38.0,123-122,Nuggets,J. Pickett misses 2-pt layup from 1 ft
+4,3:37.0,123-122,Nuggets,Offensive rebound by B. Brown
+4,3:36.0,123-122,Nuggets,B. Brown misses 2-pt layup at rim (block by V. Edgecombe)
+4,3:35.0,123-122,76ers,Defensive rebound by T. Maxey
+4,3:30.0,123-122,76ers,Turnover by V. Edgecombe (out of bounds lost ball)
+4,3:16.0,123-122,Nuggets,P. Watson misses 2-pt jump shot from 13 ft
+4,3:14.0,123-122,76ers,Defensive rebound by J. Embiid
+4,2:55.0,123-122,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+4,2:52.0,123-122,Nuggets,Defensive rebound by P. Watson
+4,2:37.0,123-122,Nuggets,Turnover by J. Pickett (lost ball; steal by V. Edgecombe)
+4,2:28.0,123-122,76ers,P. George misses 2-pt layup from 1 ft (block by Z. Nnaji)
+4,2:25.0,123-122,Nuggets,Defensive rebound by B. Brown
+4,2:19.0,123-122,Nuggets,Offensive foul by S. Jones (drawn by Q. Grimes)
+4,2:19.0,123-122,Nuggets,Turnover by S. Jones (offensive foul)
+4,2:04.0,123-122,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+4,2:01.0,123-122,Nuggets,Defensive rebound by Z. Nnaji
+4,1:39.0,123-122,Nuggets,J. Pickett misses 2-pt jump shot from 21 ft
+4,1:38.0,123-122,Nuggets,Offensive rebound by Team
+4,1:38.0,123-122,Nuggets,Turnover by Team (shot clock)
+4,1:26.0,123-124,76ers,V. Edgecombe makes 2-pt dunk from 1 ft (assist by P. George)
+4,1:14.0,123-124,Nuggets,Turnover by P. Watson (out of bounds lost ball)
+4,1:02.0,123-124,76ers,Personal foul by Z. Nnaji (drawn by J. Embiid)
+4,0:52.0,123-124,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+4,0:49.0,123-124,76ers,Offensive rebound by V. Edgecombe
+4,0:38.0,123-124,76ers,Turnover by J. Embiid (bad pass)
+4,0:38.0,123-124,Nuggets,Denver full timeout
+4,0:31.0,123-124,Nuggets,P. Watson misses 2-pt jump shot from 20 ft
+4,0:29.0,123-124,76ers,Defensive rebound by V. Edgecombe
+4,0:11.0,123-124,76ers,V. Edgecombe misses 2-pt layup from 3 ft
+4,0:11.0,123-124,76ers,Offensive rebound by J. Embiid
+4,0:10.0,123-124,76ers,J. Embiid misses 2-pt layup at rim (block by S. Jones)
+4,0:10.0,123-124,Nuggets,Defensive rebound by B. Brown
+4,0:05.0,125-124,Nuggets,B. Brown makes 2-pt layup from 1 ft
+4,0:05.0,125-124,76ers,Violation by Team (def goaltending)
+4,0:05.0,125-124,76ers,Instant Replay (Request: Ruling Stands)
+4,0:00.0,125-124,76ers,T. Maxey misses 2-pt jump shot from 8 ft
+4,0:00.0,125-124,76ers,Offensive rebound by Team

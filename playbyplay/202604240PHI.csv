@@ -1,0 +1,427 @@
+quarter,time,score,team,description
+1,11:40.0,0-0,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,11:38.0,0-0,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by S. Hauser
+1,11:22.0,2-0,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt hook shot from 5 ft
+1,11:22.0,2-0,76ers,Violation by Team (def goaltending)
+1,11:10.0,2-0,76ers,Offensive foul by A. Bona (drawn by J. Brown)
+1,11:10.0,2-0,76ers,Turnover by A. Bona (offensive foul)
+1,10:51.0,2-0,2026 NBA Eastern Conference First Round Game 3: Celtics,Shooting foul by K. Oubre (drawn by D. White)
+1,10:51.0,3-0,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes free throw 1 of 2
+1,10:51.0,4-0,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes free throw 2 of 2
+1,10:36.0,4-2,76ers,V. Edgecombe makes 2-pt jump shot at rim (assist by T. Maxey)
+1,10:26.0,4-2,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive foul by N. Queta (drawn by K. Oubre)
+1,10:26.0,4-2,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Queta (offensive foul)
+1,10:11.0,4-2,76ers,V. Edgecombe misses 2-pt jump shot from 16 ft
+1,10:09.0,4-2,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Queta
+1,10:00.0,4-2,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 2-pt layup from 4 ft
+1,9:58.0,4-2,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by N. Queta
+1,9:56.0,4-2,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Queta (lost ball; steal by A. Bona)
+1,9:51.0,4-5,76ers,K. Oubre makes 3-pt jump shot from 24 ft (assist by T. Maxey)
+1,9:38.0,4-5,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 27 ft
+1,9:35.0,4-5,76ers,Defensive rebound by A. Bona
+1,9:24.0,4-5,76ers,T. Maxey misses 2-pt jump shot from 7 ft
+1,9:23.0,4-5,76ers,Offensive rebound by Team
+1,9:23.0,4-5,2026 NBA Eastern Conference First Round Game 3: Celtics,Loose ball foul by S. Hauser (drawn by A. Bona)
+1,9:08.0,4-5,76ers,K. Oubre misses 2-pt layup from 3 ft (block by N. Queta)
+1,9:06.0,4-5,76ers,Offensive rebound by A. Bona
+1,9:05.0,4-7,76ers,A. Bona makes 2-pt dunk at rim
+1,8:57.0,6-7,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta makes 2-pt dunk from 2 ft (assist by J. Tatum)
+1,8:40.0,6-7,76ers,V. Edgecombe misses 2-pt jump shot from 12 ft
+1,8:37.0,6-7,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by S. Hauser
+1,8:29.0,6-7,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 3-pt jump shot from 28 ft
+1,8:28.0,6-7,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by S. Hauser
+1,8:28.0,6-7,2026 NBA Eastern Conference First Round Game 3: Celtics,S. Hauser misses 2-pt layup at rim (block by V. Edgecombe)
+1,8:26.0,6-7,76ers,Defensive rebound by K. Oubre
+1,8:13.0,6-7,76ers,T. Maxey misses 2-pt jump shot from 8 ft (block by D. White)
+1,8:10.0,6-7,76ers,Offensive rebound by T. Maxey
+1,8:09.0,6-7,76ers,Shooting foul by N. Queta (drawn by A. Bona)
+1,8:09.0,6-8,76ers,A. Bona makes free throw 1 of 2
+1,8:09.0,6-8,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević enters the game for N. Queta
+1,8:09.0,6-9,76ers,A. Bona makes free throw 2 of 2
+1,7:57.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević misses 3-pt jump shot from 27 ft
+1,7:54.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by J. Brown
+1,7:52.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 27 ft
+1,7:50.0,6-9,76ers,Defensive rebound by Team
+1,7:25.0,6-9,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+1,7:22.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Brown
+1,7:18.0,6-9,76ers,Philadelphia full timeout
+1,7:18.0,6-9,76ers,Instant Replay (Challenge: Ruling Stands)
+1,7:18.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by J. Brown (bad pass)
+1,7:18.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard enters the game for S. Hauser
+1,7:18.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Walsh enters the game for D. White
+1,7:09.0,6-9,76ers,K. Oubre misses 3-pt jump shot from 24 ft
+1,7:06.0,6-9,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Brown
+1,6:48.0,9-9,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard makes 3-pt jump shot from 27 ft (assist by N. Vučević)
+1,6:33.0,9-9,76ers,A. Bona misses 2-pt layup from 3 ft (block by N. Vučević)
+1,6:31.0,9-9,76ers,Offensive rebound by V. Edgecombe
+1,6:26.0,9-9,76ers,V. Edgecombe misses 2-pt jump shot from 16 ft
+1,6:23.0,9-9,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Vučević
+1,6:08.0,9-9,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 2-pt layup from 3 ft
+1,6:07.0,9-9,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by J. Walsh
+1,6:06.0,9-9,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Walsh misses 2-pt layup from 2 ft (block by T. Maxey)
+1,6:05.0,9-9,76ers,Defensive rebound by T. Maxey
+1,6:02.0,9-12,76ers,T. Maxey makes 3-pt jump shot from 25 ft
+1,5:48.0,9-12,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 3-pt jump shot from 30 ft
+1,5:44.0,9-12,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by P. Pritchard
+1,5:43.0,12-12,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 3-pt jump shot from 27 ft (assist by P. Pritchard)
+1,5:18.0,12-14,76ers,A. Bona makes 2-pt dunk from 1 ft (assist by P. George)
+1,4:48.0,12-14,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 2-pt jump shot from 3 ft (block by A. Bona)
+1,4:48.0,12-14,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by Team
+1,4:48.0,12-14,76ers,A. Drummond enters the game for A. Bona
+1,4:46.0,12-14,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 3-pt jump shot from 29 ft
+1,4:43.0,12-14,76ers,Defensive rebound by A. Drummond
+1,4:34.0,12-16,76ers,T. Maxey makes 2-pt layup from 2 ft
+1,4:18.0,15-16,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević makes 3-pt jump shot from 27 ft (assist by J. Tatum)
+1,3:57.0,15-16,76ers,P. George misses 3-pt jump shot from 26 ft
+1,3:53.0,15-16,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Walsh
+1,3:46.0,15-16,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive foul by J. Brown (drawn by K. Oubre)
+1,3:46.0,15-16,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by J. Brown (offensive foul)
+1,3:46.0,15-16,76ers,Q. Grimes enters the game for V. Edgecombe
+1,3:38.0,15-16,76ers,Offensive foul by A. Drummond (drawn by J. Brown)
+1,3:38.0,15-16,76ers,Turnover by A. Drummond (offensive foul)
+1,3:30.0,15-16,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by Q. Grimes (drawn by P. Pritchard)
+1,3:21.0,18-16,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 3-pt jump shot from 28 ft
+1,3:09.0,18-18,76ers,K. Oubre makes 2-pt layup from 1 ft (assist by T. Maxey)
+1,3:08.0,18-18,2026 NBA Eastern Conference First Round Game 3: Celtics,Boston full timeout
+1,3:08.0,18-18,76ers,J. Edwards enters the game for P. George
+1,2:56.0,18-18,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by T. Maxey (drawn by J. Brown)
+1,2:46.0,20-18,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt jump shot from 15 ft (assist by N. Vučević)
+1,2:30.0,20-18,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+1,2:27.0,20-18,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Vučević
+1,2:14.0,20-18,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 3-pt jump shot from 25 ft
+1,2:12.0,20-18,76ers,Defensive rebound by Q. Grimes
+1,2:07.0,20-20,76ers,T. Maxey makes 2-pt layup from 2 ft
+1,1:57.0,23-20,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 3-pt jump shot from 26 ft
+1,1:39.0,23-20,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+1,1:37.0,23-20,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Vučević
+1,1:32.0,23-20,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 3-pt jump shot from 28 ft
+1,1:28.0,23-20,76ers,Defensive rebound by A. Drummond
+1,1:11.0,23-20,76ers,T. Maxey misses 2-pt jump shot from 15 ft
+1,1:08.0,23-20,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Brown
+1,1:03.0,26-20,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard makes 3-pt jump shot from 26 ft (assist by J. Tatum)
+1,0:47.0,26-20,76ers,Shooting foul by J. Walsh (drawn by T. Maxey)
+1,0:47.0,26-21,76ers,T. Maxey makes free throw 1 of 2
+1,0:47.0,26-21,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White enters the game for J. Walsh
+1,0:47.0,26-22,76ers,T. Maxey makes free throw 2 of 2
+1,0:31.0,26-22,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 3-pt jump shot from 28 ft
+1,0:28.0,26-22,76ers,Defensive rebound by K. Oubre
+1,0:28.0,26-22,76ers,Personal foul by J. Tatum (drawn by K. Oubre)
+1,0:28.0,26-23,76ers,K. Oubre makes free throw 1 of 2
+1,0:28.0,26-23,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Walsh enters the game for J. Tatum
+1,0:28.0,26-24,76ers,K. Oubre makes free throw 2 of 2
+1,0:09.0,29-24,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević makes 3-pt jump shot from 28 ft (assist by J. Brown)
+1,0:02.0,29-24,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+1,0:02.0,29-24,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by Team
+2,11:44.0,29-24,2026 NBA Eastern Conference First Round Game 3: Celtics,L. Garza misses 3-pt jump shot from 28 ft
+2,11:39.0,29-24,76ers,Defensive rebound by V. Edgecombe
+2,11:26.0,29-27,76ers,P. George makes 3-pt jump shot from 25 ft
+2,11:06.0,29-27,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 2-pt jump shot from 16 ft
+2,11:04.0,29-27,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by L. Garza
+2,10:53.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,B. Scheierman makes 3-pt jump shot from 27 ft (assist by P. Pritchard)
+2,10:37.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,Violation by Team (kicked ball)
+2,10:27.0,32-27,76ers,Turnover by J. Edwards (bad pass; steal by D. White)
+2,10:21.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 27 ft
+2,10:17.0,32-27,76ers,Defensive rebound by Q. Grimes
+2,10:10.0,32-27,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+2,10:08.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by L. Garza
+2,9:56.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by J. Edwards (drawn by J. Tatum)
+2,9:43.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 2-pt jump shot from 19 ft
+2,9:40.0,32-27,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by B. Scheierman
+2,9:38.0,35-27,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes 3-pt jump shot from 28 ft (assist by B. Scheierman)
+2,9:26.0,35-27,76ers,Personal foul by B. Scheierman (drawn by A. Drummond)
+2,9:19.0,35-29,76ers,V. Edgecombe makes 2-pt jump shot from 10 ft
+2,8:58.0,38-29,2026 NBA Eastern Conference First Round Game 3: Celtics,L. Garza makes 3-pt jump shot from 27 ft (assist by J. Tatum)
+2,8:40.0,38-29,76ers,Shooting foul by L. Garza (drawn by Q. Grimes)
+2,8:40.0,38-30,76ers,Q. Grimes makes free throw 1 of 2
+2,8:40.0,38-30,76ers,A. Bona enters the game for A. Drummond
+2,8:40.0,38-31,76ers,Q. Grimes makes free throw 2 of 2
+2,8:24.0,41-31,2026 NBA Eastern Conference First Round Game 3: Celtics,B. Scheierman makes 3-pt jump shot from 28 ft (assist by L. Garza)
+2,8:04.0,41-33,76ers,P. George makes 2-pt jump shot from 15 ft (assist by V. Edgecombe)
+2,7:58.0,41-33,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by J. Edwards (drawn by D. White)
+2,7:46.0,41-33,2026 NBA Eastern Conference First Round Game 3: Celtics,L. Garza misses 2-pt layup from 2 ft (block by A. Bona)
+2,7:43.0,41-33,76ers,Defensive rebound by Q. Grimes
+2,7:42.0,41-35,76ers,V. Edgecombe makes 2-pt dunk from 1 ft (assist by Q. Grimes)
+2,7:42.0,41-35,2026 NBA Eastern Conference First Round Game 3: Celtics,Boston full timeout
+2,7:42.0,41-35,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown enters the game for L. Garza
+2,7:42.0,41-35,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta enters the game for J. Tatum
+2,7:28.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt jump shot from 11 ft
+2,7:15.0,43-35,76ers,V. Edgecombe misses 2-pt jump shot from 7 ft
+2,7:12.0,43-35,76ers,Offensive rebound by V. Edgecombe
+2,7:12.0,43-35,76ers,V. Edgecombe misses 2-pt layup at rim
+2,7:10.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Queta
+2,6:56.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by V. Edgecombe (drawn by J. Brown)
+2,6:44.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by J. Brown (lost ball; steal by P. George)
+2,6:40.0,43-35,76ers,P. George misses 2-pt layup from 2 ft (block by J. Brown)
+2,6:37.0,43-35,76ers,Offensive rebound by J. Edwards
+2,6:36.0,43-35,76ers,Turnover by J. Edwards (bad pass; steal by B. Scheierman)
+2,6:29.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 24 ft
+2,6:28.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by B. Scheierman
+2,6:28.0,43-35,76ers,T. Maxey enters the game for J. Edwards
+2,6:28.0,43-35,76ers,K. Oubre enters the game for Q. Grimes
+2,6:15.0,43-35,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by P. Pritchard (out of bounds lost ball)
+2,6:04.0,43-38,76ers,P. George makes 3-pt jump shot from 25 ft
+2,5:46.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive foul by J. Brown (drawn by P. George)
+2,5:46.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by J. Brown (offensive foul)
+2,5:46.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Instant Replay (Request: Ruling Stands)
+2,5:46.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum enters the game for D. White
+2,5:33.0,43-38,76ers,T. Maxey misses 2-pt jump shot from 9 ft
+2,5:31.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Queta
+2,5:26.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 3-pt jump shot from 26 ft
+2,5:24.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by Team
+2,5:24.0,43-38,76ers,Loose ball foul by A. Bona (drawn by N. Queta)
+2,5:14.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,B. Scheierman misses 3-pt jump shot from 26 ft
+2,5:11.0,43-38,76ers,Defensive rebound by A. Bona
+2,5:02.0,43-38,76ers,Turnover by A. Bona (lost ball; steal by N. Queta)
+2,4:59.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 2-pt layup from 2 ft
+2,4:57.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by N. Queta
+2,4:46.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 2-pt jump shot from 14 ft
+2,4:44.0,43-38,76ers,Defensive rebound by V. Edgecombe
+2,4:44.0,43-38,76ers,Personal foul by N. Queta (drawn by V. Edgecombe)
+2,4:44.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević enters the game for N. Queta
+2,4:35.0,43-38,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+2,4:30.0,43-38,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by P. Pritchard
+2,4:18.0,45-38,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt layup from 2 ft
+2,3:58.0,45-38,76ers,P. George misses 2-pt jump shot from 15 ft
+2,3:55.0,45-38,76ers,Offensive rebound by V. Edgecombe
+2,3:53.0,45-40,76ers,V. Edgecombe makes 2-pt layup from 1 ft
+2,3:48.0,45-40,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Vučević (bad pass)
+2,3:39.0,45-40,76ers,Shooting foul by N. Vučević (drawn by A. Bona)
+2,3:39.0,45-40,76ers,Philadelphia full timeout
+2,3:39.0,45-40,2026 NBA Eastern Conference First Round Game 3: Celtics,S. Hauser enters the game for P. Pritchard
+2,3:39.0,45-40,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White enters the game for B. Scheierman
+2,3:39.0,45-41,76ers,A. Bona makes free throw 1 of 2
+2,3:39.0,45-41,76ers,A. Bona misses free throw 2 of 2
+2,3:36.0,45-41,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Brown
+2,3:21.0,47-41,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 2-pt jump shot from 18 ft
+2,3:01.0,47-41,76ers,Offensive foul by A. Bona (drawn by D. White)
+2,3:01.0,47-41,76ers,Turnover by A. Bona (offensive foul)
+2,3:01.0,47-41,76ers,A. Drummond enters the game for A. Bona
+2,2:54.0,47-41,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive foul by N. Vučević (drawn by K. Oubre)
+2,2:54.0,47-41,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Vučević (offensive foul)
+2,2:44.0,47-41,76ers,T. Maxey misses 2-pt layup from 2 ft (block by D. White)
+2,2:44.0,47-41,76ers,Offensive rebound by Team
+2,2:35.0,47-41,76ers,T. Maxey misses 2-pt layup from 3 ft (block by D. White)
+2,2:31.0,47-41,76ers,Offensive rebound by A. Drummond
+2,2:29.0,47-43,76ers,A. Drummond makes 2-pt dunk at rim
+2,2:13.0,47-43,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević misses 3-pt jump shot from 27 ft
+2,2:11.0,47-43,76ers,Defensive rebound by T. Maxey
+2,1:58.0,47-45,76ers,K. Oubre makes 2-pt dunk at rim (assist by T. Maxey)
+2,1:34.0,47-45,76ers,Violation by Team (kicked ball)
+2,1:26.0,47-45,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 27 ft
+2,1:23.0,47-45,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by N. Vučević
+2,1:21.0,49-45,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević makes 2-pt jump shot from 5 ft
+2,0:57.0,49-45,76ers,Turnover by A. Drummond (bad pass; steal by J. Tatum)
+2,0:53.0,52-45,2026 NBA Eastern Conference First Round Game 3: Celtics,S. Hauser makes 3-pt jump shot from 24 ft (assist by J. Tatum)
+2,0:29.0,52-45,76ers,T. Maxey misses 2-pt layup from 3 ft (block by N. Vučević)
+2,0:28.0,52-45,76ers,Offensive rebound by K. Oubre
+2,0:28.0,52-47,76ers,K. Oubre makes 2-pt jump shot from 13 ft
+2,0:04.0,54-47,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes 2-pt jump shot from 6 ft
+2,0:00.0,54-47,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+2,0:00.0,54-47,76ers,Offensive rebound by Team
+3,11:50.0,57-47,2026 NBA Eastern Conference First Round Game 3: Celtics,S. Hauser makes 3-pt jump shot from 26 ft (assist by N. Vučević)
+3,11:33.0,57-50,76ers,P. George makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)
+3,11:21.0,57-50,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 27 ft
+3,11:19.0,57-50,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by J. Brown
+3,11:17.0,60-50,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 3-pt jump shot from 27 ft (assist by J. Brown)
+3,10:56.0,60-50,76ers,P. George misses 2-pt jump shot from 4 ft
+3,10:55.0,60-50,76ers,Offensive rebound by Team
+3,10:55.0,60-50,2026 NBA Eastern Conference First Round Game 3: Celtics,Loose ball foul by N. Vučević (drawn by A. Bona)
+3,10:45.0,60-52,76ers,P. George makes 2-pt layup from 4 ft (assist by V. Edgecombe)
+3,10:28.0,60-52,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 2-pt jump shot from 16 ft
+3,10:25.0,60-52,76ers,Defensive rebound by V. Edgecombe
+3,10:17.0,60-55,76ers,P. George makes 3-pt jump shot from 28 ft
+3,10:02.0,60-55,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević misses 3-pt jump shot from 25 ft
+3,9:59.0,60-55,76ers,Defensive rebound by V. Edgecombe
+3,9:54.0,60-55,76ers,K. Oubre misses 3-pt jump shot from 27 ft
+3,9:51.0,60-55,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by D. White
+3,9:47.0,60-55,2026 NBA Eastern Conference First Round Game 3: Celtics,Shooting foul by A. Bona (drawn by J. Brown)
+3,9:47.0,61-55,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes free throw 1 of 2
+3,9:47.0,62-55,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes free throw 2 of 2
+3,9:32.0,62-55,76ers,A. Bona misses 2-pt layup from 4 ft
+3,9:30.0,62-55,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by D. White
+3,9:13.0,62-55,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević misses 3-pt jump shot from 25 ft
+3,9:10.0,62-55,76ers,Defensive rebound by K. Oubre
+3,8:56.0,62-55,76ers,V. Edgecombe misses 3-pt jump shot from 28 ft
+3,8:53.0,62-55,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Tatum
+3,8:46.0,62-55,2026 NBA Eastern Conference First Round Game 3: Celtics,S. Hauser misses 2-pt layup from 2 ft (block by A. Bona)
+3,8:43.0,62-55,76ers,Defensive rebound by V. Edgecombe
+3,8:27.0,62-55,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+3,8:24.0,62-55,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Tatum
+3,8:06.0,64-55,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 2-pt layup from 4 ft
+3,7:46.0,64-57,76ers,T. Maxey makes 2-pt layup from 2 ft
+3,7:34.0,64-57,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Vučević (lost ball; steal by K. Oubre)
+3,7:27.0,64-60,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+3,7:12.0,64-60,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 2-pt jump shot from 7 ft
+3,7:10.0,64-60,76ers,Defensive rebound by A. Bona
+3,7:02.0,64-62,76ers,A. Bona makes 2-pt dunk from 2 ft (assist by P. George)
+3,7:02.0,64-62,2026 NBA Eastern Conference First Round Game 3: Celtics,Boston full timeout
+3,7:02.0,64-62,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta enters the game for N. Vučević
+3,7:02.0,64-62,76ers,A. Drummond enters the game for A. Bona
+3,7:02.0,64-62,76ers,J. Edwards enters the game for P. George
+3,6:41.0,64-62,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by D. White (bad pass)
+3,6:19.0,64-64,76ers,T. Maxey makes 2-pt jump shot from 22 ft
+3,6:00.0,64-64,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 3-pt jump shot from 23 ft
+3,5:56.0,64-64,76ers,Defensive rebound by J. Edwards
+3,5:48.0,64-67,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+3,5:37.0,64-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by A. Drummond (drawn by J. Brown)
+3,5:37.0,64-67,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard enters the game for S. Hauser
+3,5:37.0,64-67,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Walsh enters the game for D. White
+3,5:29.0,64-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Shooting foul by V. Edgecombe (drawn by N. Queta)
+3,5:29.0,65-67,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta makes free throw 1 of 2
+3,5:29.0,66-67,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta makes free throw 2 of 2
+3,5:17.0,66-67,76ers,T. Maxey misses 2-pt jump shot from 18 ft
+3,5:14.0,66-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by P. Pritchard
+3,5:14.0,66-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Instant Replay (Request: Ruling Stands)
+3,5:14.0,66-67,76ers,Technical foul by A. Drummond
+3,5:14.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes technical free throw
+3,5:04.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 3-pt jump shot from 26 ft
+3,5:02.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by Team
+3,4:57.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by J. Brown (lost ball; steal by T. Maxey)
+3,4:52.0,67-67,76ers,T. Maxey misses 2-pt layup from 3 ft
+3,4:50.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Tatum
+3,4:41.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Violation by Team (kicked ball)
+3,4:24.0,67-67,76ers,J. Edwards misses 3-pt jump shot from 29 ft (block by J. Brown)
+3,4:22.0,67-67,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Queta
+3,4:08.0,69-67,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt jump shot from 11 ft
+3,3:41.0,69-67,76ers,K. Oubre misses 3-pt jump shot from 28 ft
+3,3:38.0,69-67,76ers,Offensive rebound by V. Edgecombe
+3,3:37.0,69-70,76ers,A. Drummond makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)
+3,3:12.0,69-70,2026 NBA Eastern Conference First Round Game 3: Celtics,Shooting foul by J. Edwards (drawn by J. Brown)
+3,3:12.0,70-70,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes free throw 1 of 2
+3,3:12.0,70-70,2026 NBA Eastern Conference First Round Game 3: Celtics,S. Hauser enters the game for J. Tatum
+3,3:12.0,70-70,76ers,P. George enters the game for J. Edwards
+3,3:12.0,71-70,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes free throw 2 of 2
+3,2:58.0,71-70,76ers,K. Oubre misses 2-pt jump shot from 8 ft
+3,2:56.0,71-70,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Walsh
+3,2:54.0,71-70,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by K. Oubre (drawn by N. Queta)
+3,2:54.0,71-70,76ers,Philadelphia full timeout
+3,2:54.0,71-70,76ers,Q. Grimes enters the game for V. Edgecombe
+3,2:54.0,72-70,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta makes free throw 1 of 2
+3,2:54.0,73-70,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Queta makes free throw 2 of 2
+3,2:36.0,73-72,76ers,T. Maxey makes 2-pt jump shot from 9 ft
+3,2:11.0,73-72,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Walsh misses 3-pt jump shot from 23 ft
+3,2:10.0,73-72,76ers,Defensive rebound by Team
+3,2:10.0,73-72,2026 NBA Eastern Conference First Round Game 3: Celtics,Loose ball foul by P. Pritchard (drawn by T. Maxey)
+3,1:54.0,73-72,76ers,P. George misses 3-pt jump shot from 28 ft
+3,1:50.0,73-72,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Queta
+3,1:38.0,73-72,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 2-pt jump shot from 17 ft (block by Q. Grimes)
+3,1:37.0,73-72,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by J. Brown
+3,1:32.0,76-72,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard makes 3-pt jump shot from 26 ft (assist by J. Brown)
+3,1:22.0,76-72,76ers,T. Maxey misses 2-pt layup from 2 ft (block by N. Queta)
+3,1:21.0,76-72,76ers,Offensive rebound by Team
+3,1:19.0,76-72,76ers,K. Oubre misses 2-pt layup from 4 ft (block by J. Brown)
+3,1:16.0,76-72,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Walsh
+3,1:05.0,76-72,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive foul by N. Queta (drawn by P. George)
+3,1:05.0,76-72,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Queta (offensive foul)
+3,1:05.0,76-72,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević enters the game for N. Queta
+3,0:55.0,76-74,76ers,K. Oubre makes 2-pt jump shot from 8 ft (assist by T. Maxey)
+3,0:36.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard makes 3-pt jump shot from 27 ft
+3,0:24.0,79-74,76ers,A. Drummond misses 2-pt layup from 4 ft (block by N. Vučević)
+3,0:21.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Vučević
+3,0:02.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 2-pt jump shot from 13 ft (block by T. Maxey)
+3,0:01.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by P. Pritchard
+3,0:00.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 3-pt jump shot from 23 ft
+3,0:00.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by Team
+4,11:45.0,79-74,76ers,P. George misses 2-pt jump shot from 20 ft
+4,11:42.0,79-74,76ers,Offensive rebound by A. Bona
+4,11:36.0,79-74,76ers,Turnover by P. George (lost ball; steal by B. Scheierman)
+4,11:21.0,79-74,2026 NBA Eastern Conference First Round Game 3: Celtics,B. Scheierman misses 3-pt jump shot from 25 ft
+4,11:18.0,79-74,76ers,Defensive rebound by Q. Grimes
+4,11:02.0,79-77,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+4,10:37.0,82-77,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević makes 3-pt jump shot from 25 ft (assist by J. Tatum)
+4,10:18.0,82-77,76ers,Shooting foul by P. Pritchard (drawn by A. Bona)
+4,10:18.0,82-77,76ers,Instant Replay (Request: Ruling Stands)
+4,10:18.0,82-77,76ers,A. Bona misses free throw 1 of 2
+4,10:18.0,82-77,76ers,Offensive rebound by Team
+4,10:18.0,82-78,76ers,A. Bona makes free throw 2 of 2
+4,10:01.0,82-78,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by D. White (bad pass; steal by V. Edgecombe)
+4,9:55.0,82-80,76ers,V. Edgecombe makes 2-pt layup from 3 ft (assist by P. George)
+4,9:33.0,82-80,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard misses 3-pt jump shot from 25 ft
+4,9:30.0,82-80,76ers,Defensive rebound by V. Edgecombe
+4,9:30.0,82-80,76ers,Turnover by V. Edgecombe (traveling)
+4,9:30.0,82-80,76ers,K. Oubre enters the game for Q. Grimes
+4,9:24.0,84-80,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 2-pt layup from 3 ft (assist by D. White)
+4,9:16.0,84-82,76ers,T. Maxey makes 2-pt jump shot from 12 ft
+4,8:56.0,84-82,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by N. Vučević (bad pass; steal by P. George)
+4,8:42.0,84-85,76ers,T. Maxey makes 3-pt jump shot from 28 ft (assist by V. Edgecombe)
+4,8:41.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Boston full timeout
+4,8:41.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown enters the game for B. Scheierman
+4,8:22.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal foul by A. Bona (drawn by J. Tatum)
+4,8:22.0,84-85,76ers,A. Drummond enters the game for A. Bona
+4,8:11.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown misses 2-pt layup from 3 ft (block by K. Oubre)
+4,8:09.0,84-85,76ers,Defensive rebound by K. Oubre
+4,8:01.0,84-85,76ers,T. Maxey misses 2-pt jump shot from 20 ft
+4,7:58.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by N. Vučević
+4,7:45.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive foul by J. Brown (drawn by V. Edgecombe)
+4,7:45.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Turnover by J. Brown (offensive foul)
+4,7:28.0,84-85,76ers,T. Maxey misses 3-pt jump shot from 28 ft
+4,7:25.0,84-85,76ers,Offensive rebound by A. Drummond
+4,7:24.0,84-85,76ers,V. Edgecombe misses 3-pt jump shot from 28 ft
+4,7:22.0,84-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by Team
+4,7:04.0,86-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 2-pt layup from 3 ft
+4,7:04.0,86-85,76ers,Violation by Team (def goaltending)
+4,6:47.0,86-85,76ers,Turnover by T. Maxey (bad pass; steal by J. Brown)
+4,6:44.0,88-85,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes 2-pt layup from 2 ft (assist by J. Brown)
+4,6:25.0,88-85,76ers,Turnover by V. Edgecombe (traveling)
+4,6:10.0,90-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt jump shot from 11 ft
+4,5:44.0,90-85,76ers,P. George misses 3-pt jump shot from 27 ft
+4,5:43.0,90-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Tatum
+4,5:39.0,90-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Shooting foul by V. Edgecombe (drawn by J. Brown)
+4,5:39.0,91-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes free throw 1 of 2
+4,5:39.0,91-85,76ers,Philadelphia full timeout
+4,5:39.0,92-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes free throw 2 of 2
+4,5:24.0,92-85,76ers,Shooting foul by N. Vučević (drawn by A. Drummond)
+4,5:24.0,92-85,76ers,A. Drummond misses free throw 1 of 2
+4,5:24.0,92-85,76ers,Offensive rebound by Team
+4,5:24.0,92-85,76ers,A. Drummond misses free throw 2 of 2
+4,5:21.0,92-85,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by J. Tatum
+4,5:10.0,92-85,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses 2-pt jump shot from 18 ft
+4,5:06.0,92-85,76ers,Defensive rebound by T. Maxey
+4,4:53.0,92-88,76ers,A. Drummond makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+4,4:34.0,92-88,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White misses 2-pt layup from 1 ft
+4,4:33.0,92-88,76ers,Defensive rebound by Team
+4,4:21.0,92-88,76ers,T. Maxey misses 3-pt jump shot from 30 ft
+4,4:17.0,92-88,76ers,Offensive rebound by K. Oubre
+4,4:15.0,92-90,76ers,K. Oubre makes 2-pt layup from 3 ft
+4,4:15.0,92-90,2026 NBA Eastern Conference First Round Game 3: Celtics,Boston full timeout
+4,4:04.0,92-90,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević misses 3-pt jump shot from 24 ft
+4,4:00.0,92-90,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by D. White
+4,3:49.0,94-90,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt jump shot from 17 ft
+4,3:33.0,94-92,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by K. Oubre)
+4,3:33.0,94-92,2026 NBA Eastern Conference First Round Game 3: Celtics,Violation by Team (def goaltending)
+4,3:14.0,96-92,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Brown makes 2-pt layup from 2 ft (assist by D. White)
+4,3:14.0,96-92,76ers,Violation by Team (def goaltending)
+4,3:14.0,96-92,76ers,Philadelphia full timeout
+4,2:55.0,96-94,76ers,A. Drummond makes 2-pt dunk from 2 ft (assist by P. George)
+4,2:39.0,96-94,2026 NBA Eastern Conference First Round Game 3: Celtics,Shooting foul by A. Drummond (drawn by J. Tatum)
+4,2:39.0,97-94,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes free throw 1 of 2
+4,2:39.0,97-94,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum misses free throw 2 of 2
+4,2:37.0,97-94,76ers,Defensive rebound by A. Drummond
+4,2:19.0,97-96,76ers,A. Drummond makes 2-pt dunk from 2 ft (assist by P. George)
+4,1:57.0,100-96,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 3-pt jump shot from 25 ft (assist by N. Vučević)
+4,1:41.0,100-98,76ers,P. George makes 2-pt jump shot from 4 ft
+4,1:17.0,103-98,2026 NBA Eastern Conference First Round Game 3: Celtics,P. Pritchard makes 3-pt jump shot from 26 ft (assist by J. Tatum)
+4,1:00.0,103-98,76ers,Shooting foul by N. Vučević (drawn by K. Oubre)
+4,1:00.0,103-98,2026 NBA Eastern Conference First Round Game 3: Celtics,Boston full timeout
+4,1:00.0,103-98,2026 NBA Eastern Conference First Round Game 3: Celtics,Instant Replay (Challenge: Stands)
+4,1:00.0,103-98,76ers,A. Bona enters the game for A. Drummond
+4,1:00.0,103-99,76ers,K. Oubre makes free throw 1 of 2
+4,1:00.0,103-100,76ers,K. Oubre makes free throw 2 of 2
+4,0:37.0,103-100,2026 NBA Eastern Conference First Round Game 3: Celtics,N. Vučević misses 3-pt jump shot from 23 ft
+4,0:34.0,103-100,2026 NBA Eastern Conference First Round Game 3: Celtics,Offensive rebound by D. White
+4,0:26.0,106-100,2026 NBA Eastern Conference First Round Game 3: Celtics,J. Tatum makes 3-pt jump shot from 29 ft
+4,0:25.0,106-100,76ers,Philadelphia full timeout
+4,0:25.0,106-100,2026 NBA Eastern Conference First Round Game 3: Celtics,B. Scheierman enters the game for N. Vučević
+4,0:25.0,106-100,76ers,A. Drummond enters the game for A. Bona
+4,0:22.0,106-100,76ers,T. Maxey misses 3-pt jump shot from 30 ft
+4,0:19.0,106-100,76ers,Offensive rebound by A. Drummond
+4,0:16.0,106-100,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+4,0:14.0,106-100,2026 NBA Eastern Conference First Round Game 3: Celtics,Defensive rebound by B. Scheierman
+4,0:09.0,106-100,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal take foul by P. George (drawn by J. Tatum)
+4,0:09.0,106-100,76ers,A. Bona enters the game for A. Drummond
+4,0:06.0,106-100,2026 NBA Eastern Conference First Round Game 3: Celtics,Personal take foul by A. Bona (drawn by D. White)
+4,0:06.0,106-100,76ers,A. Drummond enters the game for A. Bona
+4,0:06.0,107-100,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes free throw 1 of 2
+4,0:06.0,108-100,2026 NBA Eastern Conference First Round Game 3: Celtics,D. White makes free throw 2 of 2
+4,0:00.0,108-100,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+4,0:00.0,108-100,76ers,Offensive rebound by Team

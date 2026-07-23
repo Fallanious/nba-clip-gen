@@ -1,0 +1,3152 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:48.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass; steal by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:39.0",
+    "score": "0-2",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:17.0",
+    "score": "2-2",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:52.0",
+    "score": "2-4",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:31.0",
+    "score": "2-4",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:29.0",
+    "score": "2-4",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 1,
+    "time": "10:22.0",
+    "score": "2-4",
+    "team": "Thunder",
+    "description": "Turnover by L. Dort (step out of bounds)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:08.0",
+    "score": "4-4",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "4-7",
+    "team": "Thunder",
+    "description": "L. Dort makes 3-pt jump shot from 25 ft (assist by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:32.0",
+    "score": "4-7",
+    "team": "76ers",
+    "description": "Shooting foul by I. Hartenstein (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:32.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:32.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:20.0",
+    "score": "6-9",
+    "team": "Thunder",
+    "description": "J. Williams makes 2-pt dunk from 1 ft (assist by I. Hartenstein)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:06.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:03.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "9:01.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 29 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:50.0",
+    "score": "9-11",
+    "team": "Thunder",
+    "description": "I. Hartenstein makes 2-pt dunk from 1 ft (assist by J. Williams)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:50.0",
+    "score": "9-11",
+    "team": "Thunder",
+    "description": "Shooting foul by A. Drummond (drawn by I. Hartenstein)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:50.0",
+    "score": "9-12",
+    "team": "Thunder",
+    "description": "I. Hartenstein makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "8:31.0",
+    "score": "9-12",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (out of bounds lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "9-14",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:58.0",
+    "score": "9-14",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:57.0",
+    "score": "9-14",
+    "team": "Thunder",
+    "description": "Defensive rebound by L. Dort"
+  },
+  {
+    "quarter": 1,
+    "time": "7:52.0",
+    "score": "9-14",
+    "team": "Thunder",
+    "description": "Turnover by L. Dort (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:48.0",
+    "score": "9-14",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft (block by C. Holmgren)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:45.0",
+    "score": "9-14",
+    "team": "Thunder",
+    "description": "Defensive rebound by J. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "7:39.0",
+    "score": "9-16",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt dunk from 1 ft (assist by J. Williams)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:38.0",
+    "score": "9-16",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "7:38.0",
+    "score": "9-16",
+    "team": "Thunder",
+    "description": "I. Joe enters the game for I. Hartenstein"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "11-16",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup from 6 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:59.0",
+    "score": "11-16",
+    "team": "Thunder",
+    "description": "Turnover by S. Gilgeous-Alexander (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:58.0",
+    "score": "13-16",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:39.0",
+    "score": "13-16",
+    "team": "Thunder",
+    "description": "Turnover by C. Holmgren (traveling)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:17.0",
+    "score": "13-16",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:16.0",
+    "score": "13-16",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "6:16.0",
+    "score": "13-16",
+    "team": "Thunder",
+    "description": "Loose ball foul by C. Holmgren (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:02.0",
+    "score": "13-16",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:00.0",
+    "score": "13-16",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 1,
+    "time": "5:52.0",
+    "score": "13-18",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:40.0",
+    "score": "16-18",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:20.0",
+    "score": "16-18",
+    "team": "Thunder",
+    "description": "Turnover by C. Holmgren (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:07.0",
+    "score": "16-18",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup from 2 ft (block by C. Holmgren)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:05.0",
+    "score": "16-18",
+    "team": "Thunder",
+    "description": "Defensive rebound by I. Joe"
+  },
+  {
+    "quarter": 1,
+    "time": "5:01.0",
+    "score": "16-18",
+    "team": "Thunder",
+    "description": "Turnover by J. Williams (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:01.0",
+    "score": "16-18",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "5:01.0",
+    "score": "16-18",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "5:01.0",
+    "score": "16-18",
+    "team": "Thunder",
+    "description": "A. Caruso enters the game for C. Holmgren"
+  },
+  {
+    "quarter": 1,
+    "time": "4:47.0",
+    "score": "18-18",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 2 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:34.0",
+    "score": "18-18",
+    "team": "Thunder",
+    "description": "Shooting foul by T. Maxey (drawn by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:34.0",
+    "score": "18-19",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:34.0",
+    "score": "18-19",
+    "team": "Thunder",
+    "description": "C. Wallace enters the game for J. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "4:34.0",
+    "score": "18-20",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "18-20",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:14.0",
+    "score": "18-22",
+    "team": "Thunder",
+    "description": "A. Caruso makes 2-pt layup from 1 ft (assist by C. Wallace)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:14.0",
+    "score": "18-22",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:55.0",
+    "score": "18-22",
+    "team": "76ers",
+    "description": "Shooting foul by L. Dort (drawn by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:55.0",
+    "score": "19-22",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:55.0",
+    "score": "19-22",
+    "team": "76ers",
+    "description": "J. McCain enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "3:55.0",
+    "score": "19-22",
+    "team": "Thunder",
+    "description": "I. Hartenstein enters the game for L. Dort"
+  },
+  {
+    "quarter": 1,
+    "time": "3:55.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:45.0",
+    "score": "20-22",
+    "team": "Thunder",
+    "description": "I. Joe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "3:33.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (out of bounds lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:22.0",
+    "score": "20-22",
+    "team": "Thunder",
+    "description": "I. Hartenstein misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:19.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "3:13.0",
+    "score": "22-22",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:13.0",
+    "score": "22-22",
+    "team": "Thunder",
+    "description": "Oklahoma City full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:56.0",
+    "score": "22-24",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:36.0",
+    "score": "25-24",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 24 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:36.0",
+    "score": "25-24",
+    "team": "Thunder",
+    "description": "A. Mitchell enters the game for I. Joe"
+  },
+  {
+    "quarter": 1,
+    "time": "2:21.0",
+    "score": "25-24",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "25-24",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 1,
+    "time": "2:13.0",
+    "score": "25-24",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:11.0",
+    "score": "25-24",
+    "team": "Thunder",
+    "description": "Defensive rebound by A. Caruso"
+  },
+  {
+    "quarter": 1,
+    "time": "2:07.0",
+    "score": "25-27",
+    "team": "Thunder",
+    "description": "A. Mitchell makes 3-pt jump shot from 23 ft (assist by C. Wallace)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:56.0",
+    "score": "25-27",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:38.0",
+    "score": "25-27",
+    "team": "Thunder",
+    "description": "Offensive foul by I. Hartenstein (drawn by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:38.0",
+    "score": "25-27",
+    "team": "Thunder",
+    "description": "Turnover by I. Hartenstein (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:38.0",
+    "score": "25-27",
+    "team": "76ers",
+    "description": "P. George enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "1:26.0",
+    "score": "27-27",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:14.0",
+    "score": "27-29",
+    "team": "Thunder",
+    "description": "A. Mitchell makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:53.0",
+    "score": "29-29",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:36.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "C. Wallace makes 3-pt jump shot from 23 ft (assist by A. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:19.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 31 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:16.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Wallace"
+  },
+  {
+    "quarter": 1,
+    "time": "0:06.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "Personal foul by Q. Grimes (drawn by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:06.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "0:06.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. McCain"
+  },
+  {
+    "quarter": 1,
+    "time": "0:01.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "A. Mitchell misses 2-pt jump shot from 9 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:01.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "Offensive rebound by C. Wallace"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "C. Wallace misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:50.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "Personal foul by J. McCain (drawn by A. Wiggins)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:41.0",
+    "score": "29-32",
+    "team": "Thunder",
+    "description": "Shooting foul by A. Bona (drawn by J. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:41.0",
+    "score": "29-33",
+    "team": "Thunder",
+    "description": "J. Williams makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "11:41.0",
+    "score": "29-34",
+    "team": "Thunder",
+    "description": "J. Williams makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "11:18.0",
+    "score": "29-34",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:15.0",
+    "score": "29-34",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "11:14.0",
+    "score": "31-34",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:05.0",
+    "score": "31-36",
+    "team": "Thunder",
+    "description": "A. Mitchell makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:50.0",
+    "score": "31-36",
+    "team": "76ers",
+    "description": "Offensive foul by V. Edgecombe (drawn by J. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:50.0",
+    "score": "31-36",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:38.0",
+    "score": "31-36",
+    "team": "Thunder",
+    "description": "Shooting foul by Q. Grimes (drawn by J. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:38.0",
+    "score": "31-37",
+    "team": "Thunder",
+    "description": "J. Williams makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:38.0",
+    "score": "31-38",
+    "team": "Thunder",
+    "description": "J. Williams makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:27.0",
+    "score": "31-38",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:24.0",
+    "score": "31-38",
+    "team": "Thunder",
+    "description": "Defensive rebound by I. Hartenstein"
+  },
+  {
+    "quarter": 2,
+    "time": "10:17.0",
+    "score": "31-38",
+    "team": "Thunder",
+    "description": "Shooting foul by Q. Grimes (drawn by A. Wiggins)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:17.0",
+    "score": "31-39",
+    "team": "Thunder",
+    "description": "A. Wiggins makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:17.0",
+    "score": "31-39",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "10:17.0",
+    "score": "31-39",
+    "team": "Thunder",
+    "description": "A. Wiggins misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:14.0",
+    "score": "31-39",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "10:02.0",
+    "score": "31-39",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt dunk from 3 ft (block by I. Hartenstein)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:58.0",
+    "score": "31-39",
+    "team": "Thunder",
+    "description": "Defensive rebound by A. Wiggins"
+  },
+  {
+    "quarter": 2,
+    "time": "9:49.0",
+    "score": "31-39",
+    "team": "Thunder",
+    "description": "I. Hartenstein misses 2-pt layup from 1 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:47.0",
+    "score": "31-39",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "9:43.0",
+    "score": "34-39",
+    "team": "76ers",
+    "description": "J. Edwards makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:30.0",
+    "score": "34-41",
+    "team": "Thunder",
+    "description": "J. Williams makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:08.0",
+    "score": "34-41",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "34-41",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:02.0",
+    "score": "37-41",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:46.0",
+    "score": "37-41",
+    "team": "Thunder",
+    "description": "I. Hartenstein misses 2-pt layup from 2 ft (block by J. Edwards)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "37-41",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "37-41",
+    "team": "76ers",
+    "description": "Shooting foul by A. Mitchell (drawn by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "38-41",
+    "team": "Thunder",
+    "description": "Oklahoma City full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "38-41",
+    "team": "Thunder",
+    "description": "C. Holmgren enters the game for I. Hartenstein"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "39-41",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:26.0",
+    "score": "39-41",
+    "team": "Thunder",
+    "description": "C. Holmgren misses 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:22.0",
+    "score": "39-41",
+    "team": "Thunder",
+    "description": "Offensive rebound by J. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "8:18.0",
+    "score": "39-41",
+    "team": "Thunder",
+    "description": "A. Mitchell misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:15.0",
+    "score": "39-41",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "39-41",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:02.0",
+    "score": "39-41",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:45.0",
+    "score": "39-44",
+    "team": "Thunder",
+    "description": "A. Mitchell makes 3-pt jump shot from 23 ft (assist by A. Wiggins)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:22.0",
+    "score": "41-44",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:10.0",
+    "score": "41-47",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 3-pt jump shot from 25 ft (assist by C. Wallace)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "44-47",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "44-47",
+    "team": "Thunder",
+    "description": "J. Williams misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "76ers",
+    "description": "Loose ball foul by J. Edwards (drawn by C. Holmgren)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "Thunder",
+    "description": "C. Holmgren misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "Thunder",
+    "description": "A. Caruso enters the game for C. Wallace"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-47",
+    "team": "Thunder",
+    "description": "L. Dort enters the game for J. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "44-48",
+    "team": "Thunder",
+    "description": "C. Holmgren makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:24.0",
+    "score": "44-48",
+    "team": "76ers",
+    "description": "J. Edwards misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:20.0",
+    "score": "44-48",
+    "team": "Thunder",
+    "description": "Defensive rebound by A. Wiggins"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "44-48",
+    "team": "Thunder",
+    "description": "C. Holmgren misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:11.0",
+    "score": "44-48",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "5:55.0",
+    "score": "46-48",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:42.0",
+    "score": "46-48",
+    "team": "Thunder",
+    "description": "A. Mitchell misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:39.0",
+    "score": "46-48",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "5:38.0",
+    "score": "48-48",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt layup from 2 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:23.0",
+    "score": "48-51",
+    "team": "Thunder",
+    "description": "A. Wiggins makes 3-pt jump shot from 25 ft (assist by C. Holmgren)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "51-51",
+    "team": "76ers",
+    "description": "J. Edwards makes 3-pt jump shot from 27 ft (assist by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:01.0",
+    "score": "51-51",
+    "team": "Thunder",
+    "description": "Oklahoma City full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "5:01.0",
+    "score": "51-51",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "5:01.0",
+    "score": "51-51",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "5:01.0",
+    "score": "51-51",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander enters the game for A. Mitchell"
+  },
+  {
+    "quarter": 2,
+    "time": "4:43.0",
+    "score": "51-51",
+    "team": "Thunder",
+    "description": "A. Caruso misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:41.0",
+    "score": "51-51",
+    "team": "Thunder",
+    "description": "Offensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 2,
+    "time": "4:40.0",
+    "score": "51-53",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:26.0",
+    "score": "51-53",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:19.0",
+    "score": "51-53",
+    "team": "Thunder",
+    "description": "A. Caruso misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "51-53",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "51-53",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "51-53",
+    "team": "76ers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:06.0",
+    "score": "53-53",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk from 2 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:54.0",
+    "score": "53-55",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt dunk from 1 ft (assist by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:41.0",
+    "score": "53-55",
+    "team": "76ers",
+    "description": "Shooting foul by C. Holmgren (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:41.0",
+    "score": "54-55",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:41.0",
+    "score": "54-55",
+    "team": "Thunder",
+    "description": "J. Williams enters the game for A. Wiggins"
+  },
+  {
+    "quarter": 2,
+    "time": "3:41.0",
+    "score": "55-55",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:19.0",
+    "score": "55-57",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:58.0",
+    "score": "58-57",
+    "team": "76ers",
+    "description": "J. Edwards makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:40.0",
+    "score": "58-59",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:22.0",
+    "score": "58-59",
+    "team": "76ers",
+    "description": "D. Barlow misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:18.0",
+    "score": "58-59",
+    "team": "Thunder",
+    "description": "Defensive rebound by S. Gilgeous-Alexander"
+  },
+  {
+    "quarter": 2,
+    "time": "2:14.0",
+    "score": "58-59",
+    "team": "Thunder",
+    "description": "J. Williams misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:10.0",
+    "score": "58-59",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "2:05.0",
+    "score": "58-59",
+    "team": "76ers",
+    "description": "Offensive foul by A. Drummond (drawn by L. Dort)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:05.0",
+    "score": "58-59",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:05.0",
+    "score": "58-59",
+    "team": "76ers",
+    "description": "P. George enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "2:05.0",
+    "score": "58-59",
+    "team": "Thunder",
+    "description": "I. Hartenstein enters the game for A. Caruso"
+  },
+  {
+    "quarter": 2,
+    "time": "2:05.0",
+    "score": "58-59",
+    "team": "Thunder",
+    "description": "A. Mitchell enters the game for C. Holmgren"
+  },
+  {
+    "quarter": 2,
+    "time": "1:53.0",
+    "score": "58-59",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:53.0",
+    "score": "58-59",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:42.0",
+    "score": "61-59",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:28.0",
+    "score": "61-59",
+    "team": "Thunder",
+    "description": "Shooting foul by P. George (drawn by J. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:28.0",
+    "score": "61-60",
+    "team": "Thunder",
+    "description": "J. Williams makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:28.0",
+    "score": "61-60",
+    "team": "Thunder",
+    "description": "J. Williams misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:25.0",
+    "score": "61-60",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "61-60",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by J. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:03.0",
+    "score": "61-62",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "0:56.0",
+    "score": "61-62",
+    "team": "76ers",
+    "description": "Shooting foul by J. Williams (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:56.0",
+    "score": "62-62",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:56.0",
+    "score": "62-62",
+    "team": "76ers",
+    "description": "T. Maxey misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:55.0",
+    "score": "62-62",
+    "team": "Thunder",
+    "description": "Defensive rebound by I. Hartenstein"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "62-64",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:12.0",
+    "score": "62-64",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:09.0",
+    "score": "62-64",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "62-64",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "62-64",
+    "team": "Thunder",
+    "description": "Defensive rebound by A. Mitchell"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "62-64",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:46.0",
+    "score": "62-66",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt dunk from 1 ft (assist by I. Hartenstein)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:29.0",
+    "score": "64-66",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 2 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:11.0",
+    "score": "64-66",
+    "team": "Thunder",
+    "description": "Turnover by C. Holmgren (traveling)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:58.0",
+    "score": "64-66",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:56.0",
+    "score": "64-66",
+    "team": "Thunder",
+    "description": "Defensive rebound by I. Hartenstein"
+  },
+  {
+    "quarter": 3,
+    "time": "10:51.0",
+    "score": "64-66",
+    "team": "Thunder",
+    "description": "Personal foul by D. Barlow (drawn by C. Holmgren)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:45.0",
+    "score": "64-66",
+    "team": "Thunder",
+    "description": "J. Williams misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:43.0",
+    "score": "64-66",
+    "team": "Thunder",
+    "description": "Offensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 3,
+    "time": "10:43.0",
+    "score": "64-68",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt dunk from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:28.0",
+    "score": "64-68",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (lost ball; steal by I. Hartenstein)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:24.0",
+    "score": "64-68",
+    "team": "Thunder",
+    "description": "Turnover by C. Holmgren (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:06.0",
+    "score": "64-68",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:03.0",
+    "score": "64-68",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "10:01.0",
+    "score": "67-68",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 25 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:50.0",
+    "score": "67-70",
+    "team": "Thunder",
+    "description": "I. Hartenstein makes 2-pt dunk from 1 ft (assist by J. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:30.0",
+    "score": "67-70",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:29.0",
+    "score": "67-70",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "9:18.0",
+    "score": "67-70",
+    "team": "Thunder",
+    "description": "Shooting foul by V. Edgecombe (drawn by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:18.0",
+    "score": "67-71",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:18.0",
+    "score": "67-72",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:05.0",
+    "score": "70-72",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:50.0",
+    "score": "70-72",
+    "team": "Thunder",
+    "description": "J. Williams misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:50.0",
+    "score": "70-72",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "8:50.0",
+    "score": "70-72",
+    "team": "Thunder",
+    "description": "Loose ball foul by I. Hartenstein (drawn by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:42.0",
+    "score": "70-72",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (lost ball; steal by L. Dort)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:40.0",
+    "score": "70-74",
+    "team": "Thunder",
+    "description": "J. Williams makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:40.0",
+    "score": "70-74",
+    "team": "Thunder",
+    "description": "Shooting foul by V. Edgecombe (drawn by J. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:40.0",
+    "score": "70-74",
+    "team": "Thunder",
+    "description": "A. Caruso enters the game for I. Hartenstein"
+  },
+  {
+    "quarter": 3,
+    "time": "8:40.0",
+    "score": "70-75",
+    "team": "Thunder",
+    "description": "J. Williams makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "8:23.0",
+    "score": "73-75",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 22 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:01.0",
+    "score": "73-78",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 3-pt jump shot from 24 ft (assist by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:49.0",
+    "score": "73-78",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:46.0",
+    "score": "73-78",
+    "team": "Thunder",
+    "description": "Defensive rebound by J. Williams"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-80",
+    "team": "Thunder",
+    "description": "A. Caruso makes 2-pt layup from 2 ft (assist by J. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "7:17.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "Offensive foul by T. Maxey (drawn by J. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:17.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:17.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "7:05.0",
+    "score": "73-80",
+    "team": "Thunder",
+    "description": "Offensive foul by C. Holmgren (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:05.0",
+    "score": "73-80",
+    "team": "Thunder",
+    "description": "Turnover by C. Holmgren (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:51.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 11 ft (block by L. Dort)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:49.0",
+    "score": "73-80",
+    "team": "Thunder",
+    "description": "Defensive rebound by S. Gilgeous-Alexander"
+  },
+  {
+    "quarter": 3,
+    "time": "6:43.0",
+    "score": "73-82",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:26.0",
+    "score": "73-82",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:25.0",
+    "score": "73-82",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "6:15.0",
+    "score": "73-82",
+    "team": "Thunder",
+    "description": "J. Williams misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:13.0",
+    "score": "73-82",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "73-82",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass; steal by J. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:01.0",
+    "score": "73-84",
+    "team": "Thunder",
+    "description": "J. Williams makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:49.0",
+    "score": "73-84",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:47.0",
+    "score": "73-84",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "5:47.0",
+    "score": "73-84",
+    "team": "Thunder",
+    "description": "Loose ball foul by L. Dort (drawn by A. Bona)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:34.0",
+    "score": "73-84",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:34.0",
+    "score": "73-84",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "5:26.0",
+    "score": "73-86",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:26.0",
+    "score": "73-86",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "5:26.0",
+    "score": "73-86",
+    "team": "76ers",
+    "description": "J. McCain enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "5:10.0",
+    "score": "73-86",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "73-86",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "73-86",
+    "team": "Thunder",
+    "description": "Oklahoma City full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "73-86",
+    "team": "Thunder",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:54.0",
+    "score": "73-86",
+    "team": "Thunder",
+    "description": "L. Dort misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:51.0",
+    "score": "73-86",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "4:39.0",
+    "score": "76-86",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 23 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:25.0",
+    "score": "76-88",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt dunk from 1 ft (assist by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:13.0",
+    "score": "79-88",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:58.0",
+    "score": "79-88",
+    "team": "Thunder",
+    "description": "C. Holmgren misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:56.0",
+    "score": "79-88",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "79-88",
+    "team": "76ers",
+    "description": "Offensive foul by A. Bona (drawn by C. Holmgren)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "79-88",
+    "team": "76ers",
+    "description": "Turnover by A. Bona (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "79-88",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "79-88",
+    "team": "Thunder",
+    "description": "A. Mitchell enters the game for L. Dort"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "79-88",
+    "team": "Thunder",
+    "description": "C. Wallace enters the game for J. Williams"
+  },
+  {
+    "quarter": 3,
+    "time": "3:22.0",
+    "score": "79-91",
+    "team": "Thunder",
+    "description": "A. Caruso makes 3-pt jump shot from 23 ft (assist by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:01.0",
+    "score": "79-91",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:58.0",
+    "score": "79-91",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 3,
+    "time": "2:50.0",
+    "score": "79-93",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "79-93",
+    "team": "76ers",
+    "description": "Offensive foul by A. Bona (drawn by A. Caruso)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "79-93",
+    "team": "76ers",
+    "description": "Turnover by A. Bona (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "79-93",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "79-93",
+    "team": "Thunder",
+    "description": "I. Hartenstein enters the game for A. Caruso"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "79-93",
+    "team": "Thunder",
+    "description": "A. Wiggins enters the game for C. Holmgren"
+  },
+  {
+    "quarter": 3,
+    "time": "2:27.0",
+    "score": "79-95",
+    "team": "Thunder",
+    "description": "A. Mitchell makes 2-pt jump shot from 6 ft (assist by A. Wiggins)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:05.0",
+    "score": "79-95",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (step out of bounds)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "79-95",
+    "team": "Thunder",
+    "description": "Shooting foul by V. Edgecombe (drawn by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "79-96",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "79-97",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:43.0",
+    "score": "79-97",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:39.0",
+    "score": "79-97",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Wallace"
+  },
+  {
+    "quarter": 3,
+    "time": "1:33.0",
+    "score": "79-97",
+    "team": "Thunder",
+    "description": "I. Hartenstein misses 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:33.0",
+    "score": "79-97",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:33.0",
+    "score": "79-97",
+    "team": "Thunder",
+    "description": "Turnover by I. Hartenstein (off goaltending)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "79-97",
+    "team": "76ers",
+    "description": "Shooting foul by I. Hartenstein (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "79-97",
+    "team": "76ers",
+    "description": "V. Edgecombe misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "79-97",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "80-97",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:08.0",
+    "score": "80-97",
+    "team": "Thunder",
+    "description": "A. Wiggins misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "80-97",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "80-97",
+    "team": "76ers",
+    "description": "Shooting foul by A. Mitchell (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "80-97",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "80-97",
+    "team": "76ers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "81-97",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "81-97",
+    "team": "76ers",
+    "description": "V. Edgecombe misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:59.0",
+    "score": "81-97",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 3,
+    "time": "0:59.0",
+    "score": "83-97",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:47.0",
+    "score": "83-99",
+    "team": "Thunder",
+    "description": "C. Wallace makes 2-pt dunk from 1 ft (assist by I. Hartenstein)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "83-99",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:34.0",
+    "score": "83-99",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "83-99",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:27.0",
+    "score": "83-99",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 3,
+    "time": "0:18.0",
+    "score": "83-99",
+    "team": "76ers",
+    "description": "Turnover by J. Edwards (bad pass; steal by A. Wiggins)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:16.0",
+    "score": "83-101",
+    "team": "Thunder",
+    "description": "A. Wiggins makes 2-pt dunk from 1 ft (assist by A. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:04.0",
+    "score": "86-101",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-101",
+    "team": "Thunder",
+    "description": "Shooting foul by J. Edwards (drawn by S. Gilgeous-Alexander)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-101",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander misses free throw 1 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-101",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-102",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander makes free throw 2 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-102",
+    "team": "Thunder",
+    "description": "J. Williams enters the game for I. Hartenstein"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-102",
+    "team": "Thunder",
+    "description": "S. Gilgeous-Alexander misses free throw 3 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "86-102",
+    "team": "Thunder",
+    "description": "Offensive rebound by C. Wallace"
+  },
+  {
+    "quarter": 4,
+    "time": "11:39.0",
+    "score": "86-102",
+    "team": "76ers",
+    "description": "J. Edwards misses 2-pt layup from 3 ft (block by C. Holmgren)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:36.0",
+    "score": "86-102",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "11:35.0",
+    "score": "86-102",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (bad pass; steal by A. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:21.0",
+    "score": "86-102",
+    "team": "Thunder",
+    "description": "Shooting foul by Q. Grimes (drawn by C. Holmgren)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:21.0",
+    "score": "86-103",
+    "team": "Thunder",
+    "description": "C. Holmgren makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:21.0",
+    "score": "86-104",
+    "team": "Thunder",
+    "description": "C. Holmgren makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:12.0",
+    "score": "86-104",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:09.0",
+    "score": "86-104",
+    "team": "Thunder",
+    "description": "Defensive rebound by A. Wiggins"
+  },
+  {
+    "quarter": 4,
+    "time": "11:02.0",
+    "score": "86-104",
+    "team": "Thunder",
+    "description": "A. Mitchell misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:00.0",
+    "score": "86-104",
+    "team": "Thunder",
+    "description": "Offensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 4,
+    "time": "10:57.0",
+    "score": "86-106",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:36.0",
+    "score": "86-106",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:35.0",
+    "score": "86-106",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "10:35.0",
+    "score": "86-106",
+    "team": "Thunder",
+    "description": "Loose ball foul by C. Holmgren (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:28.0",
+    "score": "86-106",
+    "team": "76ers",
+    "description": "Personal foul by A. Mitchell (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "89-106",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 25 ft (assist by J. Edwards)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:02.0",
+    "score": "89-108",
+    "team": "Thunder",
+    "description": "C. Wallace makes 2-pt layup from 5 ft (assist by J. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:49.0",
+    "score": "89-108",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 2 ft (block by C. Holmgren)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:49.0",
+    "score": "89-108",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "89-108",
+    "team": "Thunder",
+    "description": "Shooting foul by A. Drummond (drawn by A. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "89-108",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. Edwards"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "89-109",
+    "team": "Thunder",
+    "description": "A. Mitchell makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "89-109",
+    "team": "Thunder",
+    "description": "A. Mitchell misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:38.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "9:23.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:21.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "9:12.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "9:06.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:03.0",
+    "score": "89-109",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 4,
+    "time": "8:55.0",
+    "score": "89-111",
+    "team": "Thunder",
+    "description": "C. Holmgren makes 2-pt dunk from 1 ft (assist by A. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "89-111",
+    "team": "76ers",
+    "description": "Offensive foul by A. Drummond (drawn by A. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "89-111",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "89-111",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "8:31.0",
+    "score": "89-111",
+    "team": "Thunder",
+    "description": "Turnover by C. Holmgren (lost ball; steal by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:25.0",
+    "score": "89-111",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by A. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:14.0",
+    "score": "89-114",
+    "team": "Thunder",
+    "description": "A. Wiggins makes 3-pt jump shot from 23 ft (assist by J. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:50.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:47.0",
+    "score": "89-114",
+    "team": "Thunder",
+    "description": "Defensive rebound by J. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "7:39.0",
+    "score": "89-114",
+    "team": "Thunder",
+    "description": "J. Williams misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:37.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:26.0",
+    "score": "89-114",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 4,
+    "time": "7:16.0",
+    "score": "89-114",
+    "team": "Thunder",
+    "description": "C. Holmgren misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:15.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:08.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "89-114",
+    "team": "76ers",
+    "description": "Shooting foul by A. Mitchell (drawn by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "89-114",
+    "team": "Thunder",
+    "description": "Technical foul by J. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "90-114",
+    "team": "76ers",
+    "description": "T. Maxey makes technical free throw"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "91-114",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "91-114",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "91-114",
+    "team": "76ers",
+    "description": "J. McCain enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "91-114",
+    "team": "Thunder",
+    "description": "K. Williams enters the game for A. Mitchell"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "91-114",
+    "team": "76ers",
+    "description": "A. Bona misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:03.0",
+    "score": "91-114",
+    "team": "Thunder",
+    "description": "Defensive rebound by C. Holmgren"
+  },
+  {
+    "quarter": 4,
+    "time": "6:51.0",
+    "score": "91-114",
+    "team": "Thunder",
+    "description": "Turnover by J. Williams (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:48.0",
+    "score": "93-114",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:48.0",
+    "score": "93-114",
+    "team": "Thunder",
+    "description": "Oklahoma City full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "6:31.0",
+    "score": "93-114",
+    "team": "Thunder",
+    "description": "C. Holmgren misses 2-pt dunk from 4 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:31.0",
+    "score": "93-114",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "6:25.0",
+    "score": "93-116",
+    "team": "Thunder",
+    "description": "A. Wiggins makes 2-pt layup from 2 ft (assist by K. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:13.0",
+    "score": "93-116",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:10.0",
+    "score": "93-116",
+    "team": "Thunder",
+    "description": "Defensive rebound by K. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "A. Wiggins makes 2-pt layup from 2 ft (assist by C. Wallace)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:35.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:31.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:31.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "B. Carlson enters the game for C. Holmgren"
+  },
+  {
+    "quarter": 4,
+    "time": "5:18.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "K. Williams misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:14.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "5:06.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (bad pass; steal by B. Carlson)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:51.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "C. Wallace misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:47.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "4:43.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:41.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "4:41.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "Personal foul by J. Williams (drawn by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:41.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "C. Youngblood enters the game for J. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "4:30.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "D. Barlow misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:28.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "93-118",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:22.0",
+    "score": "93-118",
+    "team": "Thunder",
+    "description": "Defensive rebound by B. Carlson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "93-120",
+    "team": "Thunder",
+    "description": "A. Wiggins makes 2-pt layup from 2 ft (assist by K. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:55.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:38.0",
+    "score": "95-120",
+    "team": "Thunder",
+    "description": "C. Youngblood misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:35.0",
+    "score": "95-120",
+    "team": "Thunder",
+    "description": "Offensive rebound by K. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "3:35.0",
+    "score": "95-120",
+    "team": "Thunder",
+    "description": "K. Williams misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:33.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "J. Walker enters the game for T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "3:21.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (lost ball; steal by C. Wallace)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "95-120",
+    "team": "Thunder",
+    "description": "A. Wiggins misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:13.0",
+    "score": "95-120",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "3:00.0",
+    "score": "97-120",
+    "team": "76ers",
+    "description": "J. Walker makes 2-pt dunk from 1 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:44.0",
+    "score": "97-120",
+    "team": "Thunder",
+    "description": "C. Youngblood misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:42.0",
+    "score": "97-120",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "2:33.0",
+    "score": "97-120",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:29.0",
+    "score": "97-120",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "2:23.0",
+    "score": "97-120",
+    "team": "76ers",
+    "description": "Personal foul by C. Wallace (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:23.0",
+    "score": "98-120",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:23.0",
+    "score": "99-120",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "99-120",
+    "team": "Thunder",
+    "description": "B. Carlson misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:04.0",
+    "score": "99-120",
+    "team": "Thunder",
+    "description": "Offensive rebound by B. Carlson"
+  },
+  {
+    "quarter": 4,
+    "time": "2:04.0",
+    "score": "99-122",
+    "team": "Thunder",
+    "description": "B. Carlson makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "1:52.0",
+    "score": "99-122",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (bad pass; steal by C. Wallace)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:51.0",
+    "score": "99-124",
+    "team": "Thunder",
+    "description": "C. Wallace makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:35.0",
+    "score": "102-124",
+    "team": "76ers",
+    "description": "J. Edwards makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:23.0",
+    "score": "102-126",
+    "team": "Thunder",
+    "description": "B. Carlson makes 2-pt dunk from 1 ft (assist by A. Wiggins)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:09.0",
+    "score": "102-126",
+    "team": "76ers",
+    "description": "Shooting foul by B. Carlson (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:09.0",
+    "score": "103-126",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:09.0",
+    "score": "104-126",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:55.0",
+    "score": "104-126",
+    "team": "Thunder",
+    "description": "C. Wallace misses 2-pt layup from 3 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:55.0",
+    "score": "104-126",
+    "team": "Thunder",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:52.0",
+    "score": "104-126",
+    "team": "Thunder",
+    "description": "C. Wallace misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:49.0",
+    "score": "104-126",
+    "team": "Thunder",
+    "description": "Offensive rebound by K. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "0:48.0",
+    "score": "104-129",
+    "team": "Thunder",
+    "description": "K. Williams makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:40.0",
+    "score": "104-129",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:38.0",
+    "score": "104-129",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "0:34.0",
+    "score": "104-129",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:30.0",
+    "score": "104-129",
+    "team": "Thunder",
+    "description": "Defensive rebound by K. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "0:07.0",
+    "score": "104-129",
+    "team": "Thunder",
+    "description": "Turnover by Team (shot clock)"
+  }
+]

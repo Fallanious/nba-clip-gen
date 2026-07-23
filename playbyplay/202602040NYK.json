@@ -1,0 +1,3663 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:48.0",
+    "score": "0-0",
+    "team": "Nuggets",
+    "description": "Offensive foul by C. Braun (drawn by O. Anunoby)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:48.0",
+    "score": "0-0",
+    "team": "Nuggets",
+    "description": "Turnover by C. Braun (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:33.0",
+    "score": "0-3",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 24 ft (assist by J. Clarkson)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:21.0",
+    "score": "0-3",
+    "team": "Nuggets",
+    "description": "P. Watson misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:18.0",
+    "score": "0-3",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "10:52.0",
+    "score": "0-5",
+    "team": "Knicks",
+    "description": "J. Clarkson makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:40.0",
+    "score": "0-5",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:37.0",
+    "score": "0-5",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 1,
+    "time": "10:34.0",
+    "score": "0-5",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:31.0",
+    "score": "0-5",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "10:23.0",
+    "score": "0-5",
+    "team": "Nuggets",
+    "description": "S. Jones misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:20.0",
+    "score": "0-5",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "10:10.0",
+    "score": "0-8",
+    "team": "Knicks",
+    "description": "K. Towns makes 3-pt jump shot from 26 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:52.0",
+    "score": "0-8",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:48.0",
+    "score": "0-8",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "9:48.0",
+    "score": "0-8",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "9:46.0",
+    "score": "0-8",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "9:46.0",
+    "score": "2-8",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "9:41.0",
+    "score": "2-11",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 25 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:15.0",
+    "score": "4-11",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:01.0",
+    "score": "4-11",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass; steal by P. Watson)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:53.0",
+    "score": "4-11",
+    "team": "Nuggets",
+    "description": "P. Watson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:52.0",
+    "score": "4-11",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "8:46.0",
+    "score": "4-11",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:46.0",
+    "score": "4-11",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "8:46.0",
+    "score": "4-11",
+    "team": "Nuggets",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:25.0",
+    "score": "4-11",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:22.0",
+    "score": "4-11",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "8:05.0",
+    "score": "4-11",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:03.0",
+    "score": "4-11",
+    "team": "Nuggets",
+    "description": "Defensive rebound by P. Watson"
+  },
+  {
+    "quarter": 1,
+    "time": "7:51.0",
+    "score": "6-11",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:28.0",
+    "score": "6-13",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "9-13",
+    "team": "Nuggets",
+    "description": "J. Murray makes 3-pt jump shot from 26 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:47.0",
+    "score": "9-16",
+    "team": "Knicks",
+    "description": "J. Clarkson makes 3-pt jump shot from 23 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:32.0",
+    "score": "9-16",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:19.0",
+    "score": "12-16",
+    "team": "Nuggets",
+    "description": "J. Murray makes 3-pt jump shot from 26 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:58.0",
+    "score": "12-16",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass; steal by S. Jones)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:52.0",
+    "score": "14-16",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt layup from 2 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:52.0",
+    "score": "14-16",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 1,
+    "time": "5:52.0",
+    "score": "14-16",
+    "team": "Knicks",
+    "description": "L. Shamet enters the game for K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "5:37.0",
+    "score": "14-16",
+    "team": "Knicks",
+    "description": "L. Shamet misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:34.0",
+    "score": "14-16",
+    "team": "Nuggets",
+    "description": "Defensive rebound by S. Jones"
+  },
+  {
+    "quarter": 1,
+    "time": "5:21.0",
+    "score": "16-16",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:14.0",
+    "score": "16-16",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:11.0",
+    "score": "16-16",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "4:53.0",
+    "score": "18-16",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "18-16",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for C. Braun"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "18-16",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "18-18",
+    "team": "Knicks",
+    "description": "M. Robinson makes 2-pt dunk at rim (assist by K. McCullar)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "18-18",
+    "team": "Nuggets",
+    "description": "P. Watson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:14.0",
+    "score": "18-18",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. McCullar"
+  },
+  {
+    "quarter": 1,
+    "time": "4:06.0",
+    "score": "18-21",
+    "team": "Knicks",
+    "description": "L. Shamet makes 3-pt jump shot from 23 ft (assist by K. McCullar)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:49.0",
+    "score": "20-21",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 5 ft (assist by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:49.0",
+    "score": "20-21",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Brunson (drawn by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:49.0",
+    "score": "21-21",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "3:26.0",
+    "score": "21-21",
+    "team": "Knicks",
+    "description": "K. McCullar misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:24.0",
+    "score": "21-21",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "3:22.0",
+    "score": "21-23",
+    "team": "Knicks",
+    "description": "M. Robinson makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "21-23",
+    "team": "Nuggets",
+    "description": "Shooting foul by M. Bridges (drawn by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "21-23",
+    "team": "Nuggets",
+    "description": "J. Murray misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "21-23",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "21-23",
+    "team": "Nuggets",
+    "description": "B. Brown enters the game for P. Watson"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "21-23",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for M. Bridges"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "21-23",
+    "team": "Knicks",
+    "description": "M. Diawara enters the game for K. McCullar"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "22-23",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:48.0",
+    "score": "22-23",
+    "team": "Knicks",
+    "description": "L. Shamet misses 2-pt layup from 1 ft (block by S. Jones)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "22-23",
+    "team": "Nuggets",
+    "description": "Defensive rebound by S. Jones"
+  },
+  {
+    "quarter": 1,
+    "time": "2:35.0",
+    "score": "22-23",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:32.0",
+    "score": "22-23",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "2:17.0",
+    "score": "22-26",
+    "team": "Knicks",
+    "description": "M. Diawara makes 3-pt jump shot from 28 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:52.0",
+    "score": "22-26",
+    "team": "Nuggets",
+    "description": "Personal foul by L. Shamet (drawn by T. Hardaway)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:45.0",
+    "score": "22-26",
+    "team": "Nuggets",
+    "description": "Personal foul by O. Anunoby (drawn by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:45.0",
+    "score": "23-26",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:45.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:37.0",
+    "score": "24-26",
+    "team": "Knicks",
+    "description": "Personal foul by B. Brown (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:30.0",
+    "score": "24-26",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:29.0",
+    "score": "24-26",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "1:16.0",
+    "score": "24-26",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:13.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 1,
+    "time": "1:04.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "Turnover by J. Murray (lost ball; steal by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:01.0",
+    "score": "24-26",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass; steal by B. Brown)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:58.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "Turnover by J. Murray (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:51.0",
+    "score": "24-26",
+    "team": "Knicks",
+    "description": "L. Shamet misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "Shooting foul by M. Robinson (drawn by T. Hardaway)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "24-26",
+    "team": "Nuggets",
+    "description": "Instant Replay (Request: Stands)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "25-26",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes free throw 1 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "26-26",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes free throw 2 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "26-26",
+    "team": "Knicks",
+    "description": "M. Bridges enters the game for M. Diawara"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "26-26",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "27-26",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes free throw 3 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "0:30.0",
+    "score": "27-26",
+    "team": "Knicks",
+    "description": "Shooting foul by S. Jones (drawn by K. Towns)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:30.0",
+    "score": "27-27",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:30.0",
+    "score": "27-28",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:30.0",
+    "score": "27-28",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 enters the game for J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 1,
+    "time": "0:30.0",
+    "score": "27-28",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "0:12.0",
+    "score": "27-28",
+    "team": "Nuggets",
+    "description": "S. Jones misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "27-28",
+    "team": "Nuggets",
+    "description": "Offensive rebound by S. Jones"
+  },
+  {
+    "quarter": 1,
+    "time": "0:08.0",
+    "score": "27-28",
+    "team": "Nuggets",
+    "description": "S. Jones misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:06.0",
+    "score": "27-28",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 1,
+    "time": "0:03.0",
+    "score": "27-28",
+    "team": "Knicks",
+    "description": "L. Shamet misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:01.0",
+    "score": "27-28",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-28",
+    "team": "Nuggets",
+    "description": "B. Brown makes 3-pt jump shot from 35 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-28",
+    "team": "Nuggets",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:36.0",
+    "score": "30-31",
+    "team": "Knicks",
+    "description": "L. Shamet makes 3-pt jump shot from 24 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:15.0",
+    "score": "30-31",
+    "team": "Nuggets",
+    "description": "P. Watson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:12.0",
+    "score": "30-31",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 2,
+    "time": "10:52.0",
+    "score": "30-31",
+    "team": "Knicks",
+    "description": "L. Shamet misses 2-pt layup from 4 ft (block by P. Watson)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "30-31",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 2,
+    "time": "10:46.0",
+    "score": "30-31",
+    "team": "Nuggets",
+    "description": "Offensive foul by J. Strawther (drawn by L. Shamet)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:46.0",
+    "score": "30-31",
+    "team": "Nuggets",
+    "description": "Turnover by J. Strawther (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:34.0",
+    "score": "30-33",
+    "team": "Knicks",
+    "description": "M. Robinson makes 2-pt dunk from 1 ft (assist by T. Kolek)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:21.0",
+    "score": "30-33",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:18.0",
+    "score": "30-33",
+    "team": "Knicks",
+    "description": "Defensive rebound by T. Kolek"
+  },
+  {
+    "quarter": 2,
+    "time": "10:08.0",
+    "score": "30-33",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:05.0",
+    "score": "30-33",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 2,
+    "time": "9:51.0",
+    "score": "30-33",
+    "team": "Nuggets",
+    "description": "Shooting foul by M. Robinson (drawn by P. Watson)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:51.0",
+    "score": "31-33",
+    "team": "Nuggets",
+    "description": "P. Watson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:51.0",
+    "score": "31-33",
+    "team": "Nuggets",
+    "description": "P. Watson misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:49.0",
+    "score": "31-33",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 2,
+    "time": "9:36.0",
+    "score": "31-35",
+    "team": "Knicks",
+    "description": "L. Shamet makes 2-pt jump shot from 17 ft (assist by T. Kolek)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:16.0",
+    "score": "31-35",
+    "team": "Nuggets",
+    "description": "P. Watson misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:13.0",
+    "score": "31-35",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 2,
+    "time": "9:04.0",
+    "score": "31-35",
+    "team": "Knicks",
+    "description": "J. Clarkson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:02.0",
+    "score": "31-35",
+    "team": "Nuggets",
+    "description": "Defensive rebound by B. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "8:46.0",
+    "score": "31-35",
+    "team": "Nuggets",
+    "description": "Offensive foul by T. Hardaway (drawn by M. Robinson)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:46.0",
+    "score": "31-35",
+    "team": "Nuggets",
+    "description": "Turnover by T. Hardaway (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:46.0",
+    "score": "31-35",
+    "team": "Knicks",
+    "description": "M. Bridges enters the game for O. Anunoby"
+  },
+  {
+    "quarter": 2,
+    "time": "8:46.0",
+    "score": "31-35",
+    "team": "Knicks",
+    "description": "M. Diawara enters the game for L. Shamet"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "31-35",
+    "team": "Knicks",
+    "description": "Turnover by T. Kolek (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:27.0",
+    "score": "34-35",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 3-pt jump shot from 22 ft (assist by J. Strawther)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:12.0",
+    "score": "34-37",
+    "team": "Knicks",
+    "description": "M. Robinson makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "B. Brown makes 2-pt dunk from 1 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:50.0",
+    "score": "36-37",
+    "team": "Knicks",
+    "description": "T. Kolek misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:46.0",
+    "score": "36-37",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "7:45.0",
+    "score": "36-37",
+    "team": "Knicks",
+    "description": "M. Bridges misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "7:44.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 24 ft (block by M. Robinson)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:25.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:25.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 32 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:24.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:24.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:00.0",
+    "score": "36-39",
+    "team": "Knicks",
+    "description": "J. Clarkson makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "36-39",
+    "team": "Nuggets",
+    "description": "Shooting foul by M. Robinson (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "36-39",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "36-39",
+    "team": "Nuggets",
+    "description": "C. Braun enters the game for J. Strawther"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "36-39",
+    "team": "Knicks",
+    "description": "A. Hukporti enters the game for M. Robinson"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "37-39",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "38-39",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:30.0",
+    "score": "38-39",
+    "team": "Knicks",
+    "description": "Personal foul by C. Braun (drawn by J. Clarkson)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:16.0",
+    "score": "38-39",
+    "team": "Knicks",
+    "description": "Turnover by A. Hukporti (bad pass; steal by B. Brown)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:07.0",
+    "score": "40-39",
+    "team": "Nuggets",
+    "description": "C. Braun makes 2-pt layup at rim (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:50.0",
+    "score": "40-39",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:47.0",
+    "score": "40-39",
+    "team": "Nuggets",
+    "description": "Defensive rebound by B. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "40-39",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:34.0",
+    "score": "40-39",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 2,
+    "time": "5:28.0",
+    "score": "42-39",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Knicks",
+    "description": "Shooting foul by T. Hardaway (drawn by T. Kolek)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Knicks",
+    "description": "T. Kolek misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Nuggets",
+    "description": "J. Murray enters the game for T. Hardaway"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-39",
+    "team": "Knicks",
+    "description": "J. Brunson enters the game for M. Diawara"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "42-40",
+    "team": "Knicks",
+    "description": "T. Kolek makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:00.0",
+    "score": "45-40",
+    "team": "Nuggets",
+    "description": "B. Brown makes 3-pt jump shot from 23 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:45.0",
+    "score": "45-42",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "45-42",
+    "team": "Nuggets",
+    "description": "P. Watson misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:25.0",
+    "score": "45-42",
+    "team": "Nuggets",
+    "description": "Offensive rebound by P. Watson"
+  },
+  {
+    "quarter": 2,
+    "time": "4:23.0",
+    "score": "47-42",
+    "team": "Nuggets",
+    "description": "P. Watson makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:57.0",
+    "score": "47-42",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:55.0",
+    "score": "47-42",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 2,
+    "time": "3:54.0",
+    "score": "47-44",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:40.0",
+    "score": "49-44",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "A. Hukporti misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:20.0",
+    "score": "49-44",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Braun"
+  },
+  {
+    "quarter": 2,
+    "time": "3:14.0",
+    "score": "51-44",
+    "team": "Nuggets",
+    "description": "P. Watson makes 2-pt layup from 2 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:11.0",
+    "score": "51-44",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "3:11.0",
+    "score": "51-44",
+    "team": "Knicks",
+    "description": "L. Shamet enters the game for A. Hukporti"
+  },
+  {
+    "quarter": 2,
+    "time": "3:11.0",
+    "score": "51-44",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for T. Kolek"
+  },
+  {
+    "quarter": 2,
+    "time": "2:56.0",
+    "score": "51-46",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 1 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:38.0",
+    "score": "51-46",
+    "team": "Nuggets",
+    "description": "Offensive foul by J. Valan\u010di\u016bnas (drawn by L. Shamet)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:38.0",
+    "score": "51-46",
+    "team": "Nuggets",
+    "description": "Turnover by J. Valan\u010di\u016bnas (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:27.0",
+    "score": "51-46",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:25.0",
+    "score": "51-46",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 2,
+    "time": "2:17.0",
+    "score": "51-46",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:15.0",
+    "score": "51-46",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "51-49",
+    "team": "Knicks",
+    "description": "K. Towns makes 3-pt jump shot from 26 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:48.0",
+    "score": "51-49",
+    "team": "Nuggets",
+    "description": "P. Watson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:45.0",
+    "score": "51-49",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "1:39.0",
+    "score": "51-49",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Valan\u010di\u016bnas (drawn by K. Towns)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:39.0",
+    "score": "51-50",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:39.0",
+    "score": "51-50",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 enters the game for J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 2,
+    "time": "1:39.0",
+    "score": "51-51",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:26.0",
+    "score": "51-51",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:23.0",
+    "score": "51-51",
+    "team": "Nuggets",
+    "description": "Offensive rebound by P. Watson"
+  },
+  {
+    "quarter": 2,
+    "time": "1:12.0",
+    "score": "51-51",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "51-51",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "1:07.0",
+    "score": "51-53",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 2-pt dunk from 1 ft (assist by K. Towns)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:47.0",
+    "score": "51-53",
+    "team": "Nuggets",
+    "description": "B. Brown misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:45.0",
+    "score": "51-53",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "51-53",
+    "team": "Knicks",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "53-53",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 12 ft (assist by P. Watson)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:13.0",
+    "score": "53-53",
+    "team": "Knicks",
+    "description": "Shooting foul by C. Braun (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:13.0",
+    "score": "53-54",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:13.0",
+    "score": "53-54",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for B. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "0:13.0",
+    "score": "53-54",
+    "team": "Knicks",
+    "description": "M. Diawara enters the game for K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "0:13.0",
+    "score": "53-55",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:08.0",
+    "score": "53-55",
+    "team": "Nuggets",
+    "description": "Personal take foul by L. Shamet (drawn by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:08.0",
+    "score": "53-55",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for J. Brunson"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "53-55",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "53-55",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "53-55",
+    "team": "Knicks",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "53-55",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:41.0",
+    "score": "53-55",
+    "team": "Knicks",
+    "description": "Shooting foul by N. Joki\u0107 (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:41.0",
+    "score": "53-56",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "11:41.0",
+    "score": "53-57",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "11:19.0",
+    "score": "53-57",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:17.0",
+    "score": "53-57",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 3,
+    "time": "11:03.0",
+    "score": "53-59",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 1 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:40.0",
+    "score": "56-59",
+    "team": "Nuggets",
+    "description": "P. Watson makes 3-pt jump shot from 26 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:19.0",
+    "score": "56-59",
+    "team": "Knicks",
+    "description": "Turnover by K. Towns (lost ball; steal by T. Hardaway)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:14.0",
+    "score": "58-59",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup from 1 ft (assist by T. Hardaway)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:53.0",
+    "score": "58-59",
+    "team": "Knicks",
+    "description": "J. Clarkson misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:49.0",
+    "score": "58-59",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "9:49.0",
+    "score": "58-61",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "9:37.0",
+    "score": "58-61",
+    "team": "Nuggets",
+    "description": "P. Watson misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:35.0",
+    "score": "58-61",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "9:27.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "P. Watson makes 2-pt dunk from 1 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:12.0",
+    "score": "60-61",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:09.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 3,
+    "time": "9:01.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "Shooting foul by O. Anunoby (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:01.0",
+    "score": "61-61",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:01.0",
+    "score": "62-61",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:37.0",
+    "score": "62-61",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:34.0",
+    "score": "62-61",
+    "team": "Nuggets",
+    "description": "Defensive rebound by P. Watson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:28.0",
+    "score": "62-61",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "62-61",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "64-61",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "64-61",
+    "team": "Nuggets",
+    "description": "Shooting foul by O. Anunoby (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "65-61",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "8:05.0",
+    "score": "65-63",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:47.0",
+    "score": "65-63",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:44.0",
+    "score": "65-63",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "65-63",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:33.0",
+    "score": "65-63",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 3,
+    "time": "7:32.0",
+    "score": "65-63",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:31.0",
+    "score": "65-63",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "68-63",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 29 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "68-63",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:57.0",
+    "score": "68-63",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "6:57.0",
+    "score": "68-63",
+    "team": "Knicks",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:57.0",
+    "score": "68-63",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:43.0",
+    "score": "70-63",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 2-pt layup from 1 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:24.0",
+    "score": "70-63",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:23.0",
+    "score": "70-63",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "6:16.0",
+    "score": "70-63",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:13.0",
+    "score": "70-63",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Clarkson"
+  },
+  {
+    "quarter": 3,
+    "time": "6:07.0",
+    "score": "70-66",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 24 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:43.0",
+    "score": "70-66",
+    "team": "Nuggets",
+    "description": "Turnover by J. Murray (bad pass; steal by M. Bridges)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:38.0",
+    "score": "70-68",
+    "team": "Knicks",
+    "description": "J. Clarkson makes 2-pt layup from 1 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:14.0",
+    "score": "70-68",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:14.0",
+    "score": "70-68",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Knicks",
+    "description": "Shooting foul by P. Watson (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Nuggets",
+    "description": "B. Brown enters the game for C. Braun"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Knicks",
+    "description": "M. Diawara enters the game for M. Bridges"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Knicks",
+    "description": "L. Shamet enters the game for K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "70-70",
+    "team": "Knicks",
+    "description": "J. Brunson misses free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "5:03.0",
+    "score": "70-70",
+    "team": "Nuggets",
+    "description": "Defensive rebound by B. Brown"
+  },
+  {
+    "quarter": 3,
+    "time": "4:54.0",
+    "score": "70-70",
+    "team": "Nuggets",
+    "description": "Turnover by B. Brown (bad pass; steal by M. Robinson)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:50.0",
+    "score": "70-72",
+    "team": "Knicks",
+    "description": "M. Robinson makes 2-pt dunk from 1 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:27.0",
+    "score": "72-72",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt hook shot at rim (assist by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:09.0",
+    "score": "72-75",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 23 ft (assist by L. Shamet)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "72-75",
+    "team": "Nuggets",
+    "description": "P. Watson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:40.0",
+    "score": "72-75",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 3,
+    "time": "3:30.0",
+    "score": "72-75",
+    "team": "Knicks",
+    "description": "M. Diawara misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:27.0",
+    "score": "72-75",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 3,
+    "time": "3:20.0",
+    "score": "72-75",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:17.0",
+    "score": "72-75",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "3:06.0",
+    "score": "72-77",
+    "team": "Knicks",
+    "description": "M. Diawara makes 2-pt layup at rim (assist by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:05.0",
+    "score": "72-77",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "3:05.0",
+    "score": "72-77",
+    "team": "Nuggets",
+    "description": "J. Strawther enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "3:05.0",
+    "score": "72-77",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for P. Watson"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "74-77",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes 2-pt layup from 1 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:41.0",
+    "score": "74-80",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:21.0",
+    "score": "74-80",
+    "team": "Nuggets",
+    "description": "Turnover by J. Strawther (lost ball; steal by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "74-83",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 23 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:58.0",
+    "score": "77-83",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 25 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:43.0",
+    "score": "77-83",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:41.0",
+    "score": "77-83",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 3,
+    "time": "1:34.0",
+    "score": "80-83",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 3-pt jump shot from 23 ft (assist by T. Hardaway)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "80-83",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Valan\u010di\u016bnas (drawn by O. Anunoby)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "80-84",
+    "team": "Knicks",
+    "description": "O. Anunoby makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "80-84",
+    "team": "Knicks",
+    "description": "M. Bridges enters the game for M. Diawara"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "80-84",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "80-85",
+    "team": "Knicks",
+    "description": "O. Anunoby makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:10.0",
+    "score": "80-85",
+    "team": "Nuggets",
+    "description": "Personal foul by M. Bridges (drawn by T. Hardaway)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:10.0",
+    "score": "80-85",
+    "team": "Knicks",
+    "description": "M. Diawara enters the game for O. Anunoby"
+  },
+  {
+    "quarter": 3,
+    "time": "1:00.0",
+    "score": "80-85",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:59.0",
+    "score": "80-85",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "0:54.0",
+    "score": "80-88",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "80-88",
+    "team": "Nuggets",
+    "description": "Offensive foul by J. Valan\u010di\u016bnas (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "80-88",
+    "team": "Nuggets",
+    "description": "Turnover by J. Valan\u010di\u016bnas (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "80-88",
+    "team": "Nuggets",
+    "description": "C. Braun enters the game for J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "80-88",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "80-88",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 3,
+    "time": "0:12.0",
+    "score": "80-88",
+    "team": "Nuggets",
+    "description": "Personal foul by K. Towns (drawn by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:12.0",
+    "score": "81-88",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:12.0",
+    "score": "81-88",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for M. Diawara"
+  },
+  {
+    "quarter": 3,
+    "time": "0:12.0",
+    "score": "82-88",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "82-88",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "82-88",
+    "team": "Nuggets",
+    "description": "Defensive rebound by B. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "11:45.0",
+    "score": "84-88",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt jump shot from 15 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:31.0",
+    "score": "84-90",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 2 ft (assist by T. Kolek)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:13.0",
+    "score": "86-90",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt layup from 2 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:13.0",
+    "score": "86-90",
+    "team": "Nuggets",
+    "description": "Shooting foul by K. Towns (drawn by J. Strawther)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:13.0",
+    "score": "87-90",
+    "team": "Nuggets",
+    "description": "J. Strawther makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "10:58.0",
+    "score": "87-90",
+    "team": "Knicks",
+    "description": "M. Diawara misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:55.0",
+    "score": "87-90",
+    "team": "Nuggets",
+    "description": "Defensive rebound by P. Watson"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "87-90",
+    "team": "Nuggets",
+    "description": "Turnover by P. Watson (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:38.0",
+    "score": "87-90",
+    "team": "Knicks",
+    "description": "Turnover by T. Kolek (lost ball; steal by B. Brown)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:37.0",
+    "score": "87-90",
+    "team": "Nuggets",
+    "description": "Turnover by B. Brown (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:24.0",
+    "score": "87-92",
+    "team": "Knicks",
+    "description": "J. Clarkson makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:12.0",
+    "score": "87-92",
+    "team": "Nuggets",
+    "description": "Turnover by J. Strawther (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:57.0",
+    "score": "87-94",
+    "team": "Knicks",
+    "description": "M. Bridges makes 2-pt jump shot from 15 ft (assist by T. Kolek)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:55.0",
+    "score": "87-94",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "9:37.0",
+    "score": "87-94",
+    "team": "Nuggets",
+    "description": "Shooting foul by K. Towns (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:37.0",
+    "score": "87-94",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:37.0",
+    "score": "87-94",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:37.0",
+    "score": "88-94",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:27.0",
+    "score": "88-94",
+    "team": "Knicks",
+    "description": "M. Diawara misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:24.0",
+    "score": "88-94",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 4,
+    "time": "9:14.0",
+    "score": "90-94",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup from 3 ft (assist by P. Watson)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:58.0",
+    "score": "90-94",
+    "team": "Knicks",
+    "description": "Offensive foul by J. Clarkson (drawn by J. Strawther)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:58.0",
+    "score": "90-94",
+    "team": "Knicks",
+    "description": "Turnover by J. Clarkson (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:35.0",
+    "score": "90-94",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:34.0",
+    "score": "90-94",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "8:33.0",
+    "score": "92-94",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:30.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "Personal take foul by P. Watson (drawn by T. Kolek)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:30.0",
+    "score": "92-94",
+    "team": "Nuggets",
+    "description": "J. Murray enters the game for P. Watson"
+  },
+  {
+    "quarter": 4,
+    "time": "8:30.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "L. Shamet enters the game for M. Diawara"
+  },
+  {
+    "quarter": 4,
+    "time": "8:18.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:15.0",
+    "score": "92-94",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "8:15.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 4,
+    "time": "8:15.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "J. Brunson enters the game for T. Kolek"
+  },
+  {
+    "quarter": 4,
+    "time": "7:57.0",
+    "score": "92-94",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:54.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "7:44.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 7 ft (block by B. Brown)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:43.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "7:43.0",
+    "score": "92-94",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for B. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "7:43.0",
+    "score": "92-94",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "7:31.0",
+    "score": "92-96",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:03.0",
+    "score": "94-96",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:38.0",
+    "score": "94-96",
+    "team": "Knicks",
+    "description": "L. Shamet misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:35.0",
+    "score": "94-96",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "97-96",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 3-pt jump shot from 24 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:00.0",
+    "score": "97-99",
+    "team": "Knicks",
+    "description": "L. Shamet makes 3-pt jump shot from 23 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:38.0",
+    "score": "97-99",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:35.0",
+    "score": "97-99",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "5:25.0",
+    "score": "99-99",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:07.0",
+    "score": "99-99",
+    "team": "Knicks",
+    "description": "Turnover by L. Shamet (bad pass; steal by J. Strawther)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:03.0",
+    "score": "101-99",
+    "team": "Nuggets",
+    "description": "C. Braun makes 2-pt dunk from 1 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:03.0",
+    "score": "101-99",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "5:03.0",
+    "score": "101-99",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "5:03.0",
+    "score": "101-99",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:46.0",
+    "score": "101-102",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 23 ft (assist by L. Shamet)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:20.0",
+    "score": "101-102",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:18.0",
+    "score": "101-102",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "4:06.0",
+    "score": "101-102",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:03.0",
+    "score": "101-102",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 4,
+    "time": "3:48.0",
+    "score": "104-102",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 26 ft (assist by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:28.0",
+    "score": "104-102",
+    "team": "Knicks",
+    "description": "L. Shamet misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:26.0",
+    "score": "104-102",
+    "team": "Knicks",
+    "description": "Offensive rebound by L. Shamet"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "104-102",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "104-102",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "104-102",
+    "team": "Nuggets",
+    "description": "Loose ball foul by J. Valan\u010di\u016bnas (drawn by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "104-102",
+    "team": "Nuggets",
+    "description": "B. Brown enters the game for J. Strawther"
+  },
+  {
+    "quarter": 4,
+    "time": "3:11.0",
+    "score": "104-104",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:57.0",
+    "score": "104-104",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:55.0",
+    "score": "104-104",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "2:46.0",
+    "score": "104-104",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:43.0",
+    "score": "104-104",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "2:43.0",
+    "score": "104-106",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:43.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "2:43.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 enters the game for J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 4,
+    "time": "2:24.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:21.0",
+    "score": "104-106",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "2:11.0",
+    "score": "104-106",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "Personal foul by K. Towns (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:59.0",
+    "score": "106-106",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:43.0",
+    "score": "106-106",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:41.0",
+    "score": "106-106",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "1:21.0",
+    "score": "106-106",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "106-106",
+    "team": "Nuggets",
+    "description": "Offensive rebound by B. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "106-106",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "1:17.0",
+    "score": "106-106",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "1:14.0",
+    "score": "106-108",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:01.0",
+    "score": "106-108",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:59.0",
+    "score": "106-108",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:59.0",
+    "score": "106-108",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "0:48.0",
+    "score": "106-108",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt hook shot from 9 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "106-108",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "106-108",
+    "team": "Knicks",
+    "description": "Personal foul by N. Joki\u0107 (drawn by M. Robinson)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "106-108",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:22.0",
+    "score": "106-108",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:19.0",
+    "score": "106-108",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "108-108",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:02.0",
+    "score": "108-108",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-108",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-108",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-108",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-108",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-108",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-108",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:43.0",
+    "score": "108-108",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:40.0",
+    "score": "108-108",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 4,
+    "time": "4:40.0",
+    "score": "108-110",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "4:24.0",
+    "score": "108-110",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:22.0",
+    "score": "108-110",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 4,
+    "time": "4:12.0",
+    "score": "108-110",
+    "team": "Nuggets",
+    "description": "C. Braun misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "108-110",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "108-110",
+    "team": "Nuggets",
+    "description": "Shooting foul by K. Towns (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "109-110",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "110-110",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:45.0",
+    "score": "110-110",
+    "team": "Knicks",
+    "description": "L. Shamet misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:42.0",
+    "score": "110-110",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Braun"
+  },
+  {
+    "quarter": 4,
+    "time": "3:38.0",
+    "score": "112-110",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 2-pt layup at rim (assist by C. Braun)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "112-110",
+    "team": "Knicks",
+    "description": "Shooting foul by N. Joki\u0107 (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "112-110",
+    "team": "Knicks",
+    "description": "Instant Replay (Request: Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "112-111",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "112-112",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:15.0",
+    "score": "115-112",
+    "team": "Nuggets",
+    "description": "J. Murray makes 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:56.0",
+    "score": "115-112",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:53.0",
+    "score": "115-112",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "2:53.0",
+    "score": "115-114",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "2:32.0",
+    "score": "115-114",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:31.0",
+    "score": "115-114",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "2:31.0",
+    "score": "115-114",
+    "team": "Knicks",
+    "description": "Loose ball foul by M. Bridges (drawn by C. Braun)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:17.0",
+    "score": "115-114",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:15.0",
+    "score": "115-114",
+    "team": "Knicks",
+    "description": "Defensive rebound by L. Shamet"
+  },
+  {
+    "quarter": 4,
+    "time": "2:03.0",
+    "score": "115-117",
+    "team": "Knicks",
+    "description": "L. Shamet makes 3-pt jump shot from 23 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:02.0",
+    "score": "115-117",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:51.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt hook shot from 5 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:36.0",
+    "score": "117-117",
+    "team": "Knicks",
+    "description": "L. Shamet misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:33.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Braun"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "117-117",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "1:11.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:10.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:10.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:10.0",
+    "score": "117-117",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "1:01.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 1 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:44.0",
+    "score": "117-119",
+    "team": "Nuggets",
+    "description": "C. Braun misses 2-pt dunk from 1 ft (block by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:42.0",
+    "score": "117-119",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 4,
+    "time": "0:41.0",
+    "score": "117-119",
+    "team": "Nuggets",
+    "description": "C. Braun misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:39.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:16.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "117-119",
+    "team": "Nuggets",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "Loose ball foul by K. Towns (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-119",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-119",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "Loose ball foul by M. Bridges (drawn by C. Braun)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-119",
+    "team": "Knicks",
+    "description": "Instant Replay (Request: Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "118-119",
+    "team": "Nuggets",
+    "description": "C. Braun makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "118-119",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for B. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "118-119",
+    "team": "Knicks",
+    "description": "A. Hukporti enters the game for M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "119-119",
+    "team": "Nuggets",
+    "description": "C. Braun makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "119-119",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:44.0",
+    "score": "119-119",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:43.0",
+    "score": "119-119",
+    "team": "Knicks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:33.0",
+    "score": "119-119",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (lost ball; steal by J. Murray)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:30.0",
+    "score": "121-119",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:14.0",
+    "score": "121-121",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:57.0",
+    "score": "121-121",
+    "team": "Nuggets",
+    "description": "Personal foul by J. Brunson (drawn by J. Murray)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:49.0",
+    "score": "121-121",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "121-121",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "121-121",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Murray (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "121-121",
+    "team": "Knicks",
+    "description": "J. Brunson misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "121-121",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "121-122",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:20.0",
+    "score": "121-122",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:18.0",
+    "score": "121-122",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "3:12.0",
+    "score": "121-125",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:10.0",
+    "score": "121-125",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "2:45.0",
+    "score": "121-125",
+    "team": "Nuggets",
+    "description": "Turnover by J. Murray (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:23.0",
+    "score": "121-125",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:22.0",
+    "score": "121-125",
+    "team": "Nuggets",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "2:22.0",
+    "score": "121-125",
+    "team": "Knicks",
+    "description": "Loose ball foul by M. Robinson (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:10.0",
+    "score": "121-125",
+    "team": "Nuggets",
+    "description": "B. Brown misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "121-125",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "2:01.0",
+    "score": "121-127",
+    "team": "Knicks",
+    "description": "L. Shamet makes 2-pt layup from 2 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "123-127",
+    "team": "Nuggets",
+    "description": "B. Brown makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:25.0",
+    "score": "123-130",
+    "team": "Knicks",
+    "description": "M. Bridges makes 3-pt jump shot from 23 ft (assist by L. Shamet)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "123-130",
+    "team": "Nuggets",
+    "description": "Shooting foul by M. Robinson (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "123-130",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses free throw 1 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "123-130",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "123-130",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses free throw 2 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "123-130",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "124-130",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 3 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "124-130",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:56.0",
+    "score": "124-130",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "0:51.0",
+    "score": "124-130",
+    "team": "Nuggets",
+    "description": "C. Braun misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:48.0",
+    "score": "124-130",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "0:46.0",
+    "score": "127-130",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 25 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:30.0",
+    "score": "127-132",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:30.0",
+    "score": "127-132",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "127-132",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "127-132",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:22.0",
+    "score": "127-132",
+    "team": "Knicks",
+    "description": "Personal take foul by N. Joki\u0107 (drawn by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:18.0",
+    "score": "127-132",
+    "team": "Knicks",
+    "description": "Personal take foul by J. Murray (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:18.0",
+    "score": "127-133",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:18.0",
+    "score": "127-134",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:11.0",
+    "score": "127-134",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:09.0",
+    "score": "127-134",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  }
+]

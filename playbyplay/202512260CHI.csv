@@ -1,0 +1,478 @@
+quarter,time,score,team,description
+1,11:45.0,0-0,76ers,P. George misses 3-pt jump shot from 25 ft
+1,11:43.0,0-0,Bulls,Defensive rebound by M. Buzelis
+1,11:36.0,0-0,Bulls,J. Giddey misses 2-pt layup from 1 ft
+1,11:34.0,0-0,76ers,Defensive rebound by P. George
+1,11:23.0,0-0,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+1,11:21.0,0-0,Bulls,Defensive rebound by N. Vučević
+1,11:01.0,0-0,Bulls,I. Okoro misses 2-pt hook shot from 4 ft
+1,10:58.0,0-0,76ers,Defensive rebound by P. George
+1,10:51.0,3-0,76ers,T. Maxey makes 3-pt jump shot from 26 ft (assist by P. George)
+1,10:32.0,3-0,Bulls,Turnover by J. Giddey (lost ball; steal by V. Edgecombe)
+1,10:28.0,5-0,76ers,V. Edgecombe makes 2-pt dunk from 1 ft
+1,10:18.0,5-0,Bulls,Turnover by M. Buzelis (lost ball; steal by D. Barlow)
+1,10:14.0,5-0,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,10:11.0,5-0,Bulls,Defensive rebound by C. White
+1,10:06.0,5-0,Bulls,C. White misses 3-pt jump shot from 27 ft
+1,10:03.0,5-0,76ers,Defensive rebound by J. Embiid
+1,9:54.0,7-0,76ers,J. Embiid makes 2-pt jump shot from 16 ft (assist by T. Maxey)
+1,9:39.0,7-2,Bulls,M. Buzelis makes 2-pt layup from 1 ft
+1,9:24.0,7-2,76ers,J. Embiid misses 2-pt jump shot from 12 ft
+1,9:22.0,7-2,76ers,Offensive rebound by D. Barlow
+1,9:22.0,9-2,76ers,D. Barlow makes 2-pt layup at rim
+1,9:22.0,9-2,Bulls,Chicago full timeout
+1,9:10.0,9-2,Bulls,Turnover by J. Giddey (bad pass; steal by D. Barlow)
+1,9:04.0,9-2,76ers,Shooting foul by M. Buzelis (drawn by V. Edgecombe)
+1,9:04.0,10-2,76ers,V. Edgecombe makes free throw 1 of 2
+1,9:04.0,11-2,76ers,V. Edgecombe makes free throw 2 of 2
+1,8:41.0,11-2,Bulls,M. Buzelis misses 2-pt layup from 2 ft
+1,8:38.0,11-2,76ers,Defensive rebound by P. George
+1,8:34.0,11-2,76ers,P. George misses 2-pt layup from 2 ft
+1,8:34.0,11-2,76ers,Offensive rebound by D. Barlow
+1,8:34.0,11-2,76ers,Shooting foul by C. White (drawn by D. Barlow)
+1,8:34.0,12-2,76ers,D. Barlow makes free throw 1 of 2
+1,8:34.0,13-2,76ers,D. Barlow makes free throw 2 of 2
+1,8:23.0,13-2,Bulls,Personal foul by T. Maxey (drawn by I. Okoro)
+1,8:15.0,13-2,Bulls,C. White misses 3-pt jump shot from 26 ft
+1,8:11.0,13-2,76ers,Defensive rebound by P. George
+1,8:04.0,13-2,76ers,Turnover by T. Maxey (bad pass)
+1,7:50.0,13-5,Bulls,N. Vučević makes 3-pt jump shot from 26 ft (assist by J. Giddey)
+1,7:29.0,13-5,76ers,T. Maxey misses 2-pt jump shot from 9 ft
+1,7:25.0,13-5,76ers,Offensive rebound by J. Embiid
+1,7:25.0,15-5,76ers,J. Embiid makes 2-pt layup at rim
+1,7:20.0,15-8,Bulls,M. Buzelis makes 3-pt jump shot from 25 ft (assist by C. White)
+1,7:06.0,15-8,76ers,P. George misses 2-pt jump shot from 13 ft
+1,7:03.0,15-8,Bulls,Defensive rebound by N. Vučević
+1,6:52.0,15-8,Bulls,Personal foul by D. Barlow (drawn by N. Vučević)
+1,6:52.0,15-8,Bulls,Z. Collins enters the game for N. Vučević
+1,6:52.0,15-8,Bulls,K. Huerter enters the game for C. White
+1,6:45.0,15-11,Bulls,J. Giddey makes 3-pt jump shot from 25 ft (assist by K. Huerter)
+1,6:26.0,15-11,76ers,Turnover by J. Embiid (lost ball; steal by J. Giddey)
+1,6:22.0,15-13,Bulls,Z. Collins makes 2-pt layup from 1 ft (assist by J. Giddey)
+1,6:22.0,15-13,Bulls,Shooting foul by V. Edgecombe (drawn by Z. Collins)
+1,6:22.0,15-13,76ers,Q. Grimes enters the game for D. Barlow
+1,6:22.0,15-13,76ers,J. Walker enters the game for V. Edgecombe
+1,6:22.0,15-14,Bulls,Z. Collins makes free throw 1 of 1
+1,6:10.0,17-14,76ers,J. Embiid makes 2-pt hook shot from 8 ft (assist by T. Maxey)
+1,6:10.0,17-14,76ers,Shooting foul by M. Buzelis (drawn by J. Embiid)
+1,6:10.0,17-14,Bulls,J. Smith enters the game for M. Buzelis
+1,6:10.0,18-14,76ers,J. Embiid makes free throw 1 of 1
+1,5:55.0,18-17,Bulls,Z. Collins makes 3-pt jump shot from 25 ft (assist by J. Giddey)
+1,5:38.0,20-17,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by P. George)
+1,5:30.0,20-20,Bulls,J. Smith makes 3-pt jump shot from 27 ft (assist by J. Giddey)
+1,5:12.0,20-20,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+1,5:07.0,20-20,Bulls,Defensive rebound by J. Giddey
+1,4:55.0,20-22,Bulls,Z. Collins makes 2-pt layup from 1 ft (assist by J. Giddey)
+1,4:43.0,22-22,76ers,P. George makes 2-pt layup from 1 ft
+1,4:43.0,22-22,76ers,Shooting foul by J. Giddey (drawn by P. George)
+1,4:43.0,22-22,Bulls,A. Dosunmu enters the game for J. Giddey
+1,4:43.0,22-22,Bulls,T. Jones enters the game for I. Okoro
+1,4:43.0,23-22,76ers,P. George makes free throw 1 of 1
+1,4:24.0,23-22,Bulls,K. Huerter misses 3-pt jump shot from 25 ft
+1,4:21.0,23-22,76ers,Defensive rebound by P. George
+1,4:14.0,23-22,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+1,4:10.0,23-22,76ers,Offensive rebound by J. Walker
+1,4:05.0,23-22,76ers,Turnover by J. Embiid (lost ball; steal by T. Jones)
+1,3:59.0,23-24,Bulls,K. Huerter makes 2-pt layup from 1 ft (assist by T. Jones)
+1,3:42.0,23-24,76ers,T. Maxey misses 2-pt layup from 2 ft
+1,3:42.0,23-24,76ers,Offensive rebound by J. Walker
+1,3:42.0,23-24,76ers,Shooting foul by Z. Collins (drawn by J. Walker)
+1,3:42.0,23-24,76ers,J. Walker misses free throw 1 of 2
+1,3:42.0,23-24,76ers,Offensive rebound by Team
+1,3:42.0,23-24,76ers,A. Drummond enters the game for J. Embiid
+1,3:42.0,24-24,76ers,J. Walker makes free throw 2 of 2
+1,3:28.0,24-26,Bulls,Z. Collins makes 2-pt layup from 1 ft (assist by J. Smith)
+1,3:08.0,24-26,76ers,T. Maxey misses 2-pt jump shot from 21 ft
+1,3:02.0,24-26,76ers,Offensive rebound by A. Drummond
+1,3:02.0,24-26,76ers,A. Drummond misses 2-pt layup at rim
+1,3:02.0,24-26,Bulls,Defensive rebound by Z. Collins
+1,2:50.0,24-26,Bulls,K. Huerter misses 3-pt jump shot from 27 ft
+1,2:46.0,24-26,Bulls,Offensive rebound by J. Smith
+1,2:46.0,24-26,Bulls,J. Smith misses 2-pt layup at rim
+1,2:46.0,24-26,76ers,Defensive rebound by A. Drummond
+1,2:43.0,24-26,76ers,T. Maxey misses 2-pt jump shot from 11 ft (block by J. Smith)
+1,2:43.0,24-26,76ers,Offensive rebound by Team
+1,2:43.0,24-26,76ers,Philadelphia full timeout
+1,2:43.0,24-26,76ers,V. Edgecombe enters the game for P. George
+1,2:24.0,24-26,76ers,Turnover by Team (shot clock)
+1,2:14.0,24-28,Bulls,T. Jones makes 2-pt layup at rim
+1,1:55.0,24-28,76ers,A. Drummond misses 3-pt jump shot from 24 ft
+1,1:50.0,24-28,76ers,Offensive rebound by V. Edgecombe
+1,1:47.0,24-28,76ers,V. Edgecombe misses 2-pt layup from 2 ft
+1,1:44.0,24-28,76ers,Offensive rebound by A. Drummond
+1,1:44.0,26-28,76ers,A. Drummond makes 2-pt layup at rim
+1,1:24.0,26-28,Bulls,J. Smith misses 3-pt jump shot from 24 ft
+1,1:21.0,26-28,76ers,Defensive rebound by A. Drummond
+1,1:12.0,26-28,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+1,1:06.0,26-28,Bulls,Defensive rebound by Z. Collins
+1,1:02.0,26-28,Bulls,Personal foul by A. Drummond (drawn by K. Huerter)
+1,1:02.0,26-28,Bulls,N. Vučević enters the game for Z. Collins
+1,1:02.0,26-28,Bulls,C. White enters the game for K. Huerter
+1,0:55.0,26-28,Bulls,A. Dosunmu misses 3-pt jump shot from 25 ft
+1,0:53.0,26-28,76ers,Defensive rebound by T. Maxey
+1,0:32.0,26-28,76ers,A. Drummond misses 3-pt jump shot from 23 ft
+1,0:27.0,26-28,Bulls,Defensive rebound by A. Dosunmu
+1,0:25.0,26-28,Bulls,C. White misses 3-pt jump shot from 24 ft
+1,0:25.0,26-28,Bulls,Offensive rebound by J. Smith
+1,0:22.0,26-28,Bulls,Personal foul by V. Edgecombe (drawn by J. Smith)
+1,0:22.0,26-29,Bulls,J. Smith makes free throw 1 of 2
+1,0:22.0,26-29,76ers,P. George enters the game for A. Drummond
+1,0:22.0,26-29,Bulls,I. Okoro enters the game for T. Jones
+1,0:22.0,26-30,Bulls,J. Smith makes free throw 2 of 2
+1,0:02.0,28-30,76ers,Q. Grimes makes 2-pt layup from 1 ft (assist by V. Edgecombe)
+1,0:00.0,28-30,Bulls,C. White misses 3-pt jump shot from 34 ft
+1,0:00.0,28-30,Bulls,Offensive rebound by Team
+2,11:48.0,28-32,Bulls,J. Smith makes 2-pt layup from 2 ft (assist by J. Giddey)
+2,11:28.0,28-32,76ers,J. McCain misses 2-pt jump shot from 14 ft
+2,11:26.0,28-32,Bulls,Defensive rebound by C. White
+2,11:12.0,28-32,Bulls,J. Giddey misses 2-pt jump shot from 7 ft
+2,11:11.0,28-32,Bulls,Offensive rebound by N. Vučević
+2,11:09.0,28-34,Bulls,N. Vučević makes 2-pt dunk from 1 ft (assist by A. Dosunmu)
+2,10:56.0,28-34,76ers,Turnover by D. Barlow (traveling)
+2,10:56.0,28-34,Bulls,M. Buzelis enters the game for J. Smith
+2,10:41.0,28-36,Bulls,J. Giddey makes 2-pt layup from 1 ft (assist by N. Vučević)
+2,10:32.0,30-36,76ers,J. McCain makes 2-pt layup from 1 ft
+2,10:19.0,30-38,Bulls,A. Dosunmu makes 2-pt layup from 1 ft (assist by J. Giddey)
+2,10:10.0,30-38,76ers,Turnover by V. Edgecombe (out of bounds lost ball)
+2,10:10.0,30-38,76ers,J. Edwards enters the game for D. Barlow
+2,9:57.0,30-41,Bulls,A. Dosunmu makes 3-pt jump shot from 22 ft (assist by C. White)
+2,9:55.0,30-41,76ers,Philadelphia full timeout
+2,9:55.0,30-41,76ers,D. Barlow enters the game for Q. Grimes
+2,9:44.0,30-41,76ers,J. McCain misses 3-pt jump shot from 26 ft
+2,9:40.0,30-41,Bulls,Defensive rebound by J. Giddey
+2,9:24.0,30-41,Bulls,J. Giddey misses 3-pt jump shot from 26 ft
+2,9:22.0,30-41,76ers,Defensive rebound by J. McCain
+2,9:13.0,30-41,76ers,V. Edgecombe misses 2-pt layup from 2 ft (block by M. Buzelis)
+2,9:10.0,30-41,Bulls,Defensive rebound by M. Buzelis
+2,9:08.0,30-41,Bulls,Turnover by A. Dosunmu (bad pass; steal by J. McCain)
+2,9:03.0,30-41,76ers,J. McCain misses 2-pt layup from 3 ft (block by M. Buzelis)
+2,9:03.0,30-41,76ers,Offensive rebound by Team
+2,9:03.0,30-41,Bulls,K. Huerter enters the game for A. Dosunmu
+2,8:54.0,30-41,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+2,8:51.0,30-41,76ers,Offensive rebound by V. Edgecombe
+2,8:48.0,30-41,76ers,J. Edwards misses 3-pt jump shot from 27 ft
+2,8:45.0,30-41,Bulls,Defensive rebound by M. Buzelis
+2,8:40.0,30-41,Bulls,Turnover by M. Buzelis (out of bounds lost ball)
+2,8:24.0,32-41,76ers,J. McCain makes 2-pt layup from 3 ft
+2,8:17.0,32-43,Bulls,K. Huerter makes 2-pt layup from 1 ft (assist by C. White)
+2,7:57.0,34-43,76ers,J. McCain makes 2-pt layup from 2 ft
+2,7:57.0,34-43,Bulls,T. Jones enters the game for C. White
+2,7:39.0,34-43,Bulls,Turnover by J. Giddey (bad pass; steal by J. Edwards)
+2,7:29.0,34-43,76ers,V. Edgecombe misses 2-pt layup from 2 ft (block by M. Buzelis)
+2,7:26.0,34-43,Bulls,Defensive rebound by N. Vučević
+2,7:23.0,34-43,Bulls,Personal foul by J. Edwards (drawn by M. Buzelis)
+2,7:23.0,34-43,76ers,J. Embiid enters the game for A. Drummond
+2,7:23.0,34-43,Bulls,Chicago full timeout
+2,7:23.0,34-43,76ers,T. Maxey enters the game for V. Edgecombe
+2,7:16.0,34-43,Bulls,T. Jones misses 2-pt jump shot from 11 ft
+2,7:12.0,34-43,76ers,Defensive rebound by T. Maxey
+2,7:03.0,36-43,76ers,T. Maxey makes 2-pt layup from 1 ft (assist by J. Edwards)
+2,6:49.0,36-43,Bulls,J. Giddey misses 2-pt jump shot from 6 ft (block by T. Maxey)
+2,6:49.0,36-43,76ers,Defensive rebound by D. Barlow
+2,6:44.0,36-43,76ers,Turnover by T. Maxey (out of bounds lost ball)
+2,6:44.0,36-43,Bulls,I. Okoro enters the game for M. Buzelis
+2,6:35.0,36-43,Bulls,Shooting foul by T. Maxey (drawn by K. Huerter)
+2,6:35.0,36-43,Bulls,K. Huerter misses free throw 1 of 2
+2,6:35.0,36-43,Bulls,Offensive rebound by Team
+2,6:35.0,36-43,Bulls,Z. Collins enters the game for N. Vučević
+2,6:35.0,36-43,Bulls,K. Huerter misses free throw 2 of 2
+2,6:33.0,36-43,76ers,Defensive rebound by J. Embiid
+2,6:16.0,39-43,76ers,J. Embiid makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+2,5:55.0,39-43,Bulls,Z. Collins misses 2-pt jump shot from 6 ft
+2,5:54.0,39-43,Bulls,Offensive rebound by Team
+2,5:54.0,39-43,76ers,P. George enters the game for J. Edwards
+2,5:43.0,39-43,Bulls,Z. Collins misses 3-pt jump shot from 24 ft
+2,5:40.0,39-43,76ers,Defensive rebound by Team
+2,5:40.0,39-43,Bulls,A. Dosunmu enters the game for J. Giddey
+2,5:18.0,39-43,76ers,J. Embiid misses 2-pt jump shot from 12 ft
+2,5:16.0,39-43,Bulls,Defensive rebound by Z. Collins
+2,5:03.0,39-45,Bulls,I. Okoro makes 2-pt layup from 1 ft (assist by A. Dosunmu)
+2,4:49.0,39-45,76ers,P. George misses 3-pt jump shot from 23 ft
+2,4:47.0,39-45,Bulls,Defensive rebound by Z. Collins
+2,4:41.0,39-45,Bulls,K. Huerter misses 3-pt jump shot from 25 ft
+2,4:36.0,39-45,Bulls,Offensive rebound by A. Dosunmu
+2,4:34.0,39-45,Bulls,K. Huerter misses 3-pt jump shot from 26 ft
+2,4:34.0,39-45,76ers,Defensive rebound by P. George
+2,4:27.0,39-45,76ers,Shooting foul by I. Okoro (drawn by T. Maxey)
+2,4:27.0,39-45,76ers,Philadelphia full timeout
+2,4:27.0,39-45,76ers,Instant Replay (Challenge: Ruling Stands)
+2,4:27.0,39-45,Bulls,C. White enters the game for T. Jones
+2,4:27.0,40-45,76ers,T. Maxey makes free throw 1 of 2
+2,4:27.0,41-45,76ers,T. Maxey makes free throw 2 of 2
+2,4:01.0,41-45,Bulls,Turnover by Team (shot clock)
+2,3:43.0,43-45,76ers,J. Embiid makes 2-pt layup from 1 ft
+2,3:34.0,43-45,Bulls,Z. Collins misses 2-pt hook shot from 6 ft
+2,3:32.0,43-45,76ers,Defensive rebound by P. George
+2,3:23.0,43-45,76ers,Shooting foul by K. Huerter (drawn by J. Embiid)
+2,3:23.0,44-45,76ers,J. Embiid makes free throw 1 of 2
+2,3:23.0,44-45,Bulls,M. Buzelis enters the game for Z. Collins
+2,3:23.0,44-45,Bulls,J. Giddey enters the game for A. Dosunmu
+2,3:23.0,44-45,Bulls,T. Jones enters the game for K. Huerter
+2,3:23.0,44-45,Bulls,N. Vučević enters the game for I. Okoro
+2,3:23.0,45-45,76ers,J. Embiid makes free throw 2 of 2
+2,2:58.0,45-45,Bulls,M. Buzelis misses 3-pt jump shot from 25 ft
+2,2:56.0,45-45,Bulls,Offensive rebound by T. Jones
+2,2:51.0,45-45,Bulls,J. Giddey misses 3-pt jump shot from 23 ft
+2,2:49.0,45-45,76ers,Defensive rebound by T. Maxey
+2,2:41.0,48-45,76ers,T. Maxey makes 3-pt jump shot from 27 ft (assist by D. Barlow)
+2,2:21.0,48-45,Bulls,Shooting foul by J. McCain (drawn by J. Giddey)
+2,2:21.0,48-46,Bulls,J. Giddey makes free throw 1 of 2
+2,2:21.0,48-47,Bulls,J. Giddey makes free throw 2 of 2
+2,2:08.0,50-47,76ers,T. Maxey makes 2-pt jump shot from 10 ft
+2,1:59.0,50-47,Bulls,M. Buzelis misses 3-pt jump shot from 25 ft
+2,1:59.0,50-47,Bulls,Offensive rebound by Team
+2,1:56.0,50-49,Bulls,C. White makes 2-pt layup from 2 ft (assist by J. Giddey)
+2,1:36.0,50-49,76ers,J. Embiid misses 2-pt jump shot from 18 ft
+2,1:36.0,50-49,Bulls,Defensive rebound by M. Buzelis
+2,1:19.0,50-49,Bulls,T. Jones misses 3-pt jump shot from 22 ft
+2,1:16.0,50-49,76ers,Defensive rebound by J. McCain
+2,1:04.0,50-49,76ers,J. McCain misses 2-pt layup from 3 ft
+2,1:01.0,50-49,76ers,Offensive rebound by P. George
+2,1:00.0,50-49,76ers,D. Barlow misses 2-pt layup from 4 ft
+2,0:58.0,50-49,Bulls,Defensive rebound by N. Vučević
+2,0:55.0,50-49,Bulls,J. Giddey misses 3-pt jump shot from 26 ft
+2,0:53.0,50-49,Bulls,Offensive rebound by M. Buzelis
+2,0:53.0,50-49,Bulls,M. Buzelis misses 2-pt dunk at rim
+2,0:53.0,50-49,76ers,Defensive rebound by Team
+2,0:53.0,50-49,76ers,V. Edgecombe enters the game for J. McCain
+2,0:33.0,50-49,76ers,T. Maxey misses 2-pt jump shot from 8 ft
+2,0:32.0,50-49,76ers,Offensive rebound by D. Barlow
+2,0:32.0,52-49,76ers,D. Barlow makes 2-pt layup at rim
+2,0:21.0,52-49,Bulls,M. Buzelis misses 3-pt jump shot from 26 ft
+2,0:19.0,52-49,76ers,Defensive rebound by T. Maxey
+2,0:05.0,52-49,76ers,Personal take foul by T. Jones (drawn by T. Maxey)
+2,0:00.0,52-49,76ers,J. Embiid misses 2-pt jump shot from 11 ft
+2,0:00.0,52-49,Bulls,Defensive rebound by J. Giddey
+3,11:37.0,52-52,Bulls,M. Buzelis makes 3-pt jump shot from 23 ft (assist by C. White)
+3,11:21.0,55-52,76ers,J. Embiid makes 3-pt jump shot from 26 ft (assist by P. George)
+3,11:11.0,55-52,Bulls,Personal foul by P. George (drawn by M. Buzelis)
+3,10:56.0,55-52,Bulls,I. Okoro misses 2-pt layup from 1 ft
+3,10:53.0,55-52,Bulls,Offensive rebound by N. Vučević
+3,10:53.0,55-52,Bulls,N. Vučević misses 2-pt layup at rim
+3,10:53.0,55-52,76ers,Defensive rebound by V. Edgecombe
+3,10:48.0,57-52,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)
+3,10:28.0,57-52,Bulls,J. Giddey misses 2-pt jump shot from 5 ft
+3,10:26.0,57-52,76ers,Defensive rebound by P. George
+3,10:24.0,60-52,76ers,T. Maxey makes 3-pt jump shot from 28 ft (assist by P. George)
+3,10:23.0,60-52,Bulls,Chicago full timeout
+3,9:57.0,60-55,Bulls,I. Okoro makes 3-pt jump shot from 26 ft (assist by C. White)
+3,9:44.0,60-55,76ers,P. George misses 3-pt jump shot from 27 ft
+3,9:41.0,60-55,Bulls,Defensive rebound by M. Buzelis
+3,9:26.0,60-55,Bulls,J. Giddey misses 3-pt jump shot from 26 ft
+3,9:24.0,60-55,76ers,Defensive rebound by V. Edgecombe
+3,9:10.0,60-55,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+3,9:07.0,60-55,Bulls,Defensive rebound by I. Okoro
+3,9:04.0,60-57,Bulls,N. Vučević makes 2-pt layup from 1 ft (assist by I. Okoro)
+3,8:43.0,62-57,76ers,V. Edgecombe makes 2-pt layup from 2 ft
+3,8:36.0,62-57,Bulls,C. White misses 2-pt jump shot from 18 ft
+3,8:34.0,62-57,76ers,Defensive rebound by J. Embiid
+3,8:25.0,62-57,76ers,V. Edgecombe misses 3-pt jump shot from 24 ft
+3,8:23.0,62-57,Bulls,Defensive rebound by M. Buzelis
+3,8:09.0,62-57,Bulls,M. Buzelis misses 3-pt jump shot from 25 ft
+3,8:08.0,62-57,76ers,Defensive rebound by Team
+3,8:08.0,62-57,76ers,Q. Grimes enters the game for D. Barlow
+3,8:08.0,62-57,Bulls,J. Smith enters the game for M. Buzelis
+3,7:53.0,62-57,76ers,Shooting foul by N. Vučević (drawn by J. Embiid)
+3,7:53.0,63-57,76ers,J. Embiid makes free throw 1 of 2
+3,7:53.0,64-57,76ers,J. Embiid makes free throw 2 of 2
+3,7:40.0,64-57,Bulls,Turnover by C. White (discontinued dribble)
+3,7:28.0,64-57,76ers,P. George misses 3-pt jump shot from 24 ft
+3,7:25.0,64-57,76ers,Offensive rebound by V. Edgecombe
+3,7:23.0,67-57,76ers,P. George makes 3-pt jump shot from 24 ft (assist by V. Edgecombe)
+3,7:06.0,67-57,Bulls,Shooting foul by Q. Grimes (drawn by C. White)
+3,7:06.0,67-58,Bulls,C. White makes free throw 1 of 2
+3,7:06.0,67-58,Bulls,Z. Collins enters the game for N. Vučević
+3,7:06.0,67-59,Bulls,C. White makes free throw 2 of 2
+3,6:48.0,67-59,76ers,J. Embiid misses 2-pt jump shot from 5 ft (block by Z. Collins)
+3,6:46.0,67-59,Bulls,Defensive rebound by C. White
+3,6:46.0,67-59,Bulls,K. Huerter enters the game for C. White
+3,6:35.0,67-62,Bulls,K. Huerter makes 3-pt jump shot from 25 ft (assist by I. Okoro)
+3,6:20.0,67-62,76ers,P. George misses 2-pt layup from 4 ft
+3,6:18.0,67-62,Bulls,Defensive rebound by J. Smith
+3,6:13.0,67-65,Bulls,I. Okoro makes 3-pt jump shot from 24 ft (assist by J. Giddey)
+3,5:57.0,67-65,76ers,Shooting foul by Z. Collins (drawn by J. Embiid)
+3,5:57.0,68-65,76ers,J. Embiid makes free throw 1 of 2
+3,5:57.0,68-65,76ers,J. Walker enters the game for P. George
+3,5:57.0,68-65,Bulls,A. Dosunmu enters the game for J. Giddey
+3,5:57.0,68-65,Bulls,T. Jones enters the game for I. Okoro
+3,5:57.0,69-65,76ers,J. Embiid makes free throw 2 of 2
+3,5:33.0,69-68,Bulls,J. Smith makes 3-pt jump shot from 25 ft (assist by A. Dosunmu)
+3,5:19.0,71-68,76ers,J. Embiid makes 2-pt jump shot from 22 ft (assist by T. Maxey)
+3,5:07.0,71-68,Bulls,Turnover by K. Huerter (bad pass)
+3,4:55.0,73-68,76ers,J. Embiid makes 2-pt jump shot from 10 ft (assist by T. Maxey)
+3,4:39.0,73-70,Bulls,K. Huerter makes 2-pt jump shot from 9 ft (assist by J. Smith)
+3,4:29.0,73-70,76ers,Philadelphia full timeout
+3,4:29.0,73-70,76ers,J. McCain enters the game for V. Edgecombe
+3,4:17.0,73-70,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+3,4:15.0,73-70,Bulls,Defensive rebound by Team
+3,4:15.0,73-70,76ers,Loose ball foul by J. Embiid (drawn by Z. Collins)
+3,4:00.0,73-72,Bulls,T. Jones makes 2-pt layup from 2 ft (assist by J. Smith)
+3,3:39.0,76-72,76ers,T. Maxey makes 3-pt jump shot from 28 ft (assist by Q. Grimes)
+3,3:24.0,76-72,Bulls,Shooting foul by J. Embiid (drawn by Z. Collins)
+3,3:24.0,76-73,Bulls,Z. Collins makes free throw 1 of 2
+3,3:24.0,76-74,Bulls,Z. Collins makes free throw 2 of 2
+3,3:00.0,76-74,76ers,J. Embiid misses 2-pt jump shot from 17 ft
+3,2:55.0,76-74,Bulls,Defensive rebound by T. Jones
+3,2:42.0,76-74,Bulls,A. Dosunmu misses 2-pt layup from 6 ft (block by J. Walker)
+3,2:38.0,76-74,76ers,Defensive rebound by J. Walker
+3,2:23.0,76-74,76ers,Turnover by J. Walker (out of bounds lost ball)
+3,2:11.0,76-74,Bulls,Personal foul by J. McCain (drawn by T. Jones)
+3,2:11.0,76-75,Bulls,T. Jones makes free throw 1 of 2
+3,2:11.0,76-75,76ers,A. Bona enters the game for J. Embiid
+3,2:11.0,76-75,76ers,P. George enters the game for J. Walker
+3,2:11.0,76-75,Bulls,T. Jones misses free throw 2 of 2
+3,2:09.0,76-75,76ers,Defensive rebound by P. George
+3,1:56.0,76-75,76ers,P. George misses 2-pt jump shot from 20 ft
+3,1:54.0,76-75,Bulls,Defensive rebound by A. Dosunmu
+3,1:49.0,76-77,Bulls,T. Jones makes 2-pt layup from 1 ft (assist by A. Dosunmu)
+3,1:29.0,76-77,76ers,A. Bona misses 3-pt jump shot from 23 ft
+3,1:26.0,76-77,Bulls,Defensive rebound by T. Jones
+3,1:23.0,76-77,Bulls,J. Smith misses 3-pt jump shot from 28 ft
+3,1:22.0,76-77,76ers,Defensive rebound by Team
+3,1:22.0,76-77,Bulls,Loose ball foul by K. Huerter (drawn by T. Maxey)
+3,1:01.0,79-77,76ers,P. George makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+3,0:51.0,79-80,Bulls,A. Dosunmu makes 3-pt jump shot from 26 ft
+3,0:37.0,82-80,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+3,0:29.0,82-80,Bulls,Shooting foul by A. Bona (drawn by T. Jones)
+3,0:29.0,82-81,Bulls,T. Jones makes free throw 1 of 2
+3,0:29.0,82-81,Bulls,I. Okoro enters the game for J. Smith
+3,0:29.0,82-81,Bulls,T. Jones misses free throw 2 of 2
+3,0:27.0,82-81,76ers,Defensive rebound by P. George
+3,0:12.0,85-81,76ers,P. George makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+3,0:06.0,85-81,Bulls,T. Jones misses 2-pt layup from 4 ft (block by T. Maxey)
+3,0:03.0,85-81,76ers,Defensive rebound by J. McCain
+3,0:02.0,85-81,76ers,J. McCain misses 3-pt jump shot from 26 ft
+3,0:02.0,85-81,Bulls,Defensive rebound by Z. Collins
+4,11:50.0,88-81,76ers,P. George makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+4,11:27.0,88-83,Bulls,C. White makes 2-pt jump shot from 9 ft (assist by J. Giddey)
+4,11:07.0,88-83,76ers,P. George misses 3-pt jump shot from 25 ft
+4,11:04.0,88-83,Bulls,Defensive rebound by J. Giddey
+4,11:01.0,88-83,Bulls,Turnover by J. Giddey (lost ball; steal by J. McCain)
+4,10:56.0,88-83,76ers,J. McCain misses 3-pt jump shot from 23 ft
+4,10:55.0,88-83,Bulls,Defensive rebound by C. White
+4,10:47.0,88-83,Bulls,Shooting foul by J. McCain (drawn by C. White)
+4,10:47.0,88-84,Bulls,C. White makes free throw 1 of 2
+4,10:47.0,88-84,76ers,D. Barlow enters the game for J. McCain
+4,10:47.0,88-85,Bulls,C. White makes free throw 2 of 2
+4,10:36.0,88-85,76ers,Shooting foul by J. Smith (drawn by A. Bona)
+4,10:36.0,88-85,76ers,A. Bona misses free throw 1 of 2
+4,10:36.0,88-85,76ers,Offensive rebound by Team
+4,10:36.0,89-85,76ers,A. Bona makes free throw 2 of 2
+4,10:13.0,89-85,Bulls,Turnover by J. Giddey (bad pass; steal by D. Barlow)
+4,10:08.0,89-85,76ers,V. Edgecombe misses 3-pt jump shot from 24 ft
+4,10:05.0,89-85,Bulls,Defensive rebound by C. White
+4,9:43.0,89-85,Bulls,N. Vučević misses 2-pt hook shot from 5 ft
+4,9:41.0,89-85,76ers,Defensive rebound by D. Barlow
+4,9:26.0,89-85,76ers,V. Edgecombe misses 2-pt jump shot from 20 ft
+4,9:23.0,89-85,Bulls,Defensive rebound by J. Smith
+4,9:14.0,89-85,Bulls,C. White misses 3-pt jump shot from 28 ft
+4,9:10.0,89-85,76ers,Defensive rebound by D. Barlow
+4,9:10.0,89-85,76ers,T. Maxey enters the game for Q. Grimes
+4,8:52.0,89-85,76ers,Turnover by P. George (lost ball; steal by A. Dosunmu)
+4,8:46.0,89-85,Bulls,Personal foul by P. George (drawn by N. Vučević)
+4,8:46.0,89-85,Bulls,K. Huerter enters the game for J. Smith
+4,8:37.0,89-85,Bulls,J. Giddey misses 3-pt jump shot from 27 ft
+4,8:35.0,89-85,76ers,Defensive rebound by P. George
+4,8:31.0,89-85,76ers,P. George misses 2-pt layup from 2 ft
+4,8:29.0,89-85,Bulls,Defensive rebound by K. Huerter
+4,8:28.0,89-85,Bulls,Shooting foul by T. Maxey (drawn by J. Giddey)
+4,8:28.0,89-86,Bulls,J. Giddey makes free throw 1 of 2
+4,8:28.0,89-86,Bulls,T. Jones enters the game for C. White
+4,8:28.0,89-86,76ers,Philadelphia full timeout
+4,8:28.0,89-87,Bulls,J. Giddey makes free throw 2 of 2
+4,8:15.0,91-87,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)
+4,8:03.0,91-87,Bulls,N. Vučević misses 2-pt jump shot from 6 ft
+4,8:01.0,91-87,76ers,Defensive rebound by A. Bona
+4,7:53.0,91-87,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+4,7:52.0,91-87,76ers,Offensive rebound by Team
+4,7:52.0,91-87,Bulls,Loose ball foul by N. Vučević (drawn by D. Barlow)
+4,7:52.0,91-87,Bulls,M. Buzelis enters the game for J. Giddey
+4,7:50.0,91-87,76ers,Personal foul by M. Buzelis (drawn by P. George)
+4,7:50.0,91-87,Bulls,Z. Collins enters the game for N. Vučević
+4,7:35.0,91-87,76ers,T. Maxey misses 2-pt jump shot from 4 ft
+4,7:33.0,91-87,Bulls,Defensive rebound by T. Jones
+4,7:23.0,91-90,Bulls,Z. Collins makes 3-pt jump shot from 22 ft (assist by T. Jones)
+4,7:03.0,93-90,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by D. Barlow)
+4,6:41.0,93-90,Bulls,M. Buzelis misses 2-pt layup from 1 ft
+4,6:41.0,93-90,Bulls,Offensive rebound by M. Buzelis
+4,6:41.0,93-90,Bulls,Shooting foul by P. George (drawn by M. Buzelis)
+4,6:41.0,93-91,Bulls,M. Buzelis makes free throw 1 of 2
+4,6:41.0,93-91,76ers,J. Embiid enters the game for A. Bona
+4,6:41.0,93-91,76ers,Q. Grimes enters the game for P. George
+4,6:41.0,93-92,Bulls,M. Buzelis makes free throw 2 of 2
+4,6:28.0,93-92,76ers,Personal foul by M. Buzelis (drawn by D. Barlow)
+4,6:19.0,93-92,76ers,Personal foul by A. Dosunmu (drawn by T. Maxey)
+4,6:19.0,93-92,76ers,Philadelphia full timeout
+4,6:19.0,93-92,76ers,Instant Replay (Challenge: Ruling Stands)
+4,6:19.0,94-92,76ers,T. Maxey makes free throw 1 of 2
+4,6:19.0,95-92,76ers,T. Maxey makes free throw 2 of 2
+4,6:09.0,95-94,Bulls,T. Jones makes 2-pt layup from 2 ft
+4,5:50.0,95-94,76ers,J. Embiid misses 3-pt jump shot from 23 ft
+4,5:48.0,95-94,Bulls,Defensive rebound by Team
+4,5:48.0,95-94,Bulls,Chicago full timeout
+4,5:37.0,95-94,Bulls,Turnover by M. Buzelis (out of bounds lost ball)
+4,5:26.0,95-94,76ers,Shooting foul by M. Buzelis (drawn by D. Barlow)
+4,5:26.0,95-94,76ers,D. Barlow misses free throw 1 of 2
+4,5:26.0,95-94,76ers,Offensive rebound by Team
+4,5:26.0,95-94,76ers,P. George enters the game for Q. Grimes
+4,5:26.0,95-94,Bulls,J. Giddey enters the game for M. Buzelis
+4,5:26.0,95-94,Bulls,C. White enters the game for A. Dosunmu
+4,5:26.0,96-94,76ers,D. Barlow makes free throw 2 of 2
+4,5:11.0,96-96,Bulls,C. White makes 2-pt layup from 1 ft (assist by Z. Collins)
+4,5:01.0,96-96,76ers,Personal foul by K. Huerter (drawn by J. Embiid)
+4,5:01.0,97-96,76ers,J. Embiid makes free throw 1 of 2
+4,5:01.0,97-96,76ers,Q. Grimes enters the game for D. Barlow
+4,5:01.0,98-96,76ers,J. Embiid makes free throw 2 of 2
+4,4:45.0,98-96,Bulls,K. Huerter misses 3-pt jump shot from 25 ft
+4,4:42.0,98-96,76ers,Defensive rebound by Q. Grimes
+4,4:32.0,100-96,76ers,T. Maxey makes 2-pt layup from 1 ft (assist by J. Embiid)
+4,4:32.0,100-96,Bulls,Chicago full timeout
+4,4:32.0,100-96,Bulls,A. Dosunmu enters the game for Z. Collins
+4,4:32.0,100-96,Bulls,J. Smith enters the game for K. Huerter
+4,4:32.0,100-96,Bulls,N. Vučević enters the game for T. Jones
+4,4:26.0,100-96,Bulls,Shooting foul by V. Edgecombe (drawn by J. Giddey)
+4,4:26.0,100-97,Bulls,J. Giddey makes free throw 1 of 2
+4,4:26.0,100-97,Bulls,J. Giddey misses free throw 2 of 2
+4,4:23.0,100-97,76ers,Defensive rebound by J. Embiid
+4,4:10.0,100-97,76ers,T. Maxey misses 2-pt layup from 1 ft
+4,4:08.0,100-97,Bulls,Defensive rebound by C. White
+4,4:04.0,100-97,Bulls,A. Dosunmu misses 3-pt jump shot from 24 ft
+4,4:00.0,100-97,Bulls,Offensive rebound by J. Smith
+4,3:52.0,100-99,Bulls,J. Giddey makes 2-pt jump shot from 8 ft
+4,3:34.0,100-99,76ers,J. Embiid misses 2-pt jump shot from 15 ft
+4,3:32.0,100-99,Bulls,Defensive rebound by J. Smith
+4,3:32.0,100-99,Bulls,T. Jones enters the game for A. Dosunmu
+4,3:07.0,100-99,Bulls,T. Jones misses 3-pt jump shot from 26 ft
+4,3:05.0,100-99,Bulls,Offensive rebound by J. Giddey
+4,3:03.0,100-99,Bulls,N. Vučević misses 3-pt jump shot from 27 ft
+4,3:00.0,100-99,76ers,Defensive rebound by V. Edgecombe
+4,2:45.0,102-99,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by P. George)
+4,2:31.0,102-101,Bulls,J. Smith makes 2-pt dunk from 1 ft (assist by J. Giddey)
+4,2:09.0,102-101,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+4,2:06.0,102-101,Bulls,Defensive rebound by C. White
+4,1:54.0,102-104,Bulls,C. White makes 3-pt jump shot from 25 ft
+4,1:43.0,102-104,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+4,1:39.0,102-104,Bulls,Defensive rebound by J. Smith
+4,1:27.0,102-106,Bulls,T. Jones makes 2-pt layup from 2 ft (assist by C. White)
+4,1:27.0,102-106,76ers,Philadelphia full timeout
+4,1:21.0,102-106,76ers,T. Maxey misses 2-pt layup from 1 ft (block by N. Vučević)
+4,1:18.0,102-106,Bulls,Defensive rebound by J. Smith
+4,1:00.0,102-106,Bulls,C. White misses 2-pt jump shot from 21 ft
+4,0:58.0,102-106,Bulls,Offensive rebound by T. Jones
+4,0:49.0,102-106,Bulls,C. White misses 2-pt layup from 1 ft (block by J. Embiid)
+4,0:47.0,102-106,Bulls,Offensive rebound by T. Jones
+4,0:47.0,102-108,Bulls,T. Jones makes 2-pt layup from 2 ft
+4,0:37.0,102-108,76ers,J. Embiid misses 3-pt jump shot from 27 ft
+4,0:34.0,102-108,76ers,Offensive rebound by V. Edgecombe
+4,0:27.0,102-108,76ers,T. Maxey misses 2-pt layup from 3 ft
+4,0:26.0,102-108,Bulls,Defensive rebound by N. Vučević
+4,0:17.0,102-108,Bulls,Chicago full timeout
+4,0:17.0,102-108,Bulls,Instant Replay (Challenge: Ruling Stands)
+4,0:17.0,102-108,Bulls,K. Huerter enters the game for J. Smith
+4,0:17.0,102-108,Bulls,Personal take foul by V. Edgecombe (drawn by T. Jones)
+4,0:17.0,102-108,Bulls,T. Jones misses free throw 1 of 2
+4,0:17.0,102-108,Bulls,Offensive rebound by Team
+4,0:17.0,102-108,Bulls,I. Okoro enters the game for K. Huerter
+4,0:17.0,102-109,Bulls,T. Jones makes free throw 2 of 2
+4,0:11.0,102-109,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+4,0:08.0,102-109,Bulls,Defensive rebound by J. Giddey

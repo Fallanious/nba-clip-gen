@@ -1,0 +1,477 @@
+quarter,time,score,team,description
+1,11:42.0,0-0,76ers,D. Barlow misses 2-pt layup from 9 ft
+1,11:37.0,0-0,76ers,Offensive rebound by A. Drummond
+1,11:31.0,2-0,76ers,A. Drummond makes 2-pt layup from 2 ft
+1,11:13.0,2-2,Hornets,M. Diabaté makes 2-pt dunk from 4 ft (assist by K. Knueppel)
+1,10:57.0,2-2,76ers,D. Barlow misses 3-pt jump shot from 23 ft
+1,10:55.0,2-2,Hornets,Defensive rebound by B. Miller
+1,10:51.0,2-2,Hornets,B. Miller misses 3-pt jump shot from 26 ft
+1,10:50.0,2-2,76ers,Defensive rebound by K. Oubre
+1,10:38.0,2-2,76ers,K. Oubre misses 2-pt jump shot from 12 ft
+1,10:38.0,2-2,76ers,Offensive rebound by A. Drummond
+1,10:37.0,2-2,76ers,A. Drummond misses 2-pt layup from 2 ft
+1,10:36.0,2-2,76ers,Offensive rebound by A. Drummond
+1,10:32.0,2-2,76ers,Turnover by A. Drummond (bad pass; steal by B. Miller)
+1,10:27.0,2-2,Hornets,K. Knueppel misses 2-pt layup from 2 ft
+1,10:26.0,2-2,Hornets,Offensive rebound by K. Knueppel
+1,10:23.0,2-2,Hornets,Turnover by K. Knueppel (lost ball; steal by D. Barlow)
+1,10:18.0,4-2,76ers,K. Oubre makes 2-pt dunk from 5 ft (assist by T. Maxey)
+1,10:03.0,4-2,Hornets,L. Ball misses 2-pt jump shot from 6 ft
+1,10:00.0,4-2,76ers,Defensive rebound by V. Edgecombe
+1,9:51.0,4-2,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+1,9:48.0,4-2,Hornets,Defensive rebound by M. Diabaté
+1,9:39.0,4-4,Hornets,M. Bridges makes 2-pt layup from 7 ft
+1,9:28.0,4-4,76ers,Turnover by T. Maxey (bad pass)
+1,9:13.0,4-4,Hornets,Turnover by L. Ball (lost ball; steal by K. Oubre)
+1,9:10.0,4-4,76ers,V. Edgecombe misses 2-pt layup from 2 ft
+1,9:09.0,4-4,76ers,Offensive rebound by K. Oubre
+1,9:08.0,6-4,76ers,K. Oubre makes 2-pt layup from 3 ft
+1,8:59.0,6-6,Hornets,K. Knueppel makes 2-pt jump shot from 9 ft
+1,8:50.0,6-6,76ers,T. Maxey misses 3-pt jump shot from 24 ft
+1,8:43.0,6-6,Hornets,Defensive rebound by M. Bridges
+1,8:40.0,6-8,Hornets,M. Diabaté makes 2-pt dunk from 3 ft (assist by L. Ball)
+1,8:21.0,6-8,76ers,T. Maxey misses 2-pt jump shot from 14 ft
+1,8:18.0,6-8,Hornets,Defensive rebound by B. Miller
+1,8:06.0,6-11,Hornets,B. Miller makes 3-pt jump shot from 28 ft (assist by L. Ball)
+1,7:44.0,8-11,76ers,K. Oubre makes 2-pt layup from 6 ft (assist by A. Drummond)
+1,7:29.0,8-14,Hornets,L. Ball makes 3-pt jump shot from 27 ft (assist by M. Bridges)
+1,7:20.0,8-14,76ers,Philadelphia full timeout
+1,7:20.0,8-14,Hornets,J. Green enters the game for K. Knueppel
+1,7:01.0,10-14,76ers,D. Barlow makes 2-pt layup from 3 ft (assist by T. Maxey)
+1,6:46.0,10-14,Hornets,Turnover by L. Ball (out of bounds lost ball)
+1,6:35.0,10-14,76ers,Shooting foul by B. Miller (drawn by V. Edgecombe)
+1,6:35.0,11-14,76ers,V. Edgecombe makes free throw 1 of 2
+1,6:35.0,12-14,76ers,V. Edgecombe makes free throw 2 of 2
+1,6:18.0,12-14,Hornets,L. Ball misses 2-pt jump shot from 16 ft (block by A. Drummond)
+1,6:16.0,12-14,Hornets,Offensive rebound by J. Green
+1,6:05.0,12-16,Hornets,M. Diabaté makes 2-pt jump shot from 22 ft (assist by J. Green)
+1,5:50.0,12-16,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+1,5:47.0,12-16,Hornets,Defensive rebound by M. Diabaté
+1,5:38.0,12-18,Hornets,M. Bridges makes 2-pt dunk from 2 ft (assist by B. Miller)
+1,5:29.0,14-18,76ers,T. Maxey makes 2-pt jump shot from 21 ft
+1,5:19.0,14-18,Hornets,L. Ball misses 3-pt jump shot from 28 ft
+1,5:16.0,14-18,76ers,Defensive rebound by Team
+1,5:16.0,14-18,Hornets,Loose ball foul by M. Bridges (drawn by K. Oubre)
+1,5:16.0,14-18,76ers,A. Bona enters the game for D. Barlow
+1,5:16.0,14-18,76ers,J. Walker enters the game for A. Drummond
+1,5:16.0,14-18,Hornets,S. James enters the game for L. Ball
+1,5:16.0,14-18,Hornets,R. Kalkbrenner enters the game for M. Diabaté
+1,4:46.0,16-18,76ers,K. Oubre makes 2-pt layup from 4 ft
+1,4:42.0,16-18,Hornets,M. Bridges misses 3-pt jump shot from 26 ft
+1,4:42.0,16-18,76ers,Defensive rebound by V. Edgecombe
+1,4:32.0,16-18,76ers,T. Maxey misses 2-pt jump shot from 7 ft
+1,4:30.0,16-18,Hornets,Defensive rebound by R. Kalkbrenner
+1,4:19.0,16-18,Hornets,Def 3 sec tech foul by Team
+1,4:19.0,16-19,Hornets,B. Miller makes technical free throw
+1,4:19.0,16-19,76ers,Q. Grimes enters the game for V. Edgecombe
+1,4:19.0,16-19,Hornets,K. Knueppel enters the game for M. Bridges
+1,4:19.0,16-19,Hornets,G. Williams enters the game for B. Miller
+1,4:11.0,16-21,Hornets,R. Kalkbrenner makes 2-pt dunk from 3 ft (assist by K. Knueppel)
+1,3:53.0,16-21,76ers,Turnover by Q. Grimes (bad pass; steal by R. Kalkbrenner)
+1,3:46.0,16-21,Hornets,G. Williams misses 3-pt jump shot from 28 ft
+1,3:46.0,16-21,76ers,Defensive rebound by Q. Grimes
+1,3:39.0,16-21,76ers,Offensive foul by A. Bona (drawn by K. Knueppel)
+1,3:39.0,16-21,76ers,Turnover by A. Bona (offensive foul)
+1,3:39.0,16-21,Hornets,Charlotte full timeout
+1,3:25.0,16-24,Hornets,K. Knueppel makes 3-pt jump shot from 26 ft (assist by R. Kalkbrenner)
+1,3:11.0,16-24,76ers,Turnover by K. Oubre (lost ball; steal by K. Knueppel)
+1,3:04.0,16-24,Hornets,Offensive foul by J. Green (drawn by K. Oubre)
+1,3:04.0,16-24,Hornets,Turnover by J. Green (offensive foul)
+1,3:04.0,16-24,76ers,J. McCain enters the game for K. Oubre
+1,3:04.0,16-24,Hornets,C. Sexton enters the game for J. Green
+1,2:50.0,16-24,76ers,Q. Grimes misses 2-pt layup from 4 ft
+1,2:50.0,16-24,76ers,Offensive rebound by Team
+1,2:50.0,16-24,Hornets,Loose ball foul by K. Knueppel (drawn by A. Bona)
+1,2:44.0,16-24,76ers,Shooting foul by C. Sexton (drawn by Q. Grimes)
+1,2:44.0,16-24,76ers,Instant Replay (Request: Stands)
+1,2:44.0,16-24,Hornets,Violation by Team (delay of game)
+1,2:44.0,17-24,76ers,Q. Grimes makes free throw 1 of 3
+1,2:44.0,18-24,76ers,Q. Grimes makes free throw 2 of 3
+1,2:44.0,19-24,76ers,Q. Grimes makes free throw 3 of 3
+1,2:31.0,19-26,Hornets,R. Kalkbrenner makes 2-pt dunk from 6 ft (assist by K. Knueppel)
+1,2:14.0,19-26,76ers,J. McCain misses 3-pt jump shot from 22 ft
+1,2:08.0,19-26,76ers,Offensive rebound by J. Walker
+1,2:05.0,19-26,76ers,J. McCain misses 3-pt jump shot from 25 ft
+1,2:00.0,19-26,Hornets,Defensive rebound by G. Williams
+1,1:52.0,19-26,Hornets,Turnover by C. Sexton (bad pass; steal by A. Bona)
+1,1:43.0,19-26,76ers,Turnover by T. Maxey (out of bounds lost ball)
+1,1:43.0,19-26,76ers,V. Edgecombe enters the game for T. Maxey
+1,1:26.0,19-28,Hornets,G. Williams makes 2-pt jump shot from 12 ft (assist by R. Kalkbrenner)
+1,1:00.0,19-28,76ers,V. Edgecombe misses 2-pt layup from 8 ft
+1,0:56.0,19-28,Hornets,Defensive rebound by G. Williams
+1,0:49.0,19-28,Hornets,Turnover by K. Knueppel (bad pass; steal by J. Walker)
+1,0:43.0,19-28,76ers,Q. Grimes misses 2-pt layup from 3 ft
+1,0:43.0,19-28,Hornets,Defensive rebound by Team
+1,0:43.0,19-28,76ers,Loose ball foul by V. Edgecombe (drawn by S. James)
+1,0:35.0,19-28,Hornets,K. Knueppel misses 3-pt jump shot from 27 ft
+1,0:35.0,19-28,76ers,Defensive rebound by J. Walker
+1,0:20.0,22-28,76ers,J. Walker makes 3-pt jump shot from 23 ft (assist by Q. Grimes)
+1,0:01.0,22-28,Hornets,Turnover by K. Knueppel (lost ball; steal by J. Walker)
+1,0:00.0,22-28,76ers,Team misses heave shot
+1,0:00.0,22-28,76ers,Offensive rebound by Team
+2,11:42.0,22-30,Hornets,K. Knueppel makes 2-pt jump shot from 15 ft (assist by L. Ball)
+2,11:26.0,22-30,76ers,V. Edgecombe misses 2-pt jump shot from 16 ft
+2,11:25.0,22-30,76ers,Offensive rebound by V. Edgecombe
+2,11:25.0,22-30,76ers,Turnover by V. Edgecombe (lost ball; steal by K. Knueppel)
+2,11:13.0,22-30,Hornets,Turnover by C. Sexton (bad pass; steal by A. Drummond)
+2,11:08.0,24-30,76ers,J. McCain makes 2-pt layup from 2 ft
+2,10:54.0,24-30,Hornets,L. Ball misses 2-pt jump shot from 8 ft
+2,10:46.0,24-30,Hornets,Offensive rebound by L. Ball
+2,10:46.0,24-32,Hornets,L. Ball makes 2-pt layup at rim
+2,10:46.0,24-32,76ers,Personal foul by K. Knueppel (drawn by Q. Grimes)
+2,10:34.0,24-32,76ers,J. Walker misses 3-pt jump shot from 23 ft
+2,10:31.0,24-32,Hornets,Defensive rebound by M. Diabaté
+2,10:26.0,24-32,Hornets,Shooting foul by J. Walker (drawn by C. Sexton)
+2,10:26.0,24-33,Hornets,C. Sexton makes free throw 1 of 2
+2,10:26.0,24-33,Hornets,M. Bridges enters the game for K. Knueppel
+2,10:26.0,24-33,Hornets,B. Miller enters the game for G. Williams
+2,10:26.0,24-34,Hornets,C. Sexton makes free throw 2 of 2
+2,10:13.0,24-34,76ers,J. McCain misses 2-pt jump shot from 8 ft (block by M. Bridges)
+2,10:13.0,24-34,76ers,Offensive rebound by Team
+2,10:04.0,26-34,76ers,A. Drummond makes 2-pt layup from 4 ft (assist by Q. Grimes)
+2,9:50.0,26-34,Hornets,C. Sexton misses 3-pt jump shot from 27 ft
+2,9:46.0,26-34,76ers,Defensive rebound by Q. Grimes
+2,9:41.0,26-34,76ers,Turnover by J. McCain (bad pass)
+2,9:35.0,26-36,Hornets,M. Diabaté makes 2-pt dunk from 5 ft (assist by L. Ball)
+2,9:27.0,26-36,76ers,Offensive foul by A. Drummond (drawn by L. Ball)
+2,9:27.0,26-36,76ers,Turnover by A. Drummond (offensive foul)
+2,9:27.0,26-36,76ers,D. Barlow enters the game for J. McCain
+2,9:27.0,26-36,76ers,K. Oubre enters the game for J. Walker
+2,9:27.0,26-36,Hornets,J. Green enters the game for C. Sexton
+2,9:15.0,26-36,Hornets,Personal foul by K. Oubre (drawn by B. Miller)
+2,9:06.0,26-36,Hornets,L. Ball misses 3-pt jump shot from 31 ft
+2,8:57.0,26-36,76ers,Defensive rebound by V. Edgecombe
+2,8:55.0,28-36,76ers,Q. Grimes makes 2-pt layup from 2 ft (assist by V. Edgecombe)
+2,8:47.0,28-38,Hornets,M. Diabaté makes 2-pt dunk from 6 ft (assist by L. Ball)
+2,8:46.0,28-38,76ers,Philadelphia full timeout
+2,8:32.0,28-38,76ers,D. Barlow misses 2-pt jump shot from 12 ft
+2,8:29.0,28-38,Hornets,Defensive rebound by B. Miller
+2,8:16.0,28-38,Hornets,Flagrant foul type 1 by Q. Grimes (drawn by J. Green)
+2,8:16.0,28-38,Hornets,Instant Replay (Request: Ruling Stands)
+2,8:16.0,28-39,Hornets,J. Green makes flagrant free throw 1 of 3
+2,8:16.0,28-40,Hornets,J. Green makes flagrant free throw 2 of 3
+2,8:16.0,28-41,Hornets,J. Green makes flagrant free throw 3 of 3
+2,8:16.0,28-41,76ers,T. Maxey enters the game for Q. Grimes
+2,8:05.0,28-41,Hornets,L. Ball misses 3-pt jump shot from 22 ft
+2,8:02.0,28-41,76ers,Defensive rebound by A. Drummond
+2,7:52.0,28-41,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+2,7:43.0,28-41,Hornets,Defensive rebound by B. Miller
+2,7:39.0,28-44,Hornets,M. Bridges makes 3-pt jump shot from 26 ft (assist by J. Green)
+2,7:18.0,28-44,76ers,Turnover by K. Oubre (lost ball; steal by J. Green)
+2,7:16.0,28-44,Hornets,Shooting foul by V. Edgecombe (drawn by J. Green)
+2,7:16.0,28-44,Hornets,S. James enters the game for L. Ball
+2,7:16.0,28-45,Hornets,J. Green makes free throw 1 of 2
+2,7:16.0,28-46,Hornets,J. Green makes free throw 2 of 2
+2,7:02.0,28-46,76ers,V. Edgecombe misses 2-pt jump shot from 8 ft
+2,6:59.0,28-46,Hornets,Defensive rebound by B. Miller
+2,6:54.0,28-46,Hornets,M. Bridges misses 3-pt jump shot from 28 ft
+2,6:50.0,28-46,76ers,Defensive rebound by T. Maxey
+2,6:42.0,28-46,76ers,K. Oubre misses 3-pt jump shot from 23 ft
+2,6:38.0,28-46,Hornets,Defensive rebound by M. Bridges
+2,6:22.0,28-46,Hornets,Turnover by B. Miller (bad pass; steal by V. Edgecombe)
+2,6:18.0,28-46,76ers,Shooting foul by S. James (drawn by D. Barlow)
+2,6:18.0,28-46,76ers,D. Barlow misses free throw 1 of 2
+2,6:18.0,28-46,76ers,Offensive rebound by Team
+2,6:18.0,28-46,Hornets,K. Knueppel enters the game for S. James
+2,6:18.0,29-46,76ers,D. Barlow makes free throw 2 of 2
+2,6:05.0,29-49,Hornets,B. Miller makes 3-pt jump shot from 28 ft (assist by M. Bridges)
+2,5:43.0,29-49,76ers,K. Oubre misses 2-pt jump shot from 9 ft
+2,5:42.0,29-49,76ers,Offensive rebound by A. Drummond
+2,5:42.0,29-49,76ers,Personal foul by M. Bridges (drawn by A. Drummond)
+2,5:42.0,29-49,Hornets,R. Kalkbrenner enters the game for M. Diabaté
+2,5:42.0,29-49,Hornets,C. Sexton enters the game for J. Green
+2,5:36.0,32-49,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+2,5:12.0,32-49,Hornets,M. Bridges misses 2-pt jump shot from 9 ft (block by A. Drummond)
+2,5:06.0,32-49,Hornets,Offensive rebound by K. Knueppel
+2,5:04.0,32-49,Hornets,K. Knueppel misses 3-pt jump shot from 23 ft
+2,5:04.0,32-49,76ers,Defensive rebound by A. Drummond
+2,5:04.0,34-49,76ers,V. Edgecombe makes 2-pt dunk from 2 ft (assist by T. Maxey)
+2,5:04.0,34-49,Hornets,Charlotte full timeout
+2,5:04.0,34-49,76ers,A. Bona enters the game for D. Barlow
+2,5:04.0,34-49,76ers,T. Watford enters the game for A. Drummond
+2,4:54.0,34-51,Hornets,R. Kalkbrenner makes 2-pt dunk from 4 ft (assist by C. Sexton)
+2,4:37.0,34-51,76ers,T. Maxey misses 2-pt jump shot from 14 ft
+2,4:34.0,34-51,Hornets,Defensive rebound by K. Knueppel
+2,4:27.0,34-51,Hornets,C. Sexton misses 3-pt jump shot from 26 ft
+2,4:23.0,34-51,76ers,Defensive rebound by V. Edgecombe
+2,4:17.0,34-51,76ers,T. Watford misses 2-pt jump shot from 8 ft
+2,4:13.0,34-51,Hornets,Defensive rebound by K. Knueppel
+2,4:07.0,34-51,Hornets,Turnover by K. Knueppel (lost ball; steal by K. Oubre)
+2,3:54.0,37-51,76ers,K. Oubre makes 3-pt jump shot from 24 ft (assist by T. Maxey)
+2,3:38.0,37-53,Hornets,C. Sexton makes 2-pt jump shot from 11 ft
+2,3:21.0,37-53,76ers,T. Watford misses 2-pt jump shot from 12 ft
+2,3:17.0,37-53,Hornets,Defensive rebound by R. Kalkbrenner
+2,3:03.0,37-55,Hornets,M. Bridges makes 2-pt hook shot from 7 ft
+2,2:49.0,37-55,76ers,V. Edgecombe misses 2-pt jump shot from 21 ft
+2,2:46.0,37-55,Hornets,Defensive rebound by K. Knueppel
+2,2:42.0,37-58,Hornets,K. Knueppel makes 3-pt jump shot from 28 ft (assist by C. Sexton)
+2,2:31.0,37-58,76ers,T. Maxey misses 2-pt jump shot from 8 ft
+2,2:30.0,37-58,76ers,Offensive rebound by T. Maxey
+2,2:30.0,37-58,76ers,T. Maxey misses 2-pt layup from 3 ft
+2,2:29.0,37-58,Hornets,Defensive rebound by K. Knueppel
+2,2:25.0,37-58,Hornets,Shooting foul by V. Edgecombe (drawn by B. Miller)
+2,2:25.0,37-59,Hornets,B. Miller makes free throw 1 of 2
+2,2:25.0,37-59,76ers,Q. Grimes enters the game for V. Edgecombe
+2,2:25.0,37-59,Hornets,L. Ball enters the game for M. Bridges
+2,2:25.0,37-59,Hornets,G. Williams enters the game for K. Knueppel
+2,2:25.0,37-60,Hornets,B. Miller makes free throw 2 of 2
+2,2:22.0,37-60,76ers,Personal foul by C. Sexton (drawn by T. Maxey)
+2,2:22.0,37-60,76ers,Turnover by T. Maxey (lost ball; steal by B. Miller)
+2,1:53.0,37-63,Hornets,C. Sexton makes 3-pt jump shot from 28 ft (assist by L. Ball)
+2,1:46.0,37-63,76ers,Philadelphia full timeout
+2,1:46.0,37-63,76ers,Technical foul by N. Nurse
+2,1:46.0,37-64,Hornets,L. Ball makes technical free throw
+2,1:40.0,37-64,76ers,K. Oubre misses 3-pt jump shot from 23 ft
+2,1:36.0,37-64,Hornets,Defensive rebound by C. Sexton
+2,1:34.0,37-64,Hornets,Shooting foul by Q. Grimes (drawn by G. Williams)
+2,1:34.0,37-64,Hornets,G. Williams misses free throw 1 of 2
+2,1:34.0,37-64,Hornets,Offensive rebound by Team
+2,1:34.0,37-65,Hornets,G. Williams makes free throw 2 of 2
+2,1:25.0,37-65,76ers,T. Watford misses 2-pt dunk from 5 ft (block by R. Kalkbrenner)
+2,1:16.0,37-65,Hornets,Defensive rebound by C. Sexton
+2,1:15.0,37-67,Hornets,B. Miller makes 2-pt dunk from 4 ft (assist by L. Ball)
+2,1:08.0,37-67,76ers,Shooting foul by R. Kalkbrenner (drawn by Q. Grimes)
+2,1:08.0,38-67,76ers,Q. Grimes makes free throw 1 of 2
+2,1:08.0,38-67,76ers,Q. Grimes misses free throw 2 of 2
+2,1:05.0,38-67,Hornets,Defensive rebound by R. Kalkbrenner
+2,1:01.0,38-67,Hornets,G. Williams misses 2-pt layup from 3 ft
+2,0:58.0,38-67,76ers,Defensive rebound by T. Watford
+2,0:54.0,38-67,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+2,0:51.0,38-67,Hornets,Defensive rebound by R. Kalkbrenner
+2,0:44.0,38-67,Hornets,C. Sexton misses 3-pt jump shot from 27 ft
+2,0:40.0,38-67,Hornets,Offensive rebound by L. Ball
+2,0:40.0,38-69,Hornets,L. Ball makes 2-pt layup from 3 ft
+2,0:33.0,40-69,76ers,K. Oubre makes 2-pt layup from 4 ft (assist by T. Maxey)
+2,0:33.0,40-69,76ers,Shooting foul by G. Williams (drawn by K. Oubre)
+2,0:33.0,41-69,76ers,K. Oubre makes free throw 1 of 1
+2,0:19.0,41-69,Hornets,Offensive foul by C. Sexton (drawn by Q. Grimes)
+2,0:19.0,41-69,Hornets,Turnover by C. Sexton (offensive foul)
+2,0:19.0,41-69,76ers,J. Walker enters the game for A. Bona
+2,0:19.0,41-69,Hornets,M. Diabaté enters the game for L. Ball
+2,0:19.0,41-69,Hornets,S. James enters the game for R. Kalkbrenner
+2,0:19.0,41-69,Hornets,K. Knueppel enters the game for C. Sexton
+2,0:04.0,41-69,76ers,Shooting foul by G. Williams (drawn by T. Watford)
+2,0:04.0,41-69,76ers,T. Watford misses free throw 1 of 2
+2,0:04.0,41-69,76ers,Offensive rebound by Team
+2,0:04.0,41-69,76ers,A. Bona enters the game for J. Walker
+2,0:04.0,41-69,Hornets,L. Ball enters the game for S. James
+2,0:04.0,41-69,76ers,Violation by Team (delay of game)
+2,0:04.0,42-69,76ers,T. Watford makes free throw 2 of 2
+2,0:02.0,42-69,Hornets,Turnover by G. Williams (bad pass; steal by A. Bona)
+2,0:00.0,44-69,76ers,T. Watford makes 2-pt layup from 5 ft (assist by Q. Grimes)
+3,11:37.0,44-72,Hornets,B. Miller makes 3-pt jump shot from 23 ft (assist by M. Bridges)
+3,11:25.0,44-72,76ers,V. Edgecombe misses 2-pt layup from 4 ft
+3,11:25.0,44-72,76ers,Offensive rebound by A. Drummond
+3,11:25.0,44-72,76ers,Shooting foul by M. Bridges (drawn by A. Drummond)
+3,11:25.0,44-72,76ers,A. Drummond misses free throw 1 of 2
+3,11:25.0,44-72,76ers,Offensive rebound by Team
+3,11:25.0,44-72,76ers,A. Drummond misses free throw 2 of 2
+3,11:24.0,44-72,76ers,Offensive rebound by Team
+3,11:17.0,44-72,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+3,11:14.0,44-72,Hornets,Defensive rebound by B. Miller
+3,11:08.0,44-72,Hornets,K. Knueppel misses 3-pt jump shot from 27 ft
+3,11:04.0,44-72,Hornets,Offensive rebound by M. Bridges
+3,10:56.0,44-72,Hornets,L. Ball misses 3-pt jump shot from 25 ft
+3,10:52.0,44-72,76ers,Defensive rebound by V. Edgecombe
+3,10:48.0,44-72,76ers,K. Oubre misses 3-pt jump shot from 27 ft
+3,10:46.0,44-72,Hornets,Defensive rebound by K. Knueppel
+3,10:31.0,44-72,Hornets,Turnover by L. Ball (bad pass)
+3,10:21.0,44-72,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+3,10:19.0,44-72,Hornets,Defensive rebound by Team
+3,10:04.0,44-75,Hornets,B. Miller makes 3-pt jump shot from 26 ft
+3,9:53.0,44-75,76ers,Offensive foul by A. Drummond (drawn by B. Miller)
+3,9:53.0,44-75,76ers,Turnover by A. Drummond (offensive foul)
+3,9:40.0,44-78,Hornets,B. Miller makes 3-pt jump shot from 25 ft (assist by K. Knueppel)
+3,9:39.0,44-78,76ers,Philadelphia full timeout
+3,9:21.0,46-78,76ers,T. Maxey makes 2-pt layup from 4 ft
+3,9:09.0,46-78,Hornets,B. Miller misses 3-pt jump shot from 25 ft
+3,9:06.0,46-78,Hornets,Offensive rebound by Team
+3,9:05.0,46-78,Hornets,Shooting foul by D. Barlow (drawn by M. Bridges)
+3,9:05.0,46-79,Hornets,M. Bridges makes free throw 1 of 2
+3,9:05.0,46-79,Hornets,Turnover by M. Diabaté (turnover)
+3,8:45.0,46-79,76ers,Shooting foul by M. Bridges (drawn by V. Edgecombe)
+3,8:45.0,47-79,76ers,V. Edgecombe makes free throw 1 of 2
+3,8:45.0,47-79,Hornets,G. Williams enters the game for M. Bridges
+3,8:45.0,48-79,76ers,V. Edgecombe makes free throw 2 of 2
+3,8:29.0,48-82,Hornets,L. Ball makes 3-pt jump shot from 27 ft (assist by K. Knueppel)
+3,8:15.0,50-82,76ers,T. Maxey makes 2-pt layup from 7 ft
+3,7:59.0,50-85,Hornets,G. Williams makes 3-pt jump shot from 23 ft (assist by K. Knueppel)
+3,7:39.0,50-85,76ers,Turnover by V. Edgecombe (bad pass; steal by L. Ball)
+3,7:36.0,50-87,Hornets,K. Knueppel makes 2-pt layup from 3 ft (assist by B. Miller)
+3,7:36.0,50-87,76ers,Violation by Team (def goaltending)
+3,7:18.0,52-87,76ers,K. Oubre makes 2-pt layup from 6 ft
+3,7:18.0,52-87,76ers,Shooting foul by M. Diabaté (drawn by K. Oubre)
+3,7:18.0,53-87,76ers,K. Oubre makes free throw 1 of 1
+3,7:03.0,53-87,Hornets,L. Ball misses 2-pt jump shot from 6 ft
+3,7:01.0,53-87,Hornets,Offensive rebound by M. Diabaté
+3,6:55.0,53-90,Hornets,B. Miller makes 3-pt jump shot from 25 ft (assist by L. Ball)
+3,6:42.0,53-90,76ers,D. Barlow misses 2-pt jump shot from 6 ft
+3,6:42.0,53-90,Hornets,Defensive rebound by K. Knueppel
+3,6:24.0,53-90,Hornets,G. Williams misses 3-pt jump shot from 26 ft
+3,6:23.0,53-90,Hornets,Offensive rebound by Team
+3,6:23.0,53-90,76ers,Loose ball foul by A. Drummond (drawn by M. Diabaté)
+3,6:23.0,53-90,76ers,A. Bona enters the game for D. Barlow
+3,6:23.0,53-90,76ers,J. Edwards enters the game for A. Drummond
+3,6:23.0,53-90,Hornets,J. Green enters the game for K. Knueppel
+3,6:14.0,53-90,Hornets,M. Diabaté misses 2-pt hook shot from 6 ft
+3,6:14.0,53-90,Hornets,Offensive rebound by M. Diabaté
+3,6:14.0,53-92,Hornets,M. Diabaté makes 2-pt layup at rim
+3,6:14.0,53-92,Hornets,Shooting foul by A. Bona (drawn by M. Diabaté)
+3,6:14.0,53-92,Hornets,M. Diabaté misses free throw 1 of 1
+3,6:11.0,53-92,Hornets,Offensive rebound by G. Williams
+3,6:11.0,53-92,Hornets,Personal foul by V. Edgecombe (drawn by G. Williams)
+3,6:11.0,53-92,Hornets,Offensive foul by L. Ball (drawn by V. Edgecombe)
+3,6:11.0,53-92,Hornets,Turnover by L. Ball (offensive foul)
+3,5:56.0,55-92,76ers,A. Bona makes 2-pt dunk from 3 ft (assist by T. Maxey)
+3,5:35.0,55-94,Hornets,B. Miller makes 2-pt jump shot from 7 ft
+3,5:21.0,55-94,76ers,T. Maxey misses 2-pt jump shot from 7 ft
+3,5:19.0,55-94,Hornets,Defensive rebound by B. Miller
+3,5:15.0,55-97,Hornets,G. Williams makes 3-pt jump shot from 23 ft (assist by J. Green)
+3,5:15.0,55-97,Hornets,Shooting foul by J. Edwards (drawn by G. Williams)
+3,5:15.0,55-97,Hornets,Instant Replay
+3,5:15.0,55-97,76ers,Q. Grimes enters the game for V. Edgecombe
+3,5:15.0,55-97,76ers,J. McCain enters the game for T. Maxey
+3,5:15.0,55-97,76ers,T. Watford enters the game for K. Oubre
+3,5:15.0,55-97,Hornets,S. James enters the game for L. Ball
+3,5:15.0,55-97,Hornets,R. Kalkbrenner enters the game for M. Diabaté
+3,5:15.0,55-97,Hornets,G. Williams misses free throw 1 of 1
+3,5:13.0,55-97,76ers,Defensive rebound by A. Bona
+3,5:02.0,55-97,76ers,Turnover by J. McCain (bad pass)
+3,4:47.0,55-99,Hornets,B. Miller makes 2-pt jump shot from 9 ft
+3,4:23.0,55-99,76ers,J. Edwards misses 3-pt jump shot from 26 ft
+3,4:20.0,55-99,Hornets,Defensive rebound by S. James
+3,4:13.0,55-99,Hornets,Personal foul by T. Watford (drawn by R. Kalkbrenner)
+3,4:13.0,55-99,Hornets,R. Kalkbrenner misses free throw 1 of 2
+3,4:13.0,55-99,Hornets,Offensive rebound by Team
+3,4:13.0,55-99,Hornets,R. Kalkbrenner misses free throw 2 of 2
+3,4:10.0,55-99,76ers,Defensive rebound by T. Watford
+3,4:03.0,55-99,76ers,Q. Grimes misses 3-pt jump shot from 27 ft
+3,4:00.0,55-99,Hornets,Defensive rebound by G. Williams
+3,3:44.0,55-99,Hornets,Shooting foul by J. Edwards (drawn by B. Miller)
+3,3:44.0,55-100,Hornets,B. Miller makes free throw 1 of 3
+3,3:44.0,55-101,Hornets,B. Miller makes free throw 2 of 3
+3,3:44.0,55-102,Hornets,B. Miller makes free throw 3 of 3
+3,3:27.0,55-102,76ers,T. Watford misses 2-pt jump shot from 7 ft (block by R. Kalkbrenner)
+3,3:24.0,55-102,Hornets,Defensive rebound by B. Miller
+3,3:19.0,55-104,Hornets,J. Green makes 2-pt layup from 4 ft (assist by S. James)
+3,2:57.0,57-104,76ers,J. McCain makes 2-pt layup from 7 ft
+3,2:57.0,57-104,Hornets,Charlotte full timeout
+3,2:57.0,57-104,Hornets,C. Sexton enters the game for B. Miller
+3,2:40.0,57-106,Hornets,J. Green makes 2-pt layup from 6 ft (assist by R. Kalkbrenner)
+3,2:40.0,57-106,76ers,Violation by Team (def goaltending)
+3,2:24.0,57-106,76ers,Q. Grimes misses 2-pt layup from 6 ft
+3,2:21.0,57-106,Hornets,Defensive rebound by G. Williams
+3,1:58.0,57-106,Hornets,G. Williams misses 3-pt jump shot from 25 ft
+3,1:58.0,57-106,Hornets,Offensive rebound by Team
+3,1:58.0,57-106,Hornets,Turnover by Team (shot clock)
+3,1:47.0,57-106,76ers,Turnover by J. McCain (step out of bounds)
+3,1:33.0,57-106,Hornets,Offensive foul by R. Kalkbrenner (drawn by T. Watford)
+3,1:33.0,57-106,Hornets,Turnover by R. Kalkbrenner (offensive foul)
+3,1:23.0,57-106,76ers,Shooting foul by C. Sexton (drawn by J. Edwards)
+3,1:23.0,58-106,76ers,J. Edwards makes free throw 1 of 2
+3,1:23.0,59-106,76ers,J. Edwards makes free throw 2 of 2
+3,1:12.0,59-106,Hornets,S. James misses 3-pt jump shot from 25 ft
+3,1:08.0,59-106,Hornets,Offensive rebound by R. Kalkbrenner
+3,1:08.0,59-108,Hornets,R. Kalkbrenner makes 2-pt dunk from 3 ft
+3,0:56.0,59-108,76ers,J. McCain misses 2-pt layup from 7 ft
+3,0:52.0,59-108,76ers,Offensive rebound by A. Bona
+3,0:52.0,59-108,76ers,A. Bona misses 2-pt layup at rim
+3,0:51.0,59-108,Hornets,Defensive rebound by R. Kalkbrenner
+3,0:31.0,59-108,Hornets,J. Green misses 3-pt jump shot from 24 ft
+3,0:24.0,59-108,Hornets,Offensive rebound by J. Green
+3,0:10.0,59-108,Hornets,Turnover by J. Green (bad pass; steal by T. Watford)
+3,0:04.0,59-108,76ers,Turnover by T. Watford (lost ball; steal by C. Sexton)
+3,0:00.0,59-108,Hornets,Shooting foul by A. Bona (drawn by C. Sexton)
+3,0:00.0,59-108,Hornets,C. Sexton misses free throw 1 of 2
+3,0:00.0,59-108,Hornets,Offensive rebound by Team
+3,0:00.0,59-109,Hornets,C. Sexton makes free throw 2 of 2
+4,11:36.0,62-109,76ers,J. Walker makes 3-pt jump shot from 24 ft (assist by J. Edwards)
+4,11:22.0,62-112,Hornets,T. Salaün  makes 3-pt jump shot from 25 ft (assist by T. Mann)
+4,11:08.0,65-112,76ers,J. McCain makes 3-pt jump shot from 26 ft (assist by D. Barlow)
+4,10:56.0,65-112,Hornets,Turnover by T. Mann (bad pass; steal by Q. Grimes)
+4,10:53.0,67-112,76ers,Q. Grimes makes 2-pt dunk from 3 ft
+4,10:25.0,67-112,Hornets,Turnover by T. Mann (bad pass; steal by J. Walker)
+4,10:21.0,69-112,76ers,Q. Grimes makes 2-pt dunk from 3 ft
+4,10:13.0,69-114,Hornets,C. Sexton makes 2-pt layup from 4 ft
+4,9:50.0,69-114,76ers,J. Walker misses 2-pt jump shot from 16 ft
+4,9:47.0,69-114,76ers,Offensive rebound by J. Edwards
+4,9:42.0,69-114,76ers,J. McCain misses 3-pt jump shot from 23 ft
+4,9:38.0,69-114,Hornets,Defensive rebound by T. Salaün
+4,9:20.0,69-116,Hornets,T. Salaün  makes 2-pt layup from 3 ft (assist by C. Sexton)
+4,9:02.0,71-116,76ers,Q. Grimes makes 2-pt layup from 3 ft (assist by J. McCain)
+4,8:43.0,71-116,Hornets,C. Sexton misses 3-pt jump shot from 26 ft
+4,8:40.0,71-116,Hornets,Offensive rebound by R. Kalkbrenner
+4,8:37.0,71-116,Hornets,R. Kalkbrenner misses 2-pt layup from 4 ft
+4,8:35.0,71-116,76ers,Defensive rebound by D. Barlow
+4,8:29.0,71-116,76ers,J. McCain misses 2-pt jump shot from 10 ft
+4,8:25.0,71-116,Hornets,Defensive rebound by R. Kalkbrenner
+4,8:09.0,71-116,Hornets,Turnover by S. James (bad pass; steal by D. Barlow)
+4,8:03.0,73-116,76ers,D. Barlow makes 2-pt dunk from 4 ft (assist by Q. Grimes)
+4,7:45.0,73-116,Hornets,Offensive foul by R. Kalkbrenner (drawn by Q. Grimes)
+4,7:45.0,73-116,Hornets,Turnover by R. Kalkbrenner (offensive foul)
+4,7:45.0,73-116,Hornets,P. Connaughton enters the game for C. Sexton
+4,7:37.0,73-116,76ers,Q. Grimes misses 2-pt jump shot from 14 ft
+4,7:34.0,73-116,Hornets,Defensive rebound by T. Salaün
+4,7:27.0,73-116,Hornets,T. Salaün  misses 2-pt layup from 5 ft
+4,7:24.0,73-116,76ers,Defensive rebound by J. McCain
+4,7:15.0,73-116,76ers,J. Walker misses 3-pt jump shot from 26 ft
+4,7:13.0,73-116,Hornets,Defensive rebound by P. Connaughton
+4,7:01.0,73-116,Hornets,R. Kalkbrenner misses 2-pt layup from 4 ft (block by J. McCain)
+4,6:59.0,73-116,76ers,Defensive rebound by D. Barlow
+4,6:54.0,75-116,76ers,D. Barlow makes 2-pt jump shot from 8 ft
+4,6:54.0,75-116,Hornets,Charlotte full timeout
+4,6:54.0,75-116,76ers,T. Watford enters the game for J. Edwards
+4,6:54.0,75-116,Hornets,J. Green enters the game for R. Kalkbrenner
+4,6:35.0,75-116,Hornets,S. James misses 3-pt jump shot from 25 ft
+4,6:33.0,75-116,Hornets,Offensive rebound by P. Connaughton
+4,6:31.0,75-116,Hornets,J. Green misses 3-pt jump shot from 26 ft
+4,6:29.0,75-116,76ers,Defensive rebound by Team
+4,6:10.0,75-116,76ers,J. Walker misses 3-pt jump shot from 23 ft
+4,6:07.0,75-116,Hornets,Defensive rebound by T. Salaün
+4,5:57.0,75-116,Hornets,Personal foul by T. Watford (drawn by T. Salaün )
+4,5:43.0,75-116,Hornets,Turnover by Team (shot clock)
+4,5:31.0,75-116,76ers,T. Watford misses 2-pt layup from 6 ft
+4,5:27.0,75-116,76ers,Offensive rebound by D. Barlow
+4,5:27.0,77-116,76ers,D. Barlow makes 2-pt layup at rim
+4,5:11.0,77-119,Hornets,T. Mann makes 3-pt jump shot from 25 ft
+4,4:55.0,77-119,76ers,Turnover by Q. Grimes (bad pass)
+4,4:55.0,77-119,76ers,J. Edwards enters the game for Q. Grimes
+4,4:55.0,77-119,Hornets,R. Kalkbrenner enters the game for S. James
+4,4:36.0,77-121,Hornets,R. Kalkbrenner makes 2-pt dunk from 3 ft (assist by J. Green)
+4,4:26.0,77-121,76ers,Personal foul by T. Mann (drawn by J. McCain)
+4,4:18.0,80-121,76ers,J. McCain makes 3-pt jump shot from 27 ft (assist by J. Edwards)
+4,3:51.0,80-121,Hornets,T. Salaün  misses 3-pt jump shot from 23 ft
+4,3:48.0,80-121,76ers,Defensive rebound by J. McCain
+4,3:44.0,80-121,76ers,J. McCain misses 3-pt jump shot from 27 ft
+4,3:40.0,80-121,Hornets,Defensive rebound by T. Salaün
+4,3:26.0,80-121,Hornets,Shooting foul by T. Watford (drawn by R. Kalkbrenner)
+4,3:26.0,80-121,Hornets,R. Kalkbrenner misses free throw 1 of 2
+4,3:26.0,80-121,Hornets,Offensive rebound by Team
+4,3:26.0,80-121,76ers,Q. Grimes enters the game for D. Barlow
+4,3:26.0,80-122,Hornets,R. Kalkbrenner makes free throw 2 of 2
+4,3:26.0,80-122,76ers,Philadelphia full timeout
+4,3:17.0,82-122,76ers,J. Edwards makes 2-pt layup from 6 ft
+4,3:17.0,82-122,Hornets,Violation by Team (def goaltending)
+4,2:58.0,82-122,Hornets,T. Mann misses 3-pt jump shot from 26 ft
+4,2:54.0,82-122,76ers,Defensive rebound by Q. Grimes
+4,2:48.0,82-122,76ers,J. Edwards misses 3-pt jump shot from 28 ft
+4,2:46.0,82-122,Hornets,Defensive rebound by T. Salaün
+4,2:33.0,82-124,Hornets,T. Salaün  makes 2-pt hook shot from 5 ft (assist by T. Mann)
+4,2:19.0,85-124,76ers,J. McCain makes 3-pt jump shot from 24 ft (assist by Q. Grimes)
+4,1:54.0,85-124,Hornets,J. Green misses 2-pt layup from 7 ft
+4,1:52.0,85-124,76ers,Defensive rebound by J. McCain
+4,1:50.0,87-124,76ers,Q. Grimes makes 2-pt dunk from 3 ft (assist by J. McCain)
+4,1:27.0,87-126,Hornets,R. Kalkbrenner makes 2-pt dunk from 1 ft (assist by T. Mann)
+4,1:15.0,90-126,76ers,J. Walker makes 3-pt jump shot from 23 ft (assist by J. McCain)
+4,1:05.0,90-126,Hornets,Shooting foul by J. Walker (drawn by T. Mann)
+4,1:05.0,90-127,Hornets,T. Mann makes free throw 1 of 2
+4,1:05.0,90-127,Hornets,T. Mann misses free throw 2 of 2
+4,1:02.0,90-127,Hornets,Offensive rebound by R. Kalkbrenner
+4,1:02.0,90-127,Hornets,Turnover by R. Kalkbrenner (lost ball; steal by J. Edwards)
+4,1:02.0,90-127,76ers,Personal foul by T. Salaün  (drawn by J. Walker)
+4,0:54.0,90-127,Hornets,Violation by Team (kicked ball)
+4,0:43.0,93-127,76ers,J. McCain makes 3-pt jump shot from 26 ft
+4,0:24.0,93-130,Hornets,J. Green makes 3-pt jump shot from 23 ft (assist by P. Connaughton)
+4,0:13.0,93-130,76ers,J. Walker misses 2-pt layup from 6 ft (block by R. Kalkbrenner)
+4,0:10.0,93-130,Hornets,Defensive rebound by T. Salaün
+4,0:03.0,93-130,Hornets,Turnover by T. Salaün  (dbl dribble)

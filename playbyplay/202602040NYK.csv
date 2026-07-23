@@ -1,0 +1,524 @@
+quarter,time,score,team,description
+1,11:48.0,0-0,Nuggets,Offensive foul by C. Braun (drawn by O. Anunoby)
+1,11:48.0,0-0,Nuggets,Turnover by C. Braun (offensive foul)
+1,11:33.0,0-3,Knicks,J. Brunson makes 3-pt jump shot from 24 ft (assist by J. Clarkson)
+1,11:21.0,0-3,Nuggets,P. Watson misses 2-pt jump shot from 5 ft
+1,11:18.0,0-3,Knicks,Defensive rebound by O. Anunoby
+1,10:52.0,0-5,Knicks,J. Clarkson makes 2-pt jump shot from 13 ft
+1,10:40.0,0-5,Nuggets,J. Murray misses 2-pt jump shot from 4 ft
+1,10:37.0,0-5,Knicks,Defensive rebound by J. Brunson
+1,10:34.0,0-5,Knicks,J. Brunson misses 3-pt jump shot from 26 ft
+1,10:31.0,0-5,Nuggets,Defensive rebound by N. Jokić
+1,10:23.0,0-5,Nuggets,S. Jones misses 3-pt jump shot from 24 ft
+1,10:20.0,0-5,Knicks,Defensive rebound by K. Towns
+1,10:10.0,0-8,Knicks,K. Towns makes 3-pt jump shot from 26 ft (assist by M. Bridges)
+1,9:52.0,0-8,Nuggets,J. Murray misses 2-pt jump shot from 4 ft
+1,9:48.0,0-8,Nuggets,Offensive rebound by N. Jokić
+1,9:48.0,0-8,Nuggets,N. Jokić misses 2-pt layup at rim
+1,9:46.0,0-8,Nuggets,Offensive rebound by N. Jokić
+1,9:46.0,2-8,Nuggets,N. Jokić makes 2-pt layup at rim
+1,9:41.0,2-11,Knicks,O. Anunoby makes 3-pt jump shot from 25 ft (assist by M. Bridges)
+1,9:15.0,4-11,Nuggets,J. Murray makes 2-pt jump shot from 18 ft
+1,9:01.0,4-11,Knicks,Turnover by J. Brunson (bad pass; steal by P. Watson)
+1,8:53.0,4-11,Nuggets,P. Watson misses 3-pt jump shot from 25 ft
+1,8:52.0,4-11,Knicks,Defensive rebound by K. Towns
+1,8:46.0,4-11,Knicks,Turnover by J. Brunson (lost ball)
+1,8:46.0,4-11,Nuggets,Denver full timeout
+1,8:46.0,4-11,Nuggets,Instant Replay (Challenge: Ruling Stands)
+1,8:25.0,4-11,Nuggets,N. Jokić misses 2-pt jump shot from 10 ft
+1,8:22.0,4-11,Knicks,Defensive rebound by O. Anunoby
+1,8:05.0,4-11,Knicks,K. Towns misses 3-pt jump shot from 26 ft
+1,8:03.0,4-11,Nuggets,Defensive rebound by P. Watson
+1,7:51.0,6-11,Nuggets,N. Jokić makes 2-pt jump shot from 4 ft
+1,7:28.0,6-13,Knicks,J. Brunson makes 2-pt jump shot from 14 ft
+1,7:10.0,9-13,Nuggets,J. Murray makes 3-pt jump shot from 26 ft (assist by N. Jokić)
+1,6:47.0,9-16,Knicks,J. Clarkson makes 3-pt jump shot from 23 ft (assist by J. Brunson)
+1,6:32.0,9-16,Nuggets,Denver full timeout
+1,6:19.0,12-16,Nuggets,J. Murray makes 3-pt jump shot from 26 ft (assist by N. Jokić)
+1,5:58.0,12-16,Knicks,Turnover by J. Brunson (bad pass; steal by S. Jones)
+1,5:52.0,14-16,Nuggets,J. Murray makes 2-pt layup from 2 ft (assist by C. Braun)
+1,5:52.0,14-16,Knicks,M. Robinson enters the game for J. Clarkson
+1,5:52.0,14-16,Knicks,L. Shamet enters the game for K. Towns
+1,5:37.0,14-16,Knicks,L. Shamet misses 3-pt jump shot from 24 ft
+1,5:34.0,14-16,Nuggets,Defensive rebound by S. Jones
+1,5:21.0,16-16,Nuggets,J. Murray makes 2-pt layup from 1 ft
+1,5:14.0,16-16,Knicks,O. Anunoby misses 3-pt jump shot from 24 ft
+1,5:11.0,16-16,Nuggets,Defensive rebound by N. Jokić
+1,4:53.0,18-16,Nuggets,J. Murray makes 2-pt layup from 3 ft
+1,4:52.0,18-16,Knicks,New York full timeout
+1,4:52.0,18-16,Nuggets,T. Hardaway enters the game for C. Braun
+1,4:52.0,18-16,Nuggets,J. Valančiūnas enters the game for N. Jokić
+1,4:52.0,18-16,Knicks,K. McCullar enters the game for O. Anunoby
+1,4:38.0,18-18,Knicks,M. Robinson makes 2-pt dunk at rim (assist by K. McCullar)
+1,4:17.0,18-18,Nuggets,P. Watson misses 3-pt jump shot from 23 ft
+1,4:14.0,18-18,Knicks,Defensive rebound by K. McCullar
+1,4:06.0,18-21,Knicks,L. Shamet makes 3-pt jump shot from 23 ft (assist by K. McCullar)
+1,3:49.0,20-21,Nuggets,J. Murray makes 2-pt jump shot from 5 ft (assist by J. Valančiūnas)
+1,3:49.0,20-21,Nuggets,Shooting foul by J. Brunson (drawn by J. Murray)
+1,3:49.0,21-21,Nuggets,J. Murray makes free throw 1 of 1
+1,3:26.0,21-21,Knicks,K. McCullar misses 2-pt jump shot from 4 ft
+1,3:24.0,21-21,Knicks,Offensive rebound by M. Robinson
+1,3:22.0,21-23,Knicks,M. Robinson makes 2-pt layup from 3 ft
+1,3:09.0,21-23,Nuggets,Shooting foul by M. Bridges (drawn by J. Murray)
+1,3:09.0,21-23,Nuggets,J. Murray misses free throw 1 of 2
+1,3:09.0,21-23,Nuggets,Offensive rebound by Team
+1,3:09.0,21-23,Nuggets,B. Brown enters the game for P. Watson
+1,3:09.0,21-23,Knicks,O. Anunoby enters the game for M. Bridges
+1,3:09.0,21-23,Knicks,M. Diawara enters the game for K. McCullar
+1,3:09.0,22-23,Nuggets,J. Murray makes free throw 2 of 2
+1,2:48.0,22-23,Knicks,L. Shamet misses 2-pt layup from 1 ft (block by S. Jones)
+1,2:46.0,22-23,Nuggets,Defensive rebound by S. Jones
+1,2:35.0,22-23,Nuggets,T. Hardaway misses 3-pt jump shot from 24 ft
+1,2:32.0,22-23,Knicks,Defensive rebound by M. Robinson
+1,2:17.0,22-26,Knicks,M. Diawara makes 3-pt jump shot from 28 ft (assist by J. Brunson)
+1,1:52.0,22-26,Nuggets,Personal foul by L. Shamet (drawn by T. Hardaway)
+1,1:45.0,22-26,Nuggets,Personal foul by O. Anunoby (drawn by J. Murray)
+1,1:45.0,23-26,Nuggets,J. Murray makes free throw 1 of 2
+1,1:45.0,24-26,Nuggets,J. Murray makes free throw 2 of 2
+1,1:37.0,24-26,Knicks,Personal foul by B. Brown (drawn by J. Brunson)
+1,1:30.0,24-26,Knicks,O. Anunoby misses 3-pt jump shot from 25 ft
+1,1:29.0,24-26,Knicks,Offensive rebound by Team
+1,1:16.0,24-26,Knicks,J. Brunson misses 2-pt jump shot from 20 ft
+1,1:13.0,24-26,Nuggets,Defensive rebound by J. Valančiūnas
+1,1:04.0,24-26,Nuggets,Turnover by J. Murray (lost ball; steal by J. Brunson)
+1,1:01.0,24-26,Knicks,Turnover by J. Brunson (bad pass; steal by B. Brown)
+1,0:58.0,24-26,Nuggets,Turnover by J. Murray (bad pass)
+1,0:51.0,24-26,Knicks,L. Shamet misses 3-pt jump shot from 25 ft
+1,0:49.0,24-26,Nuggets,Defensive rebound by T. Hardaway
+1,0:42.0,24-26,Nuggets,Shooting foul by M. Robinson (drawn by T. Hardaway)
+1,0:42.0,24-26,Nuggets,Instant Replay (Request: Stands)
+1,0:42.0,25-26,Nuggets,T. Hardaway makes free throw 1 of 3
+1,0:42.0,26-26,Nuggets,T. Hardaway makes free throw 2 of 3
+1,0:42.0,26-26,Knicks,M. Bridges enters the game for M. Diawara
+1,0:42.0,26-26,Knicks,K. Towns enters the game for M. Robinson
+1,0:42.0,27-26,Nuggets,T. Hardaway makes free throw 3 of 3
+1,0:30.0,27-26,Knicks,Shooting foul by S. Jones (drawn by K. Towns)
+1,0:30.0,27-27,Knicks,K. Towns makes free throw 1 of 2
+1,0:30.0,27-28,Knicks,K. Towns makes free throw 2 of 2
+1,0:30.0,27-28,Nuggets,N. Jokić enters the game for J. Valančiūnas
+1,0:30.0,27-28,Knicks,M. Robinson enters the game for K. Towns
+1,0:12.0,27-28,Nuggets,S. Jones misses 3-pt jump shot from 23 ft
+1,0:09.0,27-28,Nuggets,Offensive rebound by S. Jones
+1,0:08.0,27-28,Nuggets,S. Jones misses 2-pt jump shot from 7 ft
+1,0:06.0,27-28,Knicks,Defensive rebound by J. Brunson
+1,0:03.0,27-28,Knicks,L. Shamet misses 3-pt jump shot from 26 ft
+1,0:01.0,27-28,Nuggets,Defensive rebound by N. Jokić
+1,0:00.0,30-28,Nuggets,B. Brown makes 3-pt jump shot from 35 ft (assist by N. Jokić)
+1,0:00.0,30-28,Nuggets,Instant Replay (Request: Ruling Stands)
+2,11:36.0,30-31,Knicks,L. Shamet makes 3-pt jump shot from 24 ft (assist by O. Anunoby)
+2,11:15.0,30-31,Nuggets,P. Watson misses 3-pt jump shot from 26 ft
+2,11:12.0,30-31,Knicks,Defensive rebound by M. Robinson
+2,10:52.0,30-31,Knicks,L. Shamet misses 2-pt layup from 4 ft (block by P. Watson)
+2,10:49.0,30-31,Nuggets,Defensive rebound by J. Strawther
+2,10:46.0,30-31,Nuggets,Offensive foul by J. Strawther (drawn by L. Shamet)
+2,10:46.0,30-31,Nuggets,Turnover by J. Strawther (offensive foul)
+2,10:34.0,30-33,Knicks,M. Robinson makes 2-pt dunk from 1 ft (assist by T. Kolek)
+2,10:21.0,30-33,Nuggets,B. Brown misses 2-pt jump shot from 6 ft
+2,10:18.0,30-33,Knicks,Defensive rebound by T. Kolek
+2,10:08.0,30-33,Knicks,O. Anunoby misses 2-pt jump shot from 10 ft
+2,10:05.0,30-33,Nuggets,Defensive rebound by J. Strawther
+2,9:51.0,30-33,Nuggets,Shooting foul by M. Robinson (drawn by P. Watson)
+2,9:51.0,31-33,Nuggets,P. Watson makes free throw 1 of 2
+2,9:51.0,31-33,Nuggets,P. Watson misses free throw 2 of 2
+2,9:49.0,31-33,Knicks,Defensive rebound by O. Anunoby
+2,9:36.0,31-35,Knicks,L. Shamet makes 2-pt jump shot from 17 ft (assist by T. Kolek)
+2,9:16.0,31-35,Nuggets,P. Watson misses 2-pt jump shot from 13 ft
+2,9:13.0,31-35,Knicks,Defensive rebound by M. Robinson
+2,9:04.0,31-35,Knicks,J. Clarkson misses 3-pt jump shot from 25 ft
+2,9:02.0,31-35,Nuggets,Defensive rebound by B. Brown
+2,8:46.0,31-35,Nuggets,Offensive foul by T. Hardaway (drawn by M. Robinson)
+2,8:46.0,31-35,Nuggets,Turnover by T. Hardaway (offensive foul)
+2,8:46.0,31-35,Knicks,M. Bridges enters the game for O. Anunoby
+2,8:46.0,31-35,Knicks,M. Diawara enters the game for L. Shamet
+2,8:41.0,31-35,Knicks,Turnover by T. Kolek (out of bounds lost ball)
+2,8:27.0,34-35,Nuggets,N. Jokić makes 3-pt jump shot from 22 ft (assist by J. Strawther)
+2,8:12.0,34-37,Knicks,M. Robinson makes 2-pt dunk from 1 ft
+2,8:03.0,36-37,Nuggets,B. Brown makes 2-pt dunk from 1 ft (assist by N. Jokić)
+2,7:50.0,36-37,Knicks,T. Kolek misses 3-pt jump shot from 23 ft
+2,7:46.0,36-37,Knicks,Offensive rebound by M. Bridges
+2,7:45.0,36-37,Knicks,M. Bridges misses 2-pt layup at rim
+2,7:44.0,36-37,Nuggets,Defensive rebound by N. Jokić
+2,7:26.0,36-37,Nuggets,N. Jokić misses 3-pt jump shot from 24 ft (block by M. Robinson)
+2,7:25.0,36-37,Nuggets,Offensive rebound by Team
+2,7:25.0,36-37,Nuggets,N. Jokić misses 3-pt jump shot from 32 ft
+2,7:24.0,36-37,Nuggets,Offensive rebound by Team
+2,7:24.0,36-37,Nuggets,Turnover by Team (shot clock)
+2,7:00.0,36-39,Knicks,J. Clarkson makes 2-pt jump shot from 16 ft
+2,6:51.0,36-39,Nuggets,Shooting foul by M. Robinson (drawn by N. Jokić)
+2,6:51.0,36-39,Knicks,New York full timeout
+2,6:51.0,36-39,Nuggets,C. Braun enters the game for J. Strawther
+2,6:51.0,36-39,Knicks,A. Hukporti enters the game for M. Robinson
+2,6:51.0,37-39,Nuggets,N. Jokić makes free throw 1 of 2
+2,6:51.0,38-39,Nuggets,N. Jokić makes free throw 2 of 2
+2,6:30.0,38-39,Knicks,Personal foul by C. Braun (drawn by J. Clarkson)
+2,6:16.0,38-39,Knicks,Turnover by A. Hukporti (bad pass; steal by B. Brown)
+2,6:07.0,40-39,Nuggets,C. Braun makes 2-pt layup at rim (assist by N. Jokić)
+2,5:50.0,40-39,Knicks,M. Bridges misses 3-pt jump shot from 23 ft
+2,5:47.0,40-39,Nuggets,Defensive rebound by B. Brown
+2,5:37.0,40-39,Nuggets,N. Jokić misses 3-pt jump shot from 25 ft
+2,5:34.0,40-39,Nuggets,Offensive rebound by C. Braun
+2,5:28.0,42-39,Nuggets,N. Jokić makes 2-pt jump shot from 4 ft
+2,5:16.0,42-39,Knicks,Shooting foul by T. Hardaway (drawn by T. Kolek)
+2,5:16.0,42-39,Knicks,T. Kolek misses free throw 1 of 2
+2,5:16.0,42-39,Knicks,Offensive rebound by Team
+2,5:16.0,42-39,Nuggets,J. Murray enters the game for T. Hardaway
+2,5:16.0,42-39,Nuggets,J. Valančiūnas enters the game for N. Jokić
+2,5:16.0,42-39,Knicks,O. Anunoby enters the game for J. Clarkson
+2,5:16.0,42-39,Knicks,J. Brunson enters the game for M. Diawara
+2,5:16.0,42-40,Knicks,T. Kolek makes free throw 2 of 2
+2,5:00.0,45-40,Nuggets,B. Brown makes 3-pt jump shot from 23 ft (assist by C. Braun)
+2,4:45.0,45-42,Knicks,J. Brunson makes 2-pt jump shot from 16 ft
+2,4:27.0,45-42,Nuggets,P. Watson misses 2-pt jump shot from 12 ft
+2,4:25.0,45-42,Nuggets,Offensive rebound by P. Watson
+2,4:23.0,47-42,Nuggets,P. Watson makes 2-pt jump shot from 4 ft
+2,3:57.0,47-42,Knicks,J. Brunson misses 2-pt jump shot from 16 ft
+2,3:55.0,47-42,Knicks,Offensive rebound by O. Anunoby
+2,3:54.0,47-44,Knicks,O. Anunoby makes 2-pt layup from 2 ft
+2,3:40.0,49-44,Nuggets,J. Murray makes 2-pt jump shot from 13 ft
+2,3:23.0,49-44,Knicks,A. Hukporti misses 2-pt hook shot from 4 ft
+2,3:20.0,49-44,Nuggets,Defensive rebound by C. Braun
+2,3:14.0,51-44,Nuggets,P. Watson makes 2-pt layup from 2 ft (assist by C. Braun)
+2,3:11.0,51-44,Knicks,New York full timeout
+2,3:11.0,51-44,Knicks,L. Shamet enters the game for A. Hukporti
+2,3:11.0,51-44,Knicks,K. Towns enters the game for T. Kolek
+2,2:56.0,51-46,Knicks,K. Towns makes 2-pt layup from 1 ft (assist by J. Brunson)
+2,2:38.0,51-46,Nuggets,Offensive foul by J. Valančiūnas (drawn by L. Shamet)
+2,2:38.0,51-46,Nuggets,Turnover by J. Valančiūnas (offensive foul)
+2,2:27.0,51-46,Knicks,O. Anunoby misses 2-pt jump shot from 16 ft
+2,2:25.0,51-46,Nuggets,Defensive rebound by J. Valančiūnas
+2,2:17.0,51-46,Nuggets,J. Murray misses 3-pt jump shot from 28 ft
+2,2:15.0,51-46,Knicks,Defensive rebound by M. Bridges
+2,2:11.0,51-49,Knicks,K. Towns makes 3-pt jump shot from 26 ft (assist by M. Bridges)
+2,1:48.0,51-49,Nuggets,P. Watson misses 3-pt jump shot from 26 ft
+2,1:45.0,51-49,Knicks,Defensive rebound by M. Bridges
+2,1:39.0,51-49,Knicks,Shooting foul by J. Valančiūnas (drawn by K. Towns)
+2,1:39.0,51-50,Knicks,K. Towns makes free throw 1 of 2
+2,1:39.0,51-50,Nuggets,N. Jokić enters the game for J. Valančiūnas
+2,1:39.0,51-51,Knicks,K. Towns makes free throw 2 of 2
+2,1:26.0,51-51,Nuggets,J. Murray misses 3-pt jump shot from 27 ft
+2,1:23.0,51-51,Nuggets,Offensive rebound by P. Watson
+2,1:12.0,51-51,Nuggets,B. Brown misses 2-pt jump shot from 18 ft
+2,1:09.0,51-51,Knicks,Defensive rebound by K. Towns
+2,1:07.0,51-53,Knicks,O. Anunoby makes 2-pt dunk from 1 ft (assist by K. Towns)
+2,0:47.0,51-53,Nuggets,B. Brown misses 3-pt jump shot from 24 ft
+2,0:45.0,51-53,Nuggets,Offensive rebound by C. Braun
+2,0:43.0,51-53,Knicks,Violation by Team (kicked ball)
+2,0:31.0,53-53,Nuggets,J. Murray makes 2-pt jump shot from 12 ft (assist by P. Watson)
+2,0:13.0,53-53,Knicks,Shooting foul by C. Braun (drawn by J. Brunson)
+2,0:13.0,53-54,Knicks,J. Brunson makes free throw 1 of 2
+2,0:13.0,53-54,Nuggets,T. Hardaway enters the game for B. Brown
+2,0:13.0,53-54,Knicks,M. Diawara enters the game for K. Towns
+2,0:13.0,53-55,Knicks,J. Brunson makes free throw 2 of 2
+2,0:08.0,53-55,Nuggets,Personal take foul by L. Shamet (drawn by J. Murray)
+2,0:08.0,53-55,Knicks,K. McCullar enters the game for J. Brunson
+2,0:02.0,53-55,Nuggets,J. Murray misses 2-pt layup from 2 ft
+2,0:01.0,53-55,Knicks,Defensive rebound by O. Anunoby
+2,0:00.0,53-55,Knicks,Team misses heave shot
+2,0:00.0,53-55,Knicks,Offensive rebound by Team
+3,11:41.0,53-55,Knicks,Shooting foul by N. Jokić (drawn by J. Brunson)
+3,11:41.0,53-56,Knicks,J. Brunson makes free throw 1 of 2
+3,11:41.0,53-57,Knicks,J. Brunson makes free throw 2 of 2
+3,11:19.0,53-57,Nuggets,J. Murray misses 2-pt jump shot from 3 ft
+3,11:17.0,53-57,Knicks,Defensive rebound by J. Brunson
+3,11:03.0,53-59,Knicks,K. Towns makes 2-pt layup from 1 ft (assist by O. Anunoby)
+3,10:40.0,56-59,Nuggets,P. Watson makes 3-pt jump shot from 26 ft (assist by N. Jokić)
+3,10:19.0,56-59,Knicks,Turnover by K. Towns (lost ball; steal by T. Hardaway)
+3,10:14.0,58-59,Nuggets,N. Jokić makes 2-pt layup from 1 ft (assist by T. Hardaway)
+3,9:53.0,58-59,Knicks,J. Clarkson misses 2-pt jump shot from 8 ft
+3,9:49.0,58-59,Knicks,Offensive rebound by K. Towns
+3,9:49.0,58-61,Knicks,K. Towns makes 2-pt layup at rim
+3,9:37.0,58-61,Nuggets,P. Watson misses 2-pt jump shot from 5 ft
+3,9:35.0,58-61,Nuggets,Offensive rebound by Team
+3,9:27.0,60-61,Nuggets,P. Watson makes 2-pt dunk from 1 ft (assist by N. Jokić)
+3,9:12.0,60-61,Knicks,M. Bridges misses 3-pt jump shot from 23 ft
+3,9:09.0,60-61,Nuggets,Defensive rebound by T. Hardaway
+3,9:01.0,60-61,Nuggets,Shooting foul by O. Anunoby (drawn by N. Jokić)
+3,9:01.0,61-61,Nuggets,N. Jokić makes free throw 1 of 2
+3,9:01.0,62-61,Nuggets,N. Jokić makes free throw 2 of 2
+3,8:37.0,62-61,Knicks,J. Brunson misses 3-pt jump shot from 23 ft
+3,8:34.0,62-61,Nuggets,Defensive rebound by P. Watson
+3,8:28.0,62-61,Nuggets,J. Murray misses 2-pt layup from 2 ft
+3,8:27.0,62-61,Nuggets,Offensive rebound by N. Jokić
+3,8:27.0,64-61,Nuggets,N. Jokić makes 2-pt layup from 2 ft
+3,8:27.0,64-61,Nuggets,Shooting foul by O. Anunoby (drawn by N. Jokić)
+3,8:27.0,65-61,Nuggets,N. Jokić makes free throw 1 of 1
+3,8:05.0,65-63,Knicks,J. Brunson makes 2-pt jump shot from 16 ft
+3,7:47.0,65-63,Nuggets,J. Murray misses 3-pt jump shot from 23 ft
+3,7:44.0,65-63,Knicks,Defensive rebound by K. Towns
+3,7:36.0,65-63,Knicks,J. Brunson misses 2-pt jump shot from 17 ft
+3,7:33.0,65-63,Knicks,Offensive rebound by O. Anunoby
+3,7:32.0,65-63,Knicks,J. Brunson misses 3-pt jump shot from 25 ft
+3,7:31.0,65-63,Nuggets,Defensive rebound by T. Hardaway
+3,7:23.0,68-63,Nuggets,T. Hardaway makes 3-pt jump shot from 29 ft (assist by C. Braun)
+3,6:58.0,68-63,Knicks,O. Anunoby misses 3-pt jump shot from 25 ft
+3,6:57.0,68-63,Knicks,Offensive rebound by Team
+3,6:57.0,68-63,Knicks,Turnover by Team (shot clock)
+3,6:57.0,68-63,Knicks,New York full timeout
+3,6:43.0,70-63,Nuggets,T. Hardaway makes 2-pt layup from 1 ft (assist by J. Murray)
+3,6:24.0,70-63,Knicks,K. Towns misses 3-pt jump shot from 24 ft
+3,6:23.0,70-63,Nuggets,Defensive rebound by N. Jokić
+3,6:16.0,70-63,Nuggets,J. Murray misses 3-pt jump shot from 25 ft
+3,6:13.0,70-63,Knicks,Defensive rebound by J. Clarkson
+3,6:07.0,70-66,Knicks,O. Anunoby makes 3-pt jump shot from 24 ft (assist by J. Brunson)
+3,5:43.0,70-66,Nuggets,Turnover by J. Murray (bad pass; steal by M. Bridges)
+3,5:38.0,70-68,Knicks,J. Clarkson makes 2-pt layup from 1 ft (assist by J. Brunson)
+3,5:14.0,70-68,Nuggets,N. Jokić misses 2-pt jump shot from 13 ft
+3,5:14.0,70-68,Knicks,Defensive rebound by K. Towns
+3,5:07.0,70-70,Knicks,J. Brunson makes 2-pt jump shot from 15 ft
+3,5:07.0,70-70,Knicks,Shooting foul by P. Watson (drawn by J. Brunson)
+3,5:07.0,70-70,Nuggets,Denver full timeout
+3,5:07.0,70-70,Nuggets,B. Brown enters the game for C. Braun
+3,5:07.0,70-70,Knicks,M. Diawara enters the game for M. Bridges
+3,5:07.0,70-70,Knicks,M. Robinson enters the game for J. Clarkson
+3,5:07.0,70-70,Knicks,L. Shamet enters the game for K. Towns
+3,5:07.0,70-70,Knicks,J. Brunson misses free throw 1 of 1
+3,5:03.0,70-70,Nuggets,Defensive rebound by B. Brown
+3,4:54.0,70-70,Nuggets,Turnover by B. Brown (bad pass; steal by M. Robinson)
+3,4:50.0,70-72,Knicks,M. Robinson makes 2-pt dunk from 1 ft (assist by J. Brunson)
+3,4:27.0,72-72,Nuggets,N. Jokić makes 2-pt hook shot at rim (assist by J. Murray)
+3,4:09.0,72-75,Knicks,O. Anunoby makes 3-pt jump shot from 23 ft (assist by L. Shamet)
+3,3:43.0,72-75,Nuggets,P. Watson misses 3-pt jump shot from 23 ft
+3,3:40.0,72-75,Knicks,Defensive rebound by O. Anunoby
+3,3:30.0,72-75,Knicks,M. Diawara misses 3-pt jump shot from 23 ft
+3,3:27.0,72-75,Nuggets,Defensive rebound by T. Hardaway
+3,3:20.0,72-75,Nuggets,J. Murray misses 3-pt jump shot from 24 ft
+3,3:17.0,72-75,Knicks,Defensive rebound by M. Robinson
+3,3:06.0,72-77,Knicks,M. Diawara makes 2-pt layup at rim (assist by J. Brunson)
+3,3:05.0,72-77,Nuggets,Denver full timeout
+3,3:05.0,72-77,Nuggets,J. Strawther enters the game for N. Jokić
+3,3:05.0,72-77,Nuggets,J. Valančiūnas enters the game for P. Watson
+3,2:52.0,74-77,Nuggets,J. Valančiūnas makes 2-pt layup from 1 ft (assist by J. Murray)
+3,2:41.0,74-80,Knicks,J. Brunson makes 3-pt jump shot from 27 ft
+3,2:21.0,74-80,Nuggets,Turnover by J. Strawther (lost ball; steal by J. Brunson)
+3,2:11.0,74-83,Knicks,J. Brunson makes 3-pt jump shot from 23 ft (assist by O. Anunoby)
+3,1:58.0,77-83,Nuggets,T. Hardaway makes 3-pt jump shot from 25 ft (assist by J. Murray)
+3,1:43.0,77-83,Knicks,J. Brunson misses 3-pt jump shot from 29 ft
+3,1:41.0,77-83,Nuggets,Defensive rebound by J. Valančiūnas
+3,1:34.0,80-83,Nuggets,J. Strawther makes 3-pt jump shot from 23 ft (assist by T. Hardaway)
+3,1:17.0,80-83,Knicks,Shooting foul by J. Valančiūnas (drawn by O. Anunoby)
+3,1:17.0,80-84,Knicks,O. Anunoby makes free throw 1 of 2
+3,1:17.0,80-84,Knicks,M. Bridges enters the game for M. Diawara
+3,1:17.0,80-84,Knicks,K. Towns enters the game for M. Robinson
+3,1:17.0,80-85,Knicks,O. Anunoby makes free throw 2 of 2
+3,1:10.0,80-85,Nuggets,Personal foul by M. Bridges (drawn by T. Hardaway)
+3,1:10.0,80-85,Knicks,M. Diawara enters the game for O. Anunoby
+3,1:00.0,80-85,Nuggets,J. Strawther misses 3-pt jump shot from 24 ft
+3,0:59.0,80-85,Knicks,Defensive rebound by K. Towns
+3,0:54.0,80-88,Knicks,J. Brunson makes 3-pt jump shot from 26 ft
+3,0:36.0,80-88,Nuggets,Offensive foul by J. Valančiūnas (drawn by J. Brunson)
+3,0:36.0,80-88,Nuggets,Turnover by J. Valančiūnas (offensive foul)
+3,0:36.0,80-88,Nuggets,C. Braun enters the game for J. Valančiūnas
+3,0:31.0,80-88,Knicks,J. Brunson misses 3-pt jump shot from 26 ft
+3,0:29.0,80-88,Nuggets,Defensive rebound by J. Murray
+3,0:12.0,80-88,Nuggets,Personal foul by K. Towns (drawn by J. Murray)
+3,0:12.0,81-88,Nuggets,J. Murray makes free throw 1 of 2
+3,0:12.0,81-88,Knicks,O. Anunoby enters the game for M. Diawara
+3,0:12.0,82-88,Nuggets,J. Murray makes free throw 2 of 2
+3,0:00.0,82-88,Knicks,O. Anunoby misses 2-pt layup from 1 ft
+3,0:00.0,82-88,Nuggets,Defensive rebound by B. Brown
+4,11:45.0,84-88,Nuggets,J. Strawther makes 2-pt jump shot from 15 ft (assist by N. Jokić)
+4,11:31.0,84-90,Knicks,K. Towns makes 2-pt layup from 2 ft (assist by T. Kolek)
+4,11:13.0,86-90,Nuggets,J. Strawther makes 2-pt layup from 2 ft (assist by N. Jokić)
+4,11:13.0,86-90,Nuggets,Shooting foul by K. Towns (drawn by J. Strawther)
+4,11:13.0,87-90,Nuggets,J. Strawther makes free throw 1 of 1
+4,10:58.0,87-90,Knicks,M. Diawara misses 3-pt jump shot from 24 ft
+4,10:55.0,87-90,Nuggets,Defensive rebound by P. Watson
+4,10:47.0,87-90,Nuggets,Turnover by P. Watson (out of bounds lost ball)
+4,10:38.0,87-90,Knicks,Turnover by T. Kolek (lost ball; steal by B. Brown)
+4,10:37.0,87-90,Nuggets,Turnover by B. Brown (out of bounds lost ball)
+4,10:24.0,87-92,Knicks,J. Clarkson makes 2-pt jump shot from 8 ft
+4,10:12.0,87-92,Nuggets,Turnover by J. Strawther (bad pass)
+4,9:57.0,87-94,Knicks,M. Bridges makes 2-pt jump shot from 15 ft (assist by T. Kolek)
+4,9:55.0,87-94,Nuggets,Denver full timeout
+4,9:37.0,87-94,Nuggets,Shooting foul by K. Towns (drawn by N. Jokić)
+4,9:37.0,87-94,Nuggets,N. Jokić misses free throw 1 of 2
+4,9:37.0,87-94,Nuggets,Offensive rebound by Team
+4,9:37.0,88-94,Nuggets,N. Jokić makes free throw 2 of 2
+4,9:27.0,88-94,Knicks,M. Diawara misses 3-pt jump shot from 26 ft
+4,9:24.0,88-94,Nuggets,Defensive rebound by J. Strawther
+4,9:14.0,90-94,Nuggets,N. Jokić makes 2-pt layup from 3 ft (assist by P. Watson)
+4,8:58.0,90-94,Knicks,Offensive foul by J. Clarkson (drawn by J. Strawther)
+4,8:58.0,90-94,Knicks,Turnover by J. Clarkson (offensive foul)
+4,8:35.0,90-94,Nuggets,N. Jokić misses 2-pt jump shot from 15 ft
+4,8:34.0,90-94,Nuggets,Offensive rebound by N. Jokić
+4,8:33.0,92-94,Nuggets,N. Jokić makes 2-pt layup from 1 ft
+4,8:30.0,92-94,Knicks,Personal take foul by P. Watson (drawn by T. Kolek)
+4,8:30.0,92-94,Nuggets,J. Murray enters the game for P. Watson
+4,8:30.0,92-94,Knicks,L. Shamet enters the game for M. Diawara
+4,8:18.0,92-94,Knicks,K. Towns misses 3-pt jump shot from 28 ft
+4,8:15.0,92-94,Nuggets,Defensive rebound by J. Murray
+4,8:15.0,92-94,Knicks,O. Anunoby enters the game for J. Clarkson
+4,8:15.0,92-94,Knicks,J. Brunson enters the game for T. Kolek
+4,7:57.0,92-94,Nuggets,N. Jokić misses 3-pt jump shot from 25 ft
+4,7:54.0,92-94,Knicks,Defensive rebound by M. Bridges
+4,7:44.0,92-94,Knicks,J. Brunson misses 2-pt jump shot from 7 ft (block by B. Brown)
+4,7:43.0,92-94,Knicks,Offensive rebound by Team
+4,7:43.0,92-94,Nuggets,T. Hardaway enters the game for B. Brown
+4,7:43.0,92-94,Knicks,M. Robinson enters the game for K. Towns
+4,7:31.0,92-96,Knicks,J. Brunson makes 2-pt jump shot from 11 ft
+4,7:03.0,94-96,Nuggets,J. Murray makes 2-pt jump shot from 12 ft
+4,6:38.0,94-96,Knicks,L. Shamet misses 3-pt jump shot from 25 ft
+4,6:35.0,94-96,Nuggets,Defensive rebound by T. Hardaway
+4,6:19.0,97-96,Nuggets,J. Strawther makes 3-pt jump shot from 24 ft (assist by C. Braun)
+4,6:00.0,97-99,Knicks,L. Shamet makes 3-pt jump shot from 23 ft (assist by O. Anunoby)
+4,5:38.0,97-99,Nuggets,N. Jokić misses 3-pt jump shot from 26 ft
+4,5:35.0,97-99,Nuggets,Offensive rebound by N. Jokić
+4,5:25.0,99-99,Nuggets,J. Murray makes 2-pt jump shot from 11 ft
+4,5:07.0,99-99,Knicks,Turnover by L. Shamet (bad pass; steal by J. Strawther)
+4,5:03.0,101-99,Nuggets,C. Braun makes 2-pt dunk from 1 ft (assist by J. Murray)
+4,5:03.0,101-99,Knicks,New York full timeout
+4,5:03.0,101-99,Nuggets,J. Valančiūnas enters the game for N. Jokić
+4,5:03.0,101-99,Knicks,K. Towns enters the game for M. Robinson
+4,4:46.0,101-102,Knicks,O. Anunoby makes 3-pt jump shot from 23 ft (assist by L. Shamet)
+4,4:20.0,101-102,Nuggets,J. Murray misses 2-pt jump shot from 20 ft
+4,4:18.0,101-102,Knicks,Defensive rebound by K. Towns
+4,4:06.0,101-102,Knicks,K. Towns misses 3-pt jump shot from 27 ft
+4,4:03.0,101-102,Nuggets,Defensive rebound by T. Hardaway
+4,3:48.0,104-102,Nuggets,T. Hardaway makes 3-pt jump shot from 26 ft (assist by J. Valančiūnas)
+4,3:28.0,104-102,Knicks,L. Shamet misses 2-pt jump shot from 7 ft
+4,3:26.0,104-102,Knicks,Offensive rebound by L. Shamet
+4,3:24.0,104-102,Knicks,O. Anunoby misses 3-pt jump shot from 26 ft
+4,3:23.0,104-102,Knicks,Offensive rebound by Team
+4,3:23.0,104-102,Nuggets,Loose ball foul by J. Valančiūnas (drawn by K. Towns)
+4,3:23.0,104-102,Nuggets,B. Brown enters the game for J. Strawther
+4,3:11.0,104-104,Knicks,J. Brunson makes 2-pt layup from 1 ft
+4,2:57.0,104-104,Nuggets,T. Hardaway misses 3-pt jump shot from 24 ft
+4,2:55.0,104-104,Knicks,Defensive rebound by J. Brunson
+4,2:46.0,104-104,Knicks,O. Anunoby misses 2-pt jump shot from 11 ft
+4,2:43.0,104-104,Knicks,Offensive rebound by K. Towns
+4,2:43.0,104-106,Knicks,K. Towns makes 2-pt layup from 3 ft
+4,2:43.0,104-106,Nuggets,Denver full timeout
+4,2:43.0,104-106,Nuggets,N. Jokić enters the game for J. Valančiūnas
+4,2:24.0,104-106,Nuggets,N. Jokić misses 3-pt jump shot from 26 ft
+4,2:21.0,104-106,Knicks,Defensive rebound by K. Towns
+4,2:11.0,104-106,Knicks,M. Bridges misses 3-pt jump shot from 23 ft
+4,2:09.0,104-106,Nuggets,Defensive rebound by N. Jokić
+4,2:09.0,104-106,Nuggets,Personal foul by K. Towns (drawn by N. Jokić)
+4,1:59.0,106-106,Nuggets,J. Murray makes 2-pt jump shot from 18 ft
+4,1:43.0,106-106,Knicks,J. Brunson misses 3-pt jump shot from 26 ft
+4,1:41.0,106-106,Nuggets,Defensive rebound by N. Jokić
+4,1:21.0,106-106,Nuggets,N. Jokić misses 3-pt jump shot from 26 ft
+4,1:19.0,106-106,Nuggets,Offensive rebound by B. Brown
+4,1:19.0,106-106,Nuggets,B. Brown misses 2-pt layup at rim
+4,1:17.0,106-106,Knicks,Defensive rebound by K. Towns
+4,1:14.0,106-108,Knicks,J. Brunson makes 2-pt layup from 2 ft
+4,1:01.0,106-108,Nuggets,J. Murray misses 2-pt jump shot from 14 ft
+4,0:59.0,106-108,Nuggets,Offensive rebound by Team
+4,0:59.0,106-108,Knicks,M. Robinson enters the game for K. Towns
+4,0:48.0,106-108,Nuggets,N. Jokić misses 2-pt hook shot from 9 ft
+4,0:47.0,106-108,Knicks,Defensive rebound by M. Robinson
+4,0:47.0,106-108,Knicks,Personal foul by N. Jokić (drawn by M. Robinson)
+4,0:47.0,106-108,Knicks,K. Towns enters the game for M. Robinson
+4,0:22.0,106-108,Knicks,M. Bridges misses 3-pt jump shot from 24 ft
+4,0:19.0,106-108,Nuggets,Defensive rebound by J. Murray
+4,0:13.0,108-108,Nuggets,J. Murray makes 2-pt jump shot from 14 ft
+4,0:02.0,108-108,Knicks,J. Brunson misses 2-pt jump shot from 19 ft
+4,0:00.0,108-108,Nuggets,Defensive rebound by J. Murray
+4,0:00.0,108-108,Nuggets,Denver full timeout
+4,0:00.0,108-108,Knicks,K. McCullar enters the game for J. Brunson
+4,0:00.0,108-108,Knicks,M. Robinson enters the game for K. Towns
+4,0:00.0,108-108,Nuggets,N. Jokić misses 3-pt jump shot from 27 ft
+4,0:00.0,108-108,Nuggets,Offensive rebound by Team
+4,4:43.0,108-108,Knicks,J. Brunson misses 2-pt jump shot from 11 ft
+4,4:40.0,108-108,Knicks,Offensive rebound by O. Anunoby
+4,4:40.0,108-110,Knicks,O. Anunoby makes 2-pt layup at rim
+4,4:24.0,108-110,Nuggets,N. Jokić misses 3-pt jump shot from 25 ft
+4,4:22.0,108-110,Nuggets,Offensive rebound by C. Braun
+4,4:12.0,108-110,Nuggets,C. Braun misses 3-pt jump shot from 23 ft
+4,4:10.0,108-110,Nuggets,Offensive rebound by N. Jokić
+4,4:10.0,108-110,Nuggets,Shooting foul by K. Towns (drawn by N. Jokić)
+4,4:10.0,109-110,Nuggets,N. Jokić makes free throw 1 of 2
+4,4:10.0,110-110,Nuggets,N. Jokić makes free throw 2 of 2
+4,3:45.0,110-110,Knicks,L. Shamet misses 3-pt jump shot from 25 ft
+4,3:42.0,110-110,Nuggets,Defensive rebound by C. Braun
+4,3:38.0,112-110,Nuggets,T. Hardaway makes 2-pt layup at rim (assist by C. Braun)
+4,3:32.0,112-110,Knicks,Shooting foul by N. Jokić (drawn by J. Brunson)
+4,3:32.0,112-110,Knicks,Instant Replay (Request: Stands)
+4,3:32.0,112-111,Knicks,J. Brunson makes free throw 1 of 2
+4,3:32.0,112-112,Knicks,J. Brunson makes free throw 2 of 2
+4,3:15.0,115-112,Nuggets,J. Murray makes 3-pt jump shot from 23 ft
+4,2:56.0,115-112,Knicks,M. Bridges misses 3-pt jump shot from 25 ft
+4,2:53.0,115-112,Knicks,Offensive rebound by K. Towns
+4,2:53.0,115-114,Knicks,K. Towns makes 2-pt layup at rim
+4,2:32.0,115-114,Nuggets,J. Murray misses 3-pt jump shot from 25 ft
+4,2:31.0,115-114,Nuggets,Offensive rebound by Team
+4,2:31.0,115-114,Knicks,Loose ball foul by M. Bridges (drawn by C. Braun)
+4,2:17.0,115-114,Nuggets,J. Murray misses 3-pt jump shot from 26 ft
+4,2:15.0,115-114,Knicks,Defensive rebound by L. Shamet
+4,2:03.0,115-117,Knicks,L. Shamet makes 3-pt jump shot from 23 ft (assist by M. Bridges)
+4,2:02.0,115-117,Nuggets,Denver full timeout
+4,1:51.0,117-117,Nuggets,N. Jokić makes 2-pt hook shot from 5 ft (assist by J. Murray)
+4,1:36.0,117-117,Knicks,L. Shamet misses 3-pt jump shot from 23 ft
+4,1:33.0,117-117,Nuggets,Defensive rebound by C. Braun
+4,1:31.0,117-117,Nuggets,Denver full timeout
+4,1:31.0,117-117,Nuggets,Instant Replay (Challenge: Ruling Stands)
+4,1:31.0,117-117,Knicks,M. Robinson enters the game for K. Towns
+4,1:11.0,117-117,Nuggets,J. Murray misses 3-pt jump shot from 29 ft
+4,1:10.0,117-117,Nuggets,Offensive rebound by Team
+4,1:10.0,117-117,Nuggets,Turnover by Team (shot clock)
+4,1:10.0,117-117,Knicks,K. Towns enters the game for M. Robinson
+4,1:01.0,117-119,Knicks,K. Towns makes 2-pt layup from 1 ft (assist by J. Brunson)
+4,0:44.0,117-119,Nuggets,C. Braun misses 2-pt dunk from 1 ft (block by M. Bridges)
+4,0:42.0,117-119,Nuggets,Offensive rebound by C. Braun
+4,0:41.0,117-119,Nuggets,C. Braun misses 2-pt layup from 1 ft
+4,0:39.0,117-119,Knicks,Defensive rebound by J. Brunson
+4,0:16.0,117-119,Knicks,O. Anunoby misses 3-pt jump shot from 25 ft
+4,0:14.0,117-119,Nuggets,Defensive rebound by Team
+4,0:14.0,117-119,Knicks,Loose ball foul by K. Towns (drawn by N. Jokić)
+4,0:14.0,117-119,Knicks,K. McCullar enters the game for J. Brunson
+4,0:14.0,117-119,Knicks,M. Robinson enters the game for K. Towns
+4,0:00.0,117-119,Nuggets,J. Murray misses 3-pt jump shot from 28 ft
+4,0:00.0,117-119,Nuggets,Offensive rebound by Team
+4,0:00.0,117-119,Knicks,Loose ball foul by M. Bridges (drawn by C. Braun)
+4,0:00.0,117-119,Knicks,Instant Replay (Request: Stands)
+4,0:00.0,118-119,Nuggets,C. Braun makes free throw 1 of 2
+4,0:00.0,118-119,Nuggets,J. Valančiūnas enters the game for B. Brown
+4,0:00.0,118-119,Knicks,A. Hukporti enters the game for M. Bridges
+4,0:00.0,119-119,Nuggets,C. Braun makes free throw 2 of 2
+4,0:00.0,119-119,Knicks,New York full timeout
+4,4:44.0,119-119,Nuggets,N. Jokić misses 3-pt jump shot from 25 ft
+4,4:43.0,119-119,Knicks,Defensive rebound by Team
+4,4:33.0,119-119,Knicks,Turnover by J. Brunson (lost ball; steal by J. Murray)
+4,4:30.0,121-119,Nuggets,J. Murray makes 2-pt dunk from 1 ft
+4,4:14.0,121-121,Knicks,J. Brunson makes 2-pt jump shot from 14 ft
+4,3:57.0,121-121,Nuggets,Personal foul by J. Brunson (drawn by J. Murray)
+4,3:49.0,121-121,Nuggets,J. Murray misses 3-pt jump shot from 26 ft
+4,3:46.0,121-121,Knicks,Defensive rebound by J. Brunson
+4,3:39.0,121-121,Knicks,Shooting foul by J. Murray (drawn by J. Brunson)
+4,3:39.0,121-121,Knicks,J. Brunson misses free throw 1 of 2
+4,3:39.0,121-121,Knicks,Offensive rebound by Team
+4,3:39.0,121-122,Knicks,J. Brunson makes free throw 2 of 2
+4,3:20.0,121-122,Nuggets,N. Jokić misses 3-pt jump shot from 25 ft
+4,3:18.0,121-122,Knicks,Defensive rebound by J. Brunson
+4,3:12.0,121-125,Knicks,J. Brunson makes 3-pt jump shot from 25 ft
+4,3:10.0,121-125,Nuggets,Denver full timeout
+4,2:45.0,121-125,Nuggets,Turnover by J. Murray (out of bounds lost ball)
+4,2:23.0,121-125,Knicks,J. Brunson misses 3-pt jump shot from 25 ft
+4,2:22.0,121-125,Nuggets,Defensive rebound by Team
+4,2:22.0,121-125,Knicks,Loose ball foul by M. Robinson (drawn by N. Jokić)
+4,2:10.0,121-125,Nuggets,B. Brown misses 3-pt jump shot from 25 ft
+4,2:08.0,121-125,Knicks,Defensive rebound by M. Robinson
+4,2:01.0,121-127,Knicks,L. Shamet makes 2-pt layup from 2 ft (assist by J. Brunson)
+4,1:38.0,123-127,Nuggets,B. Brown makes 2-pt jump shot from 10 ft
+4,1:25.0,123-130,Knicks,M. Bridges makes 3-pt jump shot from 23 ft (assist by L. Shamet)
+4,1:16.0,123-130,Nuggets,Shooting foul by M. Robinson (drawn by N. Jokić)
+4,1:16.0,123-130,Nuggets,N. Jokić misses free throw 1 of 3
+4,1:16.0,123-130,Nuggets,Offensive rebound by Team
+4,1:16.0,123-130,Nuggets,N. Jokić misses free throw 2 of 3
+4,1:16.0,123-130,Nuggets,Offensive rebound by Team
+4,1:16.0,124-130,Nuggets,N. Jokić makes free throw 3 of 3
+4,0:58.0,124-130,Knicks,O. Anunoby misses 2-pt dunk from 1 ft
+4,0:56.0,124-130,Nuggets,Defensive rebound by J. Murray
+4,0:51.0,124-130,Nuggets,C. Braun misses 3-pt jump shot from 24 ft
+4,0:48.0,124-130,Nuggets,Offensive rebound by N. Jokić
+4,0:46.0,127-130,Nuggets,T. Hardaway makes 3-pt jump shot from 25 ft (assist by N. Jokić)
+4,0:30.0,127-132,Knicks,J. Brunson makes 2-pt jump shot from 8 ft
+4,0:30.0,127-132,Nuggets,Denver full timeout
+4,0:27.0,127-132,Nuggets,N. Jokić misses 3-pt jump shot from 26 ft
+4,0:25.0,127-132,Knicks,Defensive rebound by J. Brunson
+4,0:22.0,127-132,Knicks,Personal take foul by N. Jokić (drawn by M. Bridges)
+4,0:18.0,127-132,Knicks,Personal take foul by J. Murray (drawn by J. Brunson)
+4,0:18.0,127-133,Knicks,J. Brunson makes free throw 1 of 2
+4,0:18.0,127-134,Knicks,J. Brunson makes free throw 2 of 2
+4,0:11.0,127-134,Nuggets,J. Murray misses 3-pt jump shot from 25 ft
+4,0:09.0,127-134,Knicks,Defensive rebound by M. Robinson

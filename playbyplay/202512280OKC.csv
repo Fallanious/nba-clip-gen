@@ -1,0 +1,451 @@
+quarter,time,score,team,description
+1,11:48.0,0-0,76ers,Turnover by P. George (bad pass; steal by S. Gilgeous-Alexander)
+1,11:39.0,0-2,Thunder,S. Gilgeous-Alexander makes 2-pt jump shot from 13 ft
+1,11:17.0,2-2,76ers,V. Edgecombe makes 2-pt jump shot from 20 ft
+1,10:52.0,2-4,Thunder,C. Holmgren makes 2-pt jump shot from 9 ft
+1,10:31.0,2-4,76ers,P. George misses 2-pt jump shot from 18 ft
+1,10:29.0,2-4,Thunder,Defensive rebound by C. Holmgren
+1,10:22.0,2-4,Thunder,Turnover by L. Dort (step out of bounds)
+1,10:08.0,4-4,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by V. Edgecombe)
+1,9:53.0,4-7,Thunder,L. Dort makes 3-pt jump shot from 25 ft (assist by S. Gilgeous-Alexander)
+1,9:32.0,4-7,76ers,Shooting foul by I. Hartenstein (drawn by T. Maxey)
+1,9:32.0,5-7,76ers,T. Maxey makes free throw 1 of 2
+1,9:32.0,6-7,76ers,T. Maxey makes free throw 2 of 2
+1,9:20.0,6-9,Thunder,J. Williams makes 2-pt dunk from 1 ft (assist by I. Hartenstein)
+1,9:06.0,6-9,76ers,V. Edgecombe misses 2-pt jump shot from 14 ft
+1,9:03.0,6-9,76ers,Offensive rebound by V. Edgecombe
+1,9:01.0,9-9,76ers,T. Maxey makes 3-pt jump shot from 29 ft (assist by V. Edgecombe)
+1,8:50.0,9-11,Thunder,I. Hartenstein makes 2-pt dunk from 1 ft (assist by J. Williams)
+1,8:50.0,9-11,Thunder,Shooting foul by A. Drummond (drawn by I. Hartenstein)
+1,8:50.0,9-12,Thunder,I. Hartenstein makes free throw 1 of 1
+1,8:31.0,9-12,76ers,Turnover by A. Drummond (out of bounds lost ball)
+1,8:09.0,9-14,Thunder,C. Holmgren makes 2-pt jump shot from 7 ft
+1,7:58.0,9-14,76ers,P. George misses 3-pt jump shot from 24 ft
+1,7:57.0,9-14,Thunder,Defensive rebound by L. Dort
+1,7:52.0,9-14,Thunder,Turnover by L. Dort (lost ball; steal by T. Maxey)
+1,7:48.0,9-14,76ers,V. Edgecombe misses 2-pt layup from 2 ft (block by C. Holmgren)
+1,7:45.0,9-14,Thunder,Defensive rebound by J. Williams
+1,7:39.0,9-16,Thunder,C. Holmgren makes 2-pt dunk from 1 ft (assist by J. Williams)
+1,7:38.0,9-16,76ers,Philadelphia full timeout
+1,7:38.0,9-16,Thunder,I. Joe enters the game for I. Hartenstein
+1,7:22.0,11-16,76ers,A. Drummond makes 2-pt layup from 6 ft (assist by P. George)
+1,6:59.0,11-16,Thunder,Turnover by S. Gilgeous-Alexander (bad pass; steal by T. Maxey)
+1,6:58.0,13-16,76ers,T. Maxey makes 2-pt dunk from 2 ft
+1,6:39.0,13-16,Thunder,Turnover by C. Holmgren (traveling)
+1,6:17.0,13-16,76ers,P. George misses 2-pt jump shot from 21 ft
+1,6:16.0,13-16,76ers,Offensive rebound by Team
+1,6:16.0,13-16,Thunder,Loose ball foul by C. Holmgren (drawn by A. Drummond)
+1,6:02.0,13-16,76ers,A. Drummond misses 2-pt hook shot from 4 ft
+1,6:00.0,13-16,Thunder,Defensive rebound by C. Holmgren
+1,5:52.0,13-18,Thunder,S. Gilgeous-Alexander makes 2-pt jump shot from 18 ft
+1,5:40.0,16-18,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+1,5:20.0,16-18,Thunder,Turnover by C. Holmgren (lost ball; steal by T. Maxey)
+1,5:07.0,16-18,76ers,A. Drummond misses 2-pt layup from 2 ft (block by C. Holmgren)
+1,5:05.0,16-18,Thunder,Defensive rebound by I. Joe
+1,5:01.0,16-18,Thunder,Turnover by J. Williams (bad pass)
+1,5:01.0,16-18,76ers,A. Bona enters the game for A. Drummond
+1,5:01.0,16-18,76ers,Q. Grimes enters the game for P. George
+1,5:01.0,16-18,Thunder,A. Caruso enters the game for C. Holmgren
+1,4:47.0,18-18,76ers,A. Bona makes 2-pt dunk from 2 ft (assist by V. Edgecombe)
+1,4:34.0,18-18,Thunder,Shooting foul by T. Maxey (drawn by S. Gilgeous-Alexander)
+1,4:34.0,18-19,Thunder,S. Gilgeous-Alexander makes free throw 1 of 2
+1,4:34.0,18-19,Thunder,C. Wallace enters the game for J. Williams
+1,4:34.0,18-20,Thunder,S. Gilgeous-Alexander makes free throw 2 of 2
+1,4:19.0,18-20,76ers,Turnover by T. Maxey (bad pass; steal by S. Gilgeous-Alexander)
+1,4:14.0,18-22,Thunder,A. Caruso makes 2-pt layup from 1 ft (assist by C. Wallace)
+1,4:14.0,18-22,76ers,Violation by Team (def goaltending)
+1,3:55.0,18-22,76ers,Shooting foul by L. Dort (drawn by A. Bona)
+1,3:55.0,19-22,76ers,A. Bona makes free throw 1 of 2
+1,3:55.0,19-22,76ers,J. McCain enters the game for V. Edgecombe
+1,3:55.0,19-22,Thunder,I. Hartenstein enters the game for L. Dort
+1,3:55.0,20-22,76ers,A. Bona makes free throw 2 of 2
+1,3:45.0,20-22,Thunder,I. Joe misses 3-pt jump shot from 25 ft
+1,3:42.0,20-22,76ers,Defensive rebound by D. Barlow
+1,3:33.0,20-22,76ers,Turnover by T. Maxey (out of bounds lost ball)
+1,3:22.0,20-22,Thunder,I. Hartenstein misses 2-pt jump shot from 9 ft
+1,3:19.0,20-22,76ers,Defensive rebound by T. Maxey
+1,3:13.0,22-22,76ers,T. Maxey makes 2-pt layup from 2 ft
+1,3:13.0,22-22,Thunder,Oklahoma City full timeout
+1,2:56.0,22-24,Thunder,S. Gilgeous-Alexander makes 2-pt jump shot from 19 ft
+1,2:36.0,25-24,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by J. McCain)
+1,2:36.0,25-24,Thunder,A. Mitchell enters the game for I. Joe
+1,2:21.0,25-24,Thunder,S. Gilgeous-Alexander misses 2-pt jump shot from 8 ft
+1,2:18.0,25-24,76ers,Defensive rebound by J. McCain
+1,2:13.0,25-24,76ers,J. McCain misses 3-pt jump shot from 29 ft
+1,2:11.0,25-24,Thunder,Defensive rebound by A. Caruso
+1,2:07.0,25-27,Thunder,A. Mitchell makes 3-pt jump shot from 23 ft (assist by C. Wallace)
+1,1:56.0,25-27,76ers,Turnover by D. Barlow (bad pass)
+1,1:38.0,25-27,Thunder,Offensive foul by I. Hartenstein (drawn by A. Bona)
+1,1:38.0,25-27,Thunder,Turnover by I. Hartenstein (offensive foul)
+1,1:38.0,25-27,76ers,P. George enters the game for D. Barlow
+1,1:26.0,27-27,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by P. George)
+1,1:14.0,27-29,Thunder,A. Mitchell makes 2-pt jump shot from 5 ft
+1,0:53.0,29-29,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by P. George)
+1,0:36.0,29-32,Thunder,C. Wallace makes 3-pt jump shot from 23 ft (assist by A. Mitchell)
+1,0:19.0,29-32,76ers,T. Maxey misses 3-pt jump shot from 31 ft
+1,0:16.0,29-32,Thunder,Defensive rebound by C. Wallace
+1,0:06.0,29-32,Thunder,Personal foul by Q. Grimes (drawn by S. Gilgeous-Alexander)
+1,0:06.0,29-32,76ers,D. Barlow enters the game for T. Maxey
+1,0:06.0,29-32,76ers,V. Edgecombe enters the game for J. McCain
+1,0:01.0,29-32,Thunder,A. Mitchell misses 2-pt jump shot from 9 ft (block by A. Bona)
+1,0:01.0,29-32,Thunder,Offensive rebound by C. Wallace
+1,0:00.0,29-32,Thunder,C. Wallace misses 2-pt jump shot from 13 ft
+1,0:00.0,29-32,Thunder,Offensive rebound by Team
+2,11:50.0,29-32,Thunder,Personal foul by J. McCain (drawn by A. Wiggins)
+2,11:41.0,29-32,Thunder,Shooting foul by A. Bona (drawn by J. Williams)
+2,11:41.0,29-33,Thunder,J. Williams makes free throw 1 of 2
+2,11:41.0,29-34,Thunder,J. Williams makes free throw 2 of 2
+2,11:18.0,29-34,76ers,V. Edgecombe misses 2-pt jump shot from 17 ft
+2,11:15.0,29-34,76ers,Offensive rebound by A. Bona
+2,11:14.0,31-34,76ers,A. Bona makes 2-pt dunk from 1 ft
+2,11:05.0,31-36,Thunder,A. Mitchell makes 2-pt jump shot from 14 ft
+2,10:50.0,31-36,76ers,Offensive foul by V. Edgecombe (drawn by J. Williams)
+2,10:50.0,31-36,76ers,Turnover by V. Edgecombe (offensive foul)
+2,10:38.0,31-36,Thunder,Shooting foul by Q. Grimes (drawn by J. Williams)
+2,10:38.0,31-37,Thunder,J. Williams makes free throw 1 of 2
+2,10:38.0,31-38,Thunder,J. Williams makes free throw 2 of 2
+2,10:27.0,31-38,76ers,P. George misses 2-pt jump shot from 15 ft
+2,10:24.0,31-38,Thunder,Defensive rebound by I. Hartenstein
+2,10:17.0,31-38,Thunder,Shooting foul by Q. Grimes (drawn by A. Wiggins)
+2,10:17.0,31-39,Thunder,A. Wiggins makes free throw 1 of 2
+2,10:17.0,31-39,76ers,J. Edwards enters the game for Q. Grimes
+2,10:17.0,31-39,Thunder,A. Wiggins misses free throw 2 of 2
+2,10:14.0,31-39,76ers,Defensive rebound by P. George
+2,10:02.0,31-39,76ers,A. Bona misses 2-pt dunk from 3 ft (block by I. Hartenstein)
+2,9:58.0,31-39,Thunder,Defensive rebound by A. Wiggins
+2,9:49.0,31-39,Thunder,I. Hartenstein misses 2-pt layup from 1 ft (block by A. Bona)
+2,9:47.0,31-39,76ers,Defensive rebound by P. George
+2,9:43.0,34-39,76ers,J. Edwards makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+2,9:30.0,34-41,Thunder,J. Williams makes 2-pt jump shot from 14 ft
+2,9:08.0,34-41,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+2,9:06.0,34-41,76ers,Offensive rebound by Team
+2,9:02.0,37-41,76ers,P. George makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+2,8:46.0,37-41,Thunder,I. Hartenstein misses 2-pt layup from 2 ft (block by J. Edwards)
+2,8:44.0,37-41,76ers,Defensive rebound by J. Edwards
+2,8:41.0,37-41,76ers,Shooting foul by A. Mitchell (drawn by A. Bona)
+2,8:41.0,38-41,76ers,A. Bona makes free throw 1 of 2
+2,8:41.0,38-41,Thunder,Oklahoma City full timeout
+2,8:41.0,38-41,Thunder,C. Holmgren enters the game for I. Hartenstein
+2,8:41.0,39-41,76ers,A. Bona makes free throw 2 of 2
+2,8:26.0,39-41,Thunder,C. Holmgren misses 2-pt dunk from 2 ft
+2,8:22.0,39-41,Thunder,Offensive rebound by J. Williams
+2,8:18.0,39-41,Thunder,A. Mitchell misses 3-pt jump shot from 25 ft
+2,8:15.0,39-41,76ers,Defensive rebound by A. Bona
+2,8:03.0,39-41,76ers,V. Edgecombe misses 3-pt jump shot from 28 ft
+2,8:02.0,39-41,Thunder,Defensive rebound by Team
+2,7:45.0,39-44,Thunder,A. Mitchell makes 3-pt jump shot from 23 ft (assist by A. Wiggins)
+2,7:22.0,41-44,76ers,J. McCain makes 2-pt jump shot from 9 ft
+2,7:10.0,41-47,Thunder,C. Holmgren makes 3-pt jump shot from 25 ft (assist by C. Wallace)
+2,6:56.0,44-47,76ers,P. George makes 3-pt jump shot from 25 ft
+2,6:41.0,44-47,Thunder,J. Williams misses 2-pt layup from 7 ft
+2,6:40.0,44-47,Thunder,Offensive rebound by Team
+2,6:40.0,44-47,76ers,Loose ball foul by J. Edwards (drawn by C. Holmgren)
+2,6:40.0,44-47,Thunder,C. Holmgren misses free throw 1 of 2
+2,6:40.0,44-47,Thunder,Offensive rebound by Team
+2,6:40.0,44-47,76ers,D. Barlow enters the game for V. Edgecombe
+2,6:40.0,44-47,76ers,T. Maxey enters the game for P. George
+2,6:40.0,44-47,Thunder,A. Caruso enters the game for C. Wallace
+2,6:40.0,44-47,Thunder,L. Dort enters the game for J. Williams
+2,6:40.0,44-48,Thunder,C. Holmgren makes free throw 2 of 2
+2,6:24.0,44-48,76ers,J. Edwards misses 2-pt jump shot from 13 ft
+2,6:20.0,44-48,Thunder,Defensive rebound by A. Wiggins
+2,6:14.0,44-48,Thunder,C. Holmgren misses 3-pt jump shot from 26 ft
+2,6:11.0,44-48,76ers,Defensive rebound by J. McCain
+2,5:55.0,46-48,76ers,T. Maxey makes 2-pt layup from 5 ft
+2,5:42.0,46-48,Thunder,A. Mitchell misses 2-pt layup from 6 ft
+2,5:39.0,46-48,76ers,Defensive rebound by T. Maxey
+2,5:38.0,48-48,76ers,J. McCain makes 2-pt layup from 2 ft (assist by T. Maxey)
+2,5:23.0,48-51,Thunder,A. Wiggins makes 3-pt jump shot from 25 ft (assist by C. Holmgren)
+2,5:04.0,51-51,76ers,J. Edwards makes 3-pt jump shot from 27 ft (assist by A. Bona)
+2,5:01.0,51-51,Thunder,Oklahoma City full timeout
+2,5:01.0,51-51,76ers,A. Drummond enters the game for A. Bona
+2,5:01.0,51-51,76ers,V. Edgecombe enters the game for J. McCain
+2,5:01.0,51-51,Thunder,S. Gilgeous-Alexander enters the game for A. Mitchell
+2,4:43.0,51-51,Thunder,A. Caruso misses 3-pt jump shot from 23 ft
+2,4:41.0,51-51,Thunder,Offensive rebound by C. Holmgren
+2,4:40.0,51-53,Thunder,C. Holmgren makes 2-pt layup from 2 ft
+2,4:26.0,51-53,76ers,Turnover by V. Edgecombe (bad pass)
+2,4:19.0,51-53,Thunder,A. Caruso misses 3-pt jump shot from 22 ft
+2,4:18.0,51-53,76ers,Defensive rebound by J. Edwards
+2,4:18.0,51-53,76ers,Philadelphia full timeout
+2,4:18.0,51-53,76ers,Instant Replay (Challenge: Ruling Stands)
+2,4:06.0,53-53,76ers,A. Drummond makes 2-pt dunk from 2 ft (assist by D. Barlow)
+2,3:54.0,53-55,Thunder,C. Holmgren makes 2-pt dunk from 1 ft (assist by S. Gilgeous-Alexander)
+2,3:41.0,53-55,76ers,Shooting foul by C. Holmgren (drawn by T. Maxey)
+2,3:41.0,54-55,76ers,T. Maxey makes free throw 1 of 2
+2,3:41.0,54-55,Thunder,J. Williams enters the game for A. Wiggins
+2,3:41.0,55-55,76ers,T. Maxey makes free throw 2 of 2
+2,3:19.0,55-57,Thunder,S. Gilgeous-Alexander makes 2-pt layup from 1 ft
+2,2:58.0,58-57,76ers,J. Edwards makes 3-pt jump shot from 26 ft
+2,2:40.0,58-59,Thunder,S. Gilgeous-Alexander makes 2-pt layup from 3 ft
+2,2:22.0,58-59,76ers,D. Barlow misses 3-pt jump shot from 24 ft
+2,2:18.0,58-59,Thunder,Defensive rebound by S. Gilgeous-Alexander
+2,2:14.0,58-59,Thunder,J. Williams misses 3-pt jump shot from 26 ft
+2,2:10.0,58-59,76ers,Defensive rebound by A. Drummond
+2,2:05.0,58-59,76ers,Offensive foul by A. Drummond (drawn by L. Dort)
+2,2:05.0,58-59,76ers,Turnover by A. Drummond (offensive foul)
+2,2:05.0,58-59,76ers,P. George enters the game for A. Drummond
+2,2:05.0,58-59,Thunder,I. Hartenstein enters the game for A. Caruso
+2,2:05.0,58-59,Thunder,A. Mitchell enters the game for C. Holmgren
+2,1:53.0,58-59,Thunder,S. Gilgeous-Alexander misses 3-pt jump shot from 25 ft
+2,1:53.0,58-59,76ers,Defensive rebound by Team
+2,1:42.0,61-59,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+2,1:28.0,61-59,Thunder,Shooting foul by P. George (drawn by J. Williams)
+2,1:28.0,61-60,Thunder,J. Williams makes free throw 1 of 2
+2,1:28.0,61-60,Thunder,J. Williams misses free throw 2 of 2
+2,1:25.0,61-60,76ers,Defensive rebound by J. Edwards
+2,1:09.0,61-60,76ers,Turnover by P. George (lost ball; steal by J. Williams)
+2,1:03.0,61-62,Thunder,S. Gilgeous-Alexander makes 2-pt layup at rim
+2,0:56.0,61-62,76ers,Shooting foul by J. Williams (drawn by T. Maxey)
+2,0:56.0,62-62,76ers,T. Maxey makes free throw 1 of 2
+2,0:56.0,62-62,76ers,T. Maxey misses free throw 2 of 2
+2,0:55.0,62-62,Thunder,Defensive rebound by I. Hartenstein
+2,0:36.0,62-64,Thunder,S. Gilgeous-Alexander makes 2-pt jump shot from 13 ft
+2,0:12.0,62-64,76ers,V. Edgecombe misses 2-pt jump shot from 16 ft
+2,0:09.0,62-64,76ers,Offensive rebound by D. Barlow
+2,0:02.0,62-64,76ers,T. Maxey misses 2-pt layup from 5 ft
+2,0:02.0,62-64,Thunder,Defensive rebound by A. Mitchell
+2,0:00.0,62-64,Thunder,Offensive rebound by Team
+3,11:46.0,62-66,Thunder,C. Holmgren makes 2-pt dunk from 1 ft (assist by I. Hartenstein)
+3,11:29.0,64-66,76ers,D. Barlow makes 2-pt layup from 2 ft (assist by T. Maxey)
+3,11:11.0,64-66,Thunder,Turnover by C. Holmgren (traveling)
+3,10:58.0,64-66,76ers,V. Edgecombe misses 2-pt jump shot from 12 ft
+3,10:56.0,64-66,Thunder,Defensive rebound by I. Hartenstein
+3,10:51.0,64-66,Thunder,Personal foul by D. Barlow (drawn by C. Holmgren)
+3,10:45.0,64-66,Thunder,J. Williams misses 2-pt layup from 2 ft
+3,10:43.0,64-66,Thunder,Offensive rebound by C. Holmgren
+3,10:43.0,64-68,Thunder,C. Holmgren makes 2-pt dunk from 3 ft
+3,10:28.0,64-68,76ers,Turnover by D. Barlow (lost ball; steal by I. Hartenstein)
+3,10:24.0,64-68,Thunder,Turnover by C. Holmgren (out of bounds lost ball)
+3,10:06.0,64-68,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+3,10:03.0,64-68,76ers,Offensive rebound by D. Barlow
+3,10:01.0,67-68,76ers,P. George makes 3-pt jump shot from 25 ft (assist by D. Barlow)
+3,9:50.0,67-70,Thunder,I. Hartenstein makes 2-pt dunk from 1 ft (assist by J. Williams)
+3,9:30.0,67-70,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+3,9:29.0,67-70,Thunder,Defensive rebound by Team
+3,9:18.0,67-70,Thunder,Shooting foul by V. Edgecombe (drawn by S. Gilgeous-Alexander)
+3,9:18.0,67-71,Thunder,S. Gilgeous-Alexander makes free throw 1 of 2
+3,9:18.0,67-72,Thunder,S. Gilgeous-Alexander makes free throw 2 of 2
+3,9:05.0,70-72,76ers,V. Edgecombe makes 3-pt jump shot from 27 ft
+3,8:50.0,70-72,Thunder,J. Williams misses 2-pt layup from 6 ft
+3,8:50.0,70-72,76ers,Defensive rebound by Team
+3,8:50.0,70-72,Thunder,Loose ball foul by I. Hartenstein (drawn by P. George)
+3,8:42.0,70-72,76ers,Turnover by T. Maxey (lost ball; steal by L. Dort)
+3,8:40.0,70-74,Thunder,J. Williams makes 2-pt layup from 2 ft
+3,8:40.0,70-74,Thunder,Shooting foul by V. Edgecombe (drawn by J. Williams)
+3,8:40.0,70-74,Thunder,A. Caruso enters the game for I. Hartenstein
+3,8:40.0,70-75,Thunder,J. Williams makes free throw 1 of 1
+3,8:23.0,73-75,76ers,P. George makes 3-pt jump shot from 22 ft (assist by T. Maxey)
+3,8:01.0,73-78,Thunder,C. Holmgren makes 3-pt jump shot from 24 ft (assist by S. Gilgeous-Alexander)
+3,7:49.0,73-78,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+3,7:46.0,73-78,Thunder,Defensive rebound by J. Williams
+3,7:36.0,73-80,Thunder,A. Caruso makes 2-pt layup from 2 ft (assist by J. Williams)
+3,7:36.0,73-80,76ers,Philadelphia full timeout
+3,7:36.0,73-80,76ers,A. Bona enters the game for A. Drummond
+3,7:17.0,73-80,76ers,Offensive foul by T. Maxey (drawn by J. Williams)
+3,7:17.0,73-80,76ers,Turnover by T. Maxey (offensive foul)
+3,7:17.0,73-80,76ers,Q. Grimes enters the game for D. Barlow
+3,7:05.0,73-80,Thunder,Offensive foul by C. Holmgren (drawn by T. Maxey)
+3,7:05.0,73-80,Thunder,Turnover by C. Holmgren (offensive foul)
+3,6:51.0,73-80,76ers,P. George misses 2-pt jump shot from 11 ft (block by L. Dort)
+3,6:49.0,73-80,Thunder,Defensive rebound by S. Gilgeous-Alexander
+3,6:43.0,73-82,Thunder,S. Gilgeous-Alexander makes 2-pt jump shot from 11 ft
+3,6:26.0,73-82,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+3,6:25.0,73-82,Thunder,Defensive rebound by Team
+3,6:15.0,73-82,Thunder,J. Williams misses 2-pt jump shot from 11 ft
+3,6:13.0,73-82,76ers,Defensive rebound by Q. Grimes
+3,6:04.0,73-82,76ers,Turnover by P. George (bad pass; steal by J. Williams)
+3,6:01.0,73-84,Thunder,J. Williams makes 2-pt layup from 2 ft
+3,5:49.0,73-84,76ers,P. George misses 3-pt jump shot from 23 ft
+3,5:47.0,73-84,76ers,Offensive rebound by Team
+3,5:47.0,73-84,Thunder,Loose ball foul by L. Dort (drawn by A. Bona)
+3,5:34.0,73-84,76ers,T. Maxey misses 3-pt jump shot from 23 ft
+3,5:34.0,73-84,Thunder,Defensive rebound by Team
+3,5:26.0,73-86,Thunder,S. Gilgeous-Alexander makes 2-pt layup from 4 ft
+3,5:26.0,73-86,76ers,Philadelphia full timeout
+3,5:26.0,73-86,76ers,J. McCain enters the game for V. Edgecombe
+3,5:10.0,73-86,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+3,5:07.0,73-86,Thunder,Defensive rebound by Team
+3,5:07.0,73-86,Thunder,Oklahoma City full timeout
+3,5:07.0,73-86,Thunder,Instant Replay (Challenge: Ruling Stands)
+3,4:54.0,73-86,Thunder,L. Dort misses 3-pt jump shot from 26 ft
+3,4:51.0,73-86,76ers,Defensive rebound by P. George
+3,4:39.0,76-86,76ers,J. McCain makes 3-pt jump shot from 23 ft (assist by Q. Grimes)
+3,4:25.0,76-88,Thunder,C. Holmgren makes 2-pt dunk from 1 ft (assist by S. Gilgeous-Alexander)
+3,4:13.0,79-88,76ers,Q. Grimes makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+3,3:58.0,79-88,Thunder,C. Holmgren misses 3-pt jump shot from 24 ft
+3,3:56.0,79-88,76ers,Defensive rebound by P. George
+3,3:43.0,79-88,76ers,Offensive foul by A. Bona (drawn by C. Holmgren)
+3,3:43.0,79-88,76ers,Turnover by A. Bona (offensive foul)
+3,3:43.0,79-88,76ers,J. Edwards enters the game for P. George
+3,3:43.0,79-88,Thunder,A. Mitchell enters the game for L. Dort
+3,3:43.0,79-88,Thunder,C. Wallace enters the game for J. Williams
+3,3:22.0,79-91,Thunder,A. Caruso makes 3-pt jump shot from 23 ft (assist by S. Gilgeous-Alexander)
+3,3:01.0,79-91,76ers,Q. Grimes misses 3-pt jump shot from 28 ft
+3,2:58.0,79-91,Thunder,Defensive rebound by C. Holmgren
+3,2:50.0,79-93,Thunder,S. Gilgeous-Alexander makes 2-pt layup from 2 ft
+3,2:39.0,79-93,76ers,Offensive foul by A. Bona (drawn by A. Caruso)
+3,2:39.0,79-93,76ers,Turnover by A. Bona (offensive foul)
+3,2:39.0,79-93,76ers,V. Edgecombe enters the game for T. Maxey
+3,2:39.0,79-93,Thunder,I. Hartenstein enters the game for A. Caruso
+3,2:39.0,79-93,Thunder,A. Wiggins enters the game for C. Holmgren
+3,2:27.0,79-95,Thunder,A. Mitchell makes 2-pt jump shot from 6 ft (assist by A. Wiggins)
+3,2:05.0,79-95,76ers,Turnover by J. McCain (step out of bounds)
+3,1:53.0,79-95,Thunder,Shooting foul by V. Edgecombe (drawn by S. Gilgeous-Alexander)
+3,1:53.0,79-96,Thunder,S. Gilgeous-Alexander makes free throw 1 of 2
+3,1:53.0,79-97,Thunder,S. Gilgeous-Alexander makes free throw 2 of 2
+3,1:43.0,79-97,76ers,J. Edwards misses 3-pt jump shot from 25 ft
+3,1:39.0,79-97,Thunder,Defensive rebound by C. Wallace
+3,1:33.0,79-97,Thunder,I. Hartenstein misses 2-pt dunk from 1 ft
+3,1:33.0,79-97,Thunder,Offensive rebound by Team
+3,1:33.0,79-97,Thunder,Turnover by I. Hartenstein (off goaltending)
+3,1:22.0,79-97,76ers,Shooting foul by I. Hartenstein (drawn by V. Edgecombe)
+3,1:22.0,79-97,76ers,V. Edgecombe misses free throw 1 of 2
+3,1:22.0,79-97,76ers,Offensive rebound by Team
+3,1:22.0,80-97,76ers,V. Edgecombe makes free throw 2 of 2
+3,1:08.0,80-97,Thunder,A. Wiggins misses 3-pt jump shot from 24 ft
+3,1:04.0,80-97,76ers,Defensive rebound by J. Edwards
+3,1:01.0,80-97,76ers,Shooting foul by A. Mitchell (drawn by V. Edgecombe)
+3,1:01.0,80-97,76ers,Philadelphia full timeout
+3,1:01.0,80-97,76ers,Instant Replay (Challenge: Ruling Stands)
+3,1:01.0,81-97,76ers,V. Edgecombe makes free throw 1 of 2
+3,1:01.0,81-97,76ers,V. Edgecombe misses free throw 2 of 2
+3,0:59.0,81-97,76ers,Offensive rebound by A. Bona
+3,0:59.0,83-97,76ers,A. Bona makes 2-pt layup from 1 ft
+3,0:47.0,83-99,Thunder,C. Wallace makes 2-pt dunk from 1 ft (assist by I. Hartenstein)
+3,0:36.0,83-99,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+3,0:34.0,83-99,Thunder,Defensive rebound by Team
+3,0:30.0,83-99,Thunder,S. Gilgeous-Alexander misses 3-pt jump shot from 26 ft
+3,0:27.0,83-99,76ers,Defensive rebound by J. Edwards
+3,0:18.0,83-99,76ers,Turnover by J. Edwards (bad pass; steal by A. Wiggins)
+3,0:16.0,83-101,Thunder,A. Wiggins makes 2-pt dunk from 1 ft (assist by A. Mitchell)
+3,0:04.0,86-101,76ers,J. McCain makes 3-pt jump shot from 26 ft
+3,0:00.0,86-101,Thunder,Shooting foul by J. Edwards (drawn by S. Gilgeous-Alexander)
+3,0:00.0,86-101,Thunder,S. Gilgeous-Alexander misses free throw 1 of 3
+3,0:00.0,86-101,Thunder,Offensive rebound by Team
+3,0:00.0,86-102,Thunder,S. Gilgeous-Alexander makes free throw 2 of 3
+3,0:00.0,86-102,Thunder,J. Williams enters the game for I. Hartenstein
+3,0:00.0,86-102,Thunder,S. Gilgeous-Alexander misses free throw 3 of 3
+3,0:00.0,86-102,Thunder,Offensive rebound by C. Wallace
+4,11:39.0,86-102,76ers,J. Edwards misses 2-pt layup from 3 ft (block by C. Holmgren)
+4,11:36.0,86-102,76ers,Offensive rebound by A. Drummond
+4,11:35.0,86-102,76ers,Turnover by A. Drummond (bad pass; steal by A. Mitchell)
+4,11:21.0,86-102,Thunder,Shooting foul by Q. Grimes (drawn by C. Holmgren)
+4,11:21.0,86-103,Thunder,C. Holmgren makes free throw 1 of 2
+4,11:21.0,86-104,Thunder,C. Holmgren makes free throw 2 of 2
+4,11:12.0,86-104,76ers,P. George misses 3-pt jump shot from 25 ft
+4,11:09.0,86-104,Thunder,Defensive rebound by A. Wiggins
+4,11:02.0,86-104,Thunder,A. Mitchell misses 3-pt jump shot from 24 ft
+4,11:00.0,86-104,Thunder,Offensive rebound by C. Holmgren
+4,10:57.0,86-106,Thunder,C. Holmgren makes 2-pt layup from 2 ft
+4,10:36.0,86-106,76ers,J. Edwards misses 3-pt jump shot from 27 ft
+4,10:35.0,86-106,76ers,Offensive rebound by Team
+4,10:35.0,86-106,Thunder,Loose ball foul by C. Holmgren (drawn by A. Drummond)
+4,10:28.0,86-106,76ers,Personal foul by A. Mitchell (drawn by Q. Grimes)
+4,10:18.0,89-106,76ers,Q. Grimes makes 3-pt jump shot from 25 ft (assist by J. Edwards)
+4,10:02.0,89-108,Thunder,C. Wallace makes 2-pt layup from 5 ft (assist by J. Williams)
+4,9:49.0,89-108,76ers,Q. Grimes misses 2-pt layup from 2 ft (block by C. Holmgren)
+4,9:49.0,89-108,Thunder,Defensive rebound by Team
+4,9:40.0,89-108,Thunder,Shooting foul by A. Drummond (drawn by A. Mitchell)
+4,9:40.0,89-108,76ers,V. Edgecombe enters the game for J. Edwards
+4,9:40.0,89-109,Thunder,A. Mitchell makes free throw 1 of 2
+4,9:40.0,89-109,Thunder,A. Mitchell misses free throw 2 of 2
+4,9:38.0,89-109,76ers,Defensive rebound by A. Drummond
+4,9:23.0,89-109,76ers,V. Edgecombe misses 2-pt jump shot from 15 ft
+4,9:21.0,89-109,76ers,Offensive rebound by V. Edgecombe
+4,9:12.0,89-109,76ers,T. Maxey misses 2-pt jump shot from 15 ft
+4,9:10.0,89-109,76ers,Offensive rebound by A. Drummond
+4,9:06.0,89-109,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+4,9:03.0,89-109,Thunder,Defensive rebound by C. Holmgren
+4,8:55.0,89-111,Thunder,C. Holmgren makes 2-pt dunk from 1 ft (assist by A. Mitchell)
+4,8:46.0,89-111,76ers,Offensive foul by A. Drummond (drawn by A. Mitchell)
+4,8:46.0,89-111,76ers,Turnover by A. Drummond (offensive foul)
+4,8:46.0,89-111,76ers,A. Bona enters the game for A. Drummond
+4,8:31.0,89-111,Thunder,Turnover by C. Holmgren (lost ball; steal by P. George)
+4,8:25.0,89-111,76ers,Turnover by T. Maxey (bad pass; steal by A. Mitchell)
+4,8:14.0,89-114,Thunder,A. Wiggins makes 3-pt jump shot from 23 ft (assist by J. Williams)
+4,7:50.0,89-114,76ers,V. Edgecombe misses 2-pt jump shot from 9 ft
+4,7:47.0,89-114,Thunder,Defensive rebound by J. Williams
+4,7:39.0,89-114,Thunder,J. Williams misses 2-pt layup from 7 ft
+4,7:37.0,89-114,76ers,Defensive rebound by Q. Grimes
+4,7:29.0,89-114,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+4,7:26.0,89-114,Thunder,Defensive rebound by C. Holmgren
+4,7:16.0,89-114,Thunder,C. Holmgren misses 2-pt layup from 1 ft
+4,7:15.0,89-114,76ers,Defensive rebound by A. Bona
+4,7:08.0,89-114,76ers,T. Maxey misses 2-pt jump shot from 13 ft
+4,7:05.0,89-114,76ers,Offensive rebound by A. Bona
+4,7:05.0,89-114,76ers,Shooting foul by A. Mitchell (drawn by A. Bona)
+4,7:05.0,89-114,Thunder,Technical foul by J. Williams
+4,7:05.0,90-114,76ers,T. Maxey makes technical free throw
+4,7:05.0,91-114,76ers,A. Bona makes free throw 1 of 2
+4,7:05.0,91-114,76ers,D. Barlow enters the game for P. George
+4,7:05.0,91-114,76ers,J. McCain enters the game for Q. Grimes
+4,7:05.0,91-114,Thunder,K. Williams enters the game for A. Mitchell
+4,7:05.0,91-114,76ers,A. Bona misses free throw 2 of 2
+4,7:03.0,91-114,Thunder,Defensive rebound by C. Holmgren
+4,6:51.0,91-114,Thunder,Turnover by J. Williams (lost ball; steal by T. Maxey)
+4,6:48.0,93-114,76ers,T. Maxey makes 2-pt layup from 1 ft
+4,6:48.0,93-114,Thunder,Oklahoma City full timeout
+4,6:31.0,93-114,Thunder,C. Holmgren misses 2-pt dunk from 4 ft (block by A. Bona)
+4,6:31.0,93-114,Thunder,Offensive rebound by Team
+4,6:25.0,93-116,Thunder,A. Wiggins makes 2-pt layup from 2 ft (assist by K. Williams)
+4,6:13.0,93-116,76ers,D. Barlow misses 2-pt layup from 2 ft
+4,6:10.0,93-116,Thunder,Defensive rebound by K. Williams
+4,5:59.0,93-118,Thunder,A. Wiggins makes 2-pt layup from 2 ft (assist by C. Wallace)
+4,5:35.0,93-118,76ers,V. Edgecombe misses 2-pt jump shot from 12 ft
+4,5:31.0,93-118,Thunder,Defensive rebound by Team
+4,5:31.0,93-118,Thunder,B. Carlson enters the game for C. Holmgren
+4,5:18.0,93-118,Thunder,K. Williams misses 3-pt jump shot from 23 ft
+4,5:14.0,93-118,76ers,Defensive rebound by D. Barlow
+4,5:06.0,93-118,76ers,Turnover by J. McCain (bad pass; steal by B. Carlson)
+4,4:51.0,93-118,Thunder,C. Wallace misses 3-pt jump shot from 24 ft
+4,4:47.0,93-118,76ers,Defensive rebound by J. McCain
+4,4:43.0,93-118,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+4,4:41.0,93-118,76ers,Offensive rebound by A. Bona
+4,4:41.0,93-118,76ers,Personal foul by J. Williams (drawn by A. Bona)
+4,4:41.0,93-118,Thunder,C. Youngblood enters the game for J. Williams
+4,4:30.0,93-118,76ers,D. Barlow misses 3-pt jump shot from 23 ft
+4,4:28.0,93-118,76ers,Offensive rebound by A. Bona
+4,4:26.0,93-118,76ers,J. McCain misses 3-pt jump shot from 27 ft
+4,4:22.0,93-118,Thunder,Defensive rebound by B. Carlson
+4,4:10.0,93-120,Thunder,A. Wiggins makes 2-pt layup from 2 ft (assist by K. Williams)
+4,3:55.0,95-120,76ers,T. Maxey makes 2-pt layup from 4 ft
+4,3:38.0,95-120,Thunder,C. Youngblood misses 3-pt jump shot from 23 ft
+4,3:35.0,95-120,Thunder,Offensive rebound by K. Williams
+4,3:35.0,95-120,Thunder,K. Williams misses 2-pt layup from 2 ft
+4,3:33.0,95-120,76ers,Defensive rebound by J. McCain
+4,3:30.0,95-120,76ers,Philadelphia full timeout
+4,3:30.0,95-120,76ers,J. Edwards enters the game for D. Barlow
+4,3:30.0,95-120,76ers,Q. Grimes enters the game for V. Edgecombe
+4,3:30.0,95-120,76ers,J. Walker enters the game for T. Maxey
+4,3:21.0,95-120,76ers,Turnover by J. McCain (lost ball; steal by C. Wallace)
+4,3:16.0,95-120,Thunder,A. Wiggins misses 3-pt jump shot from 26 ft
+4,3:13.0,95-120,76ers,Defensive rebound by J. Walker
+4,3:00.0,97-120,76ers,J. Walker makes 2-pt dunk from 1 ft (assist by Q. Grimes)
+4,2:44.0,97-120,Thunder,C. Youngblood misses 3-pt jump shot from 26 ft
+4,2:42.0,97-120,76ers,Defensive rebound by J. Walker
+4,2:33.0,97-120,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+4,2:29.0,97-120,76ers,Offensive rebound by A. Bona
+4,2:23.0,97-120,76ers,Personal foul by C. Wallace (drawn by Q. Grimes)
+4,2:23.0,98-120,76ers,Q. Grimes makes free throw 1 of 2
+4,2:23.0,99-120,76ers,Q. Grimes makes free throw 2 of 2
+4,2:08.0,99-120,Thunder,B. Carlson misses 2-pt jump shot from 13 ft
+4,2:04.0,99-120,Thunder,Offensive rebound by B. Carlson
+4,2:04.0,99-122,Thunder,B. Carlson makes 2-pt layup at rim
+4,1:52.0,99-122,76ers,Turnover by Q. Grimes (bad pass; steal by C. Wallace)
+4,1:51.0,99-124,Thunder,C. Wallace makes 2-pt dunk from 1 ft
+4,1:35.0,102-124,76ers,J. Edwards makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+4,1:23.0,102-126,Thunder,B. Carlson makes 2-pt dunk from 1 ft (assist by A. Wiggins)
+4,1:09.0,102-126,76ers,Shooting foul by B. Carlson (drawn by Q. Grimes)
+4,1:09.0,103-126,76ers,Q. Grimes makes free throw 1 of 2
+4,1:09.0,104-126,76ers,Q. Grimes makes free throw 2 of 2
+4,0:55.0,104-126,Thunder,C. Wallace misses 2-pt layup from 3 ft (block by A. Bona)
+4,0:55.0,104-126,Thunder,Offensive rebound by Team
+4,0:52.0,104-126,Thunder,C. Wallace misses 3-pt jump shot from 27 ft
+4,0:49.0,104-126,Thunder,Offensive rebound by K. Williams
+4,0:48.0,104-129,Thunder,K. Williams makes 3-pt jump shot from 25 ft
+4,0:40.0,104-129,76ers,J. Edwards misses 3-pt jump shot from 25 ft
+4,0:38.0,104-129,76ers,Offensive rebound by J. Walker
+4,0:34.0,104-129,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+4,0:30.0,104-129,Thunder,Defensive rebound by K. Williams
+4,0:07.0,104-129,Thunder,Turnover by Team (shot clock)

@@ -1,0 +1,506 @@
+quarter,time,score,team,description
+1,11:45.0,0-2,Grizzlies,J. Morant makes 2-pt jump shot from 8 ft
+1,11:29.0,0-2,76ers,J. Embiid misses 2-pt hook shot from 7 ft
+1,11:27.0,0-2,Grizzlies,Defensive rebound by C. Coward
+1,11:22.0,0-2,Grizzlies,Turnover by J. Morant (bad pass; steal by V. Edgecombe)
+1,11:17.0,0-2,76ers,P. George misses 2-pt jump shot from 10 ft
+1,11:14.0,0-2,Grizzlies,Defensive rebound by J. Jackson
+1,11:07.0,0-4,Grizzlies,C. Coward makes 2-pt jump shot from 11 ft (assist by J. Jackson)
+1,10:45.0,3-4,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft
+1,10:29.0,3-4,Grizzlies,Turnover by J. Morant (bad pass; steal by D. Barlow)
+1,10:24.0,3-4,76ers,Turnover by V. Edgecombe (lost ball; steal by J. Morant)
+1,10:20.0,3-6,Grizzlies,J. Morant makes 2-pt layup from 2 ft (assist by J. Jackson)
+1,10:08.0,3-6,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+1,10:05.0,3-6,Grizzlies,Defensive rebound by J. Jackson
+1,10:02.0,3-6,Grizzlies,Turnover by C. Coward (bad pass; steal by V. Edgecombe)
+1,9:46.0,3-6,76ers,Turnover by P. George (out of bounds lost ball)
+1,9:46.0,3-6,Grizzlies,J. Landale enters the game for C. Koloko
+1,9:35.0,3-6,Grizzlies,C. Coward misses 3-pt jump shot from 23 ft
+1,9:32.0,3-6,Grizzlies,Offensive rebound by C. Coward
+1,9:24.0,3-9,Grizzlies,J. Wells makes 3-pt jump shot from 25 ft (assist by J. Landale)
+1,9:07.0,5-9,76ers,J. Embiid makes 2-pt jump shot from 15 ft (assist by T. Maxey)
+1,8:50.0,5-12,Grizzlies,J. Jackson makes 3-pt jump shot from 28 ft (assist by J. Wells)
+1,8:28.0,7-12,76ers,D. Barlow makes 2-pt layup from 3 ft (assist by J. Embiid)
+1,8:15.0,7-14,Grizzlies,J. Wells makes 2-pt jump shot from 13 ft (assist by J. Landale)
+1,7:57.0,7-14,76ers,P. George misses 3-pt jump shot from 26 ft
+1,7:56.0,7-14,Grizzlies,Defensive rebound by J. Jackson
+1,7:51.0,7-17,Grizzlies,C. Coward makes 3-pt jump shot from 23 ft (assist by J. Morant)
+1,7:42.0,7-17,76ers,Philadelphia full timeout
+1,7:42.0,7-17,Grizzlies,S. Aldama enters the game for C. Coward
+1,7:42.0,7-17,Grizzlies,G. Jackson enters the game for J. Jackson
+1,7:21.0,9-17,76ers,T. Maxey makes 2-pt jump shot from 21 ft (assist by J. Embiid)
+1,7:03.0,9-17,Grizzlies,Shooting foul by J. Embiid (drawn by J. Morant)
+1,7:03.0,9-17,Grizzlies,J. Morant misses free throw 1 of 2
+1,7:03.0,9-17,Grizzlies,Offensive rebound by Team
+1,7:03.0,9-18,Grizzlies,J. Morant makes free throw 2 of 2
+1,6:43.0,11-18,76ers,T. Maxey makes 2-pt layup from 1 ft
+1,6:25.0,11-18,Grizzlies,S. Aldama misses 2-pt jump shot from 7 ft
+1,6:23.0,11-18,76ers,Defensive rebound by P. George
+1,6:14.0,13-18,76ers,J. Embiid makes 2-pt jump shot from 12 ft (assist by P. George)
+1,6:06.0,13-20,Grizzlies,J. Morant makes 2-pt jump shot from 3 ft
+1,5:52.0,13-20,76ers,J. Embiid misses 2-pt layup from 3 ft (block by S. Aldama)
+1,5:48.0,13-20,76ers,Offensive rebound by D. Barlow
+1,5:47.0,13-20,76ers,D. Barlow misses 2-pt layup from 2 ft (block by G. Jackson)
+1,5:45.0,13-20,Grizzlies,Defensive rebound by S. Aldama
+1,5:44.0,13-20,Grizzlies,Turnover by S. Aldama (bad pass; steal by D. Barlow)
+1,5:43.0,15-20,76ers,D. Barlow makes 2-pt dunk from 3 ft
+1,5:37.0,15-20,Grizzlies,J. Wells misses 2-pt jump shot from 3 ft
+1,5:35.0,15-20,76ers,Defensive rebound by T. Maxey
+1,5:33.0,15-20,76ers,Offensive foul by J. Embiid (drawn by J. Wells)
+1,5:33.0,15-20,76ers,Turnover by J. Embiid (offensive foul)
+1,5:33.0,15-20,76ers,A. Bona enters the game for J. Embiid
+1,5:33.0,15-20,76ers,Q. Grimes enters the game for P. George
+1,5:33.0,15-20,Grizzlies,C. Spencer enters the game for J. Morant
+1,5:20.0,15-20,Grizzlies,Turnover by J. Wells (lost ball; steal by T. Maxey)
+1,5:08.0,17-20,76ers,V. Edgecombe makes 2-pt jump shot from 9 ft (assist by Q. Grimes)
+1,4:51.0,17-20,Grizzlies,J. Landale misses 3-pt jump shot from 26 ft
+1,4:48.0,17-20,Grizzlies,Offensive rebound by G. Jackson
+1,4:47.0,17-22,Grizzlies,G. Jackson makes 2-pt layup from 2 ft
+1,4:33.0,17-22,76ers,D. Barlow misses 2-pt layup from 3 ft (block by S. Aldama)
+1,4:29.0,17-22,76ers,Offensive rebound by D. Barlow
+1,4:29.0,19-22,76ers,D. Barlow makes 2-pt layup at rim
+1,4:24.0,19-22,Grizzlies,J. Landale misses 3-pt jump shot from 25 ft
+1,4:20.0,19-22,76ers,Defensive rebound by T. Maxey
+1,4:11.0,21-22,76ers,T. Maxey makes 2-pt jump shot from 7 ft
+1,4:09.0,21-22,Grizzlies,Memphis full timeout
+1,4:09.0,21-22,Grizzlies,C. Koloko enters the game for J. Landale
+1,4:09.0,21-22,Grizzlies,J. Small enters the game for J. Wells
+1,3:51.0,21-25,Grizzlies,S. Aldama makes 3-pt jump shot from 23 ft (assist by G. Jackson)
+1,3:39.0,24-25,76ers,T. Maxey makes 3-pt jump shot from 29 ft
+1,3:24.0,24-25,Grizzlies,G. Jackson misses 3-pt jump shot from 23 ft
+1,3:21.0,24-25,Grizzlies,Offensive rebound by J. Small
+1,3:16.0,24-28,Grizzlies,J. Small makes 3-pt jump shot from 23 ft (assist by C. Spencer)
+1,2:53.0,24-28,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+1,2:50.0,24-28,Grizzlies,Defensive rebound by J. Small
+1,2:44.0,24-28,Grizzlies,Shooting foul by V. Edgecombe (drawn by G. Jackson)
+1,2:44.0,24-29,Grizzlies,G. Jackson makes free throw 1 of 2
+1,2:44.0,24-29,76ers,P. George enters the game for D. Barlow
+1,2:44.0,24-29,76ers,J. McCain enters the game for V. Edgecombe
+1,2:44.0,24-30,Grizzlies,G. Jackson makes free throw 2 of 2
+1,2:28.0,27-30,76ers,P. George makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+1,2:12.0,27-32,Grizzlies,S. Aldama makes 2-pt jump shot from 15 ft (assist by J. Small)
+1,1:57.0,30-32,76ers,Q. Grimes makes 3-pt jump shot from 23 ft (assist by P. George)
+1,1:49.0,30-34,Grizzlies,G. Jackson makes 2-pt layup from 3 ft (assist by C. Spencer)
+1,1:37.0,32-34,76ers,T. Maxey makes 2-pt jump shot from 4 ft
+1,1:37.0,32-34,76ers,Shooting foul by S. Aldama (drawn by T. Maxey)
+1,1:37.0,32-34,Grizzlies,C. Coward enters the game for G. Jackson
+1,1:37.0,32-34,Grizzlies,J. Jackson enters the game for C. Koloko
+1,1:37.0,33-34,76ers,T. Maxey makes free throw 1 of 1
+1,1:21.0,33-34,Grizzlies,J. Jackson misses 2-pt jump shot from 12 ft
+1,1:18.0,33-34,76ers,Defensive rebound by A. Bona
+1,1:12.0,33-34,76ers,J. McCain misses 2-pt jump shot from 10 ft
+1,1:12.0,33-34,76ers,Offensive rebound by Team
+1,1:12.0,33-34,Grizzlies,Loose ball foul by S. Aldama (drawn by A. Bona)
+1,1:12.0,33-34,76ers,A. Bona misses free throw 1 of 2
+1,1:12.0,33-34,76ers,Offensive rebound by Team
+1,1:12.0,34-34,76ers,A. Bona makes free throw 2 of 2
+1,0:59.0,34-37,Grizzlies,J. Jackson makes 3-pt jump shot from 26 ft (assist by J. Small)
+1,0:46.0,34-37,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+1,0:42.0,34-37,Grizzlies,Defensive rebound by C. Coward
+1,0:36.0,34-37,Grizzlies,C. Coward misses 2-pt jump shot from 6 ft
+1,0:33.0,34-37,76ers,Defensive rebound by A. Bona
+1,0:29.0,34-37,76ers,J. McCain misses 3-pt jump shot from 26 ft
+1,0:26.0,34-37,Grizzlies,Defensive rebound by S. Aldama
+1,0:14.0,34-40,Grizzlies,C. Spencer makes 3-pt jump shot from 25 ft (assist by C. Coward)
+1,0:02.0,34-40,76ers,T. Maxey misses 3-pt jump shot from 28 ft
+1,0:02.0,34-40,Grizzlies,Defensive rebound by C. Coward
+2,11:44.0,34-40,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+2,11:38.0,34-40,Grizzlies,Defensive rebound by J. Jackson
+2,11:29.0,34-40,Grizzlies,C. Coward misses 2-pt jump shot from 21 ft
+2,11:29.0,34-40,Grizzlies,Offensive rebound by Team
+2,11:20.0,34-42,Grizzlies,C. Coward makes 2-pt jump shot from 14 ft (assist by C. Koloko)
+2,11:06.0,37-42,76ers,P. George makes 3-pt jump shot from 25 ft (assist by V. Edgecombe)
+2,10:57.0,37-42,Grizzlies,Shooting foul by V. Edgecombe (drawn by J. Morant)
+2,10:57.0,37-43,Grizzlies,J. Morant makes free throw 1 of 2
+2,10:57.0,37-43,Grizzlies,J. Morant misses free throw 2 of 2
+2,10:51.0,37-43,76ers,Defensive rebound by J. McCain
+2,10:37.0,37-43,76ers,P. George misses 3-pt jump shot from 23 ft
+2,10:33.0,37-43,Grizzlies,Defensive rebound by C. Coward
+2,10:22.0,37-43,Grizzlies,J. Morant misses 2-pt jump shot from 6 ft
+2,10:19.0,37-43,76ers,Defensive rebound by J. Embiid
+2,10:16.0,37-43,76ers,Personal foul by C. Coward (drawn by J. McCain)
+2,9:59.0,37-43,76ers,Shooting foul by C. Koloko (drawn by P. George)
+2,9:59.0,38-43,76ers,P. George makes free throw 1 of 2
+2,9:59.0,39-43,76ers,P. George makes free throw 2 of 2
+2,9:49.0,39-43,Grizzlies,J. Jackson misses 2-pt jump shot from 10 ft
+2,9:46.0,39-43,76ers,Defensive rebound by J. Embiid
+2,9:40.0,41-43,76ers,J. Embiid makes 2-pt jump shot from 16 ft (assist by V. Edgecombe)
+2,9:26.0,41-43,Grizzlies,Shooting foul by V. Edgecombe (drawn by J. Jackson)
+2,9:26.0,41-44,Grizzlies,J. Jackson makes free throw 1 of 2
+2,9:26.0,41-44,76ers,D. Barlow enters the game for V. Edgecombe
+2,9:26.0,41-45,Grizzlies,J. Jackson makes free throw 2 of 2
+2,9:15.0,44-45,76ers,J. Embiid makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+2,8:51.0,44-45,Grizzlies,J. Jackson misses 3-pt jump shot from 25 ft
+2,8:48.0,44-45,76ers,Defensive rebound by J. McCain
+2,8:42.0,46-45,76ers,J. McCain makes 2-pt layup from 3 ft
+2,8:32.0,46-45,Grizzlies,C. Coward misses 2-pt jump shot from 4 ft
+2,8:29.0,46-45,Grizzlies,Offensive rebound by C. Coward
+2,8:29.0,46-45,Grizzlies,C. Coward misses 2-pt layup at rim
+2,8:27.0,46-45,Grizzlies,Offensive rebound by C. Coward
+2,8:27.0,46-47,Grizzlies,C. Coward makes 2-pt layup at rim
+2,8:11.0,48-47,76ers,P. George makes 2-pt layup from 3 ft (assist by J. Embiid)
+2,8:02.0,48-47,Grizzlies,J. Morant misses 2-pt jump shot from 14 ft
+2,8:00.0,48-47,76ers,Defensive rebound by Q. Grimes
+2,7:51.0,48-47,76ers,Offensive foul by P. George (drawn by C. Coward)
+2,7:51.0,48-47,76ers,Turnover by P. George (offensive foul)
+2,7:51.0,48-47,76ers,J. Edwards enters the game for P. George
+2,7:51.0,48-47,Grizzlies,S. Aldama enters the game for J. Jackson
+2,7:43.0,48-47,Grizzlies,G. Jackson misses 3-pt jump shot from 25 ft
+2,7:39.0,48-47,Grizzlies,Offensive rebound by C. Coward
+2,7:38.0,48-49,Grizzlies,C. Coward makes 2-pt layup from 2 ft
+2,7:25.0,48-49,76ers,Shooting foul by C. Koloko (drawn by J. Embiid)
+2,7:25.0,49-49,76ers,J. Embiid makes free throw 1 of 2
+2,7:25.0,50-49,76ers,J. Embiid makes free throw 2 of 2
+2,7:10.0,50-51,Grizzlies,C. Coward makes 2-pt dunk from 1 ft (assist by G. Jackson)
+2,6:52.0,50-51,76ers,J. McCain misses 2-pt layup from 3 ft
+2,6:50.0,50-51,Grizzlies,Defensive rebound by C. Coward
+2,6:47.0,50-51,Grizzlies,Shooting foul by J. Edwards (drawn by C. Coward)
+2,6:47.0,50-51,Grizzlies,Memphis full timeout
+2,6:47.0,50-51,76ers,T. Maxey enters the game for J. McCain
+2,6:47.0,50-51,Grizzlies,J. Landale enters the game for C. Koloko
+2,6:47.0,50-51,Grizzlies,C. Spencer enters the game for J. Morant
+2,6:47.0,50-52,Grizzlies,C. Coward makes free throw 1 of 2
+2,6:47.0,50-53,Grizzlies,C. Coward makes free throw 2 of 2
+2,6:31.0,50-53,76ers,J. Embiid misses 2-pt dunk from 1 ft
+2,6:27.0,50-53,Grizzlies,Defensive rebound by C. Spencer
+2,6:23.0,50-55,Grizzlies,J. Landale makes 2-pt layup from 1 ft (assist by C. Coward)
+2,6:05.0,52-55,76ers,J. Embiid makes 2-pt jump shot from 13 ft (assist by T. Maxey)
+2,5:57.0,52-58,Grizzlies,S. Aldama makes 3-pt jump shot from 26 ft (assist by C. Spencer)
+2,5:39.0,55-58,76ers,T. Maxey makes 3-pt jump shot from 25 ft (assist by J. Embiid)
+2,5:25.0,55-58,Grizzlies,Turnover by S. Aldama (bad pass; steal by J. Edwards)
+2,5:21.0,55-58,76ers,Shooting foul by C. Coward (drawn by Q. Grimes)
+2,5:21.0,56-58,76ers,Q. Grimes makes free throw 1 of 2
+2,5:21.0,56-58,Grizzlies,J. Jackson enters the game for C. Coward
+2,5:21.0,56-58,Grizzlies,J. Wells enters the game for G. Jackson
+2,5:21.0,56-58,76ers,Q. Grimes misses free throw 2 of 2
+2,5:19.0,56-58,Grizzlies,Defensive rebound by S. Aldama
+2,5:08.0,56-61,Grizzlies,S. Aldama makes 3-pt jump shot from 23 ft (assist by J. Jackson)
+2,4:55.0,56-61,76ers,J. Edwards misses 3-pt jump shot from 25 ft
+2,4:52.0,56-61,Grizzlies,Defensive rebound by J. Wells
+2,4:49.0,56-61,Grizzlies,Turnover by S. Aldama (bad pass)
+2,4:36.0,56-61,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+2,4:33.0,56-61,Grizzlies,Defensive rebound by S. Aldama
+2,4:25.0,56-61,Grizzlies,Turnover by C. Spencer (bad pass; steal by T. Maxey)
+2,4:17.0,58-61,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by T. Maxey)
+2,4:17.0,58-61,76ers,Shooting foul by J. Jackson (drawn by J. Embiid)
+2,4:17.0,58-61,76ers,P. George enters the game for J. Edwards
+2,4:17.0,58-61,76ers,J. Embiid misses free throw 1 of 1
+2,4:15.0,58-61,Grizzlies,Defensive rebound by J. Landale
+2,4:00.0,58-61,Grizzlies,J. Landale misses 3-pt jump shot from 23 ft
+2,3:58.0,58-61,76ers,Defensive rebound by D. Barlow
+2,3:48.0,61-61,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+2,3:37.0,61-63,Grizzlies,J. Jackson makes 2-pt layup from 4 ft (assist by C. Spencer)
+2,3:37.0,61-63,Grizzlies,Shooting foul by D. Barlow (drawn by J. Jackson)
+2,3:37.0,61-64,Grizzlies,J. Jackson makes free throw 1 of 1
+2,3:23.0,61-64,76ers,J. Embiid misses 2-pt jump shot from 13 ft
+2,3:21.0,61-64,Grizzlies,Defensive rebound by S. Aldama
+2,3:07.0,61-64,Grizzlies,Shooting foul by T. Maxey (drawn by C. Spencer)
+2,3:07.0,61-65,Grizzlies,C. Spencer makes free throw 1 of 2
+2,3:07.0,61-65,76ers,A. Bona enters the game for J. Embiid
+2,3:07.0,61-66,Grizzlies,C. Spencer makes free throw 2 of 2
+2,2:48.0,61-66,76ers,P. George misses 3-pt jump shot from 24 ft
+2,2:48.0,61-66,76ers,Offensive rebound by Team
+2,2:48.0,61-66,Grizzlies,Loose ball foul by J. Jackson (drawn by A. Bona)
+2,2:48.0,61-66,76ers,Philadelphia full timeout
+2,2:48.0,61-66,Grizzlies,J. Morant enters the game for C. Spencer
+2,2:48.0,61-66,76ers,A. Bona misses free throw 1 of 2
+2,2:48.0,61-66,76ers,Offensive rebound by Team
+2,2:48.0,62-66,76ers,A. Bona makes free throw 2 of 2
+2,2:40.0,62-66,Grizzlies,Personal foul by A. Bona (drawn by J. Morant)
+2,2:40.0,62-67,Grizzlies,J. Morant makes free throw 1 of 2
+2,2:40.0,62-67,76ers,J. Embiid enters the game for D. Barlow
+2,2:40.0,62-67,Grizzlies,C. Coward enters the game for J. Landale
+2,2:40.0,62-68,Grizzlies,J. Morant makes free throw 2 of 2
+2,2:21.0,62-68,76ers,Personal foul by J. Wells (drawn by J. Embiid)
+2,2:21.0,63-68,76ers,J. Embiid makes free throw 1 of 2
+2,2:21.0,64-68,76ers,J. Embiid makes free throw 2 of 2
+2,2:09.0,64-68,Grizzlies,J. Wells misses 2-pt layup from 2 ft (block by J. Embiid)
+2,2:07.0,64-68,Grizzlies,Offensive rebound by Team
+2,1:55.0,64-68,Grizzlies,S. Aldama misses 3-pt jump shot from 25 ft
+2,1:51.0,64-68,76ers,Defensive rebound by J. Embiid
+2,1:46.0,64-68,76ers,P. George misses 3-pt jump shot from 23 ft
+2,1:44.0,64-68,Grizzlies,Defensive rebound by J. Jackson
+2,1:37.0,64-68,Grizzlies,Turnover by J. Jackson (bad pass; steal by Q. Grimes)
+2,1:32.0,64-68,76ers,Q. Grimes misses 2-pt layup from 2 ft (block by J. Jackson)
+2,1:27.0,64-68,Grizzlies,Defensive rebound by J. Morant
+2,1:25.0,64-70,Grizzlies,J. Wells makes 2-pt layup from 2 ft (assist by S. Aldama)
+2,1:07.0,64-70,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+2,1:04.0,64-70,Grizzlies,Defensive rebound by J. Wells
+2,1:00.0,64-70,Grizzlies,J. Jackson misses 2-pt layup from 3 ft (block by J. Embiid)
+2,1:00.0,64-70,Grizzlies,Offensive rebound by Team
+2,0:54.0,64-70,Grizzlies,Turnover by J. Wells (bad pass; steal by J. Embiid)
+2,0:46.0,64-70,76ers,Shooting foul by J. Wells (drawn by J. Embiid)
+2,0:46.0,65-70,76ers,J. Embiid makes free throw 1 of 2
+2,0:46.0,66-70,76ers,J. Embiid makes free throw 2 of 2
+2,0:29.0,66-70,Grizzlies,Turnover by J. Morant (lost ball; steal by Q. Grimes)
+2,0:26.0,68-70,76ers,T. Maxey makes 2-pt layup from 2 ft (assist by A. Bona)
+2,0:06.0,68-70,Grizzlies,Shooting foul by P. George (drawn by C. Coward)
+2,0:06.0,68-71,Grizzlies,C. Coward makes free throw 1 of 2
+2,0:06.0,68-71,76ers,J. McCain enters the game for A. Bona
+2,0:06.0,68-71,Grizzlies,C. Koloko enters the game for S. Aldama
+2,0:06.0,68-71,Grizzlies,Technical foul by J. Morant
+2,0:06.0,69-71,76ers,T. Maxey makes technical free throw
+2,0:06.0,69-72,Grizzlies,C. Coward makes free throw 2 of 2
+2,0:01.0,72-72,76ers,T. Maxey makes 3-pt jump shot from 28 ft
+2,0:00.0,72-72,Grizzlies,Offensive rebound by Team
+3,11:36.0,72-72,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+3,11:33.0,72-72,Grizzlies,Defensive rebound by C. Coward
+3,11:27.0,72-74,Grizzlies,J. Morant makes 2-pt layup from 2 ft
+3,10:59.0,72-74,76ers,T. Maxey misses 3-pt jump shot from 30 ft
+3,10:56.0,72-74,Grizzlies,Defensive rebound by C. Koloko
+3,10:53.0,72-74,Grizzlies,Personal foul by D. Barlow (drawn by J. Morant)
+3,10:36.0,72-74,Grizzlies,J. Wells misses 3-pt jump shot from 23 ft
+3,10:31.0,72-74,Grizzlies,Offensive rebound by C. Coward
+3,10:31.0,72-76,Grizzlies,C. Coward makes 2-pt dunk at rim
+3,10:23.0,72-76,76ers,Offensive foul by P. George (drawn by J. Wells)
+3,10:23.0,72-76,76ers,Turnover by P. George (offensive foul)
+3,10:10.0,72-76,Grizzlies,C. Koloko misses 2-pt layup from 3 ft
+3,10:08.0,72-76,76ers,Defensive rebound by J. Embiid
+3,9:58.0,72-76,76ers,P. George misses 2-pt jump shot from 15 ft
+3,9:54.0,72-76,Grizzlies,Defensive rebound by C. Koloko
+3,9:52.0,72-76,Grizzlies,Shooting foul by J. Embiid (drawn by C. Coward)
+3,9:52.0,72-77,Grizzlies,C. Coward makes free throw 1 of 2
+3,9:52.0,72-78,Grizzlies,C. Coward makes free throw 2 of 2
+3,9:33.0,74-78,76ers,D. Barlow makes 2-pt dunk from 1 ft (assist by J. Embiid)
+3,9:22.0,74-80,Grizzlies,J. Morant makes 2-pt layup from 2 ft
+3,9:15.0,74-80,76ers,V. Edgecombe misses 2-pt layup from 3 ft (block by J. Jackson)
+3,9:15.0,74-80,76ers,Offensive rebound by Team
+3,9:04.0,74-80,76ers,Shooting foul by C. Koloko (drawn by J. Embiid)
+3,9:04.0,75-80,76ers,J. Embiid makes free throw 1 of 2
+3,9:04.0,76-80,76ers,J. Embiid makes free throw 2 of 2
+3,9:00.0,76-82,Grizzlies,C. Coward makes 2-pt layup from 2 ft (assist by J. Morant)
+3,8:44.0,76-82,76ers,V. Edgecombe misses 3-pt jump shot from 24 ft
+3,8:42.0,76-82,Grizzlies,Defensive rebound by C. Koloko
+3,8:32.0,76-84,Grizzlies,J. Morant makes 2-pt jump shot from 15 ft
+3,8:19.0,78-84,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by T. Maxey)
+3,8:19.0,78-84,76ers,Shooting foul by C. Koloko (drawn by J. Embiid)
+3,8:19.0,79-84,76ers,J. Embiid makes free throw 1 of 1
+3,8:01.0,79-87,Grizzlies,C. Coward makes 3-pt jump shot from 26 ft (assist by J. Wells)
+3,7:48.0,81-87,76ers,V. Edgecombe makes 2-pt layup from 3 ft (assist by T. Maxey)
+3,7:35.0,81-90,Grizzlies,J. Wells makes 3-pt jump shot from 23 ft (assist by C. Koloko)
+3,7:21.0,83-90,76ers,T. Maxey makes 2-pt jump shot from 18 ft (assist by J. Embiid)
+3,7:09.0,83-90,Grizzlies,J. Wells misses 3-pt jump shot from 25 ft
+3,7:07.0,83-90,76ers,Defensive rebound by D. Barlow
+3,7:07.0,83-90,76ers,Personal foul by C. Coward (drawn by D. Barlow)
+3,7:07.0,83-90,Grizzlies,S. Aldama enters the game for C. Coward
+3,7:07.0,83-90,Grizzlies,G. Jackson enters the game for J. Jackson
+3,7:07.0,83-90,Grizzlies,J. Landale enters the game for C. Koloko
+3,7:07.0,83-90,Grizzlies,C. Spencer enters the game for J. Morant
+3,6:47.0,85-90,76ers,D. Barlow makes 2-pt layup from 3 ft (assist by J. Embiid)
+3,6:25.0,85-90,Grizzlies,C. Spencer misses 2-pt jump shot from 14 ft
+3,6:23.0,85-90,76ers,Defensive rebound by T. Maxey
+3,6:13.0,85-90,76ers,T. Maxey misses 2-pt layup from 4 ft
+3,6:08.0,85-90,76ers,Offensive rebound by D. Barlow
+3,6:08.0,87-90,76ers,D. Barlow makes 2-pt layup at rim
+3,6:02.0,87-90,Grizzlies,Personal foul by T. Maxey (drawn by C. Spencer)
+3,6:02.0,87-90,Grizzlies,Memphis full timeout
+3,6:02.0,87-90,76ers,A. Bona enters the game for D. Barlow
+3,6:02.0,87-90,76ers,Q. Grimes enters the game for J. Embiid
+3,5:50.0,87-92,Grizzlies,S. Aldama makes 2-pt layup from 1 ft
+3,5:29.0,87-92,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+3,5:26.0,87-92,76ers,Offensive rebound by A. Bona
+3,5:24.0,90-92,76ers,P. George makes 3-pt jump shot from 25 ft (assist by A. Bona)
+3,5:04.0,90-92,Grizzlies,Turnover by S. Aldama (bad pass; steal by V. Edgecombe)
+3,4:59.0,92-92,76ers,V. Edgecombe makes 2-pt dunk at rim (assist by T. Maxey)
+3,4:44.0,92-92,Grizzlies,Offensive foul by J. Landale (drawn by P. George)
+3,4:44.0,92-92,Grizzlies,Turnover by J. Landale (offensive foul)
+3,4:44.0,92-92,Grizzlies,J. Small enters the game for J. Wells
+3,4:33.0,92-92,76ers,P. George misses 3-pt jump shot from 25 ft
+3,4:31.0,92-92,Grizzlies,Defensive rebound by S. Aldama
+3,4:20.0,92-94,Grizzlies,J. Landale makes 2-pt hook shot from 6 ft (assist by J. Small)
+3,4:09.0,94-94,76ers,T. Maxey makes 2-pt jump shot from 4 ft
+3,4:00.0,94-94,Grizzlies,Turnover by J. Small (bad pass; steal by Q. Grimes)
+3,3:58.0,96-94,76ers,Q. Grimes makes 2-pt layup from 1 ft
+3,3:58.0,96-94,Grizzlies,Memphis full timeout
+3,3:58.0,96-94,76ers,D. Barlow enters the game for P. George
+3,3:40.0,96-94,Grizzlies,S. Aldama misses 3-pt jump shot from 27 ft
+3,3:38.0,96-94,76ers,Defensive rebound by Team
+3,3:14.0,96-94,76ers,D. Barlow misses 2-pt layup from 1 ft (block by J. Landale)
+3,3:14.0,96-94,76ers,Offensive rebound by Team
+3,3:14.0,96-94,76ers,Turnover by Team (shot clock)
+3,3:01.0,96-96,Grizzlies,C. Spencer makes 2-pt layup from 2 ft
+3,2:47.0,96-96,76ers,V. Edgecombe misses 2-pt layup from 2 ft
+3,2:45.0,96-96,Grizzlies,Defensive rebound by J. Landale
+3,2:40.0,96-98,Grizzlies,J. Small makes 2-pt layup from 2 ft (assist by C. Spencer)
+3,2:29.0,98-98,76ers,Q. Grimes makes 2-pt jump shot from 15 ft
+3,2:16.0,98-98,Grizzlies,Turnover by G. Jackson (step out of bounds)
+3,2:16.0,98-98,Grizzlies,J. Jackson enters the game for G. Jackson
+3,1:53.0,98-98,76ers,D. Barlow misses 2-pt jump shot from 19 ft
+3,1:50.0,98-98,Grizzlies,Defensive rebound by J. Small
+3,1:32.0,98-98,Grizzlies,J. Landale misses 2-pt hook shot from 3 ft (block by A. Bona)
+3,1:30.0,98-98,Grizzlies,Offensive rebound by J. Landale
+3,1:30.0,98-100,Grizzlies,J. Landale makes 2-pt jump shot from 6 ft
+3,1:30.0,98-100,Grizzlies,Technical foul by J. Landale
+3,1:30.0,99-100,76ers,T. Maxey makes technical free throw
+3,1:30.0,99-100,76ers,J. Embiid enters the game for D. Barlow
+3,1:30.0,99-100,Grizzlies,C. Coward enters the game for J. Landale
+3,1:13.0,99-100,76ers,Q. Grimes misses 3-pt jump shot from 22 ft
+3,1:11.0,99-100,Grizzlies,Defensive rebound by J. Jackson
+3,0:57.0,99-100,Grizzlies,S. Aldama misses 2-pt jump shot from 12 ft
+3,0:54.0,99-100,76ers,Defensive rebound by Q. Grimes
+3,0:44.0,99-100,76ers,J. Embiid misses 2-pt layup from 2 ft (block by S. Aldama)
+3,0:41.0,99-100,76ers,Offensive rebound by J. Embiid
+3,0:41.0,99-100,76ers,J. Embiid misses 2-pt layup at rim
+3,0:41.0,99-100,76ers,Offensive rebound by J. Embiid
+3,0:32.0,99-100,76ers,J. Embiid misses 2-pt layup from 3 ft
+3,0:32.0,99-100,76ers,Offensive rebound by J. Embiid
+3,0:32.0,101-100,76ers,J. Embiid makes 2-pt layup at rim
+3,0:16.0,101-100,Grizzlies,Turnover by C. Coward (lost ball; steal by A. Bona)
+3,0:04.0,101-100,76ers,T. Maxey misses 2-pt jump shot from 4 ft
+3,0:02.0,101-100,76ers,Offensive rebound by T. Maxey
+3,0:02.0,103-100,76ers,T. Maxey makes 2-pt layup at rim
+3,0:01.0,103-100,Grizzlies,J. Small misses 2-pt layup from 4 ft (block by A. Bona)
+3,0:01.0,103-100,Grizzlies,Offensive rebound by Team
+4,11:48.0,103-102,Grizzlies,J. Morant makes 2-pt layup from 2 ft
+4,11:30.0,106-102,76ers,Q. Grimes makes 3-pt jump shot from 22 ft (assist by V. Edgecombe)
+4,11:15.0,106-102,Grizzlies,J. Jackson misses 2-pt hook shot from 12 ft
+4,11:13.0,106-102,76ers,Defensive rebound by A. Bona
+4,11:01.0,108-102,76ers,J. Embiid makes 2-pt jump shot from 22 ft (assist by V. Edgecombe)
+4,10:53.0,108-102,Grizzlies,Shooting foul by J. McCain (drawn by J. Morant)
+4,10:53.0,108-103,Grizzlies,J. Morant makes free throw 1 of 2
+4,10:53.0,108-104,Grizzlies,J. Morant makes free throw 2 of 2
+4,10:32.0,108-104,76ers,J. Embiid misses 2-pt jump shot from 16 ft
+4,10:29.0,108-104,Grizzlies,Defensive rebound by J. Jackson
+4,10:19.0,108-106,Grizzlies,J. Morant makes 2-pt layup from 2 ft
+4,10:04.0,108-106,76ers,Shooting foul by C. Koloko (drawn by J. Embiid)
+4,10:04.0,109-106,76ers,J. Embiid makes free throw 1 of 2
+4,10:04.0,110-106,76ers,J. Embiid makes free throw 2 of 2
+4,9:52.0,110-106,Grizzlies,C. Koloko misses 2-pt jump shot from 11 ft
+4,9:48.0,110-106,76ers,Defensive rebound by A. Bona
+4,9:36.0,110-106,76ers,J. Embiid misses 3-pt jump shot from 24 ft
+4,9:32.0,110-106,76ers,Offensive rebound by V. Edgecombe
+4,9:20.0,110-106,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+4,9:16.0,110-106,Grizzlies,Defensive rebound by J. Morant
+4,9:05.0,110-108,Grizzlies,J. Morant makes 2-pt jump shot from 16 ft
+4,8:45.0,110-108,76ers,Turnover by J. Embiid (bad pass)
+4,8:45.0,110-108,Grizzlies,S. Aldama enters the game for J. Jackson
+4,8:25.0,110-110,Grizzlies,J. Morant makes 2-pt layup from 3 ft
+4,8:25.0,110-110,Grizzlies,Shooting foul by A. Bona (drawn by J. Morant)
+4,8:25.0,110-110,76ers,P. George enters the game for J. Embiid
+4,8:25.0,110-111,Grizzlies,J. Morant makes free throw 1 of 1
+4,8:12.0,110-111,76ers,V. Edgecombe misses 2-pt jump shot from 5 ft (block by G. Jackson)
+4,8:12.0,110-111,76ers,Offensive rebound by Team
+4,8:04.0,110-111,76ers,V. Edgecombe misses 3-pt jump shot from 24 ft
+4,8:00.0,110-111,76ers,Offensive rebound by J. McCain
+4,7:51.0,110-111,76ers,P. George misses 2-pt jump shot from 16 ft
+4,7:47.0,110-111,Grizzlies,Defensive rebound by C. Coward
+4,7:42.0,110-111,Grizzlies,J. Morant misses 2-pt layup from 3 ft
+4,7:41.0,110-111,76ers,Defensive rebound by J. McCain
+4,7:37.0,112-111,76ers,V. Edgecombe makes 2-pt layup from 4 ft (assist by J. McCain)
+4,7:22.0,112-111,Grizzlies,Turnover by C. Coward (out of bounds lost ball)
+4,7:22.0,112-111,76ers,Philadelphia full timeout
+4,7:22.0,112-111,76ers,T. Maxey enters the game for J. McCain
+4,7:22.0,112-111,Grizzlies,J. Landale enters the game for C. Koloko
+4,6:59.0,112-111,76ers,V. Edgecombe misses 2-pt jump shot from 18 ft
+4,6:55.0,112-111,Grizzlies,Defensive rebound by C. Coward
+4,6:51.0,112-113,Grizzlies,C. Coward makes 2-pt dunk from 1 ft
+4,6:34.0,112-113,76ers,Shooting foul by J. Landale (drawn by A. Bona)
+4,6:34.0,113-113,76ers,A. Bona makes free throw 1 of 2
+4,6:34.0,113-113,Grizzlies,J. Wells enters the game for G. Jackson
+4,6:34.0,114-113,76ers,A. Bona makes free throw 2 of 2
+4,6:24.0,114-113,Grizzlies,J. Wells misses 2-pt layup from 1 ft (block by V. Edgecombe)
+4,6:23.0,114-113,76ers,Defensive rebound by V. Edgecombe
+4,6:18.0,114-113,76ers,P. George misses 3-pt jump shot from 25 ft
+4,6:16.0,114-113,Grizzlies,Defensive rebound by Team
+4,6:16.0,114-113,Grizzlies,J. Jackson enters the game for C. Coward
+4,6:16.0,114-113,Grizzlies,C. Spencer enters the game for J. Morant
+4,6:05.0,114-113,Grizzlies,Turnover by C. Spencer (bad pass)
+4,5:51.0,114-113,Grizzlies,Violation by Team (kicked ball)
+4,5:45.0,116-113,76ers,P. George makes 2-pt layup from 2 ft (assist by Q. Grimes)
+4,5:29.0,116-113,Grizzlies,J. Jackson misses 3-pt jump shot from 23 ft
+4,5:27.0,116-113,76ers,Defensive rebound by Q. Grimes
+4,5:13.0,119-113,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+4,4:58.0,119-115,Grizzlies,J. Wells makes 2-pt dunk from 1 ft (assist by S. Aldama)
+4,4:35.0,122-115,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+4,4:24.0,122-115,Grizzlies,Personal foul by T. Maxey (drawn by J. Wells)
+4,4:24.0,122-115,76ers,Philadelphia full timeout
+4,4:24.0,122-115,76ers,Instant Replay (Challenge: Ruling Stands)
+4,4:24.0,122-115,76ers,J. Embiid enters the game for Q. Grimes
+4,4:24.0,122-115,Grizzlies,C. Coward enters the game for J. Landale
+4,4:24.0,122-115,Grizzlies,J. Morant enters the game for C. Spencer
+4,4:19.0,122-117,Grizzlies,J. Morant makes 2-pt jump shot from 12 ft
+4,4:19.0,122-117,Grizzlies,Shooting foul by V. Edgecombe (drawn by J. Morant)
+4,4:19.0,122-118,Grizzlies,J. Morant makes free throw 1 of 1
+4,4:03.0,124-118,76ers,V. Edgecombe makes 2-pt layup from 2 ft
+4,3:51.0,124-120,Grizzlies,S. Aldama makes 2-pt layup from 1 ft (assist by J. Morant)
+4,3:33.0,124-120,76ers,T. Maxey misses 2-pt jump shot from 11 ft
+4,3:29.0,124-120,Grizzlies,Defensive rebound by J. Jackson
+4,3:21.0,124-120,Grizzlies,Personal foul by J. Embiid (drawn by J. Jackson)
+4,3:21.0,124-121,Grizzlies,J. Jackson makes free throw 1 of 2
+4,3:21.0,124-121,Grizzlies,J. Jackson misses free throw 2 of 2
+4,3:19.0,124-121,76ers,Defensive rebound by P. George
+4,3:08.0,124-121,76ers,V. Edgecombe misses 2-pt layup from 3 ft (block by S. Aldama)
+4,3:04.0,124-121,76ers,Offensive rebound by J. Embiid
+4,3:04.0,124-121,76ers,J. Embiid misses 2-pt layup at rim
+4,3:04.0,124-121,76ers,Offensive rebound by J. Embiid
+4,3:03.0,124-121,76ers,J. Embiid misses 2-pt layup from 2 ft
+4,3:03.0,124-121,76ers,Offensive rebound by V. Edgecombe
+4,3:01.0,124-121,76ers,T. Maxey misses 2-pt layup from 2 ft
+4,2:58.0,124-121,Grizzlies,Defensive rebound by J. Jackson
+4,2:52.0,124-121,Grizzlies,J. Morant misses 3-pt jump shot from 26 ft
+4,2:49.0,124-121,76ers,Defensive rebound by P. George
+4,2:34.0,124-121,76ers,Offensive foul by J. Embiid (drawn by J. Wells)
+4,2:34.0,124-121,76ers,Turnover by J. Embiid (offensive foul)
+4,2:19.0,124-121,Grizzlies,J. Jackson misses 3-pt jump shot from 26 ft
+4,2:15.0,124-121,76ers,Defensive rebound by V. Edgecombe
+4,2:06.0,124-121,76ers,Shooting foul by S. Aldama (drawn by T. Maxey)
+4,2:06.0,125-121,76ers,T. Maxey makes free throw 1 of 2
+4,2:06.0,125-121,76ers,Q. Grimes enters the game for J. Embiid
+4,2:06.0,125-121,76ers,T. Maxey misses free throw 2 of 2
+4,2:02.0,125-121,76ers,Offensive rebound by A. Bona
+4,1:54.0,128-121,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft (assist by P. George)
+4,1:45.0,128-123,Grizzlies,J. Jackson makes 2-pt jump shot from 3 ft
+4,1:45.0,128-123,Grizzlies,Shooting foul by P. George (drawn by J. Jackson)
+4,1:45.0,128-123,76ers,J. Embiid enters the game for Q. Grimes
+4,1:45.0,128-124,Grizzlies,J. Jackson makes free throw 1 of 1
+4,1:30.0,128-124,76ers,V. Edgecombe misses 2-pt jump shot from 2 ft (block by J. Jackson)
+4,1:25.0,128-124,Grizzlies,Defensive rebound by J. Wells
+4,1:17.0,128-126,Grizzlies,J. Morant makes 2-pt jump shot from 11 ft (assist by C. Coward)
+4,1:09.0,128-126,76ers,T. Maxey misses 2-pt jump shot from 18 ft
+4,1:07.0,128-126,Grizzlies,Defensive rebound by J. Jackson
+4,0:59.0,128-128,Grizzlies,J. Morant makes 2-pt jump shot from 6 ft
+4,0:59.0,128-128,76ers,Philadelphia full timeout
+4,0:59.0,128-128,76ers,Q. Grimes enters the game for A. Bona
+4,0:50.0,128-128,76ers,P. George misses 3-pt jump shot from 23 ft
+4,0:43.0,128-128,76ers,Offensive rebound by Team
+4,0:43.0,128-128,Grizzlies,Memphis full timeout
+4,0:43.0,128-128,Grizzlies,Instant Replay (Challenge: Ruling Stands)
+4,0:33.0,128-128,76ers,J. Embiid misses 2-pt jump shot from 22 ft
+4,0:28.0,128-128,Grizzlies,Defensive rebound by J. Wells
+4,0:05.0,128-128,Grizzlies,J. Wells misses 3-pt jump shot from 25 ft
+4,0:03.0,128-128,Grizzlies,Offensive rebound by C. Coward
+4,0:01.0,128-128,Grizzlies,S. Aldama misses 3-pt jump shot from 26 ft
+4,0:01.0,128-128,Grizzlies,Offensive rebound by Team
+4,5:00.0,128-128,Grizzlies,Loose ball foul by J. Jackson (drawn by J. Embiid)
+4,4:46.0,128-128,76ers,P. George misses 3-pt jump shot from 25 ft
+4,4:43.0,128-128,Grizzlies,Defensive rebound by J. Jackson
+4,4:35.0,128-128,Grizzlies,J. Jackson misses 2-pt jump shot from 10 ft
+4,4:32.0,128-128,76ers,Defensive rebound by V. Edgecombe
+4,4:22.0,128-128,76ers,Turnover by J. Embiid (bad pass; steal by J. Morant)
+4,4:17.0,128-130,Grizzlies,J. Morant makes 2-pt dunk from 1 ft
+4,3:55.0,128-130,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+4,3:53.0,128-130,Grizzlies,Defensive rebound by J. Jackson
+4,3:49.0,128-132,Grizzlies,J. Wells makes 2-pt dunk from 1 ft (assist by C. Coward)
+4,3:31.0,130-132,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)
+4,3:15.0,130-132,Grizzlies,Turnover by J. Morant (bad pass)
+4,2:53.0,132-132,76ers,J. Embiid makes 2-pt jump shot from 17 ft (assist by T. Maxey)
+4,2:36.0,132-132,Grizzlies,Turnover by J. Jackson (bad pass; steal by V. Edgecombe)
+4,2:25.0,132-132,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+4,2:22.0,132-132,Grizzlies,Defensive rebound by C. Coward
+4,2:08.0,132-134,Grizzlies,J. Morant makes 2-pt jump shot from 9 ft
+4,1:49.0,134-134,76ers,P. George makes 2-pt layup from 2 ft
+4,1:38.0,134-134,Grizzlies,J. Morant misses 3-pt jump shot from 26 ft
+4,1:33.0,134-134,76ers,Defensive rebound by J. Embiid
+4,1:18.0,136-134,76ers,J. Embiid makes 2-pt jump shot from 13 ft (assist by T. Maxey)
+4,1:06.0,136-134,Grizzlies,Personal foul by P. George (drawn by J. Morant)
+4,0:55.0,136-134,Grizzlies,J. Morant misses 2-pt jump shot from 18 ft
+4,0:52.0,136-134,76ers,Defensive rebound by V. Edgecombe
+4,0:32.0,136-134,76ers,J. Embiid misses 2-pt hook shot from 12 ft
+4,0:29.0,136-134,Grizzlies,Defensive rebound by C. Coward
+4,0:18.0,136-136,Grizzlies,J. Morant makes 2-pt layup from 1 ft
+4,0:18.0,136-136,76ers,Philadelphia full timeout
+4,0:02.0,139-136,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+4,0:01.0,139-136,Grizzlies,Memphis full timeout
+4,0:01.0,139-136,76ers,Philadelphia full timeout
+4,0:00.0,139-136,Grizzlies,C. Coward misses 3-pt jump shot from 26 ft
+4,0:00.0,139-136,Grizzlies,Offensive rebound by Team

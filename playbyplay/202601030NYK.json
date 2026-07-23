@@ -1,0 +1,3271 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:42.0",
+    "score": "0-0",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:40.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "11:23.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:21.0",
+    "score": "0-0",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "11:08.0",
+    "score": "0-3",
+    "team": "Knicks",
+    "description": "M. Bridges makes 3-pt jump shot from 23 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:50.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:34.0",
+    "score": "2-3",
+    "team": "Knicks",
+    "description": "M. Bridges misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:30.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "10:24.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Personal foul by J. Brunson (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:10.0",
+    "score": "4-3",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:50.0",
+    "score": "4-3",
+    "team": "Knicks",
+    "description": "K. Towns misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:47.0",
+    "score": "4-3",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "9:47.0",
+    "score": "4-3",
+    "team": "76ers",
+    "description": "Shooting foul by O. Anunoby (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:47.0",
+    "score": "4-3",
+    "team": "76ers",
+    "description": "D. Barlow misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:47.0",
+    "score": "4-3",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "9:47.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:24.0",
+    "score": "5-5",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 2-pt dunk at rim (assist by K. Towns)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:03.0",
+    "score": "5-5",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:01.0",
+    "score": "5-5",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "8:53.0",
+    "score": "5-5",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:50.0",
+    "score": "5-5",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "8:38.0",
+    "score": "5-5",
+    "team": "76ers",
+    "description": "Offensive foul by D. Barlow (drawn by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:38.0",
+    "score": "5-5",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:28.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:28.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "Shooting foul by T. Maxey (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:28.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "J. Brunson misses free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "8:26.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "8:14.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by M. Robinson)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:10.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "Loose ball foul by M. Robinson (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:56.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:51.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:47.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 1,
+    "time": "7:47.0",
+    "score": "5-7",
+    "team": "Knicks",
+    "description": "M. Bridges misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "7:47.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "7:45.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:44.0",
+    "score": "5-7",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "7:44.0",
+    "score": "7-7",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "7:33.0",
+    "score": "7-9",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 2-pt dunk from 1 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:17.0",
+    "score": "7-9",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:17.0",
+    "score": "7-9",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "7:16.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "7:05.0",
+    "score": "9-9",
+    "team": "Knicks",
+    "description": "M. Bridges misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:03.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "6:52.0",
+    "score": "11-9",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:41.0",
+    "score": "11-11",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:27.0",
+    "score": "13-11",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:27.0",
+    "score": "13-11",
+    "team": "76ers",
+    "description": "Shooting foul by M. Robinson (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:27.0",
+    "score": "13-11",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:27.0",
+    "score": "13-11",
+    "team": "Knicks",
+    "description": "M. McBride enters the game for M. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "6:27.0",
+    "score": "14-11",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "14-11",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:02.0",
+    "score": "16-11",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:51.0",
+    "score": "16-11",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:49.0",
+    "score": "16-11",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "5:39.0",
+    "score": "16-11",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:37.0",
+    "score": "16-11",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 1,
+    "time": "5:31.0",
+    "score": "16-13",
+    "team": "Knicks",
+    "description": "M. Bridges makes 2-pt layup from 1 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:15.0",
+    "score": "18-13",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:02.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "M. McBride makes 3-pt jump shot from 26 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:50.0",
+    "score": "18-16",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:48.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "Shooting foul by D. Barlow (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-16",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-16",
+    "team": "76ers",
+    "description": "J. Walker enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "A. Hukporti enters the game for O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-16",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for K. Towns"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-17",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:36.0",
+    "score": "18-18",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:26.0",
+    "score": "21-18",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:00.0",
+    "score": "21-21",
+    "team": "Knicks",
+    "description": "M. McBride makes 3-pt jump shot from 23 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:47.0",
+    "score": "23-21",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:29.0",
+    "score": "23-21",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:26.0",
+    "score": "23-21",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "3:25.0",
+    "score": "23-21",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by M. McBride)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:22.0",
+    "score": "23-24",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 26 ft (assist by M. McBride)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:07.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:06.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "3:05.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:04.0",
+    "score": "23-24",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-24",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Embiid (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-25",
+    "team": "76ers",
+    "description": "A. Bona enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-25",
+    "team": "76ers",
+    "description": "J. McCain enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for M. Bridges"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "G. Yabusele enters the game for K. McCullar"
+  },
+  {
+    "quarter": 1,
+    "time": "2:52.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "J. Brunson misses free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:50.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "2:42.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "G. Yabusele misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:39.0",
+    "score": "23-25",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 1,
+    "time": "2:24.0",
+    "score": "23-25",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:21.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "Shooting foul by J. McCain (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "23-25",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for G. Yabusele"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "23-26",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "23-27",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:03.0",
+    "score": "25-27",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:50.0",
+    "score": "25-27",
+    "team": "Knicks",
+    "description": "M. McBride misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:48.0",
+    "score": "25-27",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 1,
+    "time": "1:43.0",
+    "score": "25-30",
+    "team": "Knicks",
+    "description": "K. McCullar makes 3-pt jump shot from 25 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:25.0",
+    "score": "27-30",
+    "team": "76ers",
+    "description": "J. Walker makes 2-pt layup from 3 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:58.0",
+    "score": "27-30",
+    "team": "Knicks",
+    "description": "K. McCullar misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:56.0",
+    "score": "27-30",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "29-30",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt layup from 1 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:34.0",
+    "score": "29-30",
+    "team": "Knicks",
+    "description": "Turnover by K. McCullar (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:23.0",
+    "score": "31-30",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:05.0",
+    "score": "31-30",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:02.0",
+    "score": "31-30",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "31-30",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "31-30",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:46.0",
+    "score": "31-30",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:45.0",
+    "score": "31-30",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "11:39.0",
+    "score": "31-30",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 25 ft (block by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:37.0",
+    "score": "31-30",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "11:35.0",
+    "score": "34-30",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:11.0",
+    "score": "34-33",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 24 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "34-33",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:47.0",
+    "score": "34-33",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. McBride"
+  },
+  {
+    "quarter": 2,
+    "time": "10:45.0",
+    "score": "34-36",
+    "team": "Knicks",
+    "description": "J. Clarkson makes 3-pt jump shot from 26 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:27.0",
+    "score": "37-36",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:58.0",
+    "score": "37-38",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:49.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "37-38",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Clarkson"
+  },
+  {
+    "quarter": 2,
+    "time": "9:40.0",
+    "score": "37-38",
+    "team": "Knicks",
+    "description": "Turnover by O. Anunoby (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:29.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "Personal foul by M. McBride (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:01.0",
+    "score": "37-38",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:59.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "8:47.0",
+    "score": "37-38",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:45.0",
+    "score": "37-38",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "37-38",
+    "team": "Knicks",
+    "description": "Turnover by K. Towns (lost ball; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:37.0",
+    "score": "39-38",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "8:23.0",
+    "score": "39-38",
+    "team": "Knicks",
+    "description": "K. Towns misses 2-pt layup from 4 ft (block by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:21.0",
+    "score": "39-38",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "39-38",
+    "team": "76ers",
+    "description": "Shooting foul by M. McBride (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "39-38",
+    "team": "Knicks",
+    "description": "K. McCullar enters the game for O. Anunoby"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "39-38",
+    "team": "Knicks",
+    "description": "Technical foul by K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "39-38",
+    "team": "76ers",
+    "description": "P. George misses technical free throw"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "39-38",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "40-38",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "41-38",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:02.0",
+    "score": "41-38",
+    "team": "Knicks",
+    "description": "K. Towns misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "8:00.0",
+    "score": "41-38",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. McCullar"
+  },
+  {
+    "quarter": 2,
+    "time": "7:59.0",
+    "score": "41-38",
+    "team": "Knicks",
+    "description": "K. McCullar misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:59.0",
+    "score": "41-38",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "7:47.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:39.0",
+    "score": "43-38",
+    "team": "Knicks",
+    "description": "Turnover by M. McBride (bad pass; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:28.0",
+    "score": "46-38",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 29 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:28.0",
+    "score": "46-38",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "7:28.0",
+    "score": "46-38",
+    "team": "Knicks",
+    "description": "T. Kolek enters the game for K. McCullar"
+  },
+  {
+    "quarter": 2,
+    "time": "7:13.0",
+    "score": "46-38",
+    "team": "Knicks",
+    "description": "Personal foul by A. Bona (drawn by K. Towns)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:02.0",
+    "score": "46-38",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:59.0",
+    "score": "46-38",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "6:47.0",
+    "score": "46-38",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass; steal by M. Bridges)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:43.0",
+    "score": "46-38",
+    "team": "Knicks",
+    "description": "J. Clarkson misses 2-pt dunk from 2 ft (block by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:43.0",
+    "score": "46-38",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:37.0",
+    "score": "46-41",
+    "team": "Knicks",
+    "description": "T. Kolek makes 3-pt jump shot from 27 ft (assist by M. McBride)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:24.0",
+    "score": "49-41",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:09.0",
+    "score": "49-41",
+    "team": "Knicks",
+    "description": "J. Clarkson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:07.0",
+    "score": "49-41",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "5:58.0",
+    "score": "49-41",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:55.0",
+    "score": "49-41",
+    "team": "Knicks",
+    "description": "Defensive rebound by T. Kolek"
+  },
+  {
+    "quarter": 2,
+    "time": "5:50.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "M. Bridges makes 3-pt jump shot from 23 ft (assist by T. Kolek)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "49-44",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "49-44",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "49-44",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "J. Brunson enters the game for M. McBride"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "5:24.0",
+    "score": "49-44",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:21.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "5:14.0",
+    "score": "49-44",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:11.0",
+    "score": "49-44",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "4:55.0",
+    "score": "51-44",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:37.0",
+    "score": "51-44",
+    "team": "Knicks",
+    "description": "Turnover by O. Anunoby (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:34.0",
+    "score": "53-44",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "53-44",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "53-44",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "53-44",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "53-44",
+    "team": "76ers",
+    "description": "A. Bona enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "53-44",
+    "team": "Knicks",
+    "description": "G. Yabusele enters the game for M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "4:10.0",
+    "score": "53-44",
+    "team": "Knicks",
+    "description": "Turnover by M. Robinson (lost ball; steal by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:57.0",
+    "score": "53-44",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:55.0",
+    "score": "53-44",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "3:54.0",
+    "score": "55-44",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:34.0",
+    "score": "55-46",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:15.0",
+    "score": "58-46",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:05.0",
+    "score": "58-46",
+    "team": "Knicks",
+    "description": "G. Yabusele misses 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:03.0",
+    "score": "58-46",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 2,
+    "time": "3:01.0",
+    "score": "58-48",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "2:50.0",
+    "score": "58-48",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:50.0",
+    "score": "58-48",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "2:50.0",
+    "score": "58-48",
+    "team": "Knicks",
+    "description": "Loose ball foul by G. Yabusele (drawn by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:50.0",
+    "score": "58-48",
+    "team": "Knicks",
+    "description": "J. Clarkson enters the game for T. Kolek"
+  },
+  {
+    "quarter": 2,
+    "time": "2:43.0",
+    "score": "58-48",
+    "team": "76ers",
+    "description": "Shooting foul by M. Robinson (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:43.0",
+    "score": "58-48",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 2,
+    "time": "2:43.0",
+    "score": "58-48",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:43.0",
+    "score": "58-48",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "2:43.0",
+    "score": "58-48",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:41.0",
+    "score": "58-48",
+    "team": "Knicks",
+    "description": "Defensive rebound by G. Yabusele"
+  },
+  {
+    "quarter": 2,
+    "time": "2:27.0",
+    "score": "58-50",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:27.0",
+    "score": "58-50",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:09.0",
+    "score": "61-50",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 4 ft (block by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:06.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "Shooting foul by O. Anunoby (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "P. George enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "62-50",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "63-50",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:49.0",
+    "score": "63-53",
+    "team": "Knicks",
+    "description": "J. Brunson makes 3-pt jump shot from 25 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:33.0",
+    "score": "66-53",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:06.0",
+    "score": "66-53",
+    "team": "Knicks",
+    "description": "Turnover by J. Clarkson (step out of bounds)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:06.0",
+    "score": "66-53",
+    "team": "Knicks",
+    "description": "M. Bridges enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 2,
+    "time": "1:06.0",
+    "score": "66-53",
+    "team": "Knicks",
+    "description": "M. McBride enters the game for G. Yabusele"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "66-53",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (lost ball; steal by O. Anunoby)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "66-53",
+    "team": "Knicks",
+    "description": "Shooting foul by Q. Grimes (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "66-53",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "66-54",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "66-55",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:37.0",
+    "score": "66-55",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:35.0",
+    "score": "66-55",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 2,
+    "time": "0:25.0",
+    "score": "66-58",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 23 ft (assist by K. Towns)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "66-58",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "66-58",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:44.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:15.0",
+    "score": "68-58",
+    "team": "Knicks",
+    "description": "K. Towns misses 2-pt hook shot from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:12.0",
+    "score": "68-58",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "11:11.0",
+    "score": "68-58",
+    "team": "Knicks",
+    "description": "Shooting foul by P. George (drawn by K. Towns)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:11.0",
+    "score": "68-59",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "11:11.0",
+    "score": "68-60",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:59.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:48.0",
+    "score": "71-60",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:43.0",
+    "score": "71-60",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "10:43.0",
+    "score": "71-60",
+    "team": "Knicks",
+    "description": "M. Robinson misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "10:42.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "10:39.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "Offensive foul by D. Barlow (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:39.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:18.0",
+    "score": "71-60",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt layup from 4 ft (block by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "71-60",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "10:14.0",
+    "score": "71-62",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:53.0",
+    "score": "74-62",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:35.0",
+    "score": "74-62",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 4 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:35.0",
+    "score": "74-62",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "9:29.0",
+    "score": "74-64",
+    "team": "Knicks",
+    "description": "M. Bridges makes 2-pt jump shot from 15 ft (assist by M. Robinson)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:16.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "Personal foul by M. Bridges (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:06.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk from 1 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:52.0",
+    "score": "76-64",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:51.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "8:36.0",
+    "score": "78-64",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:24.0",
+    "score": "78-64",
+    "team": "Knicks",
+    "description": "Personal foul by P. George (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:24.0",
+    "score": "78-64",
+    "team": "Knicks",
+    "description": "M. McBride enters the game for M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:16.0",
+    "score": "78-64",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:16.0",
+    "score": "78-64",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "8:16.0",
+    "score": "78-64",
+    "team": "76ers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:06.0",
+    "score": "81-64",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:48.0",
+    "score": "81-64",
+    "team": "Knicks",
+    "description": "Shooting foul by P. George (drawn by K. Towns)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:48.0",
+    "score": "81-65",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:48.0",
+    "score": "81-66",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "83-66",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:22.0",
+    "score": "83-68",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:22.0",
+    "score": "83-68",
+    "team": "Knicks",
+    "description": "Shooting foul by V. Edgecombe (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:22.0",
+    "score": "83-69",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "7:00.0",
+    "score": "83-69",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:57.0",
+    "score": "83-69",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "6:55.0",
+    "score": "83-69",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:52.0",
+    "score": "83-69",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. McBride"
+  },
+  {
+    "quarter": 3,
+    "time": "6:41.0",
+    "score": "83-69",
+    "team": "Knicks",
+    "description": "O. Anunoby misses 2-pt layup from 2 ft (block by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:40.0",
+    "score": "83-69",
+    "team": "Knicks",
+    "description": "Offensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 3,
+    "time": "6:40.0",
+    "score": "83-69",
+    "team": "Knicks",
+    "description": "Turnover by O. Anunoby (traveling)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "86-69",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:11.0",
+    "score": "86-69",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:08.0",
+    "score": "86-69",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 3,
+    "time": "6:06.0",
+    "score": "86-72",
+    "team": "Knicks",
+    "description": "M. McBride makes 3-pt jump shot from 23 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:53.0",
+    "score": "86-72",
+    "team": "76ers",
+    "description": "Shooting foul by K. Towns (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:53.0",
+    "score": "87-72",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:53.0",
+    "score": "87-72",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:50.0",
+    "score": "87-72",
+    "team": "76ers",
+    "description": "Offensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "5:48.0",
+    "score": "87-72",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:47.0",
+    "score": "87-72",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "5:42.0",
+    "score": "87-74",
+    "team": "Knicks",
+    "description": "M. Bridges makes 2-pt jump shot from 9 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "90-74",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:15.0",
+    "score": "90-74",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:13.0",
+    "score": "90-74",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "5:13.0",
+    "score": "90-74",
+    "team": "Knicks",
+    "description": "Shooting foul by D. Barlow (drawn by K. Towns)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:13.0",
+    "score": "90-74",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "5:13.0",
+    "score": "90-74",
+    "team": "76ers",
+    "description": "J. Walker enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "5:13.0",
+    "score": "90-75",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:13.0",
+    "score": "90-75",
+    "team": "Knicks",
+    "description": "K. Towns misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:10.0",
+    "score": "90-75",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "4:59.0",
+    "score": "92-75",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup at rim (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:53.0",
+    "score": "92-75",
+    "team": "Knicks",
+    "description": "Personal foul by J. Walker (drawn by K. Towns)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:53.0",
+    "score": "92-75",
+    "team": "Knicks",
+    "description": "M. Diawara enters the game for O. Anunoby"
+  },
+  {
+    "quarter": 3,
+    "time": "4:53.0",
+    "score": "92-76",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:53.0",
+    "score": "92-77",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:36.0",
+    "score": "92-77",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:34.0",
+    "score": "92-77",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 3,
+    "time": "4:27.0",
+    "score": "92-77",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:24.0",
+    "score": "92-77",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "4:17.0",
+    "score": "92-77",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:14.0",
+    "score": "92-77",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "92-77",
+    "team": "Knicks",
+    "description": "Turnover by K. Towns (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "92-77",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 3,
+    "time": "3:48.0",
+    "score": "94-77",
+    "team": "76ers",
+    "description": "J. Walker makes 2-pt dunk at rim (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "94-77",
+    "team": "Knicks",
+    "description": "J. Brunson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:23.0",
+    "score": "94-77",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "3:21.0",
+    "score": "94-77",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:18.0",
+    "score": "94-77",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "3:13.0",
+    "score": "94-77",
+    "team": "76ers",
+    "description": "Shooting foul by M. Robinson (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:13.0",
+    "score": "94-77",
+    "team": "Knicks",
+    "description": "J. Clarkson enters the game for M. Bridges"
+  },
+  {
+    "quarter": 3,
+    "time": "3:13.0",
+    "score": "95-77",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:13.0",
+    "score": "96-77",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:57.0",
+    "score": "96-77",
+    "team": "Knicks",
+    "description": "Turnover by M. McBride (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:53.0",
+    "score": "96-77",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass; steal by M. McBride)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "96-77",
+    "team": "Knicks",
+    "description": "M. McBride misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-77",
+    "team": "Knicks",
+    "description": "Offensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "Knicks",
+    "description": "M. Robinson makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Embiid (drawn by M. Robinson)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "76ers",
+    "description": "A. Bona enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "76ers",
+    "description": "J. McCain enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for J. Brunson"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "Knicks",
+    "description": "T. Kolek enters the game for M. Diawara"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "96-79",
+    "team": "Knicks",
+    "description": "M. Robinson misses free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "2:41.0",
+    "score": "96-79",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "2:36.0",
+    "score": "96-79",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:33.0",
+    "score": "96-79",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "2:24.0",
+    "score": "96-79",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by M. Robinson)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:20.0",
+    "score": "96-81",
+    "team": "Knicks",
+    "description": "M. McBride makes 2-pt layup from 1 ft (assist by M. Robinson)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:06.0",
+    "score": "96-81",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:03.0",
+    "score": "96-81",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. McBride"
+  },
+  {
+    "quarter": 3,
+    "time": "1:43.0",
+    "score": "96-84",
+    "team": "Knicks",
+    "description": "T. Kolek makes 3-pt jump shot from 23 ft (assist by O. Anunoby)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:19.0",
+    "score": "96-84",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 3 ft (block by O. Anunoby)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:16.0",
+    "score": "96-84",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. McBride"
+  },
+  {
+    "quarter": 3,
+    "time": "1:14.0",
+    "score": "96-84",
+    "team": "Knicks",
+    "description": "T. Kolek misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:14.0",
+    "score": "96-84",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "96-84",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:58.0",
+    "score": "96-84",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "0:46.0",
+    "score": "96-84",
+    "team": "Knicks",
+    "description": "T. Kolek misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:45.0",
+    "score": "96-84",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "0:39.0",
+    "score": "99-84",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:32.0",
+    "score": "99-84",
+    "team": "Knicks",
+    "description": "Shooting foul by Q. Grimes (drawn by M. McBride)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:32.0",
+    "score": "99-84",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "0:32.0",
+    "score": "99-85",
+    "team": "Knicks",
+    "description": "M. McBride makes free throw 1 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "0:32.0",
+    "score": "99-86",
+    "team": "Knicks",
+    "description": "M. McBride makes free throw 2 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "0:32.0",
+    "score": "99-87",
+    "team": "Knicks",
+    "description": "M. McBride makes free throw 3 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "0:26.0",
+    "score": "99-87",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:24.0",
+    "score": "99-87",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. McBride"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "99-87",
+    "team": "Knicks",
+    "description": "T. Kolek misses 3-pt jump shot from 26 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "99-87",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "11:35.0",
+    "score": "99-87",
+    "team": "Knicks",
+    "description": "M. McBride misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:34.0",
+    "score": "99-87",
+    "team": "Knicks",
+    "description": "Offensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "11:33.0",
+    "score": "99-89",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:15.0",
+    "score": "99-89",
+    "team": "76ers",
+    "description": "Shooting foul by K. Towns (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:15.0",
+    "score": "100-89",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:15.0",
+    "score": "100-89",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:13.0",
+    "score": "100-89",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "11:03.0",
+    "score": "100-89",
+    "team": "Knicks",
+    "description": "K. Towns misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:00.0",
+    "score": "100-89",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "10:53.0",
+    "score": "100-89",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:51.0",
+    "score": "100-89",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "10:43.0",
+    "score": "100-89",
+    "team": "Knicks",
+    "description": "J. Clarkson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:41.0",
+    "score": "100-89",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "10:38.0",
+    "score": "100-89",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:38.0",
+    "score": "100-89",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "10:21.0",
+    "score": "100-91",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:12.0",
+    "score": "103-91",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 23 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:59.0",
+    "score": "103-93",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:59.0",
+    "score": "103-93",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Embiid (drawn by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:59.0",
+    "score": "103-94",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "9:45.0",
+    "score": "103-94",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:34.0",
+    "score": "103-94",
+    "team": "Knicks",
+    "description": "K. Towns misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:31.0",
+    "score": "103-94",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "9:19.0",
+    "score": "103-94",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:16.0",
+    "score": "103-94",
+    "team": "Knicks",
+    "description": "Defensive rebound by T. Kolek"
+  },
+  {
+    "quarter": 4,
+    "time": "9:11.0",
+    "score": "103-94",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 23 ft (block by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "103-94",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "9:04.0",
+    "score": "105-94",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt dunk from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:04.0",
+    "score": "105-94",
+    "team": "Knicks",
+    "description": "New York full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:43.0",
+    "score": "105-94",
+    "team": "Knicks",
+    "description": "T. Kolek misses 2-pt layup from 2 ft (block by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:41.0",
+    "score": "105-94",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "8:38.0",
+    "score": "105-94",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:36.0",
+    "score": "105-94",
+    "team": "Knicks",
+    "description": "Defensive rebound by K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "8:29.0",
+    "score": "105-94",
+    "team": "Knicks",
+    "description": "M. Bridges misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:25.0",
+    "score": "105-94",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "8:12.0",
+    "score": "107-94",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:48.0",
+    "score": "107-94",
+    "team": "Knicks",
+    "description": "Personal foul by P. George (drawn by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:48.0",
+    "score": "107-94",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "7:48.0",
+    "score": "107-94",
+    "team": "Knicks",
+    "description": "O. Anunoby enters the game for M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "7:48.0",
+    "score": "107-94",
+    "team": "Knicks",
+    "description": "J. Brunson enters the game for M. McBride"
+  },
+  {
+    "quarter": 4,
+    "time": "7:48.0",
+    "score": "107-94",
+    "team": "Knicks",
+    "description": "M. Robinson enters the game for K. Towns"
+  },
+  {
+    "quarter": 4,
+    "time": "7:40.0",
+    "score": "107-96",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:23.0",
+    "score": "107-96",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:20.0",
+    "score": "107-96",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "7:17.0",
+    "score": "109-96",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 1 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:17.0",
+    "score": "109-96",
+    "team": "76ers",
+    "description": "Shooting foul by T. Kolek (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:17.0",
+    "score": "110-96",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "7:00.0",
+    "score": "110-98",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:39.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:36.0",
+    "score": "110-98",
+    "team": "Knicks",
+    "description": "Defensive rebound by M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "6:27.0",
+    "score": "110-98",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:27.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "A. Bona enters the game for J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "6:04.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:01.0",
+    "score": "110-98",
+    "team": "Knicks",
+    "description": "Defensive rebound by J. Brunson"
+  },
+  {
+    "quarter": 4,
+    "time": "5:55.0",
+    "score": "110-98",
+    "team": "Knicks",
+    "description": "T. Kolek misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:55.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "5:51.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "Shooting foul by M. Robinson (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:51.0",
+    "score": "110-98",
+    "team": "Knicks",
+    "description": "M. Bridges enters the game for T. Kolek"
+  },
+  {
+    "quarter": 4,
+    "time": "5:51.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "T. Maxey misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:51.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:51.0",
+    "score": "111-98",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:40.0",
+    "score": "111-98",
+    "team": "Knicks",
+    "description": "Shooting foul by A. Bona (drawn by O. Anunoby)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:40.0",
+    "score": "111-99",
+    "team": "Knicks",
+    "description": "O. Anunoby makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:40.0",
+    "score": "111-100",
+    "team": "Knicks",
+    "description": "O. Anunoby makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "113-100",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "113-100",
+    "team": "Knicks",
+    "description": "Offensive foul by O. Anunoby (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "113-100",
+    "team": "Knicks",
+    "description": "Turnover by O. Anunoby (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "113-100",
+    "team": "Knicks",
+    "description": "K. Towns enters the game for M. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:35.0",
+    "score": "115-100",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "115-102",
+    "team": "Knicks",
+    "description": "K. Towns makes 2-pt jump shot from 6 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "115-102",
+    "team": "Knicks",
+    "description": "Shooting foul by A. Bona (drawn by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "115-102",
+    "team": "Knicks",
+    "description": "M. McBride enters the game for J. Clarkson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "115-103",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "118-103",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:49.0",
+    "score": "118-106",
+    "team": "Knicks",
+    "description": "O. Anunoby makes 3-pt jump shot from 24 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:34.0",
+    "score": "118-106",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:34.0",
+    "score": "118-106",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "3:22.0",
+    "score": "118-106",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 1 ft (block by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:18.0",
+    "score": "118-106",
+    "team": "Knicks",
+    "description": "Defensive rebound by O. Anunoby"
+  },
+  {
+    "quarter": 4,
+    "time": "3:11.0",
+    "score": "118-109",
+    "team": "Knicks",
+    "description": "M. McBride makes 3-pt jump shot from 24 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:51.0",
+    "score": "121-109",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:35.0",
+    "score": "121-112",
+    "team": "Knicks",
+    "description": "M. McBride makes 3-pt jump shot from 26 ft (assist by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:10.0",
+    "score": "121-112",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "121-112",
+    "team": "Knicks",
+    "description": "Shooting foul by J. Embiid (drawn by O. Anunoby)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "121-113",
+    "team": "Knicks",
+    "description": "O. Anunoby makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "121-114",
+    "team": "Knicks",
+    "description": "O. Anunoby makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:48.0",
+    "score": "121-114",
+    "team": "76ers",
+    "description": "Shooting foul by M. McBride (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:48.0",
+    "score": "121-114",
+    "team": "76ers",
+    "description": "T. Maxey misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:48.0",
+    "score": "121-114",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:48.0",
+    "score": "122-114",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "122-114",
+    "team": "Knicks",
+    "description": "J. Brunson misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:35.0",
+    "score": "122-114",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "1:15.0",
+    "score": "122-114",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:12.0",
+    "score": "122-114",
+    "team": "76ers",
+    "description": "Offensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "1:12.0",
+    "score": "124-114",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup at rim (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:12.0",
+    "score": "124-114",
+    "team": "Knicks",
+    "description": "Turnover by M. Bridges (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:10.0",
+    "score": "124-114",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:06.0",
+    "score": "126-114",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt dunk from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "126-114",
+    "team": "Knicks",
+    "description": "Personal foul by V. Edgecombe (drawn by J. Brunson)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "126-114",
+    "team": "Knicks",
+    "description": "J. Brunson misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "126-114",
+    "team": "Knicks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "126-115",
+    "team": "Knicks",
+    "description": "J. Brunson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:50.0",
+    "score": "126-115",
+    "team": "76ers",
+    "description": "Personal foul by M. McBride (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:50.0",
+    "score": "127-115",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:50.0",
+    "score": "128-115",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:42.0",
+    "score": "128-117",
+    "team": "Knicks",
+    "description": "J. Brunson makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:35.0",
+    "score": "128-117",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:33.0",
+    "score": "128-117",
+    "team": "Knicks",
+    "description": "Shooting foul by P. George (drawn by K. Towns)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:33.0",
+    "score": "128-118",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:33.0",
+    "score": "128-119",
+    "team": "Knicks",
+    "description": "K. Towns makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "130-119",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt dunk from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:16.0",
+    "score": "130-119",
+    "team": "Knicks",
+    "description": "Turnover by J. Brunson (bad pass; steal by Q. Grimes)"
+  }
+]

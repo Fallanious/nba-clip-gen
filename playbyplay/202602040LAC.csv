@@ -1,0 +1,411 @@
+quarter,time,score,team,description
+1,11:37.0,3-0,Cavaliers,J. Tyson makes 3-pt jump shot from 28 ft (assist by D. Mitchell)
+1,11:18.0,3-0,Clippers,K. Dunn misses 3-pt jump shot from 27 ft
+1,11:14.0,3-0,Cavaliers,Defensive rebound by D. Wade
+1,11:09.0,3-0,Cavaliers,Shooting foul by J. Collins (drawn by D. Mitchell)
+1,11:09.0,4-0,Cavaliers,D. Mitchell makes free throw 1 of 2
+1,11:09.0,5-0,Cavaliers,D. Mitchell makes free throw 2 of 2
+1,10:55.0,5-0,Clippers,B. Lopez misses 3-pt jump shot from 28 ft
+1,10:52.0,5-0,Cavaliers,Defensive rebound by D. Wade
+1,10:41.0,7-0,Cavaliers,J. Allen makes 2-pt dunk from 4 ft (assist by D. Mitchell)
+1,10:25.0,7-2,Clippers,J. Collins makes 2-pt hook shot from 5 ft (assist by K. Dunn)
+1,10:08.0,7-2,Cavaliers,D. Mitchell misses 3-pt jump shot from 29 ft
+1,10:05.0,7-2,Clippers,Defensive rebound by J. Collins
+1,9:51.0,7-2,Clippers,J. Collins misses 3-pt jump shot from 22 ft
+1,9:47.0,7-2,Cavaliers,Defensive rebound by J. Allen
+1,9:40.0,9-2,Cavaliers,J. Tyson makes 2-pt jump shot from 4 ft (assist by J. Allen)
+1,9:29.0,9-2,Clippers,K. Leonard misses 3-pt jump shot from 25 ft
+1,9:26.0,9-2,Cavaliers,Defensive rebound by D. Mitchell
+1,9:13.0,9-2,Cavaliers,S. Merrill misses 3-pt jump shot from 29 ft
+1,9:09.0,9-2,Clippers,Defensive rebound by K. Sanders
+1,9:03.0,9-4,Clippers,J. Collins makes 2-pt layup from 2 ft (assist by K. Dunn)
+1,9:03.0,9-4,Clippers,Shooting foul by D. Mitchell (drawn by J. Collins)
+1,9:03.0,9-5,Clippers,J. Collins makes free throw 1 of 1
+1,8:54.0,11-5,Cavaliers,J. Allen makes 2-pt dunk from 2 ft (assist by D. Mitchell)
+1,8:26.0,11-5,Clippers,K. Sanders misses 3-pt jump shot from 23 ft
+1,8:22.0,11-5,Clippers,Offensive rebound by B. Lopez
+1,8:11.0,11-5,Clippers,K. Dunn misses 2-pt jump shot from 6 ft
+1,8:10.0,11-5,Clippers,Offensive rebound by J. Collins
+1,8:09.0,11-7,Clippers,J. Collins makes 2-pt dunk at rim
+1,7:53.0,13-7,Cavaliers,D. Mitchell makes 2-pt jump shot from 18 ft
+1,7:42.0,13-9,Clippers,K. Leonard makes 2-pt jump shot from 11 ft
+1,7:42.0,13-9,Clippers,Shooting foul by J. Tyson (drawn by K. Leonard)
+1,7:42.0,13-10,Clippers,K. Leonard makes free throw 1 of 1
+1,7:22.0,13-10,Cavaliers,D. Wade misses 3-pt jump shot from 26 ft
+1,7:22.0,13-10,Cavaliers,Offensive rebound by J. Tyson
+1,7:21.0,13-10,Cavaliers,Shooting foul by K. Sanders (drawn by J. Tyson)
+1,7:21.0,13-10,Cavaliers,J. Tyson misses free throw 1 of 2
+1,7:21.0,13-10,Cavaliers,Offensive rebound by Team
+1,7:21.0,13-10,Cavaliers,D. Schröder enters the game for D. Mitchell
+1,7:21.0,13-10,Cavaliers,N. Tomlin enters the game for D. Wade
+1,7:21.0,13-10,Cavaliers,J. Tyson misses free throw 2 of 2
+1,7:19.0,13-10,Clippers,Defensive rebound by K. Leonard
+1,7:04.0,13-10,Clippers,Turnover by K. Leonard (bad pass)
+1,6:47.0,15-10,Cavaliers,D. Schröder makes 2-pt layup from 2 ft
+1,6:28.0,15-10,Clippers,Turnover by K. Leonard (lost ball; steal by D. Schröder)
+1,6:26.0,15-10,Cavaliers,Turnover by D. Schröder (traveling)
+1,6:26.0,15-10,Clippers,LA Clippers full timeout
+1,6:08.0,15-10,Clippers,B. Lopez misses 2-pt jump shot from 20 ft
+1,6:06.0,15-10,Cavaliers,Defensive rebound by J. Allen
+1,6:00.0,17-10,Cavaliers,J. Allen makes 2-pt dunk from 3 ft
+1,5:46.0,17-10,Clippers,Offensive foul by K. Sanders (drawn by D. Schröder)
+1,5:46.0,17-10,Clippers,Turnover by K. Sanders (offensive foul)
+1,5:46.0,17-10,Clippers,B. Bogdanović enters the game for K. Sanders
+1,5:31.0,17-10,Cavaliers,N. Tomlin misses 3-pt jump shot from 26 ft
+1,5:30.0,17-10,Cavaliers,Offensive rebound by J. Tyson
+1,5:27.0,17-10,Cavaliers,D. Schröder misses 3-pt jump shot from 28 ft
+1,5:27.0,17-10,Cavaliers,Offensive rebound by J. Allen
+1,5:26.0,19-10,Cavaliers,J. Allen makes 2-pt layup at rim
+1,5:09.0,19-12,Clippers,B. Lopez makes 2-pt hook shot from 13 ft (assist by K. Dunn)
+1,4:57.0,22-12,Cavaliers,J. Tyson makes 3-pt jump shot from 26 ft (assist by D. Schröder)
+1,4:45.0,22-12,Clippers,B. Lopez misses 3-pt jump shot from 27 ft
+1,4:43.0,22-12,Cavaliers,Defensive rebound by J. Tyson
+1,4:37.0,25-12,Cavaliers,S. Merrill makes 3-pt jump shot from 28 ft (assist by N. Tomlin)
+1,4:27.0,25-12,Clippers,Personal foul by N. Tomlin (drawn by K. Leonard)
+1,4:27.0,25-12,Cavaliers,T. Bryant enters the game for J. Allen
+1,4:27.0,25-12,Cavaliers,D. Mitchell enters the game for S. Merrill
+1,4:27.0,25-12,Cavaliers,C. Porter enters the game for J. Tyson
+1,4:27.0,25-12,Clippers,Y. Konan Niederhäuser enters the game for K. Dunn
+1,4:27.0,25-12,Clippers,J. Miller enters the game for B. Lopez
+1,4:17.0,25-14,Clippers,K. Leonard makes 2-pt jump shot from 4 ft
+1,4:03.0,25-14,Cavaliers,D. Schröder misses 2-pt layup from 3 ft
+1,4:02.0,25-14,Cavaliers,Offensive rebound by T. Bryant
+1,4:01.0,27-14,Cavaliers,T. Bryant makes 2-pt layup at rim
+1,3:42.0,27-16,Clippers,K. Leonard makes 2-pt jump shot from 14 ft
+1,3:21.0,27-16,Cavaliers,T. Bryant misses 2-pt hook shot from 8 ft
+1,3:19.0,27-16,Clippers,Defensive rebound by K. Leonard
+1,3:14.0,27-16,Clippers,B. Bogdanović misses 3-pt jump shot from 28 ft
+1,3:09.0,27-16,Cavaliers,Defensive rebound by N. Tomlin
+1,3:04.0,27-16,Cavaliers,D. Mitchell misses 2-pt jump shot from 12 ft
+1,3:01.0,27-16,Clippers,Defensive rebound by K. Leonard
+1,2:57.0,27-16,Clippers,Personal foul by C. Porter (drawn by K. Leonard)
+1,2:57.0,27-16,Cavaliers,Cleveland full timeout
+1,2:57.0,27-16,Clippers,N. Batum enters the game for K. Leonard
+1,2:51.0,27-16,Clippers,J. Collins misses 2-pt layup from 4 ft
+1,2:47.0,27-16,Cavaliers,Defensive rebound by T. Bryant
+1,2:39.0,27-16,Cavaliers,D. Mitchell misses 3-pt jump shot from 24 ft
+1,2:37.0,27-16,Clippers,Defensive rebound by Y. Konan Niederhäuser
+1,2:29.0,27-16,Clippers,J. Miller misses 2-pt layup from 2 ft
+1,2:28.0,27-16,Clippers,Offensive rebound by J. Miller
+1,2:27.0,27-16,Clippers,J. Miller misses 2-pt layup from 2 ft (block by T. Bryant)
+1,2:26.0,27-16,Cavaliers,Defensive rebound by D. Schröder
+1,2:15.0,27-16,Cavaliers,D. Schröder misses 2-pt jump shot from 12 ft
+1,2:12.0,27-16,Clippers,Defensive rebound by Y. Konan Niederhäuser
+1,2:03.0,27-16,Clippers,Turnover by B. Bogdanović (bad pass; steal by D. Mitchell)
+1,1:46.0,29-16,Cavaliers,D. Schröder makes 2-pt layup from 4 ft
+1,1:27.0,29-16,Clippers,J. Miller misses 2-pt jump shot from 2 ft
+1,1:24.0,29-16,Cavaliers,Defensive rebound by T. Bryant
+1,1:17.0,31-16,Cavaliers,D. Schröder makes 2-pt jump shot from 11 ft (assist by D. Mitchell)
+1,1:17.0,31-16,Cavaliers,K. Ellis enters the game for D. Schröder
+1,1:17.0,31-16,Clippers,D. Jones enters the game for J. Collins
+1,1:00.0,31-16,Clippers,B. Bogdanović misses 2-pt jump shot from 18 ft
+1,0:55.0,31-16,Cavaliers,Defensive rebound by D. Mitchell
+1,0:50.0,34-16,Cavaliers,D. Mitchell makes 3-pt jump shot from 30 ft
+1,0:40.0,34-16,Clippers,Turnover by B. Bogdanović (lost ball; steal by N. Tomlin)
+1,0:36.0,34-16,Cavaliers,N. Tomlin misses 2-pt layup from 3 ft
+1,0:36.0,34-16,Cavaliers,Offensive rebound by T. Bryant
+1,0:36.0,36-16,Cavaliers,T. Bryant makes 2-pt dunk at rim
+1,0:15.0,36-18,Clippers,B. Bogdanović makes 2-pt jump shot from 12 ft
+1,0:03.0,36-18,Cavaliers,D. Mitchell misses 3-pt jump shot from 28 ft
+1,0:03.0,36-18,Cavaliers,Offensive rebound by C. Porter
+2,11:50.0,36-20,Clippers,D. Jones makes 2-pt layup from 3 ft (assist by K. Leonard)
+2,11:50.0,36-20,Clippers,Shooting foul by K. Ellis (drawn by D. Jones)
+2,11:50.0,36-21,Clippers,D. Jones makes free throw 1 of 1
+2,11:35.0,36-21,Cavaliers,D. Mitchell misses 2-pt jump shot from 9 ft
+2,11:32.0,36-21,Clippers,Defensive rebound by J. Miller
+2,11:25.0,36-21,Clippers,Turnover by N. Batum (bad pass; steal by K. Ellis)
+2,11:19.0,38-21,Cavaliers,D. Mitchell makes 2-pt dunk from 2 ft
+2,11:01.0,38-21,Clippers,D. Jones misses 3-pt jump shot from 25 ft
+2,10:59.0,38-21,Clippers,Offensive rebound by Team
+2,10:56.0,38-21,Clippers,K. Leonard misses 3-pt jump shot from 26 ft
+2,10:53.0,38-21,Cavaliers,Defensive rebound by T. Bryant
+2,10:40.0,38-21,Cavaliers,N. Tomlin misses 3-pt jump shot from 26 ft
+2,10:36.0,38-21,Clippers,Defensive rebound by J. Miller
+2,10:25.0,38-21,Clippers,J. Miller misses 2-pt jump shot from 15 ft
+2,10:22.0,38-21,Clippers,Offensive rebound by Team
+2,10:14.0,38-23,Clippers,K. Leonard makes 2-pt layup from 4 ft
+2,9:58.0,38-23,Cavaliers,D. Mitchell misses 2-pt jump shot from 11 ft
+2,9:58.0,38-23,Cavaliers,Offensive rebound by Team
+2,9:58.0,38-23,Clippers,Loose ball foul by K. Leonard (drawn by T. Bryant)
+2,9:49.0,40-23,Cavaliers,T. Bryant makes 2-pt layup from 5 ft (assist by C. Porter)
+2,9:32.0,40-25,Clippers,K. Leonard makes 2-pt jump shot from 4 ft
+2,9:17.0,40-25,Cavaliers,N. Tomlin misses 2-pt layup from 4 ft (block by Y. Konan Niederhäuser)
+2,9:17.0,40-25,Clippers,Defensive rebound by Team
+2,9:17.0,40-25,Clippers,B. Lopez enters the game for Y. Konan Niederhäuser
+2,9:09.0,40-25,Clippers,Shooting foul by N. Tomlin (drawn by K. Leonard)
+2,9:09.0,40-26,Clippers,K. Leonard makes free throw 1 of 2
+2,9:09.0,40-26,Clippers,K. Dunn enters the game for N. Batum
+2,9:09.0,40-27,Clippers,K. Leonard makes free throw 2 of 2
+2,8:57.0,40-27,Cavaliers,N. Tomlin misses 3-pt jump shot from 24 ft
+2,8:53.0,40-27,Clippers,Defensive rebound by K. Dunn
+2,8:44.0,40-30,Clippers,K. Leonard makes 3-pt jump shot from 27 ft
+2,8:43.0,40-30,Cavaliers,Cleveland full timeout
+2,8:43.0,40-30,Cavaliers,J. Allen enters the game for T. Bryant
+2,8:43.0,40-30,Cavaliers,D. Schröder enters the game for D. Mitchell
+2,8:43.0,40-30,Cavaliers,J. Tyson enters the game for C. Porter
+2,8:43.0,40-30,Cavaliers,D. Wade enters the game for N. Tomlin
+2,8:26.0,43-30,Cavaliers,D. Schröder makes 3-pt jump shot from 27 ft (assist by D. Wade)
+2,8:08.0,43-30,Clippers,K. Leonard misses 2-pt jump shot from 16 ft
+2,8:07.0,43-30,Cavaliers,Defensive rebound by K. Ellis
+2,7:46.0,43-30,Cavaliers,D. Schröder misses 2-pt layup from 3 ft
+2,7:43.0,43-30,Clippers,Defensive rebound by K. Leonard
+2,7:41.0,43-30,Clippers,Turnover by K. Leonard (lost ball; steal by D. Schröder)
+2,7:36.0,46-30,Cavaliers,K. Ellis makes 3-pt jump shot from 27 ft (assist by D. Schröder)
+2,7:23.0,46-32,Clippers,K. Dunn makes 2-pt jump shot from 21 ft (assist by J. Miller)
+2,6:59.0,46-32,Cavaliers,D. Wade misses 3-pt jump shot from 29 ft
+2,6:58.0,46-32,Clippers,Defensive rebound by Team
+2,6:58.0,46-32,Clippers,K. Sanders enters the game for J. Miller
+2,6:40.0,46-35,Clippers,B. Lopez makes 3-pt jump shot from 24 ft (assist by K. Dunn)
+2,6:40.0,46-35,Cavaliers,S. Merrill enters the game for K. Ellis
+2,6:23.0,46-35,Cavaliers,Turnover by J. Tyson (bad pass)
+2,6:02.0,46-35,Clippers,K. Leonard misses 2-pt jump shot from 14 ft
+2,6:01.0,46-35,Clippers,Offensive rebound by D. Jones
+2,5:58.0,46-37,Clippers,D. Jones makes 2-pt layup from 2 ft (assist by B. Lopez)
+2,5:58.0,46-37,Clippers,Shooting foul by D. Wade (drawn by D. Jones)
+2,5:58.0,46-38,Clippers,D. Jones makes free throw 1 of 1
+2,5:32.0,46-38,Cavaliers,D. Schröder misses 3-pt jump shot from 29 ft
+2,5:31.0,46-38,Clippers,Defensive rebound by B. Lopez
+2,5:17.0,46-38,Clippers,B. Lopez misses 3-pt jump shot from 27 ft
+2,5:13.0,46-38,Cavaliers,Defensive rebound by J. Tyson
+2,5:08.0,46-38,Cavaliers,D. Wade misses 2-pt layup from 2 ft
+2,5:06.0,46-38,Cavaliers,Offensive rebound by J. Allen
+2,4:57.0,46-38,Cavaliers,J. Tyson misses 2-pt jump shot from 13 ft (block by D. Jones)
+2,4:55.0,46-38,Clippers,Defensive rebound by K. Leonard
+2,4:34.0,46-38,Clippers,K. Leonard misses 2-pt hook shot from 5 ft
+2,4:33.0,46-38,Cavaliers,Defensive rebound by D. Schröder
+2,4:13.0,46-38,Cavaliers,J. Tyson misses 2-pt jump shot from 6 ft
+2,4:11.0,46-38,Cavaliers,Offensive rebound by J. Allen
+2,4:08.0,46-38,Cavaliers,D. Schröder misses 3-pt jump shot from 28 ft
+2,4:08.0,46-38,Clippers,Defensive rebound by Team
+2,4:08.0,46-38,Clippers,LA Clippers full timeout
+2,4:08.0,46-38,Cavaliers,K. Ellis enters the game for S. Merrill
+2,4:08.0,46-38,Clippers,J. Miller enters the game for K. Sanders
+2,4:08.0,46-38,Clippers,Instant Replay
+2,4:08.0,46-38,Cavaliers,S. Merrill enters the game for K. Ellis
+2,4:08.0,46-38,Cavaliers,D. Mitchell enters the game for D. Schröder
+2,4:08.0,46-38,Clippers,J. Collins enters the game for D. Jones
+2,4:08.0,46-38,Clippers,K. Sanders enters the game for K. Leonard
+2,3:56.0,46-38,Clippers,K. Sanders misses 2-pt jump shot from 9 ft
+2,3:54.0,46-38,Cavaliers,Defensive rebound by D. Mitchell
+2,3:38.0,48-38,Cavaliers,J. Allen makes 2-pt layup from 2 ft (assist by D. Mitchell)
+2,3:38.0,48-38,Cavaliers,Shooting foul by J. Collins (drawn by J. Allen)
+2,3:38.0,48-38,Cavaliers,J. Allen misses free throw 1 of 1
+2,3:35.0,48-38,Clippers,Defensive rebound by J. Collins
+2,3:19.0,48-38,Clippers,Turnover by J. Miller (bad pass; steal by J. Tyson)
+2,3:15.0,48-38,Cavaliers,Shooting foul by K. Sanders (drawn by D. Mitchell)
+2,3:15.0,49-38,Cavaliers,D. Mitchell makes free throw 1 of 2
+2,3:15.0,50-38,Cavaliers,D. Mitchell makes free throw 2 of 2
+2,2:59.0,50-38,Clippers,K. Sanders misses 3-pt jump shot from 27 ft
+2,2:55.0,50-38,Cavaliers,Defensive rebound by J. Allen
+2,2:51.0,50-38,Cavaliers,D. Mitchell misses 3-pt jump shot from 27 ft
+2,2:46.0,50-38,Clippers,Defensive rebound by K. Dunn
+2,2:45.0,50-38,Clippers,Turnover by K. Dunn (bad pass)
+2,2:35.0,53-38,Cavaliers,J. Tyson makes 3-pt jump shot from 28 ft (assist by J. Allen)
+2,2:16.0,53-38,Clippers,K. Sanders misses 3-pt jump shot from 27 ft
+2,2:12.0,53-38,Clippers,Offensive rebound by K. Dunn
+2,2:08.0,53-38,Clippers,Turnover by K. Dunn (bad pass; steal by D. Wade)
+2,2:03.0,53-38,Cavaliers,Turnover by S. Merrill (bad pass; steal by K. Dunn)
+2,1:58.0,53-40,Clippers,J. Collins makes 2-pt layup from 3 ft (assist by K. Dunn)
+2,1:38.0,53-40,Cavaliers,J. Allen misses 2-pt jump shot from 12 ft
+2,1:37.0,53-40,Clippers,Defensive rebound by J. Collins
+2,1:26.0,53-42,Clippers,J. Collins makes 2-pt dunk from 4 ft (assist by K. Dunn)
+2,1:10.0,55-42,Cavaliers,J. Tyson makes 2-pt layup from 10 ft
+2,1:10.0,55-42,Cavaliers,Shooting foul by B. Lopez (drawn by J. Tyson)
+2,1:10.0,55-42,Clippers,D. Jones enters the game for K. Sanders
+2,1:10.0,55-42,Cavaliers,J. Tyson misses free throw 1 of 1
+2,1:08.0,55-42,Clippers,Defensive rebound by J. Collins
+2,0:59.0,55-42,Clippers,J. Miller misses 3-pt jump shot from 26 ft
+2,0:55.0,55-42,Cavaliers,Defensive rebound by J. Allen
+2,0:37.0,57-42,Cavaliers,J. Tyson makes 2-pt jump shot from 11 ft (assist by D. Wade)
+2,0:30.0,57-42,Clippers,K. Dunn misses 2-pt layup from 4 ft
+2,0:27.0,57-42,Cavaliers,Defensive rebound by J. Allen
+2,0:13.0,59-42,Cavaliers,D. Wade makes 2-pt layup from 5 ft (assist by D. Mitchell)
+2,0:07.0,59-42,Clippers,Turnover by K. Dunn (bad pass; steal by J. Allen)
+2,0:00.0,62-42,Cavaliers,D. Mitchell makes 3-pt jump shot from 28 ft
+3,11:38.0,62-44,Clippers,K. Sanders makes 2-pt jump shot from 14 ft (assist by K. Leonard)
+3,11:23.0,62-44,Cavaliers,J. Allen misses 2-pt layup from 2 ft
+3,11:23.0,62-44,Clippers,Defensive rebound by K. Sanders
+3,11:17.0,62-46,Clippers,K. Leonard makes 2-pt layup from 4 ft (assist by K. Sanders)
+3,11:08.0,64-46,Cavaliers,D. Mitchell makes 2-pt layup from 3 ft
+3,10:56.0,64-46,Clippers,K. Leonard misses 3-pt jump shot from 28 ft
+3,10:53.0,64-46,Cavaliers,Defensive rebound by J. Allen
+3,10:43.0,67-46,Cavaliers,D. Wade makes 3-pt jump shot from 24 ft (assist by D. Mitchell)
+3,10:20.0,67-46,Clippers,K. Leonard misses 2-pt jump shot from 13 ft
+3,10:19.0,67-46,Clippers,Offensive rebound by Team
+3,10:16.0,67-46,Clippers,Turnover by J. Collins (lost ball; steal by D. Mitchell)
+3,10:06.0,70-46,Cavaliers,S. Merrill makes 3-pt jump shot from 23 ft (assist by J. Tyson)
+3,9:36.0,70-48,Clippers,J. Collins makes 2-pt layup from 2 ft (assist by K. Leonard)
+3,9:26.0,70-48,Cavaliers,D. Mitchell misses 3-pt jump shot from 26 ft
+3,9:23.0,70-48,Cavaliers,Offensive rebound by S. Merrill
+3,9:14.0,70-48,Cavaliers,Turnover by D. Mitchell (step out of bounds)
+3,9:03.0,70-48,Clippers,K. Leonard misses 3-pt jump shot from 27 ft
+3,9:00.0,70-48,Cavaliers,Defensive rebound by J. Allen
+3,8:51.0,70-48,Cavaliers,J. Allen misses 2-pt jump shot from 12 ft
+3,8:48.0,70-48,Clippers,Defensive rebound by J. Collins
+3,8:42.0,70-50,Clippers,K. Leonard makes 2-pt layup from 1 ft
+3,8:28.0,72-50,Cavaliers,D. Mitchell makes 2-pt layup from 2 ft
+3,8:13.0,72-50,Clippers,Turnover by K. Sanders (bad pass; steal by J. Allen)
+3,8:12.0,74-50,Cavaliers,S. Merrill makes 2-pt layup from 1 ft (assist by J. Allen)
+3,8:12.0,74-50,Clippers,LA Clippers full timeout
+3,8:12.0,74-50,Clippers,D. Jones enters the game for K. Dunn
+3,7:54.0,74-52,Clippers,K. Sanders makes 2-pt layup from 4 ft (assist by K. Leonard)
+3,7:42.0,74-52,Cavaliers,S. Merrill misses 3-pt jump shot from 26 ft
+3,7:39.0,74-52,Clippers,Defensive rebound by K. Leonard
+3,7:30.0,74-52,Clippers,K. Leonard misses 2-pt layup from 2 ft
+3,7:28.0,74-52,Cavaliers,Defensive rebound by J. Allen
+3,7:16.0,74-52,Cavaliers,J. Tyson misses 2-pt layup from 3 ft
+3,7:14.0,74-52,Clippers,Defensive rebound by K. Leonard
+3,7:12.0,74-52,Clippers,Shooting foul by S. Merrill (drawn by D. Jones)
+3,7:12.0,74-52,Cavaliers,D. Schröder enters the game for D. Mitchell
+3,7:12.0,74-52,Clippers,D. Jones misses free throw 1 of 2
+3,7:12.0,74-52,Clippers,Offensive rebound by Team
+3,7:12.0,74-52,Cavaliers,Violation by Team (def goaltending)
+3,7:12.0,74-53,Clippers,D. Jones makes free throw 2 of 2
+3,7:00.0,74-53,Cavaliers,Turnover by J. Tyson (bad pass; steal by B. Lopez)
+3,6:56.0,74-55,Clippers,J. Collins makes 2-pt dunk from 3 ft
+3,6:42.0,74-55,Cavaliers,Turnover by D. Schröder (bad pass; steal by K. Sanders)
+3,6:35.0,74-55,Clippers,K. Leonard misses 2-pt jump shot from 7 ft (block by J. Allen)
+3,6:34.0,74-55,Cavaliers,Defensive rebound by D. Wade
+3,6:18.0,76-55,Cavaliers,D. Schröder makes 2-pt jump shot from 5 ft (assist by D. Wade)
+3,5:59.0,76-57,Clippers,K. Leonard makes 2-pt hook shot from 11 ft
+3,5:59.0,76-57,Cavaliers,N. Tomlin enters the game for D. Wade
+3,5:59.0,76-57,Clippers,Y. Konan Niederhäuser enters the game for B. Lopez
+3,5:39.0,79-57,Cavaliers,S. Merrill makes 3-pt jump shot from 27 ft (assist by D. Schröder)
+3,5:12.0,79-60,Clippers,K. Leonard makes 3-pt jump shot from 27 ft (assist by K. Sanders)
+3,5:02.0,79-60,Cavaliers,Personal foul by D. Jones (drawn by D. Schröder)
+3,5:02.0,79-60,Cavaliers,C. Porter enters the game for S. Merrill
+3,5:02.0,79-60,Cavaliers,Away from play foul by Y. Konan Niederhäuser (drawn by J. Allen)
+3,5:02.0,79-60,Cavaliers,J. Allen misses free throw 1 of 1
+3,5:02.0,79-60,Cavaliers,Offensive rebound by Team
+3,4:55.0,79-60,Cavaliers,Turnover by D. Schröder (bad pass; steal by K. Leonard)
+3,4:53.0,79-60,Clippers,Shooting foul by C. Porter (drawn by J. Collins)
+3,4:53.0,79-61,Clippers,J. Collins makes free throw 1 of 2
+3,4:53.0,79-61,Cavaliers,T. Bryant enters the game for J. Allen
+3,4:53.0,79-61,Cavaliers,D. Mitchell enters the game for J. Tyson
+3,4:53.0,79-62,Clippers,J. Collins makes free throw 2 of 2
+3,4:34.0,81-62,Cavaliers,C. Porter makes 2-pt jump shot from 10 ft (assist by D. Mitchell)
+3,4:11.0,81-62,Clippers,Turnover by K. Leonard (bad pass; steal by D. Mitchell)
+3,4:04.0,81-62,Cavaliers,Shooting foul by Y. Konan Niederhäuser (drawn by N. Tomlin)
+3,4:04.0,82-62,Cavaliers,N. Tomlin makes free throw 1 of 2
+3,4:04.0,82-62,Clippers,J. Miller enters the game for K. Sanders
+3,4:04.0,83-62,Cavaliers,N. Tomlin makes free throw 2 of 2
+3,3:47.0,83-62,Clippers,D. Jones misses 2-pt layup from 12 ft
+3,3:47.0,83-62,Cavaliers,Defensive rebound by Team
+3,3:38.0,85-62,Cavaliers,D. Mitchell makes 2-pt jump shot from 13 ft (assist by D. Schröder)
+3,3:18.0,85-62,Clippers,D. Jones misses 2-pt layup from 6 ft (block by T. Bryant)
+3,3:18.0,85-62,Cavaliers,Defensive rebound by D. Mitchell
+3,3:09.0,85-62,Cavaliers,T. Bryant misses 3-pt jump shot from 26 ft
+3,3:06.0,85-62,Clippers,Defensive rebound by Y. Konan Niederhäuser
+3,2:56.0,85-62,Clippers,J. Miller misses 3-pt jump shot from 28 ft
+3,2:55.0,85-62,Clippers,Offensive rebound by J. Collins
+3,2:53.0,85-62,Clippers,J. Collins misses 2-pt layup from 3 ft (block by N. Tomlin)
+3,2:52.0,85-62,Cavaliers,Defensive rebound by D. Mitchell
+3,2:47.0,85-62,Cavaliers,D. Schröder misses 2-pt layup from 3 ft
+3,2:47.0,85-62,Clippers,Defensive rebound by Team
+3,2:47.0,85-62,Cavaliers,Loose ball foul by N. Tomlin (drawn by K. Leonard)
+3,2:47.0,85-62,Cavaliers,Cleveland full timeout
+3,2:29.0,85-64,Clippers,Y. Konan Niederhäuser makes 2-pt hook shot from 2 ft
+3,2:17.0,85-64,Cavaliers,Shooting foul by Y. Konan Niederhäuser (drawn by D. Mitchell)
+3,2:17.0,86-64,Cavaliers,D. Mitchell makes free throw 1 of 2
+3,2:17.0,86-64,Clippers,B. Bogdanović enters the game for K. Leonard
+3,2:17.0,87-64,Cavaliers,D. Mitchell makes free throw 2 of 2
+3,2:00.0,87-66,Clippers,J. Miller makes 2-pt layup from 4 ft
+3,1:39.0,89-66,Cavaliers,D. Mitchell makes 2-pt jump shot from 11 ft
+3,1:18.0,89-68,Clippers,J. Collins makes 2-pt jump shot from 12 ft
+3,0:53.0,89-68,Cavaliers,D. Schröder misses 3-pt jump shot from 26 ft
+3,0:51.0,89-68,Cavaliers,Offensive rebound by T. Bryant
+3,0:40.0,89-68,Cavaliers,C. Porter misses 3-pt jump shot from 25 ft
+3,0:38.0,89-68,Clippers,Defensive rebound by B. Bogdanović
+3,0:33.0,89-68,Clippers,Turnover by Y. Konan Niederhäuser (lost ball; steal by D. Mitchell)
+3,0:25.0,92-68,Cavaliers,D. Mitchell makes 3-pt jump shot from 25 ft
+3,0:15.0,92-68,Clippers,Turnover by B. Bogdanović (bad pass; steal by D. Schröder)
+3,0:11.0,94-68,Cavaliers,C. Porter makes 2-pt dunk from 1 ft (assist by D. Schröder)
+3,0:03.0,94-68,Clippers,J. Miller misses 2-pt layup from 3 ft (block by N. Tomlin)
+3,0:03.0,94-68,Clippers,Offensive rebound by Team
+3,0:01.0,94-68,Clippers,B. Bogdanović misses 3-pt jump shot from 25 ft
+3,0:00.0,94-68,Clippers,Offensive rebound by Team
+4,11:39.0,96-68,Cavaliers,D. Mitchell makes 2-pt jump shot from 16 ft
+4,11:25.0,96-68,Clippers,Turnover by C. Christie (bad pass; steal by N. Tomlin)
+4,11:20.0,99-68,Cavaliers,C. Porter makes 3-pt jump shot from 25 ft (assist by N. Tomlin)
+4,11:00.0,99-68,Clippers,D. Jones misses 3-pt jump shot from 26 ft
+4,10:57.0,99-68,Cavaliers,Defensive rebound by K. Ellis
+4,10:43.0,99-68,Cavaliers,N. Tomlin misses 3-pt jump shot from 25 ft
+4,10:39.0,99-68,Clippers,Defensive rebound by D. Jones
+4,10:33.0,99-68,Clippers,J. Miller misses 3-pt jump shot from 27 ft
+4,10:29.0,99-68,Cavaliers,Defensive rebound by C. Porter
+4,10:25.0,101-68,Cavaliers,T. Bryant makes 2-pt layup from 3 ft (assist by D. Mitchell)
+4,10:09.0,101-68,Clippers,C. Christie misses 2-pt jump shot from 14 ft
+4,10:05.0,101-68,Cavaliers,Defensive rebound by T. Bryant
+4,9:53.0,101-68,Cavaliers,Turnover by D. Mitchell (bad pass; steal by J. Miller)
+4,9:48.0,101-70,Clippers,C. Christie makes 2-pt dunk from 3 ft (assist by J. Miller)
+4,9:24.0,103-70,Cavaliers,N. Tomlin makes 2-pt layup from 2 ft
+4,9:12.0,103-70,Clippers,C. Christie misses 3-pt jump shot from 26 ft
+4,9:06.0,103-70,Cavaliers,Defensive rebound by T. Bryant
+4,8:52.0,103-70,Cavaliers,K. Ellis misses 3-pt jump shot from 25 ft
+4,8:52.0,103-70,Clippers,Defensive rebound by Team
+4,8:52.0,103-70,Cavaliers,Loose ball foul by N. Tomlin (drawn by Y. Konan Niederhäuser)
+4,8:52.0,103-70,Clippers,K. Brown enters the game for D. Jones
+4,8:41.0,103-72,Clippers,Y. Konan Niederhäuser makes 2-pt dunk from 4 ft (assist by J. Miller)
+4,8:20.0,103-72,Cavaliers,D. Mitchell misses 3-pt jump shot from 27 ft
+4,8:17.0,103-72,Clippers,Defensive rebound by Y. Konan Niederhäuser
+4,8:07.0,103-75,Clippers,K. Brown makes 3-pt jump shot from 27 ft (assist by B. Bogdanović)
+4,8:07.0,103-75,Cavaliers,Cleveland full timeout
+4,8:07.0,103-75,Cavaliers,L. Nance enters the game for T. Bryant
+4,8:07.0,103-75,Cavaliers,D. Schröder enters the game for D. Mitchell
+4,8:07.0,103-75,Cavaliers,J. Tyson enters the game for N. Tomlin
+4,8:07.0,103-75,Clippers,T. Washington enters the game for B. Bogdanović
+4,7:52.0,103-75,Cavaliers,C. Porter misses 2-pt jump shot from 8 ft (block by C. Christie)
+4,7:52.0,103-75,Cavaliers,Offensive rebound by Team
+4,7:49.0,103-75,Cavaliers,K. Ellis misses 2-pt jump shot from 8 ft
+4,7:44.0,103-75,Clippers,Defensive rebound by Y. Konan Niederhäuser
+4,7:42.0,103-75,Clippers,Turnover by Y. Konan Niederhäuser (lost ball; steal by C. Porter)
+4,7:38.0,105-75,Cavaliers,J. Tyson makes 2-pt jump shot from 3 ft (assist by D. Schröder)
+4,7:15.0,105-77,Clippers,Y. Konan Niederhäuser makes 2-pt layup from 6 ft (assist by T. Washington)
+4,7:02.0,105-77,Cavaliers,D. Schröder misses 2-pt jump shot from 8 ft
+4,7:02.0,105-77,Clippers,Defensive rebound by J. Miller
+4,6:58.0,105-77,Clippers,Turnover by J. Miller (bad pass)
+4,6:58.0,105-77,Cavaliers,T. Enaruna enters the game for D. Schröder
+4,6:58.0,105-77,Cavaliers,T. Proctor enters the game for J. Tyson
+4,6:49.0,108-77,Cavaliers,K. Ellis makes 3-pt jump shot from 27 ft (assist by L. Nance)
+4,6:19.0,108-77,Clippers,Turnover by K. Brown (lost ball; steal by K. Ellis)
+4,6:14.0,110-77,Cavaliers,T. Proctor makes 2-pt layup from 3 ft (assist by C. Porter)
+4,6:00.0,110-77,Clippers,Turnover by T. Washington (bad pass)
+4,5:48.0,110-77,Cavaliers,T. Proctor misses 3-pt jump shot from 26 ft
+4,5:44.0,110-77,Clippers,Defensive rebound by C. Christie
+4,5:24.0,110-80,Clippers,J. Miller makes 3-pt jump shot from 25 ft (assist by T. Washington)
+4,5:06.0,113-80,Cavaliers,L. Nance makes 3-pt jump shot from 26 ft (assist by T. Proctor)
+4,4:41.0,113-83,Clippers,K. Brown makes 3-pt jump shot from 27 ft
+4,4:27.0,113-83,Cavaliers,T. Proctor misses 2-pt layup from 4 ft (block by Y. Konan Niederhäuser)
+4,4:26.0,113-83,Cavaliers,Offensive rebound by T. Enaruna
+4,4:25.0,115-83,Cavaliers,T. Enaruna makes 2-pt layup from 2 ft
+4,4:03.0,115-83,Clippers,Turnover by K. Brown (lost ball; steal by T. Proctor)
+4,3:57.0,117-83,Cavaliers,T. Proctor makes 2-pt layup from 2 ft
+4,3:57.0,117-83,Clippers,LA Clippers full timeout
+4,3:40.0,117-85,Clippers,K. Brown makes 2-pt hook shot from 4 ft
+4,3:26.0,117-85,Cavaliers,Turnover by K. Ellis (bad pass; steal by C. Christie)
+4,3:18.0,117-85,Clippers,Offensive foul by Y. Konan Niederhäuser (drawn by K. Ellis)
+4,3:18.0,117-85,Clippers,Turnover by Y. Konan Niederhäuser (offensive foul)
+4,2:57.0,119-85,Cavaliers,T. Proctor makes 2-pt jump shot from 15 ft
+4,2:43.0,119-85,Clippers,Shooting foul by L. Nance (drawn by Y. Konan Niederhäuser)
+4,2:43.0,119-86,Clippers,Y. Konan Niederhäuser makes free throw 1 of 2
+4,2:43.0,119-87,Clippers,Y. Konan Niederhäuser makes free throw 2 of 2
+4,2:30.0,119-87,Cavaliers,T. Enaruna misses 2-pt layup from 5 ft
+4,2:28.0,119-87,Clippers,Defensive rebound by Y. Konan Niederhäuser
+4,2:15.0,119-87,Clippers,K. Brown misses 3-pt jump shot from 26 ft
+4,2:11.0,119-87,Cavaliers,Defensive rebound by K. Ellis
+4,1:58.0,121-87,Cavaliers,L. Nance makes 2-pt jump shot from 10 ft (assist by T. Proctor)
+4,1:46.0,121-87,Clippers,T. Washington misses 3-pt jump shot from 28 ft
+4,1:42.0,121-87,Cavaliers,Defensive rebound by L. Nance
+4,1:36.0,121-87,Cavaliers,T. Proctor misses 3-pt jump shot from 25 ft
+4,1:33.0,121-87,Cavaliers,Offensive rebound by T. Enaruna
+4,1:22.0,121-87,Cavaliers,L. Nance misses 3-pt jump shot from 25 ft
+4,1:19.0,121-87,Clippers,Defensive rebound by Y. Konan Niederhäuser
+4,1:17.0,121-87,Clippers,Offensive foul by K. Brown (drawn by T. Proctor)
+4,1:17.0,121-87,Clippers,Turnover by K. Brown (offensive foul)
+4,1:01.0,121-87,Cavaliers,K. Ellis misses 3-pt jump shot from 27 ft
+4,0:57.0,121-87,Clippers,Defensive rebound by Y. Konan Niederhäuser
+4,0:52.0,121-89,Clippers,Y. Konan Niederhäuser makes 2-pt dunk from 4 ft (assist by T. Washington)
+4,0:30.0,121-89,Cavaliers,T. Proctor misses 2-pt jump shot from 6 ft
+4,0:28.0,121-89,Cavaliers,Offensive rebound by T. Enaruna
+4,0:22.0,124-89,Cavaliers,L. Nance makes 3-pt jump shot from 24 ft (assist by T. Enaruna)
+4,0:06.0,124-91,Clippers,K. Brown makes 2-pt layup from 4 ft

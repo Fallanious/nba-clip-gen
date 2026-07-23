@@ -1,0 +1,3663 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:44.0",
+    "score": "0-0",
+    "team": "Warriors",
+    "description": "Shooting foul by D. Robinson (drawn by A. Horford)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:44.0",
+    "score": "0-1",
+    "team": "Warriors",
+    "description": "A. Horford makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "11:44.0",
+    "score": "0-2",
+    "team": "Warriors",
+    "description": "A. Horford makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "11:28.0",
+    "score": "2-2",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt layup from 2 ft (assist by J. Duren)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:22.0",
+    "score": "2-4",
+    "team": "Warriors",
+    "description": "D. Green makes 2-pt layup from 4 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:22.0",
+    "score": "2-4",
+    "team": "Warriors",
+    "description": "Shooting foul by J. Duren (drawn by D. Green)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:22.0",
+    "score": "2-5",
+    "team": "Warriors",
+    "description": "D. Green makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "11:00.0",
+    "score": "4-5",
+    "team": "Pistons",
+    "description": "A. Thompson makes 2-pt layup from 6 ft (assist by J. Duren)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:52.0",
+    "score": "4-8",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 25 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:50.0",
+    "score": "4-8",
+    "team": "Pistons",
+    "description": "Detroit full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "10:31.0",
+    "score": "4-8",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:28.0",
+    "score": "4-8",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "10:21.0",
+    "score": "4-8",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:18.0",
+    "score": "4-8",
+    "team": "Warriors",
+    "description": "Offensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 1,
+    "time": "10:10.0",
+    "score": "4-8",
+    "team": "Warriors",
+    "description": "Turnover by A. Horford (bad pass; steal by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:02.0",
+    "score": "7-8",
+    "team": "Pistons",
+    "description": "D. Robinson makes 3-pt jump shot from 25 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:34.0",
+    "score": "7-8",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 32 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:30.0",
+    "score": "7-8",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 1,
+    "time": "9:27.0",
+    "score": "7-8",
+    "team": "Pistons",
+    "description": "D. Robinson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:23.0",
+    "score": "7-8",
+    "team": "Pistons",
+    "description": "Offensive rebound by D. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "9:23.0",
+    "score": "7-8",
+    "team": "Pistons",
+    "description": "D. Robinson misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:20.0",
+    "score": "7-8",
+    "team": "Warriors",
+    "description": "Defensive rebound by A. Horford"
+  },
+  {
+    "quarter": 1,
+    "time": "9:03.0",
+    "score": "7-11",
+    "team": "Warriors",
+    "description": "S. Curry makes 3-pt jump shot from 27 ft (assist by A. Horford)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:50.0",
+    "score": "9-11",
+    "team": "Pistons",
+    "description": "T. Harris makes 2-pt layup from 3 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:39.0",
+    "score": "9-13",
+    "team": "Warriors",
+    "description": "S. Curry makes 2-pt layup from 1 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:32.0",
+    "score": "11-13",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt layup from 3 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:32.0",
+    "score": "11-13",
+    "team": "Pistons",
+    "description": "Shooting foul by D. Green (drawn by J. Duren)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:32.0",
+    "score": "12-13",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "8:11.0",
+    "score": "12-13",
+    "team": "Warriors",
+    "description": "Shooting foul by T. Harris (drawn by M. Moody)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:11.0",
+    "score": "12-13",
+    "team": "Warriors",
+    "description": "M. Moody misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:11.0",
+    "score": "12-13",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:11.0",
+    "score": "12-14",
+    "team": "Warriors",
+    "description": "M. Moody makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:54.0",
+    "score": "14-14",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt layup from 4 ft (assist by D. Robinson)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:38.0",
+    "score": "14-14",
+    "team": "Warriors",
+    "description": "A. Horford misses 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:35.0",
+    "score": "14-14",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 1,
+    "time": "7:31.0",
+    "score": "17-14",
+    "team": "Pistons",
+    "description": "D. Robinson makes 3-pt jump shot from 27 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:17.0",
+    "score": "17-14",
+    "team": "Warriors",
+    "description": "A. Horford misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:14.0",
+    "score": "17-14",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 1,
+    "time": "7:08.0",
+    "score": "17-14",
+    "team": "Pistons",
+    "description": "Turnover by A. Thompson (bad pass; steal by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:05.0",
+    "score": "17-17",
+    "team": "Warriors",
+    "description": "S. Curry makes 3-pt jump shot from 27 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:56.0",
+    "score": "17-17",
+    "team": "Pistons",
+    "description": "Offensive foul by T. Harris (drawn by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:56.0",
+    "score": "17-17",
+    "team": "Pistons",
+    "description": "Turnover by T. Harris (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:56.0",
+    "score": "17-17",
+    "team": "Pistons",
+    "description": "I. Stewart enters the game for T. Harris"
+  },
+  {
+    "quarter": 1,
+    "time": "6:56.0",
+    "score": "17-17",
+    "team": "Warriors",
+    "description": "W. Richard enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 1,
+    "time": "6:49.0",
+    "score": "17-17",
+    "team": "Warriors",
+    "description": "Turnover by S. Curry (back court)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:49.0",
+    "score": "17-17",
+    "team": "Warriors",
+    "description": "Violation by Team (delay of game)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:41.0",
+    "score": "20-17",
+    "team": "Pistons",
+    "description": "D. Robinson makes 3-pt jump shot from 27 ft (assist by I. Stewart)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:30.0",
+    "score": "20-17",
+    "team": "Warriors",
+    "description": "S. Curry misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:28.0",
+    "score": "20-17",
+    "team": "Pistons",
+    "description": "Defensive rebound by C. Cunningham"
+  },
+  {
+    "quarter": 1,
+    "time": "6:19.0",
+    "score": "22-17",
+    "team": "Pistons",
+    "description": "A. Thompson makes 2-pt jump shot from 13 ft (assist by I. Stewart)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:07.0",
+    "score": "22-17",
+    "team": "Warriors",
+    "description": "Shooting foul by A. Thompson (drawn by S. Curry)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:07.0",
+    "score": "22-18",
+    "team": "Warriors",
+    "description": "S. Curry makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:07.0",
+    "score": "22-18",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for M. Moody"
+  },
+  {
+    "quarter": 1,
+    "time": "6:07.0",
+    "score": "22-19",
+    "team": "Warriors",
+    "description": "S. Curry makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "5:59.0",
+    "score": "25-19",
+    "team": "Pistons",
+    "description": "D. Robinson makes 3-pt jump shot from 26 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:57.0",
+    "score": "25-19",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "5:57.0",
+    "score": "25-19",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for A. Horford"
+  },
+  {
+    "quarter": 1,
+    "time": "5:41.0",
+    "score": "25-19",
+    "team": "Warriors",
+    "description": "Q. Post misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:36.0",
+    "score": "25-19",
+    "team": "Pistons",
+    "description": "Defensive rebound by D. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "27-19",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt layup from 4 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:16.0",
+    "score": "27-22",
+    "team": "Warriors",
+    "description": "D. Green makes 3-pt jump shot from 24 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:04.0",
+    "score": "29-22",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:58.0",
+    "score": "29-22",
+    "team": "Warriors",
+    "description": "S. Curry misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:57.0",
+    "score": "29-22",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 1,
+    "time": "4:55.0",
+    "score": "31-22",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt dunk from 2 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:35.0",
+    "score": "31-25",
+    "team": "Warriors",
+    "description": "D. Green makes 3-pt jump shot from 27 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:20.0",
+    "score": "31-25",
+    "team": "Pistons",
+    "description": "I. Stewart misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-25",
+    "team": "Warriors",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-25",
+    "team": "Pistons",
+    "description": "Loose ball foul by J. Duren (drawn by Q. Post)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-26",
+    "team": "Warriors",
+    "description": "Q. Post makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-26",
+    "team": "Pistons",
+    "description": "J. Green enters the game for J. Duren"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-26",
+    "team": "Pistons",
+    "description": "R. Holland enters the game for D. Robinson"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-26",
+    "team": "Pistons",
+    "description": "J. Ivey enters the game for A. Thompson"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-26",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for D. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "31-27",
+    "team": "Warriors",
+    "description": "Q. Post makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:04.0",
+    "score": "33-27",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "33-29",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:32.0",
+    "score": "33-29",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:32.0",
+    "score": "33-29",
+    "team": "Warriors",
+    "description": "Defensive rebound by Q. Post"
+  },
+  {
+    "quarter": 1,
+    "time": "3:13.0",
+    "score": "33-31",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:50.0",
+    "score": "35-31",
+    "team": "Pistons",
+    "description": "J. Ivey makes 2-pt layup from 4 ft (assist by I. Stewart)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:38.0",
+    "score": "35-31",
+    "team": "Warriors",
+    "description": "S. Curry misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:38.0",
+    "score": "35-31",
+    "team": "Pistons",
+    "description": "Defensive rebound by I. Stewart"
+  },
+  {
+    "quarter": 1,
+    "time": "2:31.0",
+    "score": "37-31",
+    "team": "Pistons",
+    "description": "R. Holland makes 2-pt dunk from 2 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:30.0",
+    "score": "37-31",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:30.0",
+    "score": "37-31",
+    "team": "Pistons",
+    "description": "D. Jenkins enters the game for C. Cunningham"
+  },
+  {
+    "quarter": 1,
+    "time": "2:30.0",
+    "score": "37-31",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for S. Curry"
+  },
+  {
+    "quarter": 1,
+    "time": "2:30.0",
+    "score": "37-31",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for W. Richard"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "37-34",
+    "team": "Warriors",
+    "description": "D. Melton makes 3-pt jump shot from 27 ft (assist by Q. Post)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:02.0",
+    "score": "37-34",
+    "team": "Pistons",
+    "description": "J. Ivey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:58.0",
+    "score": "37-34",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 1,
+    "time": "1:53.0",
+    "score": "37-34",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:46.0",
+    "score": "37-34",
+    "team": "Pistons",
+    "description": "Defensive rebound by D. Jenkins"
+  },
+  {
+    "quarter": 1,
+    "time": "1:45.0",
+    "score": "39-34",
+    "team": "Pistons",
+    "description": "D. Jenkins makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:33.0",
+    "score": "39-34",
+    "team": "Warriors",
+    "description": "Q. Post misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:29.0",
+    "score": "39-34",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "1:26.0",
+    "score": "39-34",
+    "team": "Pistons",
+    "description": "Turnover by R. Holland (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:11.0",
+    "score": "39-34",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:09.0",
+    "score": "39-34",
+    "team": "Pistons",
+    "description": "Defensive rebound by I. Stewart"
+  },
+  {
+    "quarter": 1,
+    "time": "1:03.0",
+    "score": "39-34",
+    "team": "Pistons",
+    "description": "Shooting foul by D. Melton (drawn by J. Ivey)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:03.0",
+    "score": "40-34",
+    "team": "Pistons",
+    "description": "J. Ivey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:03.0",
+    "score": "41-34",
+    "team": "Pistons",
+    "description": "J. Ivey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "41-34",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 2-pt layup from 5 ft (block by I. Stewart)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:45.0",
+    "score": "41-34",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "0:43.0",
+    "score": "43-34",
+    "team": "Pistons",
+    "description": "D. Jenkins makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:31.0",
+    "score": "43-34",
+    "team": "Warriors",
+    "description": "Turnover by Q. Post (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:12.0",
+    "score": "45-34",
+    "team": "Pistons",
+    "description": "R. Holland makes 2-pt dunk from 2 ft (assist by D. Jenkins)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "45-36",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "45-36",
+    "team": "Warriors",
+    "description": "Shooting foul by I. Stewart (drawn by D. Melton)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "45-37",
+    "team": "Warriors",
+    "description": "D. Melton makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "11:51.0",
+    "score": "45-37",
+    "team": "Pistons",
+    "description": "D. Jenkins misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:47.0",
+    "score": "45-37",
+    "team": "Warriors",
+    "description": "Defensive rebound by W. Richard"
+  },
+  {
+    "quarter": 2,
+    "time": "11:43.0",
+    "score": "45-37",
+    "team": "Warriors",
+    "description": "A. Horford misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:40.0",
+    "score": "45-37",
+    "team": "Warriors",
+    "description": "Offensive rebound by W. Richard"
+  },
+  {
+    "quarter": 2,
+    "time": "11:35.0",
+    "score": "45-37",
+    "team": "Warriors",
+    "description": "Turnover by M. Moody (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:24.0",
+    "score": "45-37",
+    "team": "Pistons",
+    "description": "D. Jenkins misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:23.0",
+    "score": "45-37",
+    "team": "Pistons",
+    "description": "Offensive rebound by I. Stewart"
+  },
+  {
+    "quarter": 2,
+    "time": "11:21.0",
+    "score": "47-37",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "11:05.0",
+    "score": "47-37",
+    "team": "Warriors",
+    "description": "Turnover by S. Curry (bad pass; steal by R. Holland)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:00.0",
+    "score": "49-37",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt dunk from 4 ft (assist by R. Holland)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:39.0",
+    "score": "49-37",
+    "team": "Warriors",
+    "description": "A. Horford misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:36.0",
+    "score": "49-37",
+    "team": "Pistons",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "10:22.0",
+    "score": "52-37",
+    "team": "Pistons",
+    "description": "J. Green makes 3-pt jump shot from 26 ft (assist by D. Jenkins)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:07.0",
+    "score": "52-40",
+    "team": "Warriors",
+    "description": "D. Green makes 3-pt jump shot from 23 ft (assist by A. Horford)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:42.0",
+    "score": "54-40",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt jump shot from 13 ft (assist by J. Ivey)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:30.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "D. Green makes 3-pt jump shot from 23 ft (assist by A. Horford)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:14.0",
+    "score": "54-43",
+    "team": "Pistons",
+    "description": "I. Stewart misses 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:11.0",
+    "score": "54-43",
+    "team": "Pistons",
+    "description": "Offensive rebound by R. Holland"
+  },
+  {
+    "quarter": 2,
+    "time": "9:11.0",
+    "score": "54-43",
+    "team": "Pistons",
+    "description": "R. Holland misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "9:11.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:11.0",
+    "score": "54-43",
+    "team": "Pistons",
+    "description": "Loose ball foul by R. Holland (drawn by A. Horford)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:01.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "S. Curry misses 2-pt layup from 6 ft (block by I. Stewart)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:00.0",
+    "score": "54-43",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "8:56.0",
+    "score": "54-43",
+    "team": "Pistons",
+    "description": "Turnover by J. Ivey (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "Personal foul by I. Stewart (drawn by D. Green)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "Technical foul by D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "54-43",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for A. Horford"
+  },
+  {
+    "quarter": 2,
+    "time": "8:44.0",
+    "score": "55-43",
+    "team": "Pistons",
+    "description": "D. Jenkins makes technical free throw"
+  },
+  {
+    "quarter": 2,
+    "time": "8:39.0",
+    "score": "55-43",
+    "team": "Pistons",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:34.0",
+    "score": "55-46",
+    "team": "Warriors",
+    "description": "G. Santos makes 3-pt jump shot from 25 ft (assist by S. Curry)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:14.0",
+    "score": "57-46",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt layup from 4 ft (assist by D. Jenkins)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 3 ft (assist by S. Curry)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "Shooting foul by J. Ivey (drawn by G. Santos)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "57-48",
+    "team": "Pistons",
+    "description": "T. Harris enters the game for J. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for W. Richard"
+  },
+  {
+    "quarter": 2,
+    "time": "8:03.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "G. Santos misses free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "8:02.0",
+    "score": "57-48",
+    "team": "Pistons",
+    "description": "Defensive rebound by R. Holland"
+  },
+  {
+    "quarter": 2,
+    "time": "7:55.0",
+    "score": "57-48",
+    "team": "Pistons",
+    "description": "D. Jenkins misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:54.0",
+    "score": "57-48",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Ivey"
+  },
+  {
+    "quarter": 2,
+    "time": "7:53.0",
+    "score": "57-48",
+    "team": "Pistons",
+    "description": "J. Ivey misses 2-pt layup at rim (block by G. Santos)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:52.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "7:39.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "Turnover by D. Green (bad pass; steal by J. Ivey)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:24.0",
+    "score": "57-48",
+    "team": "Pistons",
+    "description": "R. Holland misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:20.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "Defensive rebound by M. Moody"
+  },
+  {
+    "quarter": 2,
+    "time": "7:14.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "D. Melton misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "7:13.0",
+    "score": "57-48",
+    "team": "Warriors",
+    "description": "Offensive rebound by G. Santos"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "57-50",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "57-50",
+    "team": "Pistons",
+    "description": "J. Ivey misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:50.0",
+    "score": "57-50",
+    "team": "Pistons",
+    "description": "Offensive rebound by I. Stewart"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "6:27.0",
+    "score": "59-50",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:25.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "Defensive rebound by R. Holland"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "Personal foul by M. Moody (drawn by R. Holland)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "C. Cunningham enters the game for R. Holland"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "J. Duren enters the game for J. Ivey"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "D. Robinson enters the game for D. Jenkins"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "A. Thompson enters the game for I. Stewart"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for S. Curry"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "59-50",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for M. Moody"
+  },
+  {
+    "quarter": 2,
+    "time": "6:04.0",
+    "score": "59-50",
+    "team": "Pistons",
+    "description": "Turnover by D. Robinson (bad pass; steal by Q. Post)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:57.0",
+    "score": "59-52",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt layup from 3 ft (assist by B. Hield)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:45.0",
+    "score": "59-52",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:44.0",
+    "score": "59-52",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Duren"
+  },
+  {
+    "quarter": 2,
+    "time": "5:43.0",
+    "score": "61-52",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "5:34.0",
+    "score": "61-54",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "61-54",
+    "team": "Pistons",
+    "description": "Shooting foul by D. Melton (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "61-54",
+    "team": "Pistons",
+    "description": "A. Thompson misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "61-54",
+    "team": "Pistons",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "61-54",
+    "team": "Pistons",
+    "description": "A. Thompson misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:24.0",
+    "score": "61-54",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Hield"
+  },
+  {
+    "quarter": 2,
+    "time": "5:11.0",
+    "score": "61-56",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:07.0",
+    "score": "61-56",
+    "team": "Pistons",
+    "description": "Detroit full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "4:54.0",
+    "score": "64-56",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 3-pt jump shot from 26 ft (assist by T. Harris)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:36.0",
+    "score": "64-56",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:35.0",
+    "score": "64-56",
+    "team": "Warriors",
+    "description": "Offensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 2,
+    "time": "4:34.0",
+    "score": "64-56",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "4:33.0",
+    "score": "64-56",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 2,
+    "time": "4:26.0",
+    "score": "66-56",
+    "team": "Pistons",
+    "description": "T. Harris makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "66-58",
+    "team": "Warriors",
+    "description": "Q. Post makes 2-pt jump shot from 7 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:52.0",
+    "score": "66-58",
+    "team": "Pistons",
+    "description": "T. Harris misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:51.0",
+    "score": "66-58",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Duren"
+  },
+  {
+    "quarter": 2,
+    "time": "3:50.0",
+    "score": "66-58",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:49.0",
+    "score": "66-58",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Hield"
+  },
+  {
+    "quarter": 2,
+    "time": "3:46.0",
+    "score": "66-58",
+    "team": "Warriors",
+    "description": "Turnover by B. Hield (lost ball; steal by T. Harris)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:46.0",
+    "score": "66-58",
+    "team": "Pistons",
+    "description": "Turnover by T. Harris (bad pass; steal by B. Podziemski)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:34.0",
+    "score": "66-58",
+    "team": "Warriors",
+    "description": "Q. Post misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:29.0",
+    "score": "66-58",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "66-58",
+    "team": "Pistons",
+    "description": "Shooting foul by Q. Post (drawn by J. Duren)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "67-58",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "67-58",
+    "team": "Warriors",
+    "description": "D. Green enters the game for Q. Post"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "68-58",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:09.0",
+    "score": "68-58",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:05.0",
+    "score": "68-58",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 2,
+    "time": "2:58.0",
+    "score": "68-58",
+    "team": "Pistons",
+    "description": "D. Robinson misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:55.0",
+    "score": "68-58",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 2,
+    "time": "2:49.0",
+    "score": "68-58",
+    "team": "Warriors",
+    "description": "Turnover by D. Melton (bad pass; steal by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "70-58",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt layup from 3 ft (assist by T. Harris)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:22.0",
+    "score": "70-58",
+    "team": "Warriors",
+    "description": "Turnover by D. Green (bad pass; steal by T. Harris)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "70-58",
+    "team": "Pistons",
+    "description": "Shooting foul by B. Hield (drawn by T. Harris)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "71-58",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "71-58",
+    "team": "Warriors",
+    "description": "S. Curry enters the game for B. Hield"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "71-58",
+    "team": "Warriors",
+    "description": "A. Horford enters the game for D. Melton"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "71-58",
+    "team": "Warriors",
+    "description": "M. Moody enters the game for G. Santos"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "72-58",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:08.0",
+    "score": "72-58",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:03.0",
+    "score": "72-58",
+    "team": "Warriors",
+    "description": "Offensive rebound by D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "1:59.0",
+    "score": "72-58",
+    "team": "Warriors",
+    "description": "S. Curry misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:57.0",
+    "score": "72-58",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 2,
+    "time": "1:57.0",
+    "score": "72-58",
+    "team": "Pistons",
+    "description": "Turnover by J. Duren (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "72-60",
+    "team": "Warriors",
+    "description": "A. Horford makes 2-pt jump shot from 20 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:43.0",
+    "score": "72-60",
+    "team": "Pistons",
+    "description": "Shooting foul by D. Green (drawn by J. Duren)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:43.0",
+    "score": "72-60",
+    "team": "Pistons",
+    "description": "J. Duren misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:43.0",
+    "score": "72-60",
+    "team": "Pistons",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:43.0",
+    "score": "73-60",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:37.0",
+    "score": "73-60",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:34.0",
+    "score": "73-60",
+    "team": "Pistons",
+    "description": "Defensive rebound by C. Cunningham"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "75-60",
+    "team": "Pistons",
+    "description": "A. Thompson makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "75-60",
+    "team": "Warriors",
+    "description": "Turnover by S. Curry (bad pass; steal by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:01.0",
+    "score": "77-60",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt dunk from 3 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:52.0",
+    "score": "77-60",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "77-60",
+    "team": "Pistons",
+    "description": "Turnover by A. Thompson (bad pass; steal by A. Horford)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "77-60",
+    "team": "Pistons",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "77-60",
+    "team": "Warriors",
+    "description": "Flagrant foul type 1 by A. Thompson (drawn by M. Moody)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "77-60",
+    "team": "Warriors",
+    "description": "M. Moody misses flagrant free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "77-60",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "77-61",
+    "team": "Warriors",
+    "description": "M. Moody makes flagrant free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "77-61",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for A. Horford"
+  },
+  {
+    "quarter": 2,
+    "time": "0:25.0",
+    "score": "77-61",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:23.0",
+    "score": "77-61",
+    "team": "Warriors",
+    "description": "Offensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 2,
+    "time": "0:21.0",
+    "score": "77-64",
+    "team": "Warriors",
+    "description": "S. Curry makes 3-pt jump shot from 29 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:04.0",
+    "score": "77-64",
+    "team": "Pistons",
+    "description": "D. Robinson misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "77-64",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 3,
+    "time": "11:45.0",
+    "score": "77-64",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:42.0",
+    "score": "77-64",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 3,
+    "time": "11:34.0",
+    "score": "77-64",
+    "team": "Warriors",
+    "description": "Turnover by S. Curry (bad pass; steal by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:29.0",
+    "score": "79-64",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt dunk at rim (assist by D. Robinson)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:06.0",
+    "score": "79-64",
+    "team": "Warriors",
+    "description": "M. Moody misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:05.0",
+    "score": "79-64",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "10:57.0",
+    "score": "81-64",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt layup from 1 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:57.0",
+    "score": "81-64",
+    "team": "Pistons",
+    "description": "Shooting foul by M. Moody (drawn by J. Duren)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:57.0",
+    "score": "82-64",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "10:47.0",
+    "score": "82-64",
+    "team": "Warriors",
+    "description": "S. Curry misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:47.0",
+    "score": "82-64",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "10:40.0",
+    "score": "82-64",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt layup from 1 ft (block by A. Horford)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:40.0",
+    "score": "82-64",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 3,
+    "time": "10:40.0",
+    "score": "82-64",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (lost ball; steal by J. Duren)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:37.0",
+    "score": "84-64",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt hook shot from 2 ft (assist by J. Duren)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "84-64",
+    "team": "Warriors",
+    "description": "Shooting foul by C. Cunningham (drawn by B. Podziemski)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "84-65",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "84-66",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "84-66",
+    "team": "Pistons",
+    "description": "Shooting foul by A. Horford (drawn by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "85-66",
+    "team": "Pistons",
+    "description": "C. Cunningham makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "86-66",
+    "team": "Pistons",
+    "description": "C. Cunningham makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:03.0",
+    "score": "86-66",
+    "team": "Warriors",
+    "description": "S. Curry misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:59.0",
+    "score": "86-66",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "9:44.0",
+    "score": "86-66",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:41.0",
+    "score": "86-66",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "9:36.0",
+    "score": "86-66",
+    "team": "Pistons",
+    "description": "T. Harris misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:34.0",
+    "score": "86-66",
+    "team": "Warriors",
+    "description": "Defensive rebound by A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "9:24.0",
+    "score": "86-68",
+    "team": "Warriors",
+    "description": "A. Horford makes 2-pt jump shot from 3 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:10.0",
+    "score": "86-68",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt layup from 2 ft (block by S. Curry)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:07.0",
+    "score": "86-68",
+    "team": "Warriors",
+    "description": "Defensive rebound by S. Curry"
+  },
+  {
+    "quarter": 3,
+    "time": "9:02.0",
+    "score": "86-68",
+    "team": "Warriors",
+    "description": "S. Curry misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:00.0",
+    "score": "86-68",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:42.0",
+    "score": "88-68",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:42.0",
+    "score": "88-68",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "8:32.0",
+    "score": "88-71",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 26 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:04.0",
+    "score": "88-71",
+    "team": "Pistons",
+    "description": "T. Harris misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:04.0",
+    "score": "88-71",
+    "team": "Warriors",
+    "description": "Defensive rebound by A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "7:57.0",
+    "score": "88-71",
+    "team": "Warriors",
+    "description": "Shooting foul by J. Duren (drawn by S. Curry)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:57.0",
+    "score": "88-72",
+    "team": "Warriors",
+    "description": "S. Curry makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:57.0",
+    "score": "88-73",
+    "team": "Warriors",
+    "description": "S. Curry makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:45.0",
+    "score": "90-73",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt dunk from 2 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:27.0",
+    "score": "90-76",
+    "team": "Warriors",
+    "description": "A. Horford makes 3-pt jump shot from 25 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:03.0",
+    "score": "90-76",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "90-76",
+    "team": "Warriors",
+    "description": "Defensive rebound by A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "6:51.0",
+    "score": "90-76",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "90-76",
+    "team": "Warriors",
+    "description": "Offensive rebound by A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "6:49.0",
+    "score": "90-78",
+    "team": "Warriors",
+    "description": "A. Horford makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "6:46.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Detroit full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:46.0",
+    "score": "90-78",
+    "team": "Warriors",
+    "description": "W. Richard enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 3,
+    "time": "6:36.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 2-pt hook shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:35.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "6:34.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:33.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Offensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "6:32.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "6:31.0",
+    "score": "90-78",
+    "team": "Warriors",
+    "description": "Defensive rebound by A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "90-78",
+    "team": "Warriors",
+    "description": "Turnover by W. Richard (lost ball; steal by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:21.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "D. Robinson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:18.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Offensive rebound by T. Harris"
+  },
+  {
+    "quarter": 3,
+    "time": "6:18.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:17.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "6:16.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:15.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "6:14.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:12.0",
+    "score": "90-78",
+    "team": "Warriors",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "6:12.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "Loose ball foul by J. Duren (drawn by W. Richard)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:12.0",
+    "score": "90-78",
+    "team": "Pistons",
+    "description": "I. Stewart enters the game for J. Duren"
+  },
+  {
+    "quarter": 3,
+    "time": "6:12.0",
+    "score": "90-78",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "6:02.0",
+    "score": "90-81",
+    "team": "Warriors",
+    "description": "S. Curry makes 3-pt jump shot from 28 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:47.0",
+    "score": "90-81",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:45.0",
+    "score": "90-81",
+    "team": "Warriors",
+    "description": "Defensive rebound by M. Moody"
+  },
+  {
+    "quarter": 3,
+    "time": "5:34.0",
+    "score": "90-81",
+    "team": "Warriors",
+    "description": "S. Curry misses 2-pt layup from 5 ft (block by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "90-81",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 3,
+    "time": "5:25.0",
+    "score": "90-81",
+    "team": "Pistons",
+    "description": "D. Robinson misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:23.0",
+    "score": "90-81",
+    "team": "Pistons",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "5:23.0",
+    "score": "90-81",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for M. Moody"
+  },
+  {
+    "quarter": 3,
+    "time": "5:20.0",
+    "score": "93-81",
+    "team": "Pistons",
+    "description": "D. Robinson makes 3-pt jump shot from 28 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:10.0",
+    "score": "93-83",
+    "team": "Warriors",
+    "description": "S. Curry makes 2-pt layup from 5 ft (assist by G. Santos)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:54.0",
+    "score": "93-83",
+    "team": "Pistons",
+    "description": "Turnover by C. Cunningham (lost ball; steal by D. Melton)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:49.0",
+    "score": "93-83",
+    "team": "Warriors",
+    "description": "Turnover by D. Melton (bad pass; steal by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:49.0",
+    "score": "93-83",
+    "team": "Pistons",
+    "description": "J. Ivey enters the game for D. Robinson"
+  },
+  {
+    "quarter": 3,
+    "time": "4:49.0",
+    "score": "93-83",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for D. Green"
+  },
+  {
+    "quarter": 3,
+    "time": "4:40.0",
+    "score": "93-83",
+    "team": "Pistons",
+    "description": "Shooting foul by G. Santos (drawn by T. Harris)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:40.0",
+    "score": "93-83",
+    "team": "Warriors",
+    "description": "Violation by Team (delay of game)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:40.0",
+    "score": "94-83",
+    "team": "Pistons",
+    "description": "T. Harris makes technical free throw"
+  },
+  {
+    "quarter": 3,
+    "time": "4:40.0",
+    "score": "95-83",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:40.0",
+    "score": "96-83",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:28.0",
+    "score": "96-85",
+    "team": "Warriors",
+    "description": "S. Curry makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:28.0",
+    "score": "96-85",
+    "team": "Warriors",
+    "description": "Shooting foul by A. Thompson (drawn by S. Curry)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:28.0",
+    "score": "96-86",
+    "team": "Warriors",
+    "description": "S. Curry makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "96-86",
+    "team": "Pistons",
+    "description": "Shooting foul by W. Richard (drawn by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "97-86",
+    "team": "Pistons",
+    "description": "C. Cunningham makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "98-86",
+    "team": "Pistons",
+    "description": "C. Cunningham makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "98-86",
+    "team": "Pistons",
+    "description": "R. Holland enters the game for A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "98-86",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for S. Curry"
+  },
+  {
+    "quarter": 3,
+    "time": "3:44.0",
+    "score": "98-86",
+    "team": "Warriors",
+    "description": "D. Melton misses 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:42.0",
+    "score": "98-86",
+    "team": "Pistons",
+    "description": "Defensive rebound by C. Cunningham"
+  },
+  {
+    "quarter": 3,
+    "time": "3:37.0",
+    "score": "100-86",
+    "team": "Pistons",
+    "description": "I. Stewart makes 2-pt layup from 2 ft (assist by C. Cunningham)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:19.0",
+    "score": "100-86",
+    "team": "Warriors",
+    "description": "W. Richard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:16.0",
+    "score": "100-86",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Ivey"
+  },
+  {
+    "quarter": 3,
+    "time": "3:08.0",
+    "score": "100-86",
+    "team": "Pistons",
+    "description": "Turnover by C. Cunningham (bad pass; steal by G. Santos)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "100-86",
+    "team": "Warriors",
+    "description": "Shooting foul by R. Holland (drawn by B. Podziemski)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "100-87",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 1 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "100-88",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 2 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "100-88",
+    "team": "Pistons",
+    "description": "D. Jenkins enters the game for C. Cunningham"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "100-89",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 3 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "2:47.0",
+    "score": "100-89",
+    "team": "Pistons",
+    "description": "T. Harris misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:43.0",
+    "score": "100-89",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 3,
+    "time": "2:43.0",
+    "score": "100-89",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (lost ball; steal by D. Jenkins)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:38.0",
+    "score": "103-89",
+    "team": "Pistons",
+    "description": "J. Ivey makes 3-pt jump shot from 29 ft (assist by D. Jenkins)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:25.0",
+    "score": "103-92",
+    "team": "Warriors",
+    "description": "B. Podziemski makes 3-pt jump shot from 23 ft (assist by W. Richard)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:01.0",
+    "score": "106-92",
+    "team": "Pistons",
+    "description": "D. Jenkins makes 3-pt jump shot from 28 ft (assist by T. Harris)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:47.0",
+    "score": "106-92",
+    "team": "Warriors",
+    "description": "G. Santos misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:44.0",
+    "score": "106-92",
+    "team": "Pistons",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "106-92",
+    "team": "Pistons",
+    "description": "T. Harris misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "106-92",
+    "team": "Warriors",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "106-92",
+    "team": "Pistons",
+    "description": "Loose ball foul by I. Stewart (drawn by Q. Post)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "106-93",
+    "team": "Warriors",
+    "description": "Q. Post makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "106-94",
+    "team": "Warriors",
+    "description": "Q. Post makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:20.0",
+    "score": "106-94",
+    "team": "Warriors",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "106-94",
+    "team": "Pistons",
+    "description": "D. Jenkins misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "106-94",
+    "team": "Warriors",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "106-94",
+    "team": "Pistons",
+    "description": "Loose ball foul by R. Holland (drawn by B. Podziemski)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "106-95",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "106-95",
+    "team": "Warriors",
+    "description": "M. Moody enters the game for D. Melton"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "106-95",
+    "team": "Warriors",
+    "description": "B. Podziemski misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:10.0",
+    "score": "106-95",
+    "team": "Pistons",
+    "description": "Defensive rebound by I. Stewart"
+  },
+  {
+    "quarter": 3,
+    "time": "0:57.0",
+    "score": "106-95",
+    "team": "Pistons",
+    "description": "Turnover by D. Jenkins (bad pass; steal by G. Santos)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:51.0",
+    "score": "106-95",
+    "team": "Warriors",
+    "description": "G. Santos misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:51.0",
+    "score": "106-95",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:50.0",
+    "score": "106-95",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (bad pass; steal by D. Jenkins)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:46.0",
+    "score": "106-95",
+    "team": "Pistons",
+    "description": "Shooting foul by Q. Post (drawn by R. Holland)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:46.0",
+    "score": "107-95",
+    "team": "Pistons",
+    "description": "R. Holland makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:46.0",
+    "score": "108-95",
+    "team": "Pistons",
+    "description": "R. Holland makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:35.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "Q. Post misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "108-95",
+    "team": "Pistons",
+    "description": "Defensive rebound by R. Holland"
+  },
+  {
+    "quarter": 3,
+    "time": "0:15.0",
+    "score": "108-95",
+    "team": "Pistons",
+    "description": "J. Ivey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:11.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "Defensive rebound by M. Moody"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "Offensive rebound by Q. Post"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "Q. Post misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:43.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "M. Moody misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:41.0",
+    "score": "108-95",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 4,
+    "time": "11:36.0",
+    "score": "108-95",
+    "team": "Pistons",
+    "description": "R. Holland misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:34.0",
+    "score": "108-95",
+    "team": "Warriors",
+    "description": "Defensive rebound by P. Spencer"
+  },
+  {
+    "quarter": 4,
+    "time": "11:25.0",
+    "score": "108-98",
+    "team": "Warriors",
+    "description": "B. Hield makes 3-pt jump shot from 24 ft (assist by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:00.0",
+    "score": "108-98",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:56.0",
+    "score": "108-98",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "10:48.0",
+    "score": "108-101",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 28 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:31.0",
+    "score": "108-101",
+    "team": "Pistons",
+    "description": "I. Stewart misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:28.0",
+    "score": "108-101",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Ivey"
+  },
+  {
+    "quarter": 4,
+    "time": "10:26.0",
+    "score": "111-101",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 3-pt jump shot from 27 ft (assist by J. Ivey)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:17.0",
+    "score": "111-101",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:16.0",
+    "score": "111-101",
+    "team": "Warriors",
+    "description": "Offensive rebound by B. Hield"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "111-101",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:02.0",
+    "score": "111-101",
+    "team": "Warriors",
+    "description": "Offensive rebound by M. Moody"
+  },
+  {
+    "quarter": 4,
+    "time": "10:02.0",
+    "score": "111-101",
+    "team": "Warriors",
+    "description": "Turnover by M. Moody (step out of bounds)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:02.0",
+    "score": "111-101",
+    "team": "Pistons",
+    "description": "A. Thompson enters the game for R. Holland"
+  },
+  {
+    "quarter": 4,
+    "time": "9:44.0",
+    "score": "113-101",
+    "team": "Pistons",
+    "description": "J. Duren makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:38.0",
+    "score": "113-101",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:34.0",
+    "score": "113-101",
+    "team": "Pistons",
+    "description": "Defensive rebound by J. Duren"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "113-101",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:29.0",
+    "score": "113-101",
+    "team": "Pistons",
+    "description": "Offensive rebound by J. Ivey"
+  },
+  {
+    "quarter": 4,
+    "time": "9:28.0",
+    "score": "115-101",
+    "team": "Pistons",
+    "description": "J. Ivey makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "9:18.0",
+    "score": "115-101",
+    "team": "Warriors",
+    "description": "Shooting foul by J. Ivey (drawn by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:18.0",
+    "score": "115-101",
+    "team": "Warriors",
+    "description": "P. Spencer misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:18.0",
+    "score": "115-101",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:18.0",
+    "score": "115-102",
+    "team": "Warriors",
+    "description": "P. Spencer makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:12.0",
+    "score": "115-102",
+    "team": "Pistons",
+    "description": "Turnover by C. Cunningham (lost ball; steal by M. Moody)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "115-102",
+    "team": "Warriors",
+    "description": "Shooting foul by J. Duren (drawn by M. Moody)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "115-102",
+    "team": "Warriors",
+    "description": "M. Moody misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "115-102",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "115-102",
+    "team": "Pistons",
+    "description": "T. Harris enters the game for J. Duren"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "115-102",
+    "team": "Pistons",
+    "description": "D. Robinson enters the game for J. Ivey"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "115-102",
+    "team": "Warriors",
+    "description": "M. Moody misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:08.0",
+    "score": "115-102",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 4,
+    "time": "9:08.0",
+    "score": "115-102",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for M. Moody"
+  },
+  {
+    "quarter": 4,
+    "time": "8:54.0",
+    "score": "115-102",
+    "team": "Pistons",
+    "description": "Turnover by  (5 sec)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:32.0",
+    "score": "115-104",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 4 ft (assist by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:21.0",
+    "score": "117-104",
+    "team": "Pistons",
+    "description": "C. Cunningham makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:09.0",
+    "score": "117-106",
+    "team": "Warriors",
+    "description": "B. Hield makes 2-pt layup from 5 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:53.0",
+    "score": "117-106",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:49.0",
+    "score": "117-106",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "7:41.0",
+    "score": "117-109",
+    "team": "Warriors",
+    "description": "B. Hield makes 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:20.0",
+    "score": "117-109",
+    "team": "Pistons",
+    "description": "C. Cunningham misses 2-pt layup from 9 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:19.0",
+    "score": "117-109",
+    "team": "Warriors",
+    "description": "Defensive rebound by P. Spencer"
+  },
+  {
+    "quarter": 4,
+    "time": "7:16.0",
+    "score": "117-109",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:13.0",
+    "score": "117-109",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "117-109",
+    "team": "Pistons",
+    "description": "T. Harris misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:03.0",
+    "score": "117-109",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Hield"
+  },
+  {
+    "quarter": 4,
+    "time": "6:56.0",
+    "score": "117-112",
+    "team": "Warriors",
+    "description": "G. Santos makes 3-pt jump shot from 27 ft (assist by B. Hield)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:54.0",
+    "score": "117-112",
+    "team": "Pistons",
+    "description": "Detroit full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "6:54.0",
+    "score": "117-112",
+    "team": "Pistons",
+    "description": "J. Duren enters the game for I. Stewart"
+  },
+  {
+    "quarter": 4,
+    "time": "6:54.0",
+    "score": "117-112",
+    "team": "Warriors",
+    "description": "A. Horford enters the game for D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "6:30.0",
+    "score": "117-112",
+    "team": "Pistons",
+    "description": "A. Thompson misses 2-pt layup from 3 ft (block by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:30.0",
+    "score": "117-112",
+    "team": "Pistons",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "6:30.0",
+    "score": "117-112",
+    "team": "Pistons",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "117-114",
+    "team": "Warriors",
+    "description": "B. Hield makes 2-pt layup from 3 ft (assist by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:01.0",
+    "score": "117-114",
+    "team": "Pistons",
+    "description": "Turnover by D. Robinson (bad pass; steal by A. Horford)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:58.0",
+    "score": "117-114",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:54.0",
+    "score": "117-114",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "117-114",
+    "team": "Pistons",
+    "description": "Shooting foul by B. Hield (drawn by T. Harris)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "118-114",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "118-114",
+    "team": "Pistons",
+    "description": "D. Jenkins enters the game for C. Cunningham"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "119-114",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "119-114",
+    "team": "Warriors",
+    "description": "B. Hield misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:17.0",
+    "score": "119-114",
+    "team": "Pistons",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "119-114",
+    "team": "Pistons",
+    "description": "Shooting foul by G. Santos (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "120-114",
+    "team": "Pistons",
+    "description": "A. Thompson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "120-114",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for B. Hield"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "120-114",
+    "team": "Pistons",
+    "description": "A. Thompson misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:02.0",
+    "score": "120-114",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "4:46.0",
+    "score": "120-114",
+    "team": "Warriors",
+    "description": "D. Melton misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "120-114",
+    "team": "Warriors",
+    "description": "Offensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "120-114",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "4:40.0",
+    "score": "120-114",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 4,
+    "time": "4:29.0",
+    "score": "120-114",
+    "team": "Pistons",
+    "description": "Turnover by D. Jenkins (lost ball; steal by D. Melton)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:18.0",
+    "score": "120-116",
+    "team": "Warriors",
+    "description": "A. Horford makes 2-pt hook shot from 2 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "122-116",
+    "team": "Pistons",
+    "description": "D. Jenkins makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "122-116",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "122-116",
+    "team": "Pistons",
+    "description": "C. Cunningham enters the game for A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "122-116",
+    "team": "Warriors",
+    "description": "D. Green enters the game for G. Santos"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "122-116",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for P. Spencer"
+  },
+  {
+    "quarter": 4,
+    "time": "3:44.0",
+    "score": "122-116",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:37.0",
+    "score": "122-116",
+    "team": "Pistons",
+    "description": "Defensive rebound by D. Jenkins"
+  },
+  {
+    "quarter": 4,
+    "time": "3:31.0",
+    "score": "122-116",
+    "team": "Pistons",
+    "description": "J. Duren misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:29.0",
+    "score": "122-116",
+    "team": "Warriors",
+    "description": "Defensive rebound by A. Horford"
+  },
+  {
+    "quarter": 4,
+    "time": "3:25.0",
+    "score": "122-118",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt layup from 3 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "122-118",
+    "team": "Pistons",
+    "description": "Shooting foul by D. Green (drawn by J. Duren)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "123-118",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "124-118",
+    "team": "Pistons",
+    "description": "J. Duren makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:00.0",
+    "score": "124-118",
+    "team": "Warriors",
+    "description": "Shooting foul by C. Cunningham (drawn by B. Podziemski)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:00.0",
+    "score": "124-119",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:00.0",
+    "score": "124-120",
+    "team": "Warriors",
+    "description": "B. Podziemski makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:41.0",
+    "score": "124-120",
+    "team": "Pistons",
+    "description": "T. Harris misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:38.0",
+    "score": "124-120",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "2:20.0",
+    "score": "124-120",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "124-120",
+    "team": "Pistons",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "124-120",
+    "team": "Warriors",
+    "description": "Loose ball foul by D. Green (drawn by C. Cunningham)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "124-120",
+    "team": "Pistons",
+    "description": "Shooting foul by D. Melton (drawn by D. Jenkins)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "124-120",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "124-120",
+    "team": "Warriors",
+    "description": "Instant Replay (Challenge: Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "125-120",
+    "team": "Pistons",
+    "description": "D. Jenkins makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "126-120",
+    "team": "Pistons",
+    "description": "D. Jenkins makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:59.0",
+    "score": "126-122",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt layup from 2 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:39.0",
+    "score": "128-122",
+    "team": "Pistons",
+    "description": "T. Harris makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "128-122",
+    "team": "Warriors",
+    "description": "Shooting foul by D. Robinson (drawn by D. Melton)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "128-123",
+    "team": "Warriors",
+    "description": "D. Melton makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "128-124",
+    "team": "Warriors",
+    "description": "D. Melton makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "128-124",
+    "team": "Pistons",
+    "description": "Personal foul by D. Melton (drawn by C. Cunningham)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "C. Cunningham makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "A. Thompson enters the game for D. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "C. Cunningham misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:59.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "0:43.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:38.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "Defensive rebound by T. Harris"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "Detroit full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "D. Robinson enters the game for A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for A. Horford"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "Personal take foul by D. Green (drawn by J. Duren)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "J. Duren misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "A. Thompson enters the game for D. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "J. Duren misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:22.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "Personal foul by D. Jenkins (drawn by B. Hield)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "B. Hield misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "D. Robinson enters the game for A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "M. Moody enters the game for D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "0:13.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "B. Hield misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:11.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "Defensive rebound by C. Cunningham"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "D. Green enters the game for B. Hield"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "Personal foul by D. Green (drawn by T. Harris)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "129-124",
+    "team": "Pistons",
+    "description": "A. Thompson enters the game for D. Robinson"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "129-124",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "130-124",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "131-124",
+    "team": "Pistons",
+    "description": "T. Harris makes free throw 2 of 2"
+  }
+]

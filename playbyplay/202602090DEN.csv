@@ -1,0 +1,483 @@
+quarter,time,score,team,description
+1,11:43.0,0-0,Nuggets,Turnover by N. Jokić (bad pass; steal by D. Mitchell)
+1,11:38.0,0-0,Cavaliers,D. Mitchell misses 2-pt layup from 3 ft
+1,11:35.0,0-0,Cavaliers,Offensive rebound by J. Allen
+1,11:35.0,2-0,Cavaliers,J. Allen makes 2-pt layup at rim
+1,11:22.0,2-0,Nuggets,J. Murray misses 3-pt jump shot from 25 ft
+1,11:21.0,2-0,Cavaliers,Defensive rebound by J. Harden
+1,11:12.0,4-0,Cavaliers,J. Allen makes 2-pt layup from 3 ft (assist by D. Mitchell)
+1,11:01.0,4-0,Nuggets,C. Braun misses 3-pt jump shot from 26 ft
+1,10:59.0,4-0,Cavaliers,Defensive rebound by J. Allen
+1,10:51.0,6-0,Cavaliers,D. Mitchell makes 2-pt jump shot from 8 ft
+1,10:39.0,6-3,Nuggets,J. Strawther makes 3-pt jump shot from 23 ft (assist by N. Jokić)
+1,10:20.0,6-3,Cavaliers,J. Tyson misses 3-pt jump shot from 23 ft
+1,10:17.0,6-3,Nuggets,Defensive rebound by N. Jokić
+1,10:14.0,6-5,Nuggets,J. Strawther makes 2-pt jump shot from 5 ft
+1,10:14.0,6-5,Nuggets,Shooting foul by S. Merrill (drawn by J. Strawther)
+1,10:14.0,6-6,Nuggets,J. Strawther makes free throw 1 of 1
+1,9:57.0,6-6,Cavaliers,J. Tyson misses 2-pt jump shot from 14 ft
+1,9:53.0,6-6,Nuggets,Defensive rebound by J. Strawther
+1,9:49.0,6-6,Nuggets,Turnover by N. Jokić (out of bounds lost ball)
+1,9:43.0,6-6,Cavaliers,Personal foul by J. Strawther (drawn by S. Merrill)
+1,9:41.0,6-6,Cavaliers,Personal foul by C. Braun (drawn by D. Mitchell)
+1,9:32.0,6-6,Cavaliers,J. Tyson misses 3-pt jump shot from 26 ft
+1,9:29.0,6-6,Nuggets,Defensive rebound by C. Johnson
+1,9:16.0,6-6,Nuggets,Personal foul by S. Merrill (drawn by C. Johnson)
+1,9:12.0,6-6,Nuggets,C. Braun misses 3-pt jump shot from 23 ft
+1,9:11.0,6-6,Nuggets,Offensive rebound by Team
+1,9:11.0,6-6,Cavaliers,Loose ball foul by S. Merrill (drawn by J. Murray)
+1,9:11.0,6-6,Cavaliers,K. Ellis enters the game for S. Merrill
+1,9:05.0,6-6,Nuggets,J. Strawther misses 2-pt layup from 2 ft (block by J. Harden)
+1,9:04.0,6-6,Nuggets,Offensive rebound by Team
+1,8:56.0,6-6,Nuggets,N. Jokić misses 2-pt hook shot from 8 ft
+1,8:55.0,6-6,Nuggets,Offensive rebound by N. Jokić
+1,8:54.0,6-8,Nuggets,N. Jokić makes 2-pt layup from 3 ft
+1,8:38.0,8-8,Cavaliers,D. Mitchell makes 2-pt jump shot from 17 ft (assist by J. Allen)
+1,8:25.0,8-11,Nuggets,J. Strawther makes 3-pt jump shot from 23 ft (assist by J. Murray)
+1,8:14.0,8-11,Cavaliers,J. Tyson misses 3-pt jump shot from 26 ft
+1,8:11.0,8-11,Nuggets,Defensive rebound by C. Johnson
+1,8:03.0,8-11,Nuggets,J. Strawther misses 3-pt jump shot from 27 ft
+1,8:00.0,8-11,Nuggets,Offensive rebound by N. Jokić
+1,7:55.0,8-13,Nuggets,J. Murray makes 2-pt layup from 4 ft (assist by N. Jokić)
+1,7:46.0,8-13,Cavaliers,J. Harden misses 2-pt jump shot from 7 ft
+1,7:42.0,8-13,Cavaliers,Offensive rebound by J. Harden
+1,7:42.0,8-13,Cavaliers,J. Harden misses 2-pt layup at rim
+1,7:41.0,8-13,Nuggets,Defensive rebound by N. Jokić
+1,7:39.0,8-13,Nuggets,C. Braun misses 2-pt layup from 3 ft (block by D. Mitchell)
+1,7:39.0,8-13,Nuggets,Offensive rebound by Team
+1,7:36.0,8-15,Nuggets,J. Strawther makes 2-pt jump shot from 12 ft (assist by J. Murray)
+1,7:36.0,8-15,Cavaliers,Cleveland full timeout
+1,7:25.0,10-15,Cavaliers,J. Harden makes 2-pt layup from 4 ft
+1,7:10.0,10-15,Nuggets,Personal foul by K. Ellis (drawn by J. Strawther)
+1,7:10.0,10-15,Cavaliers,D. Schröder enters the game for D. Mitchell
+1,6:56.0,10-15,Nuggets,J. Murray misses 3-pt jump shot from 24 ft
+1,6:54.0,10-15,Nuggets,Offensive rebound by J. Murray
+1,6:52.0,10-15,Nuggets,J. Murray misses 2-pt jump shot from 7 ft
+1,6:52.0,10-15,Cavaliers,Defensive rebound by Team
+1,6:42.0,10-15,Cavaliers,D. Schröder misses 3-pt jump shot from 23 ft
+1,6:37.0,10-15,Nuggets,Defensive rebound by N. Jokić
+1,6:30.0,10-15,Nuggets,J. Murray misses 3-pt jump shot from 25 ft
+1,6:27.0,10-15,Nuggets,Offensive rebound by C. Braun
+1,6:14.0,10-15,Nuggets,J. Strawther misses 2-pt jump shot from 6 ft
+1,6:13.0,10-15,Cavaliers,Defensive rebound by J. Harden
+1,6:02.0,13-15,Cavaliers,J. Tyson makes 3-pt jump shot from 26 ft (assist by K. Ellis)
+1,5:35.0,13-15,Nuggets,N. Jokić misses 2-pt hook shot from 4 ft
+1,5:33.0,13-15,Cavaliers,Defensive rebound by K. Ellis
+1,5:27.0,13-15,Cavaliers,J. Harden misses 3-pt jump shot from 26 ft
+1,5:24.0,13-15,Nuggets,Defensive rebound by J. Murray
+1,5:24.0,13-15,Nuggets,T. Hardaway enters the game for C. Johnson
+1,5:08.0,13-18,Nuggets,C. Braun makes 3-pt jump shot from 24 ft (assist by N. Jokić)
+1,4:52.0,13-18,Cavaliers,J. Allen misses 2-pt layup from 2 ft
+1,4:50.0,13-18,Nuggets,Defensive rebound by N. Jokić
+1,4:45.0,13-20,Nuggets,C. Braun makes 2-pt layup from 3 ft (assist by N. Jokić)
+1,4:21.0,13-20,Cavaliers,K. Ellis misses 3-pt jump shot from 23 ft
+1,4:18.0,13-20,Nuggets,Defensive rebound by N. Jokić
+1,4:06.0,13-20,Nuggets,C. Braun misses 3-pt jump shot from 23 ft
+1,4:04.0,13-20,Cavaliers,Defensive rebound by D. Schröder
+1,3:42.0,13-20,Cavaliers,J. Allen misses 2-pt layup from 13 ft (block by N. Jokić)
+1,3:40.0,13-20,Cavaliers,Offensive rebound by J. Allen
+1,3:37.0,15-20,Cavaliers,J. Allen makes 2-pt jump shot from 11 ft
+1,3:34.0,15-20,Nuggets,Personal foul by J. Allen (drawn by N. Jokić)
+1,3:34.0,15-21,Nuggets,N. Jokić makes free throw 1 of 2
+1,3:34.0,15-21,Cavaliers,T. Bryant enters the game for J. Allen
+1,3:34.0,15-21,Cavaliers,D. Mitchell enters the game for J. Harden
+1,3:34.0,15-21,Cavaliers,N. Tomlin enters the game for J. Tyson
+1,3:34.0,15-21,Nuggets,B. Brown enters the game for J. Strawther
+1,3:34.0,15-22,Nuggets,N. Jokić makes free throw 2 of 2
+1,3:25.0,17-22,Cavaliers,D. Mitchell makes 2-pt jump shot from 11 ft
+1,3:25.0,17-22,Cavaliers,Shooting foul by C. Braun (drawn by D. Mitchell)
+1,3:25.0,17-22,Nuggets,J. Valančiūnas enters the game for N. Jokić
+1,3:25.0,17-22,Cavaliers,D. Mitchell misses free throw 1 of 1
+1,3:22.0,17-22,Nuggets,Defensive rebound by C. Braun
+1,3:08.0,17-24,Nuggets,J. Valančiūnas makes 2-pt jump shot from 13 ft (assist by J. Murray)
+1,2:59.0,17-24,Cavaliers,Personal take foul by J. Murray (drawn by D. Mitchell)
+1,2:59.0,17-24,Nuggets,Denver full timeout
+1,2:59.0,17-24,Nuggets,J. Pickett enters the game for C. Braun
+1,2:42.0,17-24,Cavaliers,D. Mitchell misses 3-pt jump shot from 27 ft
+1,2:38.0,17-24,Cavaliers,Offensive rebound by T. Bryant
+1,2:26.0,19-24,Cavaliers,D. Mitchell makes 2-pt layup from 5 ft
+1,2:11.0,19-24,Nuggets,Shooting foul by K. Ellis (drawn by J. Murray)
+1,2:11.0,19-25,Nuggets,J. Murray makes free throw 1 of 2
+1,2:11.0,19-26,Nuggets,J. Murray makes free throw 2 of 2
+1,1:58.0,21-26,Cavaliers,D. Schröder makes 2-pt layup from 4 ft
+1,1:47.0,21-26,Nuggets,Personal foul by T. Bryant (drawn by J. Valančiūnas)
+1,1:47.0,21-27,Nuggets,J. Valančiūnas makes free throw 1 of 2
+1,1:47.0,21-27,Nuggets,J. Strawther enters the game for J. Murray
+1,1:47.0,21-28,Nuggets,J. Valančiūnas makes free throw 2 of 2
+1,1:30.0,23-28,Cavaliers,D. Mitchell makes 2-pt jump shot from 7 ft
+1,1:05.0,23-28,Nuggets,T. Hardaway misses 3-pt jump shot from 29 ft
+1,1:03.0,23-28,Cavaliers,Defensive rebound by D. Schröder
+1,0:57.0,23-28,Cavaliers,D. Schröder misses 3-pt jump shot from 26 ft
+1,0:54.0,23-28,Nuggets,Defensive rebound by J. Valančiūnas
+1,0:42.0,23-28,Nuggets,Turnover by J. Valančiūnas (bad pass; steal by D. Schröder)
+1,0:35.0,26-28,Cavaliers,D. Mitchell makes 3-pt jump shot from 27 ft
+1,0:22.0,26-28,Nuggets,J. Pickett misses 3-pt jump shot from 26 ft
+1,0:19.0,26-28,Nuggets,Offensive rebound by J. Valančiūnas
+1,0:12.0,26-28,Nuggets,Personal foul by N. Tomlin (drawn by J. Valančiūnas)
+1,0:12.0,26-29,Nuggets,J. Valančiūnas makes free throw 1 of 2
+1,0:12.0,26-29,Cavaliers,J. Harden enters the game for N. Tomlin
+1,0:12.0,26-30,Nuggets,J. Valančiūnas makes free throw 2 of 2
+1,0:02.0,26-30,Cavaliers,D. Mitchell misses 2-pt layup from 7 ft
+1,0:00.0,26-30,Nuggets,Defensive rebound by J. Strawther
+1,0:00.0,26-30,Nuggets,Team misses heave shot
+1,0:00.0,26-30,Nuggets,Offensive rebound by Team
+2,11:38.0,26-30,Cavaliers,Turnover by K. Ellis (lost ball; steal by N. Jokić)
+2,11:37.0,26-30,Nuggets,Personal foul by N. Tomlin (drawn by N. Jokić)
+2,11:27.0,26-33,Nuggets,T. Hardaway makes 3-pt jump shot from 24 ft (assist by N. Jokić)
+2,11:19.0,26-33,Cavaliers,Personal foul by B. Brown (drawn by D. Mitchell)
+2,11:17.0,26-33,Cavaliers,T. Bryant misses 3-pt jump shot from 24 ft
+2,11:14.0,26-33,Nuggets,Defensive rebound by N. Jokić
+2,11:00.0,26-33,Nuggets,B. Brown misses 3-pt jump shot from 24 ft
+2,10:58.0,26-33,Cavaliers,Defensive rebound by K. Ellis
+2,10:53.0,26-33,Cavaliers,D. Mitchell misses 3-pt jump shot from 26 ft
+2,10:50.0,26-33,Nuggets,Defensive rebound by J. Strawther
+2,10:43.0,26-35,Nuggets,J. Strawther makes 2-pt layup from 4 ft
+2,10:32.0,26-35,Cavaliers,Turnover by C. Porter (lost ball; steal by C. Johnson)
+2,10:29.0,26-37,Nuggets,C. Johnson makes 2-pt dunk from 2 ft (assist by N. Jokić)
+2,10:29.0,26-37,Cavaliers,Cleveland full timeout
+2,10:17.0,29-37,Cavaliers,T. Bryant makes 3-pt jump shot from 27 ft (assist by D. Mitchell)
+2,9:53.0,29-37,Nuggets,T. Hardaway misses 3-pt jump shot from 26 ft
+2,9:51.0,29-37,Cavaliers,Defensive rebound by T. Bryant
+2,9:42.0,32-37,Cavaliers,N. Tomlin makes 3-pt jump shot from 23 ft (assist by T. Bryant)
+2,9:27.0,32-37,Nuggets,J. Strawther misses 3-pt jump shot from 24 ft
+2,9:25.0,32-37,Cavaliers,Defensive rebound by N. Tomlin
+2,9:16.0,32-37,Cavaliers,T. Bryant misses 3-pt jump shot from 25 ft
+2,9:15.0,32-37,Nuggets,Defensive rebound by Team
+2,9:15.0,32-37,Cavaliers,Loose ball foul by N. Tomlin (drawn by J. Strawther)
+2,9:06.0,32-37,Nuggets,Turnover by N. Jokić (bad pass)
+2,9:06.0,32-37,Cavaliers,J. Harden enters the game for N. Tomlin
+2,8:55.0,32-37,Cavaliers,Shooting foul by T. Hardaway (drawn by D. Mitchell)
+2,8:55.0,33-37,Cavaliers,D. Mitchell makes free throw 1 of 2
+2,8:55.0,34-37,Cavaliers,D. Mitchell makes free throw 2 of 2
+2,8:34.0,34-37,Nuggets,Turnover by C. Johnson (bad pass; steal by D. Mitchell)
+2,8:30.0,36-37,Cavaliers,K. Ellis makes 2-pt layup from 3 ft (assist by D. Mitchell)
+2,8:27.0,36-37,Nuggets,Denver full timeout
+2,8:27.0,36-37,Cavaliers,J. Allen enters the game for T. Bryant
+2,8:27.0,36-37,Cavaliers,S. Merrill enters the game for K. Ellis
+2,8:27.0,36-37,Cavaliers,D. Schröder enters the game for D. Mitchell
+2,8:27.0,36-37,Nuggets,C. Braun enters the game for J. Strawther
+2,8:15.0,36-37,Nuggets,N. Jokić misses 3-pt jump shot from 23 ft
+2,8:12.0,36-37,Nuggets,Offensive rebound by Team
+2,8:04.0,36-37,Nuggets,B. Brown misses 2-pt layup from 4 ft
+2,8:00.0,36-37,Cavaliers,Defensive rebound by C. Porter
+2,7:57.0,36-37,Cavaliers,Turnover by C. Porter (bad pass; steal by C. Johnson)
+2,7:54.0,36-37,Nuggets,Offensive foul by C. Braun (drawn by D. Schröder)
+2,7:54.0,36-37,Nuggets,Turnover by C. Braun (offensive foul)
+2,7:41.0,36-37,Cavaliers,J. Allen misses 2-pt dunk from 2 ft
+2,7:38.0,36-37,Nuggets,Defensive rebound by B. Brown
+2,7:35.0,36-40,Nuggets,T. Hardaway makes 3-pt jump shot from 23 ft (assist by N. Jokić)
+2,7:22.0,36-40,Cavaliers,Turnover by J. Harden (bad pass; steal by B. Brown)
+2,7:18.0,36-40,Nuggets,T. Hardaway misses 3-pt jump shot from 26 ft
+2,7:15.0,36-40,Nuggets,Offensive rebound by C. Braun
+2,7:14.0,36-43,Nuggets,C. Johnson makes 3-pt jump shot from 25 ft (assist by C. Braun)
+2,6:51.0,36-43,Cavaliers,D. Schröder misses 3-pt jump shot from 25 ft
+2,6:49.0,36-43,Nuggets,Defensive rebound by Team
+2,6:49.0,36-43,Cavaliers,Loose ball foul by C. Porter (drawn by B. Brown)
+2,6:49.0,36-43,Cavaliers,J. Tyson enters the game for C. Porter
+2,6:49.0,36-43,Nuggets,J. Murray enters the game for T. Hardaway
+2,6:49.0,36-43,Nuggets,J. Valančiūnas enters the game for N. Jokić
+2,6:30.0,36-43,Nuggets,Turnover by J. Valančiūnas (out of bounds lost ball)
+2,6:22.0,36-43,Cavaliers,Personal foul by B. Brown (drawn by J. Harden)
+2,6:17.0,36-43,Cavaliers,J. Harden misses 2-pt layup from 2 ft
+2,6:14.0,36-43,Nuggets,Defensive rebound by C. Johnson
+2,5:56.0,36-45,Nuggets,C. Braun makes 2-pt layup from 4 ft (assist by J. Murray)
+2,5:41.0,39-45,Cavaliers,S. Merrill makes 3-pt jump shot from 26 ft (assist by D. Schröder)
+2,5:20.0,39-45,Nuggets,J. Valančiūnas misses 3-pt jump shot from 26 ft
+2,5:18.0,39-45,Cavaliers,Defensive rebound by J. Harden
+2,5:03.0,39-45,Cavaliers,Turnover by J. Tyson (bad pass; steal by C. Johnson)
+2,4:57.0,39-45,Nuggets,J. Murray misses 3-pt jump shot from 23 ft
+2,4:53.0,39-45,Cavaliers,Defensive rebound by J. Allen
+2,4:47.0,39-45,Cavaliers,S. Merrill misses 3-pt jump shot from 24 ft
+2,4:47.0,39-45,Nuggets,Defensive rebound by C. Braun
+2,4:38.0,39-48,Nuggets,C. Johnson makes 3-pt jump shot from 23 ft (assist by J. Murray)
+2,4:22.0,39-48,Cavaliers,Personal foul by C. Johnson (drawn by J. Harden)
+2,4:22.0,39-48,Nuggets,J. Pickett enters the game for C. Braun
+2,4:15.0,42-48,Cavaliers,J. Tyson makes 3-pt jump shot from 23 ft (assist by J. Harden)
+2,4:00.0,42-48,Nuggets,J. Valančiūnas misses 2-pt jump shot from 15 ft
+2,3:58.0,42-48,Nuggets,Offensive rebound by B. Brown
+2,3:58.0,42-48,Nuggets,B. Brown misses 2-pt layup at rim
+2,3:58.0,42-48,Nuggets,Offensive rebound by B. Brown
+2,3:58.0,42-48,Nuggets,Shooting foul by J. Tyson (drawn by B. Brown)
+2,3:58.0,42-48,Nuggets,B. Brown misses free throw 1 of 2
+2,3:58.0,42-48,Nuggets,Offensive rebound by Team
+2,3:58.0,42-48,Cavaliers,D. Mitchell enters the game for S. Merrill
+2,3:58.0,42-49,Nuggets,B. Brown makes free throw 2 of 2
+2,3:47.0,44-49,Cavaliers,J. Harden makes 2-pt jump shot from 8 ft
+2,3:22.0,44-51,Nuggets,J. Murray makes 2-pt jump shot from 16 ft
+2,3:08.0,46-51,Cavaliers,D. Mitchell makes 2-pt jump shot from 9 ft
+2,3:08.0,46-51,Cavaliers,Shooting foul by J. Pickett (drawn by D. Mitchell)
+2,3:08.0,47-51,Cavaliers,D. Mitchell makes free throw 1 of 1
+2,2:53.0,47-51,Nuggets,J. Pickett misses 3-pt jump shot from 26 ft
+2,2:49.0,47-51,Nuggets,Offensive rebound by C. Johnson
+2,2:35.0,47-53,Nuggets,J. Valančiūnas makes 2-pt hook shot from 4 ft
+2,2:24.0,47-53,Cavaliers,Turnover by D. Mitchell (lost ball; steal by J. Murray)
+2,2:18.0,47-55,Nuggets,C. Johnson makes 2-pt layup from 3 ft (assist by J. Murray)
+2,2:13.0,49-55,Cavaliers,J. Allen makes 2-pt jump shot from 8 ft (assist by D. Mitchell)
+2,1:46.0,49-55,Nuggets,J. Pickett misses 2-pt jump shot from 8 ft (block by J. Harden)
+2,1:44.0,49-55,Nuggets,Offensive rebound by Team
+2,1:44.0,49-55,Nuggets,Turnover by Team (shot clock)
+2,1:44.0,49-55,Nuggets,T. Hardaway enters the game for C. Johnson
+2,1:44.0,49-55,Nuggets,N. Jokić enters the game for J. Pickett
+2,1:44.0,49-55,Nuggets,J. Strawther enters the game for J. Valančiūnas
+2,1:37.0,51-55,Cavaliers,J. Harden makes 2-pt jump shot from 12 ft
+2,1:26.0,51-55,Nuggets,Turnover by N. Jokić (bad pass; steal by D. Schröder)
+2,1:20.0,51-55,Cavaliers,D. Mitchell misses 2-pt jump shot from 8 ft
+2,1:17.0,51-55,Nuggets,Defensive rebound by J. Murray
+2,1:11.0,51-57,Nuggets,J. Strawther makes 2-pt layup from 4 ft (assist by J. Murray)
+2,0:51.0,51-57,Cavaliers,Shooting foul by J. Strawther (drawn by J. Harden)
+2,0:51.0,52-57,Cavaliers,J. Harden makes free throw 1 of 3
+2,0:51.0,53-57,Cavaliers,J. Harden makes free throw 2 of 3
+2,0:51.0,54-57,Cavaliers,J. Harden makes free throw 3 of 3
+2,0:32.0,54-59,Nuggets,N. Jokić makes 2-pt jump shot from 7 ft (assist by J. Murray)
+2,0:12.0,54-59,Cavaliers,D. Mitchell misses 3-pt jump shot from 26 ft
+2,0:09.0,54-59,Cavaliers,Offensive rebound by J. Harden
+2,0:03.0,54-59,Cavaliers,J. Harden misses 3-pt jump shot from 25 ft
+2,0:00.0,54-59,Nuggets,Defensive rebound by J. Strawther
+3,11:51.0,54-59,Cavaliers,S. Merrill misses 3-pt jump shot from 24 ft
+3,11:49.0,54-59,Cavaliers,Offensive rebound by J. Tyson
+3,11:44.0,54-59,Cavaliers,J. Harden misses 3-pt jump shot from 25 ft
+3,11:42.0,54-59,Cavaliers,Offensive rebound by J. Tyson
+3,11:39.0,57-59,Cavaliers,D. Mitchell makes 3-pt jump shot from 26 ft (assist by J. Tyson)
+3,11:12.0,57-61,Nuggets,N. Jokić makes 2-pt jump shot from 23 ft
+3,10:58.0,60-61,Cavaliers,S. Merrill makes 3-pt jump shot from 26 ft (assist by J. Harden)
+3,10:48.0,60-61,Nuggets,Turnover by N. Jokić (bad pass)
+3,10:41.0,60-61,Cavaliers,D. Mitchell misses 3-pt jump shot from 31 ft
+3,10:38.0,60-61,Cavaliers,Offensive rebound by J. Allen
+3,10:38.0,60-61,Cavaliers,Personal foul by C. Johnson (drawn by J. Allen)
+3,10:29.0,60-61,Cavaliers,J. Tyson misses 3-pt jump shot from 26 ft
+3,10:24.0,60-61,Nuggets,Defensive rebound by N. Jokić
+3,10:19.0,60-61,Nuggets,Shooting foul by J. Harden (drawn by N. Jokić)
+3,10:19.0,60-61,Nuggets,N. Jokić misses free throw 1 of 2
+3,10:19.0,60-61,Nuggets,Offensive rebound by Team
+3,10:19.0,60-62,Nuggets,N. Jokić makes free throw 2 of 2
+3,10:04.0,62-62,Cavaliers,J. Allen makes 2-pt hook shot from 11 ft (assist by J. Harden)
+3,9:55.0,62-62,Nuggets,Shooting foul by J. Allen (drawn by N. Jokić)
+3,9:55.0,62-63,Nuggets,N. Jokić makes free throw 1 of 2
+3,9:55.0,62-64,Nuggets,N. Jokić makes free throw 2 of 2
+3,9:43.0,62-64,Cavaliers,D. Mitchell misses 2-pt jump shot from 6 ft
+3,9:40.0,62-64,Cavaliers,Offensive rebound by D. Mitchell
+3,9:31.0,64-64,Cavaliers,J. Tyson makes 2-pt layup from 3 ft (assist by D. Mitchell)
+3,9:21.0,64-66,Nuggets,N. Jokić makes 2-pt layup from 4 ft (assist by C. Braun)
+3,9:05.0,64-66,Cavaliers,Personal foul by C. Johnson (drawn by D. Mitchell)
+3,8:57.0,64-66,Cavaliers,J. Tyson misses 2-pt jump shot from 11 ft
+3,8:55.0,64-66,Nuggets,Defensive rebound by J. Strawther
+3,8:51.0,64-68,Nuggets,J. Strawther makes 2-pt layup from 11 ft
+3,8:36.0,66-68,Cavaliers,J. Tyson makes 2-pt layup from 3 ft (assist by D. Mitchell)
+3,8:22.0,66-71,Nuggets,C. Braun makes 3-pt jump shot from 27 ft (assist by N. Jokić)
+3,8:13.0,68-71,Cavaliers,J. Harden makes 2-pt jump shot from 9 ft
+3,8:13.0,68-71,Cavaliers,Shooting foul by C. Johnson (drawn by J. Harden)
+3,8:13.0,68-71,Nuggets,T. Hardaway enters the game for C. Johnson
+3,8:13.0,69-71,Cavaliers,J. Harden makes free throw 1 of 1
+3,8:01.0,69-71,Nuggets,Turnover by N. Jokić (bad pass)
+3,7:52.0,69-71,Cavaliers,D. Mitchell misses 3-pt jump shot from 27 ft
+3,7:48.0,69-71,Nuggets,Defensive rebound by N. Jokić
+3,7:45.0,69-71,Nuggets,J. Strawther misses 2-pt layup from 4 ft (block by D. Mitchell)
+3,7:43.0,69-71,Cavaliers,Defensive rebound by Team
+3,7:34.0,71-71,Cavaliers,J. Allen makes 2-pt jump shot from 9 ft (assist by D. Mitchell)
+3,7:15.0,71-71,Nuggets,J. Murray misses 2-pt jump shot from 19 ft
+3,7:11.0,71-71,Cavaliers,Defensive rebound by S. Merrill
+3,7:03.0,71-71,Cavaliers,Turnover by S. Merrill (bad pass; steal by N. Jokić)
+3,7:03.0,71-71,Nuggets,Personal foul by J. Harden (drawn by N. Jokić)
+3,7:03.0,71-71,Cavaliers,D. Schröder enters the game for D. Mitchell
+3,6:50.0,71-71,Nuggets,J. Murray misses 2-pt layup from 6 ft (block by J. Harden)
+3,6:47.0,71-71,Cavaliers,Defensive rebound by J. Harden
+3,6:44.0,71-71,Cavaliers,S. Merrill misses 3-pt jump shot from 28 ft
+3,6:41.0,71-71,Nuggets,Defensive rebound by T. Hardaway
+3,6:35.0,71-73,Nuggets,C. Braun makes 2-pt dunk from 1 ft (assist by J. Murray)
+3,6:27.0,71-73,Cavaliers,J. Allen misses 2-pt jump shot from 8 ft
+3,6:24.0,71-73,Nuggets,Defensive rebound by N. Jokić
+3,6:18.0,71-76,Nuggets,C. Braun makes 3-pt jump shot from 26 ft
+3,6:18.0,71-76,Cavaliers,Cleveland full timeout
+3,6:18.0,71-76,Nuggets,B. Brown enters the game for J. Strawther
+3,5:53.0,73-76,Cavaliers,J. Allen makes 2-pt jump shot from 11 ft (assist by D. Schröder)
+3,5:31.0,73-76,Nuggets,Personal foul by J. Tyson (drawn by B. Brown)
+3,5:19.0,73-76,Nuggets,C. Braun misses 2-pt jump shot from 21 ft
+3,5:16.0,73-76,Cavaliers,Defensive rebound by J. Allen
+3,5:09.0,75-76,Cavaliers,J. Harden makes 2-pt layup from 2 ft
+3,4:55.0,75-76,Nuggets,T. Hardaway misses 3-pt jump shot from 27 ft
+3,4:54.0,75-76,Cavaliers,Defensive rebound by J. Allen
+3,4:45.0,75-76,Cavaliers,Turnover by J. Tyson (lost ball; steal by B. Brown)
+3,4:32.0,75-76,Nuggets,C. Braun misses 3-pt jump shot from 24 ft
+3,4:28.0,75-76,Cavaliers,Defensive rebound by J. Allen
+3,4:16.0,75-76,Cavaliers,Shooting foul by J. Murray (drawn by J. Harden)
+3,4:16.0,76-76,Cavaliers,J. Harden makes free throw 1 of 2
+3,4:16.0,76-76,Cavaliers,T. Bryant enters the game for J. Allen
+3,4:16.0,76-76,Cavaliers,D. Mitchell enters the game for S. Merrill
+3,4:16.0,76-76,Cavaliers,N. Tomlin enters the game for J. Tyson
+3,4:16.0,77-76,Cavaliers,J. Harden makes free throw 2 of 2
+3,4:03.0,77-79,Nuggets,J. Murray makes 3-pt jump shot from 26 ft (assist by N. Jokić)
+3,3:50.0,77-79,Cavaliers,D. Mitchell misses 3-pt jump shot from 27 ft
+3,3:48.0,77-79,Nuggets,Defensive rebound by J. Murray
+3,3:48.0,77-79,Cavaliers,C. Porter enters the game for J. Harden
+3,3:48.0,77-79,Nuggets,J. Valančiūnas enters the game for N. Jokić
+3,3:43.0,77-79,Nuggets,Shooting foul by T. Bryant (drawn by T. Hardaway)
+3,3:43.0,77-79,Nuggets,T. Hardaway misses free throw 1 of 2
+3,3:43.0,77-79,Nuggets,Offensive rebound by Team
+3,3:43.0,77-80,Nuggets,T. Hardaway makes free throw 2 of 2
+3,3:21.0,77-80,Cavaliers,Turnover by D. Mitchell (bad pass)
+3,3:04.0,77-82,Nuggets,J. Murray makes 2-pt layup from 3 ft
+3,2:49.0,77-82,Cavaliers,Shooting foul by B. Brown (drawn by D. Schröder)
+3,2:49.0,77-82,Nuggets,Denver full timeout
+3,2:49.0,77-82,Cavaliers,D. Schröder misses free throw 1 of 2
+3,2:49.0,77-82,Cavaliers,Offensive rebound by Team
+3,2:49.0,78-82,Cavaliers,D. Schröder makes free throw 2 of 2
+3,2:32.0,78-84,Nuggets,J. Murray makes 2-pt jump shot from 7 ft
+3,2:16.0,78-84,Cavaliers,D. Schröder misses 3-pt jump shot from 25 ft
+3,2:16.0,78-84,Cavaliers,Offensive rebound by Team
+3,2:16.0,78-84,Nuggets,Loose ball foul by B. Brown (drawn by T. Bryant)
+3,2:16.0,79-84,Cavaliers,T. Bryant makes free throw 1 of 2
+3,2:16.0,79-84,Nuggets,J. Strawther enters the game for B. Brown
+3,2:16.0,80-84,Cavaliers,T. Bryant makes free throw 2 of 2
+3,2:04.0,80-84,Nuggets,Personal foul by D. Schröder (drawn by J. Murray)
+3,2:04.0,80-85,Nuggets,J. Murray makes free throw 1 of 2
+3,2:04.0,80-86,Nuggets,J. Murray makes free throw 2 of 2
+3,1:53.0,83-86,Cavaliers,D. Mitchell makes 3-pt jump shot from 26 ft (assist by D. Schröder)
+3,1:35.0,83-86,Nuggets,J. Strawther misses 2-pt jump shot from 10 ft
+3,1:33.0,83-86,Nuggets,Offensive rebound by J. Valančiūnas
+3,1:31.0,83-86,Nuggets,Shooting foul by T. Bryant (drawn by J. Valančiūnas)
+3,1:31.0,83-87,Nuggets,J. Valančiūnas makes free throw 1 of 2
+3,1:31.0,83-88,Nuggets,J. Valančiūnas makes free throw 2 of 2
+3,1:25.0,83-88,Cavaliers,Personal foul by C. Braun (drawn by D. Mitchell)
+3,1:25.0,84-88,Cavaliers,D. Mitchell makes free throw 1 of 2
+3,1:25.0,84-88,Nuggets,J. Pickett enters the game for C. Braun
+3,1:25.0,85-88,Cavaliers,D. Mitchell makes free throw 2 of 2
+3,1:12.0,85-88,Nuggets,Offensive foul by J. Strawther (drawn by D. Mitchell)
+3,1:12.0,85-88,Nuggets,Turnover by J. Strawther (offensive foul)
+3,0:58.0,87-88,Cavaliers,D. Mitchell makes 2-pt hook shot from 7 ft
+3,0:44.0,87-90,Nuggets,J. Murray makes 2-pt jump shot from 7 ft
+3,0:40.0,87-90,Cavaliers,Offensive foul by D. Schröder (drawn by T. Hardaway)
+3,0:40.0,87-90,Cavaliers,Turnover by D. Schröder (offensive foul)
+3,0:30.0,87-92,Nuggets,J. Strawther makes 2-pt jump shot from 11 ft (assist by J. Murray)
+3,0:09.0,87-92,Cavaliers,N. Tomlin misses 2-pt hook shot from 11 ft
+3,0:07.0,87-92,Nuggets,Defensive rebound by J. Murray
+3,0:00.0,87-92,Nuggets,J. Murray misses 2-pt jump shot from 23 ft (block by N. Tomlin)
+3,0:00.0,87-92,Nuggets,Offensive rebound by Team
+4,11:47.0,87-92,Nuggets,Shooting foul by D. Mitchell (drawn by J. Strawther)
+4,11:47.0,87-93,Nuggets,J. Strawther makes free throw 1 of 2
+4,11:47.0,87-93,Nuggets,J. Strawther misses free throw 2 of 2
+4,11:45.0,87-93,Cavaliers,Defensive rebound by T. Bryant
+4,11:35.0,87-93,Cavaliers,D. Schröder misses 2-pt jump shot from 10 ft
+4,11:29.0,87-93,Nuggets,Defensive rebound by N. Jokić
+4,11:26.0,87-96,Nuggets,T. Hardaway makes 3-pt jump shot from 24 ft (assist by C. Johnson)
+4,11:15.0,90-96,Cavaliers,N. Tomlin makes 3-pt jump shot from 25 ft (assist by D. Mitchell)
+4,10:54.0,90-96,Nuggets,Shooting foul by T. Bryant (drawn by N. Jokić)
+4,10:54.0,90-97,Nuggets,N. Jokić makes free throw 1 of 2
+4,10:54.0,90-98,Nuggets,N. Jokić makes free throw 2 of 2
+4,10:44.0,90-98,Cavaliers,Offensive foul by K. Ellis (drawn by N. Jokić)
+4,10:44.0,90-98,Cavaliers,Turnover by K. Ellis (offensive foul)
+4,10:31.0,90-100,Nuggets,N. Jokić makes 2-pt jump shot from 14 ft
+4,10:13.0,92-100,Cavaliers,D. Schröder makes 2-pt layup from 3 ft
+4,10:02.0,92-103,Nuggets,J. Pickett makes 3-pt jump shot from 24 ft (assist by N. Jokić)
+4,10:01.0,92-103,Cavaliers,Cleveland full timeout
+4,10:01.0,92-103,Cavaliers,J. Allen enters the game for T. Bryant
+4,10:01.0,92-103,Cavaliers,J. Harden enters the game for D. Schröder
+4,10:01.0,92-103,Cavaliers,S. Merrill enters the game for N. Tomlin
+4,9:49.0,92-103,Cavaliers,Shooting foul by J. Strawther (drawn by J. Allen)
+4,9:49.0,92-103,Cavaliers,J. Allen misses free throw 1 of 2
+4,9:49.0,92-103,Cavaliers,Offensive rebound by Team
+4,9:49.0,93-103,Cavaliers,J. Allen makes free throw 2 of 2
+4,9:36.0,93-103,Nuggets,Personal foul by J. Allen (drawn by C. Johnson)
+4,9:24.0,93-103,Nuggets,N. Jokić misses 3-pt jump shot from 30 ft
+4,9:21.0,93-103,Cavaliers,Defensive rebound by J. Harden
+4,9:09.0,93-103,Cavaliers,K. Ellis misses 3-pt jump shot from 23 ft
+4,9:07.0,93-103,Cavaliers,Offensive rebound by Team
+4,8:57.0,93-103,Cavaliers,Turnover by J. Harden (bad pass; steal by T. Hardaway)
+4,8:49.0,93-103,Nuggets,J. Strawther misses 3-pt jump shot from 24 ft
+4,8:46.0,93-103,Cavaliers,Defensive rebound by K. Ellis
+4,8:31.0,93-103,Cavaliers,D. Mitchell misses 3-pt jump shot from 26 ft
+4,8:29.0,93-103,Cavaliers,Offensive rebound by S. Merrill
+4,8:27.0,96-103,Cavaliers,J. Harden makes 3-pt jump shot from 28 ft (assist by S. Merrill)
+4,8:11.0,96-103,Nuggets,Shooting foul by J. Harden (drawn by N. Jokić)
+4,8:11.0,96-104,Nuggets,N. Jokić makes free throw 1 of 2
+4,8:11.0,96-104,Cavaliers,J. Tyson enters the game for D. Mitchell
+4,8:11.0,96-104,Nuggets,C. Braun enters the game for T. Hardaway
+4,8:11.0,96-104,Nuggets,N. Jokić misses free throw 2 of 2
+4,8:09.0,96-104,Cavaliers,Defensive rebound by J. Harden
+4,8:01.0,96-104,Cavaliers,J. Harden misses 3-pt jump shot from 25 ft
+4,7:58.0,96-104,Cavaliers,Offensive rebound by J. Harden
+4,7:49.0,96-104,Cavaliers,K. Ellis misses 3-pt jump shot from 23 ft
+4,7:46.0,96-104,Cavaliers,Offensive rebound by J. Allen
+4,7:44.0,96-104,Cavaliers,J. Harden misses 3-pt jump shot from 25 ft
+4,7:40.0,96-104,Nuggets,Defensive rebound by N. Jokić
+4,7:31.0,96-104,Nuggets,J. Strawther misses 3-pt jump shot from 23 ft
+4,7:28.0,96-104,Nuggets,Offensive rebound by C. Braun
+4,7:28.0,96-104,Nuggets,Shooting foul by S. Merrill (drawn by C. Braun)
+4,7:28.0,96-105,Nuggets,C. Braun makes free throw 1 of 2
+4,7:28.0,96-105,Nuggets,B. Brown enters the game for J. Pickett
+4,7:28.0,96-106,Nuggets,C. Braun makes free throw 2 of 2
+4,7:17.0,99-106,Cavaliers,J. Tyson makes 3-pt jump shot from 25 ft (assist by J. Harden)
+4,6:56.0,99-106,Nuggets,B. Brown misses 3-pt jump shot from 24 ft
+4,6:54.0,99-106,Cavaliers,Defensive rebound by J. Allen
+4,6:45.0,99-106,Cavaliers,J. Harden misses 2-pt layup from 5 ft
+4,6:41.0,99-106,Nuggets,Defensive rebound by J. Strawther
+4,6:37.0,99-106,Nuggets,C. Johnson misses 3-pt jump shot from 26 ft
+4,6:34.0,99-106,Cavaliers,Defensive rebound by Team
+4,6:34.0,99-106,Nuggets,J. Murray enters the game for J. Strawther
+4,6:12.0,102-106,Cavaliers,S. Merrill makes 3-pt jump shot from 28 ft (assist by J. Harden)
+4,6:11.0,102-106,Nuggets,Denver full timeout
+4,6:11.0,102-106,Nuggets,J. Valančiūnas enters the game for N. Jokić
+4,5:52.0,102-106,Nuggets,Shooting foul by J. Tyson (drawn by J. Valančiūnas)
+4,5:52.0,102-106,Nuggets,J. Valančiūnas misses free throw 1 of 2
+4,5:52.0,102-106,Nuggets,Offensive rebound by Team
+4,5:52.0,102-106,Nuggets,J. Valančiūnas misses free throw 2 of 2
+4,5:50.0,102-106,Cavaliers,Defensive rebound by J. Harden
+4,5:44.0,102-106,Cavaliers,K. Ellis misses 3-pt jump shot from 23 ft
+4,5:41.0,102-106,Nuggets,Defensive rebound by J. Murray
+4,5:32.0,102-106,Nuggets,Turnover by J. Murray (bad pass; steal by K. Ellis)
+4,5:29.0,104-106,Cavaliers,J. Allen makes 2-pt dunk from 1 ft (assist by J. Harden)
+4,5:11.0,104-106,Nuggets,B. Brown misses 2-pt layup from 7 ft (block by K. Ellis)
+4,5:11.0,104-106,Nuggets,Offensive rebound by Team
+4,5:11.0,104-106,Cavaliers,D. Mitchell enters the game for K. Ellis
+4,5:11.0,104-106,Nuggets,T. Hardaway enters the game for C. Johnson
+4,5:08.0,104-106,Nuggets,T. Hardaway misses 3-pt jump shot from 27 ft
+4,5:05.0,104-106,Cavaliers,Defensive rebound by J. Allen
+4,4:56.0,104-106,Cavaliers,J. Allen misses 2-pt hook shot from 5 ft
+4,4:54.0,104-106,Nuggets,Defensive rebound by J. Murray
+4,4:40.0,104-109,Nuggets,C. Braun makes 3-pt jump shot from 25 ft (assist by J. Murray)
+4,4:27.0,104-109,Cavaliers,J. Allen misses 2-pt jump shot from 7 ft
+4,4:25.0,104-109,Nuggets,Defensive rebound by J. Valančiūnas
+4,4:25.0,104-109,Nuggets,Personal foul by J. Allen (drawn by J. Valančiūnas)
+4,4:25.0,104-109,Nuggets,Denver full timeout
+4,4:25.0,104-109,Nuggets,Instant Replay (Challenge: Ruling Stands)
+4,4:25.0,104-110,Nuggets,J. Valančiūnas makes free throw 1 of 2
+4,4:25.0,104-111,Nuggets,J. Valančiūnas makes free throw 2 of 2
+4,4:03.0,107-111,Cavaliers,J. Tyson makes 3-pt jump shot from 27 ft (assist by J. Harden)
+4,3:37.0,107-111,Nuggets,J. Murray misses 3-pt jump shot from 26 ft
+4,3:34.0,107-111,Cavaliers,Defensive rebound by J. Tyson
+4,3:24.0,107-111,Cavaliers,Shooting foul by J. Valančiūnas (drawn by J. Allen)
+4,3:24.0,108-111,Cavaliers,J. Allen makes free throw 1 of 2
+4,3:24.0,108-111,Nuggets,Denver full timeout
+4,3:24.0,108-111,Nuggets,N. Jokić enters the game for J. Valančiūnas
+4,3:24.0,108-111,Cavaliers,J. Allen misses free throw 2 of 2
+4,3:22.0,108-111,Nuggets,Defensive rebound by J. Murray
+4,3:00.0,108-111,Nuggets,B. Brown misses 2-pt jump shot from 11 ft
+4,2:58.0,108-111,Cavaliers,Defensive rebound by J. Allen
+4,2:50.0,110-111,Cavaliers,D. Mitchell makes 2-pt layup from 3 ft
+4,2:37.0,110-113,Nuggets,T. Hardaway makes 2-pt jump shot from 9 ft (assist by N. Jokić)
+4,2:14.0,112-113,Cavaliers,J. Allen makes 2-pt layup from 3 ft (assist by D. Mitchell)
+4,1:58.0,112-113,Nuggets,J. Murray misses 2-pt jump shot from 21 ft
+4,1:56.0,112-113,Nuggets,Offensive rebound by B. Brown
+4,1:47.0,112-113,Nuggets,Shooting foul by J. Allen (drawn by N. Jokić)
+4,1:47.0,112-113,Cavaliers,Cleveland full timeout
+4,1:47.0,112-113,Cavaliers,Instant Replay (Challenge: Ruling Stands)
+4,1:47.0,112-113,Nuggets,C. Johnson enters the game for B. Brown
+4,1:47.0,112-114,Nuggets,N. Jokić makes free throw 1 of 2
+4,1:47.0,112-115,Nuggets,N. Jokić makes free throw 2 of 2
+4,1:40.0,114-115,Cavaliers,J. Allen makes 2-pt dunk from 1 ft (assist by D. Mitchell)
+4,1:27.0,114-117,Nuggets,N. Jokić makes 2-pt hook shot from 6 ft
+4,1:06.0,114-117,Cavaliers,J. Tyson misses 3-pt jump shot from 23 ft
+4,1:01.0,114-117,Nuggets,Defensive rebound by N. Jokić
+4,0:43.0,114-117,Nuggets,Turnover by N. Jokić (lost ball; steal by S. Merrill)
+4,0:38.0,114-117,Cavaliers,D. Mitchell misses 2-pt layup from 5 ft
+4,0:38.0,114-117,Cavaliers,Offensive rebound by Team
+4,0:38.0,114-117,Nuggets,Loose ball foul by C. Johnson (drawn by J. Allen)
+4,0:32.0,117-117,Cavaliers,J. Harden makes 3-pt jump shot from 25 ft
+4,0:31.0,117-117,Cavaliers,Instant Replay (Request: Ruling Stands)
+4,0:09.0,117-117,Nuggets,T. Hardaway misses 3-pt jump shot from 27 ft
+4,0:06.0,117-117,Cavaliers,Defensive rebound by J. Allen
+4,0:00.0,117-117,Cavaliers,Personal foul by J. Murray (drawn by D. Mitchell)
+4,0:00.0,118-117,Cavaliers,D. Mitchell makes free throw 1 of 2
+4,0:00.0,119-117,Cavaliers,D. Mitchell makes free throw 2 of 2
+4,0:00.0,119-117,Nuggets,Denver full timeout
+4,0:00.0,119-117,Nuggets,N. Jokić misses 2-pt jump shot from 22 ft
+4,0:00.0,119-117,Nuggets,Offensive rebound by Team

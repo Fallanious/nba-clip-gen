@@ -1,0 +1,3187 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:47.0",
+    "score": "0-0",
+    "team": "Timberwolves",
+    "description": "J. McDaniels misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:42.0",
+    "score": "0-0",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Coward"
+  },
+  {
+    "quarter": 1,
+    "time": "11:20.0",
+    "score": "0-2",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes 2-pt jump shot from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:00.0",
+    "score": "0-2",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:56.0",
+    "score": "0-2",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 1,
+    "time": "10:56.0",
+    "score": "2-2",
+    "team": "Timberwolves",
+    "description": "R. Gobert makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "10:45.0",
+    "score": "2-2",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses 3-pt jump shot from 34 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:41.0",
+    "score": "2-2",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by V. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "10:33.0",
+    "score": "2-4",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes 2-pt layup from 2 ft (assist by J. Landale)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:12.0",
+    "score": "2-4",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:09.0",
+    "score": "2-4",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by V. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "10:01.0",
+    "score": "2-7",
+    "team": "Grizzlies",
+    "description": "J. Landale makes 3-pt jump shot from 26 ft (assist by T. Jerome)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:48.0",
+    "score": "5-7",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo makes 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:33.0",
+    "score": "5-7",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:30.0",
+    "score": "5-7",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 1,
+    "time": "9:26.0",
+    "score": "8-7",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 3-pt jump shot from 26 ft (assist by A. Edwards)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:21.0",
+    "score": "8-7",
+    "team": "Timberwolves",
+    "description": "Technical foul by R. Gobert"
+  },
+  {
+    "quarter": 1,
+    "time": "9:21.0",
+    "score": "8-8",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes technical free throw"
+  },
+  {
+    "quarter": 1,
+    "time": "9:08.0",
+    "score": "8-8",
+    "team": "Grizzlies",
+    "description": "V. Williams misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:06.0",
+    "score": "8-8",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Landale"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "8-8",
+    "team": "Grizzlies",
+    "description": "Turnover by J. Landale (bad pass; steal by D. DiVincenzo)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:57.0",
+    "score": "11-8",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 3-pt jump shot from 26 ft (assist by J. McDaniels)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:42.0",
+    "score": "11-10",
+    "team": "Grizzlies",
+    "description": "J. Wells makes 2-pt layup from 2 ft (assist by T. Jerome)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:28.0",
+    "score": "11-10",
+    "team": "Timberwolves",
+    "description": "J. Randle misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:25.0",
+    "score": "11-10",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:14.0",
+    "score": "11-10",
+    "team": "Grizzlies",
+    "description": "J. Landale misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:10.0",
+    "score": "11-10",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Randle"
+  },
+  {
+    "quarter": 1,
+    "time": "8:01.0",
+    "score": "11-10",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:56.0",
+    "score": "11-10",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Wells"
+  },
+  {
+    "quarter": 1,
+    "time": "7:49.0",
+    "score": "11-10",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:44.0",
+    "score": "11-10",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. McDaniels"
+  },
+  {
+    "quarter": 1,
+    "time": "7:34.0",
+    "score": "14-10",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "14-10",
+    "team": "Grizzlies",
+    "description": "Shooting foul by A. Edwards (drawn by T. Jerome)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "14-11",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes free throw 1 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "14-11",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses free throw 2 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "14-11",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes free throw 3 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:58.0",
+    "score": "14-12",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:55.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by V. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "6:46.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "C. Coward misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "14-12",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Randle"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "14-12",
+    "team": "Timberwolves",
+    "description": "Shooting foul by J. Wells (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "Memphis full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "G. Jackson enters the game for C. Coward"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "J. Small enters the game for T. Jerome"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "14-12",
+    "team": "Grizzlies",
+    "description": "C. Spencer enters the game for V. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "15-12",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "16-12",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:16.0",
+    "score": "16-14",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt dunk at rim (assist by J. Small)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:57.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "R. Gobert makes 2-pt layup from 2 ft (assist by D. DiVincenzo)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:44.0",
+    "score": "18-14",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:41.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. McDaniels"
+  },
+  {
+    "quarter": 1,
+    "time": "5:30.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "Personal foul by C. Spencer (drawn by J. McDaniels)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:30.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "N. Reid enters the game for J. Randle"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "Offensive foul by D. DiVincenzo (drawn by J. Wells)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "Turnover by D. DiVincenzo (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:10.0",
+    "score": "18-14",
+    "team": "Grizzlies",
+    "description": "J. Landale misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:08.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 1,
+    "time": "4:56.0",
+    "score": "18-14",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:53.0",
+    "score": "18-14",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Spencer"
+  },
+  {
+    "quarter": 1,
+    "time": "4:50.0",
+    "score": "18-16",
+    "team": "Grizzlies",
+    "description": "J. Small makes 2-pt jump shot from 5 ft (assist by C. Spencer)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:28.0",
+    "score": "20-16",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 2-pt jump shot from 5 ft (assist by N. Reid)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "20-16",
+    "team": "Grizzlies",
+    "description": "Shooting foul by D. DiVincenzo (drawn by J. Wells)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "J. Wells makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "20-17",
+    "team": "Timberwolves",
+    "description": "M. Conley enters the game for D. DiVincenzo"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "O. Prosper enters the game for J. Landale"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "J. Wells misses free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "20-17",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 1,
+    "time": "4:11.0",
+    "score": "20-17",
+    "team": "Timberwolves",
+    "description": "J. McDaniels misses 2-pt jump shot from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:07.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Wells"
+  },
+  {
+    "quarter": 1,
+    "time": "4:06.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "J. Small misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:01.0",
+    "score": "20-17",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 1,
+    "time": "3:59.0",
+    "score": "20-17",
+    "team": "Timberwolves",
+    "description": "Turnover by N. Reid (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:59.0",
+    "score": "20-17",
+    "team": "Timberwolves",
+    "description": "J. Randle enters the game for R. Gobert"
+  },
+  {
+    "quarter": 1,
+    "time": "3:59.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope enters the game for J. Wells"
+  },
+  {
+    "quarter": 1,
+    "time": "3:48.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "Personal foul by J. Randle (drawn by C. Spencer)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "O. Prosper misses 3-pt jump shot from 34 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "20-17",
+    "team": "Grizzlies",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:13.0",
+    "score": "22-17",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:58.0",
+    "score": "22-17",
+    "team": "Grizzlies",
+    "description": "G. Jackson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "22-17",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by M. Conley"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "25-17",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 3-pt jump shot from 26 ft (assist by A. Edwards)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:20.0",
+    "score": "25-19",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes 2-pt jump shot from 19 ft (assist by C. Spencer)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:19.0",
+    "score": "25-19",
+    "team": "Timberwolves",
+    "description": "Minnesota full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:19.0",
+    "score": "25-19",
+    "team": "Timberwolves",
+    "description": "J. Clark enters the game for J. McDaniels"
+  },
+  {
+    "quarter": 1,
+    "time": "2:19.0",
+    "score": "25-19",
+    "team": "Grizzlies",
+    "description": "C. Coward enters the game for J. Small"
+  },
+  {
+    "quarter": 1,
+    "time": "2:07.0",
+    "score": "25-19",
+    "team": "Timberwolves",
+    "description": "J. Randle misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:03.0",
+    "score": "25-19",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by K. Caldwell-Pope"
+  },
+  {
+    "quarter": 1,
+    "time": "1:43.0",
+    "score": "25-19",
+    "team": "Grizzlies",
+    "description": "C. Coward misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:40.0",
+    "score": "25-19",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Randle"
+  },
+  {
+    "quarter": 1,
+    "time": "1:23.0",
+    "score": "27-19",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt layup from 2 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:23.0",
+    "score": "27-19",
+    "team": "Timberwolves",
+    "description": "Shooting foul by C. Coward (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:23.0",
+    "score": "27-19",
+    "team": "Timberwolves",
+    "description": "J. Beringer enters the game for J. Randle"
+  },
+  {
+    "quarter": 1,
+    "time": "1:23.0",
+    "score": "28-19",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "1:10.0",
+    "score": "28-19",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:07.0",
+    "score": "28-19",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by A. Edwards"
+  },
+  {
+    "quarter": 1,
+    "time": "1:00.0",
+    "score": "28-19",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:58.0",
+    "score": "28-19",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by G. Jackson"
+  },
+  {
+    "quarter": 1,
+    "time": "0:52.0",
+    "score": "28-19",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "28-19",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 1,
+    "time": "0:36.0",
+    "score": "30-19",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:18.0",
+    "score": "30-21",
+    "team": "Grizzlies",
+    "description": "C. Coward makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:01.0",
+    "score": "30-21",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:01.0",
+    "score": "30-21",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Coward"
+  },
+  {
+    "quarter": 2,
+    "time": "11:46.0",
+    "score": "30-21",
+    "team": "Grizzlies",
+    "description": "Turnover by T. Jerome (traveling)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:28.0",
+    "score": "30-21",
+    "team": "Timberwolves",
+    "description": "J. Clark misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:24.0",
+    "score": "30-21",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Coward"
+  },
+  {
+    "quarter": 2,
+    "time": "11:22.0",
+    "score": "30-21",
+    "team": "Grizzlies",
+    "description": "Turnover by C. Coward (bad pass; steal by M. Conley)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:18.0",
+    "score": "32-21",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo makes 2-pt layup from 2 ft (assist by M. Conley)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:08.0",
+    "score": "32-21",
+    "team": "Grizzlies",
+    "description": "Personal foul by J. Clark (drawn by J. Landale)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:00.0",
+    "score": "32-21",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:55.0",
+    "score": "32-21",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 2,
+    "time": "10:48.0",
+    "score": "35-21",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:32.0",
+    "score": "35-21",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:28.0",
+    "score": "35-21",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 2,
+    "time": "10:22.0",
+    "score": "37-21",
+    "team": "Timberwolves",
+    "description": "J. Beringer makes 2-pt layup from 1 ft (assist by D. DiVincenzo)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:22.0",
+    "score": "37-21",
+    "team": "Grizzlies",
+    "description": "Memphis full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "10:04.0",
+    "score": "37-21",
+    "team": "Grizzlies",
+    "description": "V. Williams misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:01.0",
+    "score": "37-21",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Landale"
+  },
+  {
+    "quarter": 2,
+    "time": "9:57.0",
+    "score": "37-21",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope misses 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:55.0",
+    "score": "37-21",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by V. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "9:53.0",
+    "score": "37-23",
+    "team": "Grizzlies",
+    "description": "V. Williams makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:36.0",
+    "score": "37-23",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:33.0",
+    "score": "37-23",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Landale"
+  },
+  {
+    "quarter": 2,
+    "time": "9:27.0",
+    "score": "37-23",
+    "team": "Grizzlies",
+    "description": "Turnover by J. Landale (bad pass; steal by M. Conley)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:19.0",
+    "score": "37-23",
+    "team": "Timberwolves",
+    "description": "M. Conley misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "37-23",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Landale"
+  },
+  {
+    "quarter": 2,
+    "time": "9:01.0",
+    "score": "37-25",
+    "team": "Grizzlies",
+    "description": "J. Landale makes 2-pt layup from 2 ft (assist by T. Jerome)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:48.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 3-pt jump shot from 23 ft (assist by D. DiVincenzo)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:25.0",
+    "score": "40-25",
+    "team": "Grizzlies",
+    "description": "C. Coward misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:22.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by M. Conley"
+  },
+  {
+    "quarter": 2,
+    "time": "8:15.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:13.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by D. DiVincenzo"
+  },
+  {
+    "quarter": 2,
+    "time": "8:11.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "Minnesota full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "R. Gobert enters the game for J. Beringer"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "B. Hyland enters the game for J. Clark"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "J. McDaniels enters the game for M. Conley"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-25",
+    "team": "Grizzlies",
+    "description": "G. Jackson enters the game for C. Coward"
+  },
+  {
+    "quarter": 2,
+    "time": "7:56.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "Turnover by J. McDaniels (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:47.0",
+    "score": "40-25",
+    "team": "Grizzlies",
+    "description": "Turnover by T. Jerome (back court)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:47.0",
+    "score": "40-25",
+    "team": "Grizzlies",
+    "description": "J. Small enters the game for T. Jerome"
+  },
+  {
+    "quarter": 2,
+    "time": "7:33.0",
+    "score": "40-25",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:29.0",
+    "score": "40-25",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by G. Jackson"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "40-27",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes 2-pt layup from 3 ft (assist by G. Jackson)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "40-27",
+    "team": "Grizzlies",
+    "description": "Shooting foul by D. DiVincenzo (drawn by K. Caldwell-Pope)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "40-27",
+    "team": "Timberwolves",
+    "description": "A. Edwards enters the game for D. DiVincenzo"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "40-27",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope misses free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "7:24.0",
+    "score": "40-27",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 2,
+    "time": "7:08.0",
+    "score": "40-27",
+    "team": "Timberwolves",
+    "description": "J. McDaniels misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:05.0",
+    "score": "40-27",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by G. Jackson"
+  },
+  {
+    "quarter": 2,
+    "time": "7:00.0",
+    "score": "40-29",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:45.0",
+    "score": "40-29",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:42.0",
+    "score": "40-29",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Small"
+  },
+  {
+    "quarter": 2,
+    "time": "6:35.0",
+    "score": "40-29",
+    "team": "Grizzlies",
+    "description": "Turnover by J. Landale (lost ball; steal by N. Reid)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:30.0",
+    "score": "40-29",
+    "team": "Timberwolves",
+    "description": "B. Hyland misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:25.0",
+    "score": "40-29",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Landale"
+  },
+  {
+    "quarter": 2,
+    "time": "6:13.0",
+    "score": "40-29",
+    "team": "Grizzlies",
+    "description": "J. Small misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:11.0",
+    "score": "40-29",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. McDaniels"
+  },
+  {
+    "quarter": 2,
+    "time": "6:06.0",
+    "score": "43-29",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 3-pt jump shot from 23 ft (assist by B. Hyland)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:48.0",
+    "score": "43-31",
+    "team": "Grizzlies",
+    "description": "V. Williams makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:27.0",
+    "score": "46-31",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 3-pt jump shot from 26 ft (assist by N. Reid)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "46-31",
+    "team": "Grizzlies",
+    "description": "Memphis full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "46-31",
+    "team": "Timberwolves",
+    "description": "J. Randle enters the game for N. Reid"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "46-31",
+    "team": "Grizzlies",
+    "description": "O. Prosper enters the game for K. Caldwell-Pope"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "46-31",
+    "team": "Grizzlies",
+    "description": "C. Spencer enters the game for J. Landale"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "46-31",
+    "team": "Grizzlies",
+    "description": "J. Wells enters the game for V. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "5:17.0",
+    "score": "46-33",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:51.0",
+    "score": "46-33",
+    "team": "Timberwolves",
+    "description": "J. Randle misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "46-33",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by O. Prosper"
+  },
+  {
+    "quarter": 2,
+    "time": "4:44.0",
+    "score": "46-35",
+    "team": "Grizzlies",
+    "description": "O. Prosper makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:19.0",
+    "score": "48-35",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:57.0",
+    "score": "48-35",
+    "team": "Grizzlies",
+    "description": "G. Jackson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:54.0",
+    "score": "48-35",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Wells"
+  },
+  {
+    "quarter": 2,
+    "time": "3:52.0",
+    "score": "48-35",
+    "team": "Grizzlies",
+    "description": "C. Spencer misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:47.0",
+    "score": "48-35",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by O. Prosper"
+  },
+  {
+    "quarter": 2,
+    "time": "3:46.0",
+    "score": "48-35",
+    "team": "Grizzlies",
+    "description": "Personal foul by B. Hyland (drawn by J. Wells)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:42.0",
+    "score": "48-38",
+    "team": "Grizzlies",
+    "description": "C. Spencer makes 3-pt jump shot from 26 ft (assist by G. Jackson)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:19.0",
+    "score": "50-38",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "50-40",
+    "team": "Grizzlies",
+    "description": "O. Prosper makes 2-pt layup from 2 ft (assist by G. Jackson)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:44.0",
+    "score": "52-40",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:30.0",
+    "score": "52-43",
+    "team": "Grizzlies",
+    "description": "J. Wells makes 3-pt jump shot from 23 ft (assist by C. Spencer)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:13.0",
+    "score": "54-43",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "54-43",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:02.0",
+    "score": "54-43",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Wells"
+  },
+  {
+    "quarter": 2,
+    "time": "2:02.0",
+    "score": "54-45",
+    "team": "Grizzlies",
+    "description": "J. Wells makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "2:02.0",
+    "score": "54-45",
+    "team": "Timberwolves",
+    "description": "Minnesota full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "2:02.0",
+    "score": "54-45",
+    "team": "Grizzlies",
+    "description": "C. Coward enters the game for J. Small"
+  },
+  {
+    "quarter": 2,
+    "time": "1:45.0",
+    "score": "54-45",
+    "team": "Timberwolves",
+    "description": "Turnover by J. McDaniels (bad pass; steal by O. Prosper)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:42.0",
+    "score": "54-47",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt dunk from 1 ft (assist by J. Wells)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:20.0",
+    "score": "54-47",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:17.0",
+    "score": "54-47",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by G. Jackson"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "54-47",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 2-pt layup from 2 ft (block by R. Gobert)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:05.0",
+    "score": "54-47",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 2,
+    "time": "1:01.0",
+    "score": "56-47",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt layup from 2 ft (assist by B. Hyland)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "56-47",
+    "team": "Grizzlies",
+    "description": "Shooting foul by J. McDaniels (drawn by J. Wells)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "56-48",
+    "team": "Grizzlies",
+    "description": "J. Wells makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "56-49",
+    "team": "Grizzlies",
+    "description": "J. Wells makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:30.0",
+    "score": "56-49",
+    "team": "Timberwolves",
+    "description": "J. McDaniels misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:26.0",
+    "score": "56-49",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by B. Hyland"
+  },
+  {
+    "quarter": 2,
+    "time": "0:15.0",
+    "score": "56-49",
+    "team": "Timberwolves",
+    "description": "J. Randle misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:14.0",
+    "score": "56-49",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by J. Randle"
+  },
+  {
+    "quarter": 2,
+    "time": "0:14.0",
+    "score": "58-49",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "58-49",
+    "team": "Grizzlies",
+    "description": "C. Coward misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "58-49",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Randle"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "58-49",
+    "team": "Timberwolves",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "58-49",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:40.0",
+    "score": "58-52",
+    "team": "Grizzlies",
+    "description": "J. Wells makes 3-pt jump shot from 25 ft (assist by J. Landale)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:21.0",
+    "score": "61-52",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:58.0",
+    "score": "61-52",
+    "team": "Grizzlies",
+    "description": "Turnover by J. Wells (bad pass; steal by R. Gobert)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:53.0",
+    "score": "63-52",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 2-pt dunk from 1 ft (assist by D. DiVincenzo)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:40.0",
+    "score": "63-55",
+    "team": "Grizzlies",
+    "description": "V. Williams makes 3-pt jump shot from 26 ft (assist by C. Coward)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:31.0",
+    "score": "65-55",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 2-pt jump shot from 10 ft (assist by D. DiVincenzo)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:31.0",
+    "score": "65-55",
+    "team": "Timberwolves",
+    "description": "Shooting foul by T. Jerome (drawn by J. McDaniels)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:31.0",
+    "score": "66-55",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "10:20.0",
+    "score": "66-55",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:18.0",
+    "score": "66-55",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "69-55",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo makes 3-pt jump shot from 26 ft (assist by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:00.0",
+    "score": "69-55",
+    "team": "Grizzlies",
+    "description": "Personal foul by J. McDaniels (drawn by T. Jerome)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:50.0",
+    "score": "69-55",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:47.0",
+    "score": "69-55",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by C. Coward"
+  },
+  {
+    "quarter": 3,
+    "time": "9:46.0",
+    "score": "69-55",
+    "team": "Grizzlies",
+    "description": "Shooting foul by D. DiVincenzo (drawn by C. Coward)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:46.0",
+    "score": "69-56",
+    "team": "Grizzlies",
+    "description": "C. Coward makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:46.0",
+    "score": "69-56",
+    "team": "Timberwolves",
+    "description": "M. Conley enters the game for D. DiVincenzo"
+  },
+  {
+    "quarter": 3,
+    "time": "9:46.0",
+    "score": "69-57",
+    "team": "Grizzlies",
+    "description": "C. Coward makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:35.0",
+    "score": "69-57",
+    "team": "Timberwolves",
+    "description": "Turnover by M. Conley (lost ball; steal by J. Landale)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:22.0",
+    "score": "69-57",
+    "team": "Grizzlies",
+    "description": "Turnover by V. Williams (bad pass; steal by R. Gobert)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "69-57",
+    "team": "Timberwolves",
+    "description": "Shooting foul by T. Jerome (drawn by R. Gobert)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "69-57",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "69-57",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "70-57",
+    "team": "Timberwolves",
+    "description": "R. Gobert makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:11.0",
+    "score": "70-59",
+    "team": "Grizzlies",
+    "description": "C. Coward makes 2-pt layup from 2 ft (assist by T. Jerome)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:53.0",
+    "score": "72-59",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:36.0",
+    "score": "72-61",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes 2-pt jump shot from 5 ft (assist by C. Coward)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:19.0",
+    "score": "72-61",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses 2-pt layup from 3 ft (block by C. Coward)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:16.0",
+    "score": "72-61",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Landale"
+  },
+  {
+    "quarter": 3,
+    "time": "8:14.0",
+    "score": "72-61",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:11.0",
+    "score": "72-61",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Randle"
+  },
+  {
+    "quarter": 3,
+    "time": "8:06.0",
+    "score": "72-61",
+    "team": "Timberwolves",
+    "description": "J. McDaniels misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:05.0",
+    "score": "72-61",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by J. McDaniels"
+  },
+  {
+    "quarter": 3,
+    "time": "8:04.0",
+    "score": "72-61",
+    "team": "Timberwolves",
+    "description": "Turnover by J. McDaniels (lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:04.0",
+    "score": "72-61",
+    "team": "Timberwolves",
+    "description": "Loose ball foul by J. McDaniels (drawn by J. Wells)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:50.0",
+    "score": "72-64",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:43.0",
+    "score": "72-64",
+    "team": "Timberwolves",
+    "description": "Personal foul by T. Jerome (drawn by M. Conley)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "72-64",
+    "team": "Timberwolves",
+    "description": "Shooting foul by J. Wells (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-64",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-64",
+    "team": "Timberwolves",
+    "description": "J. Clark enters the game for J. McDaniels"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-64",
+    "team": "Grizzlies",
+    "description": "J. Small enters the game for T. Jerome"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "73-64",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:34.0",
+    "score": "73-64",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Wells"
+  },
+  {
+    "quarter": 3,
+    "time": "7:27.0",
+    "score": "73-64",
+    "team": "Grizzlies",
+    "description": "V. Williams misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:25.0",
+    "score": "73-64",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Landale"
+  },
+  {
+    "quarter": 3,
+    "time": "7:24.0",
+    "score": "73-64",
+    "team": "Grizzlies",
+    "description": "J. Landale misses 2-pt hook shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:24.0",
+    "score": "73-64",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Randle"
+  },
+  {
+    "quarter": 3,
+    "time": "7:14.0",
+    "score": "75-64",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "75-64",
+    "team": "Grizzlies",
+    "description": "C. Coward misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:00.0",
+    "score": "75-64",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "6:52.0",
+    "score": "77-64",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "77-64",
+    "team": "Grizzlies",
+    "description": "Memphis full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "77-64",
+    "team": "Timberwolves",
+    "description": "N. Reid enters the game for R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "77-64",
+    "team": "Grizzlies",
+    "description": "G. Jackson enters the game for C. Coward"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "77-64",
+    "team": "Grizzlies",
+    "description": "C. Spencer enters the game for V. Williams"
+  },
+  {
+    "quarter": 3,
+    "time": "6:36.0",
+    "score": "77-64",
+    "team": "Grizzlies",
+    "description": "Turnover by G. Jackson (bad pass; steal by N. Reid)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:23.0",
+    "score": "80-64",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 3-pt jump shot from 23 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "80-64",
+    "team": "Grizzlies",
+    "description": "Personal foul by J. Randle (drawn by J. Wells)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:52.0",
+    "score": "80-66",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "80-66",
+    "team": "Timberwolves",
+    "description": "Shooting foul by C. Spencer (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "81-66",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "81-66",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope enters the game for J. Landale"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "81-66",
+    "team": "Grizzlies",
+    "description": "O. Prosper enters the game for J. Wells"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "82-66",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:21.0",
+    "score": "82-69",
+    "team": "Grizzlies",
+    "description": "J. Small makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:08.0",
+    "score": "84-69",
+    "team": "Timberwolves",
+    "description": "J. Clark makes 2-pt layup from 2 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:08.0",
+    "score": "84-69",
+    "team": "Timberwolves",
+    "description": "Shooting foul by K. Caldwell-Pope (drawn by J. Clark)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:08.0",
+    "score": "85-69",
+    "team": "Timberwolves",
+    "description": "J. Clark makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "4:56.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "J. Small misses 2-pt jump shot from 11 ft (block by M. Conley)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:56.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Small"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "Shooting foul by J. Clark (drawn by J. Small)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "J. Small misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "J. Small misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:52.0",
+    "score": "85-69",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 3,
+    "time": "4:44.0",
+    "score": "85-69",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:39.0",
+    "score": "85-69",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Small"
+  },
+  {
+    "quarter": 3,
+    "time": "4:32.0",
+    "score": "85-71",
+    "team": "Grizzlies",
+    "description": "C. Spencer makes 2-pt jump shot from 13 ft (assist by J. Small)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:14.0",
+    "score": "85-71",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:10.0",
+    "score": "85-71",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by N. Reid"
+  },
+  {
+    "quarter": 3,
+    "time": "4:09.0",
+    "score": "87-71",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:58.0",
+    "score": "87-71",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:56.0",
+    "score": "87-71",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 3,
+    "time": "3:45.0",
+    "score": "87-71",
+    "team": "Timberwolves",
+    "description": "Turnover by J. Randle (bad pass; steal by J. Small)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:41.0",
+    "score": "87-73",
+    "team": "Grizzlies",
+    "description": "O. Prosper makes 2-pt dunk from 1 ft (assist by J. Small)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:23.0",
+    "score": "89-73",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:23.0",
+    "score": "89-73",
+    "team": "Timberwolves",
+    "description": "Shooting foul by G. Jackson (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:23.0",
+    "score": "89-73",
+    "team": "Timberwolves",
+    "description": "R. Gobert enters the game for J. Randle"
+  },
+  {
+    "quarter": 3,
+    "time": "3:23.0",
+    "score": "90-73",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "90-73",
+    "team": "Grizzlies",
+    "description": "G. Jackson misses 2-pt jump shot from 7 ft (block by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:09.0",
+    "score": "90-73",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by O. Prosper"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "90-73",
+    "team": "Grizzlies",
+    "description": "J. Small misses 2-pt dunk at rim (block by R. Gobert)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:01.0",
+    "score": "90-73",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by M. Conley"
+  },
+  {
+    "quarter": 3,
+    "time": "3:00.0",
+    "score": "92-73",
+    "team": "Timberwolves",
+    "description": "J. Clark makes 2-pt layup from 2 ft (assist by M. Conley)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:51.0",
+    "score": "92-75",
+    "team": "Grizzlies",
+    "description": "O. Prosper makes 2-pt dunk at rim (assist by K. Caldwell-Pope)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:33.0",
+    "score": "92-75",
+    "team": "Timberwolves",
+    "description": "Shooting foul by O. Prosper (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:33.0",
+    "score": "92-75",
+    "team": "Timberwolves",
+    "description": "Minnesota full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:33.0",
+    "score": "92-75",
+    "team": "Grizzlies",
+    "description": "C. Coward enters the game for J. Small"
+  },
+  {
+    "quarter": 3,
+    "time": "2:33.0",
+    "score": "93-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:33.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:21.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "Turnover by G. Jackson (bad pass; steal by J. Clark)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:15.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt layup from 8 ft (block by C. Coward)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Coward"
+  },
+  {
+    "quarter": 3,
+    "time": "2:02.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "O. Prosper misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:00.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "1:42.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:37.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by O. Prosper"
+  },
+  {
+    "quarter": 3,
+    "time": "1:28.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "C. Spencer misses 2-pt layup from 2 ft (block by M. Conley)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:25.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "1:19.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt layup from 3 ft (block by O. Prosper)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:19.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:16.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Coward"
+  },
+  {
+    "quarter": 3,
+    "time": "1:09.0",
+    "score": "94-75",
+    "team": "Grizzlies",
+    "description": "O. Prosper misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:06.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "94-75",
+    "team": "Timberwolves",
+    "description": "Shooting foul by O. Prosper (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "95-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "96-75",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:40.0",
+    "score": "96-77",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes 2-pt layup from 3 ft (assist by G. Jackson)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "96-77",
+    "team": "Timberwolves",
+    "description": "Shooting foul by G. Jackson (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "Shooting foul by G. Jackson (drawn by R. Gobert)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:27.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 3,
+    "time": "0:24.0",
+    "score": "97-77",
+    "team": "Timberwolves",
+    "description": "R. Gobert misses 2-pt dunk from 4 ft (block by G. Jackson)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:20.0",
+    "score": "97-77",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Spencer"
+  },
+  {
+    "quarter": 3,
+    "time": "0:20.0",
+    "score": "97-79",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes 2-pt dunk at rim (assist by C. Spencer)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "97-79",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "97-79",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by C. Spencer"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "97-79",
+    "team": "Grizzlies",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "97-79",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:48.0",
+    "score": "97-79",
+    "team": "Timberwolves",
+    "description": "J. Randle misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:44.0",
+    "score": "97-79",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by T. Jerome"
+  },
+  {
+    "quarter": 4,
+    "time": "11:36.0",
+    "score": "97-81",
+    "team": "Grizzlies",
+    "description": "C. Coward makes 2-pt layup from 2 ft (assist by T. Jerome)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:24.0",
+    "score": "97-81",
+    "team": "Timberwolves",
+    "description": "Turnover by D. DiVincenzo (lost ball; steal by J. Landale)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:12.0",
+    "score": "97-81",
+    "team": "Grizzlies",
+    "description": "Turnover by C. Coward (bad pass; steal by B. Hyland)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:08.0",
+    "score": "100-81",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 3-pt jump shot from 27 ft (assist by B. Hyland)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:57.0",
+    "score": "100-83",
+    "team": "Grizzlies",
+    "description": "J. Landale makes 2-pt dunk from 2 ft (assist by T. Jerome)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:39.0",
+    "score": "100-83",
+    "team": "Timberwolves",
+    "description": "D. DiVincenzo misses 3-pt jump shot from 31 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:38.0",
+    "score": "100-83",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "10:38.0",
+    "score": "100-83",
+    "team": "Timberwolves",
+    "description": "Loose ball foul by J. Randle (drawn by C. Coward)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:24.0",
+    "score": "100-85",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "100-85",
+    "team": "Grizzlies",
+    "description": "Technical foul by K. Caldwell-Pope"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "101-85",
+    "team": "Timberwolves",
+    "description": "B. Hyland makes technical free throw"
+  },
+  {
+    "quarter": 4,
+    "time": "10:02.0",
+    "score": "104-85",
+    "team": "Timberwolves",
+    "description": "N. Reid makes 3-pt jump shot from 26 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:46.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:45.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Landale"
+  },
+  {
+    "quarter": 4,
+    "time": "9:45.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "J. Landale misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:45.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:45.0",
+    "score": "104-85",
+    "team": "Timberwolves",
+    "description": "Loose ball foul by J. McDaniels (drawn by J. Landale)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "Shooting foul by B. Hyland (drawn by V. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "V. Williams misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "104-85",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "104-86",
+    "team": "Grizzlies",
+    "description": "V. Williams makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "104-86",
+    "team": "Timberwolves",
+    "description": "Offensive foul by J. Randle (drawn by C. Coward)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "104-86",
+    "team": "Timberwolves",
+    "description": "Turnover by J. Randle (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:16.0",
+    "score": "104-88",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:04.0",
+    "score": "106-88",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 2-pt jump shot from 17 ft (assist by B. Hyland)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-88",
+    "team": "Grizzlies",
+    "description": "Shooting foul by D. DiVincenzo (drawn by T. Jerome)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-88",
+    "team": "Timberwolves",
+    "description": "Technical foul by D. DiVincenzo"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-89",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes technical free throw"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-90",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-90",
+    "team": "Timberwolves",
+    "description": "R. Gobert enters the game for D. DiVincenzo"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-90",
+    "team": "Grizzlies",
+    "description": "G. Jackson enters the game for C. Coward"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "106-91",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:37.0",
+    "score": "108-91",
+    "team": "Timberwolves",
+    "description": "R. Gobert makes 2-pt dunk from 1 ft (assist by J. McDaniels)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:22.0",
+    "score": "108-91",
+    "team": "Grizzlies",
+    "description": "Shooting foul by B. Hyland (drawn by K. Caldwell-Pope)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:22.0",
+    "score": "108-92",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:22.0",
+    "score": "108-93",
+    "team": "Grizzlies",
+    "description": "K. Caldwell-Pope makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:02.0",
+    "score": "111-93",
+    "team": "Timberwolves",
+    "description": "B. Hyland makes 3-pt jump shot from 27 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:49.0",
+    "score": "111-96",
+    "team": "Grizzlies",
+    "description": "T. Jerome makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:32.0",
+    "score": "111-96",
+    "team": "Timberwolves",
+    "description": "B. Hyland misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "111-96",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 4,
+    "time": "7:22.0",
+    "score": "111-96",
+    "team": "Timberwolves",
+    "description": "Turnover by B. Hyland (lost ball; steal by T. Jerome)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:18.0",
+    "score": "111-96",
+    "team": "Grizzlies",
+    "description": "Shooting foul by N. Reid (drawn by G. Jackson)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:18.0",
+    "score": "111-97",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:18.0",
+    "score": "111-97",
+    "team": "Timberwolves",
+    "description": "A. Edwards enters the game for B. Hyland"
+  },
+  {
+    "quarter": 4,
+    "time": "7:18.0",
+    "score": "111-98",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:02.0",
+    "score": "111-98",
+    "team": "Timberwolves",
+    "description": "J. Randle misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:59.0",
+    "score": "111-98",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by K. Caldwell-Pope"
+  },
+  {
+    "quarter": 4,
+    "time": "6:56.0",
+    "score": "111-98",
+    "team": "Grizzlies",
+    "description": "T. Jerome misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:50.0",
+    "score": "111-98",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by A. Edwards"
+  },
+  {
+    "quarter": 4,
+    "time": "6:42.0",
+    "score": "114-98",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 3-pt jump shot from 23 ft (assist by N. Reid)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "114-98",
+    "team": "Grizzlies",
+    "description": "Memphis full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "114-98",
+    "team": "Grizzlies",
+    "description": "O. Prosper enters the game for K. Caldwell-Pope"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "114-98",
+    "team": "Grizzlies",
+    "description": "J. Small enters the game for T. Jerome"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "114-98",
+    "team": "Grizzlies",
+    "description": "C. Spencer enters the game for J. Landale"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "114-98",
+    "team": "Grizzlies",
+    "description": "J. Wells enters the game for V. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "6:30.0",
+    "score": "114-100",
+    "team": "Grizzlies",
+    "description": "O. Prosper makes 2-pt layup from 2 ft (assist by J. Small)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:17.0",
+    "score": "116-100",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes 2-pt layup from 2 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:02.0",
+    "score": "116-102",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt dunk from 1 ft (assist by J. Small)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:40.0",
+    "score": "118-102",
+    "team": "Timberwolves",
+    "description": "R. Gobert makes 2-pt dunk from 1 ft (assist by J. Randle)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:28.0",
+    "score": "118-104",
+    "team": "Grizzlies",
+    "description": "J. Wells makes 2-pt jump shot from 14 ft (assist by G. Jackson)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:08.0",
+    "score": "118-104",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "118-104",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 4,
+    "time": "4:58.0",
+    "score": "120-104",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:47.0",
+    "score": "120-104",
+    "team": "Grizzlies",
+    "description": "Turnover by C. Spencer (bad pass; steal by A. Edwards)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:34.0",
+    "score": "123-104",
+    "team": "Timberwolves",
+    "description": "J. McDaniels makes 3-pt jump shot from 23 ft (assist by N. Reid)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:14.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "J. Small misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:12.0",
+    "score": "123-104",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 4,
+    "time": "4:08.0",
+    "score": "123-104",
+    "team": "Timberwolves",
+    "description": "N. Reid misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by J. Wells"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "Personal foul by A. Edwards (drawn by J. Wells)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "J. Wells misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "C. Coward enters the game for G. Jackson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "123-104",
+    "team": "Grizzlies",
+    "description": "J. Wells misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:02.0",
+    "score": "123-104",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by R. Gobert"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "125-104",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "125-104",
+    "team": "Timberwolves",
+    "description": "Shooting foul by C. Coward (drawn by J. Randle)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "126-104",
+    "team": "Timberwolves",
+    "description": "J. Randle makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "126-104",
+    "team": "Grizzlies",
+    "description": "J. Small misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:22.0",
+    "score": "126-104",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "3:18.0",
+    "score": "126-107",
+    "team": "Grizzlies",
+    "description": "O. Prosper makes 3-pt jump shot from 25 ft (assist by C. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:59.0",
+    "score": "126-107",
+    "team": "Timberwolves",
+    "description": "J. McDaniels misses 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:56.0",
+    "score": "126-107",
+    "team": "Grizzlies",
+    "description": "Defensive rebound by O. Prosper"
+  },
+  {
+    "quarter": 4,
+    "time": "2:53.0",
+    "score": "126-107",
+    "team": "Grizzlies",
+    "description": "Turnover by O. Prosper (bad pass; steal by J. Randle)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:51.0",
+    "score": "126-107",
+    "team": "Timberwolves",
+    "description": "Turnover by J. Randle (bad pass; steal by C. Coward)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:46.0",
+    "score": "126-109",
+    "team": "Grizzlies",
+    "description": "J. Small makes 2-pt dunk from 1 ft (assist by C. Coward)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:46.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "Minnesota full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "2:46.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "J. Clark enters the game for R. Gobert"
+  },
+  {
+    "quarter": 4,
+    "time": "2:26.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "A. Edwards misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:22.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "Offensive rebound by J. Clark"
+  },
+  {
+    "quarter": 4,
+    "time": "2:22.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "Turnover by J. Clark (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:02.0",
+    "score": "126-109",
+    "team": "Grizzlies",
+    "description": "C. Coward misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:57.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by N. Reid"
+  },
+  {
+    "quarter": 4,
+    "time": "1:40.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "Turnover by J. Randle (bad pass; steal by C. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:37.0",
+    "score": "126-109",
+    "team": "Grizzlies",
+    "description": "Turnover by C. Coward (lost ball; steal by N. Reid)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:25.0",
+    "score": "126-109",
+    "team": "Timberwolves",
+    "description": "Shooting foul by J. Wells (drawn by A. Edwards)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:25.0",
+    "score": "127-109",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:25.0",
+    "score": "127-109",
+    "team": "Grizzlies",
+    "description": "G. Jackson enters the game for C. Coward"
+  },
+  {
+    "quarter": 4,
+    "time": "1:25.0",
+    "score": "128-109",
+    "team": "Timberwolves",
+    "description": "A. Edwards makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:12.0",
+    "score": "128-109",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:09.0",
+    "score": "128-109",
+    "team": "Timberwolves",
+    "description": "Defensive rebound by J. Clark"
+  },
+  {
+    "quarter": 4,
+    "time": "0:53.0",
+    "score": "131-109",
+    "team": "Timberwolves",
+    "description": "J. Randle makes 3-pt jump shot from 25 ft (assist by N. Reid)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "131-109",
+    "team": "Grizzlies",
+    "description": "J. Wells misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:44.0",
+    "score": "131-109",
+    "team": "Grizzlies",
+    "description": "Offensive rebound by J. Small"
+  },
+  {
+    "quarter": 4,
+    "time": "0:41.0",
+    "score": "131-112",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 3-pt jump shot from 23 ft (assist by J. Small)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:28.0",
+    "score": "131-112",
+    "team": "Timberwolves",
+    "description": "Turnover by A. Edwards (bad pass; steal by C. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "131-114",
+    "team": "Grizzlies",
+    "description": "G. Jackson makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "131-114",
+    "team": "Timberwolves",
+    "description": "Turnover by Team (shot clock)"
+  }
+]

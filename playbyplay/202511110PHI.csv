@@ -1,0 +1,455 @@
+quarter,time,score,team,description
+1,11:38.0,0-2,76ers,A. Drummond makes 2-pt dunk from 1 ft (assist by T. Maxey)
+1,11:20.0,2-2,Celtics,D. White makes 2-pt jump shot from 9 ft (assist by N. Queta)
+1,10:54.0,2-4,76ers,T. Watford makes 2-pt jump shot from 8 ft (assist by T. Maxey)
+1,10:40.0,2-4,Celtics,Personal foul by K. Oubre (drawn by N. Queta)
+1,10:34.0,2-4,Celtics,D. White misses 3-pt jump shot from 25 ft
+1,10:32.0,2-4,Celtics,Offensive rebound by Team
+1,10:21.0,2-4,Celtics,J. Brown misses 2-pt jump shot from 10 ft
+1,10:17.0,2-4,76ers,Defensive rebound by T. Watford
+1,10:16.0,2-4,76ers,Turnover by T. Watford (bad pass; steal by P. Pritchard)
+1,10:09.0,2-4,Celtics,P. Pritchard misses 2-pt jump shot from 21 ft
+1,10:07.0,2-4,Celtics,Offensive rebound by N. Queta
+1,10:05.0,4-4,Celtics,N. Queta makes 2-pt layup at rim
+1,9:55.0,4-7,76ers,T. Maxey makes 3-pt jump shot from 27 ft (assist by T. Watford)
+1,9:43.0,7-7,Celtics,J. Minott makes 3-pt jump shot from 24 ft (assist by D. White)
+1,9:32.0,7-7,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+1,9:30.0,7-7,Celtics,Defensive rebound by J. Brown
+1,9:16.0,7-7,Celtics,Shooting foul by T. Watford (drawn by J. Brown)
+1,9:16.0,8-7,Celtics,J. Brown makes free throw 1 of 2
+1,9:16.0,9-7,Celtics,J. Brown makes free throw 2 of 2
+1,9:04.0,9-7,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+1,9:02.0,9-7,Celtics,Defensive rebound by J. Minott
+1,8:58.0,11-7,Celtics,N. Queta makes 2-pt dunk from 1 ft (assist by J. Brown)
+1,8:36.0,11-9,76ers,K. Oubre makes 2-pt jump shot from 7 ft
+1,8:28.0,11-9,Celtics,J. Brown misses 3-pt jump shot from 29 ft
+1,8:24.0,11-9,76ers,Defensive rebound by A. Drummond
+1,8:16.0,11-12,76ers,T. Watford makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+1,7:57.0,11-12,Celtics,J. Brown misses 2-pt jump shot from 21 ft
+1,7:55.0,11-12,76ers,Defensive rebound by V. Edgecombe
+1,7:40.0,11-12,76ers,V. Edgecombe misses 2-pt jump shot from 16 ft (block by D. White)
+1,7:37.0,11-12,Celtics,Defensive rebound by N. Queta
+1,7:36.0,11-12,Celtics,Turnover by D. White (out of bounds lost ball)
+1,7:22.0,11-12,76ers,K. Oubre misses 3-pt jump shot from 27 ft
+1,7:20.0,11-12,Celtics,Defensive rebound by J. Brown
+1,7:13.0,11-12,Celtics,J. Brown misses 2-pt layup from 2 ft
+1,7:12.0,11-12,76ers,Defensive rebound by A. Drummond
+1,7:12.0,11-12,76ers,Personal foul by J. Minott (drawn by T. Watford)
+1,6:54.0,11-14,76ers,K. Oubre makes 2-pt jump shot from 6 ft
+1,6:34.0,11-14,Celtics,Personal foul by V. Edgecombe (drawn by N. Queta)
+1,6:34.0,11-14,76ers,Philadelphia full timeout
+1,6:34.0,11-14,Celtics,S. Hauser enters the game for J. Minott
+1,6:34.0,11-14,Celtics,A. Simons enters the game for P. Pritchard
+1,6:28.0,11-14,76ers,Violation by Team (kicked ball)
+1,6:23.0,11-14,Celtics,A. Simons misses 2-pt layup from 3 ft (block by V. Edgecombe)
+1,6:22.0,11-14,Celtics,Offensive rebound by Team
+1,6:16.0,11-14,Celtics,N. Queta misses 2-pt jump shot from 17 ft
+1,6:13.0,11-14,76ers,Defensive rebound by K. Oubre
+1,5:54.0,11-14,76ers,Shooting foul by D. White (drawn by T. Maxey)
+1,5:54.0,11-15,76ers,T. Maxey makes free throw 1 of 2
+1,5:54.0,11-16,76ers,T. Maxey makes free throw 2 of 2
+1,5:35.0,11-16,Celtics,D. White misses 3-pt jump shot from 24 ft
+1,5:33.0,11-16,76ers,Defensive rebound by Team
+1,5:33.0,11-16,Celtics,L. Garza enters the game for N. Queta
+1,5:08.0,11-16,76ers,V. Edgecombe misses 2-pt jump shot from 12 ft
+1,5:06.0,11-16,Celtics,Defensive rebound by S. Hauser
+1,5:03.0,11-16,Celtics,Personal foul by T. Maxey (drawn by J. Brown)
+1,5:00.0,14-16,Celtics,S. Hauser makes 3-pt jump shot from 27 ft (assist by D. White)
+1,4:44.0,14-18,76ers,K. Oubre makes 2-pt jump shot from 13 ft (assist by T. Maxey)
+1,4:33.0,14-18,Celtics,D. White misses 3-pt jump shot from 23 ft
+1,4:28.0,14-18,76ers,Defensive rebound by T. Maxey
+1,4:26.0,14-18,76ers,Turnover by K. Oubre (step out of bounds)
+1,4:26.0,14-18,76ers,A. Bona enters the game for A. Drummond
+1,4:26.0,14-18,76ers,Q. Grimes enters the game for V. Edgecombe
+1,4:06.0,14-18,Celtics,J. Brown misses 2-pt layup from 3 ft
+1,4:04.0,14-18,76ers,Defensive rebound by A. Bona
+1,3:44.0,14-18,76ers,T. Watford misses 3-pt jump shot from 26 ft
+1,3:41.0,14-18,Celtics,Defensive rebound by D. White
+1,3:36.0,14-18,Celtics,S. Hauser misses 3-pt jump shot from 27 ft
+1,3:35.0,14-18,76ers,Defensive rebound by T. Watford
+1,3:28.0,14-18,76ers,T. Maxey misses 2-pt layup from 2 ft
+1,3:27.0,14-18,Celtics,Defensive rebound by L. Garza
+1,3:21.0,17-18,Celtics,A. Simons makes 3-pt jump shot from 27 ft (assist by D. White)
+1,3:02.0,17-18,76ers,T. Watford misses 2-pt layup from 2 ft
+1,3:00.0,17-18,Celtics,Defensive rebound by S. Hauser
+1,2:55.0,19-18,Celtics,L. Garza makes 2-pt layup from 3 ft (assist by A. Simons)
+1,2:34.0,19-21,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+1,2:22.0,19-21,Celtics,D. White misses 3-pt jump shot from 26 ft
+1,2:20.0,19-21,76ers,Defensive rebound by Team
+1,2:20.0,19-21,Celtics,Boston full timeout
+1,2:20.0,19-21,Celtics,P. Pritchard enters the game for J. Brown
+1,2:20.0,19-21,Celtics,J. Walsh enters the game for D. White
+1,2:20.0,19-21,76ers,V. Edgecombe enters the game for T. Maxey
+1,2:20.0,19-21,76ers,J. McCain enters the game for T. Watford
+1,2:00.0,19-23,76ers,A. Bona makes 2-pt dunk from 1 ft (assist by V. Edgecombe)
+1,1:45.0,19-23,Celtics,J. Walsh misses 2-pt layup from 2 ft
+1,1:42.0,19-23,Celtics,Offensive rebound by L. Garza
+1,1:38.0,19-23,Celtics,L. Garza misses 2-pt layup at rim
+1,1:37.0,19-23,76ers,Defensive rebound by A. Bona
+1,1:32.0,19-23,76ers,V. Edgecombe misses 2-pt layup from 2 ft
+1,1:30.0,19-23,Celtics,Defensive rebound by L. Garza
+1,1:23.0,19-23,Celtics,A. Simons misses 2-pt jump shot from 17 ft
+1,1:19.0,19-23,76ers,Defensive rebound by Q. Grimes
+1,1:13.0,19-23,76ers,J. McCain misses 2-pt jump shot from 19 ft
+1,1:10.0,19-23,Celtics,Defensive rebound by L. Garza
+1,1:00.0,19-23,Celtics,L. Garza misses 2-pt layup from 1 ft (block by A. Bona)
+1,0:57.0,19-23,76ers,Defensive rebound by Q. Grimes
+1,0:54.0,19-23,76ers,Turnover by Q. Grimes (bad pass; steal by J. Walsh)
+1,0:49.0,19-23,Celtics,P. Pritchard misses 3-pt jump shot from 30 ft
+1,0:44.0,19-23,Celtics,Offensive rebound by L. Garza
+1,0:33.0,19-23,Celtics,Shooting foul by K. Oubre (drawn by L. Garza)
+1,0:33.0,19-23,Celtics,L. Garza misses free throw 1 of 2
+1,0:33.0,19-23,Celtics,Offensive rebound by Team
+1,0:33.0,19-23,76ers,J. Edwards enters the game for K. Oubre
+1,0:33.0,20-23,Celtics,L. Garza makes free throw 2 of 2
+1,0:26.0,20-23,76ers,Offensive foul by J. McCain (drawn by L. Garza)
+1,0:26.0,20-23,76ers,Turnover by J. McCain (offensive foul)
+1,0:26.0,20-23,Celtics,N. Queta enters the game for L. Garza
+1,0:07.0,20-23,Celtics,Shooting foul by J. Edwards (drawn by A. Simons)
+1,0:07.0,21-23,Celtics,A. Simons makes free throw 1 of 2
+1,0:07.0,21-23,Celtics,H. González Peña enters the game for P. Pritchard
+1,0:07.0,21-23,76ers,T. Maxey enters the game for A. Bona
+1,0:07.0,22-23,Celtics,A. Simons makes free throw 2 of 2
+1,0:02.0,22-23,76ers,Personal foul by H. González Peña (drawn by Q. Grimes)
+1,0:02.0,22-23,Celtics,D. White enters the game for A. Simons
+1,0:01.0,22-23,76ers,T. Maxey misses 3-pt jump shot from 26 ft (block by J. Walsh)
+1,0:01.0,22-23,76ers,Offensive rebound by Team
+2,11:46.0,22-23,Celtics,A. Simons misses 3-pt jump shot from 27 ft
+2,11:43.0,22-23,76ers,Defensive rebound by V. Edgecombe
+2,11:33.0,22-23,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+2,11:31.0,22-23,Celtics,Defensive rebound by A. Simons
+2,11:29.0,22-23,Celtics,J. Walsh misses 2-pt dunk from 2 ft (block by Q. Grimes)
+2,11:28.0,22-23,Celtics,Offensive rebound by Team
+2,11:18.0,22-23,Celtics,J. Walsh misses 3-pt jump shot from 25 ft
+2,11:15.0,22-23,Celtics,Offensive rebound by N. Queta
+2,11:03.0,22-23,Celtics,P. Pritchard misses 2-pt layup from 2 ft (block by A. Bona)
+2,11:03.0,22-23,Celtics,Offensive rebound by Team
+2,11:01.0,22-23,Celtics,P. Pritchard misses 3-pt jump shot from 27 ft
+2,10:57.0,22-23,76ers,Defensive rebound by J. McCain
+2,10:49.0,22-23,76ers,J. McCain misses 2-pt layup from 4 ft
+2,10:47.0,22-23,Celtics,Defensive rebound by N. Queta
+2,10:39.0,24-23,Celtics,A. Simons makes 2-pt layup from 1 ft
+2,10:17.0,24-23,76ers,Shooting foul by H. González Peña (drawn by A. Bona)
+2,10:17.0,24-23,76ers,A. Bona misses free throw 1 of 2
+2,10:17.0,24-23,76ers,Offensive rebound by Team
+2,10:17.0,24-23,76ers,A. Bona misses free throw 2 of 2
+2,10:15.0,24-23,Celtics,Defensive rebound by J. Walsh
+2,10:01.0,27-23,Celtics,H. González Peña makes 3-pt jump shot from 23 ft (assist by A. Simons)
+2,9:49.0,27-26,76ers,Q. Grimes makes 3-pt jump shot from 26 ft (assist by J. Edwards)
+2,9:30.0,27-26,Celtics,A. Simons misses 3-pt jump shot from 24 ft
+2,9:27.0,27-26,76ers,Defensive rebound by Q. Grimes
+2,9:20.0,27-29,76ers,J. Edwards makes 3-pt jump shot from 28 ft (assist by J. McCain)
+2,8:57.0,27-29,Celtics,Personal foul by J. Edwards (drawn by N. Queta)
+2,8:57.0,27-29,Celtics,L. Garza enters the game for N. Queta
+2,8:57.0,27-29,76ers,A. Drummond enters the game for A. Bona
+2,8:48.0,27-29,Celtics,A. Simons misses 3-pt jump shot from 26 ft
+2,8:44.0,27-29,Celtics,Offensive rebound by H. González Peña
+2,8:42.0,29-29,Celtics,H. González Peña makes 2-pt layup at rim
+2,8:25.0,29-32,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by J. Edwards)
+2,8:00.0,29-32,Celtics,A. Simons misses 2-pt jump shot from 19 ft
+2,7:58.0,29-32,76ers,Defensive rebound by A. Drummond
+2,7:52.0,29-32,76ers,Q. Grimes misses 2-pt layup from 2 ft
+2,7:49.0,29-32,Celtics,Defensive rebound by H. González Peña
+2,7:32.0,29-32,76ers,Violation by Team (kicked ball)
+2,7:32.0,29-32,Celtics,S. Hauser enters the game for A. Simons
+2,7:32.0,29-32,Celtics,J. Minott enters the game for J. Walsh
+2,7:32.0,29-32,76ers,J. Walker enters the game for J. McCain
+2,7:25.0,29-32,Celtics,S. Hauser misses 2-pt jump shot from 18 ft
+2,7:23.0,29-32,76ers,Defensive rebound by A. Drummond
+2,7:04.0,29-34,76ers,J. Edwards makes 2-pt layup from 3 ft (assist by Q. Grimes)
+2,7:04.0,29-34,76ers,Shooting foul by J. Minott (drawn by J. Edwards)
+2,7:04.0,29-34,Celtics,J. Brown enters the game for H. González Peña
+2,7:04.0,29-34,Celtics,D. White enters the game for P. Pritchard
+2,7:04.0,29-35,76ers,J. Edwards makes free throw 1 of 1
+2,6:40.0,29-35,Celtics,D. White misses 2-pt jump shot from 20 ft
+2,6:37.0,29-35,76ers,Defensive rebound by A. Drummond
+2,6:28.0,29-38,76ers,J. Edwards makes 3-pt jump shot from 27 ft (assist by Q. Grimes)
+2,6:26.0,29-38,Celtics,Boston full timeout
+2,6:02.0,29-38,Celtics,L. Garza misses 2-pt layup from 2 ft
+2,6:01.0,29-38,Celtics,Offensive rebound by Team
+2,6:01.0,29-38,Celtics,Turnover by Team (shot clock)
+2,5:39.0,29-38,76ers,V. Edgecombe misses 2-pt jump shot from 11 ft
+2,5:37.0,29-38,Celtics,Defensive rebound by L. Garza
+2,5:29.0,29-38,Celtics,D. White misses 2-pt layup from 3 ft
+2,5:27.0,29-38,Celtics,Offensive rebound by L. Garza
+2,5:25.0,31-38,Celtics,L. Garza makes 2-pt layup at rim
+2,5:18.0,31-40,76ers,Q. Grimes makes 2-pt layup from 1 ft
+2,5:18.0,31-40,76ers,Shooting foul by D. White (drawn by Q. Grimes)
+2,5:18.0,31-40,76ers,T. Maxey enters the game for V. Edgecombe
+2,5:18.0,31-41,76ers,Q. Grimes makes free throw 1 of 1
+2,5:01.0,33-41,Celtics,L. Garza makes 2-pt layup from 1 ft (assist by J. Brown)
+2,4:48.0,33-41,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+2,4:46.0,33-41,76ers,Offensive rebound by J. Edwards
+2,4:42.0,33-43,76ers,A. Drummond makes 2-pt layup from 2 ft (assist by J. Walker)
+2,4:42.0,33-43,76ers,Shooting foul by J. Minott (drawn by A. Drummond)
+2,4:42.0,33-43,Celtics,J. Walsh enters the game for J. Minott
+2,4:42.0,33-43,76ers,A. Drummond misses free throw 1 of 1
+2,4:39.0,33-43,76ers,Offensive rebound by J. Edwards
+2,4:31.0,33-43,76ers,J. Walker misses 3-pt jump shot from 27 ft
+2,4:25.0,33-43,Celtics,Defensive rebound by S. Hauser
+2,4:19.0,33-43,Celtics,J. Walsh misses 3-pt jump shot from 24 ft
+2,4:14.0,33-43,Celtics,Offensive rebound by J. Brown
+2,4:11.0,33-43,Celtics,L. Garza misses 3-pt jump shot from 24 ft
+2,4:09.0,33-43,76ers,Defensive rebound by A. Drummond
+2,4:08.0,33-43,76ers,Personal foul by J. Walsh (drawn by A. Drummond)
+2,4:08.0,33-43,76ers,Technical foul by A. Drummond
+2,4:08.0,34-43,Celtics,J. Brown makes technical free throw
+2,4:08.0,34-43,Celtics,N. Queta enters the game for L. Garza
+2,4:08.0,34-44,76ers,A. Drummond makes free throw 1 of 2
+2,4:08.0,34-45,76ers,A. Drummond makes free throw 2 of 2
+2,3:52.0,34-45,Celtics,N. Queta misses 2-pt jump shot from 8 ft
+2,3:52.0,34-45,Celtics,Offensive rebound by J. Walsh
+2,3:52.0,34-45,Celtics,Shooting foul by J. Walker (drawn by J. Walsh)
+2,3:52.0,35-45,Celtics,J. Walsh makes free throw 1 of 2
+2,3:52.0,35-45,Celtics,P. Pritchard enters the game for S. Hauser
+2,3:52.0,35-45,76ers,K. Oubre enters the game for J. Edwards
+2,3:52.0,35-45,76ers,T. Watford enters the game for J. Walker
+2,3:52.0,35-45,Celtics,J. Walsh misses free throw 2 of 2
+2,3:50.0,35-45,76ers,Defensive rebound by K. Oubre
+2,3:36.0,35-45,76ers,K. Oubre misses 3-pt jump shot from 28 ft
+2,3:32.0,35-45,Celtics,Defensive rebound by P. Pritchard
+2,3:29.0,35-45,Celtics,Personal foul by K. Oubre (drawn by N. Queta)
+2,3:29.0,35-45,76ers,J. Edwards enters the game for K. Oubre
+2,3:18.0,37-45,Celtics,J. Brown makes 2-pt jump shot from 19 ft
+2,2:59.0,37-45,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+2,2:55.0,37-45,Celtics,Defensive rebound by D. White
+2,2:46.0,37-45,Celtics,Personal foul by T. Watford (drawn by J. Brown)
+2,2:46.0,37-45,76ers,Philadelphia full timeout
+2,2:40.0,37-45,Celtics,P. Pritchard misses 3-pt jump shot from 28 ft
+2,2:38.0,37-45,76ers,Defensive rebound by J. Edwards
+2,2:18.0,37-45,76ers,T. Maxey misses 2-pt layup from 2 ft
+2,2:16.0,37-45,Celtics,Defensive rebound by J. Walsh
+2,2:10.0,37-45,Celtics,D. White misses 3-pt jump shot from 24 ft
+2,2:08.0,37-45,76ers,Defensive rebound by T. Maxey
+2,2:02.0,37-47,76ers,T. Watford makes 2-pt layup from 1 ft (assist by T. Maxey)
+2,1:51.0,37-47,Celtics,Turnover by D. White (back court)
+2,1:38.0,37-47,76ers,Turnover by Q. Grimes (bad pass)
+2,1:28.0,37-47,Celtics,Shooting foul by T. Watford (drawn by J. Brown)
+2,1:28.0,38-47,Celtics,J. Brown makes free throw 1 of 2
+2,1:28.0,38-47,Celtics,A. Simons enters the game for P. Pritchard
+2,1:28.0,38-47,76ers,J. Walker enters the game for T. Watford
+2,1:28.0,39-47,Celtics,J. Brown makes free throw 2 of 2
+2,1:07.0,39-49,76ers,A. Drummond makes 2-pt dunk at rim (assist by J. Walker)
+2,0:57.0,39-49,Celtics,Turnover by J. Brown (out of bounds lost ball)
+2,0:47.0,39-51,76ers,A. Drummond makes 2-pt layup from 1 ft (assist by J. Walker)
+2,0:35.0,39-51,Celtics,J. Brown misses 3-pt jump shot from 25 ft
+2,0:32.0,39-51,76ers,Defensive rebound by A. Drummond
+2,0:20.0,39-51,76ers,J. Walker misses 3-pt jump shot from 23 ft
+2,0:16.0,39-51,Celtics,Defensive rebound by N. Queta
+2,0:01.0,41-51,Celtics,J. Walsh makes 2-pt dunk at rim (assist by J. Brown)
+2,0:00.0,41-51,76ers,Offensive rebound by Team
+3,11:41.0,41-51,Celtics,N. Queta misses 3-pt jump shot from 26 ft
+3,11:39.0,41-51,Celtics,Offensive rebound by J. Walsh
+3,11:36.0,43-51,Celtics,P. Pritchard makes 2-pt layup from 2 ft (assist by J. Walsh)
+3,11:18.0,43-51,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+3,11:16.0,43-51,76ers,Offensive rebound by K. Oubre
+3,11:16.0,43-51,76ers,Shooting foul by J. Brown (drawn by K. Oubre)
+3,11:16.0,43-52,76ers,K. Oubre makes free throw 1 of 2
+3,11:16.0,43-53,76ers,K. Oubre makes free throw 2 of 2
+3,11:00.0,43-53,Celtics,P. Pritchard misses 3-pt jump shot from 26 ft
+3,10:57.0,43-53,76ers,Defensive rebound by A. Drummond
+3,10:39.0,43-53,76ers,T. Watford misses 2-pt jump shot from 12 ft (block by J. Walsh)
+3,10:35.0,43-53,Celtics,Defensive rebound by N. Queta
+3,10:31.0,43-53,Celtics,Personal foul by T. Maxey (drawn by J. Brown)
+3,10:18.0,45-53,Celtics,J. Brown makes 2-pt jump shot from 17 ft (assist by D. White)
+3,10:03.0,45-53,76ers,T. Watford misses 2-pt layup from 3 ft (block by N. Queta)
+3,10:01.0,45-53,Celtics,Defensive rebound by P. Pritchard
+3,9:55.0,47-53,Celtics,J. Walsh makes 2-pt dunk from 1 ft (assist by N. Queta)
+3,9:41.0,47-53,76ers,A. Drummond misses 3-pt jump shot from 24 ft
+3,9:38.0,47-53,Celtics,Defensive rebound by D. White
+3,9:31.0,49-53,Celtics,N. Queta makes 2-pt dunk from 2 ft (assist by D. White)
+3,9:31.0,49-53,76ers,Philadelphia full timeout
+3,9:13.0,49-53,76ers,T. Watford misses 2-pt jump shot from 14 ft
+3,9:11.0,49-53,Celtics,Defensive rebound by N. Queta
+3,8:57.0,51-53,Celtics,J. Brown makes 2-pt jump shot from 19 ft (assist by P. Pritchard)
+3,8:36.0,51-53,76ers,Turnover by K. Oubre (lost ball; steal by J. Walsh)
+3,8:19.0,54-53,Celtics,D. White makes 3-pt jump shot from 26 ft
+3,8:03.0,54-53,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+3,8:00.0,54-53,76ers,Offensive rebound by A. Drummond
+3,7:59.0,54-55,76ers,A. Drummond makes 2-pt layup at rim
+3,7:44.0,54-55,Celtics,Turnover by J. Brown (bad pass; steal by T. Maxey)
+3,7:42.0,54-55,76ers,Shooting foul by J. Brown (drawn by T. Maxey)
+3,7:42.0,54-56,76ers,T. Maxey makes free throw 1 of 2
+3,7:42.0,54-57,76ers,T. Maxey makes free throw 2 of 2
+3,7:42.0,54-57,76ers,Q. Grimes enters the game for V. Edgecombe
+3,7:42.0,54-57,76ers,J. Walker enters the game for T. Watford
+3,7:22.0,57-57,Celtics,J. Walsh makes 3-pt jump shot from 24 ft (assist by J. Brown)
+3,7:11.0,57-57,76ers,Shooting foul by P. Pritchard (drawn by T. Maxey)
+3,7:11.0,57-58,76ers,T. Maxey makes free throw 1 of 2
+3,7:11.0,57-59,76ers,T. Maxey makes free throw 2 of 2
+3,6:57.0,59-59,Celtics,D. White makes 2-pt jump shot from 8 ft
+3,6:42.0,59-59,76ers,T. Maxey misses 2-pt jump shot from 8 ft
+3,6:37.0,59-59,76ers,Offensive rebound by A. Drummond
+3,6:37.0,59-59,76ers,A. Drummond misses 2-pt layup at rim (block by N. Queta)
+3,6:36.0,59-59,76ers,Offensive rebound by A. Drummond
+3,6:36.0,59-59,76ers,A. Drummond misses 2-pt layup at rim
+3,6:35.0,59-59,Celtics,Defensive rebound by J. Walsh
+3,6:33.0,59-59,Celtics,J. Brown misses 2-pt layup from 4 ft
+3,6:30.0,59-59,76ers,Defensive rebound by T. Maxey
+3,6:25.0,59-61,76ers,T. Maxey makes 2-pt layup from 3 ft
+3,6:03.0,59-61,Celtics,Offensive foul by N. Queta (drawn by J. Walker)
+3,6:03.0,59-61,Celtics,Turnover by N. Queta (offensive foul)
+3,6:03.0,59-61,Celtics,L. Garza enters the game for P. Pritchard
+3,6:03.0,59-61,Celtics,A. Simons enters the game for N. Queta
+3,5:49.0,59-61,76ers,T. Maxey misses 2-pt jump shot from 9 ft
+3,5:47.0,59-61,Celtics,Defensive rebound by J. Brown
+3,5:47.0,59-61,Celtics,Personal foul by J. Walker (drawn by J. Brown)
+3,5:37.0,59-61,Celtics,Turnover by A. Simons (bad pass)
+3,5:25.0,59-61,76ers,K. Oubre misses 2-pt layup from 5 ft
+3,5:22.0,59-61,Celtics,Defensive rebound by J. Walsh
+3,5:12.0,59-61,Celtics,A. Simons misses 2-pt jump shot from 17 ft (block by A. Drummond)
+3,5:10.0,59-61,76ers,Defensive rebound by Q. Grimes
+3,5:09.0,59-61,76ers,Turnover by Q. Grimes (bad pass)
+3,5:09.0,59-61,Celtics,S. Hauser enters the game for J. Walsh
+3,5:04.0,61-61,Celtics,J. Brown makes 2-pt layup from 2 ft (assist by D. White)
+3,4:47.0,61-61,76ers,K. Oubre misses 3-pt jump shot from 28 ft
+3,4:44.0,61-61,Celtics,Defensive rebound by S. Hauser
+3,4:36.0,63-61,Celtics,J. Brown makes 2-pt jump shot from 19 ft
+3,4:18.0,63-61,76ers,A. Drummond misses 3-pt jump shot from 23 ft
+3,4:16.0,63-61,Celtics,Defensive rebound by A. Simons
+3,4:08.0,63-61,Celtics,A. Simons misses 3-pt jump shot from 28 ft
+3,4:04.0,63-61,76ers,Defensive rebound by Q. Grimes
+3,3:54.0,63-63,76ers,Q. Grimes makes 2-pt jump shot from 18 ft
+3,3:36.0,63-63,Celtics,D. White misses 2-pt layup from 3 ft
+3,3:34.0,63-63,76ers,Defensive rebound by T. Maxey
+3,3:30.0,63-66,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+3,3:29.0,63-66,Celtics,Boston full timeout
+3,3:29.0,63-66,76ers,A. Bona enters the game for A. Drummond
+3,3:20.0,65-66,Celtics,J. Brown makes 2-pt jump shot from 19 ft (assist by A. Simons)
+3,3:20.0,65-66,Celtics,Shooting foul by J. Walker (drawn by J. Brown)
+3,3:20.0,66-66,Celtics,J. Brown makes free throw 1 of 1
+3,2:58.0,66-66,76ers,K. Oubre misses 3-pt jump shot from 23 ft
+3,2:56.0,66-66,Celtics,Defensive rebound by A. Simons
+3,2:47.0,69-66,Celtics,J. Brown makes 3-pt jump shot from 23 ft (assist by D. White)
+3,2:30.0,69-66,76ers,T. Maxey misses 2-pt layup from 3 ft (block by D. White)
+3,2:29.0,69-66,Celtics,Defensive rebound by Team
+3,2:29.0,69-66,76ers,J. Edwards enters the game for J. Walker
+3,2:13.0,69-66,Celtics,J. Brown misses 2-pt jump shot from 19 ft
+3,2:09.0,69-66,76ers,Defensive rebound by Q. Grimes
+3,2:04.0,69-68,76ers,K. Oubre makes 2-pt layup at rim (assist by Q. Grimes)
+3,1:45.0,71-68,Celtics,D. White makes 2-pt jump shot from 12 ft (assist by A. Simons)
+3,1:45.0,71-68,Celtics,Shooting foul by Q. Grimes (drawn by D. White)
+3,1:45.0,71-68,Celtics,H. González Peña enters the game for J. Brown
+3,1:45.0,71-68,76ers,V. Edgecombe enters the game for T. Maxey
+3,1:45.0,71-68,Celtics,D. White misses free throw 1 of 1
+3,1:43.0,71-68,76ers,Defensive rebound by A. Bona
+3,1:36.0,71-68,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+3,1:34.0,71-68,Celtics,Defensive rebound by D. White
+3,1:26.0,71-68,Celtics,A. Simons misses 3-pt jump shot from 24 ft
+3,1:23.0,71-68,76ers,Defensive rebound by K. Oubre
+3,1:19.0,71-68,76ers,Personal foul by L. Garza (drawn by Q. Grimes)
+3,1:19.0,71-68,76ers,T. Watford enters the game for K. Oubre
+3,1:05.0,71-68,76ers,Turnover by Q. Grimes (bad pass; steal by H. González Peña)
+3,1:02.0,71-68,Celtics,Turnover by H. González Peña (traveling)
+3,1:02.0,71-68,Celtics,J. Walsh enters the game for H. González Peña
+3,0:45.0,71-68,76ers,Q. Grimes misses 3-pt jump shot from 27 ft
+3,0:42.0,71-68,Celtics,Defensive rebound by D. White
+3,0:34.0,74-68,Celtics,D. White makes 3-pt jump shot from 28 ft
+3,0:16.0,74-68,76ers,Offensive foul by J. Edwards (drawn by D. White)
+3,0:16.0,74-68,76ers,Turnover by J. Edwards (offensive foul)
+3,0:16.0,74-68,Celtics,N. Queta enters the game for L. Garza
+3,0:02.0,77-68,Celtics,D. White makes 3-pt jump shot from 27 ft
+3,0:00.0,77-71,76ers,Q. Grimes makes 3-pt jump shot from 47 ft (assist by J. Edwards)
+4,11:48.0,77-71,76ers,Shooting foul by A. Simons (drawn by Q. Grimes)
+4,11:48.0,77-72,76ers,Q. Grimes makes free throw 1 of 2
+4,11:48.0,77-73,76ers,Q. Grimes makes free throw 2 of 2
+4,11:34.0,77-73,Celtics,S. Hauser misses 3-pt jump shot from 27 ft
+4,11:31.0,77-73,76ers,Defensive rebound by V. Edgecombe
+4,11:27.0,77-73,76ers,V. Edgecombe misses 2-pt layup from 1 ft
+4,11:24.0,77-73,Celtics,Defensive rebound by S. Hauser
+4,11:14.0,77-73,Celtics,Offensive foul by P. Pritchard (drawn by T. Watford)
+4,11:14.0,77-73,Celtics,Turnover by P. Pritchard (offensive foul)
+4,10:48.0,77-75,76ers,J. Edwards makes 2-pt jump shot from 18 ft (assist by Q. Grimes)
+4,10:23.0,77-75,Celtics,J. Brown misses 2-pt jump shot from 16 ft
+4,10:18.0,77-75,76ers,Defensive rebound by A. Bona
+4,10:09.0,77-75,76ers,T. Watford misses 3-pt jump shot from 28 ft
+4,10:07.0,77-75,Celtics,Defensive rebound by J. Brown
+4,10:04.0,77-75,Celtics,Shooting foul by Q. Grimes (drawn by A. Simons)
+4,10:04.0,78-75,Celtics,A. Simons makes free throw 1 of 2
+4,10:04.0,78-75,Celtics,J. Walsh enters the game for J. Brown
+4,10:04.0,79-75,Celtics,A. Simons makes free throw 2 of 2
+4,9:44.0,79-75,76ers,T. Watford misses 2-pt layup from 2 ft
+4,9:42.0,79-75,Celtics,Defensive rebound by S. Hauser
+4,9:19.0,82-75,Celtics,A. Simons makes 3-pt jump shot from 27 ft (assist by P. Pritchard)
+4,9:00.0,82-77,76ers,Q. Grimes makes 2-pt layup from 5 ft
+4,8:48.0,85-77,Celtics,A. Simons makes 3-pt jump shot from 25 ft
+4,8:38.0,85-80,76ers,Q. Grimes makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+4,8:21.0,85-80,Celtics,Turnover by A. Simons (lost ball; steal by J. Edwards)
+4,8:18.0,85-82,76ers,J. Edwards makes 2-pt dunk at rim
+4,8:18.0,85-82,Celtics,Boston full timeout
+4,8:18.0,85-82,Celtics,L. Garza enters the game for N. Queta
+4,8:18.0,85-82,76ers,A. Drummond enters the game for A. Bona
+4,8:18.0,85-82,76ers,T. Maxey enters the game for Q. Grimes
+4,8:18.0,85-82,76ers,K. Oubre enters the game for T. Watford
+4,7:56.0,87-82,Celtics,A. Simons makes 2-pt jump shot from 16 ft
+4,7:34.0,87-82,76ers,T. Maxey misses 2-pt jump shot from 14 ft
+4,7:32.0,87-82,Celtics,Defensive rebound by S. Hauser
+4,7:22.0,87-82,Celtics,S. Hauser misses 3-pt jump shot from 26 ft
+4,7:19.0,87-82,76ers,Defensive rebound by T. Maxey
+4,7:14.0,87-82,76ers,T. Maxey misses 2-pt layup from 1 ft
+4,7:12.0,87-82,76ers,Offensive rebound by A. Drummond
+4,7:10.0,87-82,76ers,A. Drummond misses 2-pt layup at rim
+4,7:09.0,87-82,Celtics,Defensive rebound by A. Simons
+4,7:06.0,90-82,Celtics,P. Pritchard makes 3-pt jump shot from 28 ft (assist by A. Simons)
+4,6:38.0,90-84,76ers,A. Drummond makes 2-pt layup from 3 ft (assist by T. Maxey)
+4,6:17.0,90-84,Celtics,A. Simons misses 2-pt jump shot from 11 ft
+4,6:15.0,90-84,Celtics,Offensive rebound by L. Garza
+4,6:15.0,90-84,Celtics,Shooting foul by A. Drummond (drawn by L. Garza)
+4,6:15.0,91-84,Celtics,L. Garza makes free throw 1 of 2
+4,6:15.0,91-84,Celtics,J. Brown enters the game for S. Hauser
+4,6:15.0,91-84,Celtics,D. White enters the game for A. Simons
+4,6:15.0,92-84,Celtics,L. Garza makes free throw 2 of 2
+4,6:00.0,92-87,76ers,J. Edwards makes 3-pt jump shot from 27 ft (assist by T. Maxey)
+4,5:34.0,92-87,Celtics,D. White misses 2-pt jump shot from 16 ft
+4,5:32.0,92-87,Celtics,Offensive rebound by P. Pritchard
+4,5:24.0,92-87,Celtics,J. Brown misses 2-pt dunk from 3 ft (block by V. Edgecombe)
+4,5:21.0,92-87,76ers,Defensive rebound by K. Oubre
+4,5:17.0,92-90,76ers,J. Edwards makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+4,4:51.0,92-90,Celtics,D. White misses 2-pt jump shot from 7 ft
+4,4:49.0,92-90,76ers,Defensive rebound by A. Drummond
+4,4:42.0,92-93,76ers,J. Edwards makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+4,4:40.0,92-93,Celtics,Boston full timeout
+4,4:40.0,92-93,Celtics,N. Queta enters the game for L. Garza
+4,4:24.0,94-93,Celtics,J. Brown makes 2-pt jump shot from 17 ft
+4,4:01.0,94-95,76ers,T. Maxey makes 2-pt jump shot from 12 ft
+4,3:48.0,94-95,Celtics,Offensive foul by N. Queta (drawn by T. Maxey)
+4,3:48.0,94-95,Celtics,Turnover by N. Queta (offensive foul)
+4,3:36.0,94-95,76ers,K. Oubre misses 3-pt jump shot from 27 ft
+4,3:33.0,94-95,Celtics,Defensive rebound by J. Walsh
+4,3:24.0,96-95,Celtics,N. Queta makes 2-pt dunk from 2 ft (assist by P. Pritchard)
+4,3:24.0,96-95,76ers,Philadelphia full timeout
+4,3:10.0,96-95,76ers,Shooting foul by J. Walsh (drawn by T. Maxey)
+4,3:10.0,96-96,76ers,T. Maxey makes free throw 1 of 2
+4,3:10.0,96-96,76ers,Philadelphia full timeout
+4,3:10.0,96-97,76ers,T. Maxey makes free throw 2 of 2
+4,2:51.0,96-97,Celtics,P. Pritchard misses 2-pt jump shot from 19 ft
+4,2:48.0,96-97,Celtics,Offensive rebound by N. Queta
+4,2:41.0,96-97,Celtics,D. White misses 3-pt jump shot from 24 ft
+4,2:39.0,96-97,76ers,Defensive rebound by Team
+4,2:20.0,96-100,76ers,V. Edgecombe makes 3-pt jump shot from 28 ft (assist by T. Maxey)
+4,2:06.0,96-100,Celtics,Personal foul by K. Oubre (drawn by J. Brown)
+4,2:06.0,96-100,Celtics,A. Simons enters the game for P. Pritchard
+4,2:01.0,96-100,Celtics,Personal foul by T. Maxey (drawn by J. Brown)
+4,2:01.0,96-100,76ers,Philadelphia full timeout
+4,2:01.0,96-100,76ers,Instant Replay (Challenge: Stands)
+4,1:53.0,99-100,Celtics,D. White makes 3-pt jump shot from 27 ft (assist by J. Brown)
+4,1:33.0,99-100,76ers,T. Maxey misses 2-pt jump shot from 15 ft
+4,1:30.0,99-100,Celtics,Defensive rebound by J. Brown
+4,1:12.0,99-100,Celtics,D. White misses 2-pt jump shot from 12 ft
+4,1:06.0,99-100,76ers,Defensive rebound by K. Oubre
+4,0:46.0,99-100,76ers,T. Maxey misses 2-pt jump shot from 2 ft
+4,0:45.0,99-100,Celtics,Defensive rebound by N. Queta
+4,0:33.0,99-100,Celtics,Shooting foul by K. Oubre (drawn by J. Brown)
+4,0:33.0,99-100,Celtics,J. Brown misses free throw 1 of 2
+4,0:33.0,99-100,Celtics,Offensive rebound by Team
+4,0:33.0,99-100,Celtics,P. Pritchard enters the game for A. Simons
+4,0:33.0,100-100,Celtics,J. Brown makes free throw 2 of 2
+4,0:10.0,100-100,76ers,J. Edwards misses 3-pt jump shot from 27 ft
+4,0:08.0,100-100,76ers,Offensive rebound by K. Oubre
+4,0:08.0,100-102,76ers,K. Oubre makes 2-pt layup at rim
+4,0:08.0,100-102,Celtics,Boston full timeout
+4,0:08.0,100-102,Celtics,A. Simons enters the game for J. Walsh
+4,0:01.0,100-102,Celtics,D. White misses 3-pt jump shot from 39 ft
+4,0:01.0,100-102,Celtics,Offensive rebound by N. Queta
+4,0:00.0,100-102,Celtics,N. Queta misses 2-pt layup at rim
+4,0:00.0,100-102,Celtics,Offensive rebound by Team

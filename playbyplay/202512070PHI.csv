@@ -1,0 +1,485 @@
+quarter,time,score,team,description
+1,11:44.0,2-0,Lakers,L. Dončić makes 2-pt jump shot from 18 ft (assist by D. Ayton)
+1,11:28.0,2-3,76ers,T. Maxey makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)
+1,11:19.0,2-3,Lakers,R. Hachimura misses 3-pt jump shot from 23 ft
+1,11:16.0,2-3,76ers,Defensive rebound by P. George
+1,11:06.0,2-3,76ers,Turnover by T. Maxey (bad pass)
+1,10:49.0,2-3,Lakers,L. Dončić misses 3-pt jump shot from 26 ft
+1,10:46.0,2-3,76ers,Defensive rebound by T. Maxey
+1,10:44.0,2-3,76ers,V. Edgecombe misses 2-pt layup from 5 ft (block by A. Reaves)
+1,10:44.0,2-3,76ers,Offensive rebound by Team
+1,10:40.0,2-6,76ers,V. Edgecombe makes 3-pt jump shot from 28 ft (assist by P. George)
+1,10:24.0,4-6,Lakers,L. James makes 2-pt hook shot from 10 ft
+1,10:06.0,4-8,76ers,T. Maxey makes 2-pt layup from 2 ft
+1,9:59.0,6-8,Lakers,L. Dončić makes 2-pt jump shot from 10 ft
+1,9:59.0,6-8,Lakers,Shooting foul by T. Maxey (drawn by L. Dončić)
+1,9:59.0,7-8,Lakers,L. Dončić makes free throw 1 of 1
+1,9:50.0,7-8,76ers,Personal foul by D. Ayton (drawn by J. Embiid)
+1,9:37.0,7-8,76ers,J. Embiid misses 2-pt jump shot from 12 ft
+1,9:34.0,7-8,Lakers,Defensive rebound by R. Hachimura
+1,9:26.0,7-8,Lakers,L. Dončić misses 2-pt jump shot from 8 ft
+1,9:22.0,7-8,76ers,Defensive rebound by J. Embiid
+1,9:06.0,7-8,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+1,9:04.0,7-8,Lakers,Defensive rebound by L. Dončić
+1,9:00.0,7-8,Lakers,R. Hachimura misses 2-pt layup from 4 ft (block by T. Maxey)
+1,8:57.0,7-8,76ers,Defensive rebound by P. George
+1,8:47.0,7-10,76ers,J. Embiid makes 2-pt layup from 1 ft (assist by T. Maxey)
+1,8:39.0,9-10,Lakers,D. Ayton makes 2-pt layup from 1 ft (assist by A. Reaves)
+1,8:29.0,9-12,76ers,P. George makes 2-pt jump shot from 19 ft
+1,8:21.0,9-12,Lakers,A. Reaves misses 2-pt jump shot from 17 ft
+1,8:16.0,9-12,76ers,Defensive rebound by D. Barlow
+1,8:09.0,9-14,76ers,P. George makes 2-pt layup from 2 ft
+1,7:48.0,9-14,Lakers,L. James misses 3-pt jump shot from 23 ft
+1,7:44.0,9-14,76ers,Defensive rebound by T. Maxey
+1,7:36.0,9-14,76ers,P. George misses 3-pt jump shot from 22 ft
+1,7:34.0,9-14,Lakers,Defensive rebound by D. Ayton
+1,7:21.0,9-14,Lakers,L. Dončić misses 2-pt jump shot from 17 ft
+1,7:18.0,9-14,76ers,Defensive rebound by T. Maxey
+1,7:13.0,9-17,76ers,T. Maxey makes 3-pt jump shot from 29 ft
+1,6:44.0,9-17,Lakers,Turnover by A. Reaves (out of bounds lost ball)
+1,6:44.0,9-17,76ers,Philadelphia full timeout
+1,6:44.0,9-17,Lakers,J. LaRavia enters the game for L. James
+1,6:44.0,9-17,76ers,A. Drummond enters the game for J. Embiid
+1,6:31.0,9-17,76ers,P. George misses 2-pt jump shot from 10 ft
+1,6:28.0,9-17,76ers,Offensive rebound by A. Drummond
+1,6:25.0,9-17,76ers,Shooting foul by J. LaRavia (drawn by D. Barlow)
+1,6:25.0,9-18,76ers,D. Barlow makes free throw 1 of 2
+1,6:25.0,9-19,76ers,D. Barlow makes free throw 2 of 2
+1,6:04.0,9-19,Lakers,A. Reaves misses 2-pt jump shot from 9 ft
+1,6:00.0,9-19,Lakers,Offensive rebound by D. Ayton
+1,6:00.0,11-19,Lakers,D. Ayton makes 2-pt dunk at rim
+1,5:44.0,11-19,76ers,Personal foul by R. Hachimura (drawn by P. George)
+1,5:41.0,11-19,76ers,V. Edgecombe misses 2-pt jump shot from 10 ft
+1,5:38.0,11-19,Lakers,Defensive rebound by L. Dončić
+1,5:31.0,11-19,Lakers,L. Dončić misses 2-pt jump shot from 11 ft
+1,5:27.0,11-19,76ers,Defensive rebound by A. Drummond
+1,5:19.0,11-21,76ers,T. Maxey makes 2-pt jump shot from 7 ft
+1,5:03.0,13-21,Lakers,D. Ayton makes 2-pt dunk from 1 ft (assist by L. Dončić)
+1,4:45.0,13-21,76ers,T. Maxey misses 3-pt jump shot from 28 ft
+1,4:38.0,13-21,Lakers,Defensive rebound by D. Ayton
+1,4:33.0,13-21,Lakers,Turnover by L. Dončić (bad pass; steal by D. Barlow)
+1,4:25.0,13-21,76ers,P. George misses 2-pt layup from 2 ft
+1,4:23.0,13-21,Lakers,Defensive rebound by D. Ayton
+1,4:21.0,13-21,Lakers,Shooting foul by D. Barlow (drawn by L. Dončić)
+1,4:21.0,13-21,Lakers,L. Dončić misses free throw 1 of 2
+1,4:21.0,13-21,Lakers,Offensive rebound by Team
+1,4:21.0,13-21,Lakers,J. Hayes enters the game for D. Ayton
+1,4:21.0,13-21,76ers,Q. Grimes enters the game for V. Edgecombe
+1,4:21.0,14-21,Lakers,L. Dončić makes free throw 2 of 2
+1,4:08.0,14-21,76ers,Turnover by T. Maxey (bad pass)
+1,3:55.0,17-21,Lakers,R. Hachimura makes 3-pt jump shot from 23 ft (assist by L. Dončić)
+1,3:44.0,17-21,76ers,T. Maxey misses 2-pt layup from 2 ft
+1,3:41.0,17-21,76ers,Offensive rebound by A. Drummond
+1,3:41.0,17-23,76ers,A. Drummond makes 2-pt layup at rim
+1,3:30.0,17-23,Lakers,L. Dončić misses 2-pt jump shot from 13 ft
+1,3:26.0,17-23,76ers,Defensive rebound by A. Drummond
+1,3:12.0,17-23,76ers,Q. Grimes misses 3-pt jump shot from 27 ft
+1,3:10.0,17-23,Lakers,Defensive rebound by L. Dončić
+1,3:01.0,17-23,Lakers,A. Reaves misses 2-pt jump shot from 10 ft
+1,2:58.0,17-23,76ers,Defensive rebound by T. Maxey
+1,2:53.0,17-23,76ers,T. Maxey misses 2-pt layup from 10 ft (block by J. Hayes)
+1,2:53.0,17-23,76ers,Offensive rebound by Team
+1,2:53.0,17-23,Lakers,LA Lakers full timeout
+1,2:53.0,17-23,76ers,Technical foul by T. Maxey
+1,2:53.0,17-23,Lakers,L. James enters the game for R. Hachimura
+1,2:53.0,17-23,Lakers,G. Vincent enters the game for A. Reaves
+1,2:53.0,17-23,76ers,J. Embiid enters the game for D. Barlow
+1,2:53.0,17-23,76ers,J. McCain enters the game for A. Drummond
+1,2:53.0,17-23,76ers,J. Walker enters the game for P. George
+1,2:53.0,18-23,Lakers,L. Dončić makes technical free throw
+1,2:46.0,18-26,76ers,J. Walker makes 3-pt jump shot from 23 ft (assist by T. Maxey)
+1,2:31.0,21-26,Lakers,L. Dončić makes 3-pt jump shot from 26 ft (assist by L. James)
+1,2:23.0,21-26,76ers,Personal take foul by G. Vincent (drawn by T. Maxey)
+1,2:23.0,21-26,Lakers,R. Hachimura enters the game for J. LaRavia
+1,2:15.0,21-26,76ers,J. Embiid misses 2-pt layup from 7 ft (block by J. Hayes)
+1,2:15.0,21-26,76ers,Offensive rebound by Team
+1,2:01.0,21-26,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+1,1:57.0,21-26,Lakers,Defensive rebound by L. Dončić
+1,1:53.0,21-26,Lakers,L. James misses 2-pt layup from 1 ft
+1,1:50.0,21-26,76ers,Defensive rebound by Q. Grimes
+1,1:47.0,21-26,76ers,J. Walker misses 3-pt jump shot from 22 ft
+1,1:47.0,21-26,Lakers,Defensive rebound by J. Hayes
+1,1:39.0,23-26,Lakers,L. James makes 2-pt layup from 1 ft
+1,1:32.0,23-26,76ers,Personal foul by J. Hayes (drawn by J. Embiid)
+1,1:32.0,23-27,76ers,J. Embiid makes free throw 1 of 2
+1,1:32.0,23-28,76ers,J. Embiid makes free throw 2 of 2
+1,1:13.0,25-28,Lakers,R. Hachimura makes 2-pt jump shot from 17 ft
+1,1:00.0,25-28,76ers,J. Embiid misses 2-pt jump shot from 14 ft
+1,0:58.0,25-28,Lakers,Defensive rebound by L. Dončić
+1,0:55.0,27-28,Lakers,L. James makes 2-pt dunk from 1 ft (assist by L. Dončić)
+1,0:41.0,27-28,76ers,J. McCain misses 3-pt jump shot from 28 ft
+1,0:38.0,27-28,Lakers,Defensive rebound by R. Hachimura
+1,0:34.0,27-28,Lakers,Turnover by L. Dončić (bad pass; steal by J. Embiid)
+1,0:27.0,27-28,76ers,J. Embiid misses 2-pt layup from 5 ft (block by L. Dončić)
+1,0:25.0,27-28,76ers,Offensive rebound by Q. Grimes
+1,0:25.0,27-28,76ers,Shooting foul by R. Hachimura (drawn by Q. Grimes)
+1,0:25.0,27-29,76ers,Q. Grimes makes free throw 1 of 2
+1,0:25.0,27-29,76ers,D. Barlow enters the game for J. McCain
+1,0:25.0,27-30,76ers,Q. Grimes makes free throw 2 of 2
+1,0:08.0,30-30,Lakers,R. Hachimura makes 3-pt jump shot from 24 ft (assist by L. Dončić)
+1,0:00.0,30-30,76ers,J. Walker misses 3-pt jump shot from 24 ft
+1,0:00.0,30-30,76ers,Offensive rebound by Team
+2,11:42.0,30-32,76ers,V. Edgecombe makes 2-pt jump shot from 10 ft (assist by J. McCain)
+2,11:23.0,30-32,Lakers,A. Reaves misses 3-pt jump shot from 27 ft
+2,11:20.0,30-32,76ers,Defensive rebound by Q. Grimes
+2,11:11.0,30-32,76ers,V. Edgecombe misses 2-pt jump shot from 16 ft
+2,11:08.0,30-32,Lakers,Defensive rebound by L. James
+2,11:04.0,30-32,Lakers,Shooting foul by J. McCain (drawn by L. James)
+2,11:04.0,30-32,Lakers,L. James misses free throw 1 of 2
+2,11:04.0,30-32,Lakers,Offensive rebound by Team
+2,11:04.0,31-32,Lakers,L. James makes free throw 2 of 2
+2,10:56.0,31-32,76ers,J. Embiid misses 2-pt jump shot from 12 ft
+2,10:53.0,31-32,Lakers,Defensive rebound by L. James
+2,10:42.0,31-32,Lakers,A. Reaves misses 2-pt layup from 3 ft
+2,10:39.0,31-32,76ers,Defensive rebound by J. Walker
+2,10:33.0,31-35,76ers,J. McCain makes 3-pt jump shot from 26 ft (assist by J. Embiid)
+2,10:12.0,33-35,Lakers,J. Hayes makes 2-pt hook shot from 2 ft (assist by L. James)
+2,10:03.0,33-35,76ers,Turnover by V. Edgecombe (lost ball; steal by A. Reaves)
+2,9:59.0,36-35,Lakers,L. James makes 3-pt jump shot from 29 ft (assist by A. Reaves)
+2,9:40.0,36-35,76ers,J. Embiid misses 3-pt jump shot from 30 ft
+2,9:33.0,36-35,Lakers,Defensive rebound by L. James
+2,9:26.0,36-35,Lakers,A. Reaves misses 2-pt jump shot from 6 ft
+2,9:23.0,36-35,76ers,Defensive rebound by J. Walker
+2,9:19.0,36-37,76ers,J. McCain makes 2-pt layup from 1 ft
+2,9:06.0,36-37,Lakers,Shooting foul by J. Embiid (drawn by J. Hayes)
+2,9:06.0,36-37,Lakers,J. Hayes misses free throw 1 of 2
+2,9:06.0,36-37,Lakers,Offensive rebound by Team
+2,9:06.0,36-37,Lakers,R. Hachimura enters the game for L. James
+2,9:06.0,36-37,Lakers,J. Hayes misses free throw 2 of 2
+2,9:03.0,36-37,76ers,Defensive rebound by J. Walker
+2,8:50.0,36-40,76ers,J. McCain makes 3-pt jump shot from 26 ft
+2,8:50.0,36-40,Lakers,D. Ayton enters the game for J. Hayes
+2,8:34.0,36-40,Lakers,Shooting foul by V. Edgecombe (drawn by A. Reaves)
+2,8:34.0,37-40,Lakers,A. Reaves makes free throw 1 of 2
+2,8:34.0,38-40,Lakers,A. Reaves makes free throw 2 of 2
+2,8:24.0,38-42,76ers,V. Edgecombe makes 2-pt layup from 1 ft
+2,8:24.0,38-42,76ers,Shooting foul by D. Ayton (drawn by V. Edgecombe)
+2,8:24.0,38-43,76ers,V. Edgecombe makes free throw 1 of 1
+2,8:14.0,38-43,Lakers,A. Reaves misses 3-pt jump shot from 26 ft
+2,8:10.0,38-43,76ers,Defensive rebound by Q. Grimes
+2,8:02.0,38-43,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+2,7:58.0,38-43,Lakers,Defensive rebound by D. Ayton
+2,7:54.0,38-43,Lakers,G. Vincent misses 3-pt jump shot from 26 ft
+2,7:52.0,38-43,76ers,Defensive rebound by Q. Grimes
+2,7:36.0,38-43,76ers,Shooting foul by A. Thiero (drawn by J. Embiid)
+2,7:36.0,38-44,76ers,J. Embiid makes free throw 1 of 2
+2,7:36.0,38-44,Lakers,L. Dončić enters the game for A. Thiero
+2,7:36.0,38-44,Lakers,J. Vanderbilt enters the game for G. Vincent
+2,7:36.0,38-44,76ers,P. George enters the game for J. McCain
+2,7:36.0,38-45,76ers,J. Embiid makes free throw 2 of 2
+2,7:23.0,38-45,Lakers,J. Vanderbilt misses 3-pt jump shot from 23 ft
+2,7:19.0,38-45,76ers,Defensive rebound by J. Embiid
+2,7:10.0,38-45,76ers,Shooting foul by J. Vanderbilt (drawn by J. Walker)
+2,7:10.0,38-45,76ers,J. Walker misses free throw 1 of 2
+2,7:10.0,38-45,76ers,Offensive rebound by Team
+2,7:10.0,38-46,76ers,J. Walker makes free throw 2 of 2
+2,6:58.0,38-46,Lakers,L. Dončić misses 3-pt jump shot from 26 ft
+2,6:54.0,38-46,76ers,Defensive rebound by J. Walker
+2,6:39.0,38-46,76ers,J. Embiid misses 2-pt jump shot from 16 ft
+2,6:37.0,38-46,Lakers,Defensive rebound by A. Reaves
+2,6:29.0,38-46,Lakers,R. Hachimura misses 3-pt jump shot from 23 ft
+2,6:27.0,38-46,Lakers,Offensive rebound by A. Reaves
+2,6:24.0,38-46,Lakers,R. Hachimura misses 3-pt jump shot from 24 ft
+2,6:21.0,38-46,Lakers,Offensive rebound by D. Ayton
+2,6:14.0,38-46,Lakers,Shooting foul by V. Edgecombe (drawn by L. Dončić)
+2,6:14.0,38-46,76ers,Philadelphia full timeout
+2,6:14.0,38-46,76ers,D. Barlow enters the game for V. Edgecombe
+2,6:14.0,38-46,76ers,A. Drummond enters the game for J. Embiid
+2,6:14.0,38-46,76ers,T. Maxey enters the game for J. Walker
+2,6:14.0,39-46,Lakers,L. Dončić makes free throw 1 of 3
+2,6:14.0,39-46,Lakers,L. Dončić misses free throw 2 of 3
+2,6:14.0,39-46,Lakers,Offensive rebound by Team
+2,6:14.0,40-46,Lakers,L. Dončić makes free throw 3 of 3
+2,5:57.0,40-48,76ers,T. Maxey makes 2-pt jump shot from 5 ft (assist by P. George)
+2,5:40.0,42-48,Lakers,L. Dončić makes 2-pt jump shot from 5 ft (assist by J. Vanderbilt)
+2,5:20.0,42-48,76ers,A. Drummond misses 3-pt jump shot from 27 ft
+2,5:17.0,42-48,Lakers,Defensive rebound by L. Dončić
+2,5:07.0,42-48,Lakers,A. Reaves misses 2-pt jump shot from 10 ft
+2,5:04.0,42-48,76ers,Defensive rebound by P. George
+2,4:58.0,42-48,76ers,T. Maxey misses 2-pt layup from 7 ft
+2,4:56.0,42-48,Lakers,Defensive rebound by L. Dončić
+2,4:47.0,42-48,Lakers,Turnover by L. Dončić (bad pass; steal by P. George)
+2,4:43.0,42-50,76ers,Q. Grimes makes 2-pt layup from 1 ft (assist by T. Maxey)
+2,4:28.0,42-50,Lakers,Personal foul by T. Maxey (drawn by A. Reaves)
+2,4:28.0,42-50,Lakers,A. Reaves misses free throw 1 of 2
+2,4:28.0,42-50,Lakers,Offensive rebound by Team
+2,4:28.0,42-50,Lakers,L. James enters the game for R. Hachimura
+2,4:28.0,42-50,Lakers,J. LaRavia enters the game for J. Vanderbilt
+2,4:28.0,42-50,76ers,J. McCain enters the game for Q. Grimes
+2,4:28.0,43-50,Lakers,A. Reaves makes free throw 2 of 2
+2,4:16.0,43-50,76ers,J. McCain misses 3-pt jump shot from 24 ft
+2,4:13.0,43-50,Lakers,Defensive rebound by A. Reaves
+2,3:51.0,45-50,Lakers,A. Reaves makes 2-pt layup from 1 ft
+2,3:35.0,45-50,76ers,D. Barlow misses 2-pt layup from 6 ft
+2,3:34.0,45-50,76ers,Offensive rebound by A. Drummond
+2,3:32.0,45-50,76ers,A. Drummond misses 2-pt hook shot from 6 ft
+2,3:29.0,45-50,Lakers,Defensive rebound by L. Dončić
+2,3:25.0,48-50,Lakers,A. Reaves makes 3-pt jump shot from 24 ft (assist by L. Dončić)
+2,3:01.0,48-50,76ers,A. Drummond misses 2-pt layup from 1 ft
+2,2:59.0,48-50,Lakers,Defensive rebound by J. LaRavia
+2,2:52.0,48-50,Lakers,L. James misses 3-pt jump shot from 28 ft
+2,2:47.0,48-50,76ers,Defensive rebound by J. McCain
+2,2:45.0,48-50,76ers,Turnover by T. Maxey (lost ball)
+2,2:45.0,48-50,Lakers,LA Lakers full timeout
+2,2:45.0,48-50,Lakers,Instant Replay (Challenge: Ruling Stands)
+2,2:45.0,48-50,Lakers,J. Hayes enters the game for D. Ayton
+2,2:45.0,48-50,Lakers,G. Vincent enters the game for A. Reaves
+2,2:45.0,48-50,76ers,J. Embiid enters the game for A. Drummond
+2,2:24.0,48-50,Lakers,L. Dončić misses 2-pt jump shot from 10 ft
+2,2:21.0,48-50,76ers,Defensive rebound by J. Embiid
+2,2:12.0,48-53,76ers,T. Maxey makes 3-pt jump shot from 26 ft
+2,2:01.0,50-53,Lakers,L. Dončić makes 2-pt jump shot from 15 ft
+2,2:01.0,50-53,Lakers,Shooting foul by P. George (drawn by L. Dončić)
+2,2:01.0,50-53,Lakers,L. Dončić misses free throw 1 of 1
+2,1:58.0,50-53,76ers,Defensive rebound by P. George
+2,1:51.0,50-53,76ers,Shooting foul by J. LaRavia (drawn by P. George)
+2,1:51.0,50-54,76ers,P. George makes free throw 1 of 3
+2,1:51.0,50-55,76ers,P. George makes free throw 2 of 3
+2,1:51.0,50-55,Lakers,A. Reaves enters the game for J. LaRavia
+2,1:51.0,50-55,76ers,V. Edgecombe enters the game for J. McCain
+2,1:51.0,50-56,76ers,P. George makes free throw 3 of 3
+2,1:29.0,50-56,Lakers,L. Dončić misses 3-pt jump shot from 26 ft
+2,1:26.0,50-56,76ers,Defensive rebound by Team
+2,1:12.0,50-56,76ers,D. Barlow misses 2-pt jump shot from 4 ft
+2,1:10.0,50-56,76ers,Offensive rebound by J. Embiid
+2,1:09.0,50-56,76ers,J. Embiid misses 2-pt layup from 3 ft
+2,1:09.0,50-56,76ers,Offensive rebound by J. Embiid
+2,1:09.0,50-58,76ers,J. Embiid makes 2-pt layup at rim
+2,0:48.0,50-58,Lakers,L. James misses 2-pt layup from 5 ft (block by J. Embiid)
+2,0:44.0,50-58,76ers,Defensive rebound by D. Barlow
+2,0:38.0,50-58,76ers,Personal foul by J. Hayes (drawn by J. Embiid)
+2,0:38.0,50-59,76ers,J. Embiid makes free throw 1 of 2
+2,0:38.0,50-59,Lakers,R. Hachimura enters the game for G. Vincent
+2,0:38.0,50-60,76ers,J. Embiid makes free throw 2 of 2
+2,0:30.0,53-60,Lakers,L. Dončić makes 3-pt jump shot from 26 ft
+2,0:10.0,53-60,76ers,J. Embiid misses 2-pt jump shot from 13 ft
+2,0:07.0,53-60,Lakers,Defensive rebound by L. Dončić
+2,0:01.0,53-60,Lakers,R. Hachimura misses 3-pt jump shot from 25 ft
+2,0:01.0,53-60,Lakers,Offensive rebound by Team
+3,11:41.0,53-60,76ers,T. Maxey misses 2-pt jump shot from 17 ft
+3,11:38.0,53-60,Lakers,Defensive rebound by R. Hachimura
+3,11:21.0,55-60,Lakers,L. James makes 2-pt jump shot from 18 ft
+3,11:04.0,55-60,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+3,11:04.0,55-60,76ers,Offensive rebound by D. Barlow
+3,10:59.0,55-60,76ers,D. Barlow misses 2-pt layup at rim
+3,10:58.0,55-60,Lakers,Defensive rebound by D. Ayton
+3,10:58.0,55-60,Lakers,Turnover by L. Dončić (palming)
+3,10:49.0,55-63,76ers,P. George makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+3,10:26.0,57-63,Lakers,L. James makes 2-pt jump shot from 13 ft
+3,10:07.0,57-63,76ers,J. Embiid misses 3-pt jump shot from 27 ft
+3,10:04.0,57-63,Lakers,Defensive rebound by L. Dončić
+3,9:57.0,59-63,Lakers,D. Ayton makes 2-pt layup from 1 ft (assist by L. Dončić)
+3,9:44.0,59-63,76ers,P. George misses 2-pt jump shot from 17 ft
+3,9:41.0,59-63,Lakers,Defensive rebound by L. Dončić
+3,9:36.0,59-63,Lakers,A. Reaves misses 3-pt jump shot from 26 ft
+3,9:33.0,59-63,Lakers,Offensive rebound by R. Hachimura
+3,9:32.0,62-63,Lakers,L. James makes 3-pt jump shot from 27 ft (assist by R. Hachimura)
+3,9:06.0,62-65,76ers,T. Maxey makes 2-pt layup from 2 ft (assist by V. Edgecombe)
+3,8:55.0,62-65,Lakers,L. Dončić misses 2-pt jump shot from 16 ft
+3,8:52.0,62-65,76ers,Defensive rebound by T. Maxey
+3,8:49.0,62-65,76ers,Personal foul by L. Dončić (drawn by T. Maxey)
+3,8:33.0,62-65,76ers,T. Maxey misses 2-pt layup from 11 ft (block by L. James)
+3,8:30.0,62-65,Lakers,Defensive rebound by L. James
+3,8:28.0,64-65,Lakers,R. Hachimura makes 2-pt dunk from 1 ft (assist by L. James)
+3,8:27.0,64-65,76ers,Philadelphia full timeout
+3,8:08.0,64-67,76ers,D. Barlow makes 2-pt layup from 1 ft (assist by J. Embiid)
+3,7:46.0,66-67,Lakers,L. Dončić makes 2-pt jump shot from 17 ft
+3,7:21.0,66-67,76ers,D. Barlow misses 2-pt layup from 2 ft (block by L. Dončić)
+3,7:18.0,66-67,76ers,Offensive rebound by D. Barlow
+3,7:16.0,66-67,76ers,J. Embiid misses 2-pt jump shot from 21 ft
+3,7:14.0,66-67,Lakers,Defensive rebound by L. Dončić
+3,7:07.0,68-67,Lakers,D. Ayton makes 2-pt dunk from 1 ft (assist by L. Dončić)
+3,6:41.0,68-70,76ers,D. Barlow makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+3,6:26.0,68-70,Lakers,Personal foul by D. Barlow (drawn by L. James)
+3,6:26.0,68-70,Lakers,J. LaRavia enters the game for L. James
+3,6:26.0,68-70,76ers,A. Drummond enters the game for J. Embiid
+3,6:20.0,70-70,Lakers,L. Dončić makes 2-pt jump shot from 13 ft
+3,5:57.0,70-70,76ers,T. Maxey misses 2-pt jump shot from 5 ft
+3,5:53.0,70-70,Lakers,Defensive rebound by D. Ayton
+3,5:46.0,73-70,Lakers,A. Reaves makes 3-pt jump shot from 26 ft
+3,5:31.0,73-70,76ers,V. Edgecombe misses 2-pt jump shot from 17 ft
+3,5:26.0,73-70,Lakers,Defensive rebound by L. Dončić
+3,5:22.0,73-70,Lakers,Shooting foul by P. George (drawn by L. Dončić)
+3,5:22.0,74-70,Lakers,L. Dončić makes free throw 1 of 2
+3,5:22.0,74-70,76ers,Q. Grimes enters the game for V. Edgecombe
+3,5:22.0,75-70,Lakers,L. Dončić makes free throw 2 of 2
+3,5:09.0,75-70,76ers,T. Maxey misses 2-pt jump shot from 6 ft
+3,5:09.0,75-70,76ers,Offensive rebound by A. Drummond
+3,5:07.0,75-70,76ers,A. Drummond misses 2-pt layup from 3 ft
+3,5:07.0,75-70,Lakers,Defensive rebound by D. Ayton
+3,4:55.0,75-70,Lakers,Personal foul by D. Barlow (drawn by D. Ayton)
+3,4:48.0,78-70,Lakers,R. Hachimura makes 3-pt jump shot from 24 ft (assist by A. Reaves)
+3,4:25.0,78-72,76ers,A. Drummond makes 2-pt hook shot from 8 ft
+3,4:08.0,80-72,Lakers,R. Hachimura makes 2-pt jump shot from 19 ft
+3,3:56.0,80-72,76ers,D. Barlow misses 3-pt jump shot from 26 ft
+3,3:55.0,80-72,76ers,Offensive rebound by Team
+3,3:55.0,80-72,Lakers,Loose ball foul by D. Ayton (drawn by A. Drummond)
+3,3:55.0,80-72,Lakers,J. Hayes enters the game for D. Ayton
+3,3:55.0,80-72,76ers,V. Edgecombe enters the game for D. Barlow
+3,3:55.0,80-72,76ers,J. Walker enters the game for P. George
+3,3:47.0,80-72,76ers,T. Maxey misses 2-pt jump shot from 8 ft (block by J. Hayes)
+3,3:43.0,80-72,76ers,Offensive rebound by A. Drummond
+3,3:43.0,80-74,76ers,A. Drummond makes 2-pt layup at rim
+3,3:33.0,80-74,Lakers,L. Dončić misses 3-pt jump shot from 26 ft
+3,3:30.0,80-74,Lakers,Offensive rebound by J. Hayes
+3,3:25.0,80-74,Lakers,J. LaRavia misses 3-pt jump shot from 23 ft
+3,3:20.0,80-74,Lakers,Offensive rebound by R. Hachimura
+3,3:19.0,80-74,Lakers,L. Dončić misses 2-pt jump shot from 12 ft
+3,3:16.0,80-74,76ers,Defensive rebound by A. Drummond
+3,3:12.0,80-76,76ers,T. Maxey makes 2-pt layup from 2 ft (assist by Q. Grimes)
+3,3:03.0,80-76,Lakers,LA Lakers full timeout
+3,3:03.0,80-76,Lakers,L. James enters the game for R. Hachimura
+3,3:03.0,80-76,Lakers,G. Vincent enters the game for A. Reaves
+3,2:46.0,83-76,Lakers,J. LaRavia makes 3-pt jump shot from 26 ft (assist by L. Dončić)
+3,2:29.0,83-76,76ers,J. Walker misses 2-pt layup from 3 ft
+3,2:27.0,83-76,Lakers,Defensive rebound by J. Hayes
+3,2:20.0,83-76,Lakers,J. LaRavia misses 3-pt jump shot from 24 ft
+3,2:19.0,83-76,Lakers,Offensive rebound by L. Dončić
+3,2:19.0,83-76,Lakers,Shooting foul by A. Drummond (drawn by L. Dončić)
+3,2:19.0,84-76,Lakers,L. Dončić makes free throw 1 of 2
+3,2:19.0,85-76,Lakers,L. Dončić makes free throw 2 of 2
+3,2:08.0,85-76,76ers,V. Edgecombe misses 2-pt jump shot from 4 ft
+3,2:06.0,85-76,76ers,Offensive rebound by A. Drummond
+3,2:06.0,85-76,76ers,Personal foul by J. LaRavia (drawn by A. Drummond)
+3,1:53.0,85-76,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+3,1:49.0,85-76,76ers,Offensive rebound by A. Drummond
+3,1:49.0,85-76,76ers,A. Drummond misses 2-pt layup at rim
+3,1:49.0,85-76,76ers,Offensive rebound by A. Drummond
+3,1:40.0,85-76,76ers,A. Drummond misses 2-pt hook shot from 6 ft
+3,1:40.0,85-76,Lakers,Defensive rebound by J. Hayes
+3,1:40.0,85-76,Lakers,Personal foul by J. Walker (drawn by J. Hayes)
+3,1:40.0,85-76,Lakers,J. Hayes misses free throw 1 of 2
+3,1:40.0,85-76,Lakers,Offensive rebound by Team
+3,1:40.0,86-76,Lakers,J. Hayes makes free throw 2 of 2
+3,1:27.0,86-79,76ers,T. Maxey makes 3-pt jump shot from 25 ft (assist by V. Edgecombe)
+3,1:13.0,86-79,Lakers,Shooting foul by V. Edgecombe (drawn by J. LaRavia)
+3,1:13.0,87-79,Lakers,J. LaRavia makes free throw 1 of 2
+3,1:13.0,87-79,Lakers,J. LaRavia misses free throw 2 of 2
+3,1:10.0,87-79,76ers,Defensive rebound by A. Drummond
+3,0:52.0,87-82,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+3,0:35.0,87-82,Lakers,Turnover by L. James (lost ball; steal by T. Maxey)
+3,0:30.0,87-82,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+3,0:27.0,87-82,76ers,Offensive rebound by Q. Grimes
+3,0:22.0,87-82,76ers,Shooting foul by J. Hayes (drawn by T. Maxey)
+3,0:22.0,87-83,76ers,T. Maxey makes free throw 1 of 2
+3,0:22.0,87-83,76ers,T. Maxey misses free throw 2 of 2
+3,0:21.0,87-83,76ers,Offensive rebound by Team
+3,0:21.0,87-83,Lakers,Loose ball foul by J. Hayes (drawn by A. Drummond)
+3,0:21.0,87-83,76ers,A. Drummond misses free throw 1 of 2
+3,0:21.0,87-83,76ers,Offensive rebound by Team
+3,0:21.0,87-84,76ers,A. Drummond makes free throw 2 of 2
+3,0:03.0,87-84,Lakers,L. Dončić misses 3-pt jump shot from 27 ft (block by A. Drummond)
+3,0:00.0,87-84,76ers,Defensive rebound by T. Maxey
+3,0:00.0,87-84,76ers,Offensive rebound by Team
+4,11:43.0,87-84,Lakers,G. Vincent misses 3-pt jump shot from 26 ft
+4,11:39.0,87-84,Lakers,Offensive rebound by L. James
+4,11:38.0,87-84,Lakers,J. LaRavia misses 3-pt jump shot from 23 ft
+4,11:35.0,87-84,76ers,Defensive rebound by J. Embiid
+4,11:20.0,87-84,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+4,11:16.0,87-84,Lakers,Defensive rebound by J. Hayes
+4,10:58.0,87-84,Lakers,L. James misses 2-pt jump shot from 11 ft
+4,10:58.0,87-84,76ers,Defensive rebound by V. Edgecombe
+4,10:35.0,87-84,76ers,J. McCain misses 2-pt jump shot from 20 ft
+4,10:33.0,87-84,Lakers,Defensive rebound by L. James
+4,10:28.0,87-84,Lakers,Personal foul by J. McCain (drawn by J. LaRavia)
+4,10:28.0,87-84,Lakers,R. Hachimura enters the game for J. LaRavia
+4,10:19.0,90-84,Lakers,G. Vincent makes 3-pt jump shot from 28 ft (assist by L. James)
+4,10:03.0,90-84,76ers,Personal foul by G. Vincent (drawn by J. McCain)
+4,9:54.0,90-84,76ers,Shooting foul by J. Hayes (drawn by J. Embiid)
+4,9:54.0,90-85,76ers,J. Embiid makes free throw 1 of 2
+4,9:54.0,90-85,Lakers,D. Ayton enters the game for J. Hayes
+4,9:54.0,90-86,76ers,J. Embiid makes free throw 2 of 2
+4,9:40.0,90-86,Lakers,A. Reaves misses 3-pt jump shot from 27 ft
+4,9:36.0,90-86,76ers,Defensive rebound by Q. Grimes
+4,9:27.0,90-88,76ers,J. Embiid makes 2-pt jump shot from 9 ft
+4,9:09.0,92-88,Lakers,D. Ayton makes 2-pt dunk from 1 ft (assist by L. James)
+4,8:52.0,92-88,76ers,J. McCain misses 2-pt layup from 1 ft
+4,8:50.0,92-88,Lakers,Defensive rebound by G. Vincent
+4,8:41.0,94-88,Lakers,L. James makes 2-pt layup from 2 ft (assist by A. Reaves)
+4,8:34.0,94-88,76ers,Shooting foul by D. Ayton (drawn by V. Edgecombe)
+4,8:34.0,94-89,76ers,V. Edgecombe makes free throw 1 of 2
+4,8:34.0,94-89,76ers,T. Maxey enters the game for J. McCain
+4,8:34.0,94-90,76ers,V. Edgecombe makes free throw 2 of 2
+4,8:19.0,96-90,Lakers,R. Hachimura makes 2-pt jump shot from 5 ft (assist by L. James)
+4,8:02.0,96-90,76ers,J. Embiid misses 2-pt layup from 1 ft
+4,8:00.0,96-90,Lakers,Defensive rebound by D. Ayton
+4,7:58.0,96-90,Lakers,Offensive foul by L. James (drawn by T. Maxey)
+4,7:58.0,96-90,Lakers,Turnover by L. James (offensive foul)
+4,7:47.0,96-92,76ers,V. Edgecombe makes 2-pt layup from 4 ft (assist by T. Maxey)
+4,7:31.0,96-92,Lakers,A. Reaves misses 2-pt jump shot from 14 ft
+4,7:28.0,96-92,76ers,Defensive rebound by V. Edgecombe
+4,7:22.0,96-94,76ers,T. Maxey makes 2-pt jump shot from 17 ft
+4,7:21.0,96-94,Lakers,LA Lakers full timeout
+4,7:21.0,96-94,Lakers,L. Dončić enters the game for L. James
+4,7:21.0,96-94,76ers,A. Drummond enters the game for J. Embiid
+4,7:21.0,96-94,76ers,P. George enters the game for J. Walker
+4,7:12.0,98-94,Lakers,D. Ayton makes 2-pt dunk from 2 ft (assist by L. Dončić)
+4,6:55.0,98-94,Lakers,Violation by Team (kicked ball)
+4,6:50.0,98-94,76ers,Personal foul by G. Vincent (drawn by P. George)
+4,6:36.0,98-94,76ers,T. Maxey misses 2-pt layup from 2 ft
+4,6:34.0,98-94,Lakers,Defensive rebound by R. Hachimura
+4,6:26.0,98-94,Lakers,L. Dončić misses 2-pt jump shot from 12 ft (block by T. Maxey)
+4,6:23.0,98-94,76ers,Defensive rebound by T. Maxey
+4,6:22.0,98-94,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+4,6:18.0,98-94,76ers,Offensive rebound by V. Edgecombe
+4,6:17.0,98-94,76ers,P. George misses 3-pt jump shot from 29 ft
+4,6:17.0,98-94,Lakers,Defensive rebound by L. Dončić
+4,6:02.0,98-94,Lakers,L. Dončić misses 3-pt jump shot from 26 ft
+4,5:57.0,98-94,76ers,Defensive rebound by V. Edgecombe
+4,5:45.0,98-96,76ers,A. Drummond makes 2-pt dunk from 1 ft (assist by Q. Grimes)
+4,5:25.0,98-96,Lakers,Def 3 sec tech foul by Team
+4,5:25.0,98-96,Lakers,A. Reaves misses technical free throw
+4,5:25.0,98-96,Lakers,Offensive rebound by Team
+4,5:25.0,98-96,Lakers,L. James enters the game for A. Reaves
+4,5:25.0,98-96,Lakers,J. LaRavia enters the game for G. Vincent
+4,5:22.0,98-96,76ers,Violation by Team (kicked ball)
+4,5:14.0,100-96,Lakers,L. Dončić makes 2-pt jump shot from 16 ft
+4,4:59.0,100-96,76ers,V. Edgecombe misses 2-pt layup from 3 ft (block by D. Ayton)
+4,4:56.0,100-96,Lakers,Defensive rebound by D. Ayton
+4,4:53.0,100-96,Lakers,Turnover by J. LaRavia (out of bounds lost ball)
+4,4:53.0,100-96,76ers,Philadelphia full timeout
+4,4:47.0,100-96,76ers,Personal foul by R. Hachimura (drawn by P. George)
+4,4:47.0,100-97,76ers,P. George makes free throw 1 of 2
+4,4:47.0,100-98,76ers,P. George makes free throw 2 of 2
+4,4:25.0,102-98,Lakers,L. James makes 2-pt jump shot from 22 ft (assist by L. Dončić)
+4,4:05.0,102-100,76ers,A. Drummond makes 2-pt dunk from 1 ft (assist by P. George)
+4,3:43.0,105-100,Lakers,L. James makes 3-pt jump shot from 26 ft (assist by D. Ayton)
+4,3:24.0,105-100,76ers,T. Maxey misses 2-pt jump shot from 13 ft
+4,3:23.0,105-100,Lakers,Defensive rebound by J. LaRavia
+4,3:23.0,105-100,Lakers,LA Lakers full timeout
+4,3:23.0,105-100,Lakers,A. Reaves enters the game for J. LaRavia
+4,3:23.0,105-100,76ers,J. Embiid enters the game for A. Drummond
+4,3:03.0,105-100,Lakers,A. Reaves misses 2-pt layup from 2 ft
+4,3:01.0,105-100,76ers,Defensive rebound by P. George
+4,2:54.0,105-103,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by T. Maxey)
+4,2:28.0,105-103,Lakers,A. Reaves misses 2-pt jump shot from 19 ft
+4,2:24.0,105-103,76ers,Defensive rebound by J. Embiid
+4,2:19.0,105-103,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+4,2:17.0,105-103,Lakers,Defensive rebound by D. Ayton
+4,2:07.0,105-103,Lakers,L. Dončić misses 3-pt jump shot from 26 ft
+4,2:02.0,105-103,76ers,Defensive rebound by P. George
+4,1:55.0,105-103,76ers,Turnover by T. Maxey (bad pass; steal by D. Ayton)
+4,1:40.0,105-103,Lakers,Turnover by L. Dončić (bad pass)
+4,1:29.0,105-105,76ers,J. Embiid makes 2-pt jump shot from 19 ft (assist by T. Maxey)
+4,1:12.0,108-105,Lakers,L. James makes 3-pt jump shot from 27 ft (assist by L. Dončić)
+4,0:52.0,108-105,76ers,J. Embiid misses 2-pt jump shot from 17 ft
+4,0:47.0,108-105,76ers,Offensive rebound by V. Edgecombe
+4,0:47.0,108-105,76ers,V. Edgecombe misses 2-pt layup at rim
+4,0:46.0,108-105,Lakers,Defensive rebound by A. Reaves
+4,0:27.0,110-105,Lakers,L. James makes 2-pt jump shot from 20 ft
+4,0:27.0,110-105,76ers,Philadelphia full timeout
+4,0:21.0,110-105,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+4,0:16.0,110-105,Lakers,Defensive rebound by L. James
+4,0:14.0,110-105,Lakers,Turnover by A. Reaves (bad pass; steal by T. Maxey)
+4,0:10.0,110-105,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+4,0:08.0,110-105,76ers,Offensive rebound by Q. Grimes
+4,0:07.0,110-108,76ers,T. Maxey makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+4,0:05.0,110-108,Lakers,Personal take foul by V. Edgecombe (drawn by L. Dončić)
+4,0:05.0,110-108,Lakers,LA Lakers full timeout
+4,0:05.0,110-108,Lakers,G. Vincent enters the game for R. Hachimura
+4,0:04.0,110-108,Lakers,Personal take foul by P. George (drawn by L. Dončić)
+4,0:04.0,111-108,Lakers,L. Dončić makes free throw 1 of 2
+4,0:04.0,112-108,Lakers,L. Dončić makes free throw 2 of 2
+4,0:04.0,112-108,76ers,Philadelphia full timeout
+4,0:04.0,112-108,Lakers,J. LaRavia enters the game for D. Ayton
+4,0:03.0,112-108,76ers,Turnover by P. George (bad pass; steal by L. James)

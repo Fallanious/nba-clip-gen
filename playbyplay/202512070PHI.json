@@ -1,0 +1,3390 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:44.0",
+    "score": "2-0",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 18 ft (assist by D. Ayton)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:28.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:19.0",
+    "score": "2-3",
+    "team": "Lakers",
+    "description": "R. Hachimura misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:16.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "11:06.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:49.0",
+    "score": "2-3",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:46.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "10:44.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 5 ft (block by A. Reaves)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:44.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "10:40.0",
+    "score": "2-6",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 28 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:24.0",
+    "score": "4-6",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt hook shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:06.0",
+    "score": "4-8",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:59.0",
+    "score": "6-8",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:59.0",
+    "score": "6-8",
+    "team": "Lakers",
+    "description": "Shooting foul by T. Maxey (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:59.0",
+    "score": "7-8",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "9:50.0",
+    "score": "7-8",
+    "team": "76ers",
+    "description": "Personal foul by D. Ayton (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:37.0",
+    "score": "7-8",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:34.0",
+    "score": "7-8",
+    "team": "Lakers",
+    "description": "Defensive rebound by R. Hachimura"
+  },
+  {
+    "quarter": 1,
+    "time": "9:26.0",
+    "score": "7-8",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:22.0",
+    "score": "7-8",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "9:06.0",
+    "score": "7-8",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "7-8",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "9:00.0",
+    "score": "7-8",
+    "team": "Lakers",
+    "description": "R. Hachimura misses 2-pt layup from 4 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:57.0",
+    "score": "7-8",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "8:47.0",
+    "score": "7-10",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:39.0",
+    "score": "9-10",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt layup from 1 ft (assist by A. Reaves)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:29.0",
+    "score": "9-12",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:21.0",
+    "score": "9-12",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:16.0",
+    "score": "9-12",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "9-14",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:48.0",
+    "score": "9-14",
+    "team": "Lakers",
+    "description": "L. James misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:44.0",
+    "score": "9-14",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "7:36.0",
+    "score": "9-14",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:34.0",
+    "score": "9-14",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 1,
+    "time": "7:21.0",
+    "score": "9-14",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "9-14",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "7:13.0",
+    "score": "9-17",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "9-17",
+    "team": "Lakers",
+    "description": "Turnover by A. Reaves (out of bounds lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "9-17",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "9-17",
+    "team": "Lakers",
+    "description": "J. LaRavia enters the game for L. James"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "9-17",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "6:31.0",
+    "score": "9-17",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:28.0",
+    "score": "9-17",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "9-17",
+    "team": "76ers",
+    "description": "Shooting foul by J. LaRavia (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "9-18",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "9-19",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:04.0",
+    "score": "9-19",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:00.0",
+    "score": "9-19",
+    "team": "Lakers",
+    "description": "Offensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 1,
+    "time": "6:00.0",
+    "score": "11-19",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "5:44.0",
+    "score": "11-19",
+    "team": "76ers",
+    "description": "Personal foul by R. Hachimura (drawn by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:41.0",
+    "score": "11-19",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:38.0",
+    "score": "11-19",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "5:31.0",
+    "score": "11-19",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "11-19",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "5:19.0",
+    "score": "11-21",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt dunk from 1 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "13-21",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 1,
+    "time": "4:33.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "Turnover by L. Don\u010di\u0107 (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:25.0",
+    "score": "13-21",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:23.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "Shooting foul by D. Barlow (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "13-21",
+    "team": "Lakers",
+    "description": "J. Hayes enters the game for D. Ayton"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "13-21",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "14-21",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:08.0",
+    "score": "14-21",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:55.0",
+    "score": "17-21",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 3-pt jump shot from 23 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:44.0",
+    "score": "17-21",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:41.0",
+    "score": "17-21",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "3:41.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "3:30.0",
+    "score": "17-23",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:26.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "3:12.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:10.0",
+    "score": "17-23",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "17-23",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:58.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 10 ft (block by J. Hayes)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "Lakers",
+    "description": "LA Lakers full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "Technical foul by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "Lakers",
+    "description": "L. James enters the game for R. Hachimura"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "Lakers",
+    "description": "G. Vincent enters the game for A. Reaves"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "J. McCain enters the game for A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "17-23",
+    "team": "76ers",
+    "description": "J. Walker enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "2:53.0",
+    "score": "18-23",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes technical free throw"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "18-26",
+    "team": "76ers",
+    "description": "J. Walker makes 3-pt jump shot from 23 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:31.0",
+    "score": "21-26",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 3-pt jump shot from 26 ft (assist by L. James)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:23.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "Personal take foul by G. Vincent (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:23.0",
+    "score": "21-26",
+    "team": "Lakers",
+    "description": "R. Hachimura enters the game for J. LaRavia"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 7 ft (block by J. Hayes)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "2:01.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:57.0",
+    "score": "21-26",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "1:53.0",
+    "score": "21-26",
+    "team": "Lakers",
+    "description": "L. James misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:50.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "J. Walker misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "21-26",
+    "team": "Lakers",
+    "description": "Defensive rebound by J. Hayes"
+  },
+  {
+    "quarter": 1,
+    "time": "1:39.0",
+    "score": "23-26",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:32.0",
+    "score": "23-26",
+    "team": "76ers",
+    "description": "Personal foul by J. Hayes (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:32.0",
+    "score": "23-27",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:32.0",
+    "score": "23-28",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:13.0",
+    "score": "25-28",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:00.0",
+    "score": "25-28",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:58.0",
+    "score": "25-28",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "0:55.0",
+    "score": "27-28",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt dunk from 1 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:41.0",
+    "score": "27-28",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:38.0",
+    "score": "27-28",
+    "team": "Lakers",
+    "description": "Defensive rebound by R. Hachimura"
+  },
+  {
+    "quarter": 1,
+    "time": "0:34.0",
+    "score": "27-28",
+    "team": "Lakers",
+    "description": "Turnover by L. Don\u010di\u0107 (bad pass; steal by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:27.0",
+    "score": "27-28",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 5 ft (block by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "27-28",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "27-28",
+    "team": "76ers",
+    "description": "Shooting foul by R. Hachimura (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "27-29",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "27-29",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for J. McCain"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "27-30",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:08.0",
+    "score": "30-30",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 3-pt jump shot from 24 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-30",
+    "team": "76ers",
+    "description": "J. Walker misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-30",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:42.0",
+    "score": "30-32",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 10 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:23.0",
+    "score": "30-32",
+    "team": "Lakers",
+    "description": "A. Reaves misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:20.0",
+    "score": "30-32",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "11:11.0",
+    "score": "30-32",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:08.0",
+    "score": "30-32",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. James"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-32",
+    "team": "Lakers",
+    "description": "Shooting foul by J. McCain (drawn by L. James)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-32",
+    "team": "Lakers",
+    "description": "L. James misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-32",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "31-32",
+    "team": "Lakers",
+    "description": "L. James makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:56.0",
+    "score": "31-32",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:53.0",
+    "score": "31-32",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. James"
+  },
+  {
+    "quarter": 2,
+    "time": "10:42.0",
+    "score": "31-32",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:39.0",
+    "score": "31-32",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "10:33.0",
+    "score": "31-35",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 26 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:12.0",
+    "score": "33-35",
+    "team": "Lakers",
+    "description": "J. Hayes makes 2-pt hook shot from 2 ft (assist by L. James)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:03.0",
+    "score": "33-35",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (lost ball; steal by A. Reaves)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:59.0",
+    "score": "36-35",
+    "team": "Lakers",
+    "description": "L. James makes 3-pt jump shot from 29 ft (assist by A. Reaves)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:40.0",
+    "score": "36-35",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:33.0",
+    "score": "36-35",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. James"
+  },
+  {
+    "quarter": 2,
+    "time": "9:26.0",
+    "score": "36-35",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:23.0",
+    "score": "36-35",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "9:19.0",
+    "score": "36-37",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "36-37",
+    "team": "Lakers",
+    "description": "Shooting foul by J. Embiid (drawn by J. Hayes)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "36-37",
+    "team": "Lakers",
+    "description": "J. Hayes misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "36-37",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "36-37",
+    "team": "Lakers",
+    "description": "R. Hachimura enters the game for L. James"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "36-37",
+    "team": "Lakers",
+    "description": "J. Hayes misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:03.0",
+    "score": "36-37",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "8:50.0",
+    "score": "36-40",
+    "team": "76ers",
+    "description": "J. McCain makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:50.0",
+    "score": "36-40",
+    "team": "Lakers",
+    "description": "D. Ayton enters the game for J. Hayes"
+  },
+  {
+    "quarter": 2,
+    "time": "8:34.0",
+    "score": "36-40",
+    "team": "Lakers",
+    "description": "Shooting foul by V. Edgecombe (drawn by A. Reaves)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:34.0",
+    "score": "37-40",
+    "team": "Lakers",
+    "description": "A. Reaves makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:34.0",
+    "score": "38-40",
+    "team": "Lakers",
+    "description": "A. Reaves makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:24.0",
+    "score": "38-42",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:24.0",
+    "score": "38-42",
+    "team": "76ers",
+    "description": "Shooting foul by D. Ayton (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:24.0",
+    "score": "38-43",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "8:14.0",
+    "score": "38-43",
+    "team": "Lakers",
+    "description": "A. Reaves misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:10.0",
+    "score": "38-43",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "8:02.0",
+    "score": "38-43",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:58.0",
+    "score": "38-43",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 2,
+    "time": "7:54.0",
+    "score": "38-43",
+    "team": "Lakers",
+    "description": "G. Vincent misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:52.0",
+    "score": "38-43",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "7:36.0",
+    "score": "38-43",
+    "team": "76ers",
+    "description": "Shooting foul by A. Thiero (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:36.0",
+    "score": "38-44",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:36.0",
+    "score": "38-44",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 enters the game for A. Thiero"
+  },
+  {
+    "quarter": 2,
+    "time": "7:36.0",
+    "score": "38-44",
+    "team": "Lakers",
+    "description": "J. Vanderbilt enters the game for G. Vincent"
+  },
+  {
+    "quarter": 2,
+    "time": "7:36.0",
+    "score": "38-44",
+    "team": "76ers",
+    "description": "P. George enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "7:36.0",
+    "score": "38-45",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:23.0",
+    "score": "38-45",
+    "team": "Lakers",
+    "description": "J. Vanderbilt misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:19.0",
+    "score": "38-45",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "7:10.0",
+    "score": "38-45",
+    "team": "76ers",
+    "description": "Shooting foul by J. Vanderbilt (drawn by J. Walker)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:10.0",
+    "score": "38-45",
+    "team": "76ers",
+    "description": "J. Walker misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:10.0",
+    "score": "38-45",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:10.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "J. Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:58.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:54.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "6:39.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:37.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "Defensive rebound by A. Reaves"
+  },
+  {
+    "quarter": 2,
+    "time": "6:29.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "R. Hachimura misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:27.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "Offensive rebound by A. Reaves"
+  },
+  {
+    "quarter": 2,
+    "time": "6:24.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "R. Hachimura misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:21.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "Offensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "38-46",
+    "team": "Lakers",
+    "description": "Shooting foul by V. Edgecombe (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "39-46",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 1 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "39-46",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses free throw 2 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "39-46",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "40-46",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 3 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "5:57.0",
+    "score": "40-48",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 5 ft (assist by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:40.0",
+    "score": "42-48",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 5 ft (assist by J. Vanderbilt)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:20.0",
+    "score": "42-48",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:17.0",
+    "score": "42-48",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "5:07.0",
+    "score": "42-48",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "42-48",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "4:58.0",
+    "score": "42-48",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:56.0",
+    "score": "42-48",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "42-48",
+    "team": "Lakers",
+    "description": "Turnover by L. Don\u010di\u0107 (bad pass; steal by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:43.0",
+    "score": "42-50",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "42-50",
+    "team": "Lakers",
+    "description": "Personal foul by T. Maxey (drawn by A. Reaves)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "42-50",
+    "team": "Lakers",
+    "description": "A. Reaves misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "42-50",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "42-50",
+    "team": "Lakers",
+    "description": "L. James enters the game for R. Hachimura"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "42-50",
+    "team": "Lakers",
+    "description": "J. LaRavia enters the game for J. Vanderbilt"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "42-50",
+    "team": "76ers",
+    "description": "J. McCain enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "4:28.0",
+    "score": "43-50",
+    "team": "Lakers",
+    "description": "A. Reaves makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:16.0",
+    "score": "43-50",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:13.0",
+    "score": "43-50",
+    "team": "Lakers",
+    "description": "Defensive rebound by A. Reaves"
+  },
+  {
+    "quarter": 2,
+    "time": "3:51.0",
+    "score": "45-50",
+    "team": "Lakers",
+    "description": "A. Reaves makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:35.0",
+    "score": "45-50",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:34.0",
+    "score": "45-50",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "3:32.0",
+    "score": "45-50",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:29.0",
+    "score": "45-50",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "3:25.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "A. Reaves makes 3-pt jump shot from 24 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:01.0",
+    "score": "48-50",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:59.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "Defensive rebound by J. LaRavia"
+  },
+  {
+    "quarter": 2,
+    "time": "2:52.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "L. James misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:47.0",
+    "score": "48-50",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "48-50",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "LA Lakers full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "J. Hayes enters the game for D. Ayton"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "G. Vincent enters the game for A. Reaves"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "48-50",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "48-50",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:21.0",
+    "score": "48-50",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "2:12.0",
+    "score": "48-53",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:01.0",
+    "score": "50-53",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:01.0",
+    "score": "50-53",
+    "team": "Lakers",
+    "description": "Shooting foul by P. George (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:01.0",
+    "score": "50-53",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "1:58.0",
+    "score": "50-53",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-53",
+    "team": "76ers",
+    "description": "Shooting foul by J. LaRavia (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-54",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-55",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-55",
+    "team": "Lakers",
+    "description": "A. Reaves enters the game for J. LaRavia"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-55",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-56",
+    "team": "76ers",
+    "description": "P. George makes free throw 3 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "1:29.0",
+    "score": "50-56",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:26.0",
+    "score": "50-56",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:12.0",
+    "score": "50-56",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:10.0",
+    "score": "50-56",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "50-56",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "50-56",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "1:09.0",
+    "score": "50-58",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "0:48.0",
+    "score": "50-58",
+    "team": "Lakers",
+    "description": "L. James misses 2-pt layup from 5 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:44.0",
+    "score": "50-58",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "50-58",
+    "team": "76ers",
+    "description": "Personal foul by J. Hayes (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "50-59",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "50-59",
+    "team": "Lakers",
+    "description": "R. Hachimura enters the game for G. Vincent"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "50-60",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:30.0",
+    "score": "53-60",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:10.0",
+    "score": "53-60",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:07.0",
+    "score": "53-60",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "53-60",
+    "team": "Lakers",
+    "description": "R. Hachimura misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "53-60",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:41.0",
+    "score": "53-60",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:38.0",
+    "score": "53-60",
+    "team": "Lakers",
+    "description": "Defensive rebound by R. Hachimura"
+  },
+  {
+    "quarter": 3,
+    "time": "11:21.0",
+    "score": "55-60",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:04.0",
+    "score": "55-60",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:04.0",
+    "score": "55-60",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "10:59.0",
+    "score": "55-60",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "10:58.0",
+    "score": "55-60",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 3,
+    "time": "10:58.0",
+    "score": "55-60",
+    "team": "Lakers",
+    "description": "Turnover by L. Don\u010di\u0107 (palming)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:49.0",
+    "score": "55-63",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "57-63",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:07.0",
+    "score": "57-63",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:04.0",
+    "score": "57-63",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "9:57.0",
+    "score": "59-63",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt layup from 1 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:44.0",
+    "score": "59-63",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:41.0",
+    "score": "59-63",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "9:36.0",
+    "score": "59-63",
+    "team": "Lakers",
+    "description": "A. Reaves misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:33.0",
+    "score": "59-63",
+    "team": "Lakers",
+    "description": "Offensive rebound by R. Hachimura"
+  },
+  {
+    "quarter": 3,
+    "time": "9:32.0",
+    "score": "62-63",
+    "team": "Lakers",
+    "description": "L. James makes 3-pt jump shot from 27 ft (assist by R. Hachimura)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:06.0",
+    "score": "62-65",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "62-65",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:52.0",
+    "score": "62-65",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "8:49.0",
+    "score": "62-65",
+    "team": "76ers",
+    "description": "Personal foul by L. Don\u010di\u0107 (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:33.0",
+    "score": "62-65",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 11 ft (block by L. James)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:30.0",
+    "score": "62-65",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. James"
+  },
+  {
+    "quarter": 3,
+    "time": "8:28.0",
+    "score": "64-65",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 2-pt dunk from 1 ft (assist by L. James)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "64-65",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "8:08.0",
+    "score": "64-67",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 1 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:46.0",
+    "score": "66-67",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:21.0",
+    "score": "66-67",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 2 ft (block by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:18.0",
+    "score": "66-67",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "7:16.0",
+    "score": "66-67",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:14.0",
+    "score": "66-67",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "7:07.0",
+    "score": "68-67",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt dunk from 1 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:41.0",
+    "score": "68-70",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:26.0",
+    "score": "68-70",
+    "team": "Lakers",
+    "description": "Personal foul by D. Barlow (drawn by L. James)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:26.0",
+    "score": "68-70",
+    "team": "Lakers",
+    "description": "J. LaRavia enters the game for L. James"
+  },
+  {
+    "quarter": 3,
+    "time": "6:26.0",
+    "score": "68-70",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "6:20.0",
+    "score": "70-70",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "70-70",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:53.0",
+    "score": "70-70",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 3,
+    "time": "5:46.0",
+    "score": "73-70",
+    "team": "Lakers",
+    "description": "A. Reaves makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:31.0",
+    "score": "73-70",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:26.0",
+    "score": "73-70",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "5:22.0",
+    "score": "73-70",
+    "team": "Lakers",
+    "description": "Shooting foul by P. George (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:22.0",
+    "score": "74-70",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:22.0",
+    "score": "74-70",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "5:22.0",
+    "score": "75-70",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:09.0",
+    "score": "75-70",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:09.0",
+    "score": "75-70",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "75-70",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "75-70",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "75-70",
+    "team": "Lakers",
+    "description": "Personal foul by D. Barlow (drawn by D. Ayton)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:48.0",
+    "score": "78-70",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 3-pt jump shot from 24 ft (assist by A. Reaves)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:25.0",
+    "score": "78-72",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt hook shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "80-72",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:56.0",
+    "score": "80-72",
+    "team": "76ers",
+    "description": "D. Barlow misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:55.0",
+    "score": "80-72",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "3:55.0",
+    "score": "80-72",
+    "team": "Lakers",
+    "description": "Loose ball foul by D. Ayton (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:55.0",
+    "score": "80-72",
+    "team": "Lakers",
+    "description": "J. Hayes enters the game for D. Ayton"
+  },
+  {
+    "quarter": 3,
+    "time": "3:55.0",
+    "score": "80-72",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "3:55.0",
+    "score": "80-72",
+    "team": "76ers",
+    "description": "J. Walker enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "3:47.0",
+    "score": "80-72",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 8 ft (block by J. Hayes)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "80-72",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "80-74",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "3:33.0",
+    "score": "80-74",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:30.0",
+    "score": "80-74",
+    "team": "Lakers",
+    "description": "Offensive rebound by J. Hayes"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "80-74",
+    "team": "Lakers",
+    "description": "J. LaRavia misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:20.0",
+    "score": "80-74",
+    "team": "Lakers",
+    "description": "Offensive rebound by R. Hachimura"
+  },
+  {
+    "quarter": 3,
+    "time": "3:19.0",
+    "score": "80-74",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:16.0",
+    "score": "80-74",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "80-76",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "80-76",
+    "team": "Lakers",
+    "description": "LA Lakers full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "80-76",
+    "team": "Lakers",
+    "description": "L. James enters the game for R. Hachimura"
+  },
+  {
+    "quarter": 3,
+    "time": "3:03.0",
+    "score": "80-76",
+    "team": "Lakers",
+    "description": "G. Vincent enters the game for A. Reaves"
+  },
+  {
+    "quarter": 3,
+    "time": "2:46.0",
+    "score": "83-76",
+    "team": "Lakers",
+    "description": "J. LaRavia makes 3-pt jump shot from 26 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:29.0",
+    "score": "83-76",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:27.0",
+    "score": "83-76",
+    "team": "Lakers",
+    "description": "Defensive rebound by J. Hayes"
+  },
+  {
+    "quarter": 3,
+    "time": "2:20.0",
+    "score": "83-76",
+    "team": "Lakers",
+    "description": "J. LaRavia misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:19.0",
+    "score": "83-76",
+    "team": "Lakers",
+    "description": "Offensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "2:19.0",
+    "score": "83-76",
+    "team": "Lakers",
+    "description": "Shooting foul by A. Drummond (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:19.0",
+    "score": "84-76",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:19.0",
+    "score": "85-76",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:08.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:06.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "2:06.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "Personal foul by J. LaRavia (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:49.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "1:49.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "1:49.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "85-76",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "85-76",
+    "team": "Lakers",
+    "description": "Defensive rebound by J. Hayes"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "85-76",
+    "team": "Lakers",
+    "description": "Personal foul by J. Walker (drawn by J. Hayes)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "85-76",
+    "team": "Lakers",
+    "description": "J. Hayes misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "85-76",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "86-76",
+    "team": "Lakers",
+    "description": "J. Hayes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:27.0",
+    "score": "86-79",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 25 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "86-79",
+    "team": "Lakers",
+    "description": "Shooting foul by V. Edgecombe (drawn by J. LaRavia)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "87-79",
+    "team": "Lakers",
+    "description": "J. LaRavia makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "87-79",
+    "team": "Lakers",
+    "description": "J. LaRavia misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:10.0",
+    "score": "87-79",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "87-82",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:35.0",
+    "score": "87-82",
+    "team": "Lakers",
+    "description": "Turnover by L. James (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "87-82",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:27.0",
+    "score": "87-82",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 3,
+    "time": "0:22.0",
+    "score": "87-82",
+    "team": "76ers",
+    "description": "Shooting foul by J. Hayes (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:22.0",
+    "score": "87-83",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:22.0",
+    "score": "87-83",
+    "team": "76ers",
+    "description": "T. Maxey misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "87-83",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "87-83",
+    "team": "Lakers",
+    "description": "Loose ball foul by J. Hayes (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "87-83",
+    "team": "76ers",
+    "description": "A. Drummond misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "87-83",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "A. Drummond makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:03.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 27 ft (block by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:43.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "G. Vincent misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:39.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "Offensive rebound by L. James"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "J. LaRavia misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:35.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "11:20.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:16.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "Defensive rebound by J. Hayes"
+  },
+  {
+    "quarter": 4,
+    "time": "10:58.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "L. James misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:58.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "10:35.0",
+    "score": "87-84",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:33.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. James"
+  },
+  {
+    "quarter": 4,
+    "time": "10:28.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "Personal foul by J. McCain (drawn by J. LaRavia)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:28.0",
+    "score": "87-84",
+    "team": "Lakers",
+    "description": "R. Hachimura enters the game for J. LaRavia"
+  },
+  {
+    "quarter": 4,
+    "time": "10:19.0",
+    "score": "90-84",
+    "team": "Lakers",
+    "description": "G. Vincent makes 3-pt jump shot from 28 ft (assist by L. James)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:03.0",
+    "score": "90-84",
+    "team": "76ers",
+    "description": "Personal foul by G. Vincent (drawn by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:54.0",
+    "score": "90-84",
+    "team": "76ers",
+    "description": "Shooting foul by J. Hayes (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:54.0",
+    "score": "90-85",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:54.0",
+    "score": "90-85",
+    "team": "Lakers",
+    "description": "D. Ayton enters the game for J. Hayes"
+  },
+  {
+    "quarter": 4,
+    "time": "9:54.0",
+    "score": "90-86",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "90-86",
+    "team": "Lakers",
+    "description": "A. Reaves misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:36.0",
+    "score": "90-86",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "9:27.0",
+    "score": "90-88",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:09.0",
+    "score": "92-88",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt dunk from 1 ft (assist by L. James)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "92-88",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:50.0",
+    "score": "92-88",
+    "team": "Lakers",
+    "description": "Defensive rebound by G. Vincent"
+  },
+  {
+    "quarter": 4,
+    "time": "8:41.0",
+    "score": "94-88",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt layup from 2 ft (assist by A. Reaves)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:34.0",
+    "score": "94-88",
+    "team": "76ers",
+    "description": "Shooting foul by D. Ayton (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:34.0",
+    "score": "94-89",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:34.0",
+    "score": "94-89",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "8:34.0",
+    "score": "94-90",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:19.0",
+    "score": "96-90",
+    "team": "Lakers",
+    "description": "R. Hachimura makes 2-pt jump shot from 5 ft (assist by L. James)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:02.0",
+    "score": "96-90",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:00.0",
+    "score": "96-90",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 4,
+    "time": "7:58.0",
+    "score": "96-90",
+    "team": "Lakers",
+    "description": "Offensive foul by L. James (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:58.0",
+    "score": "96-90",
+    "team": "Lakers",
+    "description": "Turnover by L. James (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:47.0",
+    "score": "96-92",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 4 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:31.0",
+    "score": "96-92",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "96-92",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "7:22.0",
+    "score": "96-94",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:21.0",
+    "score": "96-94",
+    "team": "Lakers",
+    "description": "LA Lakers full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "7:21.0",
+    "score": "96-94",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 enters the game for L. James"
+  },
+  {
+    "quarter": 4,
+    "time": "7:21.0",
+    "score": "96-94",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "7:21.0",
+    "score": "96-94",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "7:12.0",
+    "score": "98-94",
+    "team": "Lakers",
+    "description": "D. Ayton makes 2-pt dunk from 2 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:55.0",
+    "score": "98-94",
+    "team": "Lakers",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:50.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "Personal foul by G. Vincent (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:36.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:34.0",
+    "score": "98-94",
+    "team": "Lakers",
+    "description": "Defensive rebound by R. Hachimura"
+  },
+  {
+    "quarter": 4,
+    "time": "6:26.0",
+    "score": "98-94",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 2-pt jump shot from 12 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:23.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "6:22.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:18.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "6:17.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:17.0",
+    "score": "98-94",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. Don\u010di\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "6:02.0",
+    "score": "98-94",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:57.0",
+    "score": "98-94",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "5:45.0",
+    "score": "98-96",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk from 1 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:25.0",
+    "score": "98-96",
+    "team": "Lakers",
+    "description": "Def 3 sec tech foul by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:25.0",
+    "score": "98-96",
+    "team": "Lakers",
+    "description": "A. Reaves misses technical free throw"
+  },
+  {
+    "quarter": 4,
+    "time": "5:25.0",
+    "score": "98-96",
+    "team": "Lakers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:25.0",
+    "score": "98-96",
+    "team": "Lakers",
+    "description": "L. James enters the game for A. Reaves"
+  },
+  {
+    "quarter": 4,
+    "time": "5:25.0",
+    "score": "98-96",
+    "team": "Lakers",
+    "description": "J. LaRavia enters the game for G. Vincent"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "98-96",
+    "team": "76ers",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:14.0",
+    "score": "100-96",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:59.0",
+    "score": "100-96",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 3 ft (block by D. Ayton)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "100-96",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 4,
+    "time": "4:53.0",
+    "score": "100-96",
+    "team": "Lakers",
+    "description": "Turnover by J. LaRavia (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:53.0",
+    "score": "100-96",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:47.0",
+    "score": "100-96",
+    "team": "76ers",
+    "description": "Personal foul by R. Hachimura (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:47.0",
+    "score": "100-97",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:47.0",
+    "score": "100-98",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "102-98",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt jump shot from 22 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:05.0",
+    "score": "102-100",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:43.0",
+    "score": "105-100",
+    "team": "Lakers",
+    "description": "L. James makes 3-pt jump shot from 26 ft (assist by D. Ayton)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "105-100",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "105-100",
+    "team": "Lakers",
+    "description": "Defensive rebound by J. LaRavia"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "105-100",
+    "team": "Lakers",
+    "description": "LA Lakers full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "105-100",
+    "team": "Lakers",
+    "description": "A. Reaves enters the game for J. LaRavia"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "105-100",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "3:03.0",
+    "score": "105-100",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:01.0",
+    "score": "105-100",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "2:54.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 24 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:28.0",
+    "score": "105-103",
+    "team": "Lakers",
+    "description": "A. Reaves misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:24.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:17.0",
+    "score": "105-103",
+    "team": "Lakers",
+    "description": "Defensive rebound by D. Ayton"
+  },
+  {
+    "quarter": 4,
+    "time": "2:07.0",
+    "score": "105-103",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:02.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "1:55.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by D. Ayton)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:40.0",
+    "score": "105-103",
+    "team": "Lakers",
+    "description": "Turnover by L. Don\u010di\u0107 (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:29.0",
+    "score": "105-105",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 19 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:12.0",
+    "score": "108-105",
+    "team": "Lakers",
+    "description": "L. James makes 3-pt jump shot from 27 ft (assist by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:52.0",
+    "score": "108-105",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "108-105",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "108-105",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "0:46.0",
+    "score": "108-105",
+    "team": "Lakers",
+    "description": "Defensive rebound by A. Reaves"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "110-105",
+    "team": "Lakers",
+    "description": "L. James makes 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "110-105",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:21.0",
+    "score": "110-105",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:16.0",
+    "score": "110-105",
+    "team": "Lakers",
+    "description": "Defensive rebound by L. James"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "110-105",
+    "team": "Lakers",
+    "description": "Turnover by A. Reaves (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "110-105",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:08.0",
+    "score": "110-105",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "0:07.0",
+    "score": "110-108",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "110-108",
+    "team": "Lakers",
+    "description": "Personal take foul by V. Edgecombe (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "110-108",
+    "team": "Lakers",
+    "description": "LA Lakers full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "110-108",
+    "team": "Lakers",
+    "description": "G. Vincent enters the game for R. Hachimura"
+  },
+  {
+    "quarter": 4,
+    "time": "0:04.0",
+    "score": "110-108",
+    "team": "Lakers",
+    "description": "Personal take foul by P. George (drawn by L. Don\u010di\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:04.0",
+    "score": "111-108",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:04.0",
+    "score": "112-108",
+    "team": "Lakers",
+    "description": "L. Don\u010di\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:04.0",
+    "score": "112-108",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:04.0",
+    "score": "112-108",
+    "team": "Lakers",
+    "description": "J. LaRavia enters the game for D. Ayton"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "112-108",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass; steal by L. James)"
+  }
+]

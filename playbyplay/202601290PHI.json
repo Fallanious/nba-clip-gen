@@ -1,0 +1,2984 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:40.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:38.0",
+    "score": "0-0",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 1,
+    "time": "11:27.0",
+    "score": "0-0",
+    "team": "Kings",
+    "description": "N. Clifford misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:25.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "11:14.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:12.0",
+    "score": "0-0",
+    "team": "Kings",
+    "description": "Defensive rebound by N. Clifford"
+  },
+  {
+    "quarter": 1,
+    "time": "11:03.0",
+    "score": "2-0",
+    "team": "Kings",
+    "description": "P. Achiuwa makes 2-pt layup from 1 ft (assist by D. Sabonis)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:49.0",
+    "score": "2-2",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 9 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:33.0",
+    "score": "4-2",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:12.0",
+    "score": "4-4",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "6-4",
+    "team": "Kings",
+    "description": "D. Sabonis makes 2-pt layup from 1 ft (assist by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:40.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:28.0",
+    "score": "6-7",
+    "team": "Kings",
+    "description": "P. Achiuwa misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:25.0",
+    "score": "6-7",
+    "team": "Kings",
+    "description": "Offensive rebound by N. Clifford"
+  },
+  {
+    "quarter": 1,
+    "time": "9:24.0",
+    "score": "6-7",
+    "team": "Kings",
+    "description": "Turnover by N. Clifford (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:20.0",
+    "score": "6-10",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:07.0",
+    "score": "6-10",
+    "team": "Kings",
+    "description": "N. Clifford misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "6-10",
+    "team": "Kings",
+    "description": "Offensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 1,
+    "time": "8:59.0",
+    "score": "6-10",
+    "team": "Kings",
+    "description": "D. Sabonis misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:57.0",
+    "score": "6-10",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "8:51.0",
+    "score": "6-10",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:47.0",
+    "score": "6-10",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 1,
+    "time": "8:41.0",
+    "score": "6-10",
+    "team": "Kings",
+    "description": "Shooting foul by K. Oubre (drawn by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:41.0",
+    "score": "7-10",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:41.0",
+    "score": "8-10",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:30.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "Personal foul by D. Sabonis (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:19.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:19.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:16.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:12.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "8:10.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:08.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "8:07.0",
+    "score": "8-10",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup at rim (block by P. Achiuwa)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:06.0",
+    "score": "8-10",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 1,
+    "time": "7:55.0",
+    "score": "10-10",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:36.0",
+    "score": "10-10",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:20.0",
+    "score": "10-10",
+    "team": "Kings",
+    "description": "D. Sabonis misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "10-10",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "7:11.0",
+    "score": "10-10",
+    "team": "Kings",
+    "description": "D. DeRozan misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:08.0",
+    "score": "10-10",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "6:59.0",
+    "score": "10-12",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 1 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:40.0",
+    "score": "13-12",
+    "team": "Kings",
+    "description": "D. DeRozan makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "13-12",
+    "team": "76ers",
+    "description": "Shooting foul by D. Sabonis (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "13-12",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "13-12",
+    "team": "Kings",
+    "description": "D. Cardwell enters the game for D. DeRozan"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "13-12",
+    "team": "Kings",
+    "description": "Z. LaVine enters the game for D. Sabonis"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "13-13",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "13-14",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "13-14",
+    "team": "Kings",
+    "description": "N. Clifford misses 2-pt jump shot from 23 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "13-14",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "13-14",
+    "team": "Kings",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:48.0",
+    "score": "13-14",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:45.0",
+    "score": "13-14",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Cardwell"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "13-14",
+    "team": "Kings",
+    "description": "P. Achiuwa misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:23.0",
+    "score": "13-14",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "5:14.0",
+    "score": "13-17",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:59.0",
+    "score": "15-17",
+    "team": "Kings",
+    "description": "N. Clifford makes 2-pt jump shot from 7 ft (assist by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "15-17",
+    "team": "76ers",
+    "description": "Def 3 sec tech foul by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "15-18",
+    "team": "76ers",
+    "description": "T. Maxey makes technical free throw"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "15-18",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "4:33.0",
+    "score": "15-20",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt hook shot from 4 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:20.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "N. Clifford misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:17.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Offensive rebound by D. Cardwell"
+  },
+  {
+    "quarter": 1,
+    "time": "4:14.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Turnover by D. Cardwell (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:03.0",
+    "score": "15-20",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:01.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Schr\u00f6der"
+  },
+  {
+    "quarter": 1,
+    "time": "3:52.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "P. Achiuwa misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:48.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Offensive rebound by D. Schr\u00f6der"
+  },
+  {
+    "quarter": 1,
+    "time": "3:48.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "D. DeRozan enters the game for P. Achiuwa"
+  },
+  {
+    "quarter": 1,
+    "time": "3:48.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "M. Raynaud enters the game for N. Clifford"
+  },
+  {
+    "quarter": 1,
+    "time": "3:48.0",
+    "score": "15-20",
+    "team": "76ers",
+    "description": "J. McCain enters the game for T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "3:37.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Turnover by D. Schr\u00f6der (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:24.0",
+    "score": "15-20",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Defensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "K. Ellis enters the game for D. Schr\u00f6der"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der enters the game for K. Ellis"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "K. Ellis enters the game for D. Schr\u00f6der"
+  },
+  {
+    "quarter": 1,
+    "time": "3:13.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:10.0",
+    "score": "15-20",
+    "team": "Kings",
+    "description": "Offensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 1,
+    "time": "3:04.0",
+    "score": "17-20",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:49.0",
+    "score": "17-20",
+    "team": "76ers",
+    "description": "Shooting foul by M. Raynaud (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:49.0",
+    "score": "17-21",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:49.0",
+    "score": "17-22",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "17-22",
+    "team": "Kings",
+    "description": "Shooting foul by J. Embiid (drawn by Z. LaVine)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "18-22",
+    "team": "Kings",
+    "description": "Z. LaVine makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "19-22",
+    "team": "Kings",
+    "description": "Z. LaVine makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:30.0",
+    "score": "19-24",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "21-24",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 13 ft (assist by Z. LaVine)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:58.0",
+    "score": "21-24",
+    "team": "76ers",
+    "description": "Shooting foul by D. Cardwell (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:58.0",
+    "score": "21-25",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:58.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:42.0",
+    "score": "21-26",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:40.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "1:34.0",
+    "score": "21-26",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:30.0",
+    "score": "21-26",
+    "team": "Kings",
+    "description": "Defensive rebound by D. DeRozan"
+  },
+  {
+    "quarter": 1,
+    "time": "1:18.0",
+    "score": "24-26",
+    "team": "Kings",
+    "description": "Z. LaVine makes 3-pt jump shot from 28 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:54.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "24-28",
+    "team": "Kings",
+    "description": "Z. LaVine misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:39.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "0:31.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:30.0",
+    "score": "24-28",
+    "team": "Kings",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "0:06.0",
+    "score": "24-28",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:05.0",
+    "score": "24-28",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "0:05.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "Loose ball foul by J. Embiid (drawn by M. Raynaud)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:05.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "A. Bona enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "24-28",
+    "team": "Kings",
+    "description": "Shooting foul by K. Oubre (drawn by D. DeRozan)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "25-28",
+    "team": "Kings",
+    "description": "D. DeRozan makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "25-28",
+    "team": "Kings",
+    "description": "D. DeRozan misses free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "25-28",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "11:47.0",
+    "score": "25-28",
+    "team": "Kings",
+    "description": "Shooting foul by T. Maxey (drawn by D. DeRozan)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:47.0",
+    "score": "25-28",
+    "team": "Kings",
+    "description": "D. DeRozan misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "11:47.0",
+    "score": "25-28",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:47.0",
+    "score": "26-28",
+    "team": "Kings",
+    "description": "D. DeRozan makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "11:30.0",
+    "score": "26-30",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:09.0",
+    "score": "29-30",
+    "team": "Kings",
+    "description": "K. Ellis makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "29-30",
+    "team": "Kings",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:39.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 16 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:26.0",
+    "score": "29-32",
+    "team": "Kings",
+    "description": "Turnover by D. DeRozan (bad pass; steal by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:11.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "Shooting foul by K. Ellis (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:11.0",
+    "score": "29-33",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:11.0",
+    "score": "29-33",
+    "team": "Kings",
+    "description": "D. Sabonis enters the game for D. Cardwell"
+  },
+  {
+    "quarter": 2,
+    "time": "10:11.0",
+    "score": "29-34",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:54.0",
+    "score": "29-34",
+    "team": "Kings",
+    "description": "K. Ellis misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:52.0",
+    "score": "29-34",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "9:44.0",
+    "score": "29-34",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:41.0",
+    "score": "29-34",
+    "team": "Kings",
+    "description": "Defensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 2,
+    "time": "9:41.0",
+    "score": "29-34",
+    "team": "Kings",
+    "description": "Personal foul by T. Maxey (drawn by K. Ellis)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:31.0",
+    "score": "29-34",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt layup from 2 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:27.0",
+    "score": "29-34",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "9:21.0",
+    "score": "29-36",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:21.0",
+    "score": "29-36",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "9:13.0",
+    "score": "29-36",
+    "team": "Kings",
+    "description": "Personal foul by A. Bona (drawn by D. Sabonis)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:02.0",
+    "score": "29-36",
+    "team": "Kings",
+    "description": "M. Raynaud misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:00.0",
+    "score": "29-36",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:00.0",
+    "score": "29-36",
+    "team": "76ers",
+    "description": "Loose ball foul by D. Barlow (drawn by D. Sabonis)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:54.0",
+    "score": "31-36",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:32.0",
+    "score": "31-36",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (lost ball; steal by M. Raynaud)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:23.0",
+    "score": "31-36",
+    "team": "Kings",
+    "description": "D. DeRozan misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "31-36",
+    "team": "Kings",
+    "description": "Offensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 2,
+    "time": "8:07.0",
+    "score": "33-36",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:58.0",
+    "score": "33-36",
+    "team": "76ers",
+    "description": "Personal foul by M. Raynaud (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:58.0",
+    "score": "33-36",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der enters the game for K. Ellis"
+  },
+  {
+    "quarter": 2,
+    "time": "7:48.0",
+    "score": "33-38",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:38.0",
+    "score": "35-38",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "35-38",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:20.0",
+    "score": "35-38",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:19.0",
+    "score": "35-38",
+    "team": "Kings",
+    "description": "Offensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 2,
+    "time": "7:19.0",
+    "score": "35-38",
+    "team": "Kings",
+    "description": "D. Sabonis misses 2-pt layup at rim (block by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:18.0",
+    "score": "35-38",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "7:08.0",
+    "score": "35-38",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:05.0",
+    "score": "35-38",
+    "team": "Kings",
+    "description": "Defensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 2,
+    "time": "7:02.0",
+    "score": "35-38",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:58.0",
+    "score": "35-38",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-38",
+    "team": "76ers",
+    "description": "Shooting foul by D. Schr\u00f6der (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-39",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-39",
+    "team": "Kings",
+    "description": "N. Clifford enters the game for Z. LaVine"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-39",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-39",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-40",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "35-40",
+    "team": "Kings",
+    "description": "P. Achiuwa enters the game for M. Raynaud"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "35-40",
+    "team": "Kings",
+    "description": "Personal foul by A. Bona (drawn by D. Sabonis)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "35-40",
+    "team": "Kings",
+    "description": "D. Sabonis misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "35-40",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "36-40",
+    "team": "Kings",
+    "description": "D. Sabonis makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:28.0",
+    "score": "36-43",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:12.0",
+    "score": "36-43",
+    "team": "Kings",
+    "description": "Personal foul by A. Bona (drawn by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:12.0",
+    "score": "37-43",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:12.0",
+    "score": "37-43",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "6:12.0",
+    "score": "38-43",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:49.0",
+    "score": "38-46",
+    "team": "76ers",
+    "description": "J. Embiid makes 3-pt jump shot from 27 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:36.0",
+    "score": "40-46",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 15 ft (assist by D. Sabonis)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:19.0",
+    "score": "40-46",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:17.0",
+    "score": "40-46",
+    "team": "Kings",
+    "description": "Defensive rebound by D. DeRozan"
+  },
+  {
+    "quarter": 2,
+    "time": "5:07.0",
+    "score": "40-46",
+    "team": "Kings",
+    "description": "Shooting foul by D. Barlow (drawn by D. DeRozan)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:07.0",
+    "score": "41-46",
+    "team": "Kings",
+    "description": "D. DeRozan makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:07.0",
+    "score": "42-46",
+    "team": "Kings",
+    "description": "D. DeRozan makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:45.0",
+    "score": "42-49",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:36.0",
+    "score": "42-49",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:30.0",
+    "score": "42-49",
+    "team": "Kings",
+    "description": "Offensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 2,
+    "time": "4:30.0",
+    "score": "44-49",
+    "team": "Kings",
+    "description": "P. Achiuwa makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "4:24.0",
+    "score": "44-49",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:21.0",
+    "score": "44-49",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Schr\u00f6der"
+  },
+  {
+    "quarter": 2,
+    "time": "4:19.0",
+    "score": "44-49",
+    "team": "Kings",
+    "description": "Turnover by N. Clifford (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "44-49",
+    "team": "76ers",
+    "description": "Shooting foul by P. Achiuwa (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "44-50",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "44-50",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "44-51",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:01.0",
+    "score": "47-51",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:01.0",
+    "score": "47-51",
+    "team": "76ers",
+    "description": "P. George enters the game for D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "3:37.0",
+    "score": "47-53",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 17 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:11.0",
+    "score": "47-53",
+    "team": "Kings",
+    "description": "D. DeRozan misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "47-53",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "2:46.0",
+    "score": "47-55",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 3 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:46.0",
+    "score": "47-55",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "2:46.0",
+    "score": "47-55",
+    "team": "Kings",
+    "description": "K. Ellis enters the game for N. Clifford"
+  },
+  {
+    "quarter": 2,
+    "time": "2:31.0",
+    "score": "50-55",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 3-pt jump shot from 23 ft (assist by D. Sabonis)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:15.0",
+    "score": "50-55",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:13.0",
+    "score": "50-55",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 2,
+    "time": "2:08.0",
+    "score": "50-55",
+    "team": "Kings",
+    "description": "D. DeRozan misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "50-55",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "1:51.0",
+    "score": "50-58",
+    "team": "76ers",
+    "description": "J. Edwards makes 3-pt jump shot from 26 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:41.0",
+    "score": "50-58",
+    "team": "Kings",
+    "description": "K. Ellis misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:37.0",
+    "score": "50-58",
+    "team": "Kings",
+    "description": "Offensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 2,
+    "time": "1:33.0",
+    "score": "52-58",
+    "team": "Kings",
+    "description": "D. Sabonis makes 2-pt layup at rim (assist by P. Achiuwa)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:14.0",
+    "score": "52-58",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:11.0",
+    "score": "52-58",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Schr\u00f6der"
+  },
+  {
+    "quarter": 2,
+    "time": "0:52.0",
+    "score": "52-58",
+    "team": "Kings",
+    "description": "K. Ellis misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:49.0",
+    "score": "52-58",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "0:37.0",
+    "score": "52-60",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 11 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:22.0",
+    "score": "52-60",
+    "team": "Kings",
+    "description": "Personal foul by J. Embiid (drawn by D. DeRozan)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:22.0",
+    "score": "53-60",
+    "team": "Kings",
+    "description": "D. DeRozan makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:22.0",
+    "score": "53-60",
+    "team": "Kings",
+    "description": "D. Cardwell enters the game for D. Sabonis"
+  },
+  {
+    "quarter": 2,
+    "time": "0:22.0",
+    "score": "54-60",
+    "team": "Kings",
+    "description": "D. DeRozan makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "54-60",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 6 ft (block by K. Ellis)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "54-60",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-60",
+    "team": "76ers",
+    "description": "Turnover by K. Oubre (off goaltending)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-60",
+    "team": "76ers",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-60",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-60",
+    "team": "Kings",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-60",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:43.0",
+    "score": "57-60",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 3-pt jump shot from 26 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:21.0",
+    "score": "57-62",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 11 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:05.0",
+    "score": "57-62",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:02.0",
+    "score": "57-62",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "10:49.0",
+    "score": "57-64",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:41.0",
+    "score": "59-64",
+    "team": "Kings",
+    "description": "P. Achiuwa makes 2-pt layup from 2 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:34.0",
+    "score": "59-64",
+    "team": "76ers",
+    "description": "Personal foul by D. Sabonis (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:27.0",
+    "score": "59-64",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:24.0",
+    "score": "59-64",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 3,
+    "time": "10:15.0",
+    "score": "59-64",
+    "team": "Kings",
+    "description": "Turnover by D. Sabonis (lost ball; steal by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:57.0",
+    "score": "59-64",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:53.0",
+    "score": "59-64",
+    "team": "Kings",
+    "description": "Defensive rebound by N. Clifford"
+  },
+  {
+    "quarter": 3,
+    "time": "9:42.0",
+    "score": "59-64",
+    "team": "Kings",
+    "description": "Turnover by D. Sabonis (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:32.0",
+    "score": "59-66",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:32.0",
+    "score": "59-66",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "9:13.0",
+    "score": "59-66",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:07.0",
+    "score": "59-66",
+    "team": "Kings",
+    "description": "Offensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 3,
+    "time": "9:07.0",
+    "score": "61-66",
+    "team": "Kings",
+    "description": "D. Sabonis makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "8:54.0",
+    "score": "61-68",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:46.0",
+    "score": "61-68",
+    "team": "Kings",
+    "description": "Shooting foul by V. Edgecombe (drawn by D. Sabonis)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:46.0",
+    "score": "62-68",
+    "team": "Kings",
+    "description": "D. Sabonis makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:46.0",
+    "score": "62-68",
+    "team": "Kings",
+    "description": "D. Sabonis misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:43.0",
+    "score": "62-68",
+    "team": "Kings",
+    "description": "Offensive rebound by N. Clifford"
+  },
+  {
+    "quarter": 3,
+    "time": "8:36.0",
+    "score": "64-68",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:15.0",
+    "score": "64-70",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 3 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:15.0",
+    "score": "64-70",
+    "team": "76ers",
+    "description": "Shooting foul by N. Clifford (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:15.0",
+    "score": "64-70",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "8:12.0",
+    "score": "64-70",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 3,
+    "time": "8:07.0",
+    "score": "66-70",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:46.0",
+    "score": "66-70",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:44.0",
+    "score": "66-70",
+    "team": "Kings",
+    "description": "Defensive rebound by D. DeRozan"
+  },
+  {
+    "quarter": 3,
+    "time": "7:39.0",
+    "score": "66-70",
+    "team": "Kings",
+    "description": "Personal foul by P. George (drawn by D. DeRozan)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:34.0",
+    "score": "66-70",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:31.0",
+    "score": "66-70",
+    "team": "Kings",
+    "description": "Offensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 3,
+    "time": "7:21.0",
+    "score": "68-70",
+    "team": "Kings",
+    "description": "D. Sabonis makes 2-pt layup from 2 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:59.0",
+    "score": "68-70",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 2 ft (block by N. Clifford)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:56.0",
+    "score": "68-70",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "70-70",
+    "team": "Kings",
+    "description": "D. Sabonis makes 2-pt layup from 2 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:49.0",
+    "score": "70-70",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:29.0",
+    "score": "70-72",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-72",
+    "team": "Kings",
+    "description": "N. Clifford misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:02.0",
+    "score": "70-72",
+    "team": "Kings",
+    "description": "Offensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "72-72",
+    "team": "Kings",
+    "description": "D. Sabonis makes 2-pt hook shot from 2 ft (assist by P. Achiuwa)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:43.0",
+    "score": "72-75",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:26.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "D. DeRozan makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:12.0",
+    "score": "74-75",
+    "team": "76ers",
+    "description": "Personal foul by D. Sabonis (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:12.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "D. Cardwell enters the game for D. DeRozan"
+  },
+  {
+    "quarter": 3,
+    "time": "5:12.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "Z. LaVine enters the game for D. Sabonis"
+  },
+  {
+    "quarter": 3,
+    "time": "5:02.0",
+    "score": "74-75",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:59.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Cardwell"
+  },
+  {
+    "quarter": 3,
+    "time": "4:47.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "Turnover by P. Achiuwa (lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:46.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "Loose ball foul by D. Cardwell (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:32.0",
+    "score": "74-75",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:29.0",
+    "score": "74-75",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "77-75",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "77-75",
+    "team": "Kings",
+    "description": "M. Raynaud enters the game for P. Achiuwa"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "77-75",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "77-75",
+    "team": "76ers",
+    "description": "J. McCain enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "3:52.0",
+    "score": "77-77",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt layup from 3 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:40.0",
+    "score": "77-77",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:38.0",
+    "score": "77-77",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "3:33.0",
+    "score": "77-77",
+    "team": "76ers",
+    "description": "Shooting foul by D. Cardwell (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:33.0",
+    "score": "77-78",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:33.0",
+    "score": "77-78",
+    "team": "Kings",
+    "description": "K. Ellis enters the game for D. Schr\u00f6der"
+  },
+  {
+    "quarter": 3,
+    "time": "3:33.0",
+    "score": "77-79",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:32.0",
+    "score": "77-79",
+    "team": "Kings",
+    "description": "Personal foul by J. McCain (drawn by K. Ellis)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:26.0",
+    "score": "77-79",
+    "team": "Kings",
+    "description": "Offensive foul by D. Cardwell (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:26.0",
+    "score": "77-79",
+    "team": "Kings",
+    "description": "Turnover by D. Cardwell (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "77-79",
+    "team": "76ers",
+    "description": "Shooting foul by D. Cardwell (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "77-79",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "77-79",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "77-79",
+    "team": "Kings",
+    "description": "P. Achiuwa enters the game for D. Cardwell"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "77-79",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "77-79",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:13.0",
+    "score": "77-79",
+    "team": "Kings",
+    "description": "Defensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 3,
+    "time": "2:55.0",
+    "score": "79-79",
+    "team": "Kings",
+    "description": "Z. LaVine makes 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:34.0",
+    "score": "79-81",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:24.0",
+    "score": "79-81",
+    "team": "Kings",
+    "description": "Shooting foul by J. Edwards (drawn by Z. LaVine)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:24.0",
+    "score": "80-81",
+    "team": "Kings",
+    "description": "Z. LaVine makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:24.0",
+    "score": "80-81",
+    "team": "76ers",
+    "description": "A. Bona enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "2:24.0",
+    "score": "81-81",
+    "team": "Kings",
+    "description": "Z. LaVine makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:09.0",
+    "score": "81-81",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (palming)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:59.0",
+    "score": "81-81",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "1:49.0",
+    "score": "81-81",
+    "team": "Kings",
+    "description": "Z. LaVine misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:45.0",
+    "score": "81-81",
+    "team": "Kings",
+    "description": "Offensive rebound by M. Raynaud"
+  },
+  {
+    "quarter": 3,
+    "time": "1:45.0",
+    "score": "83-81",
+    "team": "Kings",
+    "description": "M. Raynaud makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "1:45.0",
+    "score": "83-81",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "83-81",
+    "team": "76ers",
+    "description": "Shooting foul by M. Raynaud (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "83-82",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "83-83",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:13.0",
+    "score": "85-83",
+    "team": "Kings",
+    "description": "M. Raynaud makes 2-pt layup from 2 ft (assist by P. Achiuwa)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:56.0",
+    "score": "85-85",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:43.0",
+    "score": "87-85",
+    "team": "Kings",
+    "description": "M. Raynaud makes 2-pt jump shot from 9 ft (assist by Z. LaVine)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "87-85",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:33.0",
+    "score": "87-85",
+    "team": "Kings",
+    "description": "Defensive rebound by N. Clifford"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "89-85",
+    "team": "Kings",
+    "description": "Z. LaVine makes 2-pt layup from 2 ft (assist by N. Clifford)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:23.0",
+    "score": "89-87",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 4 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:23.0",
+    "score": "89-87",
+    "team": "76ers",
+    "description": "Shooting foul by Z. LaVine (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:23.0",
+    "score": "89-87",
+    "team": "Kings",
+    "description": "D. DeRozan enters the game for P. Achiuwa"
+  },
+  {
+    "quarter": 3,
+    "time": "0:23.0",
+    "score": "89-87",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. Edwards"
+  },
+  {
+    "quarter": 3,
+    "time": "0:23.0",
+    "score": "89-87",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for J. McCain"
+  },
+  {
+    "quarter": 3,
+    "time": "0:23.0",
+    "score": "89-88",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "92-88",
+    "team": "Kings",
+    "description": "K. Ellis makes 3-pt jump shot from 23 ft (assist by Z. LaVine)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "92-88",
+    "team": "Kings",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:44.0",
+    "score": "92-90",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 22 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:26.0",
+    "score": "92-90",
+    "team": "Kings",
+    "description": "N. Clifford misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:23.0",
+    "score": "92-90",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "11:19.0",
+    "score": "92-90",
+    "team": "76ers",
+    "description": "Turnover by J. McCain (lost ball; steal by P. Achiuwa)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:17.0",
+    "score": "92-90",
+    "team": "Kings",
+    "description": "Turnover by M. Raynaud (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "92-90",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:58.0",
+    "score": "92-90",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 4,
+    "time": "10:43.0",
+    "score": "92-90",
+    "team": "Kings",
+    "description": "Turnover by P. Achiuwa (dbl dribble)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:30.0",
+    "score": "92-90",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:26.0",
+    "score": "92-90",
+    "team": "Kings",
+    "description": "Defensive rebound by N. Clifford"
+  },
+  {
+    "quarter": 4,
+    "time": "10:15.0",
+    "score": "94-90",
+    "team": "Kings",
+    "description": "K. Ellis makes 2-pt jump shot from 11 ft (assist by N. Clifford)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:57.0",
+    "score": "94-92",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:35.0",
+    "score": "94-92",
+    "team": "Kings",
+    "description": "Shooting foul by D. Barlow (drawn by M. Raynaud)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:35.0",
+    "score": "95-92",
+    "team": "Kings",
+    "description": "M. Raynaud makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:35.0",
+    "score": "95-92",
+    "team": "Kings",
+    "description": "D. DeRozan enters the game for N. Clifford"
+  },
+  {
+    "quarter": 4,
+    "time": "9:35.0",
+    "score": "96-92",
+    "team": "Kings",
+    "description": "M. Raynaud makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:22.0",
+    "score": "96-92",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass; steal by K. Ellis)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:20.0",
+    "score": "98-92",
+    "team": "Kings",
+    "description": "K. Ellis makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:11.0",
+    "score": "98-92",
+    "team": "76ers",
+    "description": "Personal foul by D. DeRozan (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:11.0",
+    "score": "98-92",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "9:03.0",
+    "score": "98-92",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:00.0",
+    "score": "98-92",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 4,
+    "time": "8:53.0",
+    "score": "98-92",
+    "team": "Kings",
+    "description": "Personal foul by D. Barlow (drawn by D. DeRozan)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "98-92",
+    "team": "Kings",
+    "description": "Turnover by Z. LaVine (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:40.0",
+    "score": "98-92",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass; steal by Z. LaVine)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:21.0",
+    "score": "100-92",
+    "team": "Kings",
+    "description": "P. Achiuwa makes 2-pt jump shot from 7 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:13.0",
+    "score": "100-92",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:13.0",
+    "score": "100-92",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "8:13.0",
+    "score": "100-92",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "8:00.0",
+    "score": "100-92",
+    "team": "76ers",
+    "description": "Personal foul by M. Raynaud (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:49.0",
+    "score": "100-92",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by Z. LaVine)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:44.0",
+    "score": "102-92",
+    "team": "Kings",
+    "description": "Z. LaVine makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:44.0",
+    "score": "102-92",
+    "team": "Kings",
+    "description": "Shooting foul by T. Maxey (drawn by Z. LaVine)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:44.0",
+    "score": "103-92",
+    "team": "Kings",
+    "description": "Z. LaVine makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "103-92",
+    "team": "76ers",
+    "description": "Def 3 sec tech foul by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "103-93",
+    "team": "76ers",
+    "description": "T. Maxey makes technical free throw"
+  },
+  {
+    "quarter": 4,
+    "time": "7:23.0",
+    "score": "103-93",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:19.0",
+    "score": "103-93",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 4,
+    "time": "7:00.0",
+    "score": "103-93",
+    "team": "Kings",
+    "description": "D. DeRozan misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:58.0",
+    "score": "103-93",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "6:53.0",
+    "score": "103-93",
+    "team": "76ers",
+    "description": "Personal foul by D. DeRozan (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:44.0",
+    "score": "103-95",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 4 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:27.0",
+    "score": "103-95",
+    "team": "Kings",
+    "description": "Z. LaVine misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:24.0",
+    "score": "103-95",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "6:14.0",
+    "score": "103-95",
+    "team": "76ers",
+    "description": "Shooting foul by M. Raynaud (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:14.0",
+    "score": "103-96",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:14.0",
+    "score": "103-97",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:07.0",
+    "score": "103-97",
+    "team": "Kings",
+    "description": "Offensive foul by Z. LaVine (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:07.0",
+    "score": "103-97",
+    "team": "Kings",
+    "description": "Turnover by Z. LaVine (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:07.0",
+    "score": "103-97",
+    "team": "Kings",
+    "description": "D. Sabonis enters the game for K. Ellis"
+  },
+  {
+    "quarter": 4,
+    "time": "6:07.0",
+    "score": "103-97",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der enters the game for M. Raynaud"
+  },
+  {
+    "quarter": 4,
+    "time": "5:56.0",
+    "score": "103-99",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:55.0",
+    "score": "103-99",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "5:32.0",
+    "score": "103-99",
+    "team": "Kings",
+    "description": "Z. LaVine misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "103-99",
+    "team": "Kings",
+    "description": "Offensive rebound by D. Sabonis"
+  },
+  {
+    "quarter": 4,
+    "time": "5:24.0",
+    "score": "103-99",
+    "team": "Kings",
+    "description": "Turnover by D. Sabonis (bad pass; steal by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "103-99",
+    "team": "76ers",
+    "description": "Personal foul by P. Achiuwa (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "103-100",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "103-101",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:13.0",
+    "score": "105-101",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:58.0",
+    "score": "105-101",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "105-101",
+    "team": "Kings",
+    "description": "Defensive rebound by P. Achiuwa"
+  },
+  {
+    "quarter": 4,
+    "time": "4:36.0",
+    "score": "105-101",
+    "team": "Kings",
+    "description": "Turnover by Z. LaVine (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:13.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:55.0",
+    "score": "105-103",
+    "team": "Kings",
+    "description": "Turnover by D. Schr\u00f6der (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:48.0",
+    "score": "105-103",
+    "team": "76ers",
+    "description": "Shooting foul by D. Schr\u00f6der (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:48.0",
+    "score": "105-104",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:48.0",
+    "score": "105-104",
+    "team": "Kings",
+    "description": "D. Cardwell enters the game for P. Achiuwa"
+  },
+  {
+    "quarter": 4,
+    "time": "3:48.0",
+    "score": "105-105",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "108-105",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der makes 3-pt jump shot from 28 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:11.0",
+    "score": "108-107",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 3 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:47.0",
+    "score": "108-107",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:43.0",
+    "score": "108-107",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "2:30.0",
+    "score": "108-107",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 7 ft (block by D. Cardwell)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:29.0",
+    "score": "108-107",
+    "team": "Kings",
+    "description": "Defensive rebound by D. DeRozan"
+  },
+  {
+    "quarter": 4,
+    "time": "2:11.0",
+    "score": "108-107",
+    "team": "Kings",
+    "description": "D. Sabonis misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:10.0",
+    "score": "108-107",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:57.0",
+    "score": "108-109",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:57.0",
+    "score": "108-109",
+    "team": "Kings",
+    "description": "Sacramento full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:35.0",
+    "score": "108-109",
+    "team": "Kings",
+    "description": "Z. LaVine misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "108-109",
+    "team": "Kings",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "1:21.0",
+    "score": "111-109",
+    "team": "Kings",
+    "description": "Z. LaVine makes 3-pt jump shot from 26 ft (assist by D. DeRozan)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "111-109",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "111-109",
+    "team": "Kings",
+    "description": "Defensive rebound by D. Cardwell"
+  },
+  {
+    "quarter": 4,
+    "time": "0:36.0",
+    "score": "111-109",
+    "team": "Kings",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:32.0",
+    "score": "111-109",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "111-109",
+    "team": "76ers",
+    "description": "Shooting foul by Z. LaVine (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "111-110",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "111-111",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "111-111",
+    "team": "Kings",
+    "description": "D. DeRozan misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "111-111",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "111-111",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "111-111",
+    "team": "Kings",
+    "description": "P. Achiuwa enters the game for D. DeRozan"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "111-111",
+    "team": "Kings",
+    "description": "K. Ellis enters the game for Z. LaVine"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "111-113",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "111-113",
+    "team": "76ers",
+    "description": "Shooting foul by P. Achiuwa (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "111-113",
+    "team": "Kings",
+    "description": "D. DeRozan enters the game for P. Achiuwa"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "111-113",
+    "team": "Kings",
+    "description": "Z. LaVine enters the game for D. Cardwell"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "111-113",
+    "team": "76ers",
+    "description": "T. Maxey misses free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "111-113",
+    "team": "Kings",
+    "description": "Defensive rebound by Z. LaVine"
+  }
+]

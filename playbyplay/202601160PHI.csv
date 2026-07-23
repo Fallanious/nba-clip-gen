@@ -1,0 +1,432 @@
+quarter,time,score,team,description
+1,11:41.0,2-0,Cavaliers,E. Mobley makes 2-pt dunk from 1 ft (assist by D. Mitchell)
+1,11:19.0,2-2,76ers,V. Edgecombe makes 2-pt jump shot from 17 ft
+1,10:59.0,4-2,Cavaliers,E. Mobley makes 2-pt hook shot from 13 ft
+1,10:36.0,4-4,76ers,J. Embiid makes 2-pt jump shot from 22 ft (assist by P. George)
+1,10:20.0,6-4,Cavaliers,C. Porter makes 2-pt jump shot from 11 ft
+1,9:59.0,6-6,76ers,J. Embiid makes 2-pt jump shot from 18 ft
+1,9:43.0,6-6,Cavaliers,J. Tyson misses 3-pt jump shot from 26 ft
+1,9:42.0,6-6,Cavaliers,Offensive rebound by C. Porter
+1,9:36.0,8-6,Cavaliers,J. Tyson makes 2-pt jump shot from 7 ft (assist by C. Porter)
+1,9:24.0,8-6,76ers,Personal foul by J. Tyson (drawn by P. George)
+1,9:14.0,8-6,76ers,P. George misses 3-pt jump shot from 24 ft
+1,9:10.0,8-6,Cavaliers,Defensive rebound by J. Tyson
+1,9:02.0,8-6,Cavaliers,C. Porter misses 2-pt layup from 2 ft (block by D. Barlow)
+1,9:00.0,8-6,Cavaliers,Offensive rebound by C. Porter
+1,8:59.0,8-6,Cavaliers,Turnover by J. Tyson (bad pass; steal by T. Maxey)
+1,8:54.0,8-9,76ers,P. George makes 3-pt jump shot from 24 ft (assist by T. Maxey)
+1,8:42.0,8-9,Cavaliers,Personal foul by V. Edgecombe (drawn by D. Mitchell)
+1,8:28.0,8-9,Cavaliers,Turnover by C. Porter (bad pass; steal by D. Barlow)
+1,8:25.0,8-11,76ers,D. Barlow makes 2-pt dunk from 1 ft (assist by P. George)
+1,8:08.0,11-11,Cavaliers,J. Tyson makes 3-pt jump shot from 27 ft (assist by E. Mobley)
+1,7:51.0,11-11,76ers,D. Barlow misses 2-pt jump shot from 14 ft
+1,7:48.0,11-11,Cavaliers,Defensive rebound by J. Allen
+1,7:39.0,11-11,Cavaliers,Turnover by D. Mitchell (lost ball; steal by D. Barlow)
+1,7:35.0,11-14,76ers,V. Edgecombe makes 3-pt jump shot from 24 ft (assist by T. Maxey)
+1,7:33.0,11-14,Cavaliers,Cleveland full timeout
+1,7:14.0,11-14,Cavaliers,Shooting foul by P. George (drawn by J. Tyson)
+1,7:14.0,12-14,Cavaliers,J. Tyson makes free throw 1 of 2
+1,7:14.0,13-14,Cavaliers,J. Tyson makes free throw 2 of 2
+1,6:59.0,13-16,76ers,T. Maxey makes 2-pt jump shot from 11 ft (assist by V. Edgecombe)
+1,6:52.0,16-16,Cavaliers,D. Mitchell makes 3-pt jump shot from 27 ft (assist by C. Porter)
+1,6:36.0,16-18,76ers,P. George makes 2-pt jump shot from 19 ft
+1,6:24.0,16-18,Cavaliers,Turnover by E. Mobley (bad pass)
+1,6:11.0,16-20,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)
+1,5:53.0,19-20,Cavaliers,J. Tyson makes 3-pt jump shot from 25 ft (assist by C. Porter)
+1,5:36.0,19-22,76ers,J. Embiid makes 2-pt jump shot from 20 ft (assist by T. Maxey)
+1,5:25.0,21-22,Cavaliers,J. Allen makes 2-pt dunk from 2 ft (assist by D. Mitchell)
+1,5:05.0,21-22,76ers,J. Embiid misses 3-pt jump shot from 27 ft
+1,5:03.0,21-22,Cavaliers,Defensive rebound by J. Tyson
+1,4:50.0,21-22,Cavaliers,J. Tyson misses 3-pt jump shot from 26 ft
+1,4:48.0,21-22,76ers,Defensive rebound by Team
+1,4:48.0,21-22,Cavaliers,D. Hunter enters the game for D. Mitchell
+1,4:48.0,21-22,Cavaliers,N. Tomlin enters the game for E. Mobley
+1,4:37.0,21-22,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,4:35.0,21-22,76ers,Offensive rebound by D. Barlow
+1,4:32.0,21-22,76ers,D. Barlow misses 2-pt layup from 1 ft
+1,4:30.0,21-22,Cavaliers,Defensive rebound by N. Tomlin
+1,4:27.0,21-22,Cavaliers,Turnover by J. Tyson (bad pass; steal by P. George)
+1,4:26.0,21-24,76ers,P. George makes 2-pt layup from 2 ft
+1,4:15.0,21-24,Cavaliers,Turnover by J. Tyson (bad pass; steal by D. Barlow)
+1,4:06.0,21-24,76ers,Shooting foul by N. Tomlin (drawn by J. Embiid)
+1,4:06.0,21-25,76ers,J. Embiid makes free throw 1 of 2
+1,4:06.0,21-25,Cavaliers,L. Ball enters the game for C. Porter
+1,4:06.0,21-25,76ers,Q. Grimes enters the game for D. Barlow
+1,4:06.0,21-25,76ers,K. Oubre enters the game for P. George
+1,4:06.0,21-26,76ers,J. Embiid makes free throw 2 of 2
+1,3:52.0,23-26,Cavaliers,J. Tyson makes 2-pt dunk from 1 ft (assist by J. Allen)
+1,3:40.0,23-26,76ers,J. Embiid misses 2-pt layup from 3 ft
+1,3:39.0,23-26,76ers,Offensive rebound by J. Embiid
+1,3:38.0,23-26,76ers,Shooting foul by N. Tomlin (drawn by J. Embiid)
+1,3:38.0,23-27,76ers,J. Embiid makes free throw 1 of 2
+1,3:38.0,23-27,76ers,J. Walker enters the game for V. Edgecombe
+1,3:38.0,23-28,76ers,J. Embiid makes free throw 2 of 2
+1,3:24.0,23-28,Cavaliers,N. Tomlin misses 3-pt jump shot from 24 ft
+1,3:21.0,23-28,76ers,Defensive rebound by J. Walker
+1,3:13.0,23-31,76ers,J. Embiid makes 3-pt jump shot from 26 ft
+1,3:03.0,25-31,Cavaliers,J. Allen makes 2-pt jump shot from 8 ft (assist by D. Hunter)
+1,2:39.0,25-31,76ers,J. Embiid misses 2-pt jump shot from 20 ft
+1,2:36.0,25-31,Cavaliers,Defensive rebound by N. Tomlin
+1,2:30.0,25-31,Cavaliers,Turnover by J. Allen (lost ball; steal by T. Maxey)
+1,2:26.0,25-31,76ers,Turnover by T. Maxey (out of bounds lost ball)
+1,2:26.0,25-31,76ers,Philadelphia full timeout
+1,2:26.0,25-31,Cavaliers,D. Mitchell enters the game for J. Allen
+1,2:26.0,25-31,Cavaliers,E. Mobley enters the game for J. Tyson
+1,2:26.0,25-31,76ers,A. Bona enters the game for J. Embiid
+1,2:13.0,25-31,Cavaliers,D. Mitchell misses 2-pt jump shot from 21 ft
+1,2:11.0,25-31,76ers,Defensive rebound by T. Maxey
+1,2:07.0,25-31,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,2:05.0,25-31,76ers,Offensive rebound by A. Bona
+1,2:04.0,25-31,76ers,A. Bona misses 2-pt layup at rim (block by E. Mobley)
+1,2:03.0,25-31,Cavaliers,Defensive rebound by D. Mitchell
+1,2:02.0,25-31,Cavaliers,N. Tomlin misses 2-pt layup at rim
+1,2:01.0,25-31,76ers,Defensive rebound by J. Walker
+1,1:47.0,25-31,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+1,1:45.0,25-31,Cavaliers,Defensive rebound by L. Ball
+1,1:42.0,25-31,Cavaliers,N. Tomlin misses 2-pt layup from 2 ft (block by T. Maxey)
+1,1:38.0,25-31,76ers,Defensive rebound by A. Bona
+1,1:30.0,25-31,76ers,T. Maxey misses 2-pt jump shot from 8 ft
+1,1:28.0,25-31,Cavaliers,Defensive rebound by D. Mitchell
+1,1:24.0,25-31,Cavaliers,Turnover by D. Mitchell (bad pass; steal by T. Maxey)
+1,1:05.0,25-31,76ers,J. Walker misses 2-pt jump shot from 14 ft (block by D. Hunter)
+1,1:02.0,25-31,Cavaliers,Defensive rebound by E. Mobley
+1,0:46.0,28-31,Cavaliers,E. Mobley makes 3-pt jump shot from 27 ft (assist by D. Mitchell)
+1,0:34.0,28-31,76ers,T. Maxey misses 2-pt layup from 3 ft (block by E. Mobley)
+1,0:30.0,28-31,Cavaliers,Defensive rebound by L. Ball
+1,0:26.0,31-31,Cavaliers,D. Hunter makes 3-pt jump shot from 27 ft (assist by D. Mitchell)
+1,0:09.0,31-31,76ers,K. Oubre misses 3-pt jump shot from 28 ft
+1,0:06.0,31-31,76ers,Offensive rebound by A. Bona
+1,0:04.0,31-31,76ers,J. Walker misses 3-pt jump shot from 27 ft
+1,0:02.0,31-31,Cavaliers,Defensive rebound by D. Mitchell
+1,0:00.0,31-31,Cavaliers,Team misses heave shot
+1,0:00.0,31-31,Cavaliers,Offensive rebound by Team
+2,11:48.0,31-31,76ers,Def 3 sec tech foul by Team
+2,11:48.0,31-32,76ers,Q. Grimes makes technical free throw
+2,11:42.0,31-32,76ers,P. George misses 3-pt jump shot from 28 ft
+2,11:40.0,31-32,76ers,Offensive rebound by K. Oubre
+2,11:38.0,31-32,76ers,Shooting foul by D. Hunter (drawn by K. Oubre)
+2,11:38.0,31-33,76ers,K. Oubre makes free throw 1 of 2
+2,11:38.0,31-34,76ers,K. Oubre makes free throw 2 of 2
+2,11:19.0,31-34,Cavaliers,D. Hunter misses 3-pt jump shot from 26 ft
+2,11:14.0,31-34,76ers,Defensive rebound by Team
+2,11:14.0,31-34,Cavaliers,T. Proctor enters the game for L. Ball
+2,11:14.0,31-34,Cavaliers,J. Tyson enters the game for D. Hunter
+2,11:00.0,31-36,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by P. George)
+2,10:47.0,33-36,Cavaliers,J. Tyson makes 2-pt jump shot from 12 ft (assist by D. Mitchell)
+2,10:32.0,33-36,76ers,Turnover by V. Edgecombe (bad pass; steal by T. Proctor)
+2,10:32.0,33-36,Cavaliers,Personal foul by Q. Grimes (drawn by D. Mitchell)
+2,10:21.0,33-36,Cavaliers,Turnover by D. Mitchell (bad pass)
+2,10:11.0,33-38,76ers,A. Bona makes 2-pt dunk from 1 ft (assist by Q. Grimes)
+2,9:52.0,33-38,Cavaliers,J. Tyson misses 2-pt layup from 2 ft (block by A. Bona)
+2,9:50.0,33-38,76ers,Defensive rebound by P. George
+2,9:47.0,33-38,76ers,Turnover by P. George (bad pass; steal by D. Mitchell)
+2,9:42.0,33-38,Cavaliers,T. Proctor misses 2-pt layup from 3 ft (block by A. Bona)
+2,9:39.0,33-38,Cavaliers,Offensive rebound by E. Mobley
+2,9:36.0,33-38,Cavaliers,T. Proctor misses 3-pt jump shot from 22 ft
+2,9:34.0,33-38,Cavaliers,Offensive rebound by E. Mobley
+2,9:33.0,33-38,Cavaliers,D. Mitchell misses 3-pt jump shot from 28 ft
+2,9:30.0,33-38,76ers,Defensive rebound by V. Edgecombe
+2,9:21.0,33-41,76ers,P. George makes 3-pt jump shot from 27 ft (assist by K. Oubre)
+2,9:17.0,33-41,Cavaliers,Cleveland full timeout
+2,9:17.0,33-41,Cavaliers,D. Hunter enters the game for N. Tomlin
+2,9:01.0,33-41,Cavaliers,Personal foul by K. Oubre (drawn by D. Mitchell)
+2,8:53.0,33-41,Cavaliers,Cleveland full timeout
+2,8:46.0,33-41,Cavaliers,D. Hunter misses 2-pt jump shot from 19 ft
+2,8:43.0,33-41,76ers,Defensive rebound by A. Bona
+2,8:25.0,33-41,76ers,P. George misses 2-pt jump shot from 21 ft
+2,8:22.0,33-41,Cavaliers,Defensive rebound by D. Hunter
+2,8:09.0,33-41,Cavaliers,E. Mobley misses 3-pt jump shot from 26 ft
+2,8:05.0,33-41,76ers,Defensive rebound by V. Edgecombe
+2,7:59.0,33-43,76ers,A. Bona makes 2-pt layup from 2 ft (assist by V. Edgecombe)
+2,7:46.0,36-43,Cavaliers,T. Proctor makes 3-pt jump shot from 26 ft (assist by D. Mitchell)
+2,7:31.0,36-43,76ers,Turnover by V. Edgecombe (lost ball; steal by T. Proctor)
+2,7:28.0,38-43,Cavaliers,T. Proctor makes 2-pt dunk from 1 ft
+2,7:12.0,38-43,76ers,Turnover by K. Oubre (bad pass; steal by D. Hunter)
+2,7:08.0,38-43,Cavaliers,Personal foul by V. Edgecombe (drawn by D. Mitchell)
+2,7:08.0,38-43,Cavaliers,J. Allen enters the game for D. Mitchell
+2,7:08.0,38-43,Cavaliers,C. Porter enters the game for E. Mobley
+2,6:59.0,38-43,Cavaliers,D. Hunter misses 3-pt jump shot from 25 ft
+2,6:57.0,38-43,Cavaliers,Offensive rebound by J. Allen
+2,6:52.0,41-43,Cavaliers,J. Tyson makes 3-pt jump shot from 24 ft (assist by T. Proctor)
+2,6:50.0,41-43,76ers,Philadelphia full timeout
+2,6:50.0,41-43,76ers,D. Barlow enters the game for A. Bona
+2,6:50.0,41-43,76ers,J. Embiid enters the game for V. Edgecombe
+2,6:50.0,41-43,76ers,T. Maxey enters the game for K. Oubre
+2,6:31.0,41-43,76ers,J. Embiid misses 2-pt jump shot from 15 ft
+2,6:28.0,41-43,Cavaliers,Defensive rebound by T. Proctor
+2,6:21.0,41-43,Cavaliers,Shooting foul by Q. Grimes (drawn by C. Porter)
+2,6:21.0,41-43,Cavaliers,C. Porter misses free throw 1 of 2
+2,6:21.0,41-43,Cavaliers,Offensive rebound by Team
+2,6:21.0,41-43,Cavaliers,C. Porter misses free throw 2 of 2
+2,6:19.0,41-43,76ers,Defensive rebound by P. George
+2,5:57.0,41-45,76ers,J. Embiid makes 2-pt jump shot from 13 ft (assist by T. Maxey)
+2,5:48.0,43-45,Cavaliers,D. Hunter makes 2-pt layup from 2 ft (assist by C. Porter)
+2,5:36.0,43-45,76ers,Personal foul by D. Hunter (drawn by J. Embiid)
+2,5:31.0,43-45,76ers,Shooting foul by J. Allen (drawn by J. Embiid)
+2,5:31.0,43-46,76ers,J. Embiid makes free throw 1 of 2
+2,5:31.0,43-46,76ers,T. Watford enters the game for P. George
+2,5:31.0,43-47,76ers,J. Embiid makes free throw 2 of 2
+2,5:20.0,46-47,Cavaliers,T. Proctor makes 3-pt jump shot from 24 ft (assist by D. Hunter)
+2,5:04.0,46-47,76ers,J. Embiid misses 2-pt jump shot from 20 ft
+2,5:03.0,46-47,Cavaliers,Defensive rebound by D. Hunter
+2,4:48.0,46-47,Cavaliers,J. Allen misses 2-pt layup from 2 ft
+2,4:47.0,46-47,76ers,Defensive rebound by T. Maxey
+2,4:41.0,46-49,76ers,T. Watford makes 2-pt layup from 3 ft (assist by T. Maxey)
+2,4:28.0,46-49,Cavaliers,C. Porter misses 2-pt jump shot from 8 ft
+2,4:25.0,46-49,76ers,Defensive rebound by Q. Grimes
+2,4:16.0,46-49,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+2,4:14.0,46-49,Cavaliers,Defensive rebound by T. Proctor
+2,4:01.0,48-49,Cavaliers,D. Hunter makes 2-pt jump shot from 16 ft (assist by C. Porter)
+2,3:50.0,48-49,76ers,Personal foul by T. Proctor (drawn by T. Watford)
+2,3:50.0,48-49,Cavaliers,D. Mitchell enters the game for C. Porter
+2,3:50.0,48-49,Cavaliers,E. Mobley enters the game for T. Proctor
+2,3:50.0,48-49,76ers,V. Edgecombe enters the game for Q. Grimes
+2,3:42.0,48-49,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+2,3:39.0,48-49,76ers,Offensive rebound by T. Watford
+2,3:34.0,48-49,76ers,J. Embiid misses 2-pt hook shot from 4 ft
+2,3:32.0,48-49,Cavaliers,Defensive rebound by D. Mitchell
+2,3:25.0,51-49,Cavaliers,D. Mitchell makes 3-pt jump shot from 26 ft (assist by E. Mobley)
+2,3:12.0,51-52,76ers,T. Maxey makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)
+2,2:56.0,51-52,Cavaliers,Personal foul by T. Watford (drawn by J. Allen)
+2,2:56.0,52-52,Cavaliers,J. Allen makes free throw 1 of 2
+2,2:56.0,53-52,Cavaliers,J. Allen makes free throw 2 of 2
+2,2:56.0,53-52,76ers,P. George enters the game for D. Barlow
+2,2:32.0,53-52,76ers,Turnover by Team (shot clock)
+2,2:20.0,53-52,Cavaliers,Turnover by D. Mitchell (lost ball; steal by T. Maxey)
+2,2:17.0,53-54,76ers,T. Maxey makes 2-pt dunk from 3 ft
+2,2:03.0,53-54,Cavaliers,Personal foul by V. Edgecombe (drawn by J. Tyson)
+2,2:03.0,54-54,Cavaliers,J. Tyson makes free throw 1 of 2
+2,2:03.0,54-54,76ers,Q. Grimes enters the game for V. Edgecombe
+2,2:03.0,55-54,Cavaliers,J. Tyson makes free throw 2 of 2
+2,1:42.0,55-54,76ers,Q. Grimes misses 3-pt jump shot from 24 ft
+2,1:41.0,55-54,Cavaliers,Defensive rebound by Team
+2,1:29.0,55-54,Cavaliers,E. Mobley misses 3-pt jump shot from 26 ft
+2,1:26.0,55-54,76ers,Defensive rebound by Q. Grimes
+2,1:19.0,55-54,76ers,Shooting foul by E. Mobley (drawn by J. Embiid)
+2,1:19.0,55-55,76ers,J. Embiid makes free throw 1 of 2
+2,1:19.0,55-56,76ers,J. Embiid makes free throw 2 of 2
+2,1:09.0,55-56,Cavaliers,D. Mitchell misses 3-pt jump shot from 25 ft
+2,1:06.0,55-56,76ers,Defensive rebound by Q. Grimes
+2,0:50.0,55-56,76ers,J. Embiid misses 2-pt jump shot from 15 ft (block by E. Mobley)
+2,0:47.0,55-56,76ers,Offensive rebound by J. Embiid
+2,0:45.0,55-59,76ers,Q. Grimes makes 3-pt jump shot from 27 ft (assist by J. Embiid)
+2,0:35.0,55-59,Cavaliers,Turnover by D. Mitchell (bad pass)
+2,0:32.0,55-59,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+2,0:30.0,55-59,Cavaliers,Defensive rebound by D. Mitchell
+2,0:09.0,55-59,Cavaliers,Turnover by D. Hunter (lost ball; steal by P. George)
+2,0:03.0,55-62,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by T. Watford)
+2,0:00.0,55-62,Cavaliers,D. Hunter misses 3-pt jump shot from 27 ft
+2,0:00.0,55-62,Cavaliers,Offensive rebound by Team
+3,11:48.0,55-62,76ers,P. George misses 3-pt jump shot from 27 ft
+3,11:46.0,55-62,76ers,Offensive rebound by J. Embiid
+3,11:38.0,55-64,76ers,J. Embiid makes 2-pt jump shot from 18 ft
+3,11:25.0,55-64,Cavaliers,E. Mobley misses 2-pt layup from 4 ft
+3,11:24.0,55-64,Cavaliers,Offensive rebound by Team
+3,11:24.0,55-64,Cavaliers,Turnover by E. Mobley (traveling)
+3,11:02.0,55-66,76ers,J. Embiid makes 2-pt jump shot from 20 ft (assist by P. George)
+3,10:48.0,58-66,Cavaliers,J. Tyson makes 3-pt jump shot from 24 ft (assist by C. Porter)
+3,10:40.0,58-66,76ers,Philadelphia full timeout
+3,10:40.0,58-66,76ers,Instant Replay (Challenge: Ruling Stands)
+3,10:40.0,58-66,76ers,Personal foul by D. Mitchell (drawn by P. George)
+3,10:28.0,58-66,76ers,T. Maxey misses 2-pt jump shot from 11 ft
+3,10:25.0,58-66,76ers,Offensive rebound by T. Maxey
+3,10:15.0,58-66,76ers,J. Embiid misses 2-pt jump shot from 10 ft
+3,10:12.0,58-66,Cavaliers,Defensive rebound by Team
+3,10:00.0,58-66,Cavaliers,Shooting foul by T. Maxey (drawn by D. Mitchell)
+3,10:00.0,58-66,Cavaliers,D. Mitchell misses free throw 1 of 2
+3,10:00.0,58-66,Cavaliers,Offensive rebound by Team
+3,10:00.0,59-66,Cavaliers,D. Mitchell makes free throw 2 of 2
+3,9:46.0,59-66,76ers,Turnover by V. Edgecombe (bad pass)
+3,9:27.0,59-66,Cavaliers,E. Mobley misses 2-pt jump shot from 5 ft
+3,9:25.0,59-66,Cavaliers,Offensive rebound by J. Tyson
+3,9:19.0,62-66,Cavaliers,J. Tyson makes 3-pt jump shot from 25 ft (assist by D. Mitchell)
+3,9:01.0,62-66,76ers,Turnover by J. Embiid (bad pass; steal by J. Allen)
+3,8:57.0,62-66,Cavaliers,D. Mitchell misses 3-pt jump shot from 24 ft
+3,8:54.0,62-66,76ers,Defensive rebound by Team
+3,8:38.0,62-69,76ers,J. Embiid makes 3-pt jump shot from 23 ft (assist by P. George)
+3,8:25.0,62-69,Cavaliers,E. Mobley misses 3-pt jump shot from 26 ft
+3,8:22.0,62-69,76ers,Defensive rebound by Team
+3,8:12.0,62-69,76ers,P. George misses 3-pt jump shot from 27 ft
+3,8:10.0,62-69,76ers,Offensive rebound by D. Barlow
+3,7:59.0,62-69,76ers,J. Embiid misses 2-pt jump shot from 20 ft
+3,7:55.0,62-69,Cavaliers,Defensive rebound by J. Allen
+3,7:48.0,64-69,Cavaliers,J. Allen makes 2-pt layup from 3 ft (assist by C. Porter)
+3,7:27.0,64-71,76ers,J. Embiid makes 2-pt jump shot from 19 ft (assist by T. Maxey)
+3,7:10.0,64-71,Cavaliers,J. Allen misses 2-pt hook shot from 7 ft
+3,7:07.0,64-71,76ers,Defensive rebound by J. Embiid
+3,7:01.0,64-73,76ers,T. Maxey makes 2-pt layup from 3 ft
+3,7:01.0,64-73,Cavaliers,Cleveland full timeout
+3,7:01.0,64-73,Cavaliers,D. Hunter enters the game for D. Mitchell
+3,7:01.0,64-73,Cavaliers,N. Tomlin enters the game for E. Mobley
+3,7:01.0,64-73,76ers,Q. Grimes enters the game for D. Barlow
+3,7:01.0,64-73,76ers,K. Oubre enters the game for P. George
+3,6:36.0,66-73,Cavaliers,J. Tyson makes 2-pt jump shot from 17 ft (assist by D. Hunter)
+3,6:14.0,66-73,76ers,Shooting foul by N. Tomlin (drawn by Q. Grimes)
+3,6:14.0,66-74,76ers,Q. Grimes makes free throw 1 of 2
+3,6:14.0,66-74,76ers,Q. Grimes misses free throw 2 of 2
+3,6:12.0,66-74,Cavaliers,Defensive rebound by J. Allen
+3,5:59.0,68-74,Cavaliers,N. Tomlin makes 2-pt dunk from 1 ft (assist by J. Tyson)
+3,5:59.0,68-74,Cavaliers,Shooting foul by K. Oubre (drawn by N. Tomlin)
+3,5:59.0,69-74,Cavaliers,N. Tomlin makes free throw 1 of 1
+3,5:46.0,69-74,76ers,T. Maxey misses 2-pt jump shot from 5 ft
+3,5:45.0,69-74,Cavaliers,Defensive rebound by J. Allen
+3,5:39.0,71-74,Cavaliers,D. Hunter makes 2-pt layup from 4 ft (assist by C. Porter)
+3,5:26.0,71-74,76ers,J. Embiid misses 2-pt hook shot from 2 ft
+3,5:24.0,71-74,76ers,Offensive rebound by K. Oubre
+3,5:22.0,71-76,76ers,K. Oubre makes 2-pt layup at rim
+3,5:07.0,71-76,Cavaliers,Turnover by J. Tyson (lost ball; steal by K. Oubre)
+3,5:04.0,71-76,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+3,5:00.0,71-76,Cavaliers,Defensive rebound by J. Tyson
+3,4:56.0,71-76,Cavaliers,Shooting foul by Q. Grimes (drawn by J. Tyson)
+3,4:56.0,72-76,Cavaliers,J. Tyson makes free throw 1 of 2
+3,4:56.0,73-76,Cavaliers,J. Tyson makes free throw 2 of 2
+3,4:41.0,73-76,76ers,Shooting foul by J. Allen (drawn by J. Embiid)
+3,4:41.0,73-77,76ers,J. Embiid makes free throw 1 of 2
+3,4:41.0,73-77,76ers,T. Watford enters the game for V. Edgecombe
+3,4:41.0,73-78,76ers,J. Embiid makes free throw 2 of 2
+3,4:22.0,73-78,Cavaliers,N. Tomlin misses 2-pt dunk from 2 ft
+3,4:20.0,73-78,Cavaliers,Offensive rebound by J. Allen
+3,4:14.0,75-78,Cavaliers,J. Tyson makes 2-pt jump shot from 5 ft (assist by C. Porter)
+3,3:56.0,75-78,76ers,T. Maxey misses 2-pt jump shot from 11 ft
+3,3:54.0,75-78,Cavaliers,Defensive rebound by N. Tomlin
+3,3:38.0,75-78,Cavaliers,C. Porter misses 2-pt jump shot from 12 ft
+3,3:36.0,75-78,76ers,Defensive rebound by J. Embiid
+3,3:32.0,75-78,76ers,Shooting foul by J. Allen (drawn by J. Embiid)
+3,3:32.0,75-78,76ers,J. Embiid misses free throw 1 of 2
+3,3:32.0,75-78,76ers,Offensive rebound by Team
+3,3:32.0,75-78,Cavaliers,L. Ball enters the game for J. Allen
+3,3:32.0,75-78,Cavaliers,D. Mitchell enters the game for C. Porter
+3,3:32.0,75-78,Cavaliers,E. Mobley enters the game for J. Tyson
+3,3:32.0,75-79,76ers,J. Embiid makes free throw 2 of 2
+3,3:19.0,75-79,Cavaliers,L. Ball misses 2-pt jump shot from 13 ft
+3,3:16.0,75-79,76ers,Defensive rebound by Q. Grimes
+3,3:13.0,75-81,76ers,K. Oubre makes 2-pt layup from 1 ft (assist by Q. Grimes)
+3,2:56.0,75-81,Cavaliers,D. Hunter misses 2-pt layup from 5 ft (block by J. Embiid)
+3,2:54.0,75-81,76ers,Defensive rebound by Q. Grimes
+3,2:49.0,75-83,76ers,Q. Grimes makes 2-pt layup from 4 ft
+3,2:27.0,77-83,Cavaliers,N. Tomlin makes 2-pt jump shot from 8 ft (assist by E. Mobley)
+3,2:03.0,77-83,76ers,Q. Grimes misses 3-pt jump shot from 28 ft
+3,2:01.0,77-83,Cavaliers,Defensive rebound by L. Ball
+3,1:54.0,79-83,Cavaliers,E. Mobley makes 2-pt dunk from 2 ft (assist by D. Mitchell)
+3,1:39.0,79-86,76ers,K. Oubre makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+3,1:23.0,81-86,Cavaliers,N. Tomlin makes 2-pt dunk from 2 ft (assist by D. Hunter)
+3,1:03.0,81-86,76ers,J. Embiid misses 2-pt layup from 5 ft
+3,1:01.0,81-86,76ers,Offensive rebound by T. Watford
+3,1:00.0,81-88,76ers,T. Watford makes 2-pt layup at rim
+3,1:00.0,81-88,76ers,A. Bona enters the game for J. Embiid
+3,0:44.0,81-88,Cavaliers,Shooting foul by A. Bona (drawn by E. Mobley)
+3,0:44.0,82-88,Cavaliers,E. Mobley makes free throw 1 of 2
+3,0:44.0,82-88,Cavaliers,E. Mobley misses free throw 2 of 2
+3,0:43.0,82-88,76ers,Defensive rebound by T. Maxey
+3,0:35.0,82-88,76ers,Turnover by T. Watford (bad pass; steal by L. Ball)
+3,0:31.0,84-88,Cavaliers,N. Tomlin makes 2-pt dunk from 1 ft (assist by L. Ball)
+3,0:09.0,84-91,76ers,T. Maxey makes 3-pt jump shot from 26 ft (assist by T. Watford)
+3,0:01.0,84-91,Cavaliers,N. Tomlin misses 3-pt jump shot from 25 ft
+3,0:00.0,84-91,Cavaliers,Offensive rebound by Team
+4,11:48.0,84-91,Cavaliers,Cleveland full timeout
+4,11:42.0,87-91,Cavaliers,D. Mitchell makes 3-pt jump shot from 28 ft (assist by E. Mobley)
+4,11:23.0,87-94,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+4,11:09.0,89-94,Cavaliers,T. Proctor makes 2-pt layup from 2 ft
+4,10:43.0,89-96,76ers,P. George makes 2-pt jump shot from 8 ft (assist by Q. Grimes)
+4,10:27.0,89-96,Cavaliers,Turnover by E. Mobley (bad pass)
+4,10:15.0,89-98,76ers,Q. Grimes makes 2-pt layup from 1 ft
+4,10:05.0,89-98,Cavaliers,D. Mitchell misses 2-pt jump shot from 17 ft
+4,10:01.0,89-98,Cavaliers,Offensive rebound by N. Tomlin
+4,9:59.0,89-98,Cavaliers,L. Ball misses 3-pt jump shot from 28 ft
+4,9:57.0,89-98,76ers,Defensive rebound by V. Edgecombe
+4,9:53.0,89-98,76ers,Q. Grimes misses 3-pt jump shot from 27 ft
+4,9:51.0,89-98,Cavaliers,Defensive rebound by Team
+4,9:35.0,89-98,Cavaliers,T. Proctor misses 3-pt jump shot from 27 ft
+4,9:31.0,89-98,76ers,Defensive rebound by P. George
+4,9:24.0,89-98,76ers,K. Oubre misses 3-pt jump shot from 26 ft
+4,9:22.0,89-98,Cavaliers,Defensive rebound by N. Tomlin
+4,9:15.0,89-98,Cavaliers,D. Mitchell misses 2-pt jump shot from 11 ft
+4,9:13.0,89-98,Cavaliers,Offensive rebound by D. Mitchell
+4,9:02.0,89-98,Cavaliers,L. Ball misses 3-pt jump shot from 28 ft
+4,8:59.0,89-98,76ers,Defensive rebound by P. George
+4,8:54.0,89-98,76ers,Personal foul by N. Tomlin (drawn by V. Edgecombe)
+4,8:54.0,89-98,Cavaliers,D. Hunter enters the game for L. Ball
+4,8:54.0,89-98,Cavaliers,J. Tyson enters the game for N. Tomlin
+4,8:47.0,89-100,76ers,P. George makes 2-pt jump shot from 10 ft (assist by V. Edgecombe)
+4,8:34.0,92-100,Cavaliers,T. Proctor makes 3-pt jump shot from 27 ft (assist by J. Tyson)
+4,8:14.0,92-102,76ers,Q. Grimes makes 2-pt layup from 3 ft
+4,8:09.0,92-102,Cavaliers,Personal foul by V. Edgecombe (drawn by D. Hunter)
+4,8:09.0,92-102,Cavaliers,J. Allen enters the game for E. Mobley
+4,8:09.0,92-102,Cavaliers,C. Porter enters the game for T. Proctor
+4,8:05.0,92-102,Cavaliers,D. Hunter misses 2-pt layup from 5 ft (block by A. Bona)
+4,8:04.0,92-102,Cavaliers,Offensive rebound by Team
+4,8:01.0,95-102,Cavaliers,D. Mitchell makes 3-pt jump shot from 23 ft (assist by C. Porter)
+4,7:50.0,95-102,76ers,Philadelphia full timeout
+4,7:50.0,95-102,76ers,T. Maxey enters the game for K. Oubre
+4,7:40.0,95-102,76ers,Q. Grimes misses 2-pt jump shot from 18 ft
+4,7:37.0,95-102,76ers,Offensive rebound by Team
+4,7:28.0,95-102,76ers,Personal foul by D. Hunter (drawn by P. George)
+4,7:25.0,95-102,76ers,Offensive foul by A. Bona (drawn by D. Hunter)
+4,7:25.0,95-102,76ers,Turnover by A. Bona (offensive foul)
+4,7:07.0,97-102,Cavaliers,J. Allen makes 2-pt layup from 2 ft (assist by C. Porter)
+4,6:49.0,97-102,76ers,Q. Grimes misses 2-pt layup from 2 ft
+4,6:48.0,97-102,Cavaliers,Defensive rebound by C. Porter
+4,6:34.0,97-102,Cavaliers,C. Porter misses 2-pt jump shot from 14 ft (block by V. Edgecombe)
+4,6:31.0,97-102,76ers,Defensive rebound by Q. Grimes
+4,6:29.0,97-102,76ers,T. Maxey misses 2-pt layup from 2 ft
+4,6:27.0,97-102,76ers,Offensive rebound by V. Edgecombe
+4,6:25.0,97-102,76ers,V. Edgecombe misses 2-pt layup at rim
+4,6:23.0,97-102,Cavaliers,Defensive rebound by D. Mitchell
+4,6:19.0,99-102,Cavaliers,J. Tyson makes 2-pt layup from 4 ft (assist by D. Mitchell)
+4,6:09.0,99-102,76ers,T. Maxey misses 3-pt jump shot from 23 ft
+4,6:07.0,99-102,Cavaliers,Defensive rebound by D. Mitchell
+4,5:53.0,102-102,Cavaliers,D. Hunter makes 3-pt jump shot from 27 ft
+4,5:40.0,102-102,76ers,Philadelphia full timeout
+4,5:40.0,102-102,Cavaliers,E. Mobley enters the game for C. Porter
+4,5:40.0,102-102,76ers,J. Embiid enters the game for A. Bona
+4,5:40.0,102-102,76ers,K. Oubre enters the game for P. George
+4,5:24.0,102-102,76ers,T. Maxey misses 2-pt jump shot from 8 ft
+4,5:22.0,102-102,Cavaliers,Defensive rebound by J. Allen
+4,5:14.0,102-102,Cavaliers,Turnover by J. Allen (bad pass; steal by T. Maxey)
+4,5:10.0,102-104,76ers,T. Maxey makes 2-pt layup from 2 ft
+4,5:08.0,102-104,Cavaliers,Turnover by D. Mitchell (inbound)
+4,4:59.0,102-107,76ers,K. Oubre makes 3-pt jump shot from 24 ft (assist by T. Maxey)
+4,4:44.0,102-107,Cavaliers,Turnover by E. Mobley (step out of bounds)
+4,4:31.0,102-109,76ers,J. Embiid makes 2-pt jump shot from 17 ft (assist by T. Maxey)
+4,4:18.0,102-109,Cavaliers,D. Mitchell misses 2-pt layup from 4 ft
+4,4:17.0,102-109,Cavaliers,Offensive rebound by E. Mobley
+4,4:16.0,104-109,Cavaliers,E. Mobley makes 2-pt dunk at rim
+4,3:53.0,104-111,76ers,T. Maxey makes 2-pt jump shot from 21 ft
+4,3:37.0,104-111,Cavaliers,D. Mitchell misses 2-pt jump shot from 15 ft
+4,3:35.0,104-111,76ers,Defensive rebound by Q. Grimes
+4,3:33.0,104-111,76ers,Philadelphia full timeout
+4,3:12.0,104-111,76ers,Turnover by T. Maxey (bad pass; steal by E. Mobley)
+4,2:59.0,107-111,Cavaliers,J. Tyson makes 3-pt jump shot from 27 ft (assist by D. Mitchell)
+4,2:41.0,107-111,76ers,T. Maxey misses 2-pt layup from 3 ft (block by E. Mobley)
+4,2:38.0,107-111,Cavaliers,Defensive rebound by J. Tyson
+4,2:35.0,109-111,Cavaliers,D. Hunter makes 2-pt dunk from 1 ft (assist by J. Tyson)
+4,2:06.0,109-111,76ers,J. Embiid misses 2-pt jump shot from 14 ft
+4,2:04.0,109-111,Cavaliers,Defensive rebound by D. Hunter
+4,1:59.0,112-111,Cavaliers,J. Tyson makes 3-pt jump shot from 24 ft (assist by D. Mitchell)
+4,1:50.0,112-111,76ers,Shooting foul by J. Allen (drawn by T. Maxey)
+4,1:50.0,112-111,Cavaliers,Cleveland full timeout
+4,1:50.0,112-111,Cavaliers,Instant Replay (Challenge: Ruling Stands)
+4,1:50.0,112-111,76ers,P. George enters the game for Q. Grimes
+4,1:50.0,112-112,76ers,T. Maxey makes free throw 1 of 2
+4,1:50.0,112-113,76ers,T. Maxey makes free throw 2 of 2
+4,1:31.0,112-113,Cavaliers,J. Tyson misses 2-pt jump shot from 18 ft
+4,1:29.0,112-113,76ers,Defensive rebound by T. Maxey
+4,1:14.0,112-113,76ers,K. Oubre misses 3-pt jump shot from 26 ft
+4,1:13.0,112-113,Cavaliers,Defensive rebound by E. Mobley
+4,1:05.0,114-113,Cavaliers,D. Hunter makes 2-pt layup from 3 ft (assist by D. Mitchell)
+4,0:42.0,114-113,76ers,P. George misses 2-pt jump shot from 13 ft
+4,0:40.0,114-113,Cavaliers,Defensive rebound by D. Mitchell
+4,0:24.0,114-113,Cavaliers,D. Mitchell misses 2-pt layup from 7 ft (block by T. Maxey)
+4,0:23.0,114-113,Cavaliers,Offensive rebound by Team
+4,0:22.0,114-113,Cavaliers,Shooting foul by K. Oubre (drawn by E. Mobley)
+4,0:22.0,114-113,76ers,Philadelphia full timeout
+4,0:22.0,114-113,76ers,Instant Replay (Challenge: Ruling Stands)
+4,0:22.0,114-113,Cavaliers,E. Mobley misses free throw 1 of 2
+4,0:22.0,114-113,Cavaliers,Offensive rebound by Team
+4,0:22.0,115-113,Cavaliers,E. Mobley makes free throw 2 of 2
+4,0:08.0,115-115,76ers,T. Maxey makes 2-pt jump shot from 8 ft (assist by J. Embiid)
+4,0:08.0,115-115,Cavaliers,Cleveland full timeout
+4,0:08.0,115-115,Cavaliers,L. Ball enters the game for J. Allen
+4,0:04.0,117-115,Cavaliers,E. Mobley makes 2-pt dunk from 1 ft (assist by J. Tyson)
+4,0:00.0,117-115,76ers,Team misses heave shot
+4,0:00.0,117-115,76ers,Offensive rebound by Team

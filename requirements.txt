@@ -1,0 +1,19 @@
+uv
+pylint
+black
+ruff
+yt-dlp
+requests
+beautifulsoup4
+lxml
+flask
+flask-cors
+
+# VideoMAE training / inference
+torch>=2.2,<2.3
+transformers>=4.40
+av>=14.0
+Pillow>=10.0
+# torch 2.2 is ABI-compatible with numpy<2; newer numpy majors break
+# torch.frombuffer / read_video. Pin accordingly.
+numpy<2

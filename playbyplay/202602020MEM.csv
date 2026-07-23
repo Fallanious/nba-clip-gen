@@ -1,0 +1,495 @@
+quarter,time,score,team,description
+1,11:47.0,0-0,Grizzlies,J. Landale misses 3-pt jump shot from 25 ft
+1,11:44.0,0-0,Timberwolves,Defensive rebound by J. Randle
+1,11:24.0,2-0,Timberwolves,A. Edwards makes 2-pt jump shot from 10 ft
+1,11:10.0,2-0,Grizzlies,Turnover by C. Coward (bad pass; steal by A. Edwards)
+1,10:57.0,2-0,Timberwolves,A. Edwards misses 2-pt jump shot from 9 ft
+1,10:53.0,2-0,Grizzlies,Defensive rebound by T. Jerome
+1,10:51.0,2-0,Grizzlies,Shooting foul by J. Randle (drawn by T. Jerome)
+1,10:51.0,2-1,Grizzlies,T. Jerome makes free throw 1 of 2
+1,10:51.0,2-2,Grizzlies,T. Jerome makes free throw 2 of 2
+1,10:41.0,5-2,Timberwolves,J. McDaniels makes 3-pt jump shot from 25 ft (assist by J. Randle)
+1,10:27.0,5-2,Grizzlies,J. Jackson misses 2-pt hook shot from 6 ft
+1,10:24.0,5-2,Timberwolves,Defensive rebound by R. Gobert
+1,10:13.0,5-2,Timberwolves,J. Randle misses 3-pt jump shot from 24 ft
+1,10:10.0,5-2,Timberwolves,Offensive rebound by R. Gobert
+1,10:10.0,7-2,Timberwolves,R. Gobert makes 2-pt layup at rim
+1,9:54.0,7-4,Grizzlies,J. Wells makes 2-pt jump shot from 16 ft (assist by T. Jerome)
+1,9:38.0,10-4,Timberwolves,D. DiVincenzo makes 3-pt jump shot from 28 ft (assist by J. Randle)
+1,9:28.0,10-6,Grizzlies,T. Jerome makes 2-pt jump shot from 14 ft
+1,9:28.0,10-6,Grizzlies,Shooting foul by J. McDaniels (drawn by T. Jerome)
+1,9:28.0,10-7,Grizzlies,T. Jerome makes free throw 1 of 1
+1,9:07.0,10-7,Timberwolves,A. Edwards misses 2-pt jump shot from 20 ft
+1,9:03.0,10-7,Timberwolves,Offensive rebound by J. McDaniels
+1,8:55.0,13-7,Timberwolves,J. Randle makes 3-pt jump shot from 27 ft (assist by D. DiVincenzo)
+1,8:41.0,13-10,Grizzlies,J. Wells makes 3-pt jump shot from 26 ft (assist by T. Jerome)
+1,8:21.0,13-10,Timberwolves,Turnover by D. DiVincenzo (bad pass; steal by J. Wells)
+1,8:20.0,13-10,Grizzlies,Personal foul by A. Edwards (drawn by J. Wells)
+1,8:20.0,13-11,Grizzlies,T. Jerome makes free throw 1 of 1
+1,8:09.0,13-11,Grizzlies,J. Wells misses 2-pt layup from 2 ft
+1,8:08.0,13-11,Timberwolves,Defensive rebound by R. Gobert
+1,8:06.0,13-11,Timberwolves,Shooting foul by T. Jerome (drawn by J. Randle)
+1,8:06.0,14-11,Timberwolves,J. Randle makes free throw 1 of 2
+1,8:06.0,14-11,Grizzlies,K. Caldwell-Pope enters the game for C. Coward
+1,8:06.0,14-11,Grizzlies,G. Jackson enters the game for J. Jackson
+1,8:06.0,15-11,Timberwolves,J. Randle makes free throw 2 of 2
+1,7:58.0,15-11,Grizzlies,Turnover by T. Jerome (traveling)
+1,7:38.0,15-11,Timberwolves,R. Gobert misses 2-pt dunk from 3 ft
+1,7:35.0,15-11,Timberwolves,Offensive rebound by D. DiVincenzo
+1,7:31.0,15-11,Timberwolves,J. Randle misses 3-pt jump shot from 25 ft
+1,7:27.0,15-11,Grizzlies,Defensive rebound by T. Jerome
+1,7:10.0,15-11,Grizzlies,J. Wells misses 3-pt jump shot from 25 ft
+1,7:08.0,15-11,Grizzlies,Offensive rebound by G. Jackson
+1,7:02.0,15-13,Grizzlies,T. Jerome makes 2-pt jump shot from 6 ft (assist by K. Caldwell-Pope)
+1,6:40.0,15-13,Timberwolves,A. Edwards misses 2-pt jump shot from 13 ft
+1,6:39.0,15-13,Grizzlies,Defensive rebound by K. Caldwell-Pope
+1,6:35.0,15-13,Grizzlies,K. Caldwell-Pope misses 2-pt layup from 2 ft
+1,6:32.0,15-13,Timberwolves,Defensive rebound by J. Randle
+1,6:29.0,17-13,Timberwolves,A. Edwards makes 2-pt layup from 1 ft (assist by J. Randle)
+1,6:29.0,17-13,Grizzlies,Memphis full timeout
+1,6:29.0,17-13,Grizzlies,C. Spencer enters the game for T. Jerome
+1,6:11.0,17-16,Grizzlies,C. Spencer makes 3-pt jump shot from 26 ft
+1,5:56.0,17-16,Timberwolves,Turnover by A. Edwards (back court)
+1,5:56.0,17-16,Timberwolves,N. Reid enters the game for J. Randle
+1,5:56.0,17-16,Timberwolves,Minnesota full timeout
+1,5:56.0,17-16,Timberwolves,J. Randle enters the game for R. Gobert
+1,5:49.0,17-16,Grizzlies,K. Caldwell-Pope misses 2-pt layup from 2 ft (block by N. Reid)
+1,5:46.0,17-16,Grizzlies,Offensive rebound by J. Landale
+1,5:45.0,17-19,Grizzlies,J. Wells makes 3-pt jump shot from 26 ft (assist by J. Landale)
+1,5:19.0,17-19,Timberwolves,Shooting foul by J. Landale (drawn by J. Randle)
+1,5:19.0,18-19,Timberwolves,J. Randle makes free throw 1 of 2
+1,5:19.0,18-19,Timberwolves,M. Conley enters the game for D. DiVincenzo
+1,5:19.0,19-19,Timberwolves,J. Randle makes free throw 2 of 2
+1,5:00.0,19-19,Grizzlies,Personal foul by M. Conley (drawn by J. Landale)
+1,4:51.0,19-21,Grizzlies,K. Caldwell-Pope makes 2-pt layup from 1 ft (assist by C. Spencer)
+1,4:41.0,19-21,Timberwolves,N. Reid misses 3-pt jump shot from 24 ft
+1,4:38.0,19-21,Grizzlies,Defensive rebound by J. Landale
+1,4:28.0,19-23,Grizzlies,J. Landale makes 2-pt hook shot from 4 ft (assist by K. Caldwell-Pope)
+1,4:06.0,19-23,Timberwolves,N. Reid misses 3-pt jump shot from 27 ft
+1,4:04.0,19-23,Grizzlies,Defensive rebound by G. Jackson
+1,3:47.0,19-23,Grizzlies,J. Landale misses 2-pt hook shot from 6 ft
+1,3:44.0,19-23,Timberwolves,Defensive rebound by J. Randle
+1,3:38.0,19-23,Timberwolves,J. McDaniels misses 3-pt jump shot from 25 ft
+1,3:36.0,19-23,Grizzlies,Defensive rebound by J. Wells
+1,3:29.0,19-25,Grizzlies,J. Landale makes 2-pt hook shot from 6 ft (assist by J. Wells)
+1,2:59.0,21-25,Timberwolves,N. Reid makes 2-pt hook shot from 6 ft
+1,2:50.0,21-25,Grizzlies,Offensive foul by J. Wells (drawn by A. Edwards)
+1,2:50.0,21-25,Grizzlies,Turnover by J. Wells (offensive foul)
+1,2:50.0,21-25,Timberwolves,J. Clark enters the game for J. McDaniels
+1,2:50.0,21-25,Timberwolves,R. Gobert enters the game for J. Randle
+1,2:50.0,21-25,Grizzlies,C. Coward enters the game for K. Caldwell-Pope
+1,2:50.0,21-25,Grizzlies,J. Jackson enters the game for G. Jackson
+1,2:50.0,21-25,Grizzlies,O. Prosper enters the game for J. Landale
+1,2:50.0,21-25,Grizzlies,V. Williams enters the game for J. Wells
+1,2:37.0,23-25,Timberwolves,A. Edwards makes 2-pt jump shot from 7 ft (assist by M. Conley)
+1,2:21.0,23-25,Grizzlies,Personal foul by J. Clark (drawn by J. Jackson)
+1,2:21.0,23-26,Grizzlies,J. Jackson makes free throw 1 of 2
+1,2:21.0,23-27,Grizzlies,J. Jackson makes free throw 2 of 2
+1,2:10.0,26-27,Timberwolves,A. Edwards makes 3-pt jump shot from 25 ft (assist by M. Conley)
+1,1:51.0,26-30,Grizzlies,V. Williams makes 3-pt jump shot from 25 ft (assist by O. Prosper)
+1,1:28.0,29-30,Timberwolves,A. Edwards makes 3-pt jump shot from 24 ft (assist by N. Reid)
+1,1:09.0,29-33,Grizzlies,O. Prosper makes 3-pt jump shot from 24 ft (assist by V. Williams)
+1,0:52.0,29-33,Timberwolves,J. Clark misses 2-pt jump shot from 5 ft
+1,0:50.0,29-33,Grizzlies,Defensive rebound by C. Coward
+1,0:44.0,29-33,Grizzlies,V. Williams misses 3-pt jump shot from 25 ft
+1,0:42.0,29-33,Timberwolves,Defensive rebound by R. Gobert
+1,0:40.0,29-33,Timberwolves,Turnover by R. Gobert (bad pass; steal by V. Williams)
+1,0:36.0,29-36,Grizzlies,J. Jackson makes 3-pt jump shot from 26 ft (assist by V. Williams)
+1,0:28.0,29-36,Timberwolves,M. Conley misses 2-pt jump shot from 23 ft
+1,0:25.0,29-36,Grizzlies,Defensive rebound by O. Prosper
+1,0:05.0,29-36,Grizzlies,J. Jackson misses 2-pt layup from 6 ft
+1,0:04.0,29-36,Grizzlies,Offensive rebound by Team
+1,0:04.0,29-36,Grizzlies,Memphis full timeout
+1,0:04.0,29-36,Grizzlies,Instant Replay (Challenge: Ruling Stands)
+1,0:04.0,29-36,Timberwolves,D. DiVincenzo enters the game for J. Clark
+1,0:04.0,29-36,Grizzlies,T. Jerome enters the game for O. Prosper
+1,0:04.0,29-36,Grizzlies,J. Landale enters the game for V. Williams
+1,0:02.0,29-36,Grizzlies,Turnover by T. Jerome (step out of bounds)
+1,0:00.0,29-36,Timberwolves,Team misses heave shot
+1,0:00.0,29-36,Timberwolves,Offensive rebound by Team
+2,11:42.0,29-36,Timberwolves,M. Conley misses 3-pt jump shot from 23 ft
+2,11:39.0,29-36,Grizzlies,Defensive rebound by T. Jerome
+2,11:33.0,29-36,Grizzlies,J. Jackson misses 2-pt jump shot from 7 ft (block by N. Reid)
+2,11:33.0,29-36,Grizzlies,Offensive rebound by Team
+2,11:22.0,29-36,Grizzlies,T. Jerome misses 3-pt jump shot from 26 ft
+2,11:19.0,29-36,Grizzlies,Offensive rebound by O. Prosper
+2,11:15.0,29-39,Grizzlies,T. Jerome makes 3-pt jump shot from 23 ft (assist by C. Coward)
+2,10:59.0,29-39,Timberwolves,Shooting foul by V. Williams (drawn by R. Gobert)
+2,10:59.0,30-39,Timberwolves,R. Gobert makes free throw 1 of 2
+2,10:59.0,30-39,Timberwolves,R. Gobert misses free throw 2 of 2
+2,10:55.0,30-39,Grizzlies,Defensive rebound by O. Prosper
+2,10:42.0,30-39,Grizzlies,J. Jackson misses 3-pt jump shot from 26 ft
+2,10:40.0,30-39,Timberwolves,Defensive rebound by N. Reid
+2,10:33.0,30-39,Timberwolves,D. DiVincenzo misses 3-pt jump shot from 26 ft
+2,10:29.0,30-39,Timberwolves,Offensive rebound by N. Reid
+2,10:24.0,30-39,Timberwolves,B. Hyland misses 3-pt jump shot from 24 ft
+2,10:20.0,30-39,Grizzlies,Defensive rebound by J. Jackson
+2,10:09.0,30-39,Grizzlies,T. Jerome misses 2-pt layup from 4 ft
+2,10:06.0,30-39,Timberwolves,Defensive rebound by M. Conley
+2,9:55.0,32-39,Timberwolves,N. Reid makes 2-pt jump shot from 8 ft
+2,9:39.0,32-39,Grizzlies,Shooting foul by N. Reid (drawn by C. Coward)
+2,9:39.0,32-39,Grizzlies,C. Coward misses free throw 1 of 2
+2,9:39.0,32-39,Grizzlies,Offensive rebound by Team
+2,9:39.0,32-39,Timberwolves,J. Clark enters the game for M. Conley
+2,9:39.0,32-39,Timberwolves,J. Randle enters the game for R. Gobert
+2,9:39.0,32-40,Grizzlies,C. Coward makes free throw 2 of 2
+2,9:22.0,32-40,Timberwolves,N. Reid misses 3-pt jump shot from 27 ft
+2,9:18.0,32-40,Grizzlies,Defensive rebound by J. Jackson
+2,9:02.0,32-40,Grizzlies,C. Coward misses 3-pt jump shot from 25 ft
+2,8:58.0,32-40,Grizzlies,Offensive rebound by O. Prosper
+2,8:56.0,32-43,Grizzlies,V. Williams makes 3-pt jump shot from 26 ft (assist by O. Prosper)
+2,8:32.0,32-43,Timberwolves,J. Clark misses 3-pt jump shot from 24 ft
+2,8:29.0,32-43,Grizzlies,Defensive rebound by C. Coward
+2,8:23.0,32-45,Grizzlies,C. Coward makes 2-pt jump shot from 12 ft
+2,8:09.0,32-45,Timberwolves,Turnover by N. Reid (bad pass)
+2,8:09.0,32-45,Timberwolves,J. McDaniels enters the game for J. Clark
+2,8:09.0,32-45,Grizzlies,K. Caldwell-Pope enters the game for C. Coward
+2,8:09.0,32-45,Grizzlies,G. Jackson enters the game for J. Jackson
+2,7:51.0,32-45,Grizzlies,V. Williams misses 2-pt layup from 4 ft
+2,7:49.0,32-45,Grizzlies,Offensive rebound by G. Jackson
+2,7:49.0,32-45,Grizzlies,G. Jackson misses 2-pt layup at rim
+2,7:48.0,32-45,Grizzlies,Offensive rebound by T. Jerome
+2,7:48.0,32-45,Grizzlies,Turnover by T. Jerome (bad pass)
+2,7:35.0,34-45,Timberwolves,D. DiVincenzo makes 2-pt layup from 3 ft (assist by B. Hyland)
+2,7:35.0,34-45,Grizzlies,Memphis full timeout
+2,7:35.0,34-45,Grizzlies,C. Spencer enters the game for T. Jerome
+2,7:26.0,34-47,Grizzlies,G. Jackson makes 2-pt dunk from 2 ft (assist by C. Spencer)
+2,7:14.0,37-47,Timberwolves,B. Hyland makes 3-pt jump shot from 25 ft
+2,7:04.0,37-47,Grizzlies,G. Jackson misses 3-pt jump shot from 26 ft
+2,7:01.0,37-47,Timberwolves,Defensive rebound by B. Hyland
+2,6:42.0,37-47,Timberwolves,B. Hyland misses 2-pt layup from 3 ft
+2,6:40.0,37-47,Timberwolves,Offensive rebound by J. McDaniels
+2,6:31.0,37-47,Timberwolves,J. Randle misses 2-pt jump shot from 13 ft
+2,6:27.0,37-47,Grizzlies,Defensive rebound by C. Spencer
+2,6:18.0,37-49,Grizzlies,G. Jackson makes 2-pt dunk from 2 ft (assist by V. Williams)
+2,6:18.0,37-49,Grizzlies,Shooting foul by B. Hyland (drawn by G. Jackson)
+2,6:18.0,37-49,Timberwolves,A. Edwards enters the game for D. DiVincenzo
+2,6:18.0,37-49,Grizzlies,G. Jackson misses free throw 1 of 1
+2,6:15.0,37-49,Grizzlies,Offensive rebound by G. Jackson
+2,6:15.0,37-51,Grizzlies,G. Jackson makes 2-pt layup from 2 ft
+2,6:01.0,37-51,Timberwolves,Shooting foul by C. Spencer (drawn by J. McDaniels)
+2,6:01.0,38-51,Timberwolves,J. McDaniels makes free throw 1 of 2
+2,6:01.0,38-51,Timberwolves,R. Gobert enters the game for N. Reid
+2,6:01.0,39-51,Timberwolves,J. McDaniels makes free throw 2 of 2
+2,5:48.0,39-51,Grizzlies,K. Caldwell-Pope misses 2-pt jump shot from 18 ft
+2,5:45.0,39-51,Timberwolves,Defensive rebound by R. Gobert
+2,5:41.0,41-51,Timberwolves,J. McDaniels makes 2-pt dunk from 1 ft (assist by B. Hyland)
+2,5:19.0,41-51,Grizzlies,C. Spencer misses 2-pt jump shot from 12 ft
+2,5:17.0,41-51,Timberwolves,Defensive rebound by A. Edwards
+2,5:08.0,43-51,Timberwolves,A. Edwards makes 2-pt layup from 2 ft
+2,5:08.0,43-51,Grizzlies,Memphis full timeout
+2,5:08.0,43-51,Grizzlies,J. Landale enters the game for O. Prosper
+2,5:08.0,43-51,Grizzlies,J. Wells enters the game for V. Williams
+2,4:54.0,43-54,Grizzlies,J. Wells makes 3-pt jump shot from 26 ft (assist by J. Landale)
+2,4:35.0,43-54,Timberwolves,R. Gobert misses 2-pt layup from 4 ft
+2,4:32.0,43-54,Timberwolves,Offensive rebound by R. Gobert
+2,4:32.0,45-54,Timberwolves,R. Gobert makes 2-pt dunk at rim
+2,4:14.0,45-54,Grizzlies,J. Landale misses 3-pt jump shot from 26 ft
+2,4:14.0,45-54,Timberwolves,Defensive rebound by Team
+2,4:14.0,45-54,Grizzlies,Loose ball foul by K. Caldwell-Pope (drawn by B. Hyland)
+2,4:14.0,45-54,Grizzlies,J. Jackson enters the game for G. Jackson
+2,3:54.0,45-54,Timberwolves,J. Randle misses 3-pt jump shot from 23 ft
+2,3:51.0,45-54,Grizzlies,Defensive rebound by J. Landale
+2,3:41.0,45-54,Grizzlies,C. Spencer misses 2-pt jump shot from 19 ft
+2,3:38.0,45-54,Timberwolves,Defensive rebound by R. Gobert
+2,3:31.0,45-54,Timberwolves,B. Hyland misses 3-pt jump shot from 25 ft
+2,3:29.0,45-54,Grizzlies,Defensive rebound by C. Spencer
+2,3:22.0,45-54,Grizzlies,Turnover by C. Spencer (out of bounds lost ball)
+2,3:10.0,47-54,Timberwolves,J. McDaniels makes 2-pt jump shot from 10 ft (assist by J. Randle)
+2,2:55.0,47-54,Grizzlies,Personal foul by J. Randle (drawn by J. Jackson)
+2,2:55.0,47-54,Grizzlies,C. Coward enters the game for K. Caldwell-Pope
+2,2:51.0,47-54,Grizzlies,Shooting foul by B. Hyland (drawn by C. Spencer)
+2,2:51.0,47-55,Grizzlies,C. Spencer makes free throw 1 of 3
+2,2:51.0,47-56,Grizzlies,C. Spencer makes free throw 2 of 3
+2,2:51.0,47-56,Timberwolves,D. DiVincenzo enters the game for B. Hyland
+2,2:51.0,47-57,Grizzlies,C. Spencer makes free throw 3 of 3
+2,2:39.0,50-57,Timberwolves,J. McDaniels makes 3-pt jump shot from 25 ft (assist by A. Edwards)
+2,2:23.0,50-57,Grizzlies,J. Jackson misses 2-pt layup from 4 ft (block by R. Gobert)
+2,2:23.0,50-57,Grizzlies,Offensive rebound by Team
+2,2:10.0,50-60,Grizzlies,C. Coward makes 3-pt jump shot from 26 ft
+2,1:55.0,50-60,Timberwolves,Shooting foul by J. Wells (drawn by A. Edwards)
+2,1:55.0,50-60,Timberwolves,A. Edwards misses free throw 1 of 2
+2,1:55.0,50-60,Timberwolves,Offensive rebound by Team
+2,1:55.0,51-60,Timberwolves,A. Edwards makes free throw 2 of 2
+2,1:41.0,51-60,Grizzlies,C. Coward misses 2-pt jump shot from 7 ft
+2,1:38.0,51-60,Timberwolves,Defensive rebound by J. McDaniels
+2,1:26.0,53-60,Timberwolves,J. McDaniels makes 2-pt jump shot from 10 ft (assist by J. Randle)
+2,1:08.0,53-62,Grizzlies,J. Jackson makes 2-pt layup from 2 ft
+2,1:00.0,53-62,Timberwolves,Turnover by J. Randle (bad pass)
+2,0:45.0,53-62,Grizzlies,J. Jackson misses 2-pt layup from 6 ft (block by R. Gobert)
+2,0:44.0,53-62,Grizzlies,Offensive rebound by J. Jackson
+2,0:44.0,53-64,Grizzlies,J. Jackson makes 2-pt layup at rim
+2,0:34.0,55-64,Timberwolves,J. Randle makes 2-pt layup from 4 ft (assist by J. McDaniels)
+2,0:23.0,55-64,Grizzlies,Shooting foul by R. Gobert (drawn by J. Jackson)
+2,0:23.0,55-65,Grizzlies,J. Jackson makes free throw 1 of 2
+2,0:23.0,55-65,Grizzlies,V. Williams enters the game for C. Spencer
+2,0:23.0,55-66,Grizzlies,J. Jackson makes free throw 2 of 2
+2,0:02.0,58-66,Timberwolves,J. McDaniels makes 3-pt jump shot from 23 ft (assist by J. Randle)
+2,0:00.0,58-66,Grizzlies,Team misses heave shot
+2,0:00.0,58-66,Grizzlies,Offensive rebound by Team
+3,11:40.0,61-66,Timberwolves,D. DiVincenzo makes 3-pt jump shot from 26 ft (assist by J. McDaniels)
+3,11:23.0,61-66,Grizzlies,Personal foul by A. Edwards (drawn by J. Wells)
+3,11:17.0,61-66,Grizzlies,T. Jerome misses 3-pt jump shot from 25 ft
+3,11:15.0,61-66,Timberwolves,Defensive rebound by R. Gobert
+3,11:02.0,63-66,Timberwolves,J. Randle makes 2-pt jump shot from 9 ft (assist by D. DiVincenzo)
+3,11:02.0,63-66,Timberwolves,Shooting foul by C. Coward (drawn by J. Randle)
+3,11:02.0,64-66,Timberwolves,J. Randle makes free throw 1 of 1
+3,10:47.0,64-66,Grizzlies,J. Jackson misses 3-pt jump shot from 25 ft
+3,10:44.0,64-66,Grizzlies,Offensive rebound by J. Landale
+3,10:37.0,64-69,Grizzlies,J. Jackson makes 3-pt jump shot from 26 ft (assist by T. Jerome)
+3,10:21.0,64-69,Timberwolves,J. McDaniels misses 3-pt jump shot from 23 ft
+3,10:19.0,64-69,Grizzlies,Defensive rebound by C. Coward
+3,10:12.0,64-69,Grizzlies,Personal foul by J. McDaniels (drawn by T. Jerome)
+3,10:06.0,64-71,Grizzlies,J. Jackson makes 2-pt hook shot from 10 ft
+3,9:48.0,64-71,Timberwolves,J. McDaniels misses 2-pt jump shot from 6 ft
+3,9:46.0,64-71,Grizzlies,Defensive rebound by J. Jackson
+3,9:40.0,64-73,Grizzlies,T. Jerome makes 2-pt jump shot from 11 ft (assist by J. Jackson)
+3,9:35.0,64-73,Timberwolves,Personal foul by T. Jerome (drawn by J. McDaniels)
+3,9:22.0,64-73,Timberwolves,A. Edwards misses 3-pt jump shot from 27 ft
+3,9:19.0,64-73,Timberwolves,Offensive rebound by R. Gobert
+3,9:18.0,66-73,Timberwolves,R. Gobert makes 2-pt layup from 1 ft
+3,9:16.0,66-73,Timberwolves,Violation by Team (delay of game)
+3,9:12.0,66-73,Grizzlies,Personal foul by J. McDaniels (drawn by T. Jerome)
+3,9:00.0,66-73,Grizzlies,J. Wells misses 2-pt jump shot from 17 ft
+3,8:59.0,66-73,Timberwolves,Defensive rebound by R. Gobert
+3,8:49.0,66-73,Timberwolves,Turnover by J. Randle (lost ball; steal by T. Jerome)
+3,8:43.0,66-73,Grizzlies,Shooting foul by R. Gobert (drawn by J. Wells)
+3,8:43.0,66-74,Grizzlies,J. Wells makes free throw 1 of 2
+3,8:43.0,66-75,Grizzlies,J. Wells makes free throw 2 of 2
+3,8:43.0,66-75,Timberwolves,Minnesota full timeout
+3,8:24.0,66-75,Timberwolves,J. Randle misses 3-pt jump shot from 23 ft
+3,8:22.0,66-75,Grizzlies,Defensive rebound by C. Coward
+3,8:15.0,66-75,Grizzlies,J. Landale misses 3-pt jump shot from 25 ft
+3,8:12.0,66-75,Timberwolves,Defensive rebound by A. Edwards
+3,8:08.0,66-75,Timberwolves,A. Edwards misses 2-pt dunk from 5 ft (block by J. Jackson)
+3,8:07.0,66-75,Timberwolves,Offensive rebound by J. McDaniels
+3,7:52.0,69-75,Timberwolves,J. McDaniels makes 3-pt jump shot from 24 ft (assist by J. Randle)
+3,7:37.0,69-77,Grizzlies,J. Jackson makes 2-pt layup from 2 ft (assist by T. Jerome)
+3,7:28.0,71-77,Timberwolves,J. McDaniels makes 2-pt dunk at rim (assist by D. DiVincenzo)
+3,7:19.0,71-77,Grizzlies,T. Jerome misses 3-pt jump shot from 25 ft
+3,7:17.0,71-77,Grizzlies,Offensive rebound by T. Jerome
+3,7:15.0,71-80,Grizzlies,J. Wells makes 3-pt jump shot from 23 ft (assist by T. Jerome)
+3,6:56.0,73-80,Timberwolves,A. Edwards makes 2-pt layup from 2 ft
+3,6:42.0,73-80,Grizzlies,C. Coward misses 3-pt jump shot from 25 ft
+3,6:41.0,73-80,Timberwolves,Defensive rebound by Team
+3,6:41.0,73-80,Timberwolves,M. Conley enters the game for D. DiVincenzo
+3,6:41.0,73-80,Timberwolves,N. Reid enters the game for R. Gobert
+3,6:41.0,73-80,Grizzlies,K. Caldwell-Pope enters the game for C. Coward
+3,6:41.0,73-80,Grizzlies,G. Jackson enters the game for J. Jackson
+3,6:41.0,73-80,Grizzlies,C. Spencer enters the game for T. Jerome
+3,6:25.0,73-80,Timberwolves,A. Edwards misses 2-pt layup from 2 ft
+3,6:23.0,73-80,Grizzlies,Defensive rebound by G. Jackson
+3,6:12.0,73-80,Grizzlies,Turnover by K. Caldwell-Pope (bad pass; steal by N. Reid)
+3,6:09.0,73-80,Timberwolves,A. Edwards misses 2-pt layup from 1 ft (block by G. Jackson)
+3,6:06.0,73-80,Grizzlies,Defensive rebound by K. Caldwell-Pope
+3,6:06.0,73-80,Timberwolves,Technical foul by A. Edwards
+3,6:06.0,73-81,Grizzlies,C. Spencer makes technical free throw
+3,6:00.0,73-83,Grizzlies,G. Jackson makes 2-pt layup from 1 ft (assist by J. Wells)
+3,5:51.0,73-83,Timberwolves,J. Randle misses 2-pt layup from 2 ft
+3,5:48.0,73-83,Grizzlies,Defensive rebound by K. Caldwell-Pope
+3,5:42.0,73-85,Grizzlies,J. Wells makes 2-pt jump shot from 19 ft (assist by C. Spencer)
+3,5:42.0,73-85,Timberwolves,Minnesota full timeout
+3,5:32.0,73-85,Timberwolves,N. Reid misses 3-pt jump shot from 23 ft
+3,5:29.0,73-85,Grizzlies,Defensive rebound by C. Spencer
+3,5:17.0,73-87,Grizzlies,G. Jackson makes 2-pt dunk from 1 ft (assist by K. Caldwell-Pope)
+3,5:06.0,73-87,Timberwolves,Personal foul by J. Wells (drawn by A. Edwards)
+3,4:56.0,73-87,Timberwolves,Shooting foul by J. Landale (drawn by A. Edwards)
+3,4:56.0,74-87,Timberwolves,A. Edwards makes free throw 1 of 2
+3,4:56.0,74-87,Grizzlies,O. Prosper enters the game for J. Landale
+3,4:56.0,74-87,Grizzlies,V. Williams enters the game for J. Wells
+3,4:56.0,74-87,Timberwolves,A. Edwards misses free throw 2 of 2
+3,4:53.0,74-87,Grizzlies,Defensive rebound by G. Jackson
+3,4:38.0,74-87,Grizzlies,C. Spencer misses 2-pt layup from 3 ft (block by N. Reid)
+3,4:37.0,74-87,Grizzlies,Offensive rebound by O. Prosper
+3,4:37.0,74-87,Grizzlies,O. Prosper misses 2-pt layup at rim (block by J. Randle)
+3,4:34.0,74-87,Timberwolves,Defensive rebound by A. Edwards
+3,4:31.0,76-87,Timberwolves,A. Edwards makes 2-pt layup from 2 ft
+3,4:29.0,76-87,Grizzlies,Technical foul by T. Iisalo
+3,4:29.0,77-87,Timberwolves,A. Edwards makes technical free throw
+3,4:29.0,77-87,Timberwolves,J. Clark enters the game for J. McDaniels
+3,4:15.0,77-87,Grizzlies,V. Williams misses 3-pt jump shot from 24 ft
+3,4:14.0,77-87,Timberwolves,Defensive rebound by J. Randle
+3,4:13.0,77-87,Timberwolves,Turnover by J. Randle (bad pass; steal by V. Williams)
+3,4:13.0,77-87,Grizzlies,Personal foul by J. Randle (drawn by V. Williams)
+3,4:13.0,77-87,Grizzlies,V. Williams misses free throw 1 of 2
+3,4:13.0,77-87,Grizzlies,Offensive rebound by Team
+3,4:13.0,77-87,Grizzlies,V. Williams misses free throw 2 of 2
+3,4:11.0,77-87,Timberwolves,Defensive rebound by J. Randle
+3,4:02.0,77-87,Timberwolves,N. Reid misses 2-pt layup from 1 ft
+3,3:59.0,77-87,Timberwolves,Offensive rebound by J. Randle
+3,3:59.0,79-87,Timberwolves,J. Randle makes 2-pt layup at rim
+3,3:45.0,79-87,Grizzlies,O. Prosper misses 3-pt jump shot from 25 ft
+3,3:42.0,79-87,Timberwolves,Defensive rebound by A. Edwards
+3,3:33.0,81-87,Timberwolves,A. Edwards makes 2-pt layup from 1 ft
+3,3:24.0,81-87,Grizzlies,G. Jackson misses 3-pt jump shot from 22 ft
+3,3:22.0,81-87,Timberwolves,Defensive rebound by Team
+3,3:22.0,81-87,Grizzlies,J. Jackson enters the game for G. Jackson
+3,2:57.0,83-87,Timberwolves,A. Edwards makes 2-pt layup from 2 ft
+3,2:55.0,83-87,Grizzlies,Memphis full timeout
+3,2:42.0,83-87,Grizzlies,C. Spencer misses 3-pt jump shot from 25 ft
+3,2:41.0,83-87,Timberwolves,Defensive rebound by Team
+3,2:27.0,83-87,Timberwolves,A. Edwards misses 3-pt jump shot from 26 ft
+3,2:25.0,83-87,Timberwolves,Offensive rebound by N. Reid
+3,2:10.0,83-87,Timberwolves,J. Randle misses 2-pt jump shot from 13 ft
+3,2:07.0,83-87,Grizzlies,Defensive rebound by J. Jackson
+3,2:00.0,83-90,Grizzlies,V. Williams makes 3-pt jump shot from 23 ft (assist by C. Spencer)
+3,1:46.0,83-90,Timberwolves,A. Edwards misses 2-pt layup from 1 ft
+3,1:42.0,83-90,Grizzlies,Defensive rebound by J. Jackson
+3,1:38.0,83-90,Grizzlies,C. Spencer misses 3-pt jump shot from 25 ft
+3,1:36.0,83-90,Timberwolves,Defensive rebound by N. Reid
+3,1:21.0,83-90,Timberwolves,N. Reid misses 2-pt hook shot from 9 ft
+3,1:20.0,83-90,Timberwolves,Offensive rebound by N. Reid
+3,1:20.0,85-90,Timberwolves,N. Reid makes 2-pt layup at rim
+3,1:20.0,85-90,Timberwolves,Shooting foul by J. Jackson (drawn by N. Reid)
+3,1:20.0,85-90,Timberwolves,R. Gobert enters the game for J. Randle
+3,1:20.0,85-90,Grizzlies,C. Coward enters the game for K. Caldwell-Pope
+3,1:20.0,85-90,Grizzlies,G. Jackson enters the game for C. Spencer
+3,1:20.0,86-90,Timberwolves,N. Reid makes free throw 1 of 1
+3,1:15.0,86-90,Grizzlies,Personal foul by J. Clark (drawn by V. Williams)
+3,1:15.0,86-91,Grizzlies,V. Williams makes free throw 1 of 2
+3,1:15.0,86-92,Grizzlies,V. Williams makes free throw 2 of 2
+3,1:06.0,86-92,Timberwolves,N. Reid misses 3-pt jump shot from 30 ft
+3,1:04.0,86-92,Grizzlies,Defensive rebound by Team
+3,1:04.0,86-92,Timberwolves,Loose ball foul by J. Clark (drawn by V. Williams)
+3,1:04.0,86-93,Grizzlies,V. Williams makes free throw 1 of 2
+3,1:04.0,86-93,Timberwolves,D. DiVincenzo enters the game for J. Clark
+3,1:04.0,86-94,Grizzlies,V. Williams makes free throw 2 of 2
+3,0:45.0,86-94,Timberwolves,A. Edwards misses 3-pt jump shot from 26 ft
+3,0:43.0,86-94,Grizzlies,Defensive rebound by Team
+3,0:33.0,86-94,Grizzlies,Shooting foul by N. Reid (drawn by J. Jackson)
+3,0:33.0,86-95,Grizzlies,J. Jackson makes free throw 1 of 2
+3,0:33.0,86-96,Grizzlies,J. Jackson makes free throw 2 of 2
+3,0:19.0,86-96,Timberwolves,M. Conley misses 3-pt jump shot from 28 ft
+3,0:17.0,86-96,Grizzlies,Defensive rebound by G. Jackson
+3,0:05.0,86-96,Grizzlies,Shooting foul by R. Gobert (drawn by J. Jackson)
+3,0:05.0,86-97,Grizzlies,J. Jackson makes free throw 1 of 2
+3,0:05.0,86-98,Grizzlies,J. Jackson makes free throw 2 of 2
+3,0:00.0,86-98,Timberwolves,Turnover by A. Edwards (lost ball; steal by O. Prosper)
+3,0:00.0,86-98,Grizzlies,Team misses heave shot
+3,0:00.0,86-98,Grizzlies,Offensive rebound by Team
+4,11:42.0,86-100,Grizzlies,C. Coward makes 2-pt jump shot from 2 ft
+4,11:29.0,89-100,Timberwolves,D. DiVincenzo makes 3-pt jump shot from 26 ft (assist by B. Hyland)
+4,11:04.0,89-103,Grizzlies,G. Jackson makes 3-pt jump shot from 23 ft (assist by T. Jerome)
+4,10:55.0,89-103,Timberwolves,D. DiVincenzo misses 3-pt jump shot from 26 ft
+4,10:49.0,89-103,Grizzlies,Defensive rebound by O. Prosper
+4,10:49.0,89-103,Timberwolves,J. Randle enters the game for R. Gobert
+4,10:35.0,89-106,Grizzlies,T. Jerome makes 3-pt jump shot from 26 ft
+4,10:15.0,89-106,Timberwolves,N. Reid misses 2-pt hook shot from 10 ft
+4,10:13.0,89-106,Grizzlies,Defensive rebound by Team
+4,10:00.0,89-109,Grizzlies,J. Jackson makes 3-pt jump shot from 25 ft (assist by T. Jerome)
+4,9:58.0,89-109,Timberwolves,Minnesota full timeout
+4,9:58.0,89-109,Grizzlies,V. Williams enters the game for T. Jerome
+4,9:45.0,92-109,Timberwolves,D. DiVincenzo makes 3-pt jump shot from 26 ft (assist by J. Randle)
+4,9:35.0,92-111,Grizzlies,J. Jackson makes 2-pt jump shot from 7 ft (assist by V. Williams)
+4,9:35.0,92-111,Grizzlies,Shooting foul by N. Reid (drawn by J. Jackson)
+4,9:35.0,92-111,Timberwolves,Minnesota full timeout
+4,9:35.0,92-111,Timberwolves,Instant Replay (Challenge: Ruling Stands)
+4,9:35.0,92-112,Grizzlies,J. Jackson makes free throw 1 of 1
+4,9:23.0,92-112,Timberwolves,Shooting foul by C. Coward (drawn by D. DiVincenzo)
+4,9:23.0,92-112,Grizzlies,Memphis full timeout
+4,9:23.0,92-112,Grizzlies,Instant Replay (Challenge: Ruling Stands)
+4,9:23.0,92-112,Timberwolves,A. Edwards enters the game for N. Reid
+4,9:23.0,93-112,Timberwolves,D. DiVincenzo makes free throw 1 of 3
+4,9:23.0,93-112,Timberwolves,D. DiVincenzo misses free throw 2 of 3
+4,9:23.0,93-112,Timberwolves,Offensive rebound by Team
+4,9:23.0,94-112,Timberwolves,D. DiVincenzo makes free throw 3 of 3
+4,9:10.0,94-112,Grizzlies,Turnover by J. Jackson (bad pass; steal by D. DiVincenzo)
+4,9:08.0,96-112,Timberwolves,D. DiVincenzo makes 2-pt layup from 2 ft
+4,9:08.0,96-112,Timberwolves,Shooting foul by J. Jackson (drawn by D. DiVincenzo)
+4,9:08.0,96-112,Grizzlies,C. Spencer enters the game for J. Jackson
+4,9:08.0,96-112,Timberwolves,D. DiVincenzo misses free throw 1 of 1
+4,9:06.0,96-112,Timberwolves,Offensive rebound by A. Edwards
+4,9:01.0,96-112,Timberwolves,A. Edwards misses 2-pt layup from 3 ft
+4,8:59.0,96-112,Grizzlies,Defensive rebound by V. Williams
+4,8:53.0,96-112,Grizzlies,C. Coward misses 3-pt jump shot from 23 ft
+4,8:49.0,96-112,Timberwolves,Defensive rebound by J. Randle
+4,8:43.0,96-112,Timberwolves,Personal foul by V. Williams (drawn by J. McDaniels)
+4,8:37.0,96-112,Timberwolves,Shooting foul by V. Williams (drawn by A. Edwards)
+4,8:37.0,96-112,Timberwolves,A. Edwards misses free throw 1 of 2
+4,8:37.0,96-112,Timberwolves,Offensive rebound by Team
+4,8:37.0,97-112,Timberwolves,A. Edwards makes free throw 2 of 2
+4,8:13.0,97-115,Grizzlies,V. Williams makes 3-pt jump shot from 26 ft (assist by C. Spencer)
+4,8:02.0,99-115,Timberwolves,J. McDaniels makes 2-pt layup from 3 ft (assist by D. DiVincenzo)
+4,7:41.0,99-117,Grizzlies,C. Coward makes 2-pt jump shot from 7 ft (assist by G. Jackson)
+4,7:32.0,101-117,Timberwolves,J. Randle makes 2-pt layup from 5 ft
+4,7:32.0,101-117,Timberwolves,Shooting foul by O. Prosper (drawn by J. Randle)
+4,7:32.0,101-117,Grizzlies,K. Caldwell-Pope enters the game for C. Coward
+4,7:32.0,101-117,Grizzlies,J. Landale enters the game for O. Prosper
+4,7:32.0,102-117,Timberwolves,J. Randle makes free throw 1 of 1
+4,7:15.0,102-117,Grizzlies,Turnover by G. Jackson (lost ball; steal by D. DiVincenzo)
+4,7:13.0,102-117,Timberwolves,Personal foul by K. Caldwell-Pope (drawn by A. Edwards)
+4,7:13.0,103-117,Timberwolves,A. Edwards makes free throw 1 of 2
+4,7:13.0,103-117,Timberwolves,A. Edwards misses free throw 2 of 2
+4,7:10.0,103-117,Grizzlies,Defensive rebound by G. Jackson
+4,6:55.0,103-119,Grizzlies,K. Caldwell-Pope makes 2-pt jump shot from 17 ft (assist by V. Williams)
+4,6:40.0,106-119,Timberwolves,A. Edwards makes 3-pt jump shot from 25 ft
+4,6:21.0,106-122,Grizzlies,C. Spencer makes 3-pt jump shot from 26 ft
+4,6:05.0,109-122,Timberwolves,D. DiVincenzo makes 3-pt jump shot from 29 ft (assist by A. Edwards)
+4,5:37.0,109-122,Grizzlies,G. Jackson misses 3-pt jump shot from 24 ft
+4,5:34.0,109-122,Timberwolves,Defensive rebound by J. Randle
+4,5:20.0,109-122,Timberwolves,A. Edwards misses 3-pt jump shot from 26 ft
+4,5:17.0,109-122,Grizzlies,Defensive rebound by C. Spencer
+4,5:10.0,109-122,Grizzlies,K. Caldwell-Pope misses 3-pt jump shot from 25 ft
+4,5:07.0,109-122,Timberwolves,Defensive rebound by D. DiVincenzo
+4,4:56.0,109-122,Timberwolves,J. Randle misses 2-pt layup from 7 ft
+4,4:54.0,109-122,Grizzlies,Defensive rebound by J. Landale
+4,4:37.0,109-124,Grizzlies,C. Spencer makes 2-pt jump shot from 8 ft
+4,4:36.0,109-124,Timberwolves,Minnesota full timeout
+4,4:36.0,109-124,Timberwolves,N. Reid enters the game for B. Hyland
+4,4:36.0,109-124,Grizzlies,J. Jackson enters the game for G. Jackson
+4,4:20.0,109-124,Timberwolves,Shooting foul by K. Caldwell-Pope (drawn by A. Edwards)
+4,4:20.0,110-124,Timberwolves,A. Edwards makes free throw 1 of 2
+4,4:20.0,110-124,Grizzlies,J. Wells enters the game for K. Caldwell-Pope
+4,4:20.0,111-124,Timberwolves,A. Edwards makes free throw 2 of 2
+4,4:01.0,111-124,Grizzlies,J. Jackson misses 3-pt jump shot from 25 ft
+4,3:58.0,111-124,Timberwolves,Defensive rebound by A. Edwards
+4,3:50.0,111-124,Timberwolves,A. Edwards misses 3-pt jump shot from 27 ft
+4,3:48.0,111-124,Timberwolves,Offensive rebound by Team
+4,3:48.0,111-124,Grizzlies,Loose ball foul by J. Jackson (drawn by J. Randle)
+4,3:48.0,112-124,Timberwolves,J. Randle makes free throw 1 of 2
+4,3:48.0,113-124,Timberwolves,J. Randle makes free throw 2 of 2
+4,3:30.0,113-124,Grizzlies,Personal foul by J. McDaniels (drawn by C. Spencer)
+4,3:24.0,113-127,Grizzlies,C. Spencer makes 3-pt jump shot from 26 ft (assist by J. Jackson)
+4,3:06.0,116-127,Timberwolves,J. McDaniels makes 3-pt jump shot from 25 ft (assist by A. Edwards)
+4,3:05.0,116-127,Timberwolves,Technical foul by C. Finch
+4,3:05.0,116-128,Grizzlies,C. Spencer makes technical free throw
+4,3:05.0,116-128,Grizzlies,C. Coward enters the game for C. Spencer
+4,3:05.0,116-128,Grizzlies,T. Jerome enters the game for V. Williams
+4,2:54.0,116-128,Grizzlies,Shooting foul by J. Randle (drawn by J. Jackson)
+4,2:54.0,116-129,Grizzlies,J. Jackson makes free throw 1 of 2
+4,2:54.0,116-130,Grizzlies,J. Jackson makes free throw 2 of 2
+4,2:47.0,116-130,Timberwolves,Shooting foul by J. Wells (drawn by A. Edwards)
+4,2:47.0,117-130,Timberwolves,A. Edwards makes free throw 1 of 2
+4,2:47.0,118-130,Timberwolves,A. Edwards makes free throw 2 of 2
+4,2:24.0,118-130,Grizzlies,J. Jackson misses 2-pt dunk from 2 ft (block by N. Reid)
+4,2:22.0,118-130,Grizzlies,Offensive rebound by J. Landale
+4,2:21.0,118-130,Grizzlies,J. Landale misses 2-pt jump shot from 5 ft
+4,2:19.0,118-130,Timberwolves,Defensive rebound by A. Edwards
+4,2:16.0,120-130,Timberwolves,A. Edwards makes 2-pt layup from 2 ft
+4,2:16.0,120-130,Timberwolves,Shooting foul by J. Wells (drawn by A. Edwards)
+4,2:16.0,121-130,Timberwolves,A. Edwards makes free throw 1 of 1
+4,1:53.0,121-130,Grizzlies,C. Coward misses 2-pt jump shot from 11 ft
+4,1:50.0,121-130,Timberwolves,Defensive rebound by N. Reid
+4,1:50.0,121-130,Timberwolves,Turnover by N. Reid (out of bounds lost ball)
+4,1:36.0,121-132,Grizzlies,T. Jerome makes 2-pt jump shot from 12 ft
+4,1:28.0,121-132,Timberwolves,J. Randle misses 3-pt jump shot from 23 ft
+4,1:26.0,121-132,Grizzlies,Defensive rebound by T. Jerome
+4,1:26.0,121-132,Grizzlies,Personal foul by J. Randle (drawn by T. Jerome)
+4,1:09.0,121-134,Grizzlies,C. Coward makes 2-pt dunk at rim (assist by T. Jerome)
+4,0:59.0,121-134,Timberwolves,A. Edwards misses 3-pt jump shot from 26 ft
+4,0:56.0,121-134,Timberwolves,Offensive rebound by D. DiVincenzo
+4,0:51.0,124-134,Timberwolves,N. Reid makes 3-pt jump shot from 27 ft (assist by J. McDaniels)
+4,0:42.0,124-134,Grizzlies,Memphis full timeout
+4,0:37.0,124-134,Grizzlies,Personal take foul by D. DiVincenzo (drawn by C. Coward)
+4,0:37.0,124-135,Grizzlies,C. Coward makes free throw 1 of 2
+4,0:37.0,124-135,Grizzlies,V. Williams enters the game for J. Landale
+4,0:37.0,124-136,Grizzlies,C. Coward makes free throw 2 of 2
+4,0:33.0,126-136,Timberwolves,J. McDaniels makes 2-pt layup at rim
+4,0:32.0,126-136,Grizzlies,Personal take foul by D. DiVincenzo (drawn by T. Jerome)
+4,0:32.0,126-136,Grizzlies,T. Jerome misses free throw 1 of 2
+4,0:32.0,126-136,Grizzlies,Offensive rebound by Team
+4,0:32.0,126-137,Grizzlies,T. Jerome makes free throw 2 of 2
+4,0:24.0,128-137,Timberwolves,A. Edwards makes 2-pt layup from 2 ft
+4,0:01.0,128-137,Grizzlies,Turnover by Team (shot clock)
+4,0:00.0,128-137,Timberwolves,Team misses heave shot
+4,0:00.0,128-137,Timberwolves,Offensive rebound by Team

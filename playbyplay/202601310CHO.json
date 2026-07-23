@@ -1,0 +1,3089 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:43.0",
+    "score": "0-0",
+    "team": "Spurs",
+    "description": "Personal foul by L. Ball (drawn by V. Wembanyama)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:37.0",
+    "score": "2-0",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes 2-pt jump shot from 19 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:13.0",
+    "score": "2-0",
+    "team": "Hornets",
+    "description": "Turnover by L. Ball (lost ball; steal by D. Fox)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:10.0",
+    "score": "4-0",
+    "team": "Spurs",
+    "description": "S. Castle makes 2-pt dunk at rim (assist by D. Fox)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:00.0",
+    "score": "4-3",
+    "team": "Hornets",
+    "description": "L. Ball makes 3-pt jump shot from 28 ft (assist by B. Miller)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:39.0",
+    "score": "7-3",
+    "team": "Spurs",
+    "description": "J. Champagnie makes 3-pt jump shot from 25 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:24.0",
+    "score": "7-6",
+    "team": "Hornets",
+    "description": "M. Bridges makes 3-pt jump shot from 27 ft (assist by B. Miller)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:04.0",
+    "score": "7-6",
+    "team": "Spurs",
+    "description": "Turnover by V. Wembanyama (lost ball; steal by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:59.0",
+    "score": "7-6",
+    "team": "Hornets",
+    "description": "B. Miller misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:56.0",
+    "score": "7-6",
+    "team": "Hornets",
+    "description": "Offensive rebound by K. Knueppel"
+  },
+  {
+    "quarter": 1,
+    "time": "9:47.0",
+    "score": "7-6",
+    "team": "Hornets",
+    "description": "M. Bridges misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:46.0",
+    "score": "7-6",
+    "team": "Hornets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "9:40.0",
+    "score": "7-6",
+    "team": "Hornets",
+    "description": "Personal foul by D. Fox (drawn by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:26.0",
+    "score": "7-8",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 makes 2-pt layup from 2 ft (assist by K. Knueppel)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:07.0",
+    "score": "10-8",
+    "team": "Spurs",
+    "description": "D. Vassell makes 3-pt jump shot from 27 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:54.0",
+    "score": "10-11",
+    "team": "Hornets",
+    "description": "L. Ball makes 3-pt jump shot from 25 ft (assist by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:38.0",
+    "score": "10-11",
+    "team": "Spurs",
+    "description": "D. Fox misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:36.0",
+    "score": "10-11",
+    "team": "Spurs",
+    "description": "Offensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 1,
+    "time": "8:36.0",
+    "score": "10-11",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "8:34.0",
+    "score": "10-11",
+    "team": "Hornets",
+    "description": "Defensive rebound by B. Miller"
+  },
+  {
+    "quarter": 1,
+    "time": "8:17.0",
+    "score": "10-13",
+    "team": "Hornets",
+    "description": "M. Bridges makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:00.0",
+    "score": "10-13",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:59.0",
+    "score": "10-13",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 1,
+    "time": "7:43.0",
+    "score": "10-15",
+    "team": "Hornets",
+    "description": "K. Knueppel makes 2-pt layup from 2 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:43.0",
+    "score": "10-15",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "7:29.0",
+    "score": "10-15",
+    "team": "Spurs",
+    "description": "D. Fox misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:27.0",
+    "score": "10-15",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 1,
+    "time": "7:23.0",
+    "score": "10-15",
+    "team": "Hornets",
+    "description": "B. Miller misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:21.0",
+    "score": "10-15",
+    "team": "Spurs",
+    "description": "Defensive rebound by S. Castle"
+  },
+  {
+    "quarter": 1,
+    "time": "7:14.0",
+    "score": "13-15",
+    "team": "Spurs",
+    "description": "D. Vassell makes 3-pt jump shot from 24 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:48.0",
+    "score": "13-17",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 makes 2-pt jump shot from 7 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:29.0",
+    "score": "16-17",
+    "team": "Spurs",
+    "description": "D. Fox makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-17",
+    "team": "Hornets",
+    "description": "Shooting foul by D. Fox (drawn by L. Ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-18",
+    "team": "Hornets",
+    "description": "L. Ball makes free throw 1 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-19",
+    "team": "Hornets",
+    "description": "L. Ball makes free throw 2 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-19",
+    "team": "Spurs",
+    "description": "D. Harper enters the game for D. Fox"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-19",
+    "team": "Spurs",
+    "description": "L. Kornet enters the game for V. Wembanyama"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-19",
+    "team": "Hornets",
+    "description": "J. Green enters the game for M. Diabat\u00e9"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-19",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner enters the game for K. Knueppel"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "16-20",
+    "team": "Hornets",
+    "description": "L. Ball makes free throw 3 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:03.0",
+    "score": "16-20",
+    "team": "Spurs",
+    "description": "Turnover by S. Castle (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:53.0",
+    "score": "16-20",
+    "team": "Hornets",
+    "description": "Turnover by M. Bridges (traveling)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:35.0",
+    "score": "18-20",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:12.0",
+    "score": "18-20",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 10 ft (block by D. Vassell)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:10.0",
+    "score": "18-20",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Vassell"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Spurs",
+    "description": "J. Champagnie makes 3-pt jump shot from 26 ft (assist by D. Vassell)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Spurs",
+    "description": "Shooting foul by M. Bridges (drawn by J. Champagnie)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Hornets",
+    "description": "Charlotte full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Spurs",
+    "description": "H. Barnes enters the game for S. Castle"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Spurs",
+    "description": "K. Johnson enters the game for D. Vassell"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Hornets",
+    "description": "S. James enters the game for L. Ball"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "21-20",
+    "team": "Hornets",
+    "description": "G. Williams enters the game for M. Bridges"
+  },
+  {
+    "quarter": 1,
+    "time": "5:03.0",
+    "score": "22-20",
+    "team": "Spurs",
+    "description": "J. Champagnie makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "4:46.0",
+    "score": "22-20",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "22-20",
+    "team": "Hornets",
+    "description": "Offensive rebound by B. Miller"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "22-20",
+    "team": "Hornets",
+    "description": "Shooting foul by H. Barnes (drawn by B. Miller)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "22-21",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "22-21",
+    "team": "Spurs",
+    "description": "S. Castle enters the game for J. Champagnie"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:19.0",
+    "score": "22-22",
+    "team": "Spurs",
+    "description": "H. Barnes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:16.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "Defensive rebound by S. James"
+  },
+  {
+    "quarter": 1,
+    "time": "4:11.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 5 ft (block by D. Harper)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:10.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "Offensive rebound by B. Miller"
+  },
+  {
+    "quarter": 1,
+    "time": "3:54.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "J. Green misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:52.0",
+    "score": "22-22",
+    "team": "Spurs",
+    "description": "Defensive rebound by H. Barnes"
+  },
+  {
+    "quarter": 1,
+    "time": "3:44.0",
+    "score": "22-22",
+    "team": "Spurs",
+    "description": "H. Barnes misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "Defensive rebound by G. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "3:24.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "S. James misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:22.0",
+    "score": "22-22",
+    "team": "Spurs",
+    "description": "Defensive rebound by L. Kornet"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "22-22",
+    "team": "Spurs",
+    "description": "Turnover by H. Barnes (back court)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "22-22",
+    "team": "Spurs",
+    "description": "D. Fox enters the game for S. Castle"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "K. Knueppel enters the game for B. Miller"
+  },
+  {
+    "quarter": 1,
+    "time": "3:04.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "K. Knueppel misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:02.0",
+    "score": "22-22",
+    "team": "Hornets",
+    "description": "Offensive rebound by J. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "2:58.0",
+    "score": "22-24",
+    "team": "Hornets",
+    "description": "K. Knueppel makes 2-pt layup from 2 ft (assist by J. Green)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:38.0",
+    "score": "24-24",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt jump shot from 11 ft (assist by D. Fox)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:27.0",
+    "score": "24-24",
+    "team": "Hornets",
+    "description": "Turnover by S. James (bad pass; steal by L. Kornet)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "27-24",
+    "team": "Spurs",
+    "description": "D. Harper makes 3-pt jump shot from 26 ft (assist by D. Fox)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:18.0",
+    "score": "27-24",
+    "team": "Hornets",
+    "description": "C. Sexton enters the game for J. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "1:50.0",
+    "score": "27-26",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner makes 2-pt jump shot from 17 ft (assist by C. Sexton)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:39.0",
+    "score": "27-26",
+    "team": "Spurs",
+    "description": "D. Harper misses 2-pt layup from 2 ft (block by R. Kalkbrenner)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:36.0",
+    "score": "27-26",
+    "team": "Hornets",
+    "description": "Defensive rebound by G. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "1:34.0",
+    "score": "27-26",
+    "team": "Hornets",
+    "description": "Offensive foul by S. James (drawn by K. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:34.0",
+    "score": "27-26",
+    "team": "Hornets",
+    "description": "Turnover by S. James (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:11.0",
+    "score": "27-26",
+    "team": "Spurs",
+    "description": "K. Johnson misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:07.0",
+    "score": "27-26",
+    "team": "Hornets",
+    "description": "Defensive rebound by G. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "0:53.0",
+    "score": "27-26",
+    "team": "Hornets",
+    "description": "K. Knueppel misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:51.0",
+    "score": "27-26",
+    "team": "Spurs",
+    "description": "Defensive rebound by L. Kornet"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "27-26",
+    "team": "Spurs",
+    "description": "Shooting foul by G. Williams (drawn by K. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "28-26",
+    "team": "Spurs",
+    "description": "K. Johnson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "28-26",
+    "team": "Spurs",
+    "description": "S. Castle enters the game for D. Fox"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "28-26",
+    "team": "Hornets",
+    "description": "L. Ball enters the game for S. James"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "29-26",
+    "team": "Spurs",
+    "description": "K. Johnson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:35.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "Offensive foul by K. Knueppel (drawn by S. Castle)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:35.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "Turnover by K. Knueppel (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:21.0",
+    "score": "29-26",
+    "team": "Spurs",
+    "description": "K. Johnson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:17.0",
+    "score": "29-26",
+    "team": "Spurs",
+    "description": "Offensive rebound by S. Castle"
+  },
+  {
+    "quarter": 1,
+    "time": "0:17.0",
+    "score": "29-26",
+    "team": "Spurs",
+    "description": "S. Castle misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "0:16.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 1,
+    "time": "0:14.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "Turnover by L. Ball (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:14.0",
+    "score": "29-26",
+    "team": "Spurs",
+    "description": "V. Wembanyama enters the game for L. Kornet"
+  },
+  {
+    "quarter": 1,
+    "time": "0:14.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 enters the game for L. Ball"
+  },
+  {
+    "quarter": 1,
+    "time": "0:14.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "J. Green enters the game for R. Kalkbrenner"
+  },
+  {
+    "quarter": 1,
+    "time": "0:14.0",
+    "score": "29-26",
+    "team": "Hornets",
+    "description": "S. James enters the game for C. Sexton"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "29-26",
+    "team": "Spurs",
+    "description": "Shooting foul by G. Williams (drawn by S. Castle)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-26",
+    "team": "Spurs",
+    "description": "S. Castle makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-26",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner enters the game for G. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-26",
+    "team": "Spurs",
+    "description": "S. Castle misses free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-26",
+    "team": "Hornets",
+    "description": "Defensive rebound by S. James"
+  },
+  {
+    "quarter": 2,
+    "time": "11:40.0",
+    "score": "30-26",
+    "team": "Hornets",
+    "description": "L. Ball misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:38.0",
+    "score": "30-26",
+    "team": "Spurs",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:23.0",
+    "score": "30-26",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:20.0",
+    "score": "30-26",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 2,
+    "time": "11:17.0",
+    "score": "30-26",
+    "team": "Hornets",
+    "description": "Personal foul by D. Harper (drawn by L. Ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-26",
+    "team": "Hornets",
+    "description": "Shooting foul by S. Castle (drawn by C. Sexton)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-27",
+    "team": "Hornets",
+    "description": "C. Sexton makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-28",
+    "team": "Hornets",
+    "description": "C. Sexton makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "10:55.0",
+    "score": "32-28",
+    "team": "Spurs",
+    "description": "S. Castle makes 2-pt dunk from 1 ft (assist by V. Wembanyama)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:39.0",
+    "score": "32-28",
+    "team": "Hornets",
+    "description": "Turnover by K. Knueppel (bad pass; steal by K. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:35.0",
+    "score": "34-28",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt dunk from 1 ft (assist by K. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:34.0",
+    "score": "34-28",
+    "team": "Hornets",
+    "description": "Charlotte full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "10:18.0",
+    "score": "34-30",
+    "team": "Hornets",
+    "description": "C. Sexton makes 2-pt layup from 2 ft (assist by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:00.0",
+    "score": "36-30",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt layup at rim (assist by S. Castle)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "36-30",
+    "team": "Hornets",
+    "description": "Shooting foul by D. Harper (drawn by L. Ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "36-30",
+    "team": "Hornets",
+    "description": "L. Ball misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "36-30",
+    "team": "Hornets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:45.0",
+    "score": "36-31",
+    "team": "Hornets",
+    "description": "L. Ball makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "9:32.0",
+    "score": "38-31",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes 2-pt dunk from 1 ft (assist by D. Harper)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:32.0",
+    "score": "38-31",
+    "team": "Spurs",
+    "description": "D. Fox enters the game for S. Castle"
+  },
+  {
+    "quarter": 2,
+    "time": "9:11.0",
+    "score": "38-31",
+    "team": "Hornets",
+    "description": "L. Ball misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:09.0",
+    "score": "38-31",
+    "team": "Spurs",
+    "description": "Defensive rebound by K. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "9:03.0",
+    "score": "38-31",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:01.0",
+    "score": "38-31",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 2,
+    "time": "8:50.0",
+    "score": "38-34",
+    "team": "Hornets",
+    "description": "C. Sexton makes 3-pt jump shot from 23 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-34",
+    "team": "Spurs",
+    "description": "Personal foul by M. Diabat\u00e9 (drawn by V. Wembanyama)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-34",
+    "team": "Spurs",
+    "description": "D. Vassell enters the game for K. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-34",
+    "team": "Hornets",
+    "description": "B. Miller enters the game for K. Knueppel"
+  },
+  {
+    "quarter": 2,
+    "time": "8:29.0",
+    "score": "38-34",
+    "team": "Spurs",
+    "description": "Turnover by V. Wembanyama (lost ball; steal by M. Bridges)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:18.0",
+    "score": "38-36",
+    "team": "Hornets",
+    "description": "L. Ball makes 2-pt jump shot from 13 ft (assist by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:18.0",
+    "score": "38-36",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "8:18.0",
+    "score": "38-36",
+    "team": "Spurs",
+    "description": "L. Kornet enters the game for V. Wembanyama"
+  },
+  {
+    "quarter": 2,
+    "time": "7:58.0",
+    "score": "40-36",
+    "team": "Spurs",
+    "description": "D. Fox makes 2-pt jump shot from 6 ft (assist by H. Barnes)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:44.0",
+    "score": "40-38",
+    "team": "Hornets",
+    "description": "B. Miller makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:23.0",
+    "score": "40-38",
+    "team": "Spurs",
+    "description": "Turnover by D. Harper (bad pass; steal by C. Sexton)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:16.0",
+    "score": "40-41",
+    "team": "Hornets",
+    "description": "C. Sexton makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:07.0",
+    "score": "40-41",
+    "team": "Spurs",
+    "description": "Shooting foul by B. Miller (drawn by D. Vassell)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:07.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "D. Vassell makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:07.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "S. Castle enters the game for H. Barnes"
+  },
+  {
+    "quarter": 2,
+    "time": "7:07.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "J. Champagnie enters the game for D. Harper"
+  },
+  {
+    "quarter": 2,
+    "time": "7:07.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "K. Knueppel enters the game for L. Ball"
+  },
+  {
+    "quarter": 2,
+    "time": "7:07.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "D. Vassell misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:05.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "6:48.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:47.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "Defensive rebound by L. Kornet"
+  },
+  {
+    "quarter": 2,
+    "time": "6:34.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "Turnover by D. Fox (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:34.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner enters the game for M. Diabat\u00e9"
+  },
+  {
+    "quarter": 2,
+    "time": "6:24.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "Personal foul by S. Castle (drawn by B. Miller)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 2,
+    "time": "6:07.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "D. Vassell misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:03.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "Defensive rebound by R. Kalkbrenner"
+  },
+  {
+    "quarter": 2,
+    "time": "5:59.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "K. Knueppel misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:57.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "Offensive rebound by R. Kalkbrenner"
+  },
+  {
+    "quarter": 2,
+    "time": "5:56.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner misses 2-pt layup from 3 ft (block by J. Champagnie)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:54.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "Offensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "5:53.0",
+    "score": "41-41",
+    "team": "Hornets",
+    "description": "Turnover by B. Miller (lost ball; steal by D. Fox)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:49.0",
+    "score": "41-41",
+    "team": "Spurs",
+    "description": "Shooting foul by C. Sexton (drawn by S. Castle)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:49.0",
+    "score": "42-41",
+    "team": "Spurs",
+    "description": "S. Castle makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:49.0",
+    "score": "42-41",
+    "team": "Hornets",
+    "description": "G. Williams enters the game for M. Bridges"
+  },
+  {
+    "quarter": 2,
+    "time": "5:49.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "S. Castle makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:28.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "K. Knueppel misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:27.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 2,
+    "time": "5:17.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "S. Castle misses 2-pt layup from 6 ft (block by B. Miller)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:13.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "Offensive rebound by S. Castle"
+  },
+  {
+    "quarter": 2,
+    "time": "5:12.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "D. Vassell misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:10.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "Defensive rebound by B. Miller"
+  },
+  {
+    "quarter": 2,
+    "time": "5:00.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:58.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Vassell"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "S. Castle misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:46.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "4:46.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "V. Wembanyama enters the game for L. Kornet"
+  },
+  {
+    "quarter": 2,
+    "time": "4:46.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 enters the game for R. Kalkbrenner"
+  },
+  {
+    "quarter": 2,
+    "time": "4:46.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "S. James enters the game for C. Sexton"
+  },
+  {
+    "quarter": 2,
+    "time": "4:41.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:39.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "Defensive rebound by K. Knueppel"
+  },
+  {
+    "quarter": 2,
+    "time": "4:34.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "G. Williams misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:32.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "Defensive rebound by S. Castle"
+  },
+  {
+    "quarter": 2,
+    "time": "4:24.0",
+    "score": "43-41",
+    "team": "Spurs",
+    "description": "J. Champagnie misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:21.0",
+    "score": "43-41",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 2,
+    "time": "4:04.0",
+    "score": "43-43",
+    "team": "Hornets",
+    "description": "B. Miller makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:48.0",
+    "score": "43-43",
+    "team": "Spurs",
+    "description": "J. Champagnie misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:46.0",
+    "score": "43-43",
+    "team": "Hornets",
+    "description": "Defensive rebound by G. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "3:40.0",
+    "score": "43-45",
+    "team": "Hornets",
+    "description": "K. Knueppel makes 2-pt jump shot from 14 ft (assist by G. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:30.0",
+    "score": "45-45",
+    "team": "Spurs",
+    "description": "S. Castle makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-45",
+    "team": "Hornets",
+    "description": "Shooting foul by J. Champagnie (drawn by K. Knueppel)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-45",
+    "team": "Hornets",
+    "description": "K. Knueppel misses free throw 1 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-45",
+    "team": "Hornets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-46",
+    "team": "Hornets",
+    "description": "K. Knueppel makes free throw 2 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-46",
+    "team": "Spurs",
+    "description": "D. Harper enters the game for D. Fox"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-46",
+    "team": "Spurs",
+    "description": "L. Kornet enters the game for D. Vassell"
+  },
+  {
+    "quarter": 2,
+    "time": "3:07.0",
+    "score": "45-47",
+    "team": "Hornets",
+    "description": "K. Knueppel makes free throw 3 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "2:56.0",
+    "score": "45-47",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:54.0",
+    "score": "45-47",
+    "team": "Hornets",
+    "description": "Defensive rebound by S. James"
+  },
+  {
+    "quarter": 2,
+    "time": "2:47.0",
+    "score": "45-47",
+    "team": "Hornets",
+    "description": "Personal foul by L. Kornet (drawn by B. Miller)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:47.0",
+    "score": "45-48",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:47.0",
+    "score": "45-48",
+    "team": "Hornets",
+    "description": "L. Ball enters the game for S. James"
+  },
+  {
+    "quarter": 2,
+    "time": "2:47.0",
+    "score": "45-48",
+    "team": "Hornets",
+    "description": "J. Green enters the game for K. Knueppel"
+  },
+  {
+    "quarter": 2,
+    "time": "2:47.0",
+    "score": "45-49",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:22.0",
+    "score": "45-49",
+    "team": "Spurs",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:03.0",
+    "score": "45-52",
+    "team": "Hornets",
+    "description": "B. Miller makes 3-pt jump shot from 27 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:43.0",
+    "score": "45-52",
+    "team": "Spurs",
+    "description": "S. Castle misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:41.0",
+    "score": "45-52",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "45-55",
+    "team": "Hornets",
+    "description": "B. Miller makes 3-pt jump shot from 26 ft (assist by J. Green)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "45-55",
+    "team": "Hornets",
+    "description": "Shooting foul by V. Wembanyama (drawn by B. Miller)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "45-55",
+    "team": "Spurs",
+    "description": "D. Fox enters the game for S. Castle"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "45-55",
+    "team": "Spurs",
+    "description": "K. Johnson enters the game for V. Wembanyama"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "45-56",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "1:16.0",
+    "score": "45-56",
+    "team": "Spurs",
+    "description": "Offensive foul by L. Kornet (drawn by J. Green)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:16.0",
+    "score": "45-56",
+    "team": "Spurs",
+    "description": "Turnover by L. Kornet (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:05.0",
+    "score": "45-59",
+    "team": "Hornets",
+    "description": "B. Miller makes 3-pt jump shot from 27 ft (assist by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:53.0",
+    "score": "45-59",
+    "team": "Spurs",
+    "description": "K. Johnson misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:50.0",
+    "score": "45-59",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "45-59",
+    "team": "Hornets",
+    "description": "B. Miller misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:41.0",
+    "score": "45-59",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Harper"
+  },
+  {
+    "quarter": 2,
+    "time": "0:36.0",
+    "score": "47-59",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:33.0",
+    "score": "47-61",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 makes 2-pt dunk from 1 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:26.0",
+    "score": "47-61",
+    "team": "Spurs",
+    "description": "Personal foul by M. Diabat\u00e9 (drawn by L. Kornet)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:26.0",
+    "score": "47-61",
+    "team": "Hornets",
+    "description": "M. Bridges enters the game for M. Diabat\u00e9"
+  },
+  {
+    "quarter": 2,
+    "time": "0:11.0",
+    "score": "47-61",
+    "team": "Spurs",
+    "description": "D. Fox misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:08.0",
+    "score": "47-61",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "47-61",
+    "team": "Hornets",
+    "description": "G. Williams misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "47-61",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Fox"
+  },
+  {
+    "quarter": 3,
+    "time": "11:37.0",
+    "score": "47-63",
+    "team": "Hornets",
+    "description": "B. Miller makes 2-pt hook shot from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:17.0",
+    "score": "47-63",
+    "team": "Spurs",
+    "description": "D. Fox misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:15.0",
+    "score": "47-63",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 3,
+    "time": "10:57.0",
+    "score": "47-65",
+    "team": "Hornets",
+    "description": "L. Ball makes 2-pt jump shot from 5 ft (assist by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:46.0",
+    "score": "49-65",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes 2-pt layup from 3 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:38.0",
+    "score": "49-65",
+    "team": "Hornets",
+    "description": "M. Bridges misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:36.0",
+    "score": "49-65",
+    "team": "Hornets",
+    "description": "Offensive rebound by B. Miller"
+  },
+  {
+    "quarter": 3,
+    "time": "10:34.0",
+    "score": "49-65",
+    "team": "Hornets",
+    "description": "L. Ball misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:30.0",
+    "score": "49-65",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Vassell"
+  },
+  {
+    "quarter": 3,
+    "time": "10:23.0",
+    "score": "49-65",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:21.0",
+    "score": "49-65",
+    "team": "Hornets",
+    "description": "Defensive rebound by B. Miller"
+  },
+  {
+    "quarter": 3,
+    "time": "10:05.0",
+    "score": "49-67",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 makes 2-pt jump shot from 6 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:45.0",
+    "score": "49-67",
+    "team": "Spurs",
+    "description": "Turnover by S. Castle (step out of bounds)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:18.0",
+    "score": "49-67",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 6 ft (block by S. Castle)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:15.0",
+    "score": "49-67",
+    "team": "Hornets",
+    "description": "Offensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 3,
+    "time": "9:11.0",
+    "score": "49-69",
+    "team": "Hornets",
+    "description": "B. Miller makes 2-pt jump shot from 4 ft (assist by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:54.0",
+    "score": "49-69",
+    "team": "Spurs",
+    "description": "D. Fox misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:52.0",
+    "score": "49-69",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 3,
+    "time": "8:39.0",
+    "score": "49-69",
+    "team": "Hornets",
+    "description": "L. Ball misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:38.0",
+    "score": "49-69",
+    "team": "Spurs",
+    "description": "Defensive rebound by S. Castle"
+  },
+  {
+    "quarter": 3,
+    "time": "8:25.0",
+    "score": "49-69",
+    "team": "Spurs",
+    "description": "S. Castle misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:21.0",
+    "score": "49-69",
+    "team": "Spurs",
+    "description": "Offensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 3,
+    "time": "8:21.0",
+    "score": "51-69",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "7:55.0",
+    "score": "51-69",
+    "team": "Hornets",
+    "description": "L. Ball misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:53.0",
+    "score": "51-69",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Vassell"
+  },
+  {
+    "quarter": 3,
+    "time": "7:43.0",
+    "score": "54-69",
+    "team": "Spurs",
+    "description": "J. Champagnie makes 3-pt jump shot from 27 ft (assist by D. Fox)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:34.0",
+    "score": "54-69",
+    "team": "Hornets",
+    "description": "B. Miller misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:31.0",
+    "score": "54-69",
+    "team": "Spurs",
+    "description": "Defensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "54-69",
+    "team": "Spurs",
+    "description": "Shooting foul by M. Bridges (drawn by V. Wembanyama)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "55-69",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "55-69",
+    "team": "Spurs",
+    "description": "D. Harper enters the game for D. Fox"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "56-69",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:04.0",
+    "score": "56-69",
+    "team": "Hornets",
+    "description": "Turnover by L. Ball (bad pass; steal by D. Harper)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:00.0",
+    "score": "56-69",
+    "team": "Spurs",
+    "description": "Turnover by D. Harper (bad pass; steal by K. Knueppel)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "M. Bridges makes 2-pt dunk from 2 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:40.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "D. Vassell misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:36.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 3,
+    "time": "6:31.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "M. Bridges misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "Personal foul by L. Ball (drawn by J. Champagnie)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "Charlotte full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "D. Fox enters the game for D. Harper"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "Instant Replay"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "D. Harper enters the game for D. Fox"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "L. Kornet enters the game for V. Wembanyama"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "J. Green enters the game for M. Diabat\u00e9"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "56-71",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner enters the game for K. Knueppel"
+  },
+  {
+    "quarter": 3,
+    "time": "6:25.0",
+    "score": "56-71",
+    "team": "Spurs",
+    "description": "Personal foul by J. Green (drawn by S. Castle)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:11.0",
+    "score": "59-71",
+    "team": "Spurs",
+    "description": "D. Harper makes 3-pt jump shot from 26 ft (assist by L. Kornet)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:51.0",
+    "score": "59-71",
+    "team": "Hornets",
+    "description": "L. Ball misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:51.0",
+    "score": "59-71",
+    "team": "Hornets",
+    "description": "Offensive rebound by R. Kalkbrenner"
+  },
+  {
+    "quarter": 3,
+    "time": "5:47.0",
+    "score": "59-73",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "5:27.0",
+    "score": "59-73",
+    "team": "Spurs",
+    "description": "Turnover by S. Castle (bad pass; steal by B. Miller)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:20.0",
+    "score": "59-73",
+    "team": "Hornets",
+    "description": "Turnover by B. Miller (bad pass; steal by D. Vassell)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:12.0",
+    "score": "59-73",
+    "team": "Spurs",
+    "description": "D. Vassell misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:10.0",
+    "score": "59-73",
+    "team": "Hornets",
+    "description": "Defensive rebound by R. Kalkbrenner"
+  },
+  {
+    "quarter": 3,
+    "time": "4:56.0",
+    "score": "59-75",
+    "team": "Hornets",
+    "description": "R. Kalkbrenner makes 2-pt dunk from 1 ft (assist by M. Bridges)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:39.0",
+    "score": "59-75",
+    "team": "Spurs",
+    "description": "D. Harper misses 2-pt layup from 2 ft (block by R. Kalkbrenner)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:35.0",
+    "score": "59-75",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 3,
+    "time": "4:32.0",
+    "score": "59-75",
+    "team": "Hornets",
+    "description": "B. Miller misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "59-75",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Vassell"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "61-75",
+    "team": "Spurs",
+    "description": "D. Vassell makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:01.0",
+    "score": "61-75",
+    "team": "Hornets",
+    "description": "M. Bridges misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:59.0",
+    "score": "61-75",
+    "team": "Spurs",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "3:54.0",
+    "score": "61-75",
+    "team": "Spurs",
+    "description": "D. Harper misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:52.0",
+    "score": "61-75",
+    "team": "Hornets",
+    "description": "Defensive rebound by L. Ball"
+  },
+  {
+    "quarter": 3,
+    "time": "3:48.0",
+    "score": "61-75",
+    "team": "Hornets",
+    "description": "L. Ball misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:44.0",
+    "score": "61-75",
+    "team": "Spurs",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "3:35.0",
+    "score": "63-75",
+    "team": "Spurs",
+    "description": "D. Vassell makes 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:19.0",
+    "score": "63-75",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 6 ft (block by L. Kornet)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:17.0",
+    "score": "63-75",
+    "team": "Spurs",
+    "description": "Defensive rebound by L. Kornet"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "66-75",
+    "team": "Spurs",
+    "description": "J. Champagnie makes 3-pt jump shot from 23 ft (assist by D. Vassell)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Hornets",
+    "description": "Shooting foul by S. Castle (drawn by B. Miller)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Spurs",
+    "description": "H. Barnes enters the game for S. Castle"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Spurs",
+    "description": "D. Fox enters the game for J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Spurs",
+    "description": "K. Johnson enters the game for D. Vassell"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Hornets",
+    "description": "C. Sexton enters the game for L. Ball"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-75",
+    "team": "Hornets",
+    "description": "G. Williams enters the game for M. Bridges"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-76",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "66-77",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:40.0",
+    "score": "66-77",
+    "team": "Spurs",
+    "description": "K. Johnson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:37.0",
+    "score": "66-77",
+    "team": "Hornets",
+    "description": "Defensive rebound by B. Miller"
+  },
+  {
+    "quarter": 3,
+    "time": "2:37.0",
+    "score": "66-77",
+    "team": "Hornets",
+    "description": "S. James enters the game for J. Green"
+  },
+  {
+    "quarter": 3,
+    "time": "2:37.0",
+    "score": "66-77",
+    "team": "Hornets",
+    "description": "K. Knueppel enters the game for B. Miller"
+  },
+  {
+    "quarter": 3,
+    "time": "2:15.0",
+    "score": "66-77",
+    "team": "Hornets",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:00.0",
+    "score": "68-77",
+    "team": "Spurs",
+    "description": "K. Johnson makes 2-pt jump shot from 2 ft (assist by H. Barnes)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:44.0",
+    "score": "68-79",
+    "team": "Hornets",
+    "description": "C. Sexton makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:33.0",
+    "score": "71-79",
+    "team": "Spurs",
+    "description": "H. Barnes makes 3-pt jump shot from 23 ft (assist by D. Harper)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:18.0",
+    "score": "71-79",
+    "team": "Hornets",
+    "description": "C. Sexton misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:17.0",
+    "score": "71-79",
+    "team": "Hornets",
+    "description": "Offensive rebound by S. James"
+  },
+  {
+    "quarter": 3,
+    "time": "1:15.0",
+    "score": "71-82",
+    "team": "Hornets",
+    "description": "C. Sexton makes 3-pt jump shot from 26 ft (assist by G. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:56.0",
+    "score": "73-82",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt jump shot from 18 ft (assist by D. Fox)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "73-85",
+    "team": "Hornets",
+    "description": "K. Knueppel makes 3-pt jump shot from 26 ft (assist by C. Sexton)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:22.0",
+    "score": "75-85",
+    "team": "Spurs",
+    "description": "D. Harper makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:01.0",
+    "score": "75-85",
+    "team": "Hornets",
+    "description": "S. James misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:01.0",
+    "score": "75-85",
+    "team": "Spurs",
+    "description": "Defensive rebound by L. Kornet"
+  },
+  {
+    "quarter": 4,
+    "time": "11:40.0",
+    "score": "75-85",
+    "team": "Spurs",
+    "description": "D. Fox misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "75-85",
+    "team": "Hornets",
+    "description": "Defensive rebound by K. Knueppel"
+  },
+  {
+    "quarter": 4,
+    "time": "11:31.0",
+    "score": "75-85",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:29.0",
+    "score": "75-85",
+    "team": "Spurs",
+    "description": "Defensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 4,
+    "time": "11:21.0",
+    "score": "77-85",
+    "team": "Spurs",
+    "description": "D. Fox makes 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:57.0",
+    "score": "77-87",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 makes 2-pt jump shot from 3 ft (assist by C. Sexton)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:51.0",
+    "score": "77-87",
+    "team": "Spurs",
+    "description": "D. Harper misses 2-pt layup from 2 ft (block by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "77-87",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 4,
+    "time": "10:41.0",
+    "score": "77-90",
+    "team": "Hornets",
+    "description": "C. Sexton makes 3-pt jump shot from 25 ft (assist by K. Knueppel)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:27.0",
+    "score": "77-90",
+    "team": "Spurs",
+    "description": "H. Barnes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:25.0",
+    "score": "77-90",
+    "team": "Spurs",
+    "description": "Offensive rebound by K. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "77-90",
+    "team": "Spurs",
+    "description": "Shooting foul by C. Sexton (drawn by K. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "77-90",
+    "team": "Spurs",
+    "description": "S. Castle enters the game for D. Harper"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "78-90",
+    "team": "Spurs",
+    "description": "K. Johnson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "79-90",
+    "team": "Spurs",
+    "description": "K. Johnson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:12.0",
+    "score": "79-90",
+    "team": "Hornets",
+    "description": "K. Knueppel misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:10.0",
+    "score": "79-90",
+    "team": "Spurs",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:53.0",
+    "score": "79-90",
+    "team": "Spurs",
+    "description": "Shooting foul by G. Williams (drawn by V. Wembanyama)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:53.0",
+    "score": "80-90",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:53.0",
+    "score": "81-90",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:31.0",
+    "score": "81-90",
+    "team": "Hornets",
+    "description": "G. Williams misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:29.0",
+    "score": "81-90",
+    "team": "Hornets",
+    "description": "Offensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 4,
+    "time": "9:26.0",
+    "score": "81-93",
+    "team": "Hornets",
+    "description": "C. Sexton makes 3-pt jump shot from 27 ft (assist by S. James)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:05.0",
+    "score": "83-93",
+    "team": "Spurs",
+    "description": "D. Fox makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:45.0",
+    "score": "83-96",
+    "team": "Hornets",
+    "description": "G. Williams makes 3-pt jump shot from 25 ft (assist by K. Knueppel)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:45.0",
+    "score": "83-96",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:45.0",
+    "score": "83-96",
+    "team": "Spurs",
+    "description": "J. Champagnie enters the game for D. Fox"
+  },
+  {
+    "quarter": 4,
+    "time": "8:45.0",
+    "score": "83-96",
+    "team": "Spurs",
+    "description": "D. Vassell enters the game for K. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "8:45.0",
+    "score": "83-96",
+    "team": "Hornets",
+    "description": "M. Bridges enters the game for S. James"
+  },
+  {
+    "quarter": 4,
+    "time": "8:24.0",
+    "score": "86-96",
+    "team": "Spurs",
+    "description": "H. Barnes makes 3-pt jump shot from 25 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:03.0",
+    "score": "86-96",
+    "team": "Hornets",
+    "description": "G. Williams misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:01.0",
+    "score": "86-96",
+    "team": "Hornets",
+    "description": "Offensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "7:59.0",
+    "score": "86-96",
+    "team": "Hornets",
+    "description": "K. Knueppel misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:57.0",
+    "score": "86-96",
+    "team": "Spurs",
+    "description": "Defensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 4,
+    "time": "7:46.0",
+    "score": "89-96",
+    "team": "Spurs",
+    "description": "H. Barnes makes 3-pt jump shot from 24 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:46.0",
+    "score": "89-96",
+    "team": "Hornets",
+    "description": "Charlotte full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "7:46.0",
+    "score": "89-96",
+    "team": "Hornets",
+    "description": "L. Ball enters the game for C. Sexton"
+  },
+  {
+    "quarter": 4,
+    "time": "7:46.0",
+    "score": "89-96",
+    "team": "Hornets",
+    "description": "B. Miller enters the game for G. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "7:20.0",
+    "score": "89-98",
+    "team": "Hornets",
+    "description": "L. Ball makes 2-pt jump shot from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:06.0",
+    "score": "91-98",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes 2-pt layup from 1 ft (assist by S. Castle)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:46.0",
+    "score": "91-100",
+    "team": "Hornets",
+    "description": "K. Knueppel makes 2-pt jump shot from 7 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:32.0",
+    "score": "94-100",
+    "team": "Spurs",
+    "description": "S. Castle makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:17.0",
+    "score": "94-100",
+    "team": "Hornets",
+    "description": "B. Miller misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:15.0",
+    "score": "94-100",
+    "team": "Hornets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "6:15.0",
+    "score": "94-100",
+    "team": "Spurs",
+    "description": "Loose ball foul by V. Wembanyama (drawn by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:07.0",
+    "score": "94-100",
+    "team": "Hornets",
+    "description": "M. Bridges misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:06.0",
+    "score": "94-100",
+    "team": "Hornets",
+    "description": "Offensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 4,
+    "time": "6:04.0",
+    "score": "94-100",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 misses 2-pt layup from 3 ft (block by J. Champagnie)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:01.0",
+    "score": "94-100",
+    "team": "Spurs",
+    "description": "Defensive rebound by H. Barnes"
+  },
+  {
+    "quarter": 4,
+    "time": "5:55.0",
+    "score": "96-100",
+    "team": "Spurs",
+    "description": "S. Castle makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:38.0",
+    "score": "96-100",
+    "team": "Hornets",
+    "description": "L. Ball misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:36.0",
+    "score": "96-100",
+    "team": "Spurs",
+    "description": "Defensive rebound by H. Barnes"
+  },
+  {
+    "quarter": 4,
+    "time": "5:34.0",
+    "score": "96-100",
+    "team": "Spurs",
+    "description": "S. Castle misses 2-pt layup from 4 ft (block by M. Diabat\u00e9)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:32.0",
+    "score": "96-100",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "96-100",
+    "team": "Spurs",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "96-100",
+    "team": "Spurs",
+    "description": "D. Fox enters the game for S. Castle"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "96-100",
+    "team": "Hornets",
+    "description": "C. Sexton enters the game for K. Knueppel"
+  },
+  {
+    "quarter": 4,
+    "time": "5:09.0",
+    "score": "96-100",
+    "team": "Hornets",
+    "description": "Turnover by C. Sexton (lost ball; steal by V. Wembanyama)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:04.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "D. Fox makes 2-pt layup from 1 ft (assist by J. Champagnie)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:03.0",
+    "score": "98-100",
+    "team": "Hornets",
+    "description": "Charlotte full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:50.0",
+    "score": "98-100",
+    "team": "Hornets",
+    "description": "M. Bridges misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:48.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "Defensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "Personal foul by M. Bridges (drawn by H. Barnes)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:27.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "98-100",
+    "team": "Hornets",
+    "description": "Defensive rebound by B. Miller"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "98-100",
+    "team": "Hornets",
+    "description": "L. Ball misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:08.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "Defensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 4,
+    "time": "3:56.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "Personal foul by M. Bridges (drawn by D. Fox)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:56.0",
+    "score": "98-100",
+    "team": "Hornets",
+    "description": "K. Knueppel enters the game for C. Sexton"
+  },
+  {
+    "quarter": 4,
+    "time": "3:48.0",
+    "score": "98-100",
+    "team": "Spurs",
+    "description": "J. Champagnie misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "98-100",
+    "team": "Hornets",
+    "description": "Defensive rebound by K. Knueppel"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "98-102",
+    "team": "Hornets",
+    "description": "M. Bridges makes 2-pt jump shot from 6 ft (assist by K. Knueppel)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "98-102",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:30.0",
+    "score": "98-102",
+    "team": "Spurs",
+    "description": "S. Castle enters the game for J. Champagnie"
+  },
+  {
+    "quarter": 4,
+    "time": "3:13.0",
+    "score": "100-102",
+    "team": "Spurs",
+    "description": "V. Wembanyama makes 2-pt dunk from 3 ft (assist by D. Fox)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:55.0",
+    "score": "100-104",
+    "team": "Hornets",
+    "description": "M. Bridges makes 2-pt dunk from 2 ft (assist by L. Ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:42.0",
+    "score": "100-104",
+    "team": "Spurs",
+    "description": "D. Fox misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:40.0",
+    "score": "100-104",
+    "team": "Hornets",
+    "description": "Defensive rebound by M. Bridges"
+  },
+  {
+    "quarter": 4,
+    "time": "2:25.0",
+    "score": "100-104",
+    "team": "Hornets",
+    "description": "M. Bridges misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:22.0",
+    "score": "100-104",
+    "team": "Spurs",
+    "description": "Defensive rebound by D. Fox"
+  },
+  {
+    "quarter": 4,
+    "time": "2:17.0",
+    "score": "102-104",
+    "team": "Spurs",
+    "description": "D. Vassell makes 2-pt jump shot from 3 ft (assist by D. Fox)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:55.0",
+    "score": "102-104",
+    "team": "Hornets",
+    "description": "L. Ball misses 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:53.0",
+    "score": "102-104",
+    "team": "Hornets",
+    "description": "Offensive rebound by M. Diabat\u00e9"
+  },
+  {
+    "quarter": 4,
+    "time": "1:53.0",
+    "score": "102-106",
+    "team": "Hornets",
+    "description": "M. Diabat\u00e9 makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "1:37.0",
+    "score": "102-106",
+    "team": "Spurs",
+    "description": "Shooting foul by M. Diabat\u00e9 (drawn by S. Castle)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:37.0",
+    "score": "103-106",
+    "team": "Spurs",
+    "description": "S. Castle makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:37.0",
+    "score": "104-106",
+    "team": "Spurs",
+    "description": "S. Castle makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:20.0",
+    "score": "104-106",
+    "team": "Hornets",
+    "description": "Personal foul by D. Fox (drawn by K. Knueppel)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:07.0",
+    "score": "104-106",
+    "team": "Hornets",
+    "description": "Shooting foul by H. Barnes (drawn by M. Bridges)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:07.0",
+    "score": "104-107",
+    "team": "Hornets",
+    "description": "M. Bridges makes free throw 1 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "1:07.0",
+    "score": "104-108",
+    "team": "Hornets",
+    "description": "M. Bridges makes free throw 2 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "1:07.0",
+    "score": "104-109",
+    "team": "Hornets",
+    "description": "M. Bridges makes free throw 3 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "104-109",
+    "team": "Spurs",
+    "description": "Shooting foul by L. Ball (drawn by H. Barnes)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "105-109",
+    "team": "Spurs",
+    "description": "H. Barnes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "106-109",
+    "team": "Spurs",
+    "description": "H. Barnes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:37.0",
+    "score": "106-109",
+    "team": "Hornets",
+    "description": "B. Miller misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:36.0",
+    "score": "106-109",
+    "team": "Spurs",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:36.0",
+    "score": "106-109",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:36.0",
+    "score": "106-109",
+    "team": "Spurs",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "106-109",
+    "team": "Spurs",
+    "description": "V. Wembanyama misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "106-109",
+    "team": "Hornets",
+    "description": "Defensive rebound by K. Knueppel"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-109",
+    "team": "Hornets",
+    "description": "Personal take foul by S. Castle (drawn by B. Miller)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-110",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-110",
+    "team": "Spurs",
+    "description": "L. Kornet enters the game for S. Castle"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-110",
+    "team": "Hornets",
+    "description": "S. James enters the game for L. Ball"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-111",
+    "team": "Hornets",
+    "description": "B. Miller makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-111",
+    "team": "Spurs",
+    "description": "San Antonio full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "106-111",
+    "team": "Spurs",
+    "description": "S. Castle enters the game for L. Kornet"
+  },
+  {
+    "quarter": 4,
+    "time": "0:08.0",
+    "score": "106-111",
+    "team": "Spurs",
+    "description": "D. Fox misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "106-111",
+    "team": "Spurs",
+    "description": "Offensive rebound by V. Wembanyama"
+  },
+  {
+    "quarter": 4,
+    "time": "0:03.0",
+    "score": "106-111",
+    "team": "Spurs",
+    "description": "D. Vassell misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "106-111",
+    "team": "Hornets",
+    "description": "Defensive rebound by K. Knueppel"
+  }
+]

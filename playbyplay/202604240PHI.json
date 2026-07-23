@@ -1,0 +1,2984 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:40.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:38.0",
+    "score": "0-0",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by S. Hauser"
+  },
+  {
+    "quarter": 1,
+    "time": "11:22.0",
+    "score": "2-0",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:22.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:10.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "Offensive foul by A. Bona (drawn by J. Brown)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:10.0",
+    "score": "2-0",
+    "team": "76ers",
+    "description": "Turnover by A. Bona (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:51.0",
+    "score": "2-0",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Shooting foul by K. Oubre (drawn by D. White)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:51.0",
+    "score": "3-0",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "10:51.0",
+    "score": "4-0",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "10:36.0",
+    "score": "4-2",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot at rim (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:26.0",
+    "score": "4-2",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive foul by N. Queta (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:26.0",
+    "score": "4-2",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Queta (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:11.0",
+    "score": "4-2",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:09.0",
+    "score": "4-2",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Queta"
+  },
+  {
+    "quarter": 1,
+    "time": "10:00.0",
+    "score": "4-2",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:58.0",
+    "score": "4-2",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by N. Queta"
+  },
+  {
+    "quarter": 1,
+    "time": "9:56.0",
+    "score": "4-2",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Queta (lost ball; steal by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:51.0",
+    "score": "4-5",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 24 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:38.0",
+    "score": "4-5",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:35.0",
+    "score": "4-5",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 1,
+    "time": "9:24.0",
+    "score": "4-5",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:23.0",
+    "score": "4-5",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "9:23.0",
+    "score": "4-5",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Loose ball foul by S. Hauser (drawn by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:08.0",
+    "score": "4-5",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt layup from 3 ft (block by N. Queta)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:06.0",
+    "score": "4-5",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 1,
+    "time": "9:05.0",
+    "score": "4-7",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "8:57.0",
+    "score": "6-7",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta makes 2-pt dunk from 2 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:40.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:37.0",
+    "score": "6-7",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by S. Hauser"
+  },
+  {
+    "quarter": 1,
+    "time": "8:29.0",
+    "score": "6-7",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:28.0",
+    "score": "6-7",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by S. Hauser"
+  },
+  {
+    "quarter": 1,
+    "time": "8:28.0",
+    "score": "6-7",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "S. Hauser misses 2-pt layup at rim (block by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:26.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "8:13.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 8 ft (block by D. White)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:10.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "Offensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "6-7",
+    "team": "76ers",
+    "description": "Shooting foul by N. Queta (drawn by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "6-8",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "6-8",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 enters the game for N. Queta"
+  },
+  {
+    "quarter": 1,
+    "time": "8:09.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:57.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:54.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by J. Brown"
+  },
+  {
+    "quarter": 1,
+    "time": "7:52.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:50.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "7:25.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:22.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Brown"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by J. Brown (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard enters the game for S. Hauser"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Walsh enters the game for D. White"
+  },
+  {
+    "quarter": 1,
+    "time": "7:09.0",
+    "score": "6-9",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:06.0",
+    "score": "6-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Brown"
+  },
+  {
+    "quarter": 1,
+    "time": "6:48.0",
+    "score": "9-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard makes 3-pt jump shot from 27 ft (assist by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:33.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup from 3 ft (block by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:31.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:23.0",
+    "score": "9-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "6:08.0",
+    "score": "9-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:07.0",
+    "score": "9-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by J. Walsh"
+  },
+  {
+    "quarter": 1,
+    "time": "6:06.0",
+    "score": "9-9",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Walsh misses 2-pt layup from 2 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "9-9",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "6:02.0",
+    "score": "9-12",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:48.0",
+    "score": "9-12",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:44.0",
+    "score": "9-12",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by P. Pritchard"
+  },
+  {
+    "quarter": 1,
+    "time": "5:43.0",
+    "score": "12-12",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 3-pt jump shot from 27 ft (assist by P. Pritchard)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:18.0",
+    "score": "12-14",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:48.0",
+    "score": "12-14",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 2-pt jump shot from 3 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:48.0",
+    "score": "12-14",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "4:48.0",
+    "score": "12-14",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 1,
+    "time": "4:46.0",
+    "score": "12-14",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:43.0",
+    "score": "12-14",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "4:34.0",
+    "score": "12-16",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:18.0",
+    "score": "15-16",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 makes 3-pt jump shot from 27 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:57.0",
+    "score": "15-16",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:53.0",
+    "score": "15-16",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Walsh"
+  },
+  {
+    "quarter": 1,
+    "time": "3:46.0",
+    "score": "15-16",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive foul by J. Brown (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:46.0",
+    "score": "15-16",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by J. Brown (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:46.0",
+    "score": "15-16",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "3:38.0",
+    "score": "15-16",
+    "team": "76ers",
+    "description": "Offensive foul by A. Drummond (drawn by J. Brown)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:38.0",
+    "score": "15-16",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:30.0",
+    "score": "15-16",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by Q. Grimes (drawn by P. Pritchard)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "18-16",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:09.0",
+    "score": "18-18",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:08.0",
+    "score": "18-18",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Boston full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "3:08.0",
+    "score": "18-18",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "2:56.0",
+    "score": "18-18",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by T. Maxey (drawn by J. Brown)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "20-18",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt jump shot from 15 ft (assist by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:30.0",
+    "score": "20-18",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:27.0",
+    "score": "20-18",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "2:14.0",
+    "score": "20-18",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:12.0",
+    "score": "20-18",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "2:07.0",
+    "score": "20-20",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:57.0",
+    "score": "23-20",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:39.0",
+    "score": "23-20",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:37.0",
+    "score": "23-20",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "1:32.0",
+    "score": "23-20",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:28.0",
+    "score": "23-20",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "1:11.0",
+    "score": "23-20",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:08.0",
+    "score": "23-20",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Brown"
+  },
+  {
+    "quarter": 1,
+    "time": "1:03.0",
+    "score": "26-20",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard makes 3-pt jump shot from 26 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "26-20",
+    "team": "76ers",
+    "description": "Shooting foul by J. Walsh (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "26-21",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "26-21",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White enters the game for J. Walsh"
+  },
+  {
+    "quarter": 1,
+    "time": "0:47.0",
+    "score": "26-22",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:31.0",
+    "score": "26-22",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:28.0",
+    "score": "26-22",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "0:28.0",
+    "score": "26-22",
+    "team": "76ers",
+    "description": "Personal foul by J. Tatum (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:28.0",
+    "score": "26-23",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:28.0",
+    "score": "26-23",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Walsh enters the game for J. Tatum"
+  },
+  {
+    "quarter": 1,
+    "time": "0:28.0",
+    "score": "26-24",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "29-24",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 makes 3-pt jump shot from 28 ft (assist by J. Brown)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:02.0",
+    "score": "29-24",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:02.0",
+    "score": "29-24",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:44.0",
+    "score": "29-24",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "L. Garza misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:39.0",
+    "score": "29-24",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "11:26.0",
+    "score": "29-27",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:06.0",
+    "score": "29-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "29-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by L. Garza"
+  },
+  {
+    "quarter": 2,
+    "time": "10:53.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "B. Scheierman makes 3-pt jump shot from 27 ft (assist by P. Pritchard)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:37.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:27.0",
+    "score": "32-27",
+    "team": "76ers",
+    "description": "Turnover by J. Edwards (bad pass; steal by D. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:21.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:17.0",
+    "score": "32-27",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "32-27",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:08.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by L. Garza"
+  },
+  {
+    "quarter": 2,
+    "time": "9:56.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by J. Edwards (drawn by J. Tatum)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:43.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:40.0",
+    "score": "32-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by B. Scheierman"
+  },
+  {
+    "quarter": 2,
+    "time": "9:38.0",
+    "score": "35-27",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes 3-pt jump shot from 28 ft (assist by B. Scheierman)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:26.0",
+    "score": "35-27",
+    "team": "76ers",
+    "description": "Personal foul by B. Scheierman (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:19.0",
+    "score": "35-29",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:58.0",
+    "score": "38-29",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "L. Garza makes 3-pt jump shot from 27 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-29",
+    "team": "76ers",
+    "description": "Shooting foul by L. Garza (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-30",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-30",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "38-31",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:24.0",
+    "score": "41-31",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "B. Scheierman makes 3-pt jump shot from 28 ft (assist by L. Garza)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:04.0",
+    "score": "41-33",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 15 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:58.0",
+    "score": "41-33",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by J. Edwards (drawn by D. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:46.0",
+    "score": "41-33",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "L. Garza misses 2-pt layup from 2 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:43.0",
+    "score": "41-33",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "7:42.0",
+    "score": "41-35",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt dunk from 1 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:42.0",
+    "score": "41-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Boston full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "7:42.0",
+    "score": "41-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown enters the game for L. Garza"
+  },
+  {
+    "quarter": 2,
+    "time": "7:42.0",
+    "score": "41-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta enters the game for J. Tatum"
+  },
+  {
+    "quarter": 2,
+    "time": "7:28.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:15.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "7:10.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Queta"
+  },
+  {
+    "quarter": 2,
+    "time": "6:56.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by V. Edgecombe (drawn by J. Brown)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by J. Brown (lost ball; steal by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:40.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 2 ft (block by J. Brown)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:37.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "6:36.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "Turnover by J. Edwards (bad pass; steal by B. Scheierman)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:29.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:28.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by B. Scheierman"
+  },
+  {
+    "quarter": 2,
+    "time": "6:28.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "6:28.0",
+    "score": "43-35",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "6:15.0",
+    "score": "43-35",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by P. Pritchard (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:04.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive foul by J. Brown (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by J. Brown (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum enters the game for D. White"
+  },
+  {
+    "quarter": 2,
+    "time": "5:33.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:31.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Queta"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:24.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "5:24.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "Loose ball foul by A. Bona (drawn by N. Queta)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:14.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "B. Scheierman misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:11.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "5:02.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "Turnover by A. Bona (lost ball; steal by N. Queta)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:59.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:57.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by N. Queta"
+  },
+  {
+    "quarter": 2,
+    "time": "4:46.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:44.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "4:44.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "Personal foul by N. Queta (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:44.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 enters the game for N. Queta"
+  },
+  {
+    "quarter": 2,
+    "time": "4:35.0",
+    "score": "43-38",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:30.0",
+    "score": "43-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by P. Pritchard"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "45-38",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "45-38",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:55.0",
+    "score": "45-38",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "3:53.0",
+    "score": "45-40",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:48.0",
+    "score": "45-40",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Vu\u010devi\u0107 (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "45-40",
+    "team": "76ers",
+    "description": "Shooting foul by N. Vu\u010devi\u0107 (drawn by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "45-40",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "45-40",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "S. Hauser enters the game for P. Pritchard"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "45-40",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White enters the game for B. Scheierman"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "45-41",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "45-41",
+    "team": "76ers",
+    "description": "A. Bona misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:36.0",
+    "score": "45-41",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "3:21.0",
+    "score": "47-41",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:01.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "Offensive foul by A. Bona (drawn by D. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:01.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "Turnover by A. Bona (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:01.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "2:54.0",
+    "score": "47-41",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive foul by N. Vu\u010devi\u0107 (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:54.0",
+    "score": "47-41",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Vu\u010devi\u0107 (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:44.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 2 ft (block by D. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:44.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "2:35.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 3 ft (block by D. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:31.0",
+    "score": "47-41",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "2:29.0",
+    "score": "47-43",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "2:13.0",
+    "score": "47-43",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "47-43",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "1:58.0",
+    "score": "47-45",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt dunk at rim (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:34.0",
+    "score": "47-45",
+    "team": "76ers",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:26.0",
+    "score": "47-45",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:23.0",
+    "score": "47-45",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "1:21.0",
+    "score": "49-45",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:57.0",
+    "score": "49-45",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (bad pass; steal by J. Tatum)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:53.0",
+    "score": "52-45",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "S. Hauser makes 3-pt jump shot from 24 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:29.0",
+    "score": "52-45",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 3 ft (block by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:28.0",
+    "score": "52-45",
+    "team": "76ers",
+    "description": "Offensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 2,
+    "time": "0:28.0",
+    "score": "52-47",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:04.0",
+    "score": "54-47",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-47",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-47",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:50.0",
+    "score": "57-47",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "S. Hauser makes 3-pt jump shot from 26 ft (assist by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:33.0",
+    "score": "57-50",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:21.0",
+    "score": "57-50",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:19.0",
+    "score": "57-50",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by J. Brown"
+  },
+  {
+    "quarter": 3,
+    "time": "11:17.0",
+    "score": "60-50",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 3-pt jump shot from 27 ft (assist by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:56.0",
+    "score": "60-50",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:55.0",
+    "score": "60-50",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "10:55.0",
+    "score": "60-50",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Loose ball foul by N. Vu\u010devi\u0107 (drawn by A. Bona)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:45.0",
+    "score": "60-52",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 4 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:28.0",
+    "score": "60-52",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:25.0",
+    "score": "60-52",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "10:17.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:02.0",
+    "score": "60-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:59.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "9:54.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:51.0",
+    "score": "60-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by D. White"
+  },
+  {
+    "quarter": 3,
+    "time": "9:47.0",
+    "score": "60-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Shooting foul by A. Bona (drawn by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:47.0",
+    "score": "61-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:47.0",
+    "score": "62-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:32.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:30.0",
+    "score": "62-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by D. White"
+  },
+  {
+    "quarter": 3,
+    "time": "9:13.0",
+    "score": "62-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:10.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "8:56.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:53.0",
+    "score": "62-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Tatum"
+  },
+  {
+    "quarter": 3,
+    "time": "8:46.0",
+    "score": "62-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "S. Hauser misses 2-pt layup from 2 ft (block by A. Bona)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:43.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:24.0",
+    "score": "62-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Tatum"
+  },
+  {
+    "quarter": 3,
+    "time": "8:06.0",
+    "score": "64-55",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:46.0",
+    "score": "64-57",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:34.0",
+    "score": "64-57",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Vu\u010devi\u0107 (lost ball; steal by K. Oubre)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:27.0",
+    "score": "64-60",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:12.0",
+    "score": "64-60",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:10.0",
+    "score": "64-60",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "64-62",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "64-62",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Boston full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "64-62",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta enters the game for N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "64-62",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "64-62",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "6:41.0",
+    "score": "64-62",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by D. White (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:19.0",
+    "score": "64-64",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:00.0",
+    "score": "64-64",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:56.0",
+    "score": "64-64",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 3,
+    "time": "5:48.0",
+    "score": "64-67",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:37.0",
+    "score": "64-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by A. Drummond (drawn by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:37.0",
+    "score": "64-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard enters the game for S. Hauser"
+  },
+  {
+    "quarter": 3,
+    "time": "5:37.0",
+    "score": "64-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Walsh enters the game for D. White"
+  },
+  {
+    "quarter": 3,
+    "time": "5:29.0",
+    "score": "64-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Shooting foul by V. Edgecombe (drawn by N. Queta)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:29.0",
+    "score": "65-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:29.0",
+    "score": "66-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:17.0",
+    "score": "66-67",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:14.0",
+    "score": "66-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by P. Pritchard"
+  },
+  {
+    "quarter": 3,
+    "time": "5:14.0",
+    "score": "66-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:14.0",
+    "score": "66-67",
+    "team": "76ers",
+    "description": "Technical foul by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "5:14.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes technical free throw"
+  },
+  {
+    "quarter": 3,
+    "time": "5:04.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:02.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "4:57.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by J. Brown (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:52.0",
+    "score": "67-67",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:50.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Tatum"
+  },
+  {
+    "quarter": 3,
+    "time": "4:41.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:24.0",
+    "score": "67-67",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 29 ft (block by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:22.0",
+    "score": "67-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Queta"
+  },
+  {
+    "quarter": 3,
+    "time": "4:08.0",
+    "score": "69-67",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:41.0",
+    "score": "69-67",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:38.0",
+    "score": "69-67",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "3:37.0",
+    "score": "69-70",
+    "team": "76ers",
+    "description": "A. Drummond makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "69-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Shooting foul by J. Edwards (drawn by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "70-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "70-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "S. Hauser enters the game for J. Tatum"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "70-70",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Edwards"
+  },
+  {
+    "quarter": 3,
+    "time": "3:12.0",
+    "score": "71-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:58.0",
+    "score": "71-70",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:56.0",
+    "score": "71-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Walsh"
+  },
+  {
+    "quarter": 3,
+    "time": "2:54.0",
+    "score": "71-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by K. Oubre (drawn by N. Queta)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:54.0",
+    "score": "71-70",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:54.0",
+    "score": "71-70",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "2:54.0",
+    "score": "72-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:54.0",
+    "score": "73-70",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Queta makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:36.0",
+    "score": "73-72",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "73-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Walsh misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:10.0",
+    "score": "73-72",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "2:10.0",
+    "score": "73-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Loose ball foul by P. Pritchard (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:54.0",
+    "score": "73-72",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:50.0",
+    "score": "73-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Queta"
+  },
+  {
+    "quarter": 3,
+    "time": "1:38.0",
+    "score": "73-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 2-pt jump shot from 17 ft (block by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:37.0",
+    "score": "73-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by J. Brown"
+  },
+  {
+    "quarter": 3,
+    "time": "1:32.0",
+    "score": "76-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard makes 3-pt jump shot from 26 ft (assist by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "76-72",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 2 ft (block by N. Queta)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:21.0",
+    "score": "76-72",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:19.0",
+    "score": "76-72",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt layup from 4 ft (block by J. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:16.0",
+    "score": "76-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Walsh"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "76-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive foul by N. Queta (drawn by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "76-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Queta (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "76-72",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 enters the game for N. Queta"
+  },
+  {
+    "quarter": 3,
+    "time": "0:55.0",
+    "score": "76-74",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt jump shot from 8 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:24.0",
+    "score": "79-74",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup from 4 ft (block by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:21.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 2-pt jump shot from 13 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:01.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by P. Pritchard"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:45.0",
+    "score": "79-74",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:42.0",
+    "score": "79-74",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "11:36.0",
+    "score": "79-74",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by B. Scheierman)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:21.0",
+    "score": "79-74",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "B. Scheierman misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:18.0",
+    "score": "79-74",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "11:02.0",
+    "score": "79-77",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:37.0",
+    "score": "82-77",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 makes 3-pt jump shot from 25 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "82-77",
+    "team": "76ers",
+    "description": "Shooting foul by P. Pritchard (drawn by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "82-77",
+    "team": "76ers",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "82-77",
+    "team": "76ers",
+    "description": "A. Bona misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "82-77",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "82-78",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:01.0",
+    "score": "82-78",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by D. White (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:55.0",
+    "score": "82-80",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 3 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:33.0",
+    "score": "82-80",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-80",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-80",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (traveling)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-80",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "9:24.0",
+    "score": "84-80",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 2-pt layup from 3 ft (assist by D. White)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:16.0",
+    "score": "84-82",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:56.0",
+    "score": "84-82",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by N. Vu\u010devi\u0107 (bad pass; steal by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:42.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:41.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Boston full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:41.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown enters the game for B. Scheierman"
+  },
+  {
+    "quarter": 4,
+    "time": "8:22.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal foul by A. Bona (drawn by J. Tatum)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:22.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "8:11.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown misses 2-pt layup from 3 ft (block by K. Oubre)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:09.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "8:01.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:58.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "7:45.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive foul by J. Brown (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:45.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Turnover by J. Brown (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:25.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "7:24.0",
+    "score": "84-85",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:22.0",
+    "score": "84-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "7:04.0",
+    "score": "86-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:04.0",
+    "score": "86-85",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:47.0",
+    "score": "86-85",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by J. Brown)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:44.0",
+    "score": "88-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes 2-pt layup from 2 ft (assist by J. Brown)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:25.0",
+    "score": "88-85",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (traveling)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:10.0",
+    "score": "90-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:44.0",
+    "score": "90-85",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:43.0",
+    "score": "90-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Tatum"
+  },
+  {
+    "quarter": 4,
+    "time": "5:39.0",
+    "score": "90-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Shooting foul by V. Edgecombe (drawn by J. Brown)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:39.0",
+    "score": "91-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:39.0",
+    "score": "91-85",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "5:39.0",
+    "score": "92-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:24.0",
+    "score": "92-85",
+    "team": "76ers",
+    "description": "Shooting foul by N. Vu\u010devi\u0107 (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:24.0",
+    "score": "92-85",
+    "team": "76ers",
+    "description": "A. Drummond misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:24.0",
+    "score": "92-85",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:24.0",
+    "score": "92-85",
+    "team": "76ers",
+    "description": "A. Drummond misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:21.0",
+    "score": "92-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by J. Tatum"
+  },
+  {
+    "quarter": 4,
+    "time": "5:10.0",
+    "score": "92-85",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:06.0",
+    "score": "92-85",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "4:53.0",
+    "score": "92-88",
+    "team": "76ers",
+    "description": "A. Drummond makes 3-pt jump shot from 25 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:34.0",
+    "score": "92-88",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:33.0",
+    "score": "92-88",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:21.0",
+    "score": "92-88",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:17.0",
+    "score": "92-88",
+    "team": "76ers",
+    "description": "Offensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "4:15.0",
+    "score": "92-90",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:15.0",
+    "score": "92-90",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Boston full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "92-90",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:00.0",
+    "score": "92-90",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by D. White"
+  },
+  {
+    "quarter": 4,
+    "time": "3:49.0",
+    "score": "94-90",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:33.0",
+    "score": "94-92",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:33.0",
+    "score": "94-92",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:14.0",
+    "score": "96-92",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Brown makes 2-pt layup from 2 ft (assist by D. White)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:14.0",
+    "score": "96-92",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:14.0",
+    "score": "96-92",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "2:55.0",
+    "score": "96-94",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:39.0",
+    "score": "96-94",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Shooting foul by A. Drummond (drawn by J. Tatum)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:39.0",
+    "score": "97-94",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:39.0",
+    "score": "97-94",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:37.0",
+    "score": "97-94",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "97-96",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:57.0",
+    "score": "100-96",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 3-pt jump shot from 25 ft (assist by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:41.0",
+    "score": "100-98",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:17.0",
+    "score": "103-98",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "P. Pritchard makes 3-pt jump shot from 26 ft (assist by J. Tatum)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "103-98",
+    "team": "76ers",
+    "description": "Shooting foul by N. Vu\u010devi\u0107 (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "103-98",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Boston full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "103-98",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Instant Replay (Challenge: Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "103-98",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "103-99",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "103-100",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:37.0",
+    "score": "103-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:34.0",
+    "score": "103-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Offensive rebound by D. White"
+  },
+  {
+    "quarter": 4,
+    "time": "0:26.0",
+    "score": "106-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "J. Tatum makes 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "106-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "B. Scheierman enters the game for N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "0:22.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:19.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "0:16.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "106-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Defensive rebound by B. Scheierman"
+  },
+  {
+    "quarter": 4,
+    "time": "0:09.0",
+    "score": "106-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal take foul by P. George (drawn by J. Tatum)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:09.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "106-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "Personal take foul by A. Bona (drawn by D. White)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "106-100",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "107-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "108-100",
+    "team": "2026 NBA Eastern Conference First Round Game 3: Celtics",
+    "description": "D. White makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-100",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "108-100",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  }
+]

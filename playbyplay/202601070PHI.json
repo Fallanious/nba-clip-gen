@@ -1,0 +1,2921 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:43.0",
+    "score": "0-2",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 11 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:25.0",
+    "score": "0-2",
+    "team": "Wizards",
+    "description": "Turnover by B. Carrington (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:18.0",
+    "score": "0-2",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 5 ft (block by J. Champagnie)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:18.0",
+    "score": "0-2",
+    "team": "Wizards",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "11:02.0",
+    "score": "0-2",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:00.0",
+    "score": "0-2",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "10:57.0",
+    "score": "0-5",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:37.0",
+    "score": "0-5",
+    "team": "Wizards",
+    "description": "A. Sarr misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:36.0",
+    "score": "0-5",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "10:34.0",
+    "score": "0-5",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:29.0",
+    "score": "0-5",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "10:23.0",
+    "score": "0-7",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt dunk from 1 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:23.0",
+    "score": "0-7",
+    "team": "Wizards",
+    "description": "Washington full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "10:04.0",
+    "score": "3-7",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 3-pt jump shot from 26 ft (assist by T. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:42.0",
+    "score": "3-7",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:38.0",
+    "score": "3-7",
+    "team": "Wizards",
+    "description": "Defensive rebound by B. Carrington"
+  },
+  {
+    "quarter": 1,
+    "time": "9:34.0",
+    "score": "5-7",
+    "team": "Wizards",
+    "description": "J. Champagnie makes 2-pt layup from 1 ft (assist by B. Carrington)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:16.0",
+    "score": "5-9",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:00.0",
+    "score": "5-9",
+    "team": "Wizards",
+    "description": "Turnover by B. Carrington (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:52.0",
+    "score": "5-9",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft (block by A. Sarr)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:49.0",
+    "score": "5-9",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "8:47.0",
+    "score": "5-9",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:47.0",
+    "score": "5-9",
+    "team": "Wizards",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 1,
+    "time": "8:36.0",
+    "score": "5-9",
+    "team": "Wizards",
+    "description": "Turnover by T. Johnson (lost ball; steal by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:31.0",
+    "score": "5-11",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:19.0",
+    "score": "5-11",
+    "team": "Wizards",
+    "description": "T. Johnson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:17.0",
+    "score": "5-11",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:07.0",
+    "score": "5-14",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:49.0",
+    "score": "7-14",
+    "team": "Wizards",
+    "description": "A. Sarr makes 2-pt hook shot from 3 ft (assist by T. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:32.0",
+    "score": "7-14",
+    "team": "76ers",
+    "description": "Shooting foul by B. Coulibaly (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:32.0",
+    "score": "7-15",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:32.0",
+    "score": "7-16",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:08.0",
+    "score": "9-16",
+    "team": "Wizards",
+    "description": "J. Champagnie makes 2-pt dunk from 1 ft (assist by B. Carrington)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:54.0",
+    "score": "9-16",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:50.0",
+    "score": "9-16",
+    "team": "Wizards",
+    "description": "Defensive rebound by T. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "11-16",
+    "team": "Wizards",
+    "description": "T. Johnson makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:32.0",
+    "score": "11-19",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:19.0",
+    "score": "11-19",
+    "team": "Wizards",
+    "description": "Shooting foul by J. Embiid (drawn by B. Coulibaly)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:19.0",
+    "score": "12-19",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:19.0",
+    "score": "13-19",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "13-19",
+    "team": "76ers",
+    "description": "Shooting foul by B. Carrington (drawn by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "13-20",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:05.0",
+    "score": "13-21",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "5:53.0",
+    "score": "15-21",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:38.0",
+    "score": "15-21",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:36.0",
+    "score": "15-21",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "5:35.0",
+    "score": "15-24",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "15-24",
+    "team": "Wizards",
+    "description": "B. Carrington misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:18.0",
+    "score": "15-24",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "5:16.0",
+    "score": "15-26",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:02.0",
+    "score": "15-26",
+    "team": "Wizards",
+    "description": "J. Champagnie misses 2-pt layup from 1 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:59.0",
+    "score": "15-26",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "4:57.0",
+    "score": "15-26",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:53.0",
+    "score": "15-26",
+    "team": "Wizards",
+    "description": "Defensive rebound by T. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "4:46.0",
+    "score": "15-26",
+    "team": "Wizards",
+    "description": "A. Sarr misses 2-pt jump shot from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:41.0",
+    "score": "15-26",
+    "team": "Wizards",
+    "description": "Offensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 1,
+    "time": "4:41.0",
+    "score": "17-26",
+    "team": "Wizards",
+    "description": "A. Sarr makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-26",
+    "team": "76ers",
+    "description": "Shooting foul by J. Champagnie (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-27",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-27",
+    "team": "Wizards",
+    "description": "M. Bagley enters the game for T. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-27",
+    "team": "Wizards",
+    "description": "M. Branham enters the game for A. Sarr"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-27",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-27",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "4:27.0",
+    "score": "17-28",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "4:05.0",
+    "score": "17-28",
+    "team": "Wizards",
+    "description": "M. Branham misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:03.0",
+    "score": "17-28",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "3:45.0",
+    "score": "17-28",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:43.0",
+    "score": "17-28",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Branham"
+  },
+  {
+    "quarter": 1,
+    "time": "3:38.0",
+    "score": "17-28",
+    "team": "Wizards",
+    "description": "M. Branham misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "17-28",
+    "team": "Wizards",
+    "description": "Offensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "17-28",
+    "team": "Wizards",
+    "description": "M. Bagley misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "3:32.0",
+    "score": "17-28",
+    "team": "Wizards",
+    "description": "Offensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 1,
+    "time": "3:32.0",
+    "score": "19-28",
+    "team": "Wizards",
+    "description": "M. Bagley makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "19-30",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 17 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:02.0",
+    "score": "19-30",
+    "team": "Wizards",
+    "description": "M. Bagley misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "19-30",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "19-32",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "19-32",
+    "team": "Wizards",
+    "description": "Washington full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "19-32",
+    "team": "Wizards",
+    "description": "A. Gill enters the game for J. Champagnie"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "19-32",
+    "team": "Wizards",
+    "description": "A. Johnson enters the game for B. Coulibaly"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "19-32",
+    "team": "76ers",
+    "description": "A. Bona enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "19-32",
+    "team": "76ers",
+    "description": "J. McCain enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "2:35.0",
+    "score": "22-32",
+    "team": "Wizards",
+    "description": "A. Gill makes 3-pt jump shot from 23 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "22-32",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:11.0",
+    "score": "22-32",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "2:04.0",
+    "score": "22-32",
+    "team": "Wizards",
+    "description": "A. Johnson misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:03.0",
+    "score": "22-32",
+    "team": "Wizards",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "1:55.0",
+    "score": "22-32",
+    "team": "Wizards",
+    "description": "M. Branham misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:51.0",
+    "score": "22-32",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "22-32",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:42.0",
+    "score": "22-32",
+    "team": "Wizards",
+    "description": "Defensive rebound by B. Carrington"
+  },
+  {
+    "quarter": 1,
+    "time": "1:38.0",
+    "score": "25-32",
+    "team": "Wizards",
+    "description": "B. Carrington makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:24.0",
+    "score": "25-34",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:10.0",
+    "score": "25-34",
+    "team": "Wizards",
+    "description": "Shooting foul by Q. Grimes (drawn by B. Carrington)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:10.0",
+    "score": "26-34",
+    "team": "Wizards",
+    "description": "B. Carrington makes free throw 1 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "1:10.0",
+    "score": "27-34",
+    "team": "Wizards",
+    "description": "B. Carrington makes free throw 2 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "1:10.0",
+    "score": "28-34",
+    "team": "Wizards",
+    "description": "B. Carrington makes free throw 3 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "28-34",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:35.0",
+    "score": "28-34",
+    "team": "Wizards",
+    "description": "Turnover by B. Carrington (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:32.0",
+    "score": "28-37",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:14.0",
+    "score": "30-37",
+    "team": "Wizards",
+    "description": "M. Branham makes 2-pt layup from 1 ft (assist by M. Bagley)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:02.0",
+    "score": "30-37",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (step out of bounds)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "30-37",
+    "team": "Wizards",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:47.0",
+    "score": "30-37",
+    "team": "Wizards",
+    "description": "T. Johnson misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:43.0",
+    "score": "30-37",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 2,
+    "time": "11:35.0",
+    "score": "30-37",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:30.0",
+    "score": "30-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "11:20.0",
+    "score": "30-37",
+    "team": "Wizards",
+    "description": "Turnover by M. Branham (lost ball; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:12.0",
+    "score": "30-37",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:10.0",
+    "score": "30-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by T. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "11:03.0",
+    "score": "32-37",
+    "team": "Wizards",
+    "description": "T. Johnson makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:45.0",
+    "score": "32-37",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:43.0",
+    "score": "32-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by T. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "10:33.0",
+    "score": "34-37",
+    "team": "Wizards",
+    "description": "T. Johnson makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:33.0",
+    "score": "34-37",
+    "team": "76ers",
+    "description": "P. George enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "10:33.0",
+    "score": "34-37",
+    "team": "76ers",
+    "description": "J. Walker enters the game for K. Oubre"
+  },
+  {
+    "quarter": 2,
+    "time": "10:08.0",
+    "score": "34-37",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:05.0",
+    "score": "34-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 2,
+    "time": "9:50.0",
+    "score": "36-37",
+    "team": "Wizards",
+    "description": "M. Branham makes 2-pt layup from 1 ft (assist by A. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:41.0",
+    "score": "36-37",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft (block by A. Gill)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:39.0",
+    "score": "36-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 2,
+    "time": "9:39.0",
+    "score": "36-37",
+    "team": "Wizards",
+    "description": "Turnover by M. Bagley (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:30.0",
+    "score": "36-37",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:24.0",
+    "score": "36-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Branham"
+  },
+  {
+    "quarter": 2,
+    "time": "9:21.0",
+    "score": "38-37",
+    "team": "Wizards",
+    "description": "A. Johnson makes 2-pt layup from 1 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:54.0",
+    "score": "38-37",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:50.0",
+    "score": "38-37",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "8:43.0",
+    "score": "41-37",
+    "team": "Wizards",
+    "description": "T. Johnson makes 3-pt jump shot from 27 ft (assist by A. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:42.0",
+    "score": "41-37",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "8:26.0",
+    "score": "41-37",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:22.0",
+    "score": "41-37",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "41-40",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:07.0",
+    "score": "43-40",
+    "team": "Wizards",
+    "description": "M. Bagley makes 2-pt layup from 1 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "43-40",
+    "team": "76ers",
+    "description": "Offensive foul by V. Edgecombe (drawn by M. Bagley)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "43-40",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:41.0",
+    "score": "43-40",
+    "team": "Wizards",
+    "description": "T. Johnson misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:38.0",
+    "score": "43-40",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "7:28.0",
+    "score": "43-42",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:13.0",
+    "score": "43-42",
+    "team": "Wizards",
+    "description": "A. Johnson misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:11.0",
+    "score": "43-42",
+    "team": "Wizards",
+    "description": "Offensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 2,
+    "time": "7:09.0",
+    "score": "45-42",
+    "team": "Wizards",
+    "description": "M. Bagley makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:55.0",
+    "score": "45-42",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 7 ft (block by M. Bagley)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:52.0",
+    "score": "45-42",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Gill"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "45-42",
+    "team": "Wizards",
+    "description": "Shooting foul by V. Edgecombe (drawn by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "46-42",
+    "team": "Wizards",
+    "description": "M. Branham makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "46-42",
+    "team": "Wizards",
+    "description": "B. Carrington enters the game for M. Bagley"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "46-42",
+    "team": "Wizards",
+    "description": "A. Sarr enters the game for T. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "46-42",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "46-42",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "6:41.0",
+    "score": "47-42",
+    "team": "Wizards",
+    "description": "M. Branham makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:19.0",
+    "score": "47-45",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 29 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:01.0",
+    "score": "47-45",
+    "team": "76ers",
+    "description": "Loose ball foul by J. Walker (drawn by A. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:01.0",
+    "score": "47-45",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "5:52.0",
+    "score": "49-45",
+    "team": "Wizards",
+    "description": "A. Sarr makes 2-pt hook shot from 6 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:28.0",
+    "score": "49-45",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "49-45",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "5:23.0",
+    "score": "49-45",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (lost ball; steal by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:19.0",
+    "score": "49-45",
+    "team": "Wizards",
+    "description": "M. Branham misses 2-pt layup from 3 ft (block by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:15.0",
+    "score": "49-45",
+    "team": "Wizards",
+    "description": "Offensive rebound by M. Branham"
+  },
+  {
+    "quarter": 2,
+    "time": "5:13.0",
+    "score": "49-45",
+    "team": "Wizards",
+    "description": "A. Gill misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:11.0",
+    "score": "49-45",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "4:57.0",
+    "score": "49-47",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 23 ft (assist by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:40.0",
+    "score": "49-47",
+    "team": "Wizards",
+    "description": "Personal foul by T. Maxey (drawn by B. Carrington)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:40.0",
+    "score": "49-47",
+    "team": "Wizards",
+    "description": "B. Coulibaly enters the game for A. Gill"
+  },
+  {
+    "quarter": 2,
+    "time": "4:33.0",
+    "score": "49-47",
+    "team": "Wizards",
+    "description": "B. Carrington misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:30.0",
+    "score": "49-47",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "49-47",
+    "team": "76ers",
+    "description": "Shooting foul by B. Carrington (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "49-48",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "49-48",
+    "team": "Wizards",
+    "description": "J. Champagnie enters the game for A. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "49-49",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:02.0",
+    "score": "49-49",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:59.0",
+    "score": "49-49",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "3:47.0",
+    "score": "49-51",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "49-51",
+    "team": "Wizards",
+    "description": "M. Branham misses 2-pt layup from 1 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:36.0",
+    "score": "49-51",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "3:36.0",
+    "score": "49-51",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (lost ball; steal by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:31.0",
+    "score": "51-51",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 2-pt dunk from 4 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "51-51",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:21.0",
+    "score": "51-51",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "3:20.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 27 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:03.0",
+    "score": "51-54",
+    "team": "Wizards",
+    "description": "J. Champagnie misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:59.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "2:55.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (lost ball; steal by A. Sarr)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:52.0",
+    "score": "51-54",
+    "team": "Wizards",
+    "description": "Turnover by A. Sarr (bad pass; steal by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:46.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "51-54",
+    "team": "Wizards",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 2,
+    "time": "2:27.0",
+    "score": "51-54",
+    "team": "Wizards",
+    "description": "M. Branham misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "2:17.0",
+    "score": "51-56",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:59.0",
+    "score": "51-56",
+    "team": "Wizards",
+    "description": "Turnover by A. Sarr (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "51-58",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "51-58",
+    "team": "76ers",
+    "description": "Shooting foul by M. Branham (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "51-58",
+    "team": "Wizards",
+    "description": "Washington full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "51-58",
+    "team": "Wizards",
+    "description": "T. Johnson enters the game for M. Branham"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "51-58",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "51-58",
+    "team": "76ers",
+    "description": "T. Maxey misses free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "1:54.0",
+    "score": "51-58",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 2,
+    "time": "1:34.0",
+    "score": "53-58",
+    "team": "Wizards",
+    "description": "T. Johnson makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:18.0",
+    "score": "53-58",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:16.0",
+    "score": "53-58",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 2,
+    "time": "1:11.0",
+    "score": "53-58",
+    "team": "Wizards",
+    "description": "Turnover by A. Sarr (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:04.0",
+    "score": "53-58",
+    "team": "76ers",
+    "description": "Shooting foul by J. Champagnie (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:04.0",
+    "score": "53-59",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:04.0",
+    "score": "53-60",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:50.0",
+    "score": "53-60",
+    "team": "Wizards",
+    "description": "B. Carrington misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:45.0",
+    "score": "53-60",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 2,
+    "time": "0:41.0",
+    "score": "53-60",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by A. Sarr)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:24.0",
+    "score": "56-60",
+    "team": "Wizards",
+    "description": "T. Johnson makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "56-60",
+    "team": "76ers",
+    "description": "Shooting foul by B. Coulibaly (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "56-61",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:02.0",
+    "score": "56-62",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "11:38.0",
+    "score": "56-62",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:34.0",
+    "score": "56-62",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "11:31.0",
+    "score": "56-62",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:27.0",
+    "score": "56-62",
+    "team": "Wizards",
+    "description": "Defensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "11:17.0",
+    "score": "56-62",
+    "team": "Wizards",
+    "description": "Turnover by B. Carrington (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:04.0",
+    "score": "56-64",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:04.0",
+    "score": "56-64",
+    "team": "Wizards",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:55.0",
+    "score": "56-64",
+    "team": "Wizards",
+    "description": "Turnover by B. Carrington (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:49.0",
+    "score": "56-66",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 2 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:49.0",
+    "score": "56-66",
+    "team": "Wizards",
+    "description": "Washington full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "10:38.0",
+    "score": "56-66",
+    "team": "Wizards",
+    "description": "Turnover by T. Johnson (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:23.0",
+    "score": "56-68",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt hook shot from 3 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:10.0",
+    "score": "58-68",
+    "team": "Wizards",
+    "description": "A. Sarr makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:56.0",
+    "score": "58-70",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 19 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:48.0",
+    "score": "60-70",
+    "team": "Wizards",
+    "description": "T. Johnson makes 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:41.0",
+    "score": "60-70",
+    "team": "76ers",
+    "description": "Personal foul by B. Coulibaly (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:36.0",
+    "score": "60-70",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:33.0",
+    "score": "60-70",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "60-70",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:16.0",
+    "score": "60-70",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "9:06.0",
+    "score": "60-72",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt hook shot from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "63-72",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 3-pt jump shot from 23 ft (assist by A. Sarr)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:42.0",
+    "score": "63-72",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by T. Johnson)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:39.0",
+    "score": "63-72",
+    "team": "Wizards",
+    "description": "T. Johnson misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:33.0",
+    "score": "63-72",
+    "team": "Wizards",
+    "description": "Offensive rebound by T. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:31.0",
+    "score": "63-72",
+    "team": "Wizards",
+    "description": "B. Carrington misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:27.0",
+    "score": "63-72",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "8:13.0",
+    "score": "63-74",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:59.0",
+    "score": "63-74",
+    "team": "Wizards",
+    "description": "Shooting foul by J. Embiid (drawn by A. Sarr)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:59.0",
+    "score": "64-74",
+    "team": "Wizards",
+    "description": "A. Sarr makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:59.0",
+    "score": "65-74",
+    "team": "Wizards",
+    "description": "A. Sarr makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:44.0",
+    "score": "65-74",
+    "team": "76ers",
+    "description": "Personal foul by T. Johnson (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "65-74",
+    "team": "76ers",
+    "description": "Shooting foul by J. Champagnie (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "65-75",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:36.0",
+    "score": "65-76",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:20.0",
+    "score": "67-76",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 2-pt layup from 1 ft (assist by A. Sarr)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:00.0",
+    "score": "67-78",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 2 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:47.0",
+    "score": "67-78",
+    "team": "Wizards",
+    "description": "Personal foul by V. Edgecombe (drawn by A. Sarr)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:33.0",
+    "score": "67-78",
+    "team": "Wizards",
+    "description": "B. Carrington misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:30.0",
+    "score": "67-78",
+    "team": "Wizards",
+    "description": "Offensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "6:19.0",
+    "score": "70-78",
+    "team": "Wizards",
+    "description": "B. Carrington makes 3-pt jump shot from 29 ft (assist by T. Johnson)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-78",
+    "team": "76ers",
+    "description": "Shooting foul by A. Sarr (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-78",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-78",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-78",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-78",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "6:04.0",
+    "score": "70-79",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:50.0",
+    "score": "70-79",
+    "team": "Wizards",
+    "description": "Turnover by J. Champagnie (bad pass; steal by K. Oubre)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:40.0",
+    "score": "70-79",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (bad pass; steal by J. Champagnie)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:36.0",
+    "score": "72-79",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 2-pt dunk from 2 ft (assist by J. Champagnie)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:20.0",
+    "score": "72-82",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 24 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:09.0",
+    "score": "74-82",
+    "team": "Wizards",
+    "description": "J. Champagnie makes 2-pt layup from 3 ft (assist by B. Carrington)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:54.0",
+    "score": "74-82",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:51.0",
+    "score": "74-82",
+    "team": "Wizards",
+    "description": "Defensive rebound by B. Carrington"
+  },
+  {
+    "quarter": 3,
+    "time": "4:46.0",
+    "score": "74-82",
+    "team": "Wizards",
+    "description": "Turnover by J. Champagnie (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:46.0",
+    "score": "74-82",
+    "team": "Wizards",
+    "description": "M. Bagley enters the game for T. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "4:46.0",
+    "score": "74-82",
+    "team": "Wizards",
+    "description": "M. Branham enters the game for A. Sarr"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "74-85",
+    "team": "76ers",
+    "description": "J. Embiid makes 3-pt jump shot from 28 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:14.0",
+    "score": "77-85",
+    "team": "Wizards",
+    "description": "M. Bagley makes 3-pt jump shot from 25 ft (assist by J. Champagnie)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:53.0",
+    "score": "77-87",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:35.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "B. Carrington makes 3-pt jump shot from 29 ft (assist by B. Coulibaly)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:15.0",
+    "score": "80-87",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:11.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "Defensive rebound by B. Coulibaly"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "J. Champagnie misses 2-pt layup from 3 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "A. Gill enters the game for B. Carrington"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "A. Johnson enters the game for B. Coulibaly"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "80-87",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "3:00.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "A. Johnson misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:56.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "Offensive rebound by J. Champagnie"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "80-87",
+    "team": "Wizards",
+    "description": "M. Bagley misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:45.0",
+    "score": "80-87",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "2:38.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 3 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:22.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "Personal foul by J. Embiid (drawn by M. Bagley)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:22.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:22.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "2:22.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "2:07.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "Turnover by M. Branham (lost ball; steal by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:58.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:55.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 3,
+    "time": "1:46.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "A. Johnson misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:44.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:42.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "M. Bagley misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:38.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "1:26.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:23.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Gill"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "M. Bagley misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:03.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by M. Branham)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:57.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "M. Branham misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:55.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "Offensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 3,
+    "time": "0:54.0",
+    "score": "80-89",
+    "team": "Wizards",
+    "description": "M. Bagley misses 2-pt layup from 4 ft (block by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:50.0",
+    "score": "80-89",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "0:41.0",
+    "score": "80-92",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:18.0",
+    "score": "80-92",
+    "team": "Wizards",
+    "description": "J. Champagnie misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:15.0",
+    "score": "80-92",
+    "team": "Wizards",
+    "description": "Offensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 3,
+    "time": "0:05.0",
+    "score": "80-92",
+    "team": "Wizards",
+    "description": "Turnover by A. Johnson (lost ball; steal by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "80-92",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "80-92",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Gill"
+  },
+  {
+    "quarter": 4,
+    "time": "11:50.0",
+    "score": "80-94",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:30.0",
+    "score": "80-94",
+    "team": "Wizards",
+    "description": "Turnover by T. Johnson (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:18.0",
+    "score": "80-94",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:14.0",
+    "score": "80-94",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "11:12.0",
+    "score": "80-94",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:10.0",
+    "score": "80-94",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Bagley"
+  },
+  {
+    "quarter": 4,
+    "time": "10:57.0",
+    "score": "80-94",
+    "team": "Wizards",
+    "description": "B. Carrington misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:53.0",
+    "score": "80-94",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "10:44.0",
+    "score": "80-96",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:20.0",
+    "score": "80-96",
+    "team": "Wizards",
+    "description": "T. Johnson misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:17.0",
+    "score": "80-96",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "10:12.0",
+    "score": "80-96",
+    "team": "76ers",
+    "description": "Personal foul by T. Johnson (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "80-96",
+    "team": "76ers",
+    "description": "Shooting foul by A. Gill (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "80-97",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "80-97",
+    "team": "Wizards",
+    "description": "B. Coulibaly enters the game for M. Bagley"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "80-97",
+    "team": "Wizards",
+    "description": "A. Sarr enters the game for A. Gill"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "80-98",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:47.0",
+    "score": "80-98",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:43.0",
+    "score": "80-98",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "9:36.0",
+    "score": "80-100",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:34.0",
+    "score": "80-100",
+    "team": "Wizards",
+    "description": "Washington full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "9:13.0",
+    "score": "80-100",
+    "team": "Wizards",
+    "description": "Turnover by A. Sarr (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "80-100",
+    "team": "76ers",
+    "description": "Shooting foul by A. Sarr (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "80-100",
+    "team": "76ers",
+    "description": "A. Drummond misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "80-100",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "80-101",
+    "team": "76ers",
+    "description": "A. Drummond makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:57.0",
+    "score": "80-101",
+    "team": "Wizards",
+    "description": "Turnover by B. Coulibaly (lost ball; steal by K. Oubre)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "80-103",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt dunk from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "80-103",
+    "team": "Wizards",
+    "description": "Washington full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:37.0",
+    "score": "80-103",
+    "team": "Wizards",
+    "description": "Shooting foul by K. Oubre (drawn by T. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:37.0",
+    "score": "81-103",
+    "team": "Wizards",
+    "description": "T. Johnson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:37.0",
+    "score": "82-103",
+    "team": "Wizards",
+    "description": "T. Johnson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:17.0",
+    "score": "82-103",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:13.0",
+    "score": "82-103",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "8:13.0",
+    "score": "82-105",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "7:52.0",
+    "score": "85-105",
+    "team": "Wizards",
+    "description": "A. Sarr makes 3-pt jump shot from 23 ft (assist by B. Carrington)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "85-107",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt jump shot from 19 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:16.0",
+    "score": "87-107",
+    "team": "Wizards",
+    "description": "T. Johnson makes 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:03.0",
+    "score": "87-109",
+    "team": "76ers",
+    "description": "K. Oubre makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:43.0",
+    "score": "87-109",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:39.0",
+    "score": "87-109",
+    "team": "Wizards",
+    "description": "Offensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 4,
+    "time": "6:39.0",
+    "score": "89-109",
+    "team": "Wizards",
+    "description": "B. Coulibaly makes 2-pt dunk from 1 ft (assist by A. Sarr)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:13.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:10.0",
+    "score": "89-109",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 4,
+    "time": "6:05.0",
+    "score": "89-109",
+    "team": "Wizards",
+    "description": "B. Coulibaly misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:03.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Shooting foul by B. Coulibaly (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "P. George misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-109",
+    "team": "Wizards",
+    "description": "A. Johnson enters the game for T. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-109",
+    "team": "76ers",
+    "description": "J. McCain enters the game for K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "5:59.0",
+    "score": "89-110",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "91-110",
+    "team": "Wizards",
+    "description": "A. Sarr makes 2-pt jump shot from 15 ft (assist by B. Carrington)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:28.0",
+    "score": "91-110",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "91-110",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Sarr"
+  },
+  {
+    "quarter": 4,
+    "time": "5:21.0",
+    "score": "93-110",
+    "team": "Wizards",
+    "description": "M. Branham makes 2-pt layup from 4 ft (assist by B. Coulibaly)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "5:01.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:58.0",
+    "score": "93-110",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:49.0",
+    "score": "93-110",
+    "team": "Wizards",
+    "description": "A. Johnson misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:46.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "Personal foul by B. Coulibaly (drawn by J. Edwards)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "J. Edwards misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-110",
+    "team": "Wizards",
+    "description": "A. Gill enters the game for B. Coulibaly"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-110",
+    "team": "Wizards",
+    "description": "T. Vukcevic enters the game for A. Sarr"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-110",
+    "team": "76ers",
+    "description": "T. Watford enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "93-111",
+    "team": "76ers",
+    "description": "J. Edwards makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:29.0",
+    "score": "93-111",
+    "team": "Wizards",
+    "description": "A. Johnson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:27.0",
+    "score": "93-111",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "4:27.0",
+    "score": "93-111",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "4:08.0",
+    "score": "93-114",
+    "team": "76ers",
+    "description": "A. Drummond makes 3-pt jump shot from 24 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:45.0",
+    "score": "96-114",
+    "team": "Wizards",
+    "description": "A. Gill makes 3-pt jump shot from 24 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:27.0",
+    "score": "96-114",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 24 ft (block by T. Vukcevic)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:25.0",
+    "score": "96-114",
+    "team": "Wizards",
+    "description": "Defensive rebound by M. Branham"
+  },
+  {
+    "quarter": 4,
+    "time": "3:18.0",
+    "score": "98-114",
+    "team": "Wizards",
+    "description": "A. Johnson makes 2-pt dunk at rim (assist by B. Carrington)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:18.0",
+    "score": "98-114",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:15.0",
+    "score": "98-116",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt dunk from 1 ft (assist by A. Drummond)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:15.0",
+    "score": "98-116",
+    "team": "76ers",
+    "description": "Shooting foul by B. Carrington (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:15.0",
+    "score": "98-117",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "3:02.0",
+    "score": "98-117",
+    "team": "Wizards",
+    "description": "Personal foul by A. Drummond (drawn by A. Gill)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:58.0",
+    "score": "100-117",
+    "team": "Wizards",
+    "description": "T. Vukcevic makes 2-pt jump shot from 10 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:39.0",
+    "score": "100-120",
+    "team": "76ers",
+    "description": "A. Drummond makes 3-pt jump shot from 23 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:21.0",
+    "score": "100-120",
+    "team": "Wizards",
+    "description": "Turnover by A. Gill (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "100-120",
+    "team": "76ers",
+    "description": "Shooting foul by B. Carrington (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "100-121",
+    "team": "76ers",
+    "description": "A. Drummond makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:08.0",
+    "score": "100-122",
+    "team": "76ers",
+    "description": "A. Drummond makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:00.0",
+    "score": "100-122",
+    "team": "Wizards",
+    "description": "Turnover by B. Carrington (lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:00.0",
+    "score": "100-122",
+    "team": "Wizards",
+    "description": "Loose ball foul by B. Carrington (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:00.0",
+    "score": "100-122",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "2:00.0",
+    "score": "100-123",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:00.0",
+    "score": "100-124",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:46.0",
+    "score": "103-124",
+    "team": "Wizards",
+    "description": "B. Carrington makes 3-pt jump shot from 25 ft (assist by M. Branham)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:32.0",
+    "score": "103-127",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 26 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:16.0",
+    "score": "105-127",
+    "team": "Wizards",
+    "description": "A. Gill makes 2-pt dunk from 1 ft (assist by T. Vukcevic)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:08.0",
+    "score": "105-127",
+    "team": "76ers",
+    "description": "Personal foul by M. Branham (drawn by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:08.0",
+    "score": "105-128",
+    "team": "76ers",
+    "description": "J. McCain makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:08.0",
+    "score": "105-129",
+    "team": "76ers",
+    "description": "J. McCain makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "108-129",
+    "team": "Wizards",
+    "description": "B. Carrington makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:48.0",
+    "score": "108-131",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 1 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:41.0",
+    "score": "108-131",
+    "team": "Wizards",
+    "description": "Turnover by T. Vukcevic (lost ball; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "108-131",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 27 ft (block by M. Branham)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:20.0",
+    "score": "108-131",
+    "team": "Wizards",
+    "description": "Defensive rebound by A. Gill"
+  },
+  {
+    "quarter": 4,
+    "time": "0:18.0",
+    "score": "110-131",
+    "team": "Wizards",
+    "description": "A. Johnson makes 2-pt dunk from 1 ft (assist by B. Carrington)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "110-131",
+    "team": "Wizards",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  }
+]

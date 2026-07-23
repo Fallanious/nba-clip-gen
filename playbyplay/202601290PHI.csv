@@ -1,0 +1,427 @@
+quarter,time,score,team,description
+1,11:40.0,0-0,76ers,P. George misses 2-pt jump shot from 20 ft
+1,11:38.0,0-0,Kings,Defensive rebound by P. Achiuwa
+1,11:27.0,0-0,Kings,N. Clifford misses 2-pt layup from 1 ft
+1,11:25.0,0-0,76ers,Defensive rebound by K. Oubre
+1,11:14.0,0-0,76ers,V. Edgecombe misses 3-pt jump shot from 27 ft
+1,11:12.0,0-0,Kings,Defensive rebound by N. Clifford
+1,11:03.0,2-0,Kings,P. Achiuwa makes 2-pt layup from 1 ft (assist by D. Sabonis)
+1,10:49.0,2-2,76ers,J. Embiid makes 2-pt jump shot from 9 ft (assist by P. George)
+1,10:33.0,4-2,Kings,D. DeRozan makes 2-pt jump shot from 10 ft
+1,10:12.0,4-4,76ers,T. Maxey makes 2-pt jump shot from 16 ft
+1,9:53.0,6-4,Kings,D. Sabonis makes 2-pt layup from 1 ft (assist by D. Schröder)
+1,9:40.0,6-7,76ers,T. Maxey makes 3-pt jump shot from 28 ft
+1,9:28.0,6-7,Kings,P. Achiuwa misses 3-pt jump shot from 22 ft
+1,9:25.0,6-7,Kings,Offensive rebound by N. Clifford
+1,9:24.0,6-7,Kings,Turnover by N. Clifford (bad pass; steal by T. Maxey)
+1,9:20.0,6-10,76ers,T. Maxey makes 3-pt jump shot from 27 ft
+1,9:07.0,6-10,Kings,N. Clifford misses 2-pt layup from 1 ft
+1,9:04.0,6-10,Kings,Offensive rebound by P. Achiuwa
+1,8:59.0,6-10,Kings,D. Sabonis misses 2-pt jump shot from 13 ft
+1,8:57.0,6-10,76ers,Defensive rebound by J. Embiid
+1,8:51.0,6-10,76ers,T. Maxey misses 3-pt jump shot from 28 ft
+1,8:47.0,6-10,Kings,Defensive rebound by D. Sabonis
+1,8:41.0,6-10,Kings,Shooting foul by K. Oubre (drawn by D. Schröder)
+1,8:41.0,7-10,Kings,D. Schröder makes free throw 1 of 2
+1,8:41.0,8-10,Kings,D. Schröder makes free throw 2 of 2
+1,8:30.0,8-10,76ers,Personal foul by D. Sabonis (drawn by J. Embiid)
+1,8:19.0,8-10,76ers,J. Embiid misses 2-pt layup from 7 ft
+1,8:19.0,8-10,76ers,Offensive rebound by Team
+1,8:16.0,8-10,76ers,V. Edgecombe misses 3-pt jump shot from 28 ft
+1,8:12.0,8-10,76ers,Offensive rebound by V. Edgecombe
+1,8:10.0,8-10,76ers,P. George misses 3-pt jump shot from 27 ft
+1,8:08.0,8-10,76ers,Offensive rebound by V. Edgecombe
+1,8:07.0,8-10,76ers,V. Edgecombe misses 2-pt layup at rim (block by P. Achiuwa)
+1,8:06.0,8-10,Kings,Defensive rebound by P. Achiuwa
+1,7:55.0,10-10,Kings,D. Schröder makes 2-pt layup from 1 ft
+1,7:36.0,10-10,76ers,Turnover by J. Embiid (bad pass)
+1,7:20.0,10-10,Kings,D. Sabonis misses 3-pt jump shot from 27 ft
+1,7:18.0,10-10,Kings,Offensive rebound by Team
+1,7:11.0,10-10,Kings,D. DeRozan misses 2-pt jump shot from 11 ft
+1,7:08.0,10-10,76ers,Defensive rebound by V. Edgecombe
+1,6:59.0,10-12,76ers,P. George makes 2-pt layup from 1 ft (assist by J. Embiid)
+1,6:40.0,13-12,Kings,D. DeRozan makes 3-pt jump shot from 27 ft
+1,6:29.0,13-12,76ers,Shooting foul by D. Sabonis (drawn by J. Embiid)
+1,6:29.0,13-12,76ers,Philadelphia full timeout
+1,6:29.0,13-12,Kings,D. Cardwell enters the game for D. DeRozan
+1,6:29.0,13-12,Kings,Z. LaVine enters the game for D. Sabonis
+1,6:29.0,13-13,76ers,J. Embiid makes free throw 1 of 2
+1,6:29.0,13-14,76ers,J. Embiid makes free throw 2 of 2
+1,6:05.0,13-14,Kings,N. Clifford misses 2-pt jump shot from 23 ft (block by J. Embiid)
+1,6:05.0,13-14,Kings,Offensive rebound by Team
+1,6:05.0,13-14,Kings,Turnover by Team (shot clock)
+1,5:48.0,13-14,76ers,J. Embiid misses 2-pt jump shot from 16 ft
+1,5:45.0,13-14,Kings,Defensive rebound by D. Cardwell
+1,5:27.0,13-14,Kings,P. Achiuwa misses 3-pt jump shot from 26 ft
+1,5:23.0,13-14,76ers,Defensive rebound by T. Maxey
+1,5:14.0,13-17,76ers,V. Edgecombe makes 3-pt jump shot from 25 ft (assist by T. Maxey)
+1,4:59.0,15-17,Kings,N. Clifford makes 2-pt jump shot from 7 ft (assist by D. Schröder)
+1,4:45.0,15-17,76ers,Def 3 sec tech foul by Team
+1,4:45.0,15-18,76ers,T. Maxey makes technical free throw
+1,4:45.0,15-18,76ers,D. Barlow enters the game for P. George
+1,4:33.0,15-20,76ers,J. Embiid makes 2-pt hook shot from 4 ft (assist by V. Edgecombe)
+1,4:20.0,15-20,Kings,N. Clifford misses 3-pt jump shot from 23 ft
+1,4:17.0,15-20,Kings,Offensive rebound by D. Cardwell
+1,4:14.0,15-20,Kings,Turnover by D. Cardwell (bad pass; steal by D. Barlow)
+1,4:03.0,15-20,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+1,4:01.0,15-20,Kings,Defensive rebound by D. Schröder
+1,3:52.0,15-20,Kings,P. Achiuwa misses 2-pt jump shot from 6 ft
+1,3:48.0,15-20,Kings,Offensive rebound by D. Schröder
+1,3:48.0,15-20,Kings,D. DeRozan enters the game for P. Achiuwa
+1,3:48.0,15-20,Kings,M. Raynaud enters the game for N. Clifford
+1,3:48.0,15-20,76ers,J. McCain enters the game for T. Maxey
+1,3:37.0,15-20,Kings,Turnover by D. Schröder (lost ball; steal by V. Edgecombe)
+1,3:24.0,15-20,76ers,J. Embiid misses 2-pt hook shot from 7 ft
+1,3:21.0,15-20,Kings,Defensive rebound by M. Raynaud
+1,3:21.0,15-20,Kings,K. Ellis enters the game for D. Schröder
+1,3:17.0,15-20,Kings,Sacramento full timeout
+1,3:17.0,15-20,Kings,D. Schröder enters the game for K. Ellis
+1,3:17.0,15-20,Kings,Instant Replay (Challenge: Ruling Stands)
+1,3:17.0,15-20,Kings,K. Ellis enters the game for D. Schröder
+1,3:13.0,15-20,Kings,Z. LaVine misses 2-pt jump shot from 18 ft
+1,3:10.0,15-20,Kings,Offensive rebound by M. Raynaud
+1,3:04.0,17-20,Kings,D. DeRozan makes 2-pt jump shot from 9 ft
+1,2:49.0,17-20,76ers,Shooting foul by M. Raynaud (drawn by K. Oubre)
+1,2:49.0,17-21,76ers,K. Oubre makes free throw 1 of 2
+1,2:49.0,17-22,76ers,K. Oubre makes free throw 2 of 2
+1,2:43.0,17-22,Kings,Shooting foul by J. Embiid (drawn by Z. LaVine)
+1,2:43.0,18-22,Kings,Z. LaVine makes free throw 1 of 2
+1,2:43.0,19-22,Kings,Z. LaVine makes free throw 2 of 2
+1,2:30.0,19-24,76ers,J. Embiid makes 2-pt jump shot from 14 ft
+1,2:15.0,21-24,Kings,D. DeRozan makes 2-pt jump shot from 13 ft (assist by Z. LaVine)
+1,1:58.0,21-24,76ers,Shooting foul by D. Cardwell (drawn by J. Embiid)
+1,1:58.0,21-25,76ers,J. Embiid makes free throw 1 of 2
+1,1:58.0,21-26,76ers,J. Embiid makes free throw 2 of 2
+1,1:42.0,21-26,Kings,Z. LaVine misses 2-pt layup from 2 ft
+1,1:40.0,21-26,76ers,Defensive rebound by D. Barlow
+1,1:34.0,21-26,76ers,K. Oubre misses 3-pt jump shot from 26 ft
+1,1:30.0,21-26,Kings,Defensive rebound by D. DeRozan
+1,1:18.0,24-26,Kings,Z. LaVine makes 3-pt jump shot from 28 ft (assist by D. DeRozan)
+1,0:54.0,24-28,76ers,K. Oubre makes 2-pt layup from 6 ft
+1,0:42.0,24-28,Kings,Z. LaVine misses 3-pt jump shot from 25 ft
+1,0:39.0,24-28,76ers,Defensive rebound by V. Edgecombe
+1,0:31.0,24-28,76ers,V. Edgecombe misses 3-pt jump shot from 28 ft
+1,0:30.0,24-28,Kings,Defensive rebound by Team
+1,0:06.0,24-28,Kings,Z. LaVine misses 2-pt jump shot from 18 ft
+1,0:05.0,24-28,Kings,Offensive rebound by Team
+1,0:05.0,24-28,76ers,Loose ball foul by J. Embiid (drawn by M. Raynaud)
+1,0:05.0,24-28,76ers,A. Bona enters the game for J. Embiid
+1,0:00.0,24-28,Kings,Shooting foul by K. Oubre (drawn by D. DeRozan)
+1,0:00.0,25-28,Kings,D. DeRozan makes free throw 1 of 2
+1,0:00.0,25-28,Kings,D. DeRozan misses free throw 2 of 2
+1,0:00.0,25-28,76ers,Defensive rebound by A. Bona
+2,11:47.0,25-28,Kings,Shooting foul by T. Maxey (drawn by D. DeRozan)
+2,11:47.0,25-28,Kings,D. DeRozan misses free throw 1 of 2
+2,11:47.0,25-28,Kings,Offensive rebound by Team
+2,11:47.0,26-28,Kings,D. DeRozan makes free throw 2 of 2
+2,11:30.0,26-30,76ers,P. George makes 2-pt jump shot from 11 ft
+2,11:09.0,29-30,Kings,K. Ellis makes 3-pt jump shot from 26 ft
+2,10:49.0,29-30,Kings,Violation by Team (kicked ball)
+2,10:39.0,29-32,76ers,P. George makes 2-pt jump shot from 16 ft (assist by T. Maxey)
+2,10:26.0,29-32,Kings,Turnover by D. DeRozan (bad pass; steal by P. George)
+2,10:11.0,29-32,76ers,Shooting foul by K. Ellis (drawn by D. Barlow)
+2,10:11.0,29-33,76ers,D. Barlow makes free throw 1 of 2
+2,10:11.0,29-33,Kings,D. Sabonis enters the game for D. Cardwell
+2,10:11.0,29-34,76ers,D. Barlow makes free throw 2 of 2
+2,9:54.0,29-34,Kings,K. Ellis misses 3-pt jump shot from 26 ft
+2,9:52.0,29-34,76ers,Defensive rebound by A. Bona
+2,9:44.0,29-34,76ers,A. Bona misses 2-pt layup from 2 ft
+2,9:41.0,29-34,Kings,Defensive rebound by M. Raynaud
+2,9:41.0,29-34,Kings,Personal foul by T. Maxey (drawn by K. Ellis)
+2,9:31.0,29-34,Kings,Z. LaVine misses 2-pt layup from 2 ft (block by A. Bona)
+2,9:27.0,29-34,76ers,Defensive rebound by T. Maxey
+2,9:21.0,29-36,76ers,T. Maxey makes 2-pt layup from 2 ft
+2,9:21.0,29-36,Kings,Sacramento full timeout
+2,9:13.0,29-36,Kings,Personal foul by A. Bona (drawn by D. Sabonis)
+2,9:02.0,29-36,Kings,M. Raynaud misses 3-pt jump shot from 23 ft
+2,9:00.0,29-36,Kings,Offensive rebound by Team
+2,9:00.0,29-36,76ers,Loose ball foul by D. Barlow (drawn by D. Sabonis)
+2,8:54.0,31-36,Kings,D. DeRozan makes 2-pt jump shot from 11 ft
+2,8:32.0,31-36,76ers,Turnover by J. McCain (lost ball; steal by M. Raynaud)
+2,8:23.0,31-36,Kings,D. DeRozan misses 2-pt jump shot from 7 ft
+2,8:20.0,31-36,Kings,Offensive rebound by M. Raynaud
+2,8:07.0,33-36,Kings,D. DeRozan makes 2-pt layup from 1 ft
+2,7:58.0,33-36,76ers,Personal foul by M. Raynaud (drawn by D. Barlow)
+2,7:58.0,33-36,Kings,D. Schröder enters the game for K. Ellis
+2,7:48.0,33-38,76ers,T. Maxey makes 2-pt layup from 1 ft (assist by P. George)
+2,7:38.0,35-38,Kings,D. Schröder makes 2-pt layup from 1 ft
+2,7:26.0,35-38,76ers,Turnover by T. Maxey (bad pass; steal by D. Schröder)
+2,7:20.0,35-38,Kings,Z. LaVine misses 2-pt layup from 1 ft
+2,7:19.0,35-38,Kings,Offensive rebound by D. Sabonis
+2,7:19.0,35-38,Kings,D. Sabonis misses 2-pt layup at rim (block by A. Bona)
+2,7:18.0,35-38,76ers,Defensive rebound by T. Maxey
+2,7:08.0,35-38,76ers,J. McCain misses 3-pt jump shot from 29 ft
+2,7:05.0,35-38,Kings,Defensive rebound by M. Raynaud
+2,7:02.0,35-38,Kings,Z. LaVine misses 2-pt jump shot from 18 ft
+2,6:58.0,35-38,76ers,Defensive rebound by T. Maxey
+2,6:56.0,35-38,76ers,Shooting foul by D. Schröder (drawn by T. Maxey)
+2,6:56.0,35-39,76ers,T. Maxey makes free throw 1 of 2
+2,6:56.0,35-39,Kings,N. Clifford enters the game for Z. LaVine
+2,6:56.0,35-39,76ers,V. Edgecombe enters the game for P. George
+2,6:56.0,35-39,76ers,K. Oubre enters the game for J. McCain
+2,6:56.0,35-40,76ers,T. Maxey makes free throw 2 of 2
+2,6:56.0,35-40,Kings,P. Achiuwa enters the game for M. Raynaud
+2,6:44.0,35-40,Kings,Personal foul by A. Bona (drawn by D. Sabonis)
+2,6:44.0,35-40,Kings,D. Sabonis misses free throw 1 of 2
+2,6:44.0,35-40,Kings,Offensive rebound by Team
+2,6:44.0,36-40,Kings,D. Sabonis makes free throw 2 of 2
+2,6:28.0,36-43,76ers,T. Maxey makes 3-pt jump shot from 28 ft (assist by V. Edgecombe)
+2,6:12.0,36-43,Kings,Personal foul by A. Bona (drawn by D. Schröder)
+2,6:12.0,37-43,Kings,D. Schröder makes free throw 1 of 2
+2,6:12.0,37-43,76ers,J. Embiid enters the game for A. Bona
+2,6:12.0,38-43,Kings,D. Schröder makes free throw 2 of 2
+2,5:49.0,38-46,76ers,J. Embiid makes 3-pt jump shot from 27 ft (assist by T. Maxey)
+2,5:36.0,40-46,Kings,D. DeRozan makes 2-pt jump shot from 15 ft (assist by D. Sabonis)
+2,5:19.0,40-46,76ers,K. Oubre misses 2-pt layup from 5 ft
+2,5:17.0,40-46,Kings,Defensive rebound by D. DeRozan
+2,5:07.0,40-46,Kings,Shooting foul by D. Barlow (drawn by D. DeRozan)
+2,5:07.0,41-46,Kings,D. DeRozan makes free throw 1 of 2
+2,5:07.0,42-46,Kings,D. DeRozan makes free throw 2 of 2
+2,4:45.0,42-49,76ers,T. Maxey makes 3-pt jump shot from 28 ft (assist by J. Embiid)
+2,4:36.0,42-49,Kings,D. Schröder misses 2-pt layup from 3 ft
+2,4:30.0,42-49,Kings,Offensive rebound by P. Achiuwa
+2,4:30.0,44-49,Kings,P. Achiuwa makes 2-pt layup at rim
+2,4:24.0,44-49,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+2,4:21.0,44-49,Kings,Defensive rebound by D. Schröder
+2,4:19.0,44-49,Kings,Turnover by N. Clifford (lost ball; steal by V. Edgecombe)
+2,4:14.0,44-49,76ers,Shooting foul by P. Achiuwa (drawn by T. Maxey)
+2,4:14.0,44-50,76ers,T. Maxey makes free throw 1 of 2
+2,4:14.0,44-50,76ers,J. Edwards enters the game for V. Edgecombe
+2,4:14.0,44-51,76ers,T. Maxey makes free throw 2 of 2
+2,4:01.0,47-51,Kings,D. Schröder makes 3-pt jump shot from 26 ft
+2,4:01.0,47-51,76ers,P. George enters the game for D. Barlow
+2,3:37.0,47-53,76ers,J. Embiid makes 2-pt jump shot from 17 ft (assist by T. Maxey)
+2,3:11.0,47-53,Kings,D. DeRozan misses 2-pt jump shot from 17 ft
+2,3:07.0,47-53,76ers,Defensive rebound by J. Embiid
+2,2:46.0,47-55,76ers,J. Embiid makes 2-pt layup from 3 ft (assist by T. Maxey)
+2,2:46.0,47-55,Kings,Sacramento full timeout
+2,2:46.0,47-55,Kings,K. Ellis enters the game for N. Clifford
+2,2:31.0,50-55,Kings,D. Schröder makes 3-pt jump shot from 23 ft (assist by D. Sabonis)
+2,2:15.0,50-55,76ers,P. George misses 3-pt jump shot from 27 ft
+2,2:13.0,50-55,Kings,Defensive rebound by D. Sabonis
+2,2:08.0,50-55,Kings,D. DeRozan misses 2-pt jump shot from 9 ft
+2,2:04.0,50-55,76ers,Defensive rebound by J. Edwards
+2,1:51.0,50-58,76ers,J. Edwards makes 3-pt jump shot from 26 ft (assist by J. Embiid)
+2,1:41.0,50-58,Kings,K. Ellis misses 3-pt jump shot from 22 ft
+2,1:37.0,50-58,Kings,Offensive rebound by P. Achiuwa
+2,1:33.0,52-58,Kings,D. Sabonis makes 2-pt layup at rim (assist by P. Achiuwa)
+2,1:14.0,52-58,76ers,J. Edwards misses 3-pt jump shot from 28 ft
+2,1:11.0,52-58,Kings,Defensive rebound by D. Schröder
+2,0:52.0,52-58,Kings,K. Ellis misses 3-pt jump shot from 27 ft
+2,0:49.0,52-58,76ers,Defensive rebound by P. George
+2,0:37.0,52-60,76ers,J. Embiid makes 2-pt jump shot from 11 ft (assist by T. Maxey)
+2,0:22.0,52-60,Kings,Personal foul by J. Embiid (drawn by D. DeRozan)
+2,0:22.0,53-60,Kings,D. DeRozan makes free throw 1 of 2
+2,0:22.0,53-60,Kings,D. Cardwell enters the game for D. Sabonis
+2,0:22.0,54-60,Kings,D. DeRozan makes free throw 2 of 2
+2,0:01.0,54-60,76ers,P. George misses 2-pt jump shot from 6 ft (block by K. Ellis)
+2,0:01.0,54-60,76ers,Offensive rebound by Team
+2,0:00.0,54-60,76ers,Turnover by K. Oubre (off goaltending)
+2,0:00.0,54-60,76ers,Instant Replay (Request: Ruling Stands)
+2,0:00.0,54-60,76ers,D. Barlow enters the game for J. Embiid
+2,0:00.0,54-60,Kings,Team misses heave shot
+2,0:00.0,54-60,Kings,Offensive rebound by Team
+3,11:43.0,57-60,Kings,D. Schröder makes 3-pt jump shot from 26 ft (assist by D. DeRozan)
+3,11:21.0,57-62,76ers,J. Embiid makes 2-pt jump shot from 11 ft (assist by T. Maxey)
+3,11:05.0,57-62,Kings,D. Schröder misses 2-pt jump shot from 22 ft
+3,11:02.0,57-62,76ers,Defensive rebound by K. Oubre
+3,10:49.0,57-64,76ers,J. Embiid makes 2-pt jump shot from 20 ft
+3,10:41.0,59-64,Kings,P. Achiuwa makes 2-pt layup from 2 ft (assist by D. DeRozan)
+3,10:34.0,59-64,76ers,Personal foul by D. Sabonis (drawn by T. Maxey)
+3,10:27.0,59-64,76ers,P. George misses 2-pt jump shot from 16 ft
+3,10:24.0,59-64,Kings,Defensive rebound by P. Achiuwa
+3,10:15.0,59-64,Kings,Turnover by D. Sabonis (lost ball; steal by P. George)
+3,9:57.0,59-64,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+3,9:53.0,59-64,Kings,Defensive rebound by N. Clifford
+3,9:42.0,59-64,Kings,Turnover by D. Sabonis (out of bounds lost ball)
+3,9:32.0,59-66,76ers,V. Edgecombe makes 2-pt jump shot from 19 ft
+3,9:32.0,59-66,Kings,Sacramento full timeout
+3,9:13.0,59-66,Kings,D. Schröder misses 2-pt jump shot from 18 ft
+3,9:07.0,59-66,Kings,Offensive rebound by D. Sabonis
+3,9:07.0,61-66,Kings,D. Sabonis makes 2-pt layup at rim
+3,8:54.0,61-68,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)
+3,8:46.0,61-68,Kings,Shooting foul by V. Edgecombe (drawn by D. Sabonis)
+3,8:46.0,62-68,Kings,D. Sabonis makes free throw 1 of 2
+3,8:46.0,62-68,Kings,D. Sabonis misses free throw 2 of 2
+3,8:43.0,62-68,Kings,Offensive rebound by N. Clifford
+3,8:36.0,64-68,Kings,D. DeRozan makes 2-pt jump shot from 14 ft
+3,8:15.0,64-70,76ers,J. Embiid makes 2-pt layup from 3 ft (assist by P. George)
+3,8:15.0,64-70,76ers,Shooting foul by N. Clifford (drawn by J. Embiid)
+3,8:15.0,64-70,76ers,J. Embiid misses free throw 1 of 1
+3,8:12.0,64-70,Kings,Defensive rebound by D. Sabonis
+3,8:07.0,66-70,Kings,D. Schröder makes 2-pt layup from 2 ft
+3,7:46.0,66-70,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+3,7:44.0,66-70,Kings,Defensive rebound by D. DeRozan
+3,7:39.0,66-70,Kings,Personal foul by P. George (drawn by D. DeRozan)
+3,7:34.0,66-70,Kings,D. Schröder misses 3-pt jump shot from 26 ft
+3,7:31.0,66-70,Kings,Offensive rebound by D. Sabonis
+3,7:21.0,68-70,Kings,D. Sabonis makes 2-pt layup from 2 ft (assist by D. DeRozan)
+3,6:59.0,68-70,76ers,P. George misses 2-pt layup from 2 ft (block by N. Clifford)
+3,6:56.0,68-70,Kings,Defensive rebound by P. Achiuwa
+3,6:50.0,70-70,Kings,D. Sabonis makes 2-pt layup from 2 ft (assist by D. DeRozan)
+3,6:49.0,70-70,76ers,Philadelphia full timeout
+3,6:29.0,70-72,76ers,P. George makes 2-pt jump shot from 18 ft
+3,6:04.0,70-72,Kings,N. Clifford misses 2-pt layup from 2 ft
+3,6:02.0,70-72,Kings,Offensive rebound by P. Achiuwa
+3,5:57.0,72-72,Kings,D. Sabonis makes 2-pt hook shot from 2 ft (assist by P. Achiuwa)
+3,5:43.0,72-75,76ers,P. George makes 3-pt jump shot from 26 ft (assist by J. Embiid)
+3,5:26.0,74-75,Kings,D. DeRozan makes 2-pt jump shot from 8 ft
+3,5:12.0,74-75,76ers,Personal foul by D. Sabonis (drawn by T. Maxey)
+3,5:12.0,74-75,Kings,D. Cardwell enters the game for D. DeRozan
+3,5:12.0,74-75,Kings,Z. LaVine enters the game for D. Sabonis
+3,5:02.0,74-75,76ers,P. George misses 3-pt jump shot from 26 ft
+3,4:59.0,74-75,Kings,Defensive rebound by D. Cardwell
+3,4:47.0,74-75,Kings,Turnover by P. Achiuwa (lost ball)
+3,4:46.0,74-75,Kings,Loose ball foul by D. Cardwell (drawn by V. Edgecombe)
+3,4:32.0,74-75,76ers,J. Embiid misses 2-pt jump shot from 23 ft
+3,4:29.0,74-75,Kings,Defensive rebound by P. Achiuwa
+3,4:21.0,77-75,Kings,D. Schröder makes 3-pt jump shot from 27 ft
+3,4:21.0,77-75,Kings,M. Raynaud enters the game for P. Achiuwa
+3,4:21.0,77-75,76ers,D. Barlow enters the game for V. Edgecombe
+3,4:21.0,77-75,76ers,J. McCain enters the game for P. George
+3,3:52.0,77-77,76ers,J. McCain makes 2-pt layup from 3 ft (assist by J. Embiid)
+3,3:40.0,77-77,Kings,D. Schröder misses 3-pt jump shot from 23 ft
+3,3:38.0,77-77,76ers,Defensive rebound by J. Embiid
+3,3:33.0,77-77,76ers,Shooting foul by D. Cardwell (drawn by J. Embiid)
+3,3:33.0,77-78,76ers,J. Embiid makes free throw 1 of 2
+3,3:33.0,77-78,Kings,K. Ellis enters the game for D. Schröder
+3,3:33.0,77-79,76ers,J. Embiid makes free throw 2 of 2
+3,3:32.0,77-79,Kings,Personal foul by J. McCain (drawn by K. Ellis)
+3,3:26.0,77-79,Kings,Offensive foul by D. Cardwell (drawn by K. Oubre)
+3,3:26.0,77-79,Kings,Turnover by D. Cardwell (offensive foul)
+3,3:15.0,77-79,76ers,Shooting foul by D. Cardwell (drawn by J. Embiid)
+3,3:15.0,77-79,76ers,J. Embiid misses free throw 1 of 2
+3,3:15.0,77-79,76ers,Offensive rebound by Team
+3,3:15.0,77-79,Kings,P. Achiuwa enters the game for D. Cardwell
+3,3:15.0,77-79,76ers,J. Edwards enters the game for K. Oubre
+3,3:15.0,77-79,76ers,J. Embiid misses free throw 2 of 2
+3,3:13.0,77-79,Kings,Defensive rebound by M. Raynaud
+3,2:55.0,79-79,Kings,Z. LaVine makes 2-pt jump shot from 21 ft
+3,2:34.0,79-81,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)
+3,2:24.0,79-81,Kings,Shooting foul by J. Edwards (drawn by Z. LaVine)
+3,2:24.0,80-81,Kings,Z. LaVine makes free throw 1 of 2
+3,2:24.0,80-81,76ers,A. Bona enters the game for J. Embiid
+3,2:24.0,81-81,Kings,Z. LaVine makes free throw 2 of 2
+3,2:09.0,81-81,76ers,Turnover by T. Maxey (palming)
+3,1:59.0,81-81,Kings,Sacramento full timeout
+3,1:49.0,81-81,Kings,Z. LaVine misses 2-pt jump shot from 17 ft
+3,1:45.0,81-81,Kings,Offensive rebound by M. Raynaud
+3,1:45.0,83-81,Kings,M. Raynaud makes 2-pt layup at rim
+3,1:45.0,83-81,76ers,Violation by Team (def goaltending)
+3,1:31.0,83-81,76ers,Shooting foul by M. Raynaud (drawn by T. Maxey)
+3,1:31.0,83-82,76ers,T. Maxey makes free throw 1 of 2
+3,1:31.0,83-83,76ers,T. Maxey makes free throw 2 of 2
+3,1:13.0,85-83,Kings,M. Raynaud makes 2-pt layup from 2 ft (assist by P. Achiuwa)
+3,0:56.0,85-85,76ers,J. McCain makes 2-pt jump shot from 17 ft
+3,0:43.0,87-85,Kings,M. Raynaud makes 2-pt jump shot from 9 ft (assist by Z. LaVine)
+3,0:36.0,87-85,76ers,T. Maxey misses 2-pt layup from 3 ft
+3,0:33.0,87-85,Kings,Defensive rebound by N. Clifford
+3,0:30.0,89-85,Kings,Z. LaVine makes 2-pt layup from 2 ft (assist by N. Clifford)
+3,0:23.0,89-87,76ers,D. Barlow makes 2-pt layup from 4 ft (assist by J. McCain)
+3,0:23.0,89-87,76ers,Shooting foul by Z. LaVine (drawn by D. Barlow)
+3,0:23.0,89-87,Kings,D. DeRozan enters the game for P. Achiuwa
+3,0:23.0,89-87,76ers,V. Edgecombe enters the game for J. Edwards
+3,0:23.0,89-87,76ers,K. Oubre enters the game for J. McCain
+3,0:23.0,89-88,76ers,D. Barlow makes free throw 1 of 1
+3,0:00.0,92-88,Kings,K. Ellis makes 3-pt jump shot from 23 ft (assist by Z. LaVine)
+3,0:00.0,92-88,Kings,Instant Replay (Request: Ruling Stands)
+4,11:44.0,92-90,76ers,P. George makes 2-pt jump shot from 22 ft (assist by V. Edgecombe)
+4,11:26.0,92-90,Kings,N. Clifford misses 2-pt jump shot from 16 ft
+4,11:23.0,92-90,76ers,Defensive rebound by J. McCain
+4,11:19.0,92-90,76ers,Turnover by J. McCain (lost ball; steal by P. Achiuwa)
+4,11:17.0,92-90,Kings,Turnover by M. Raynaud (bad pass)
+4,11:01.0,92-90,76ers,J. McCain misses 3-pt jump shot from 27 ft
+4,10:58.0,92-90,Kings,Defensive rebound by P. Achiuwa
+4,10:43.0,92-90,Kings,Turnover by P. Achiuwa (dbl dribble)
+4,10:30.0,92-90,76ers,P. George misses 2-pt jump shot from 14 ft
+4,10:26.0,92-90,Kings,Defensive rebound by N. Clifford
+4,10:15.0,94-90,Kings,K. Ellis makes 2-pt jump shot from 11 ft (assist by N. Clifford)
+4,9:57.0,94-92,76ers,P. George makes 2-pt layup from 2 ft
+4,9:35.0,94-92,Kings,Shooting foul by D. Barlow (drawn by M. Raynaud)
+4,9:35.0,95-92,Kings,M. Raynaud makes free throw 1 of 2
+4,9:35.0,95-92,Kings,D. DeRozan enters the game for N. Clifford
+4,9:35.0,96-92,Kings,M. Raynaud makes free throw 2 of 2
+4,9:22.0,96-92,76ers,Turnover by P. George (bad pass; steal by K. Ellis)
+4,9:20.0,98-92,Kings,K. Ellis makes 2-pt dunk from 1 ft
+4,9:11.0,98-92,76ers,Personal foul by D. DeRozan (drawn by A. Drummond)
+4,9:11.0,98-92,76ers,K. Oubre enters the game for J. McCain
+4,9:03.0,98-92,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+4,9:00.0,98-92,Kings,Defensive rebound by P. Achiuwa
+4,8:53.0,98-92,Kings,Personal foul by D. Barlow (drawn by D. DeRozan)
+4,8:46.0,98-92,Kings,Turnover by Z. LaVine (bad pass; steal by V. Edgecombe)
+4,8:40.0,98-92,76ers,Turnover by V. Edgecombe (bad pass; steal by Z. LaVine)
+4,8:21.0,100-92,Kings,P. Achiuwa makes 2-pt jump shot from 7 ft (assist by D. DeRozan)
+4,8:13.0,100-92,76ers,Philadelphia full timeout
+4,8:13.0,100-92,76ers,J. Embiid enters the game for D. Barlow
+4,8:13.0,100-92,76ers,T. Maxey enters the game for A. Drummond
+4,8:00.0,100-92,76ers,Personal foul by M. Raynaud (drawn by J. Embiid)
+4,7:49.0,100-92,76ers,Turnover by J. Embiid (lost ball; steal by Z. LaVine)
+4,7:44.0,102-92,Kings,Z. LaVine makes 2-pt layup from 1 ft
+4,7:44.0,102-92,Kings,Shooting foul by T. Maxey (drawn by Z. LaVine)
+4,7:44.0,103-92,Kings,Z. LaVine makes free throw 1 of 1
+4,7:29.0,103-92,76ers,Def 3 sec tech foul by Team
+4,7:29.0,103-93,76ers,T. Maxey makes technical free throw
+4,7:23.0,103-93,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+4,7:19.0,103-93,Kings,Defensive rebound by P. Achiuwa
+4,7:00.0,103-93,Kings,D. DeRozan misses 2-pt jump shot from 20 ft
+4,6:58.0,103-93,76ers,Defensive rebound by J. Embiid
+4,6:53.0,103-93,76ers,Personal foul by D. DeRozan (drawn by T. Maxey)
+4,6:44.0,103-95,76ers,T. Maxey makes 2-pt layup from 4 ft (assist by P. George)
+4,6:27.0,103-95,Kings,Z. LaVine misses 3-pt jump shot from 28 ft
+4,6:24.0,103-95,76ers,Defensive rebound by V. Edgecombe
+4,6:14.0,103-95,76ers,Shooting foul by M. Raynaud (drawn by J. Embiid)
+4,6:14.0,103-96,76ers,J. Embiid makes free throw 1 of 2
+4,6:14.0,103-97,76ers,J. Embiid makes free throw 2 of 2
+4,6:07.0,103-97,Kings,Offensive foul by Z. LaVine (drawn by K. Oubre)
+4,6:07.0,103-97,Kings,Turnover by Z. LaVine (offensive foul)
+4,6:07.0,103-97,Kings,D. Sabonis enters the game for K. Ellis
+4,6:07.0,103-97,Kings,D. Schröder enters the game for M. Raynaud
+4,5:56.0,103-99,76ers,J. Embiid makes 2-pt jump shot from 14 ft
+4,5:55.0,103-99,Kings,Sacramento full timeout
+4,5:32.0,103-99,Kings,Z. LaVine misses 3-pt jump shot from 29 ft
+4,5:26.0,103-99,Kings,Offensive rebound by D. Sabonis
+4,5:24.0,103-99,Kings,Turnover by D. Sabonis (bad pass; steal by J. Embiid)
+4,5:22.0,103-99,76ers,Personal foul by P. Achiuwa (drawn by J. Embiid)
+4,5:22.0,103-100,76ers,J. Embiid makes free throw 1 of 2
+4,5:22.0,103-101,76ers,J. Embiid makes free throw 2 of 2
+4,5:13.0,105-101,Kings,D. Schröder makes 2-pt layup from 3 ft
+4,4:58.0,105-101,76ers,J. Embiid misses 2-pt jump shot from 19 ft
+4,4:56.0,105-101,Kings,Defensive rebound by P. Achiuwa
+4,4:36.0,105-101,Kings,Turnover by Z. LaVine (out of bounds lost ball)
+4,4:13.0,105-103,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by P. George)
+4,3:55.0,105-103,Kings,Turnover by D. Schröder (out of bounds lost ball)
+4,3:48.0,105-103,76ers,Shooting foul by D. Schröder (drawn by T. Maxey)
+4,3:48.0,105-104,76ers,T. Maxey makes free throw 1 of 2
+4,3:48.0,105-104,Kings,D. Cardwell enters the game for P. Achiuwa
+4,3:48.0,105-105,76ers,T. Maxey makes free throw 2 of 2
+4,3:30.0,108-105,Kings,D. Schröder makes 3-pt jump shot from 28 ft (assist by D. DeRozan)
+4,3:11.0,108-107,76ers,J. Embiid makes 2-pt layup from 3 ft (assist by T. Maxey)
+4,2:47.0,108-107,Kings,D. Schröder misses 3-pt jump shot from 25 ft
+4,2:43.0,108-107,76ers,Defensive rebound by K. Oubre
+4,2:30.0,108-107,76ers,J. Embiid misses 2-pt layup from 7 ft (block by D. Cardwell)
+4,2:29.0,108-107,Kings,Defensive rebound by D. DeRozan
+4,2:11.0,108-107,Kings,D. Sabonis misses 2-pt layup from 3 ft
+4,2:10.0,108-107,76ers,Defensive rebound by Team
+4,1:57.0,108-109,76ers,T. Maxey makes 2-pt layup from 2 ft
+4,1:57.0,108-109,Kings,Sacramento full timeout
+4,1:35.0,108-109,Kings,Z. LaVine misses 3-pt jump shot from 26 ft
+4,1:31.0,108-109,Kings,Offensive rebound by Team
+4,1:21.0,111-109,Kings,Z. LaVine makes 3-pt jump shot from 26 ft (assist by D. DeRozan)
+4,1:02.0,111-109,76ers,J. Embiid misses 2-pt jump shot from 17 ft
+4,1:02.0,111-109,Kings,Defensive rebound by D. Cardwell
+4,0:36.0,111-109,Kings,D. Schröder misses 3-pt jump shot from 27 ft
+4,0:32.0,111-109,76ers,Defensive rebound by P. George
+4,0:27.0,111-109,76ers,Shooting foul by Z. LaVine (drawn by T. Maxey)
+4,0:27.0,111-110,76ers,T. Maxey makes free throw 1 of 2
+4,0:27.0,111-111,76ers,T. Maxey makes free throw 2 of 2
+4,0:06.0,111-111,Kings,D. DeRozan misses 2-pt jump shot from 15 ft
+4,0:05.0,111-111,76ers,Defensive rebound by J. Embiid
+4,0:05.0,111-111,76ers,Philadelphia full timeout
+4,0:05.0,111-111,Kings,P. Achiuwa enters the game for D. DeRozan
+4,0:05.0,111-111,Kings,K. Ellis enters the game for Z. LaVine
+4,0:01.0,111-113,76ers,T. Maxey makes 2-pt layup from 2 ft (assist by J. Embiid)
+4,0:01.0,111-113,76ers,Shooting foul by P. Achiuwa (drawn by T. Maxey)
+4,0:01.0,111-113,Kings,D. DeRozan enters the game for P. Achiuwa
+4,0:01.0,111-113,Kings,Z. LaVine enters the game for D. Cardwell
+4,0:01.0,111-113,76ers,T. Maxey misses free throw 1 of 1
+4,0:01.0,111-113,Kings,Defensive rebound by Z. LaVine

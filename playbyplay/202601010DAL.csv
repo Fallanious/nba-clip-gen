@@ -1,0 +1,430 @@
+quarter,time,score,team,description
+1,11:47.0,0-2,Mavericks,C. Flagg makes 2-pt jump shot from 5 ft (assist by A. Davis)
+1,11:26.0,2-2,76ers,J. Embiid makes 2-pt jump shot from 15 ft (assist by T. Maxey)
+1,11:02.0,2-4,Mavericks,R. Nembhard makes 2-pt jump shot from 14 ft
+1,10:41.0,5-4,76ers,T. Maxey makes 3-pt jump shot from 25 ft (assist by J. Embiid)
+1,10:14.0,5-6,Mavericks,R. Nembhard makes 2-pt jump shot from 14 ft
+1,9:57.0,5-6,76ers,T. Maxey misses 2-pt layup from 3 ft
+1,9:53.0,5-6,Mavericks,Defensive rebound by P. Washington
+1,9:50.0,5-8,Mavericks,P. Washington makes 2-pt dunk from 1 ft (assist by R. Nembhard)
+1,9:28.0,5-8,76ers,D. Barlow misses 2-pt layup from 2 ft
+1,9:27.0,5-8,Mavericks,Defensive rebound by P. Washington
+1,9:20.0,5-10,Mavericks,A. Davis makes 2-pt jump shot from 7 ft (assist by R. Nembhard)
+1,9:04.0,7-10,76ers,J. Embiid makes 2-pt jump shot from 4 ft (assist by T. Maxey)
+1,8:53.0,7-10,Mavericks,Personal foul by D. Barlow (drawn by A. Davis)
+1,8:48.0,7-10,Mavericks,Turnover by A. Davis (bad pass; steal by T. Maxey)
+1,8:33.0,10-10,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by T. Maxey)
+1,8:08.0,10-12,Mavericks,M. Christie makes 2-pt layup from 3 ft
+1,7:55.0,12-12,76ers,J. Embiid makes 2-pt jump shot from 17 ft
+1,7:47.0,12-12,Mavericks,Turnover by R. Nembhard (bad pass; steal by V. Edgecombe)
+1,7:42.0,12-12,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+1,7:38.0,12-12,Mavericks,Defensive rebound by M. Christie
+1,7:31.0,12-12,Mavericks,Shooting foul by D. Barlow (drawn by M. Christie)
+1,7:31.0,12-13,Mavericks,M. Christie makes free throw 1 of 2
+1,7:31.0,12-13,76ers,Q. Grimes enters the game for D. Barlow
+1,7:31.0,12-13,76ers,J. Walker enters the game for P. George
+1,7:31.0,12-14,Mavericks,M. Christie makes free throw 2 of 2
+1,7:16.0,12-14,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+1,7:13.0,12-14,Mavericks,Defensive rebound by A. Davis
+1,7:11.0,12-14,Mavericks,C. Flagg misses 2-pt jump shot from 9 ft (block by Q. Grimes)
+1,7:10.0,12-14,Mavericks,Offensive rebound by Team
+1,7:10.0,12-14,Mavericks,N. Marshall enters the game for P. Washington
+1,7:08.0,12-16,Mavericks,M. Christie makes 2-pt layup from 3 ft (assist by R. Nembhard)
+1,6:44.0,12-16,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+1,6:42.0,12-16,Mavericks,Defensive rebound by Team
+1,6:42.0,12-16,76ers,Loose ball foul by Q. Grimes (drawn by C. Flagg)
+1,6:42.0,12-16,Mavericks,Dallas full timeout
+1,6:42.0,12-16,76ers,A. Drummond enters the game for J. Embiid
+1,6:28.0,12-18,Mavericks,A. Davis makes 2-pt dunk from 2 ft (assist by C. Flagg)
+1,6:14.0,14-18,76ers,V. Edgecombe makes 2-pt layup from 2 ft (assist by T. Maxey)
+1,6:02.0,14-18,Mavericks,Turnover by C. Flagg (lost ball; steal by V. Edgecombe)
+1,5:58.0,14-18,76ers,T. Maxey misses 2-pt jump shot from 13 ft
+1,5:55.0,14-18,Mavericks,Defensive rebound by C. Flagg
+1,5:52.0,14-20,Mavericks,C. Flagg makes 2-pt dunk from 1 ft (assist by N. Marshall)
+1,5:35.0,14-20,76ers,A. Drummond misses 3-pt jump shot from 23 ft
+1,5:32.0,14-20,Mavericks,Defensive rebound by R. Nembhard
+1,5:19.0,14-20,Mavericks,A. Davis misses 2-pt jump shot from 15 ft
+1,5:17.0,14-20,76ers,Defensive rebound by T. Maxey
+1,5:09.0,16-20,76ers,T. Maxey makes 2-pt layup from 2 ft
+1,4:56.0,16-20,Mavericks,R. Nembhard misses 2-pt layup from 4 ft
+1,4:51.0,16-20,76ers,Defensive rebound by Q. Grimes
+1,4:47.0,18-20,76ers,T. Maxey makes 2-pt layup from 2 ft
+1,4:29.0,18-22,Mavericks,M. Christie makes 2-pt jump shot from 6 ft
+1,4:02.0,20-22,76ers,V. Edgecombe makes 2-pt jump shot from 12 ft
+1,3:44.0,20-24,Mavericks,C. Flagg makes 2-pt jump shot from 20 ft (assist by M. Christie)
+1,3:27.0,20-24,76ers,J. Walker misses 3-pt jump shot from 23 ft
+1,3:26.0,20-24,76ers,Offensive rebound by A. Drummond
+1,3:23.0,20-24,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+1,3:21.0,20-24,76ers,Offensive rebound by Team
+1,3:21.0,20-24,Mavericks,Loose ball foul by R. Nembhard (drawn by J. Walker)
+1,3:21.0,20-24,Mavericks,K. Thompson enters the game for M. Christie
+1,3:21.0,20-24,Mavericks,B. Williams enters the game for R. Nembhard
+1,3:14.0,20-24,76ers,J. Walker misses 3-pt jump shot from 26 ft
+1,3:11.0,20-24,Mavericks,Defensive rebound by B. Williams
+1,3:05.0,20-24,Mavericks,N. Marshall misses 2-pt layup from 1 ft
+1,3:03.0,20-24,76ers,Defensive rebound by A. Drummond
+1,2:59.0,20-24,76ers,Turnover by T. Maxey (bad pass; steal by C. Flagg)
+1,2:56.0,20-26,Mavericks,C. Flagg makes 2-pt dunk from 2 ft
+1,2:55.0,20-26,76ers,Philadelphia full timeout
+1,2:55.0,20-26,76ers,J. Embiid enters the game for A. Drummond
+1,2:55.0,20-26,76ers,P. George enters the game for T. Maxey
+1,2:55.0,20-26,76ers,J. McCain enters the game for J. Walker
+1,2:55.0,20-26,Mavericks,D. Gafford enters the game for A. Davis
+1,2:55.0,20-26,Mavericks,P. Washington enters the game for C. Flagg
+1,2:42.0,20-26,76ers,P. George misses 2-pt jump shot from 8 ft
+1,2:39.0,20-26,Mavericks,Defensive rebound by D. Gafford
+1,2:19.0,20-26,Mavericks,D. Gafford misses 2-pt jump shot from 10 ft
+1,2:15.0,20-26,76ers,Defensive rebound by P. George
+1,2:07.0,22-26,76ers,P. George makes 2-pt jump shot from 8 ft
+1,1:47.0,22-29,Mavericks,K. Thompson makes 3-pt jump shot from 25 ft
+1,1:33.0,24-29,76ers,J. McCain makes 2-pt jump shot from 10 ft
+1,1:22.0,24-29,Mavericks,B. Williams misses 2-pt jump shot from 11 ft
+1,1:19.0,24-29,76ers,Defensive rebound by J. McCain
+1,1:15.0,24-29,76ers,J. McCain misses 2-pt layup from 4 ft (block by P. Washington)
+1,1:15.0,24-29,76ers,Offensive rebound by V. Edgecombe
+1,1:09.0,24-29,76ers,J. Embiid misses 3-pt jump shot from 25 ft
+1,1:06.0,24-29,Mavericks,Defensive rebound by D. Gafford
+1,0:57.0,24-29,Mavericks,D. Gafford misses 2-pt hook shot from 6 ft
+1,0:55.0,24-29,76ers,Defensive rebound by J. Embiid
+1,0:49.0,24-29,76ers,Shooting foul by D. Gafford (drawn by J. Embiid)
+1,0:49.0,24-29,76ers,J. Embiid misses free throw 1 of 2
+1,0:49.0,24-29,76ers,Offensive rebound by Team
+1,0:49.0,25-29,76ers,J. Embiid makes free throw 2 of 2
+1,0:40.0,25-31,Mavericks,B. Williams makes 2-pt layup at rim
+1,0:32.0,25-31,76ers,J. Embiid misses 2-pt jump shot from 18 ft
+1,0:32.0,25-31,Mavericks,Defensive rebound by P. Washington
+1,0:17.0,25-31,Mavericks,B. Williams misses 2-pt layup from 2 ft
+1,0:16.0,25-31,Mavericks,Offensive rebound by D. Gafford
+1,0:16.0,25-33,Mavericks,D. Gafford makes 2-pt dunk at rim
+1,0:00.0,27-33,76ers,P. George makes 2-pt jump shot from 4 ft
+1,0:00.0,27-33,76ers,Instant Replay (Request: Ruling Stands)
+2,12:00.0,27-33,76ers,Violation by Team (delay of game)
+2,11:54.0,27-33,76ers,Turnover by P. George (bad pass)
+2,11:41.0,27-35,Mavericks,K. Thompson makes 2-pt layup from 3 ft (assist by B. Williams)
+2,11:25.0,27-35,76ers,P. George misses 3-pt jump shot from 26 ft
+2,11:24.0,27-35,Mavericks,Defensive rebound by D. Gafford
+2,11:20.0,27-35,Mavericks,Turnover by B. Williams (bad pass; steal by P. George)
+2,11:16.0,29-35,76ers,P. George makes 2-pt layup from 3 ft
+2,11:07.0,29-35,Mavericks,K. Thompson misses 3-pt jump shot from 26 ft
+2,11:07.0,29-35,76ers,Defensive rebound by J. McCain
+2,11:01.0,29-35,76ers,Personal foul by C. Martin (drawn by J. Embiid)
+2,10:49.0,31-35,76ers,J. Embiid makes 2-pt layup from 4 ft (assist by T. Maxey)
+2,10:49.0,31-35,76ers,Shooting foul by D. Gafford (drawn by J. Embiid)
+2,10:49.0,31-35,Mavericks,A. Davis enters the game for D. Gafford
+2,10:49.0,32-35,76ers,J. Embiid makes free throw 1 of 1
+2,10:32.0,32-35,Mavericks,Personal foul by P. George (drawn by C. Martin)
+2,10:26.0,32-35,Mavericks,P. Washington misses 3-pt jump shot from 24 ft
+2,10:23.0,32-35,76ers,Defensive rebound by Q. Grimes
+2,10:06.0,32-35,76ers,J. Embiid misses 3-pt jump shot from 24 ft
+2,10:03.0,32-35,Mavericks,Defensive rebound by B. Williams
+2,9:58.0,32-35,Mavericks,B. Williams misses 2-pt layup from 2 ft
+2,9:54.0,32-35,Mavericks,Offensive rebound by A. Davis
+2,9:54.0,32-35,Mavericks,A. Davis misses 2-pt layup at rim
+2,9:53.0,32-35,76ers,Defensive rebound by T. Maxey
+2,9:49.0,34-35,76ers,T. Maxey makes 2-pt layup from 2 ft
+2,9:29.0,34-35,Mavericks,B. Williams misses 2-pt layup from 4 ft (block by T. Maxey)
+2,9:27.0,34-35,76ers,Defensive rebound by T. Maxey
+2,9:15.0,37-35,76ers,Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. Embiid)
+2,9:14.0,37-35,Mavericks,Dallas full timeout
+2,9:14.0,37-35,Mavericks,C. Flagg enters the game for P. Washington
+2,9:14.0,37-35,Mavericks,R. Nembhard enters the game for B. Williams
+2,8:55.0,37-37,Mavericks,K. Thompson makes 2-pt jump shot from 8 ft
+2,8:42.0,40-37,76ers,T. Maxey makes 3-pt jump shot from 25 ft
+2,8:18.0,40-37,Mavericks,Turnover by A. Davis (bad pass; steal by J. McCain)
+2,8:12.0,40-37,76ers,P. George misses 2-pt layup from 2 ft
+2,8:09.0,40-37,76ers,Offensive rebound by P. George
+2,8:08.0,40-37,76ers,Shooting foul by A. Davis (drawn by P. George)
+2,8:08.0,41-37,76ers,P. George makes free throw 1 of 2
+2,8:08.0,41-37,Mavericks,N. Marshall enters the game for C. Martin
+2,8:08.0,42-37,76ers,P. George makes free throw 2 of 2
+2,7:59.0,42-37,Mavericks,C. Flagg misses 2-pt jump shot from 12 ft (block by Q. Grimes)
+2,7:59.0,42-37,76ers,Defensive rebound by T. Maxey
+2,7:49.0,44-37,76ers,P. George makes 2-pt dunk from 2 ft (assist by T. Maxey)
+2,7:49.0,44-37,Mavericks,Dallas full timeout
+2,7:49.0,44-37,Mavericks,M. Christie enters the game for K. Thompson
+2,7:35.0,44-37,Mavericks,Personal foul by J. McCain (drawn by A. Davis)
+2,7:30.0,44-37,Mavericks,M. Christie misses 3-pt jump shot from 25 ft
+2,7:27.0,44-37,76ers,Defensive rebound by Q. Grimes
+2,7:19.0,44-37,76ers,Personal foul by C. Flagg (drawn by J. Embiid)
+2,7:04.0,44-37,76ers,Q. Grimes misses 3-pt jump shot from 25 ft
+2,6:58.0,44-37,Mavericks,Defensive rebound by N. Marshall
+2,6:52.0,44-37,Mavericks,R. Nembhard misses 3-pt jump shot from 23 ft
+2,6:49.0,44-37,76ers,Defensive rebound by J. McCain
+2,6:45.0,44-37,76ers,J. McCain misses 2-pt jump shot from 3 ft
+2,6:44.0,44-37,Mavericks,Defensive rebound by Team
+2,6:31.0,44-39,Mavericks,A. Davis makes 2-pt hook shot from 10 ft
+2,6:16.0,44-39,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+2,6:14.0,44-39,76ers,Offensive rebound by Team
+2,6:14.0,44-39,Mavericks,Loose ball foul by C. Flagg (drawn by P. George)
+2,6:14.0,45-39,76ers,P. George makes free throw 1 of 2
+2,6:14.0,45-39,76ers,A. Drummond enters the game for J. Embiid
+2,6:14.0,45-39,76ers,V. Edgecombe enters the game for J. McCain
+2,6:14.0,46-39,76ers,P. George makes free throw 2 of 2
+2,5:55.0,46-42,Mavericks,M. Christie makes 3-pt jump shot from 25 ft
+2,5:45.0,46-42,76ers,Shooting foul by M. Christie (drawn by T. Maxey)
+2,5:45.0,47-42,76ers,T. Maxey makes free throw 1 of 2
+2,5:45.0,48-42,76ers,T. Maxey makes free throw 2 of 2
+2,5:26.0,48-42,Mavericks,Shooting foul by Q. Grimes (drawn by A. Davis)
+2,5:26.0,48-43,Mavericks,A. Davis makes free throw 1 of 2
+2,5:26.0,48-43,Mavericks,A. Davis misses free throw 2 of 2
+2,5:24.0,48-43,76ers,Defensive rebound by A. Drummond
+2,5:15.0,48-43,76ers,Offensive foul by A. Drummond (drawn by N. Marshall)
+2,5:15.0,48-43,76ers,Turnover by A. Drummond (offensive foul)
+2,5:15.0,48-43,Mavericks,P. Washington enters the game for N. Marshall
+2,5:00.0,48-43,Mavericks,C. Flagg misses 3-pt jump shot from 25 ft
+2,4:58.0,48-43,Mavericks,Offensive rebound by Team
+2,4:58.0,48-43,76ers,Loose ball foul by A. Drummond (drawn by A. Davis)
+2,4:51.0,48-45,Mavericks,A. Davis makes 2-pt jump shot from 8 ft
+2,4:40.0,50-45,76ers,T. Maxey makes 2-pt layup from 2 ft
+2,4:31.0,50-45,Mavericks,Turnover by A. Davis (lost ball; steal by T. Maxey)
+2,4:20.0,50-45,76ers,P. George misses 3-pt jump shot from 26 ft
+2,4:18.0,50-45,76ers,Offensive rebound by A. Drummond
+2,4:16.0,52-45,76ers,A. Drummond makes 2-pt hook shot from 5 ft
+2,3:53.0,52-45,Mavericks,C. Flagg misses 2-pt jump shot from 24 ft
+2,3:51.0,52-45,76ers,Defensive rebound by T. Maxey
+2,3:49.0,54-45,76ers,Q. Grimes makes 2-pt layup from 2 ft (assist by T. Maxey)
+2,3:41.0,54-48,Mavericks,R. Nembhard makes 3-pt jump shot from 25 ft
+2,3:15.0,54-48,76ers,Shooting foul by M. Christie (drawn by V. Edgecombe)
+2,3:15.0,55-48,76ers,V. Edgecombe makes free throw 1 of 2
+2,3:15.0,55-48,76ers,D. Barlow enters the game for A. Drummond
+2,3:15.0,55-48,76ers,J. Embiid enters the game for P. George
+2,3:15.0,56-48,76ers,V. Edgecombe makes free throw 2 of 2
+2,2:56.0,56-48,Mavericks,P. Washington misses 3-pt jump shot from 24 ft
+2,2:54.0,56-48,76ers,Defensive rebound by Q. Grimes
+2,2:45.0,59-48,76ers,Q. Grimes makes 3-pt jump shot from 27 ft (assist by J. Embiid)
+2,2:25.0,59-48,Mavericks,A. Davis misses 2-pt jump shot from 17 ft
+2,2:24.0,59-48,Mavericks,Offensive rebound by Team
+2,2:24.0,59-48,76ers,Loose ball foul by D. Barlow (drawn by C. Flagg)
+2,2:24.0,59-49,Mavericks,C. Flagg makes free throw 1 of 2
+2,2:24.0,59-50,Mavericks,C. Flagg makes free throw 2 of 2
+2,2:12.0,59-50,76ers,V. Edgecombe misses 2-pt jump shot from 4 ft
+2,2:10.0,59-50,76ers,Offensive rebound by V. Edgecombe
+2,2:08.0,61-50,76ers,V. Edgecombe makes 2-pt layup from 5 ft
+2,2:08.0,61-50,76ers,Shooting foul by P. Washington (drawn by V. Edgecombe)
+2,2:08.0,61-50,76ers,V. Edgecombe misses free throw 1 of 1
+2,2:04.0,61-50,Mavericks,Defensive rebound by C. Flagg
+2,1:55.0,61-50,Mavericks,C. Flagg misses 2-pt layup from 4 ft (block by J. Embiid)
+2,1:55.0,61-50,Mavericks,Offensive rebound by Team
+2,1:44.0,61-52,Mavericks,R. Nembhard makes 2-pt jump shot from 12 ft (assist by M. Christie)
+2,1:24.0,61-52,76ers,Shooting foul by A. Davis (drawn by J. Embiid)
+2,1:24.0,62-52,76ers,J. Embiid makes free throw 1 of 2
+2,1:24.0,62-52,76ers,A. Bona enters the game for D. Barlow
+2,1:24.0,63-52,76ers,J. Embiid makes free throw 2 of 2
+2,1:12.0,63-54,Mavericks,P. Washington makes 2-pt jump shot from 8 ft (assist by C. Flagg)
+2,1:12.0,63-54,Mavericks,Shooting foul by J. Embiid (drawn by P. Washington)
+2,1:12.0,63-55,Mavericks,P. Washington makes free throw 1 of 1
+2,1:00.0,65-55,76ers,J. Embiid makes 2-pt layup from 1 ft
+2,0:43.0,65-57,Mavericks,C. Flagg makes 2-pt layup from 2 ft (assist by A. Davis)
+2,0:26.0,68-57,76ers,V. Edgecombe makes 3-pt jump shot from 23 ft (assist by Q. Grimes)
+2,0:04.0,68-57,Mavericks,C. Flagg misses 2-pt jump shot from 22 ft
+2,0:01.0,68-57,Mavericks,Offensive rebound by Team
+2,0:01.0,68-57,76ers,P. George enters the game for J. Embiid
+2,0:01.0,68-57,Mavericks,K. Thompson enters the game for P. Washington
+2,0:00.0,68-57,Mavericks,M. Christie misses 3-pt jump shot from 23 ft
+2,0:00.0,68-57,Mavericks,Offensive rebound by Team
+3,11:44.0,68-57,76ers,P. George misses 2-pt jump shot from 9 ft
+3,11:42.0,68-57,Mavericks,Defensive rebound by C. Flagg
+3,11:23.0,68-57,Mavericks,R. Nembhard misses 2-pt jump shot from 16 ft
+3,11:20.0,68-57,76ers,Defensive rebound by V. Edgecombe
+3,11:08.0,68-57,76ers,J. Embiid misses 2-pt jump shot from 23 ft
+3,11:06.0,68-57,Mavericks,Defensive rebound by R. Nembhard
+3,10:59.0,68-57,Mavericks,Shooting foul by P. George (drawn by P. Washington)
+3,10:59.0,68-58,Mavericks,P. Washington makes free throw 1 of 2
+3,10:59.0,68-58,Mavericks,P. Washington misses free throw 2 of 2
+3,10:57.0,68-58,76ers,Defensive rebound by P. George
+3,10:38.0,68-58,76ers,J. Embiid misses 2-pt jump shot from 2 ft
+3,10:35.0,68-58,Mavericks,Defensive rebound by C. Flagg
+3,10:28.0,68-58,Mavericks,M. Christie misses 3-pt jump shot from 25 ft
+3,10:26.0,68-58,76ers,Defensive rebound by J. Embiid
+3,10:17.0,71-58,76ers,D. Barlow makes 3-pt jump shot from 24 ft (assist by J. Embiid)
+3,9:51.0,71-60,Mavericks,M. Christie makes 2-pt layup from 3 ft
+3,9:31.0,71-60,76ers,Turnover by P. George (traveling)
+3,9:19.0,71-60,Mavericks,Turnover by R. Nembhard (bad pass)
+3,9:05.0,71-60,76ers,T. Maxey misses 3-pt jump shot from 25 ft
+3,9:01.0,71-60,Mavericks,Defensive rebound by A. Davis
+3,8:47.0,71-60,Mavericks,Turnover by C. Flagg (lost ball; steal by D. Barlow)
+3,8:44.0,71-60,76ers,Shooting foul by A. Davis (drawn by D. Barlow)
+3,8:44.0,72-60,76ers,D. Barlow makes free throw 1 of 2
+3,8:44.0,73-60,76ers,D. Barlow makes free throw 2 of 2
+3,8:31.0,73-62,Mavericks,M. Christie makes 2-pt jump shot from 17 ft (assist by C. Flagg)
+3,8:17.0,73-62,76ers,Turnover by T. Maxey (lost ball; steal by P. Washington)
+3,8:17.0,73-62,Mavericks,K. Thompson enters the game for R. Nembhard
+3,8:08.0,73-62,Mavericks,Turnover by M. Christie (lost ball; steal by V. Edgecombe)
+3,8:05.0,75-62,76ers,V. Edgecombe makes 2-pt layup from 1 ft
+3,7:55.0,75-62,Mavericks,M. Christie misses 3-pt jump shot from 23 ft
+3,7:52.0,75-62,76ers,Defensive rebound by T. Maxey
+3,7:44.0,75-62,76ers,D. Barlow misses 3-pt jump shot from 23 ft
+3,7:41.0,75-62,Mavericks,Defensive rebound by P. Washington
+3,7:26.0,75-62,Mavericks,C. Flagg misses 2-pt jump shot from 8 ft
+3,7:24.0,75-62,Mavericks,Offensive rebound by A. Davis
+3,7:24.0,75-64,Mavericks,A. Davis makes 2-pt layup from 2 ft
+3,7:03.0,75-64,76ers,T. Maxey misses 2-pt jump shot from 11 ft
+3,7:02.0,75-64,Mavericks,Defensive rebound by C. Flagg
+3,6:58.0,75-66,Mavericks,K. Thompson makes 2-pt layup from 1 ft (assist by C. Flagg)
+3,6:58.0,75-66,76ers,Violation by Team (def goaltending)
+3,6:58.0,75-66,76ers,Philadelphia full timeout
+3,6:58.0,75-66,76ers,Q. Grimes enters the game for P. George
+3,6:58.0,75-66,Mavericks,N. Marshall enters the game for M. Christie
+3,6:47.0,77-66,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)
+3,6:31.0,77-66,Mavericks,A. Davis misses 2-pt jump shot from 13 ft
+3,6:28.0,77-66,76ers,Defensive rebound by D. Barlow
+3,6:23.0,77-66,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+3,6:20.0,77-66,Mavericks,Defensive rebound by K. Thompson
+3,6:10.0,77-66,Mavericks,K. Thompson misses 3-pt jump shot from 25 ft
+3,6:08.0,77-66,76ers,Defensive rebound by Q. Grimes
+3,5:58.0,77-66,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+3,5:55.0,77-66,Mavericks,Defensive rebound by C. Flagg
+3,5:50.0,77-66,Mavericks,K. Thompson misses 3-pt jump shot from 24 ft
+3,5:48.0,77-66,Mavericks,Offensive rebound by K. Thompson
+3,5:47.0,77-66,Mavericks,P. Washington misses 3-pt jump shot from 27 ft
+3,5:44.0,77-66,76ers,Defensive rebound by V. Edgecombe
+3,5:34.0,77-66,76ers,J. Embiid misses 3-pt jump shot from 26 ft
+3,5:32.0,77-66,Mavericks,Defensive rebound by Team
+3,5:32.0,77-66,Mavericks,B. Williams enters the game for C. Flagg
+3,5:21.0,77-66,Mavericks,Shooting foul by D. Barlow (drawn by P. Washington)
+3,5:21.0,77-67,Mavericks,P. Washington makes free throw 1 of 2
+3,5:21.0,77-68,Mavericks,P. Washington makes free throw 2 of 2
+3,5:06.0,77-68,76ers,Turnover by J. Embiid (bad pass; steal by K. Thompson)
+3,5:00.0,77-68,Mavericks,B. Williams misses 2-pt layup from 2 ft
+3,4:59.0,77-68,76ers,Defensive rebound by J. Embiid
+3,4:56.0,80-68,76ers,T. Maxey makes 3-pt jump shot from 25 ft
+3,4:43.0,80-70,Mavericks,N. Marshall makes 2-pt jump shot from 5 ft (assist by B. Williams)
+3,4:27.0,80-70,76ers,T. Maxey misses 3-pt jump shot from 27 ft
+3,4:25.0,80-70,Mavericks,Defensive rebound by A. Davis
+3,4:21.0,80-70,Mavericks,Shooting foul by V. Edgecombe (drawn by B. Williams)
+3,4:21.0,80-71,Mavericks,B. Williams makes free throw 1 of 2
+3,4:21.0,80-71,76ers,A. Bona enters the game for D. Barlow
+3,4:21.0,80-71,76ers,P. George enters the game for V. Edgecombe
+3,4:21.0,80-71,76ers,J. McCain enters the game for J. Embiid
+3,4:21.0,80-71,Mavericks,D. Gafford enters the game for A. Davis
+3,4:21.0,80-72,Mavericks,B. Williams makes free throw 2 of 2
+3,4:12.0,82-72,76ers,T. Maxey makes 2-pt layup from 3 ft
+3,3:52.0,82-72,Mavericks,K. Thompson misses 2-pt layup from 1 ft
+3,3:49.0,82-72,76ers,Defensive rebound by P. George
+3,3:46.0,82-72,76ers,J. McCain misses 3-pt jump shot from 23 ft
+3,3:42.0,82-72,Mavericks,Defensive rebound by B. Williams
+3,3:38.0,82-74,Mavericks,D. Gafford makes 2-pt jump shot from 5 ft (assist by K. Thompson)
+3,3:18.0,84-74,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by P. George)
+3,3:05.0,84-74,Mavericks,K. Thompson misses 3-pt jump shot from 25 ft
+3,3:02.0,84-74,76ers,Defensive rebound by T. Maxey
+3,2:52.0,84-74,76ers,A. Bona misses 2-pt layup from 4 ft
+3,2:49.0,84-74,76ers,Offensive rebound by A. Bona
+3,2:49.0,86-74,76ers,A. Bona makes 2-pt layup at rim
+3,2:39.0,86-74,Mavericks,Personal foul by P. George (drawn by B. Williams)
+3,2:39.0,86-74,Mavericks,Dallas full timeout
+3,2:39.0,86-74,76ers,V. Edgecombe enters the game for A. Bona
+3,2:39.0,86-74,76ers,J. Embiid enters the game for T. Maxey
+3,2:39.0,86-74,Mavericks,C. Flagg enters the game for K. Thompson
+3,2:39.0,86-74,Mavericks,J. Hardy enters the game for P. Washington
+3,2:31.0,86-74,Mavericks,C. Flagg misses 2-pt jump shot from 16 ft
+3,2:28.0,86-74,76ers,Defensive rebound by P. George
+3,2:27.0,86-74,76ers,Turnover by P. George (lost ball; steal by D. Gafford)
+3,2:23.0,86-74,Mavericks,C. Flagg misses 2-pt layup from 3 ft
+3,2:23.0,86-74,Mavericks,Offensive rebound by Team
+3,2:21.0,86-74,Mavericks,J. Hardy misses 3-pt jump shot from 23 ft
+3,2:18.0,86-74,Mavericks,Offensive rebound by B. Williams
+3,2:17.0,86-74,Mavericks,Personal foul by Q. Grimes (drawn by D. Gafford)
+3,2:17.0,86-75,Mavericks,D. Gafford makes free throw 1 of 2
+3,2:17.0,86-76,Mavericks,D. Gafford makes free throw 2 of 2
+3,2:06.0,86-76,76ers,Turnover by P. George (bad pass; steal by D. Gafford)
+3,2:01.0,86-76,Mavericks,J. Hardy misses 3-pt jump shot from 24 ft
+3,1:58.0,86-76,Mavericks,Offensive rebound by C. Flagg
+3,1:53.0,86-76,Mavericks,Turnover by J. Hardy (traveling)
+3,1:38.0,88-76,76ers,J. Embiid makes 2-pt jump shot from 17 ft
+3,1:21.0,88-78,Mavericks,B. Williams makes 2-pt jump shot from 16 ft (assist by C. Flagg)
+3,1:02.0,88-78,76ers,P. George misses 3-pt jump shot from 25 ft
+3,1:00.0,88-78,Mavericks,Defensive rebound by J. Hardy
+3,0:51.0,88-81,Mavericks,J. Hardy makes 3-pt jump shot from 25 ft (assist by B. Williams)
+3,0:33.0,90-81,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by V. Edgecombe)
+3,0:14.0,90-81,Mavericks,Shooting foul by J. McCain (drawn by J. Hardy)
+3,0:14.0,90-82,Mavericks,J. Hardy makes free throw 1 of 2
+3,0:14.0,90-83,Mavericks,J. Hardy makes free throw 2 of 2
+3,0:00.0,92-83,76ers,V. Edgecombe makes 2-pt layup from 1 ft
+4,11:52.0,92-83,Mavericks,Shooting foul by J. McCain (drawn by B. Williams)
+4,11:52.0,92-84,Mavericks,B. Williams makes free throw 1 of 2
+4,11:52.0,92-85,Mavericks,B. Williams makes free throw 2 of 2
+4,11:41.0,92-85,76ers,J. McCain misses 3-pt jump shot from 22 ft
+4,11:38.0,92-85,Mavericks,Defensive rebound by D. Gafford
+4,11:23.0,92-87,Mavericks,D. Gafford makes 2-pt dunk from 2 ft (assist by J. Hardy)
+4,11:08.0,94-87,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)
+4,11:01.0,94-89,Mavericks,N. Marshall makes 2-pt jump shot from 12 ft
+4,11:01.0,94-89,Mavericks,Shooting foul by D. Barlow (drawn by N. Marshall)
+4,11:01.0,94-89,76ers,V. Edgecombe enters the game for J. McCain
+4,11:01.0,94-90,Mavericks,N. Marshall makes free throw 1 of 1
+4,10:47.0,96-90,76ers,T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)
+4,10:30.0,96-90,Mavericks,B. Williams misses 3-pt jump shot from 26 ft
+4,10:28.0,96-90,Mavericks,Offensive rebound by Team
+4,10:26.0,96-90,Mavericks,J. Hardy misses 3-pt jump shot from 23 ft
+4,10:23.0,96-90,76ers,Defensive rebound by Q. Grimes
+4,10:13.0,96-90,76ers,T. Maxey misses 3-pt jump shot from 26 ft
+4,10:11.0,96-90,Mavericks,Defensive rebound by B. Williams
+4,10:03.0,96-92,Mavericks,N. Marshall makes 2-pt jump shot from 10 ft (assist by B. Williams)
+4,9:40.0,98-92,76ers,J. Embiid makes 2-pt jump shot from 16 ft
+4,9:23.0,98-92,Mavericks,N. Marshall misses 2-pt jump shot from 11 ft
+4,9:22.0,98-92,Mavericks,Offensive rebound by Team
+4,9:22.0,98-92,Mavericks,A. Davis enters the game for C. Flagg
+4,9:22.0,98-92,Mavericks,P. Washington enters the game for D. Gafford
+4,9:19.0,98-92,Mavericks,Turnover by J. Hardy (bad pass; steal by V. Edgecombe)
+4,9:08.0,98-92,76ers,J. Embiid misses 2-pt hook shot from 2 ft
+4,9:07.0,98-92,Mavericks,Defensive rebound by A. Davis
+4,9:00.0,98-94,Mavericks,N. Marshall makes 2-pt layup from 3 ft
+4,8:38.0,100-94,76ers,J. Embiid makes 2-pt jump shot from 18 ft
+4,8:28.0,100-94,Mavericks,Turnover by B. Williams (lost ball; steal by Q. Grimes)
+4,8:26.0,102-94,76ers,Q. Grimes makes 2-pt dunk from 2 ft
+4,8:15.0,102-94,Mavericks,N. Marshall misses 2-pt jump shot from 10 ft
+4,8:12.0,102-94,76ers,Defensive rebound by J. Embiid
+4,8:00.0,102-94,76ers,J. Embiid misses 2-pt jump shot from 13 ft
+4,7:57.0,102-94,Mavericks,Defensive rebound by B. Williams
+4,7:55.0,102-96,Mavericks,B. Williams makes 2-pt layup from 2 ft
+4,7:33.0,102-96,76ers,Turnover by J. Embiid (lost ball; steal by B. Williams)
+4,7:33.0,102-96,Mavericks,Personal foul by D. Barlow (drawn by P. Washington)
+4,7:33.0,102-96,76ers,A. Bona enters the game for D. Barlow
+4,7:33.0,102-96,76ers,P. George enters the game for J. Embiid
+4,7:33.0,102-96,Mavericks,M. Christie enters the game for J. Hardy
+4,7:24.0,102-96,Mavericks,B. Williams misses 2-pt layup from 2 ft (block by T. Maxey)
+4,7:21.0,102-96,76ers,Defensive rebound by A. Bona
+4,7:06.0,105-96,76ers,Q. Grimes makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)
+4,6:50.0,105-96,Mavericks,B. Williams misses 3-pt jump shot from 25 ft
+4,6:48.0,105-96,Mavericks,Offensive rebound by A. Davis
+4,6:47.0,105-96,Mavericks,A. Davis misses 2-pt layup at rim (block by Q. Grimes)
+4,6:46.0,105-96,76ers,Defensive rebound by A. Bona
+4,6:37.0,107-96,76ers,T. Maxey makes 2-pt jump shot from 8 ft
+4,6:36.0,107-96,Mavericks,Dallas full timeout
+4,6:36.0,107-96,Mavericks,C. Flagg enters the game for N. Marshall
+4,6:19.0,107-98,Mavericks,B. Williams makes 2-pt layup from 5 ft
+4,6:01.0,107-98,76ers,V. Edgecombe misses 2-pt jump shot from 8 ft
+4,5:58.0,107-98,Mavericks,Defensive rebound by B. Williams
+4,5:46.0,107-98,Mavericks,A. Davis misses 2-pt jump shot from 15 ft
+4,5:44.0,107-98,76ers,Defensive rebound by P. George
+4,5:36.0,110-98,76ers,Q. Grimes makes 3-pt jump shot from 23 ft (assist by P. George)
+4,5:21.0,110-101,Mavericks,P. Washington makes 3-pt jump shot from 24 ft (assist by C. Flagg)
+4,4:55.0,112-101,76ers,P. George makes 2-pt jump shot from 16 ft
+4,4:37.0,112-101,Mavericks,M. Christie misses 3-pt jump shot from 23 ft
+4,4:34.0,112-101,76ers,Defensive rebound by A. Bona
+4,4:17.0,115-101,76ers,T. Maxey makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+4,3:54.0,115-101,Mavericks,M. Christie misses 2-pt jump shot from 21 ft
+4,3:51.0,115-101,76ers,Defensive rebound by T. Maxey
+4,3:49.0,115-101,76ers,Turnover by T. Maxey (bad pass; steal by P. Washington)
+4,3:46.0,115-104,Mavericks,M. Christie makes 3-pt jump shot from 26 ft (assist by P. Washington)
+4,3:29.0,115-104,76ers,T. Maxey misses 2-pt layup from 5 ft
+4,3:29.0,115-104,Mavericks,Defensive rebound by A. Davis
+4,3:23.0,115-106,Mavericks,B. Williams makes 2-pt layup from 2 ft (assist by C. Flagg)
+4,3:23.0,115-106,76ers,Philadelphia full timeout
+4,3:23.0,115-106,76ers,J. Embiid enters the game for A. Bona
+4,3:04.0,115-106,76ers,J. Embiid misses 2-pt jump shot from 15 ft
+4,3:01.0,115-106,Mavericks,Defensive rebound by P. Washington
+4,2:48.0,115-108,Mavericks,A. Davis makes 2-pt dunk from 1 ft (assist by B. Williams)
+4,2:23.0,115-108,76ers,Turnover by P. George (lost ball; steal by A. Davis)
+4,2:20.0,115-108,Mavericks,B. Williams misses 2-pt layup from 2 ft (block by V. Edgecombe)
+4,2:19.0,115-108,Mavericks,Offensive rebound by Team
+4,2:09.0,115-108,Mavericks,A. Davis misses 3-pt jump shot from 25 ft
+4,2:04.0,115-108,76ers,Defensive rebound by P. George
+4,1:49.0,118-108,76ers,Q. Grimes makes 3-pt jump shot from 27 ft (assist by T. Maxey)
+4,1:32.0,118-108,Mavericks,Turnover by M. Christie (traveling)
+4,1:13.0,120-108,76ers,T. Maxey makes 2-pt jump shot from 14 ft
+4,1:04.0,120-108,Mavericks,C. Flagg misses 3-pt jump shot from 23 ft
+4,1:02.0,120-108,76ers,Defensive rebound by V. Edgecombe
+4,0:44.0,123-108,76ers,V. Edgecombe makes 3-pt jump shot from 29 ft (assist by T. Maxey)
+4,0:33.0,123-108,Mavericks,B. Williams misses 3-pt jump shot from 26 ft
+4,0:30.0,123-108,76ers,Defensive rebound by Q. Grimes
+4,0:07.0,123-108,76ers,Turnover by Team (shot clock)

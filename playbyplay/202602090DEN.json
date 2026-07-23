@@ -1,0 +1,3376 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:43.0",
+    "score": "0-0",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (bad pass; steal by D. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:38.0",
+    "score": "0-0",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:35.0",
+    "score": "0-0",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Allen"
+  },
+  {
+    "quarter": 1,
+    "time": "11:35.0",
+    "score": "2-0",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "11:22.0",
+    "score": "2-0",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:21.0",
+    "score": "2-0",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 1,
+    "time": "11:12.0",
+    "score": "4-0",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt layup from 3 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:01.0",
+    "score": "4-0",
+    "team": "Nuggets",
+    "description": "C. Braun misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:59.0",
+    "score": "4-0",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 1,
+    "time": "10:51.0",
+    "score": "6-0",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:39.0",
+    "score": "6-3",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 3-pt jump shot from 23 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:20.0",
+    "score": "6-3",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:17.0",
+    "score": "6-3",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "10:14.0",
+    "score": "6-5",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:14.0",
+    "score": "6-5",
+    "team": "Nuggets",
+    "description": "Shooting foul by S. Merrill (drawn by J. Strawther)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:14.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "J. Strawther makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "9:57.0",
+    "score": "6-6",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 1,
+    "time": "9:49.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (out of bounds lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:43.0",
+    "score": "6-6",
+    "team": "Cavaliers",
+    "description": "Personal foul by J. Strawther (drawn by S. Merrill)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:41.0",
+    "score": "6-6",
+    "team": "Cavaliers",
+    "description": "Personal foul by C. Braun (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:32.0",
+    "score": "6-6",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:29.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "9:16.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Personal foul by S. Merrill (drawn by C. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:12.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "C. Braun misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:11.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "9:11.0",
+    "score": "6-6",
+    "team": "Cavaliers",
+    "description": "Loose ball foul by S. Merrill (drawn by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:11.0",
+    "score": "6-6",
+    "team": "Cavaliers",
+    "description": "K. Ellis enters the game for S. Merrill"
+  },
+  {
+    "quarter": 1,
+    "time": "9:05.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 2-pt layup from 2 ft (block by J. Harden)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:56.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt hook shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:55.0",
+    "score": "6-6",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "8:54.0",
+    "score": "6-8",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:38.0",
+    "score": "8-8",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt jump shot from 17 ft (assist by J. Allen)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:25.0",
+    "score": "8-11",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 3-pt jump shot from 23 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:14.0",
+    "score": "8-11",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:11.0",
+    "score": "8-11",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "8:03.0",
+    "score": "8-11",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:00.0",
+    "score": "8-11",
+    "team": "Nuggets",
+    "description": "Offensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "7:55.0",
+    "score": "8-13",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt layup from 4 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:46.0",
+    "score": "8-13",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:42.0",
+    "score": "8-13",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Harden"
+  },
+  {
+    "quarter": 1,
+    "time": "7:42.0",
+    "score": "8-13",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "7:41.0",
+    "score": "8-13",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "7:39.0",
+    "score": "8-13",
+    "team": "Nuggets",
+    "description": "C. Braun misses 2-pt layup from 3 ft (block by D. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:39.0",
+    "score": "8-13",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "7:36.0",
+    "score": "8-15",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt jump shot from 12 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:36.0",
+    "score": "8-15",
+    "team": "Cavaliers",
+    "description": "Cleveland full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "7:25.0",
+    "score": "10-15",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "Personal foul by K. Ellis (drawn by J. Strawther)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "10-15",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der enters the game for D. Mitchell"
+  },
+  {
+    "quarter": 1,
+    "time": "6:56.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:54.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "Offensive rebound by J. Murray"
+  },
+  {
+    "quarter": 1,
+    "time": "6:52.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:52.0",
+    "score": "10-15",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "10-15",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:37.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "6:30.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:27.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "10-15",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:13.0",
+    "score": "10-15",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 1,
+    "time": "6:02.0",
+    "score": "13-15",
+    "team": "Cavaliers",
+    "description": "J. Tyson makes 3-pt jump shot from 26 ft (assist by K. Ellis)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:35.0",
+    "score": "13-15",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:33.0",
+    "score": "13-15",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by K. Ellis"
+  },
+  {
+    "quarter": 1,
+    "time": "5:27.0",
+    "score": "13-15",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:24.0",
+    "score": "13-15",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 1,
+    "time": "5:24.0",
+    "score": "13-15",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for C. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "5:08.0",
+    "score": "13-18",
+    "team": "Nuggets",
+    "description": "C. Braun makes 3-pt jump shot from 24 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:52.0",
+    "score": "13-18",
+    "team": "Cavaliers",
+    "description": "J. Allen misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:50.0",
+    "score": "13-18",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "13-20",
+    "team": "Nuggets",
+    "description": "C. Braun makes 2-pt layup from 3 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "13-20",
+    "team": "Cavaliers",
+    "description": "K. Ellis misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:18.0",
+    "score": "13-20",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "4:06.0",
+    "score": "13-20",
+    "team": "Nuggets",
+    "description": "C. Braun misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:04.0",
+    "score": "13-20",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by D. Schr\u00f6der"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "13-20",
+    "team": "Cavaliers",
+    "description": "J. Allen misses 2-pt layup from 13 ft (block by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:40.0",
+    "score": "13-20",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Allen"
+  },
+  {
+    "quarter": 1,
+    "time": "3:37.0",
+    "score": "15-20",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-20",
+    "team": "Nuggets",
+    "description": "Personal foul by J. Allen (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-21",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-21",
+    "team": "Cavaliers",
+    "description": "T. Bryant enters the game for J. Allen"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-21",
+    "team": "Cavaliers",
+    "description": "D. Mitchell enters the game for J. Harden"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-21",
+    "team": "Cavaliers",
+    "description": "N. Tomlin enters the game for J. Tyson"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-21",
+    "team": "Nuggets",
+    "description": "B. Brown enters the game for J. Strawther"
+  },
+  {
+    "quarter": 1,
+    "time": "3:34.0",
+    "score": "15-22",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:25.0",
+    "score": "17-22",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:25.0",
+    "score": "17-22",
+    "team": "Cavaliers",
+    "description": "Shooting foul by C. Braun (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:25.0",
+    "score": "17-22",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "3:25.0",
+    "score": "17-22",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "3:22.0",
+    "score": "17-22",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Braun"
+  },
+  {
+    "quarter": 1,
+    "time": "3:08.0",
+    "score": "17-24",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes 2-pt jump shot from 13 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "17-24",
+    "team": "Cavaliers",
+    "description": "Personal take foul by J. Murray (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "17-24",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "17-24",
+    "team": "Nuggets",
+    "description": "J. Pickett enters the game for C. Braun"
+  },
+  {
+    "quarter": 1,
+    "time": "2:42.0",
+    "score": "17-24",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:38.0",
+    "score": "17-24",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by T. Bryant"
+  },
+  {
+    "quarter": 1,
+    "time": "2:26.0",
+    "score": "19-24",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:11.0",
+    "score": "19-24",
+    "team": "Nuggets",
+    "description": "Shooting foul by K. Ellis (drawn by J. Murray)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:11.0",
+    "score": "19-25",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:11.0",
+    "score": "19-26",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:58.0",
+    "score": "21-26",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "21-26",
+    "team": "Nuggets",
+    "description": "Personal foul by T. Bryant (drawn by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "21-27",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "21-27",
+    "team": "Nuggets",
+    "description": "J. Strawther enters the game for J. Murray"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "21-28",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:30.0",
+    "score": "23-28",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:05.0",
+    "score": "23-28",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:03.0",
+    "score": "23-28",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by D. Schr\u00f6der"
+  },
+  {
+    "quarter": 1,
+    "time": "0:57.0",
+    "score": "23-28",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:54.0",
+    "score": "23-28",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 1,
+    "time": "0:42.0",
+    "score": "23-28",
+    "team": "Nuggets",
+    "description": "Turnover by J. Valan\u010di\u016bnas (bad pass; steal by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:35.0",
+    "score": "26-28",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:22.0",
+    "score": "26-28",
+    "team": "Nuggets",
+    "description": "J. Pickett misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:19.0",
+    "score": "26-28",
+    "team": "Nuggets",
+    "description": "Offensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 1,
+    "time": "0:12.0",
+    "score": "26-28",
+    "team": "Nuggets",
+    "description": "Personal foul by N. Tomlin (drawn by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:12.0",
+    "score": "26-29",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:12.0",
+    "score": "26-29",
+    "team": "Cavaliers",
+    "description": "J. Harden enters the game for N. Tomlin"
+  },
+  {
+    "quarter": 1,
+    "time": "0:12.0",
+    "score": "26-30",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:02.0",
+    "score": "26-30",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "26-30",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "26-30",
+    "team": "Nuggets",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "26-30",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:38.0",
+    "score": "26-30",
+    "team": "Cavaliers",
+    "description": "Turnover by K. Ellis (lost ball; steal by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:37.0",
+    "score": "26-30",
+    "team": "Nuggets",
+    "description": "Personal foul by N. Tomlin (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:27.0",
+    "score": "26-33",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 24 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:19.0",
+    "score": "26-33",
+    "team": "Cavaliers",
+    "description": "Personal foul by B. Brown (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:17.0",
+    "score": "26-33",
+    "team": "Cavaliers",
+    "description": "T. Bryant misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:14.0",
+    "score": "26-33",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "11:00.0",
+    "score": "26-33",
+    "team": "Nuggets",
+    "description": "B. Brown misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:58.0",
+    "score": "26-33",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by K. Ellis"
+  },
+  {
+    "quarter": 2,
+    "time": "10:53.0",
+    "score": "26-33",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:50.0",
+    "score": "26-33",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 2,
+    "time": "10:43.0",
+    "score": "26-35",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:32.0",
+    "score": "26-35",
+    "team": "Cavaliers",
+    "description": "Turnover by C. Porter (lost ball; steal by C. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:29.0",
+    "score": "26-37",
+    "team": "Nuggets",
+    "description": "C. Johnson makes 2-pt dunk from 2 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:29.0",
+    "score": "26-37",
+    "team": "Cavaliers",
+    "description": "Cleveland full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "10:17.0",
+    "score": "29-37",
+    "team": "Cavaliers",
+    "description": "T. Bryant makes 3-pt jump shot from 27 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:53.0",
+    "score": "29-37",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:51.0",
+    "score": "29-37",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by T. Bryant"
+  },
+  {
+    "quarter": 2,
+    "time": "9:42.0",
+    "score": "32-37",
+    "team": "Cavaliers",
+    "description": "N. Tomlin makes 3-pt jump shot from 23 ft (assist by T. Bryant)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:27.0",
+    "score": "32-37",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:25.0",
+    "score": "32-37",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by N. Tomlin"
+  },
+  {
+    "quarter": 2,
+    "time": "9:16.0",
+    "score": "32-37",
+    "team": "Cavaliers",
+    "description": "T. Bryant misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "32-37",
+    "team": "Nuggets",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "32-37",
+    "team": "Cavaliers",
+    "description": "Loose ball foul by N. Tomlin (drawn by J. Strawther)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "32-37",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "32-37",
+    "team": "Cavaliers",
+    "description": "J. Harden enters the game for N. Tomlin"
+  },
+  {
+    "quarter": 2,
+    "time": "8:55.0",
+    "score": "32-37",
+    "team": "Cavaliers",
+    "description": "Shooting foul by T. Hardaway (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:55.0",
+    "score": "33-37",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:55.0",
+    "score": "34-37",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:34.0",
+    "score": "34-37",
+    "team": "Nuggets",
+    "description": "Turnover by C. Johnson (bad pass; steal by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:30.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "K. Ellis makes 2-pt layup from 3 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:27.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "8:27.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "J. Allen enters the game for T. Bryant"
+  },
+  {
+    "quarter": 2,
+    "time": "8:27.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "S. Merrill enters the game for K. Ellis"
+  },
+  {
+    "quarter": 2,
+    "time": "8:27.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der enters the game for D. Mitchell"
+  },
+  {
+    "quarter": 2,
+    "time": "8:27.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "C. Braun enters the game for J. Strawther"
+  },
+  {
+    "quarter": 2,
+    "time": "8:15.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:12.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "8:04.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:00.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by C. Porter"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "Turnover by C. Porter (bad pass; steal by C. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:54.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Offensive foul by C. Braun (drawn by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:54.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Turnover by C. Braun (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:41.0",
+    "score": "36-37",
+    "team": "Cavaliers",
+    "description": "J. Allen misses 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:38.0",
+    "score": "36-37",
+    "team": "Nuggets",
+    "description": "Defensive rebound by B. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "7:35.0",
+    "score": "36-40",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 23 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:22.0",
+    "score": "36-40",
+    "team": "Cavaliers",
+    "description": "Turnover by J. Harden (bad pass; steal by B. Brown)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:18.0",
+    "score": "36-40",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:15.0",
+    "score": "36-40",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 2,
+    "time": "7:14.0",
+    "score": "36-43",
+    "team": "Nuggets",
+    "description": "C. Johnson makes 3-pt jump shot from 25 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:51.0",
+    "score": "36-43",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "Nuggets",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "Cavaliers",
+    "description": "Loose ball foul by C. Porter (drawn by B. Brown)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "Cavaliers",
+    "description": "J. Tyson enters the game for C. Porter"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "Nuggets",
+    "description": "J. Murray enters the game for T. Hardaway"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "6:30.0",
+    "score": "36-43",
+    "team": "Nuggets",
+    "description": "Turnover by J. Valan\u010di\u016bnas (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:22.0",
+    "score": "36-43",
+    "team": "Cavaliers",
+    "description": "Personal foul by B. Brown (drawn by J. Harden)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:17.0",
+    "score": "36-43",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "36-43",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "5:56.0",
+    "score": "36-45",
+    "team": "Nuggets",
+    "description": "C. Braun makes 2-pt layup from 4 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:41.0",
+    "score": "39-45",
+    "team": "Cavaliers",
+    "description": "S. Merrill makes 3-pt jump shot from 26 ft (assist by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:20.0",
+    "score": "39-45",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:18.0",
+    "score": "39-45",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 2,
+    "time": "5:03.0",
+    "score": "39-45",
+    "team": "Cavaliers",
+    "description": "Turnover by J. Tyson (bad pass; steal by C. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:57.0",
+    "score": "39-45",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:53.0",
+    "score": "39-45",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "39-45",
+    "team": "Cavaliers",
+    "description": "S. Merrill misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "39-45",
+    "team": "Nuggets",
+    "description": "Defensive rebound by C. Braun"
+  },
+  {
+    "quarter": 2,
+    "time": "4:38.0",
+    "score": "39-48",
+    "team": "Nuggets",
+    "description": "C. Johnson makes 3-pt jump shot from 23 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:22.0",
+    "score": "39-48",
+    "team": "Cavaliers",
+    "description": "Personal foul by C. Johnson (drawn by J. Harden)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:22.0",
+    "score": "39-48",
+    "team": "Nuggets",
+    "description": "J. Pickett enters the game for C. Braun"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "42-48",
+    "team": "Cavaliers",
+    "description": "J. Tyson makes 3-pt jump shot from 23 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:00.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "Offensive rebound by B. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "Offensive rebound by B. Brown"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Tyson (drawn by B. Brown)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "B. Brown misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-48",
+    "team": "Cavaliers",
+    "description": "D. Mitchell enters the game for S. Merrill"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "42-49",
+    "team": "Nuggets",
+    "description": "B. Brown makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:47.0",
+    "score": "44-49",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "44-51",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:08.0",
+    "score": "46-51",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:08.0",
+    "score": "46-51",
+    "team": "Cavaliers",
+    "description": "Shooting foul by J. Pickett (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:08.0",
+    "score": "47-51",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "2:53.0",
+    "score": "47-51",
+    "team": "Nuggets",
+    "description": "J. Pickett misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:49.0",
+    "score": "47-51",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "2:35.0",
+    "score": "47-53",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "47-53",
+    "team": "Cavaliers",
+    "description": "Turnover by D. Mitchell (lost ball; steal by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:18.0",
+    "score": "47-55",
+    "team": "Nuggets",
+    "description": "C. Johnson makes 2-pt layup from 3 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:13.0",
+    "score": "49-55",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt jump shot from 8 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:46.0",
+    "score": "49-55",
+    "team": "Nuggets",
+    "description": "J. Pickett misses 2-pt jump shot from 8 ft (block by J. Harden)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:44.0",
+    "score": "49-55",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:44.0",
+    "score": "49-55",
+    "team": "Nuggets",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:44.0",
+    "score": "49-55",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for C. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "1:44.0",
+    "score": "49-55",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 enters the game for J. Pickett"
+  },
+  {
+    "quarter": 2,
+    "time": "1:44.0",
+    "score": "49-55",
+    "team": "Nuggets",
+    "description": "J. Strawther enters the game for J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 2,
+    "time": "1:37.0",
+    "score": "51-55",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:26.0",
+    "score": "51-55",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (bad pass; steal by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:20.0",
+    "score": "51-55",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:17.0",
+    "score": "51-55",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 2,
+    "time": "1:11.0",
+    "score": "51-57",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt layup from 4 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "51-57",
+    "team": "Cavaliers",
+    "description": "Shooting foul by J. Strawther (drawn by J. Harden)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "52-57",
+    "team": "Cavaliers",
+    "description": "J. Harden makes free throw 1 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "53-57",
+    "team": "Cavaliers",
+    "description": "J. Harden makes free throw 2 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "54-57",
+    "team": "Cavaliers",
+    "description": "J. Harden makes free throw 3 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "0:32.0",
+    "score": "54-59",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt jump shot from 7 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:12.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:09.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Harden"
+  },
+  {
+    "quarter": 2,
+    "time": "0:03.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "54-59",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 3,
+    "time": "11:51.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "S. Merrill misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:49.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Tyson"
+  },
+  {
+    "quarter": 3,
+    "time": "11:44.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:42.0",
+    "score": "54-59",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Tyson"
+  },
+  {
+    "quarter": 3,
+    "time": "11:39.0",
+    "score": "57-59",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 3-pt jump shot from 26 ft (assist by J. Tyson)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:12.0",
+    "score": "57-61",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:58.0",
+    "score": "60-61",
+    "team": "Cavaliers",
+    "description": "S. Merrill makes 3-pt jump shot from 26 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:48.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:41.0",
+    "score": "60-61",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 31 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:38.0",
+    "score": "60-61",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Allen"
+  },
+  {
+    "quarter": 3,
+    "time": "10:38.0",
+    "score": "60-61",
+    "team": "Cavaliers",
+    "description": "Personal foul by C. Johnson (drawn by J. Allen)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:29.0",
+    "score": "60-61",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:24.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "10:19.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Harden (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:19.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:19.0",
+    "score": "60-61",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "10:19.0",
+    "score": "60-62",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:04.0",
+    "score": "62-62",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt hook shot from 11 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:55.0",
+    "score": "62-62",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Allen (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:55.0",
+    "score": "62-63",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:55.0",
+    "score": "62-64",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:43.0",
+    "score": "62-64",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:40.0",
+    "score": "62-64",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by D. Mitchell"
+  },
+  {
+    "quarter": 3,
+    "time": "9:31.0",
+    "score": "64-64",
+    "team": "Cavaliers",
+    "description": "J. Tyson makes 2-pt layup from 3 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "64-66",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt layup from 4 ft (assist by C. Braun)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:05.0",
+    "score": "64-66",
+    "team": "Cavaliers",
+    "description": "Personal foul by C. Johnson (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:57.0",
+    "score": "64-66",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "64-66",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 3,
+    "time": "8:51.0",
+    "score": "64-68",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt layup from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:36.0",
+    "score": "66-68",
+    "team": "Cavaliers",
+    "description": "J. Tyson makes 2-pt layup from 3 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:22.0",
+    "score": "66-71",
+    "team": "Nuggets",
+    "description": "C. Braun makes 3-pt jump shot from 27 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:13.0",
+    "score": "68-71",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:13.0",
+    "score": "68-71",
+    "team": "Cavaliers",
+    "description": "Shooting foul by C. Johnson (drawn by J. Harden)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:13.0",
+    "score": "68-71",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for C. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:13.0",
+    "score": "69-71",
+    "team": "Cavaliers",
+    "description": "J. Harden makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "8:01.0",
+    "score": "69-71",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:52.0",
+    "score": "69-71",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:48.0",
+    "score": "69-71",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "7:45.0",
+    "score": "69-71",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 2-pt layup from 4 ft (block by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:43.0",
+    "score": "69-71",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "7:34.0",
+    "score": "71-71",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt jump shot from 9 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:15.0",
+    "score": "71-71",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:11.0",
+    "score": "71-71",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by S. Merrill"
+  },
+  {
+    "quarter": 3,
+    "time": "7:03.0",
+    "score": "71-71",
+    "team": "Cavaliers",
+    "description": "Turnover by S. Merrill (bad pass; steal by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:03.0",
+    "score": "71-71",
+    "team": "Nuggets",
+    "description": "Personal foul by J. Harden (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:03.0",
+    "score": "71-71",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der enters the game for D. Mitchell"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "71-71",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt layup from 6 ft (block by J. Harden)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:47.0",
+    "score": "71-71",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 3,
+    "time": "6:44.0",
+    "score": "71-71",
+    "team": "Cavaliers",
+    "description": "S. Merrill misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:41.0",
+    "score": "71-71",
+    "team": "Nuggets",
+    "description": "Defensive rebound by T. Hardaway"
+  },
+  {
+    "quarter": 3,
+    "time": "6:35.0",
+    "score": "71-73",
+    "team": "Nuggets",
+    "description": "C. Braun makes 2-pt dunk from 1 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "71-73",
+    "team": "Cavaliers",
+    "description": "J. Allen misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:24.0",
+    "score": "71-73",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "6:18.0",
+    "score": "71-76",
+    "team": "Nuggets",
+    "description": "C. Braun makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:18.0",
+    "score": "71-76",
+    "team": "Cavaliers",
+    "description": "Cleveland full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:18.0",
+    "score": "71-76",
+    "team": "Nuggets",
+    "description": "B. Brown enters the game for J. Strawther"
+  },
+  {
+    "quarter": 3,
+    "time": "5:53.0",
+    "score": "73-76",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt jump shot from 11 ft (assist by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:31.0",
+    "score": "73-76",
+    "team": "Nuggets",
+    "description": "Personal foul by J. Tyson (drawn by B. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:19.0",
+    "score": "73-76",
+    "team": "Nuggets",
+    "description": "C. Braun misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:16.0",
+    "score": "73-76",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 3,
+    "time": "5:09.0",
+    "score": "75-76",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "75-76",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:54.0",
+    "score": "75-76",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 3,
+    "time": "4:45.0",
+    "score": "75-76",
+    "team": "Cavaliers",
+    "description": "Turnover by J. Tyson (lost ball; steal by B. Brown)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:32.0",
+    "score": "75-76",
+    "team": "Nuggets",
+    "description": "C. Braun misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:28.0",
+    "score": "75-76",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 3,
+    "time": "4:16.0",
+    "score": "75-76",
+    "team": "Cavaliers",
+    "description": "Shooting foul by J. Murray (drawn by J. Harden)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:16.0",
+    "score": "76-76",
+    "team": "Cavaliers",
+    "description": "J. Harden makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:16.0",
+    "score": "76-76",
+    "team": "Cavaliers",
+    "description": "T. Bryant enters the game for J. Allen"
+  },
+  {
+    "quarter": 3,
+    "time": "4:16.0",
+    "score": "76-76",
+    "team": "Cavaliers",
+    "description": "D. Mitchell enters the game for S. Merrill"
+  },
+  {
+    "quarter": 3,
+    "time": "4:16.0",
+    "score": "76-76",
+    "team": "Cavaliers",
+    "description": "N. Tomlin enters the game for J. Tyson"
+  },
+  {
+    "quarter": 3,
+    "time": "4:16.0",
+    "score": "77-76",
+    "team": "Cavaliers",
+    "description": "J. Harden makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:03.0",
+    "score": "77-79",
+    "team": "Nuggets",
+    "description": "J. Murray makes 3-pt jump shot from 26 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:50.0",
+    "score": "77-79",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:48.0",
+    "score": "77-79",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 3,
+    "time": "3:48.0",
+    "score": "77-79",
+    "team": "Cavaliers",
+    "description": "C. Porter enters the game for J. Harden"
+  },
+  {
+    "quarter": 3,
+    "time": "3:48.0",
+    "score": "77-79",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "77-79",
+    "team": "Nuggets",
+    "description": "Shooting foul by T. Bryant (drawn by T. Hardaway)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "77-79",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "77-79",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "77-80",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:21.0",
+    "score": "77-80",
+    "team": "Cavaliers",
+    "description": "Turnover by D. Mitchell (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "77-82",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "77-82",
+    "team": "Cavaliers",
+    "description": "Shooting foul by B. Brown (drawn by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "77-82",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "77-82",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "77-82",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "78-82",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:32.0",
+    "score": "78-84",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "78-84",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "78-84",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "78-84",
+    "team": "Nuggets",
+    "description": "Loose ball foul by B. Brown (drawn by T. Bryant)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "79-84",
+    "team": "Cavaliers",
+    "description": "T. Bryant makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "79-84",
+    "team": "Nuggets",
+    "description": "J. Strawther enters the game for B. Brown"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "80-84",
+    "team": "Cavaliers",
+    "description": "T. Bryant makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "80-84",
+    "team": "Nuggets",
+    "description": "Personal foul by D. Schr\u00f6der (drawn by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "80-85",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "80-86",
+    "team": "Nuggets",
+    "description": "J. Murray makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "83-86",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 3-pt jump shot from 26 ft (assist by D. Schr\u00f6der)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:35.0",
+    "score": "83-86",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:33.0",
+    "score": "83-86",
+    "team": "Nuggets",
+    "description": "Offensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "83-86",
+    "team": "Nuggets",
+    "description": "Shooting foul by T. Bryant (drawn by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "83-87",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "83-88",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:25.0",
+    "score": "83-88",
+    "team": "Cavaliers",
+    "description": "Personal foul by C. Braun (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:25.0",
+    "score": "84-88",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:25.0",
+    "score": "84-88",
+    "team": "Nuggets",
+    "description": "J. Pickett enters the game for C. Braun"
+  },
+  {
+    "quarter": 3,
+    "time": "1:25.0",
+    "score": "85-88",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:12.0",
+    "score": "85-88",
+    "team": "Nuggets",
+    "description": "Offensive foul by J. Strawther (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:12.0",
+    "score": "85-88",
+    "team": "Nuggets",
+    "description": "Turnover by J. Strawther (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:58.0",
+    "score": "87-88",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:44.0",
+    "score": "87-90",
+    "team": "Nuggets",
+    "description": "J. Murray makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:40.0",
+    "score": "87-90",
+    "team": "Cavaliers",
+    "description": "Offensive foul by D. Schr\u00f6der (drawn by T. Hardaway)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:40.0",
+    "score": "87-90",
+    "team": "Cavaliers",
+    "description": "Turnover by D. Schr\u00f6der (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:30.0",
+    "score": "87-92",
+    "team": "Nuggets",
+    "description": "J. Strawther makes 2-pt jump shot from 11 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:09.0",
+    "score": "87-92",
+    "team": "Cavaliers",
+    "description": "N. Tomlin misses 2-pt hook shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:07.0",
+    "score": "87-92",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "87-92",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 23 ft (block by N. Tomlin)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "87-92",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:47.0",
+    "score": "87-92",
+    "team": "Nuggets",
+    "description": "Shooting foul by D. Mitchell (drawn by J. Strawther)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:47.0",
+    "score": "87-93",
+    "team": "Nuggets",
+    "description": "J. Strawther makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:47.0",
+    "score": "87-93",
+    "team": "Nuggets",
+    "description": "J. Strawther misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:45.0",
+    "score": "87-93",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by T. Bryant"
+  },
+  {
+    "quarter": 4,
+    "time": "11:35.0",
+    "score": "87-93",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:29.0",
+    "score": "87-93",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "11:26.0",
+    "score": "87-96",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 3-pt jump shot from 24 ft (assist by C. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:15.0",
+    "score": "90-96",
+    "team": "Cavaliers",
+    "description": "N. Tomlin makes 3-pt jump shot from 25 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:54.0",
+    "score": "90-96",
+    "team": "Nuggets",
+    "description": "Shooting foul by T. Bryant (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:54.0",
+    "score": "90-97",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:54.0",
+    "score": "90-98",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:44.0",
+    "score": "90-98",
+    "team": "Cavaliers",
+    "description": "Offensive foul by K. Ellis (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:44.0",
+    "score": "90-98",
+    "team": "Cavaliers",
+    "description": "Turnover by K. Ellis (offensive foul)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:31.0",
+    "score": "90-100",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:13.0",
+    "score": "92-100",
+    "team": "Cavaliers",
+    "description": "D. Schr\u00f6der makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:02.0",
+    "score": "92-103",
+    "team": "Nuggets",
+    "description": "J. Pickett makes 3-pt jump shot from 24 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:01.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "Cleveland full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "10:01.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "J. Allen enters the game for T. Bryant"
+  },
+  {
+    "quarter": 4,
+    "time": "10:01.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "J. Harden enters the game for D. Schr\u00f6der"
+  },
+  {
+    "quarter": 4,
+    "time": "10:01.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "S. Merrill enters the game for N. Tomlin"
+  },
+  {
+    "quarter": 4,
+    "time": "9:49.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "Shooting foul by J. Strawther (drawn by J. Allen)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:49.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "J. Allen misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:49.0",
+    "score": "92-103",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:49.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "J. Allen makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:36.0",
+    "score": "93-103",
+    "team": "Nuggets",
+    "description": "Personal foul by J. Allen (drawn by C. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:24.0",
+    "score": "93-103",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 3-pt jump shot from 30 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:21.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 4,
+    "time": "9:09.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "K. Ellis misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "8:57.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "Turnover by J. Harden (bad pass; steal by T. Hardaway)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:49.0",
+    "score": "93-103",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by K. Ellis"
+  },
+  {
+    "quarter": 4,
+    "time": "8:31.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:29.0",
+    "score": "93-103",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by S. Merrill"
+  },
+  {
+    "quarter": 4,
+    "time": "8:27.0",
+    "score": "96-103",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 3-pt jump shot from 28 ft (assist by S. Merrill)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:11.0",
+    "score": "96-103",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Harden (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:11.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:11.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "J. Tyson enters the game for D. Mitchell"
+  },
+  {
+    "quarter": 4,
+    "time": "8:11.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "C. Braun enters the game for T. Hardaway"
+  },
+  {
+    "quarter": 4,
+    "time": "8:11.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:09.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 4,
+    "time": "8:01.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:58.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Harden"
+  },
+  {
+    "quarter": 4,
+    "time": "7:49.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "K. Ellis misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:46.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by J. Allen"
+  },
+  {
+    "quarter": 4,
+    "time": "7:44.0",
+    "score": "96-104",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:40.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "7:31.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "J. Strawther misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "Offensive rebound by C. Braun"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "96-104",
+    "team": "Nuggets",
+    "description": "Shooting foul by S. Merrill (drawn by C. Braun)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "96-105",
+    "team": "Nuggets",
+    "description": "C. Braun makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "96-105",
+    "team": "Nuggets",
+    "description": "B. Brown enters the game for J. Pickett"
+  },
+  {
+    "quarter": 4,
+    "time": "7:28.0",
+    "score": "96-106",
+    "team": "Nuggets",
+    "description": "C. Braun makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:17.0",
+    "score": "99-106",
+    "team": "Cavaliers",
+    "description": "J. Tyson makes 3-pt jump shot from 25 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:56.0",
+    "score": "99-106",
+    "team": "Nuggets",
+    "description": "B. Brown misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:54.0",
+    "score": "99-106",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 4,
+    "time": "6:45.0",
+    "score": "99-106",
+    "team": "Cavaliers",
+    "description": "J. Harden misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "99-106",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Strawther"
+  },
+  {
+    "quarter": 4,
+    "time": "6:37.0",
+    "score": "99-106",
+    "team": "Nuggets",
+    "description": "C. Johnson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:34.0",
+    "score": "99-106",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "6:34.0",
+    "score": "99-106",
+    "team": "Nuggets",
+    "description": "J. Murray enters the game for J. Strawther"
+  },
+  {
+    "quarter": 4,
+    "time": "6:12.0",
+    "score": "102-106",
+    "team": "Cavaliers",
+    "description": "S. Merrill makes 3-pt jump shot from 28 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:11.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "6:11.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas enters the game for N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "5:52.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Tyson (drawn by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:52.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:52.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:52.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:50.0",
+    "score": "102-106",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Harden"
+  },
+  {
+    "quarter": 4,
+    "time": "5:44.0",
+    "score": "102-106",
+    "team": "Cavaliers",
+    "description": "K. Ellis misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:41.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "5:32.0",
+    "score": "102-106",
+    "team": "Nuggets",
+    "description": "Turnover by J. Murray (bad pass; steal by K. Ellis)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:29.0",
+    "score": "104-106",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt dunk from 1 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt layup from 7 ft (block by K. Ellis)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "104-106",
+    "team": "Cavaliers",
+    "description": "D. Mitchell enters the game for K. Ellis"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "T. Hardaway enters the game for C. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "5:08.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "104-106",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "104-106",
+    "team": "Cavaliers",
+    "description": "J. Allen misses 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:54.0",
+    "score": "104-106",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "4:40.0",
+    "score": "104-109",
+    "team": "Nuggets",
+    "description": "C. Braun makes 3-pt jump shot from 25 ft (assist by J. Murray)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:27.0",
+    "score": "104-109",
+    "team": "Cavaliers",
+    "description": "J. Allen misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "104-109",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "104-109",
+    "team": "Nuggets",
+    "description": "Personal foul by J. Allen (drawn by J. Valan\u010di\u016bnas)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "104-109",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "104-109",
+    "team": "Nuggets",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "104-110",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:25.0",
+    "score": "104-111",
+    "team": "Nuggets",
+    "description": "J. Valan\u010di\u016bnas makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:03.0",
+    "score": "107-111",
+    "team": "Cavaliers",
+    "description": "J. Tyson makes 3-pt jump shot from 27 ft (assist by J. Harden)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:37.0",
+    "score": "107-111",
+    "team": "Nuggets",
+    "description": "J. Murray misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:34.0",
+    "score": "107-111",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Tyson"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "107-111",
+    "team": "Cavaliers",
+    "description": "Shooting foul by J. Valan\u010di\u016bnas (drawn by J. Allen)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "108-111",
+    "team": "Cavaliers",
+    "description": "J. Allen makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "108-111",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "108-111",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 enters the game for J. Valan\u010di\u016bnas"
+  },
+  {
+    "quarter": 4,
+    "time": "3:24.0",
+    "score": "108-111",
+    "team": "Cavaliers",
+    "description": "J. Allen misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:22.0",
+    "score": "108-111",
+    "team": "Nuggets",
+    "description": "Defensive rebound by J. Murray"
+  },
+  {
+    "quarter": 4,
+    "time": "3:00.0",
+    "score": "108-111",
+    "team": "Nuggets",
+    "description": "B. Brown misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:58.0",
+    "score": "108-111",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 4,
+    "time": "2:50.0",
+    "score": "110-111",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:37.0",
+    "score": "110-113",
+    "team": "Nuggets",
+    "description": "T. Hardaway makes 2-pt jump shot from 9 ft (assist by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:14.0",
+    "score": "112-113",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt layup from 3 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:58.0",
+    "score": "112-113",
+    "team": "Nuggets",
+    "description": "J. Murray misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:56.0",
+    "score": "112-113",
+    "team": "Nuggets",
+    "description": "Offensive rebound by B. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "1:47.0",
+    "score": "112-113",
+    "team": "Nuggets",
+    "description": "Shooting foul by J. Allen (drawn by N. Joki\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:47.0",
+    "score": "112-113",
+    "team": "Cavaliers",
+    "description": "Cleveland full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:47.0",
+    "score": "112-113",
+    "team": "Cavaliers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:47.0",
+    "score": "112-113",
+    "team": "Nuggets",
+    "description": "C. Johnson enters the game for B. Brown"
+  },
+  {
+    "quarter": 4,
+    "time": "1:47.0",
+    "score": "112-114",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:47.0",
+    "score": "112-115",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "1:40.0",
+    "score": "114-115",
+    "team": "Cavaliers",
+    "description": "J. Allen makes 2-pt dunk from 1 ft (assist by D. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:27.0",
+    "score": "114-117",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 makes 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:06.0",
+    "score": "114-117",
+    "team": "Cavaliers",
+    "description": "J. Tyson misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:01.0",
+    "score": "114-117",
+    "team": "Nuggets",
+    "description": "Defensive rebound by N. Joki\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "0:43.0",
+    "score": "114-117",
+    "team": "Nuggets",
+    "description": "Turnover by N. Joki\u0107 (lost ball; steal by S. Merrill)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:38.0",
+    "score": "114-117",
+    "team": "Cavaliers",
+    "description": "D. Mitchell misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:38.0",
+    "score": "114-117",
+    "team": "Cavaliers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:38.0",
+    "score": "114-117",
+    "team": "Nuggets",
+    "description": "Loose ball foul by C. Johnson (drawn by J. Allen)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:32.0",
+    "score": "117-117",
+    "team": "Cavaliers",
+    "description": "J. Harden makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:31.0",
+    "score": "117-117",
+    "team": "Cavaliers",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:09.0",
+    "score": "117-117",
+    "team": "Nuggets",
+    "description": "T. Hardaway misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "117-117",
+    "team": "Cavaliers",
+    "description": "Defensive rebound by J. Allen"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-117",
+    "team": "Cavaliers",
+    "description": "Personal foul by J. Murray (drawn by D. Mitchell)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "118-117",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "119-117",
+    "team": "Cavaliers",
+    "description": "D. Mitchell makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "119-117",
+    "team": "Nuggets",
+    "description": "Denver full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "119-117",
+    "team": "Nuggets",
+    "description": "N. Joki\u0107 misses 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "119-117",
+    "team": "Nuggets",
+    "description": "Offensive rebound by Team"
+  }
+]

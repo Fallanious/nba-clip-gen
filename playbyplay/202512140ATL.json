@@ -1,0 +1,3530 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:46.0",
+    "score": "0-0",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:42.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "11:39.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:36.0",
+    "score": "0-0",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 1,
+    "time": "11:33.0",
+    "score": "0-0",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "11:25.0",
+    "score": "0-3",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes 3-pt jump shot from 25 ft (assist by D. Daniels)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:12.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 15 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:03.0",
+    "score": "2-3",
+    "team": "Hawks",
+    "description": "D. Daniels misses 2-pt jump shot from 11 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:00.0",
+    "score": "2-3",
+    "team": "Hawks",
+    "description": "Offensive rebound by Z. Risacher"
+  },
+  {
+    "quarter": 1,
+    "time": "10:58.0",
+    "score": "2-6",
+    "team": "Hawks",
+    "description": "O. Okongwu makes 3-pt jump shot from 26 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:38.0",
+    "score": "5-6",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 23 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:29.0",
+    "score": "5-8",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:07.0",
+    "score": "8-8",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 24 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:57.0",
+    "score": "8-11",
+    "team": "Hawks",
+    "description": "D. Daniels makes 3-pt jump shot from 26 ft (assist by Z. Risacher)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:41.0",
+    "score": "8-11",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:39.0",
+    "score": "8-11",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 1,
+    "time": "9:32.0",
+    "score": "8-11",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:28.0",
+    "score": "8-11",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "9:27.0",
+    "score": "8-11",
+    "team": "76ers",
+    "description": "Shooting foul by Z. Risacher (drawn by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:27.0",
+    "score": "9-11",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:27.0",
+    "score": "10-11",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:13.0",
+    "score": "10-11",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:09.0",
+    "score": "10-11",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "8:58.0",
+    "score": "10-11",
+    "team": "76ers",
+    "description": "Shooting foul by D. Daniels (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:58.0",
+    "score": "10-11",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:58.0",
+    "score": "10-11",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:58.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:44.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:43.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "Offensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 1,
+    "time": "8:43.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "D. Daniels misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:42.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "Offensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "8:35.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "Z. Risacher misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:32.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "8:26.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:25.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "8:25.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:24.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 1,
+    "time": "8:12.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:08.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "Offensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "8:08.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "8:08.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "7:52.0",
+    "score": "11-11",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass; steal by J. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:50.0",
+    "score": "11-11",
+    "team": "Hawks",
+    "description": "Shooting foul by V. Edgecombe (drawn by J. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:50.0",
+    "score": "11-12",
+    "team": "Hawks",
+    "description": "J. Johnson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:50.0",
+    "score": "11-13",
+    "team": "Hawks",
+    "description": "J. Johnson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:30.0",
+    "score": "11-13",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (bad pass; steal by O. Okongwu)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:28.0",
+    "score": "11-13",
+    "team": "Hawks",
+    "description": "Shooting foul by V. Edgecombe (drawn by Z. Risacher)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:28.0",
+    "score": "11-14",
+    "team": "Hawks",
+    "description": "Z. Risacher makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:28.0",
+    "score": "11-14",
+    "team": "76ers",
+    "description": "J. McCain enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "7:28.0",
+    "score": "11-15",
+    "team": "Hawks",
+    "description": "Z. Risacher makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:08.0",
+    "score": "11-15",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (bad pass; steal by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:04.0",
+    "score": "11-15",
+    "team": "Hawks",
+    "description": "D. Daniels misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:59.0",
+    "score": "11-15",
+    "team": "Hawks",
+    "description": "Offensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 1,
+    "time": "6:59.0",
+    "score": "11-17",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "6:54.0",
+    "score": "11-17",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:54.0",
+    "score": "11-17",
+    "team": "Hawks",
+    "description": "M. Gueye enters the game for N. Alexander-Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "6:54.0",
+    "score": "11-17",
+    "team": "Hawks",
+    "description": "V. Krejci enters the game for O. Okongwu"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "11-17",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:40.0",
+    "score": "11-17",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "6:40.0",
+    "score": "11-17",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "6:39.0",
+    "score": "11-17",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "6:39.0",
+    "score": "11-17",
+    "team": "76ers",
+    "description": "Shooting foul by V. Krejci (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:39.0",
+    "score": "12-17",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:39.0",
+    "score": "13-17",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "13-17",
+    "team": "Hawks",
+    "description": "Shooting foul by J. McCain (drawn by V. Krejci)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "13-18",
+    "team": "Hawks",
+    "description": "V. Krejci makes free throw 1 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "13-19",
+    "team": "Hawks",
+    "description": "V. Krejci makes free throw 2 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:25.0",
+    "score": "13-20",
+    "team": "Hawks",
+    "description": "V. Krejci makes free throw 3 of 3"
+  },
+  {
+    "quarter": 1,
+    "time": "6:13.0",
+    "score": "15-20",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 2 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:03.0",
+    "score": "15-22",
+    "team": "Hawks",
+    "description": "J. Johnson makes 2-pt jump shot from 20 ft (assist by D. Daniels)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:45.0",
+    "score": "18-22",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 23 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:36.0",
+    "score": "18-22",
+    "team": "Hawks",
+    "description": "Turnover by M. Gueye (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:33.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:12.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "Z. Risacher misses 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:11.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "5:11.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "L. Kennard enters the game for Z. Risacher"
+  },
+  {
+    "quarter": 1,
+    "time": "5:08.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:06.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "4:48.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:45.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "Defensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 1,
+    "time": "4:41.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "Turnover by M. Gueye (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:29.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:26.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "Defensive rebound by L. Kennard"
+  },
+  {
+    "quarter": 1,
+    "time": "4:26.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "4:14.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "M. Gueye misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:09.0",
+    "score": "20-22",
+    "team": "Hawks",
+    "description": "Offensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "4:09.0",
+    "score": "20-24",
+    "team": "Hawks",
+    "description": "J. Johnson makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "3:46.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:44.0",
+    "score": "20-24",
+    "team": "Hawks",
+    "description": "Defensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 1,
+    "time": "3:37.0",
+    "score": "20-26",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt dunk from 2 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:19.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "J. Edwards misses 2-pt layup from 3 ft (block by M. Gueye)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:16.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 1,
+    "time": "3:13.0",
+    "score": "23-26",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 27 ft (assist by J. Edwards)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "Hawks",
+    "description": "Shooting foul by J. Embiid (drawn by M. Gueye)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "Hawks",
+    "description": "Violation by Team (delay of game)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "Hawks",
+    "description": "M. Gueye misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker enters the game for D. Daniels"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-26",
+    "team": "Hawks",
+    "description": "O. Okongwu enters the game for J. Johnson"
+  },
+  {
+    "quarter": 1,
+    "time": "3:01.0",
+    "score": "23-27",
+    "team": "Hawks",
+    "description": "M. Gueye makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "2:49.0",
+    "score": "23-27",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:44.0",
+    "score": "23-27",
+    "team": "Hawks",
+    "description": "Defensive rebound by M. Gueye"
+  },
+  {
+    "quarter": 1,
+    "time": "2:33.0",
+    "score": "23-30",
+    "team": "Hawks",
+    "description": "V. Krejci makes 3-pt jump shot from 26 ft (assist by L. Kennard)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "26-30",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 24 ft (assist by A. Drummond)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:02.0",
+    "score": "26-32",
+    "team": "Hawks",
+    "description": "V. Krejci makes 2-pt layup from 1 ft (assist by O. Okongwu)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:49.0",
+    "score": "26-32",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:46.0",
+    "score": "26-32",
+    "team": "Hawks",
+    "description": "Defensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "1:39.0",
+    "score": "26-35",
+    "team": "Hawks",
+    "description": "V. Krejci makes 3-pt jump shot from 24 ft (assist by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:39.0",
+    "score": "26-35",
+    "team": "76ers",
+    "description": "P. George enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "1:18.0",
+    "score": "26-35",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:17.0",
+    "score": "26-35",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Edwards"
+  },
+  {
+    "quarter": 1,
+    "time": "1:17.0",
+    "score": "26-35",
+    "team": "76ers",
+    "description": "J. Edwards misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:16.0",
+    "score": "26-35",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 1,
+    "time": "1:11.0",
+    "score": "26-35",
+    "team": "Hawks",
+    "description": "Personal foul by J. Edwards (drawn by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:11.0",
+    "score": "26-36",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "1:11.0",
+    "score": "26-37",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:54.0",
+    "score": "26-37",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:51.0",
+    "score": "26-37",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 1,
+    "time": "0:40.0",
+    "score": "26-37",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:37.0",
+    "score": "26-37",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 1,
+    "time": "0:34.0",
+    "score": "29-37",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:18.0",
+    "score": "29-37",
+    "team": "Hawks",
+    "description": "Shooting foul by A. Drummond (drawn by L. Kennard)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:18.0",
+    "score": "29-38",
+    "team": "Hawks",
+    "description": "L. Kennard makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:18.0",
+    "score": "29-38",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "0:18.0",
+    "score": "29-39",
+    "team": "Hawks",
+    "description": "L. Kennard makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "29-39",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "29-39",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "11:45.0",
+    "score": "32-39",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:30.0",
+    "score": "32-39",
+    "team": "Hawks",
+    "description": "L. Kennard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:28.0",
+    "score": "32-39",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "11:20.0",
+    "score": "35-39",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "35-41",
+    "team": "Hawks",
+    "description": "Z. Risacher makes 2-pt jump shot from 16 ft (assist by K. Wallace)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:50.0",
+    "score": "35-41",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:46.0",
+    "score": "35-41",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "10:44.0",
+    "score": "37-41",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 3 ft (assist by A. Drummond)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:44.0",
+    "score": "37-41",
+    "team": "76ers",
+    "description": "Shooting foul by K. Wallace (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:44.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "10:27.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Turnover by K. Wallace (bad pass; steal by A. Drummond)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:24.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "10:23.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "10:08.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "K. Wallace misses 3-pt jump shot from 27 ft (block by A. Drummond)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:04.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "9:59.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 4 ft (block by O. Okongwu)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:55.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Defensive rebound by K. Wallace"
+  },
+  {
+    "quarter": 2,
+    "time": "9:53.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "A. Newell misses 2-pt layup from 2 ft (block by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:50.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "9:30.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 3 ft (block by O. Okongwu)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:27.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Defensive rebound by A. Newell"
+  },
+  {
+    "quarter": 2,
+    "time": "9:22.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Z. Risacher misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:20.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "9:06.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:03.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "8:58.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Offensive foul by O. Okongwu (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:58.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "Turnover by O. Okongwu (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:58.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker enters the game for Z. Risacher"
+  },
+  {
+    "quarter": 2,
+    "time": "8:58.0",
+    "score": "38-41",
+    "team": "Hawks",
+    "description": "D. Daniels enters the game for K. Wallace"
+  },
+  {
+    "quarter": 2,
+    "time": "8:48.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "Personal foul by D. Daniels (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:35.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:30.0",
+    "score": "38-41",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "8:30.0",
+    "score": "40-41",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "8:19.0",
+    "score": "40-41",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:16.0",
+    "score": "40-41",
+    "team": "Hawks",
+    "description": "Offensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "8:13.0",
+    "score": "40-41",
+    "team": "Hawks",
+    "description": "Turnover by N. Alexander-Walker (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:13.0",
+    "score": "40-41",
+    "team": "76ers",
+    "description": "K. Lowry enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "8:13.0",
+    "score": "40-41",
+    "team": "Hawks",
+    "description": "J. Johnson enters the game for O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "7:54.0",
+    "score": "42-41",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 2 ft (assist by K. Lowry)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:45.0",
+    "score": "42-44",
+    "team": "Hawks",
+    "description": "L. Kennard makes 3-pt jump shot from 26 ft (assist by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:30.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:29.0",
+    "score": "42-44",
+    "team": "Hawks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:20.0",
+    "score": "42-44",
+    "team": "Hawks",
+    "description": "D. Daniels misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:16.0",
+    "score": "42-44",
+    "team": "Hawks",
+    "description": "Offensive rebound by L. Kennard"
+  },
+  {
+    "quarter": 2,
+    "time": "7:14.0",
+    "score": "42-44",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "42-44",
+    "team": "Hawks",
+    "description": "Loose ball foul by A. Newell (drawn by K. Lowry)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "7:04.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:03.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "7:03.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "Shooting foul by J. Johnson (drawn by J. Walker)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:03.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "J. Walker misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:03.0",
+    "score": "42-44",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:03.0",
+    "score": "43-44",
+    "team": "76ers",
+    "description": "J. Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "43-46",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt layup from 1 ft (assist by A. Newell)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:34.0",
+    "score": "45-46",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft (assist by A. Drummond)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:23.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:20.0",
+    "score": "45-46",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "45-46",
+    "team": "76ers",
+    "description": "Turnover by K. Lowry (traveling)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "45-46",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for J. Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "6:02.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "Shooting foul by K. Lowry (drawn by D. Daniels)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:02.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "D. Daniels misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:02.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:02.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "O. Okongwu enters the game for A. Newell"
+  },
+  {
+    "quarter": 2,
+    "time": "6:02.0",
+    "score": "45-46",
+    "team": "Hawks",
+    "description": "D. Daniels misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:59.0",
+    "score": "45-46",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "5:47.0",
+    "score": "47-46",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 14 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:35.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "Turnover by D. Daniels (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:35.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "V. Krejci enters the game for L. Kennard"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "47-46",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:13.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "5:05.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:03.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "5:03.0",
+    "score": "47-46",
+    "team": "76ers",
+    "description": "Loose ball foul by K. Lowry (drawn by D. Daniels)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:57.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "V. Krejci misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:53.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "Offensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "4:53.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:53.0",
+    "score": "47-46",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "4:46.0",
+    "score": "47-46",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:43.0",
+    "score": "47-46",
+    "team": "Hawks",
+    "description": "Defensive rebound by V. Krejci"
+  },
+  {
+    "quarter": 2,
+    "time": "4:38.0",
+    "score": "47-49",
+    "team": "Hawks",
+    "description": "O. Okongwu makes 3-pt jump shot from 27 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:24.0",
+    "score": "47-49",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:19.0",
+    "score": "47-49",
+    "team": "Hawks",
+    "description": "Defensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "4:17.0",
+    "score": "47-49",
+    "team": "Hawks",
+    "description": "Turnover by N. Alexander-Walker (bad pass; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "47-49",
+    "team": "76ers",
+    "description": "Personal foul by V. Krejci (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "48-49",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "48-49",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "4:14.0",
+    "score": "49-49",
+    "team": "76ers",
+    "description": "Q. Grimes makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:59.0",
+    "score": "49-49",
+    "team": "Hawks",
+    "description": "Personal foul by D. Barlow (drawn by O. Okongwu)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:50.0",
+    "score": "49-49",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt layup from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:45.0",
+    "score": "49-49",
+    "team": "Hawks",
+    "description": "Offensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 2,
+    "time": "3:45.0",
+    "score": "49-51",
+    "team": "Hawks",
+    "description": "O. Okongwu makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "49-51",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:37.0",
+    "score": "49-51",
+    "team": "Hawks",
+    "description": "Defensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "3:32.0",
+    "score": "49-51",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt layup from 3 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:28.0",
+    "score": "49-51",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Lowry"
+  },
+  {
+    "quarter": 2,
+    "time": "3:27.0",
+    "score": "49-51",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 1 ft (block by D. Daniels)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:26.0",
+    "score": "49-51",
+    "team": "Hawks",
+    "description": "Defensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 2,
+    "time": "3:09.0",
+    "score": "49-54",
+    "team": "Hawks",
+    "description": "V. Krejci makes 3-pt jump shot from 27 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:52.0",
+    "score": "49-54",
+    "team": "76ers",
+    "description": "Shooting foul by O. Okongwu (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:52.0",
+    "score": "49-54",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "2:52.0",
+    "score": "50-54",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:52.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:36.0",
+    "score": "51-54",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:31.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "2:23.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:20.0",
+    "score": "51-54",
+    "team": "Hawks",
+    "description": "Defensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 2,
+    "time": "2:12.0",
+    "score": "51-54",
+    "team": "Hawks",
+    "description": "J. Johnson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:10.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "1:57.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (traveling)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:47.0",
+    "score": "51-54",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:43.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "1:36.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:32.0",
+    "score": "51-54",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "1:32.0",
+    "score": "53-54",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "1:27.0",
+    "score": "53-56",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:08.0",
+    "score": "53-56",
+    "team": "76ers",
+    "description": "Shooting foul by J. Johnson (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:08.0",
+    "score": "54-56",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:08.0",
+    "score": "55-56",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "55-56",
+    "team": "Hawks",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "55-56",
+    "team": "Hawks",
+    "description": "Flagrant foul type 1 by J. Embiid (drawn by O. Okongwu)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "55-56",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "55-56",
+    "team": "76ers",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "55-56",
+    "team": "Hawks",
+    "description": "O. Okongwu misses flagrant free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "55-56",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "55-57",
+    "team": "Hawks",
+    "description": "O. Okongwu makes flagrant free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:33.0",
+    "score": "55-59",
+    "team": "Hawks",
+    "description": "V. Krejci makes 2-pt jump shot from 9 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:26.0",
+    "score": "55-59",
+    "team": "76ers",
+    "description": "K. Lowry misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:23.0",
+    "score": "55-59",
+    "team": "Hawks",
+    "description": "Defensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 2,
+    "time": "0:07.0",
+    "score": "55-59",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:06.0",
+    "score": "55-59",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "55-59",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "55-59",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:48.0",
+    "score": "55-59",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:45.0",
+    "score": "55-59",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 3,
+    "time": "11:34.0",
+    "score": "55-61",
+    "team": "Hawks",
+    "description": "J. Johnson makes 2-pt jump shot from 5 ft (assist by O. Okongwu)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:16.0",
+    "score": "55-61",
+    "team": "76ers",
+    "description": "Personal foul by N. Alexander-Walker (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:10.0",
+    "score": "55-61",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:05.0",
+    "score": "55-61",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "11:05.0",
+    "score": "57-61",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "10:54.0",
+    "score": "57-61",
+    "team": "Hawks",
+    "description": "Shooting foul by P. George (drawn by O. Okongwu)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:54.0",
+    "score": "57-62",
+    "team": "Hawks",
+    "description": "O. Okongwu makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:54.0",
+    "score": "57-63",
+    "team": "Hawks",
+    "description": "O. Okongwu makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:41.0",
+    "score": "59-63",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:33.0",
+    "score": "59-65",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt dunk from 1 ft (assist by O. Okongwu)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:10.0",
+    "score": "59-65",
+    "team": "Hawks",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:59.0",
+    "score": "61-65",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 2 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:47.0",
+    "score": "61-68",
+    "team": "Hawks",
+    "description": "Z. Risacher makes 3-pt jump shot from 26 ft (assist by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:35.0",
+    "score": "61-68",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:33.0",
+    "score": "61-68",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "9:32.0",
+    "score": "64-68",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 24 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "64-70",
+    "team": "Hawks",
+    "description": "J. Johnson makes 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:07.0",
+    "score": "64-70",
+    "team": "76ers",
+    "description": "Personal foul by N. Alexander-Walker (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "66-70",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 2 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:45.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:42.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Offensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 3,
+    "time": "8:40.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt dunk at rim (block by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:37.0",
+    "score": "66-70",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "8:34.0",
+    "score": "66-70",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:32.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 3,
+    "time": "8:26.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Turnover by O. Okongwu (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:09.0",
+    "score": "66-70",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:06.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Defensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:06.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Turnover by J. Johnson (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:57.0",
+    "score": "66-70",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:55.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 3,
+    "time": "7:52.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:50.0",
+    "score": "66-70",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "7:45.0",
+    "score": "66-73",
+    "team": "Hawks",
+    "description": "Z. Risacher makes 3-pt jump shot from 25 ft (assist by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:26.0",
+    "score": "66-73",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "66-73",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "68-73",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "7:15.0",
+    "score": "68-73",
+    "team": "Hawks",
+    "description": "D. Daniels misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "7:13.0",
+    "score": "68-73",
+    "team": "Hawks",
+    "description": "Offensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 3,
+    "time": "7:09.0",
+    "score": "68-76",
+    "team": "Hawks",
+    "description": "O. Okongwu makes 3-pt jump shot from 24 ft (assist by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:50.0",
+    "score": "68-76",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:48.0",
+    "score": "68-76",
+    "team": "76ers",
+    "description": "Personal foul by O. Okongwu (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:48.0",
+    "score": "68-76",
+    "team": "Hawks",
+    "description": "M. Gueye enters the game for O. Okongwu"
+  },
+  {
+    "quarter": 3,
+    "time": "6:39.0",
+    "score": "68-76",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:35.0",
+    "score": "68-76",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "6:35.0",
+    "score": "70-76",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "70-76",
+    "team": "Hawks",
+    "description": "Turnover by J. Johnson (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:23.0",
+    "score": "73-76",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:15.0",
+    "score": "73-76",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:13.0",
+    "score": "73-76",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "5:56.0",
+    "score": "73-76",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass; steal by M. Gueye)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:52.0",
+    "score": "73-76",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:48.0",
+    "score": "73-76",
+    "team": "Hawks",
+    "description": "Offensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "5:48.0",
+    "score": "73-78",
+    "team": "Hawks",
+    "description": "J. Johnson makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "5:25.0",
+    "score": "73-78",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 3 ft (block by J. Johnson)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:24.0",
+    "score": "73-78",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "5:24.0",
+    "score": "73-78",
+    "team": "76ers",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:24.0",
+    "score": "73-78",
+    "team": "Hawks",
+    "description": "V. Krejci enters the game for N. Alexander-Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "5:12.0",
+    "score": "73-80",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt jump shot from 2 ft (assist by V. Krejci)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:53.0",
+    "score": "73-80",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass; steal by Z. Risacher)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:46.0",
+    "score": "73-82",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt hook shot from 3 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "75-82",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup from 2 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "75-82",
+    "team": "76ers",
+    "description": "Shooting foul by J. Johnson (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "75-82",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "75-82",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "75-82",
+    "team": "Hawks",
+    "description": "L. Kennard enters the game for Z. Risacher"
+  },
+  {
+    "quarter": 3,
+    "time": "4:30.0",
+    "score": "75-82",
+    "team": "76ers",
+    "description": "D. Barlow misses free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "4:25.0",
+    "score": "75-82",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "4:24.0",
+    "score": "77-82",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:10.0",
+    "score": "77-84",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt layup from 1 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:52.0",
+    "score": "80-84",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:42.0",
+    "score": "80-84",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:39.0",
+    "score": "80-84",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "3:28.0",
+    "score": "80-84",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:25.0",
+    "score": "80-84",
+    "team": "Hawks",
+    "description": "Defensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "3:23.0",
+    "score": "80-86",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt layup from 1 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:14.0",
+    "score": "80-86",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "3:14.0",
+    "score": "80-86",
+    "team": "76ers",
+    "description": "J. Walker enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "3:14.0",
+    "score": "80-86",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker enters the game for D. Daniels"
+  },
+  {
+    "quarter": 3,
+    "time": "3:14.0",
+    "score": "80-86",
+    "team": "Hawks",
+    "description": "O. Okongwu enters the game for J. Johnson"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "80-86",
+    "team": "76ers",
+    "description": "Shooting foul by M. Gueye (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "81-86",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "82-86",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "82-86",
+    "team": "Hawks",
+    "description": "A. Newell enters the game for M. Gueye"
+  },
+  {
+    "quarter": 3,
+    "time": "3:04.0",
+    "score": "83-86",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 3 of 3"
+  },
+  {
+    "quarter": 3,
+    "time": "2:46.0",
+    "score": "83-89",
+    "team": "Hawks",
+    "description": "V. Krejci makes 3-pt jump shot from 25 ft (assist by A. Newell)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:28.0",
+    "score": "85-89",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 3 ft (assist by J. Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:28.0",
+    "score": "85-89",
+    "team": "76ers",
+    "description": "Shooting foul by A. Newell (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:28.0",
+    "score": "86-89",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "2:08.0",
+    "score": "86-89",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:06.0",
+    "score": "86-89",
+    "team": "Hawks",
+    "description": "Offensive rebound by A. Newell"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "86-89",
+    "team": "Hawks",
+    "description": "Turnover by A. Newell (lost ball; steal by J. Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:57.0",
+    "score": "86-89",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:55.0",
+    "score": "86-89",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "1:54.0",
+    "score": "86-89",
+    "team": "76ers",
+    "description": "Personal foul by N. Alexander-Walker (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:54.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "A. Drummond makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:54.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "A. Drummond misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:51.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "Defensive rebound by L. Kennard"
+  },
+  {
+    "quarter": 3,
+    "time": "1:41.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt jump shot from 20 ft (block by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:40.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "J. McCain enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "Turnover by O. Okongwu (lost ball; steal by J. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:21.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:16.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "Defensive rebound by V. Krejci"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "V. Krejci misses 3-pt jump shot from 25 ft (block by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "Offensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "87-89",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 6 ft (block by J. Edwards)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:58.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 3,
+    "time": "0:56.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:53.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "0:53.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "Shooting foul by L. Kennard (drawn by J. Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "J. Walker misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "87-89",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:52.0",
+    "score": "88-89",
+    "team": "76ers",
+    "description": "J. Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:36.0",
+    "score": "88-92",
+    "team": "Hawks",
+    "description": "A. Newell makes 3-pt jump shot from 24 ft (assist by O. Okongwu)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "91-92",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:24.0",
+    "score": "91-94",
+    "team": "Hawks",
+    "description": "A. Newell makes 2-pt dunk at rim (assist by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "91-94",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:01.0",
+    "score": "91-94",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "11:51.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "O. Okongwu makes 3-pt jump shot from 24 ft (assist by D. Daniels)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:32.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:29.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Defensive rebound by V. Krejci"
+  },
+  {
+    "quarter": 4,
+    "time": "11:22.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Turnover by D. Daniels (lost ball; steal by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:14.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:11.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Defensive rebound by L. Kennard"
+  },
+  {
+    "quarter": 4,
+    "time": "10:59.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Personal foul by V. Edgecombe (drawn by A. Newell)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "A. Newell misses 2-pt jump shot from 4 ft (block by J. Walker)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:46.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "10:43.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:41.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "10:33.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:31.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "10:29.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:29.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Defensive rebound by A. Newell"
+  },
+  {
+    "quarter": 4,
+    "time": "10:25.0",
+    "score": "91-97",
+    "team": "Hawks",
+    "description": "Turnover by D. Daniels (lost ball; steal by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:21.0",
+    "score": "91-97",
+    "team": "76ers",
+    "description": "Shooting foul by V. Krejci (drawn by J. Walker)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:21.0",
+    "score": "92-97",
+    "team": "76ers",
+    "description": "J. Walker makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:21.0",
+    "score": "93-97",
+    "team": "76ers",
+    "description": "J. Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:57.0",
+    "score": "93-97",
+    "team": "Hawks",
+    "description": "D. Daniels misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:53.0",
+    "score": "93-97",
+    "team": "Hawks",
+    "description": "Offensive rebound by A. Newell"
+  },
+  {
+    "quarter": 4,
+    "time": "9:52.0",
+    "score": "93-99",
+    "team": "Hawks",
+    "description": "A. Newell makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:31.0",
+    "score": "93-99",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:27.0",
+    "score": "93-99",
+    "team": "Hawks",
+    "description": "Defensive rebound by V. Krejci"
+  },
+  {
+    "quarter": 4,
+    "time": "9:20.0",
+    "score": "93-99",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:17.0",
+    "score": "93-99",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "93-99",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by D. Daniels)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:06.0",
+    "score": "93-101",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt jump shot from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:06.0",
+    "score": "93-101",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "9:06.0",
+    "score": "93-101",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "9:06.0",
+    "score": "93-101",
+    "team": "Hawks",
+    "description": "J. Johnson enters the game for V. Krejci"
+  },
+  {
+    "quarter": 4,
+    "time": "9:06.0",
+    "score": "93-101",
+    "team": "Hawks",
+    "description": "Z. Risacher enters the game for O. Okongwu"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "93-101",
+    "team": "76ers",
+    "description": "Shooting foul by Z. Risacher (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "94-101",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "95-101",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "96-101",
+    "team": "76ers",
+    "description": "P. George makes free throw 3 of 3"
+  },
+  {
+    "quarter": 4,
+    "time": "8:37.0",
+    "score": "96-103",
+    "team": "Hawks",
+    "description": "A. Newell makes 2-pt layup from 3 ft (assist by L. Kennard)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:18.0",
+    "score": "96-103",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:16.0",
+    "score": "96-103",
+    "team": "Hawks",
+    "description": "Defensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "8:08.0",
+    "score": "96-106",
+    "team": "Hawks",
+    "description": "Z. Risacher makes 3-pt jump shot from 24 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:49.0",
+    "score": "98-106",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 12 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:26.0",
+    "score": "98-106",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:24.0",
+    "score": "98-106",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "7:13.0",
+    "score": "101-106",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "101-106",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "101-106",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "101-106",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "101-106",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker enters the game for L. Kennard"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "101-106",
+    "team": "Hawks",
+    "description": "O. Okongwu enters the game for A. Newell"
+  },
+  {
+    "quarter": 4,
+    "time": "7:05.0",
+    "score": "101-106",
+    "team": "Hawks",
+    "description": "Personal foul by J. Walker (drawn by J. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:56.0",
+    "score": "101-109",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes 3-pt jump shot from 25 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:40.0",
+    "score": "103-109",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 6 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:22.0",
+    "score": "103-109",
+    "team": "Hawks",
+    "description": "Turnover by O. Okongwu (lost ball; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:18.0",
+    "score": "103-109",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (bad pass; steal by Z. Risacher)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:11.0",
+    "score": "103-109",
+    "team": "Hawks",
+    "description": "Z. Risacher misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:09.0",
+    "score": "103-109",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "6:01.0",
+    "score": "106-109",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:47.0",
+    "score": "106-109",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:43.0",
+    "score": "106-109",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "5:32.0",
+    "score": "106-109",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 7 ft (block by D. Daniels)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:30.0",
+    "score": "106-109",
+    "team": "Hawks",
+    "description": "Defensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 4,
+    "time": "5:28.0",
+    "score": "106-111",
+    "team": "Hawks",
+    "description": "Z. Risacher makes 2-pt jump shot from 22 ft (assist by D. Daniels)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "106-111",
+    "team": "76ers",
+    "description": "Personal foul by O. Okongwu (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:05.0",
+    "score": "106-111",
+    "team": "Hawks",
+    "description": "V. Krejci enters the game for Z. Risacher"
+  },
+  {
+    "quarter": 4,
+    "time": "4:56.0",
+    "score": "106-111",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:52.0",
+    "score": "106-111",
+    "team": "Hawks",
+    "description": "Defensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 4,
+    "time": "4:44.0",
+    "score": "106-111",
+    "team": "Hawks",
+    "description": "V. Krejci misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:40.0",
+    "score": "106-111",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "4:30.0",
+    "score": "106-111",
+    "team": "76ers",
+    "description": "Personal foul by V. Krejci (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:14.0",
+    "score": "109-111",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:02.0",
+    "score": "109-111",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:59.0",
+    "score": "109-111",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "3:44.0",
+    "score": "109-111",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "109-111",
+    "team": "Hawks",
+    "description": "Defensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "3:37.0",
+    "score": "109-111",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:37.0",
+    "score": "109-111",
+    "team": "Hawks",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:37.0",
+    "score": "109-111",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "3:31.0",
+    "score": "109-114",
+    "team": "Hawks",
+    "description": "O. Okongwu makes 3-pt jump shot from 25 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:11.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:06.0",
+    "score": "109-114",
+    "team": "Hawks",
+    "description": "Defensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "3:01.0",
+    "score": "109-114",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt layup from 5 ft (block by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:58.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "2:53.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by V. Krejci)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:48.0",
+    "score": "109-114",
+    "team": "Hawks",
+    "description": "Turnover by V. Krejci (lost ball; steal by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:40.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:35.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "2:35.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "2:34.0",
+    "score": "109-114",
+    "team": "Hawks",
+    "description": "Defensive rebound by O. Okongwu"
+  },
+  {
+    "quarter": 4,
+    "time": "2:24.0",
+    "score": "109-114",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:22.0",
+    "score": "109-114",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "2:04.0",
+    "score": "112-114",
+    "team": "76ers",
+    "description": "J. Embiid makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:39.0",
+    "score": "112-114",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "112-114",
+    "team": "Hawks",
+    "description": "Offensive rebound by D. Daniels"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "112-116",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "112-116",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "112-116",
+    "team": "76ers",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "114-116",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "114-116",
+    "team": "Hawks",
+    "description": "J. Johnson misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:18.0",
+    "score": "114-116",
+    "team": "Hawks",
+    "description": "Offensive rebound by J. Johnson"
+  },
+  {
+    "quarter": 4,
+    "time": "1:15.0",
+    "score": "114-118",
+    "team": "Hawks",
+    "description": "D. Daniels makes 2-pt jump shot from 9 ft (assist by J. Johnson)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:03.0",
+    "score": "117-118",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 24 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:43.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "O. Okongwu misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:41.0",
+    "score": "117-118",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "117-118",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:20.0",
+    "score": "117-118",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "0:10.0",
+    "score": "117-118",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:06.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "Defensive rebound by N. Alexander-Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "0:02.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "Personal take foul by V. Edgecombe (drawn by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:02.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:02.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "L. Kennard enters the game for D. Daniels"
+  },
+  {
+    "quarter": 4,
+    "time": "0:02.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "Atlanta full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "117-118",
+    "team": "Hawks",
+    "description": "Personal take foul by V. Edgecombe (drawn by N. Alexander-Walker)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "117-119",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "117-120",
+    "team": "Hawks",
+    "description": "N. Alexander-Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "117-120",
+    "team": "Hawks",
+    "description": "D. Daniels enters the game for L. Kennard"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "117-120",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:01.0",
+    "score": "117-120",
+    "team": "76ers",
+    "description": "K. Lowry enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-120",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:00.0",
+    "score": "117-120",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  }
+]

@@ -1,0 +1,3040 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:41.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (lost ball; steal by M. Moody)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:20.0",
+    "score": "0-0",
+    "team": "Warriors",
+    "description": "Turnover by M. Moody (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:17.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:13.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "11:12.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass; steal by G. Santos)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:08.0",
+    "score": "0-3",
+    "team": "Warriors",
+    "description": "B. Podziemski makes 3-pt jump shot from 26 ft (assist by A. Horford)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:42.0",
+    "score": "0-3",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft (block by A. Horford)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:38.0",
+    "score": "0-3",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "10:38.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "10:24.0",
+    "score": "2-3",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:22.0",
+    "score": "2-3",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "10:13.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 23 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:04.0",
+    "score": "5-3",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:00.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:54.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "9:54.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "9:52.0",
+    "score": "5-3",
+    "team": "Warriors",
+    "description": "Defensive rebound by M. Moody"
+  },
+  {
+    "quarter": 1,
+    "time": "9:45.0",
+    "score": "5-3",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:41.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "9:34.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:30.0",
+    "score": "5-3",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "9:30.0",
+    "score": "7-3",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "9:21.0",
+    "score": "7-6",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 26 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:06.0",
+    "score": "9-6",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 12 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:51.0",
+    "score": "9-6",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:48.0",
+    "score": "9-6",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "8:42.0",
+    "score": "9-6",
+    "team": "76ers",
+    "description": "D. Barlow misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:39.0",
+    "score": "9-6",
+    "team": "Warriors",
+    "description": "Defensive rebound by M. Moody"
+  },
+  {
+    "quarter": 1,
+    "time": "8:26.0",
+    "score": "9-6",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (out of bounds lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:08.0",
+    "score": "9-6",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:04.0",
+    "score": "9-6",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "8:01.0",
+    "score": "9-6",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:58.0",
+    "score": "9-6",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "7:51.0",
+    "score": "9-9",
+    "team": "Warriors",
+    "description": "A. Horford makes 3-pt jump shot from 26 ft (assist by B. Podziemski)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:33.0",
+    "score": "12-9",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 27 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:23.0",
+    "score": "12-9",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:23.0",
+    "score": "12-9",
+    "team": "Warriors",
+    "description": "W. Richard enters the game for G. Santos"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "12-9",
+    "team": "76ers",
+    "description": "Shooting foul by A. Horford (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "13-9",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "13-9",
+    "team": "Warriors",
+    "description": "P. Spencer enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "14-9",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "6:59.0",
+    "score": "14-9",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:56.0",
+    "score": "14-9",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "16-9",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:37.0",
+    "score": "16-9",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:37.0",
+    "score": "16-9",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for M. Moody"
+  },
+  {
+    "quarter": 1,
+    "time": "6:24.0",
+    "score": "16-9",
+    "team": "Warriors",
+    "description": "P. Spencer misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:21.0",
+    "score": "16-9",
+    "team": "Warriors",
+    "description": "Offensive rebound by W. Richard"
+  },
+  {
+    "quarter": 1,
+    "time": "6:16.0",
+    "score": "16-12",
+    "team": "Warriors",
+    "description": "D. Green makes 3-pt jump shot from 26 ft (assist by A. Horford)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:56.0",
+    "score": "16-12",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:54.0",
+    "score": "16-12",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "5:50.0",
+    "score": "16-15",
+    "team": "Warriors",
+    "description": "A. Horford makes 3-pt jump shot from 27 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:33.0",
+    "score": "19-15",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:18.0",
+    "score": "19-15",
+    "team": "Warriors",
+    "description": "Turnover by P. Spencer (out of bounds lost ball)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:18.0",
+    "score": "19-15",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "5:18.0",
+    "score": "19-15",
+    "team": "76ers",
+    "description": "T. Watford enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "5:18.0",
+    "score": "19-15",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for A. Horford"
+  },
+  {
+    "quarter": 1,
+    "time": "5:02.0",
+    "score": "19-15",
+    "team": "76ers",
+    "description": "T. Watford misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:59.0",
+    "score": "19-15",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "4:59.0",
+    "score": "19-15",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for D. Green"
+  },
+  {
+    "quarter": 1,
+    "time": "4:38.0",
+    "score": "19-17",
+    "team": "Warriors",
+    "description": "Q. Post makes 2-pt jump shot from 10 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:26.0",
+    "score": "19-17",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:24.0",
+    "score": "19-17",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Hield"
+  },
+  {
+    "quarter": 1,
+    "time": "4:11.0",
+    "score": "19-20",
+    "team": "Warriors",
+    "description": "W. Richard makes 3-pt jump shot from 23 ft (assist by Q. Post)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:50.0",
+    "score": "19-20",
+    "team": "76ers",
+    "description": "T. Watford misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:47.0",
+    "score": "19-20",
+    "team": "76ers",
+    "description": "Offensive rebound by T. Watford"
+  },
+  {
+    "quarter": 1,
+    "time": "3:45.0",
+    "score": "19-20",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt dunk from 3 ft (block by Q. Post)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:45.0",
+    "score": "19-20",
+    "team": "76ers",
+    "description": "Offensive rebound by T. Watford"
+  },
+  {
+    "quarter": 1,
+    "time": "3:45.0",
+    "score": "21-20",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:32.0",
+    "score": "21-22",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:19.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 5 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:10.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "Turnover by D. Melton (bad pass; steal by K. Oubre)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:04.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Q. Grimes misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:02.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "Defensive rebound by Q. Post"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "Turnover by P. Spencer (bad pass; steal by A. Drummond)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:56.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "Defensive rebound by Q. Post"
+  },
+  {
+    "quarter": 1,
+    "time": "2:47.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:41.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (lost ball; steal by D. Melton)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:29.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:24.0",
+    "score": "23-22",
+    "team": "Warriors",
+    "description": "Offensive rebound by P. Spencer"
+  },
+  {
+    "quarter": 1,
+    "time": "2:24.0",
+    "score": "23-24",
+    "team": "Warriors",
+    "description": "P. Spencer makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "J. McCain enters the game for K. Oubre"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "23-24",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for W. Richard"
+  },
+  {
+    "quarter": 1,
+    "time": "2:05.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 23 ft (block by G. Santos)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:01.0",
+    "score": "23-24",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Hield"
+  },
+  {
+    "quarter": 1,
+    "time": "1:49.0",
+    "score": "23-24",
+    "team": "Warriors",
+    "description": "Personal foul by T. Watford (drawn by Q. Post)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:37.0",
+    "score": "23-26",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 3 ft (assist by Q. Post)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:19.0",
+    "score": "25-26",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 4 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:58.0",
+    "score": "25-29",
+    "team": "Warriors",
+    "description": "Q. Post makes 3-pt jump shot from 26 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:46.0",
+    "score": "27-29",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt layup from 2 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:36.0",
+    "score": "27-32",
+    "team": "Warriors",
+    "description": "Q. Post makes 3-pt jump shot from 28 ft (assist by B. Hield)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:27.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt hook shot from 4 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:07.0",
+    "score": "29-32",
+    "team": "Warriors",
+    "description": "Offensive foul by D. Melton (drawn by J. McCain)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:07.0",
+    "score": "29-32",
+    "team": "Warriors",
+    "description": "Turnover by D. Melton (offensive foul)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:07.0",
+    "score": "29-32",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for A. Bona"
+  },
+  {
+    "quarter": 1,
+    "time": "0:07.0",
+    "score": "29-32",
+    "team": "Warriors",
+    "description": "D. Green enters the game for B. Hield"
+  },
+  {
+    "quarter": 1,
+    "time": "0:07.0",
+    "score": "29-32",
+    "team": "Warriors",
+    "description": "M. Moody enters the game for Q. Post"
+  },
+  {
+    "quarter": 1,
+    "time": "0:07.0",
+    "score": "29-32",
+    "team": "Warriors",
+    "description": "G. Payton enters the game for P. Spencer"
+  },
+  {
+    "quarter": 1,
+    "time": "0:03.0",
+    "score": "31-32",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "31-32",
+    "team": "Warriors",
+    "description": "Team misses heave shot"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "31-32",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:46.0",
+    "score": "31-32",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:44.0",
+    "score": "31-32",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "11:30.0",
+    "score": "33-32",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 3 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:09.0",
+    "score": "33-32",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:09.0",
+    "score": "33-32",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  },
+  {
+    "quarter": 2,
+    "time": "10:52.0",
+    "score": "33-32",
+    "team": "76ers",
+    "description": "T. Watford misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:48.0",
+    "score": "33-32",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "10:48.0",
+    "score": "35-32",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "10:37.0",
+    "score": "35-32",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:34.0",
+    "score": "35-32",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  },
+  {
+    "quarter": 2,
+    "time": "10:29.0",
+    "score": "37-32",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:13.0",
+    "score": "37-32",
+    "team": "Warriors",
+    "description": "Turnover by W. Richard (bad pass; steal by A. Bona)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "39-32",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "39-32",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "39-32",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for M. Moody"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "39-32",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for W. Richard"
+  },
+  {
+    "quarter": 2,
+    "time": "9:53.0",
+    "score": "39-32",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:52.0",
+    "score": "39-32",
+    "team": "Warriors",
+    "description": "Offensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 2,
+    "time": "9:43.0",
+    "score": "39-32",
+    "team": "Warriors",
+    "description": "Turnover by B. Hield (bad pass; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:38.0",
+    "score": "41-32",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk from 1 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "41-32",
+    "team": "Warriors",
+    "description": "G. Santos misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:12.0",
+    "score": "41-32",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  },
+  {
+    "quarter": 2,
+    "time": "9:07.0",
+    "score": "41-32",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:05.0",
+    "score": "41-32",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "8:57.0",
+    "score": "41-32",
+    "team": "76ers",
+    "description": "Turnover by Q. Grimes (lost ball; steal by G. Santos)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:52.0",
+    "score": "41-34",
+    "team": "Warriors",
+    "description": "B. Hield makes 2-pt layup from 2 ft (assist by G. Santos)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:34.0",
+    "score": "44-34",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 29 ft (assist by T. Watford)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:14.0",
+    "score": "44-36",
+    "team": "Warriors",
+    "description": "B. Hield makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:59.0",
+    "score": "47-36",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 26 ft (assist by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:41.0",
+    "score": "47-36",
+    "team": "Warriors",
+    "description": "B. Hield misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:38.0",
+    "score": "47-36",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "47-36",
+    "team": "76ers",
+    "description": "Shooting foul by A. Horford (drawn by T. Watford)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "47-36",
+    "team": "76ers",
+    "description": "T. Watford misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "47-36",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "47-36",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "47-36",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "47-36",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for A. Horford"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "48-36",
+    "team": "76ers",
+    "description": "T. Watford makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:08.0",
+    "score": "48-38",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt layup from 2 ft (assist by Q. Post)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:08.0",
+    "score": "48-38",
+    "team": "Warriors",
+    "description": "P. Spencer enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "48-38",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:39.0",
+    "score": "48-38",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "6:39.0",
+    "score": "50-38",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "6:21.0",
+    "score": "50-38",
+    "team": "Warriors",
+    "description": "Q. Post misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:19.0",
+    "score": "50-38",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  },
+  {
+    "quarter": 2,
+    "time": "6:13.0",
+    "score": "53-38",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:49.0",
+    "score": "53-38",
+    "team": "Warriors",
+    "description": "P. Spencer misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:46.0",
+    "score": "53-38",
+    "team": "Warriors",
+    "description": "Offensive rebound by Q. Post"
+  },
+  {
+    "quarter": 2,
+    "time": "5:37.0",
+    "score": "53-41",
+    "team": "Warriors",
+    "description": "G. Santos makes 3-pt jump shot from 23 ft (assist by B. Hield)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:23.0",
+    "score": "53-41",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:20.0",
+    "score": "53-41",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Hield"
+  },
+  {
+    "quarter": 2,
+    "time": "5:13.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "B. Hield makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for A. Bona"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for T. Watford"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "G. Payton enters the game for G. Santos"
+  },
+  {
+    "quarter": 2,
+    "time": "4:56.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:36.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "Turnover by Q. Post (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:24.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (bad pass; steal by B. Hield)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:20.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "Offensive rebound by P. Spencer"
+  },
+  {
+    "quarter": 2,
+    "time": "4:13.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:13.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "3:57.0",
+    "score": "53-43",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:54.0",
+    "score": "53-43",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 2,
+    "time": "3:39.0",
+    "score": "53-45",
+    "team": "Warriors",
+    "description": "Q. Post makes 2-pt jump shot from 22 ft (assist by G. Payton)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "53-45",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:20.0",
+    "score": "53-45",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "3:20.0",
+    "score": "53-45",
+    "team": "Warriors",
+    "description": "Loose ball foul by P. Spencer (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:20.0",
+    "score": "53-45",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for D. Melton"
+  },
+  {
+    "quarter": 2,
+    "time": "3:11.0",
+    "score": "53-45",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:08.0",
+    "score": "53-45",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "3:06.0",
+    "score": "53-45",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:03.0",
+    "score": "53-45",
+    "team": "Warriors",
+    "description": "Defensive rebound by P. Spencer"
+  },
+  {
+    "quarter": 2,
+    "time": "2:58.0",
+    "score": "53-47",
+    "team": "Warriors",
+    "description": "B. Hield makes 2-pt layup from 4 ft (assist by P. Spencer)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "53-47",
+    "team": "76ers",
+    "description": "Shooting foul by B. Podziemski (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "54-47",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "54-47",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "54-47",
+    "team": "Warriors",
+    "description": "D. Green enters the game for Q. Post"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "54-47",
+    "team": "Warriors",
+    "description": "M. Moody enters the game for P. Spencer"
+  },
+  {
+    "quarter": 2,
+    "time": "2:42.0",
+    "score": "55-47",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:33.0",
+    "score": "55-47",
+    "team": "Warriors",
+    "description": "B. Hield misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:31.0",
+    "score": "55-47",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "2:20.0",
+    "score": "55-47",
+    "team": "76ers",
+    "description": "K. Oubre misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "55-47",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 26 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "55-50",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for M. Moody"
+  },
+  {
+    "quarter": 2,
+    "time": "2:11.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "P. Spencer enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 2,
+    "time": "2:06.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "Instant Replay"
+  },
+  {
+    "quarter": 2,
+    "time": "2:06.0",
+    "score": "55-50",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "2:06.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "D. Green enters the game for D. Melton"
+  },
+  {
+    "quarter": 2,
+    "time": "2:06.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "M. Moody enters the game for Q. Post"
+  },
+  {
+    "quarter": 2,
+    "time": "2:06.0",
+    "score": "55-50",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for P. Spencer"
+  },
+  {
+    "quarter": 2,
+    "time": "1:50.0",
+    "score": "55-50",
+    "team": "76ers",
+    "description": "Turnover by K. Oubre (lost ball; steal by B. Hield)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:42.0",
+    "score": "55-52",
+    "team": "Warriors",
+    "description": "B. Podziemski makes 2-pt layup from 2 ft (assist by B. Hield)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:28.0",
+    "score": "55-52",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:25.0",
+    "score": "55-52",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "55-52",
+    "team": "Warriors",
+    "description": "Shooting foul by V. Edgecombe (drawn by B. Hield)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "55-52",
+    "team": "Warriors",
+    "description": "B. Hield misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "55-52",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "55-52",
+    "team": "76ers",
+    "description": "T. Watford enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "1:22.0",
+    "score": "55-53",
+    "team": "Warriors",
+    "description": "B. Hield makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:05.0",
+    "score": "55-53",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:02.0",
+    "score": "55-53",
+    "team": "76ers",
+    "description": "Offensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "55-53",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:49.0",
+    "score": "55-53",
+    "team": "Warriors",
+    "description": "Defensive rebound by B. Podziemski"
+  },
+  {
+    "quarter": 2,
+    "time": "0:37.0",
+    "score": "55-53",
+    "team": "Warriors",
+    "description": "B. Hield misses 2-pt layup from 5 ft (block by T. Watford)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:34.0",
+    "score": "55-53",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "55-53",
+    "team": "76ers",
+    "description": "Shooting foul by M. Moody (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "56-53",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "57-53",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "57-53",
+    "team": "76ers",
+    "description": "A. Bona enters the game for D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "57-53",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for G. Payton"
+  },
+  {
+    "quarter": 2,
+    "time": "0:31.0",
+    "score": "58-53",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 3 of 3"
+  },
+  {
+    "quarter": 2,
+    "time": "0:09.0",
+    "score": "58-55",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt layup from 4 ft (assist by D. Green)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft (block by B. Podziemski)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:44.0",
+    "score": "58-55",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:42.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "11:38.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:17.0",
+    "score": "58-55",
+    "team": "Warriors",
+    "description": "G. Santos misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:11.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "10:54.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:52.0",
+    "score": "58-55",
+    "team": "Warriors",
+    "description": "Defensive rebound by G. Santos"
+  },
+  {
+    "quarter": 3,
+    "time": "10:38.0",
+    "score": "58-55",
+    "team": "Warriors",
+    "description": "A. Horford misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:34.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "10:16.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt hook shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:14.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "10:14.0",
+    "score": "58-55",
+    "team": "76ers",
+    "description": "Shooting foul by A. Horford (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:14.0",
+    "score": "59-55",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:14.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:59.0",
+    "score": "60-55",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:56.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "9:42.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "Personal foul by M. Moody (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:33.0",
+    "score": "60-55",
+    "team": "Warriors",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:33.0",
+    "score": "60-55",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for G. Santos"
+  },
+  {
+    "quarter": 3,
+    "time": "9:18.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:16.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "9:15.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:12.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "8:58.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:43.0",
+    "score": "62-55",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:38.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "8:29.0",
+    "score": "62-55",
+    "team": "76ers",
+    "description": "Shooting foul by D. Melton (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:29.0",
+    "score": "63-55",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:29.0",
+    "score": "64-55",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:10.0",
+    "score": "64-55",
+    "team": "Warriors",
+    "description": "A. Horford misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:08.0",
+    "score": "64-55",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "7:52.0",
+    "score": "67-55",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 26 ft (assist by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:50.0",
+    "score": "67-55",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "7:50.0",
+    "score": "67-55",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for A. Horford"
+  },
+  {
+    "quarter": 3,
+    "time": "7:50.0",
+    "score": "67-55",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for M. Moody"
+  },
+  {
+    "quarter": 3,
+    "time": "7:50.0",
+    "score": "67-55",
+    "team": "Warriors",
+    "description": "P. Spencer enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 3,
+    "time": "7:32.0",
+    "score": "67-58",
+    "team": "Warriors",
+    "description": "G. Santos makes 3-pt jump shot from 24 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:21.0",
+    "score": "67-58",
+    "team": "76ers",
+    "description": "Shooting foul by B. Hield (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:21.0",
+    "score": "67-58",
+    "team": "76ers",
+    "description": "V. Edgecombe misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:21.0",
+    "score": "67-58",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "7:21.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "6:59.0",
+    "score": "68-58",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:56.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "6:35.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:30.0",
+    "score": "68-58",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 3,
+    "time": "6:24.0",
+    "score": "68-61",
+    "team": "Warriors",
+    "description": "D. Green makes 3-pt jump shot from 25 ft (assist by G. Santos)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:03.0",
+    "score": "68-61",
+    "team": "76ers",
+    "description": "Turnover by K. Oubre (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:50.0",
+    "score": "68-61",
+    "team": "Warriors",
+    "description": "D. Green misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:48.0",
+    "score": "68-61",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "5:40.0",
+    "score": "70-61",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:28.0",
+    "score": "70-61",
+    "team": "Warriors",
+    "description": "Personal foul by A. Drummond (drawn by G. Santos)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:28.0",
+    "score": "70-61",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "5:28.0",
+    "score": "70-61",
+    "team": "76ers",
+    "description": "T. Watford enters the game for K. Oubre"
+  },
+  {
+    "quarter": 3,
+    "time": "5:28.0",
+    "score": "70-61",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for D. Green"
+  },
+  {
+    "quarter": 3,
+    "time": "5:17.0",
+    "score": "70-64",
+    "team": "Warriors",
+    "description": "P. Spencer makes 3-pt jump shot from 24 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:58.0",
+    "score": "73-64",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:33.0",
+    "score": "73-64",
+    "team": "Warriors",
+    "description": "Turnover by B. Hield (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:23.0",
+    "score": "73-64",
+    "team": "Warriors",
+    "description": "Loose ball foul by G. Santos (drawn by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:23.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "A. Drummond makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:23.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "B. Podziemski enters the game for B. Hield"
+  },
+  {
+    "quarter": 3,
+    "time": "4:23.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "W. Richard enters the game for D. Melton"
+  },
+  {
+    "quarter": 3,
+    "time": "4:23.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "A. Drummond misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:20.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 3,
+    "time": "4:15.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:12.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "4:10.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "T. Watford misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:10.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "4:10.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "4:10.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:58.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "Turnover by G. Santos (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:49.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "T. Watford misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:43.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "3:36.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "Offensive foul by T. Watford (drawn by Q. Post)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:36.0",
+    "score": "74-64",
+    "team": "76ers",
+    "description": "Turnover by T. Watford (offensive foul)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:24.0",
+    "score": "74-64",
+    "team": "Warriors",
+    "description": "Turnover by W. Richard (traveling)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:16.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 5 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:00.0",
+    "score": "76-64",
+    "team": "Warriors",
+    "description": "P. Spencer misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:58.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "2:44.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "T. Watford misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:40.0",
+    "score": "76-64",
+    "team": "Warriors",
+    "description": "Defensive rebound by Q. Post"
+  },
+  {
+    "quarter": 3,
+    "time": "2:26.0",
+    "score": "76-64",
+    "team": "Warriors",
+    "description": "W. Richard misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:23.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  },
+  {
+    "quarter": 3,
+    "time": "2:21.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:16.0",
+    "score": "76-64",
+    "team": "Warriors",
+    "description": "Defensive rebound by G. Santos"
+  },
+  {
+    "quarter": 3,
+    "time": "2:10.0",
+    "score": "76-64",
+    "team": "Warriors",
+    "description": "Q. Post misses 3-pt jump shot from 26 ft (block by A. Drummond)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:07.0",
+    "score": "76-64",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Watford"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "78-64",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "78-64",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:49.0",
+    "score": "78-64",
+    "team": "Warriors",
+    "description": "Offensive rebound by P. Spencer"
+  },
+  {
+    "quarter": 3,
+    "time": "1:42.0",
+    "score": "78-67",
+    "team": "Warriors",
+    "description": "P. Spencer makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "78-67",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "78-67",
+    "team": "76ers",
+    "description": "A. Bona enters the game for A. Drummond"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "78-67",
+    "team": "76ers",
+    "description": "K. Oubre enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "78-67",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "78-67",
+    "team": "Warriors",
+    "description": "A. Horford enters the game for Q. Post"
+  },
+  {
+    "quarter": 3,
+    "time": "1:31.0",
+    "score": "78-67",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for W. Richard"
+  },
+  {
+    "quarter": 3,
+    "time": "1:26.0",
+    "score": "80-67",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "80-69",
+    "team": "Warriors",
+    "description": "A. Horford makes 2-pt jump shot from 7 ft (assist by G. Santos)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:44.0",
+    "score": "80-69",
+    "team": "76ers",
+    "description": "Personal foul by D. Melton (drawn by K. Oubre)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:44.0",
+    "score": "80-69",
+    "team": "76ers",
+    "description": "K. Oubre misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:44.0",
+    "score": "80-69",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "0:44.0",
+    "score": "81-69",
+    "team": "76ers",
+    "description": "K. Oubre makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:35.0",
+    "score": "81-69",
+    "team": "Warriors",
+    "description": "D. Melton misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:32.0",
+    "score": "81-69",
+    "team": "Warriors",
+    "description": "Offensive rebound by D. Melton"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "81-69",
+    "team": "Warriors",
+    "description": "D. Melton misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "0:31.0",
+    "score": "81-69",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "0:15.0",
+    "score": "84-69",
+    "team": "76ers",
+    "description": "K. Oubre makes 3-pt jump shot from 22 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:04.0",
+    "score": "84-71",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "84-71",
+    "team": "76ers",
+    "description": "Shooting foul by A. Horford (drawn by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "85-71",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "85-71",
+    "team": "76ers",
+    "description": "A. Bona misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:36.0",
+    "score": "85-71",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "11:13.0",
+    "score": "85-73",
+    "team": "Warriors",
+    "description": "A. Horford makes 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "87-73",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:55.0",
+    "score": "87-73",
+    "team": "Warriors",
+    "description": "Turnover by B. Podziemski (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:42.0",
+    "score": "87-73",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:41.0",
+    "score": "87-73",
+    "team": "76ers",
+    "description": "Offensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "10:41.0",
+    "score": "87-73",
+    "team": "76ers",
+    "description": "Personal foul by M. Moody (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:31.0",
+    "score": "89-73",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt jump shot from 7 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:18.0",
+    "score": "89-76",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 23 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:04.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Personal foul by A. Horford (drawn by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:52.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:47.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "9:47.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "9:47.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "9:44.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:41.0",
+    "score": "89-76",
+    "team": "76ers",
+    "description": "Offensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "9:38.0",
+    "score": "91-76",
+    "team": "76ers",
+    "description": "T. Watford makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:29.0",
+    "score": "91-76",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:26.0",
+    "score": "91-76",
+    "team": "Warriors",
+    "description": "Offensive rebound by D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "9:23.0",
+    "score": "91-76",
+    "team": "Warriors",
+    "description": "D. Melton misses 2-pt layup from 8 ft (block by T. Watford)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:23.0",
+    "score": "91-76",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:16.0",
+    "score": "91-76",
+    "team": "Warriors",
+    "description": "A. Horford misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:13.0",
+    "score": "91-76",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "9:03.0",
+    "score": "91-76",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:59.0",
+    "score": "91-76",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "91-79",
+    "team": "Warriors",
+    "description": "B. Podziemski makes 3-pt jump shot from 26 ft (assist by D. Melton)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for T. Watford"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "91-79",
+    "team": "Warriors",
+    "description": "D. Green enters the game for A. Horford"
+  },
+  {
+    "quarter": 4,
+    "time": "8:51.0",
+    "score": "91-79",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "8:39.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:36.0",
+    "score": "91-79",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "8:29.0",
+    "score": "91-79",
+    "team": "Warriors",
+    "description": "B. Podziemski misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:25.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "8:09.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "K. Oubre misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:03.0",
+    "score": "91-79",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "8:03.0",
+    "score": "93-79",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "7:50.0",
+    "score": "93-79",
+    "team": "Warriors",
+    "description": "Turnover by D. Green (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:50.0",
+    "score": "93-79",
+    "team": "Warriors",
+    "description": "B. Hield enters the game for G. Payton"
+  },
+  {
+    "quarter": 4,
+    "time": "7:25.0",
+    "score": "93-79",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt jump shot from 17 ft (block by G. Santos)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:24.0",
+    "score": "93-79",
+    "team": "Warriors",
+    "description": "Defensive rebound by D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "7:19.0",
+    "score": "93-79",
+    "team": "Warriors",
+    "description": "M. Moody misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:15.0",
+    "score": "93-79",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:09.0",
+    "score": "93-79",
+    "team": "76ers",
+    "description": "Personal foul by B. Hield (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:09.0",
+    "score": "93-79",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:09.0",
+    "score": "93-79",
+    "team": "Warriors",
+    "description": "P. Spencer enters the game for B. Podziemski"
+  },
+  {
+    "quarter": 4,
+    "time": "7:01.0",
+    "score": "95-79",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup from 3 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:44.0",
+    "score": "95-82",
+    "team": "Warriors",
+    "description": "M. Moody makes 3-pt jump shot from 24 ft (assist by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:20.0",
+    "score": "98-82",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 24 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:06.0",
+    "score": "98-82",
+    "team": "Warriors",
+    "description": "Turnover by P. Spencer (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:58.0",
+    "score": "100-82",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup from 3 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:58.0",
+    "score": "100-82",
+    "team": "Warriors",
+    "description": "Golden State full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "5:58.0",
+    "score": "100-82",
+    "team": "Warriors",
+    "description": "D. Melton enters the game for M. Moody"
+  },
+  {
+    "quarter": 4,
+    "time": "5:58.0",
+    "score": "100-82",
+    "team": "Warriors",
+    "description": "Q. Post enters the game for G. Santos"
+  },
+  {
+    "quarter": 4,
+    "time": "5:51.0",
+    "score": "100-82",
+    "team": "Warriors",
+    "description": "D. Melton misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:50.0",
+    "score": "100-82",
+    "team": "Warriors",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:50.0",
+    "score": "100-82",
+    "team": "76ers",
+    "description": "Loose ball foul by T. Maxey (drawn by D. Green)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:39.0",
+    "score": "100-82",
+    "team": "Warriors",
+    "description": "Turnover by P. Spencer (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:22.0",
+    "score": "100-82",
+    "team": "76ers",
+    "description": "D. Barlow misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:18.0",
+    "score": "100-82",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "5:18.0",
+    "score": "100-82",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (lost ball; steal by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:06.0",
+    "score": "100-84",
+    "team": "Warriors",
+    "description": "D. Melton makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:51.0",
+    "score": "103-84",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft (assist by K. Oubre)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:51.0",
+    "score": "103-84",
+    "team": "76ers",
+    "description": "T. Watford enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "4:51.0",
+    "score": "103-84",
+    "team": "Warriors",
+    "description": "G. Santos enters the game for D. Green"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "103-86",
+    "team": "Warriors",
+    "description": "P. Spencer makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:00.0",
+    "score": "105-86",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:50.0",
+    "score": "105-88",
+    "team": "Warriors",
+    "description": "G. Santos makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "108-88",
+    "team": "76ers",
+    "description": "A. Drummond makes 3-pt jump shot from 24 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:19.0",
+    "score": "108-91",
+    "team": "Warriors",
+    "description": "G. Santos makes 3-pt jump shot from 26 ft (assist by P. Spencer)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "108-91",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "108-91",
+    "team": "Warriors",
+    "description": "T. Jackson-Davis enters the game for D. Melton"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "108-91",
+    "team": "Warriors",
+    "description": "M. Leons enters the game for Q. Post"
+  },
+  {
+    "quarter": 4,
+    "time": "3:16.0",
+    "score": "108-91",
+    "team": "Warriors",
+    "description": "W. Richard enters the game for G. Santos"
+  },
+  {
+    "quarter": 4,
+    "time": "2:53.0",
+    "score": "110-91",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:37.0",
+    "score": "110-91",
+    "team": "Warriors",
+    "description": "W. Richard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:33.0",
+    "score": "110-91",
+    "team": "76ers",
+    "description": "Defensive rebound by K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "2:14.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "T. Watford makes 3-pt jump shot from 26 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:05.0",
+    "score": "113-91",
+    "team": "Warriors",
+    "description": "Turnover by P. Spencer (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:05.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "J. Broome enters the game for A. Drummond"
+  },
+  {
+    "quarter": 4,
+    "time": "2:05.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "2:05.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "J. Walker enters the game for K. Oubre"
+  },
+  {
+    "quarter": 4,
+    "time": "1:41.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 19 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:38.0",
+    "score": "113-91",
+    "team": "Warriors",
+    "description": "Defensive rebound by M. Leons"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "113-91",
+    "team": "Warriors",
+    "description": "Personal take foul by J. Walker (drawn by M. Leons)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:31.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "J. McCain enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "1:23.0",
+    "score": "113-91",
+    "team": "Warriors",
+    "description": "B. Hield misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:19.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "Turnover by T. Watford (lost ball; steal by B. Hield)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "113-91",
+    "team": "Warriors",
+    "description": "Turnover by M. Leons (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:37.0",
+    "score": "113-91",
+    "team": "76ers",
+    "description": "J. Walker misses 2-pt layup from 4 ft (block by M. Leons)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:35.0",
+    "score": "113-91",
+    "team": "Warriors",
+    "description": "Defensive rebound by W. Richard"
+  },
+  {
+    "quarter": 4,
+    "time": "0:31.0",
+    "score": "113-94",
+    "team": "Warriors",
+    "description": "P. Spencer makes 3-pt jump shot from 27 ft (assist by W. Richard)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:05.0",
+    "score": "113-94",
+    "team": "76ers",
+    "description": "Turnover by Team (shot clock)"
+  }
+]

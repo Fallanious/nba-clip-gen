@@ -1,0 +1,3005 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:47.0",
+    "score": "0-2",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 5 ft (assist by A. Davis)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:26.0",
+    "score": "2-2",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 15 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:02.0",
+    "score": "2-4",
+    "team": "Mavericks",
+    "description": "R. Nembhard makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:41.0",
+    "score": "5-4",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 25 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:14.0",
+    "score": "5-6",
+    "team": "Mavericks",
+    "description": "R. Nembhard makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:57.0",
+    "score": "5-6",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:53.0",
+    "score": "5-6",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "9:50.0",
+    "score": "5-8",
+    "team": "Mavericks",
+    "description": "P. Washington makes 2-pt dunk from 1 ft (assist by R. Nembhard)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:28.0",
+    "score": "5-8",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:27.0",
+    "score": "5-8",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "9:20.0",
+    "score": "5-10",
+    "team": "Mavericks",
+    "description": "A. Davis makes 2-pt jump shot from 7 ft (assist by R. Nembhard)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "7-10",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 4 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:53.0",
+    "score": "7-10",
+    "team": "Mavericks",
+    "description": "Personal foul by D. Barlow (drawn by A. Davis)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:48.0",
+    "score": "7-10",
+    "team": "Mavericks",
+    "description": "Turnover by A. Davis (bad pass; steal by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:33.0",
+    "score": "10-10",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 26 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:08.0",
+    "score": "10-12",
+    "team": "Mavericks",
+    "description": "M. Christie makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:55.0",
+    "score": "12-12",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:47.0",
+    "score": "12-12",
+    "team": "Mavericks",
+    "description": "Turnover by R. Nembhard (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:42.0",
+    "score": "12-12",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:38.0",
+    "score": "12-12",
+    "team": "Mavericks",
+    "description": "Defensive rebound by M. Christie"
+  },
+  {
+    "quarter": 1,
+    "time": "7:31.0",
+    "score": "12-12",
+    "team": "Mavericks",
+    "description": "Shooting foul by D. Barlow (drawn by M. Christie)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:31.0",
+    "score": "12-13",
+    "team": "Mavericks",
+    "description": "M. Christie makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:31.0",
+    "score": "12-13",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "7:31.0",
+    "score": "12-13",
+    "team": "76ers",
+    "description": "J. Walker enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "7:31.0",
+    "score": "12-14",
+    "team": "Mavericks",
+    "description": "M. Christie makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:16.0",
+    "score": "12-14",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:13.0",
+    "score": "12-14",
+    "team": "Mavericks",
+    "description": "Defensive rebound by A. Davis"
+  },
+  {
+    "quarter": 1,
+    "time": "7:11.0",
+    "score": "12-14",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 9 ft (block by Q. Grimes)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "12-14",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "12-14",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "7:08.0",
+    "score": "12-16",
+    "team": "Mavericks",
+    "description": "M. Christie makes 2-pt layup from 3 ft (assist by R. Nembhard)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:44.0",
+    "score": "12-16",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "12-16",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "12-16",
+    "team": "76ers",
+    "description": "Loose ball foul by Q. Grimes (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "12-16",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "12-16",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "6:28.0",
+    "score": "12-18",
+    "team": "Mavericks",
+    "description": "A. Davis makes 2-pt dunk from 2 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:14.0",
+    "score": "14-18",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 2 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:02.0",
+    "score": "14-18",
+    "team": "Mavericks",
+    "description": "Turnover by C. Flagg (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:58.0",
+    "score": "14-18",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:55.0",
+    "score": "14-18",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 1,
+    "time": "5:52.0",
+    "score": "14-20",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt dunk from 1 ft (assist by N. Marshall)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:35.0",
+    "score": "14-20",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:32.0",
+    "score": "14-20",
+    "team": "Mavericks",
+    "description": "Defensive rebound by R. Nembhard"
+  },
+  {
+    "quarter": 1,
+    "time": "5:19.0",
+    "score": "14-20",
+    "team": "Mavericks",
+    "description": "A. Davis misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:17.0",
+    "score": "14-20",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "5:09.0",
+    "score": "16-20",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:56.0",
+    "score": "16-20",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:51.0",
+    "score": "16-20",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 1,
+    "time": "4:47.0",
+    "score": "18-20",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:29.0",
+    "score": "18-22",
+    "team": "Mavericks",
+    "description": "M. Christie makes 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:02.0",
+    "score": "20-22",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:44.0",
+    "score": "20-24",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 20 ft (assist by M. Christie)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:27.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "J. Walker misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:26.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "3:23.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "20-24",
+    "team": "Mavericks",
+    "description": "Loose ball foul by R. Nembhard (drawn by J. Walker)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "20-24",
+    "team": "Mavericks",
+    "description": "K. Thompson enters the game for M. Christie"
+  },
+  {
+    "quarter": 1,
+    "time": "3:21.0",
+    "score": "20-24",
+    "team": "Mavericks",
+    "description": "B. Williams enters the game for R. Nembhard"
+  },
+  {
+    "quarter": 1,
+    "time": "3:14.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "J. Walker misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:11.0",
+    "score": "20-24",
+    "team": "Mavericks",
+    "description": "Defensive rebound by B. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "3:05.0",
+    "score": "20-24",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:03.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "2:59.0",
+    "score": "20-24",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:56.0",
+    "score": "20-26",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "P. George enters the game for T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "J. McCain enters the game for J. Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "20-26",
+    "team": "Mavericks",
+    "description": "D. Gafford enters the game for A. Davis"
+  },
+  {
+    "quarter": 1,
+    "time": "2:55.0",
+    "score": "20-26",
+    "team": "Mavericks",
+    "description": "P. Washington enters the game for C. Flagg"
+  },
+  {
+    "quarter": 1,
+    "time": "2:42.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:39.0",
+    "score": "20-26",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "2:19.0",
+    "score": "20-26",
+    "team": "Mavericks",
+    "description": "D. Gafford misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:15.0",
+    "score": "20-26",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "2:07.0",
+    "score": "22-26",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "22-29",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:33.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:22.0",
+    "score": "24-29",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:19.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 1,
+    "time": "1:15.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 4 ft (block by P. Washington)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:15.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "1:09.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:06.0",
+    "score": "24-29",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "0:57.0",
+    "score": "24-29",
+    "team": "Mavericks",
+    "description": "D. Gafford misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:55.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "Shooting foul by D. Gafford (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "J. Embiid misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "24-29",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "0:49.0",
+    "score": "25-29",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:40.0",
+    "score": "25-31",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "0:32.0",
+    "score": "25-31",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:32.0",
+    "score": "25-31",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "0:17.0",
+    "score": "25-31",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:16.0",
+    "score": "25-31",
+    "team": "Mavericks",
+    "description": "Offensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "0:16.0",
+    "score": "25-33",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "27-33",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "27-33",
+    "team": "76ers",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "12:00.0",
+    "score": "27-33",
+    "team": "76ers",
+    "description": "Violation by Team (delay of game)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:54.0",
+    "score": "27-33",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:41.0",
+    "score": "27-35",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 2-pt layup from 3 ft (assist by B. Williams)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:25.0",
+    "score": "27-35",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:24.0",
+    "score": "27-35",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "11:20.0",
+    "score": "27-35",
+    "team": "Mavericks",
+    "description": "Turnover by B. Williams (bad pass; steal by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:16.0",
+    "score": "29-35",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:07.0",
+    "score": "29-35",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:07.0",
+    "score": "29-35",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "11:01.0",
+    "score": "29-35",
+    "team": "76ers",
+    "description": "Personal foul by C. Martin (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "31-35",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 4 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "31-35",
+    "team": "76ers",
+    "description": "Shooting foul by D. Gafford (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "31-35",
+    "team": "Mavericks",
+    "description": "A. Davis enters the game for D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "10:49.0",
+    "score": "32-35",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "10:32.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "Personal foul by P. George (drawn by C. Martin)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:26.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "P. Washington misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:23.0",
+    "score": "32-35",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "10:06.0",
+    "score": "32-35",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:03.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "Defensive rebound by B. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "9:58.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:54.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "Offensive rebound by A. Davis"
+  },
+  {
+    "quarter": 2,
+    "time": "9:54.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "A. Davis misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "9:53.0",
+    "score": "32-35",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "9:49.0",
+    "score": "34-35",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:29.0",
+    "score": "34-35",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 4 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:27.0",
+    "score": "34-35",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "9:15.0",
+    "score": "37-35",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:14.0",
+    "score": "37-35",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "9:14.0",
+    "score": "37-35",
+    "team": "Mavericks",
+    "description": "C. Flagg enters the game for P. Washington"
+  },
+  {
+    "quarter": 2,
+    "time": "9:14.0",
+    "score": "37-35",
+    "team": "Mavericks",
+    "description": "R. Nembhard enters the game for B. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "8:55.0",
+    "score": "37-37",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:42.0",
+    "score": "40-37",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:18.0",
+    "score": "40-37",
+    "team": "Mavericks",
+    "description": "Turnover by A. Davis (bad pass; steal by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:12.0",
+    "score": "40-37",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:09.0",
+    "score": "40-37",
+    "team": "76ers",
+    "description": "Offensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "8:08.0",
+    "score": "40-37",
+    "team": "76ers",
+    "description": "Shooting foul by A. Davis (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:08.0",
+    "score": "41-37",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "8:08.0",
+    "score": "41-37",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for C. Martin"
+  },
+  {
+    "quarter": 2,
+    "time": "8:08.0",
+    "score": "42-37",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "7:59.0",
+    "score": "42-37",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 12 ft (block by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:59.0",
+    "score": "42-37",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "7:49.0",
+    "score": "44-37",
+    "team": "76ers",
+    "description": "P. George makes 2-pt dunk from 2 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:49.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "7:49.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "M. Christie enters the game for K. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "7:35.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "Personal foul by J. McCain (drawn by A. Davis)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:30.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "M. Christie misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "44-37",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "7:19.0",
+    "score": "44-37",
+    "team": "76ers",
+    "description": "Personal foul by C. Flagg (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:04.0",
+    "score": "44-37",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:58.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 2,
+    "time": "6:52.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "44-37",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "6:45.0",
+    "score": "44-37",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt jump shot from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "44-37",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:31.0",
+    "score": "44-39",
+    "team": "Mavericks",
+    "description": "A. Davis makes 2-pt hook shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:16.0",
+    "score": "44-39",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "44-39",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "44-39",
+    "team": "Mavericks",
+    "description": "Loose ball foul by C. Flagg (drawn by P. George)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "45-39",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "45-39",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "45-39",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "6:14.0",
+    "score": "46-39",
+    "team": "76ers",
+    "description": "P. George makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:55.0",
+    "score": "46-42",
+    "team": "Mavericks",
+    "description": "M. Christie makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:45.0",
+    "score": "46-42",
+    "team": "76ers",
+    "description": "Shooting foul by M. Christie (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:45.0",
+    "score": "47-42",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:45.0",
+    "score": "48-42",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "48-42",
+    "team": "Mavericks",
+    "description": "Shooting foul by Q. Grimes (drawn by A. Davis)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "48-43",
+    "team": "Mavericks",
+    "description": "A. Davis makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:26.0",
+    "score": "48-43",
+    "team": "Mavericks",
+    "description": "A. Davis misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:24.0",
+    "score": "48-43",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "5:15.0",
+    "score": "48-43",
+    "team": "76ers",
+    "description": "Offensive foul by A. Drummond (drawn by N. Marshall)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:15.0",
+    "score": "48-43",
+    "team": "76ers",
+    "description": "Turnover by A. Drummond (offensive foul)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:15.0",
+    "score": "48-43",
+    "team": "Mavericks",
+    "description": "P. Washington enters the game for N. Marshall"
+  },
+  {
+    "quarter": 2,
+    "time": "5:00.0",
+    "score": "48-43",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:58.0",
+    "score": "48-43",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "4:58.0",
+    "score": "48-43",
+    "team": "76ers",
+    "description": "Loose ball foul by A. Drummond (drawn by A. Davis)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:51.0",
+    "score": "48-45",
+    "team": "Mavericks",
+    "description": "A. Davis makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:40.0",
+    "score": "50-45",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:31.0",
+    "score": "50-45",
+    "team": "Mavericks",
+    "description": "Turnover by A. Davis (lost ball; steal by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:20.0",
+    "score": "50-45",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:18.0",
+    "score": "50-45",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "4:16.0",
+    "score": "52-45",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:53.0",
+    "score": "52-45",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:51.0",
+    "score": "52-45",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "3:49.0",
+    "score": "54-45",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 2 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:41.0",
+    "score": "54-48",
+    "team": "Mavericks",
+    "description": "R. Nembhard makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:15.0",
+    "score": "54-48",
+    "team": "76ers",
+    "description": "Shooting foul by M. Christie (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:15.0",
+    "score": "55-48",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:15.0",
+    "score": "55-48",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "3:15.0",
+    "score": "55-48",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "3:15.0",
+    "score": "56-48",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:56.0",
+    "score": "56-48",
+    "team": "Mavericks",
+    "description": "P. Washington misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:54.0",
+    "score": "56-48",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "2:45.0",
+    "score": "59-48",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 27 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:25.0",
+    "score": "59-48",
+    "team": "Mavericks",
+    "description": "A. Davis misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "59-48",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "59-48",
+    "team": "76ers",
+    "description": "Loose ball foul by D. Barlow (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "59-49",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:24.0",
+    "score": "59-50",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:12.0",
+    "score": "59-50",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:10.0",
+    "score": "59-50",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "2:08.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:08.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "Shooting foul by P. Washington (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:08.0",
+    "score": "61-50",
+    "team": "76ers",
+    "description": "V. Edgecombe misses free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "2:04.0",
+    "score": "61-50",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 2,
+    "time": "1:55.0",
+    "score": "61-50",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt layup from 4 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:55.0",
+    "score": "61-50",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:44.0",
+    "score": "61-52",
+    "team": "Mavericks",
+    "description": "R. Nembhard makes 2-pt jump shot from 12 ft (assist by M. Christie)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "61-52",
+    "team": "76ers",
+    "description": "Shooting foul by A. Davis (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "62-52",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "62-52",
+    "team": "76ers",
+    "description": "A. Bona enters the game for D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "1:24.0",
+    "score": "63-52",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:12.0",
+    "score": "63-54",
+    "team": "Mavericks",
+    "description": "P. Washington makes 2-pt jump shot from 8 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:12.0",
+    "score": "63-54",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. Embiid (drawn by P. Washington)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:12.0",
+    "score": "63-55",
+    "team": "Mavericks",
+    "description": "P. Washington makes free throw 1 of 1"
+  },
+  {
+    "quarter": 2,
+    "time": "1:00.0",
+    "score": "65-55",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:43.0",
+    "score": "65-57",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt layup from 2 ft (assist by A. Davis)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:26.0",
+    "score": "68-57",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 23 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:04.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "68-57",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "K. Thompson enters the game for P. Washington"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "M. Christie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:44.0",
+    "score": "68-57",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:42.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "11:23.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:20.0",
+    "score": "68-57",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "11:08.0",
+    "score": "68-57",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:06.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "Defensive rebound by R. Nembhard"
+  },
+  {
+    "quarter": 3,
+    "time": "10:59.0",
+    "score": "68-57",
+    "team": "Mavericks",
+    "description": "Shooting foul by P. George (drawn by P. Washington)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:59.0",
+    "score": "68-58",
+    "team": "Mavericks",
+    "description": "P. Washington makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:59.0",
+    "score": "68-58",
+    "team": "Mavericks",
+    "description": "P. Washington misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "10:57.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "10:38.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:35.0",
+    "score": "68-58",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "10:28.0",
+    "score": "68-58",
+    "team": "Mavericks",
+    "description": "M. Christie misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "68-58",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "10:17.0",
+    "score": "71-58",
+    "team": "76ers",
+    "description": "D. Barlow makes 3-pt jump shot from 24 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:51.0",
+    "score": "71-60",
+    "team": "Mavericks",
+    "description": "M. Christie makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:31.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "Turnover by P. George (traveling)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:19.0",
+    "score": "71-60",
+    "team": "Mavericks",
+    "description": "Turnover by R. Nembhard (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:05.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:01.0",
+    "score": "71-60",
+    "team": "Mavericks",
+    "description": "Defensive rebound by A. Davis"
+  },
+  {
+    "quarter": 3,
+    "time": "8:47.0",
+    "score": "71-60",
+    "team": "Mavericks",
+    "description": "Turnover by C. Flagg (lost ball; steal by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:44.0",
+    "score": "71-60",
+    "team": "76ers",
+    "description": "Shooting foul by A. Davis (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:44.0",
+    "score": "72-60",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:44.0",
+    "score": "73-60",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:31.0",
+    "score": "73-62",
+    "team": "Mavericks",
+    "description": "M. Christie makes 2-pt jump shot from 17 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:17.0",
+    "score": "73-62",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (lost ball; steal by P. Washington)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:17.0",
+    "score": "73-62",
+    "team": "Mavericks",
+    "description": "K. Thompson enters the game for R. Nembhard"
+  },
+  {
+    "quarter": 3,
+    "time": "8:08.0",
+    "score": "73-62",
+    "team": "Mavericks",
+    "description": "Turnover by M. Christie (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:05.0",
+    "score": "75-62",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:55.0",
+    "score": "75-62",
+    "team": "Mavericks",
+    "description": "M. Christie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:52.0",
+    "score": "75-62",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "7:44.0",
+    "score": "75-62",
+    "team": "76ers",
+    "description": "D. Barlow misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:41.0",
+    "score": "75-62",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 3,
+    "time": "7:26.0",
+    "score": "75-62",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:24.0",
+    "score": "75-62",
+    "team": "Mavericks",
+    "description": "Offensive rebound by A. Davis"
+  },
+  {
+    "quarter": 3,
+    "time": "7:24.0",
+    "score": "75-64",
+    "team": "Mavericks",
+    "description": "A. Davis makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:03.0",
+    "score": "75-64",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:02.0",
+    "score": "75-64",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "75-66",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 2-pt layup from 1 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "75-66",
+    "team": "76ers",
+    "description": "Violation by Team (def goaltending)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "75-66",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "75-66",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "6:58.0",
+    "score": "75-66",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for M. Christie"
+  },
+  {
+    "quarter": 3,
+    "time": "6:47.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:31.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "A. Davis misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:28.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "6:23.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:20.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "Defensive rebound by K. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "6:10.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:08.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 3,
+    "time": "5:58.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:55.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "5:50.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:48.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "Offensive rebound by K. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "5:47.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "P. Washington misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:44.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "5:34.0",
+    "score": "77-66",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:32.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "5:32.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "B. Williams enters the game for C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "5:21.0",
+    "score": "77-66",
+    "team": "Mavericks",
+    "description": "Shooting foul by D. Barlow (drawn by P. Washington)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:21.0",
+    "score": "77-67",
+    "team": "Mavericks",
+    "description": "P. Washington makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:21.0",
+    "score": "77-68",
+    "team": "Mavericks",
+    "description": "P. Washington makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:06.0",
+    "score": "77-68",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (bad pass; steal by K. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:00.0",
+    "score": "77-68",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:59.0",
+    "score": "77-68",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "4:56.0",
+    "score": "80-68",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:43.0",
+    "score": "80-70",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt jump shot from 5 ft (assist by B. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:27.0",
+    "score": "80-70",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:25.0",
+    "score": "80-70",
+    "team": "Mavericks",
+    "description": "Defensive rebound by A. Davis"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-70",
+    "team": "Mavericks",
+    "description": "Shooting foul by V. Edgecombe (drawn by B. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-71",
+    "team": "Mavericks",
+    "description": "B. Williams makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-71",
+    "team": "76ers",
+    "description": "A. Bona enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-71",
+    "team": "76ers",
+    "description": "P. George enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-71",
+    "team": "76ers",
+    "description": "J. McCain enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-71",
+    "team": "Mavericks",
+    "description": "D. Gafford enters the game for A. Davis"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "80-72",
+    "team": "Mavericks",
+    "description": "B. Williams makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:12.0",
+    "score": "82-72",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:52.0",
+    "score": "82-72",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:49.0",
+    "score": "82-72",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "3:46.0",
+    "score": "82-72",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:42.0",
+    "score": "82-72",
+    "team": "Mavericks",
+    "description": "Defensive rebound by B. Williams"
+  },
+  {
+    "quarter": 3,
+    "time": "3:38.0",
+    "score": "82-74",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt jump shot from 5 ft (assist by K. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:18.0",
+    "score": "84-74",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:05.0",
+    "score": "84-74",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:02.0",
+    "score": "84-74",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "2:52.0",
+    "score": "84-74",
+    "team": "76ers",
+    "description": "A. Bona misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "84-74",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Bona"
+  },
+  {
+    "quarter": 3,
+    "time": "2:49.0",
+    "score": "86-74",
+    "team": "76ers",
+    "description": "A. Bona makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "Personal foul by P. George (drawn by B. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "86-74",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for A. Bona"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "86-74",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for T. Maxey"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "C. Flagg enters the game for K. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "J. Hardy enters the game for P. Washington"
+  },
+  {
+    "quarter": 3,
+    "time": "2:31.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:28.0",
+    "score": "86-74",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "2:27.0",
+    "score": "86-74",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by D. Gafford)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:23.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:23.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "2:21.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "J. Hardy misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:18.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "Offensive rebound by B. Williams"
+  },
+  {
+    "quarter": 3,
+    "time": "2:17.0",
+    "score": "86-74",
+    "team": "Mavericks",
+    "description": "Personal foul by Q. Grimes (drawn by D. Gafford)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:17.0",
+    "score": "86-75",
+    "team": "Mavericks",
+    "description": "D. Gafford makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:17.0",
+    "score": "86-76",
+    "team": "Mavericks",
+    "description": "D. Gafford makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:06.0",
+    "score": "86-76",
+    "team": "76ers",
+    "description": "Turnover by P. George (bad pass; steal by D. Gafford)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:01.0",
+    "score": "86-76",
+    "team": "Mavericks",
+    "description": "J. Hardy misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:58.0",
+    "score": "86-76",
+    "team": "Mavericks",
+    "description": "Offensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "1:53.0",
+    "score": "86-76",
+    "team": "Mavericks",
+    "description": "Turnover by J. Hardy (traveling)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:38.0",
+    "score": "88-76",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:21.0",
+    "score": "88-78",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt jump shot from 16 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:02.0",
+    "score": "88-78",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:00.0",
+    "score": "88-78",
+    "team": "Mavericks",
+    "description": "Defensive rebound by J. Hardy"
+  },
+  {
+    "quarter": 3,
+    "time": "0:51.0",
+    "score": "88-81",
+    "team": "Mavericks",
+    "description": "J. Hardy makes 3-pt jump shot from 25 ft (assist by B. Williams)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:33.0",
+    "score": "90-81",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 2 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:14.0",
+    "score": "90-81",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. McCain (drawn by J. Hardy)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:14.0",
+    "score": "90-82",
+    "team": "Mavericks",
+    "description": "J. Hardy makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:14.0",
+    "score": "90-83",
+    "team": "Mavericks",
+    "description": "J. Hardy makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "92-83",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:52.0",
+    "score": "92-83",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. McCain (drawn by B. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:52.0",
+    "score": "92-84",
+    "team": "Mavericks",
+    "description": "B. Williams makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:52.0",
+    "score": "92-85",
+    "team": "Mavericks",
+    "description": "B. Williams makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "11:41.0",
+    "score": "92-85",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:38.0",
+    "score": "92-85",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 4,
+    "time": "11:23.0",
+    "score": "92-87",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk from 2 ft (assist by J. Hardy)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:08.0",
+    "score": "94-87",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "94-89",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "94-89",
+    "team": "Mavericks",
+    "description": "Shooting foul by D. Barlow (drawn by N. Marshall)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "94-89",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "94-90",
+    "team": "Mavericks",
+    "description": "N. Marshall makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "96-90",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:30.0",
+    "score": "96-90",
+    "team": "Mavericks",
+    "description": "B. Williams misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:28.0",
+    "score": "96-90",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "10:26.0",
+    "score": "96-90",
+    "team": "Mavericks",
+    "description": "J. Hardy misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:23.0",
+    "score": "96-90",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "10:13.0",
+    "score": "96-90",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:11.0",
+    "score": "96-90",
+    "team": "Mavericks",
+    "description": "Defensive rebound by B. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "10:03.0",
+    "score": "96-92",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt jump shot from 10 ft (assist by B. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:40.0",
+    "score": "98-92",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:23.0",
+    "score": "98-92",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:22.0",
+    "score": "98-92",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:22.0",
+    "score": "98-92",
+    "team": "Mavericks",
+    "description": "A. Davis enters the game for C. Flagg"
+  },
+  {
+    "quarter": 4,
+    "time": "9:22.0",
+    "score": "98-92",
+    "team": "Mavericks",
+    "description": "P. Washington enters the game for D. Gafford"
+  },
+  {
+    "quarter": 4,
+    "time": "9:19.0",
+    "score": "98-92",
+    "team": "Mavericks",
+    "description": "Turnover by J. Hardy (bad pass; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:08.0",
+    "score": "98-92",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt hook shot from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "98-92",
+    "team": "Mavericks",
+    "description": "Defensive rebound by A. Davis"
+  },
+  {
+    "quarter": 4,
+    "time": "9:00.0",
+    "score": "98-94",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:38.0",
+    "score": "100-94",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:28.0",
+    "score": "100-94",
+    "team": "Mavericks",
+    "description": "Turnover by B. Williams (lost ball; steal by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:26.0",
+    "score": "102-94",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt dunk from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:15.0",
+    "score": "102-94",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:12.0",
+    "score": "102-94",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "8:00.0",
+    "score": "102-94",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:57.0",
+    "score": "102-94",
+    "team": "Mavericks",
+    "description": "Defensive rebound by B. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "7:55.0",
+    "score": "102-96",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:33.0",
+    "score": "102-96",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by B. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:33.0",
+    "score": "102-96",
+    "team": "Mavericks",
+    "description": "Personal foul by D. Barlow (drawn by P. Washington)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:33.0",
+    "score": "102-96",
+    "team": "76ers",
+    "description": "A. Bona enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "7:33.0",
+    "score": "102-96",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "7:33.0",
+    "score": "102-96",
+    "team": "Mavericks",
+    "description": "M. Christie enters the game for J. Hardy"
+  },
+  {
+    "quarter": 4,
+    "time": "7:24.0",
+    "score": "102-96",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 2 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:21.0",
+    "score": "102-96",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:06.0",
+    "score": "105-96",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:50.0",
+    "score": "105-96",
+    "team": "Mavericks",
+    "description": "B. Williams misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:48.0",
+    "score": "105-96",
+    "team": "Mavericks",
+    "description": "Offensive rebound by A. Davis"
+  },
+  {
+    "quarter": 4,
+    "time": "6:47.0",
+    "score": "105-96",
+    "team": "Mavericks",
+    "description": "A. Davis misses 2-pt layup at rim (block by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:46.0",
+    "score": "105-96",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "6:37.0",
+    "score": "107-96",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:36.0",
+    "score": "107-96",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "6:36.0",
+    "score": "107-96",
+    "team": "Mavericks",
+    "description": "C. Flagg enters the game for N. Marshall"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "107-98",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:01.0",
+    "score": "107-98",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:58.0",
+    "score": "107-98",
+    "team": "Mavericks",
+    "description": "Defensive rebound by B. Williams"
+  },
+  {
+    "quarter": 4,
+    "time": "5:46.0",
+    "score": "107-98",
+    "team": "Mavericks",
+    "description": "A. Davis misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:44.0",
+    "score": "107-98",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "5:36.0",
+    "score": "110-98",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 23 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:21.0",
+    "score": "110-101",
+    "team": "Mavericks",
+    "description": "P. Washington makes 3-pt jump shot from 24 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:55.0",
+    "score": "112-101",
+    "team": "76ers",
+    "description": "P. George makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:37.0",
+    "score": "112-101",
+    "team": "Mavericks",
+    "description": "M. Christie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:34.0",
+    "score": "112-101",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "4:17.0",
+    "score": "115-101",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:54.0",
+    "score": "115-101",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:51.0",
+    "score": "115-101",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 4,
+    "time": "3:49.0",
+    "score": "115-101",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass; steal by P. Washington)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "115-104",
+    "team": "Mavericks",
+    "description": "M. Christie makes 3-pt jump shot from 26 ft (assist by P. Washington)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:29.0",
+    "score": "115-104",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:29.0",
+    "score": "115-104",
+    "team": "Mavericks",
+    "description": "Defensive rebound by A. Davis"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "115-106",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup from 2 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "115-106",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:23.0",
+    "score": "115-106",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "3:04.0",
+    "score": "115-106",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:01.0",
+    "score": "115-106",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 4,
+    "time": "2:48.0",
+    "score": "115-108",
+    "team": "Mavericks",
+    "description": "A. Davis makes 2-pt dunk from 1 ft (assist by B. Williams)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:23.0",
+    "score": "115-108",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by A. Davis)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:20.0",
+    "score": "115-108",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 2 ft (block by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:19.0",
+    "score": "115-108",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "115-108",
+    "team": "Mavericks",
+    "description": "A. Davis misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:04.0",
+    "score": "115-108",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "1:49.0",
+    "score": "118-108",
+    "team": "76ers",
+    "description": "Q. Grimes makes 3-pt jump shot from 27 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:32.0",
+    "score": "118-108",
+    "team": "Mavericks",
+    "description": "Turnover by M. Christie (traveling)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:13.0",
+    "score": "120-108",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:04.0",
+    "score": "120-108",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:02.0",
+    "score": "120-108",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "0:44.0",
+    "score": "123-108",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 3-pt jump shot from 29 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:33.0",
+    "score": "123-108",
+    "team": "Mavericks",
+    "description": "B. Williams misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:30.0",
+    "score": "123-108",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "0:07.0",
+    "score": "123-108",
+    "team": "76ers",
+    "description": "Turnover by Team (shot clock)"
+  }
+]

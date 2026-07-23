@@ -1,0 +1,3341 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:45.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:43.0",
+    "score": "0-0",
+    "team": "Bulls",
+    "description": "Defensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 1,
+    "time": "11:36.0",
+    "score": "0-0",
+    "team": "Bulls",
+    "description": "J. Giddey misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:34.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "11:23.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:21.0",
+    "score": "0-0",
+    "team": "Bulls",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "11:01.0",
+    "score": "0-0",
+    "team": "Bulls",
+    "description": "I. Okoro misses 2-pt hook shot from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:58.0",
+    "score": "0-0",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "10:51.0",
+    "score": "3-0",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:32.0",
+    "score": "3-0",
+    "team": "Bulls",
+    "description": "Turnover by J. Giddey (lost ball; steal by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:28.0",
+    "score": "5-0",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt dunk from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:18.0",
+    "score": "5-0",
+    "team": "Bulls",
+    "description": "Turnover by M. Buzelis (lost ball; steal by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:14.0",
+    "score": "5-0",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:11.0",
+    "score": "5-0",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 1,
+    "time": "10:06.0",
+    "score": "5-0",
+    "team": "Bulls",
+    "description": "C. White misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:03.0",
+    "score": "5-0",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "9:54.0",
+    "score": "7-0",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 16 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:39.0",
+    "score": "7-2",
+    "team": "Bulls",
+    "description": "M. Buzelis makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:24.0",
+    "score": "7-2",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:22.0",
+    "score": "7-2",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "9:22.0",
+    "score": "9-2",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "9:22.0",
+    "score": "9-2",
+    "team": "Bulls",
+    "description": "Chicago full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "9:10.0",
+    "score": "9-2",
+    "team": "Bulls",
+    "description": "Turnover by J. Giddey (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "9-2",
+    "team": "76ers",
+    "description": "Shooting foul by M. Buzelis (drawn by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "10-2",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "9:04.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "V. Edgecombe makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:41.0",
+    "score": "11-2",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:38.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "8:34.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:34.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "8:34.0",
+    "score": "11-2",
+    "team": "76ers",
+    "description": "Shooting foul by C. White (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:34.0",
+    "score": "12-2",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:34.0",
+    "score": "13-2",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:23.0",
+    "score": "13-2",
+    "team": "Bulls",
+    "description": "Personal foul by T. Maxey (drawn by I. Okoro)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:15.0",
+    "score": "13-2",
+    "team": "Bulls",
+    "description": "C. White misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:11.0",
+    "score": "13-2",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "8:04.0",
+    "score": "13-2",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (bad pass)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:50.0",
+    "score": "13-5",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 makes 3-pt jump shot from 26 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:29.0",
+    "score": "13-5",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:25.0",
+    "score": "13-5",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "7:25.0",
+    "score": "15-5",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "7:20.0",
+    "score": "15-8",
+    "team": "Bulls",
+    "description": "M. Buzelis makes 3-pt jump shot from 25 ft (assist by C. White)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:06.0",
+    "score": "15-8",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:03.0",
+    "score": "15-8",
+    "team": "Bulls",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "6:52.0",
+    "score": "15-8",
+    "team": "Bulls",
+    "description": "Personal foul by D. Barlow (drawn by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:52.0",
+    "score": "15-8",
+    "team": "Bulls",
+    "description": "Z. Collins enters the game for N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 1,
+    "time": "6:52.0",
+    "score": "15-8",
+    "team": "Bulls",
+    "description": "K. Huerter enters the game for C. White"
+  },
+  {
+    "quarter": 1,
+    "time": "6:45.0",
+    "score": "15-11",
+    "team": "Bulls",
+    "description": "J. Giddey makes 3-pt jump shot from 25 ft (assist by K. Huerter)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:26.0",
+    "score": "15-11",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by J. Giddey)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:22.0",
+    "score": "15-13",
+    "team": "Bulls",
+    "description": "Z. Collins makes 2-pt layup from 1 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:22.0",
+    "score": "15-13",
+    "team": "Bulls",
+    "description": "Shooting foul by V. Edgecombe (drawn by Z. Collins)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:22.0",
+    "score": "15-13",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 1,
+    "time": "6:22.0",
+    "score": "15-13",
+    "team": "76ers",
+    "description": "J. Walker enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "6:22.0",
+    "score": "15-14",
+    "team": "Bulls",
+    "description": "Z. Collins makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "6:10.0",
+    "score": "17-14",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt hook shot from 8 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:10.0",
+    "score": "17-14",
+    "team": "76ers",
+    "description": "Shooting foul by M. Buzelis (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:10.0",
+    "score": "17-14",
+    "team": "Bulls",
+    "description": "J. Smith enters the game for M. Buzelis"
+  },
+  {
+    "quarter": 1,
+    "time": "6:10.0",
+    "score": "18-14",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "5:55.0",
+    "score": "18-17",
+    "team": "Bulls",
+    "description": "Z. Collins makes 3-pt jump shot from 25 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:38.0",
+    "score": "20-17",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:30.0",
+    "score": "20-20",
+    "team": "Bulls",
+    "description": "J. Smith makes 3-pt jump shot from 27 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:12.0",
+    "score": "20-20",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:07.0",
+    "score": "20-20",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Giddey"
+  },
+  {
+    "quarter": 1,
+    "time": "4:55.0",
+    "score": "20-22",
+    "team": "Bulls",
+    "description": "Z. Collins makes 2-pt layup from 1 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:43.0",
+    "score": "22-22",
+    "team": "76ers",
+    "description": "P. George makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:43.0",
+    "score": "22-22",
+    "team": "76ers",
+    "description": "Shooting foul by J. Giddey (drawn by P. George)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:43.0",
+    "score": "22-22",
+    "team": "Bulls",
+    "description": "A. Dosunmu enters the game for J. Giddey"
+  },
+  {
+    "quarter": 1,
+    "time": "4:43.0",
+    "score": "22-22",
+    "team": "Bulls",
+    "description": "T. Jones enters the game for I. Okoro"
+  },
+  {
+    "quarter": 1,
+    "time": "4:43.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "P. George makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "4:24.0",
+    "score": "23-22",
+    "team": "Bulls",
+    "description": "K. Huerter misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:21.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "4:14.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:10.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "4:05.0",
+    "score": "23-22",
+    "team": "76ers",
+    "description": "Turnover by J. Embiid (lost ball; steal by T. Jones)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:59.0",
+    "score": "23-24",
+    "team": "Bulls",
+    "description": "K. Huerter makes 2-pt layup from 1 ft (assist by T. Jones)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "Offensive rebound by J. Walker"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "Shooting foul by Z. Collins (drawn by J. Walker)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "J. Walker misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "23-24",
+    "team": "76ers",
+    "description": "A. Drummond enters the game for J. Embiid"
+  },
+  {
+    "quarter": 1,
+    "time": "3:42.0",
+    "score": "24-24",
+    "team": "76ers",
+    "description": "J. Walker makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "3:28.0",
+    "score": "24-26",
+    "team": "Bulls",
+    "description": "Z. Collins makes 2-pt layup from 1 ft (assist by J. Smith)"
+  },
+  {
+    "quarter": 1,
+    "time": "3:08.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:02.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "3:02.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "A. Drummond misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "3:02.0",
+    "score": "24-26",
+    "team": "Bulls",
+    "description": "Defensive rebound by Z. Collins"
+  },
+  {
+    "quarter": 1,
+    "time": "2:50.0",
+    "score": "24-26",
+    "team": "Bulls",
+    "description": "K. Huerter misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "24-26",
+    "team": "Bulls",
+    "description": "Offensive rebound by J. Smith"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "24-26",
+    "team": "Bulls",
+    "description": "J. Smith misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 11 ft (block by J. Smith)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:43.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for P. George"
+  },
+  {
+    "quarter": 1,
+    "time": "2:24.0",
+    "score": "24-26",
+    "team": "76ers",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:14.0",
+    "score": "24-28",
+    "team": "Bulls",
+    "description": "T. Jones makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "1:55.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:50.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 1,
+    "time": "1:47.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:44.0",
+    "score": "24-28",
+    "team": "76ers",
+    "description": "Offensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "1:44.0",
+    "score": "26-28",
+    "team": "76ers",
+    "description": "A. Drummond makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "1:24.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "J. Smith misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:21.0",
+    "score": "26-28",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "1:12.0",
+    "score": "26-28",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:06.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "Defensive rebound by Z. Collins"
+  },
+  {
+    "quarter": 1,
+    "time": "1:02.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "Personal foul by A. Drummond (drawn by K. Huerter)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:02.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 enters the game for Z. Collins"
+  },
+  {
+    "quarter": 1,
+    "time": "1:02.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "C. White enters the game for K. Huerter"
+  },
+  {
+    "quarter": 1,
+    "time": "0:55.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "A. Dosunmu misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:53.0",
+    "score": "26-28",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 1,
+    "time": "0:32.0",
+    "score": "26-28",
+    "team": "76ers",
+    "description": "A. Drummond misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:27.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "Defensive rebound by A. Dosunmu"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "C. White misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:25.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "Offensive rebound by J. Smith"
+  },
+  {
+    "quarter": 1,
+    "time": "0:22.0",
+    "score": "26-28",
+    "team": "Bulls",
+    "description": "Personal foul by V. Edgecombe (drawn by J. Smith)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:22.0",
+    "score": "26-29",
+    "team": "Bulls",
+    "description": "J. Smith makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:22.0",
+    "score": "26-29",
+    "team": "76ers",
+    "description": "P. George enters the game for A. Drummond"
+  },
+  {
+    "quarter": 1,
+    "time": "0:22.0",
+    "score": "26-29",
+    "team": "Bulls",
+    "description": "I. Okoro enters the game for T. Jones"
+  },
+  {
+    "quarter": 1,
+    "time": "0:22.0",
+    "score": "26-30",
+    "team": "Bulls",
+    "description": "J. Smith makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:02.0",
+    "score": "28-30",
+    "team": "76ers",
+    "description": "Q. Grimes makes 2-pt layup from 1 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "28-30",
+    "team": "Bulls",
+    "description": "C. White misses 3-pt jump shot from 34 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "28-30",
+    "team": "Bulls",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:48.0",
+    "score": "28-32",
+    "team": "Bulls",
+    "description": "J. Smith makes 2-pt layup from 2 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:28.0",
+    "score": "28-32",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:26.0",
+    "score": "28-32",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 2,
+    "time": "11:12.0",
+    "score": "28-32",
+    "team": "Bulls",
+    "description": "J. Giddey misses 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:11.0",
+    "score": "28-32",
+    "team": "Bulls",
+    "description": "Offensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "11:09.0",
+    "score": "28-34",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 makes 2-pt dunk from 1 ft (assist by A. Dosunmu)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:56.0",
+    "score": "28-34",
+    "team": "76ers",
+    "description": "Turnover by D. Barlow (traveling)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:56.0",
+    "score": "28-34",
+    "team": "Bulls",
+    "description": "M. Buzelis enters the game for J. Smith"
+  },
+  {
+    "quarter": 2,
+    "time": "10:41.0",
+    "score": "28-36",
+    "team": "Bulls",
+    "description": "J. Giddey makes 2-pt layup from 1 ft (assist by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:32.0",
+    "score": "30-36",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:19.0",
+    "score": "30-38",
+    "team": "Bulls",
+    "description": "A. Dosunmu makes 2-pt layup from 1 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "30-38",
+    "team": "76ers",
+    "description": "Turnover by V. Edgecombe (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "10:10.0",
+    "score": "30-38",
+    "team": "76ers",
+    "description": "J. Edwards enters the game for D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "9:57.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "A. Dosunmu makes 3-pt jump shot from 22 ft (assist by C. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:55.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "9:55.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 2,
+    "time": "9:44.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:40.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Giddey"
+  },
+  {
+    "quarter": 2,
+    "time": "9:24.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "J. Giddey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "9:22.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "9:13.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft (block by M. Buzelis)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:10.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "Defensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 2,
+    "time": "9:08.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "Turnover by A. Dosunmu (bad pass; steal by J. McCain)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:03.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 3 ft (block by M. Buzelis)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:03.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:03.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "K. Huerter enters the game for A. Dosunmu"
+  },
+  {
+    "quarter": 2,
+    "time": "8:54.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:51.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "8:48.0",
+    "score": "30-41",
+    "team": "76ers",
+    "description": "J. Edwards misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:45.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "Defensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 2,
+    "time": "8:40.0",
+    "score": "30-41",
+    "team": "Bulls",
+    "description": "Turnover by M. Buzelis (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "8:24.0",
+    "score": "32-41",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:17.0",
+    "score": "32-43",
+    "team": "Bulls",
+    "description": "K. Huerter makes 2-pt layup from 1 ft (assist by C. White)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "34-43",
+    "team": "76ers",
+    "description": "J. McCain makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "34-43",
+    "team": "Bulls",
+    "description": "T. Jones enters the game for C. White"
+  },
+  {
+    "quarter": 2,
+    "time": "7:39.0",
+    "score": "34-43",
+    "team": "Bulls",
+    "description": "Turnover by J. Giddey (bad pass; steal by J. Edwards)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:29.0",
+    "score": "34-43",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt layup from 2 ft (block by M. Buzelis)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:26.0",
+    "score": "34-43",
+    "team": "Bulls",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "7:23.0",
+    "score": "34-43",
+    "team": "Bulls",
+    "description": "Personal foul by J. Edwards (drawn by M. Buzelis)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:23.0",
+    "score": "34-43",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Drummond"
+  },
+  {
+    "quarter": 2,
+    "time": "7:23.0",
+    "score": "34-43",
+    "team": "Bulls",
+    "description": "Chicago full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "7:23.0",
+    "score": "34-43",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 2,
+    "time": "7:16.0",
+    "score": "34-43",
+    "team": "Bulls",
+    "description": "T. Jones misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:12.0",
+    "score": "34-43",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "7:03.0",
+    "score": "36-43",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft (assist by J. Edwards)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "J. Giddey misses 2-pt jump shot from 6 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:49.0",
+    "score": "36-43",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "36-43",
+    "team": "76ers",
+    "description": "Turnover by T. Maxey (out of bounds lost ball)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:44.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "I. Okoro enters the game for M. Buzelis"
+  },
+  {
+    "quarter": 2,
+    "time": "6:35.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "Shooting foul by T. Maxey (drawn by K. Huerter)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:35.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "K. Huerter misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:35.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "6:35.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "Z. Collins enters the game for N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "6:35.0",
+    "score": "36-43",
+    "team": "Bulls",
+    "description": "K. Huerter misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "6:33.0",
+    "score": "36-43",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 2,
+    "time": "6:16.0",
+    "score": "39-43",
+    "team": "76ers",
+    "description": "J. Embiid makes 3-pt jump shot from 26 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:55.0",
+    "score": "39-43",
+    "team": "Bulls",
+    "description": "Z. Collins misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:54.0",
+    "score": "39-43",
+    "team": "Bulls",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "5:54.0",
+    "score": "39-43",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Edwards"
+  },
+  {
+    "quarter": 2,
+    "time": "5:43.0",
+    "score": "39-43",
+    "team": "Bulls",
+    "description": "Z. Collins misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:40.0",
+    "score": "39-43",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "5:40.0",
+    "score": "39-43",
+    "team": "Bulls",
+    "description": "A. Dosunmu enters the game for J. Giddey"
+  },
+  {
+    "quarter": 2,
+    "time": "5:18.0",
+    "score": "39-43",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:16.0",
+    "score": "39-43",
+    "team": "Bulls",
+    "description": "Defensive rebound by Z. Collins"
+  },
+  {
+    "quarter": 2,
+    "time": "5:03.0",
+    "score": "39-45",
+    "team": "Bulls",
+    "description": "I. Okoro makes 2-pt layup from 1 ft (assist by A. Dosunmu)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:49.0",
+    "score": "39-45",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "39-45",
+    "team": "Bulls",
+    "description": "Defensive rebound by Z. Collins"
+  },
+  {
+    "quarter": 2,
+    "time": "4:41.0",
+    "score": "39-45",
+    "team": "Bulls",
+    "description": "K. Huerter misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:36.0",
+    "score": "39-45",
+    "team": "Bulls",
+    "description": "Offensive rebound by A. Dosunmu"
+  },
+  {
+    "quarter": 2,
+    "time": "4:34.0",
+    "score": "39-45",
+    "team": "Bulls",
+    "description": "K. Huerter misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:34.0",
+    "score": "39-45",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "39-45",
+    "team": "76ers",
+    "description": "Shooting foul by I. Okoro (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "39-45",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "39-45",
+    "team": "76ers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "39-45",
+    "team": "Bulls",
+    "description": "C. White enters the game for T. Jones"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "40-45",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:27.0",
+    "score": "41-45",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:01.0",
+    "score": "41-45",
+    "team": "Bulls",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:43.0",
+    "score": "43-45",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:34.0",
+    "score": "43-45",
+    "team": "Bulls",
+    "description": "Z. Collins misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:32.0",
+    "score": "43-45",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "43-45",
+    "team": "76ers",
+    "description": "Shooting foul by K. Huerter (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "44-45",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "44-45",
+    "team": "Bulls",
+    "description": "M. Buzelis enters the game for Z. Collins"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "44-45",
+    "team": "Bulls",
+    "description": "J. Giddey enters the game for A. Dosunmu"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "44-45",
+    "team": "Bulls",
+    "description": "T. Jones enters the game for K. Huerter"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "44-45",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 enters the game for I. Okoro"
+  },
+  {
+    "quarter": 2,
+    "time": "3:23.0",
+    "score": "45-45",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:58.0",
+    "score": "45-45",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:56.0",
+    "score": "45-45",
+    "team": "Bulls",
+    "description": "Offensive rebound by T. Jones"
+  },
+  {
+    "quarter": 2,
+    "time": "2:51.0",
+    "score": "45-45",
+    "team": "Bulls",
+    "description": "J. Giddey misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:49.0",
+    "score": "45-45",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "2:41.0",
+    "score": "48-45",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 27 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:21.0",
+    "score": "48-45",
+    "team": "Bulls",
+    "description": "Shooting foul by J. McCain (drawn by J. Giddey)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:21.0",
+    "score": "48-46",
+    "team": "Bulls",
+    "description": "J. Giddey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:21.0",
+    "score": "48-47",
+    "team": "Bulls",
+    "description": "J. Giddey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "2:08.0",
+    "score": "50-47",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:59.0",
+    "score": "50-47",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:59.0",
+    "score": "50-47",
+    "team": "Bulls",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "C. White makes 2-pt layup from 2 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:36.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:36.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "Defensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 2,
+    "time": "1:19.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "T. Jones misses 3-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:16.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "1:04.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "J. McCain misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:01.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "Offensive rebound by P. George"
+  },
+  {
+    "quarter": 2,
+    "time": "1:00.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "D. Barlow misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:58.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 2,
+    "time": "0:55.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "J. Giddey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:53.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "Offensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 2,
+    "time": "0:53.0",
+    "score": "50-49",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "0:53.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:53.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "V. Edgecombe enters the game for J. McCain"
+  },
+  {
+    "quarter": 2,
+    "time": "0:33.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:32.0",
+    "score": "50-49",
+    "team": "76ers",
+    "description": "Offensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 2,
+    "time": "0:32.0",
+    "score": "52-49",
+    "team": "76ers",
+    "description": "D. Barlow makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "0:21.0",
+    "score": "52-49",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:19.0",
+    "score": "52-49",
+    "team": "76ers",
+    "description": "Defensive rebound by T. Maxey"
+  },
+  {
+    "quarter": 2,
+    "time": "0:05.0",
+    "score": "52-49",
+    "team": "76ers",
+    "description": "Personal take foul by T. Jones (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "52-49",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:00.0",
+    "score": "52-49",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Giddey"
+  },
+  {
+    "quarter": 3,
+    "time": "11:37.0",
+    "score": "52-52",
+    "team": "Bulls",
+    "description": "M. Buzelis makes 3-pt jump shot from 23 ft (assist by C. White)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:21.0",
+    "score": "55-52",
+    "team": "76ers",
+    "description": "J. Embiid makes 3-pt jump shot from 26 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:11.0",
+    "score": "55-52",
+    "team": "Bulls",
+    "description": "Personal foul by P. George (drawn by M. Buzelis)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:56.0",
+    "score": "55-52",
+    "team": "Bulls",
+    "description": "I. Okoro misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:53.0",
+    "score": "55-52",
+    "team": "Bulls",
+    "description": "Offensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "10:53.0",
+    "score": "55-52",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "10:53.0",
+    "score": "55-52",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "10:48.0",
+    "score": "57-52",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:28.0",
+    "score": "57-52",
+    "team": "Bulls",
+    "description": "J. Giddey misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "57-52",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "10:24.0",
+    "score": "60-52",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by P. George)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:23.0",
+    "score": "60-52",
+    "team": "Bulls",
+    "description": "Chicago full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "9:57.0",
+    "score": "60-55",
+    "team": "Bulls",
+    "description": "I. Okoro makes 3-pt jump shot from 26 ft (assist by C. White)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:44.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:41.0",
+    "score": "60-55",
+    "team": "Bulls",
+    "description": "Defensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 3,
+    "time": "9:26.0",
+    "score": "60-55",
+    "team": "Bulls",
+    "description": "J. Giddey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:24.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "9:10.0",
+    "score": "60-55",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:07.0",
+    "score": "60-55",
+    "team": "Bulls",
+    "description": "Defensive rebound by I. Okoro"
+  },
+  {
+    "quarter": 3,
+    "time": "9:04.0",
+    "score": "60-57",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 makes 2-pt layup from 1 ft (assist by I. Okoro)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:43.0",
+    "score": "62-57",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:36.0",
+    "score": "62-57",
+    "team": "Bulls",
+    "description": "C. White misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:34.0",
+    "score": "62-57",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "8:25.0",
+    "score": "62-57",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:23.0",
+    "score": "62-57",
+    "team": "Bulls",
+    "description": "Defensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 3,
+    "time": "8:09.0",
+    "score": "62-57",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:08.0",
+    "score": "62-57",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "8:08.0",
+    "score": "62-57",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 3,
+    "time": "8:08.0",
+    "score": "62-57",
+    "team": "Bulls",
+    "description": "J. Smith enters the game for M. Buzelis"
+  },
+  {
+    "quarter": 3,
+    "time": "7:53.0",
+    "score": "62-57",
+    "team": "76ers",
+    "description": "Shooting foul by N. Vu\u010devi\u0107 (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:53.0",
+    "score": "63-57",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:53.0",
+    "score": "64-57",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:40.0",
+    "score": "64-57",
+    "team": "Bulls",
+    "description": "Turnover by C. White (discontinued dribble)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:28.0",
+    "score": "64-57",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:25.0",
+    "score": "64-57",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "7:23.0",
+    "score": "67-57",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 24 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:06.0",
+    "score": "67-57",
+    "team": "Bulls",
+    "description": "Shooting foul by Q. Grimes (drawn by C. White)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:06.0",
+    "score": "67-58",
+    "team": "Bulls",
+    "description": "C. White makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "7:06.0",
+    "score": "67-58",
+    "team": "Bulls",
+    "description": "Z. Collins enters the game for N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 3,
+    "time": "7:06.0",
+    "score": "67-59",
+    "team": "Bulls",
+    "description": "C. White makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "6:48.0",
+    "score": "67-59",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 5 ft (block by Z. Collins)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:46.0",
+    "score": "67-59",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 3,
+    "time": "6:46.0",
+    "score": "67-59",
+    "team": "Bulls",
+    "description": "K. Huerter enters the game for C. White"
+  },
+  {
+    "quarter": 3,
+    "time": "6:35.0",
+    "score": "67-62",
+    "team": "Bulls",
+    "description": "K. Huerter makes 3-pt jump shot from 25 ft (assist by I. Okoro)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:20.0",
+    "score": "67-62",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:18.0",
+    "score": "67-62",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 3,
+    "time": "6:13.0",
+    "score": "67-65",
+    "team": "Bulls",
+    "description": "I. Okoro makes 3-pt jump shot from 24 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "67-65",
+    "team": "76ers",
+    "description": "Shooting foul by Z. Collins (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "68-65",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "68-65",
+    "team": "76ers",
+    "description": "J. Walker enters the game for P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "68-65",
+    "team": "Bulls",
+    "description": "A. Dosunmu enters the game for J. Giddey"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "68-65",
+    "team": "Bulls",
+    "description": "T. Jones enters the game for I. Okoro"
+  },
+  {
+    "quarter": 3,
+    "time": "5:57.0",
+    "score": "69-65",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "5:33.0",
+    "score": "69-68",
+    "team": "Bulls",
+    "description": "J. Smith makes 3-pt jump shot from 25 ft (assist by A. Dosunmu)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:19.0",
+    "score": "71-68",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 22 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:07.0",
+    "score": "71-68",
+    "team": "Bulls",
+    "description": "Turnover by K. Huerter (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:55.0",
+    "score": "73-68",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt jump shot from 10 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:39.0",
+    "score": "73-70",
+    "team": "Bulls",
+    "description": "K. Huerter makes 2-pt jump shot from 9 ft (assist by J. Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:29.0",
+    "score": "73-70",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "4:29.0",
+    "score": "73-70",
+    "team": "76ers",
+    "description": "J. McCain enters the game for V. Edgecombe"
+  },
+  {
+    "quarter": 3,
+    "time": "4:17.0",
+    "score": "73-70",
+    "team": "76ers",
+    "description": "Q. Grimes misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:15.0",
+    "score": "73-70",
+    "team": "Bulls",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "4:15.0",
+    "score": "73-70",
+    "team": "76ers",
+    "description": "Loose ball foul by J. Embiid (drawn by Z. Collins)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:00.0",
+    "score": "73-72",
+    "team": "Bulls",
+    "description": "T. Jones makes 2-pt layup from 2 ft (assist by J. Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:39.0",
+    "score": "76-72",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 28 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:24.0",
+    "score": "76-72",
+    "team": "Bulls",
+    "description": "Shooting foul by J. Embiid (drawn by Z. Collins)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:24.0",
+    "score": "76-73",
+    "team": "Bulls",
+    "description": "Z. Collins makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:24.0",
+    "score": "76-74",
+    "team": "Bulls",
+    "description": "Z. Collins makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:00.0",
+    "score": "76-74",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:55.0",
+    "score": "76-74",
+    "team": "Bulls",
+    "description": "Defensive rebound by T. Jones"
+  },
+  {
+    "quarter": 3,
+    "time": "2:42.0",
+    "score": "76-74",
+    "team": "Bulls",
+    "description": "A. Dosunmu misses 2-pt layup from 6 ft (block by J. Walker)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:38.0",
+    "score": "76-74",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "2:23.0",
+    "score": "76-74",
+    "team": "76ers",
+    "description": "Turnover by J. Walker (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "76-74",
+    "team": "Bulls",
+    "description": "Personal foul by J. McCain (drawn by T. Jones)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "76-75",
+    "team": "Bulls",
+    "description": "T. Jones makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "76-75",
+    "team": "76ers",
+    "description": "A. Bona enters the game for J. Embiid"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "76-75",
+    "team": "76ers",
+    "description": "P. George enters the game for J. Walker"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "76-75",
+    "team": "Bulls",
+    "description": "T. Jones misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "2:09.0",
+    "score": "76-75",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "1:56.0",
+    "score": "76-75",
+    "team": "76ers",
+    "description": "P. George misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:54.0",
+    "score": "76-75",
+    "team": "Bulls",
+    "description": "Defensive rebound by A. Dosunmu"
+  },
+  {
+    "quarter": 3,
+    "time": "1:49.0",
+    "score": "76-77",
+    "team": "Bulls",
+    "description": "T. Jones makes 2-pt layup from 1 ft (assist by A. Dosunmu)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:29.0",
+    "score": "76-77",
+    "team": "76ers",
+    "description": "A. Bona misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:26.0",
+    "score": "76-77",
+    "team": "Bulls",
+    "description": "Defensive rebound by T. Jones"
+  },
+  {
+    "quarter": 3,
+    "time": "1:23.0",
+    "score": "76-77",
+    "team": "Bulls",
+    "description": "J. Smith misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "76-77",
+    "team": "76ers",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:22.0",
+    "score": "76-77",
+    "team": "Bulls",
+    "description": "Loose ball foul by K. Huerter (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:01.0",
+    "score": "79-77",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by Q. Grimes)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:51.0",
+    "score": "79-80",
+    "team": "Bulls",
+    "description": "A. Dosunmu makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:37.0",
+    "score": "82-80",
+    "team": "76ers",
+    "description": "T. Maxey makes 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "82-80",
+    "team": "Bulls",
+    "description": "Shooting foul by A. Bona (drawn by T. Jones)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "82-81",
+    "team": "Bulls",
+    "description": "T. Jones makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "82-81",
+    "team": "Bulls",
+    "description": "I. Okoro enters the game for J. Smith"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "82-81",
+    "team": "Bulls",
+    "description": "T. Jones misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:27.0",
+    "score": "82-81",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 3,
+    "time": "0:12.0",
+    "score": "85-81",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:06.0",
+    "score": "85-81",
+    "team": "Bulls",
+    "description": "T. Jones misses 2-pt layup from 4 ft (block by T. Maxey)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:03.0",
+    "score": "85-81",
+    "team": "76ers",
+    "description": "Defensive rebound by J. McCain"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "85-81",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:02.0",
+    "score": "85-81",
+    "team": "Bulls",
+    "description": "Defensive rebound by Z. Collins"
+  },
+  {
+    "quarter": 4,
+    "time": "11:50.0",
+    "score": "88-81",
+    "team": "76ers",
+    "description": "P. George makes 3-pt jump shot from 26 ft (assist by V. Edgecombe)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:27.0",
+    "score": "88-83",
+    "team": "Bulls",
+    "description": "C. White makes 2-pt jump shot from 9 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:07.0",
+    "score": "88-83",
+    "team": "76ers",
+    "description": "P. George misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:04.0",
+    "score": "88-83",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Giddey"
+  },
+  {
+    "quarter": 4,
+    "time": "11:01.0",
+    "score": "88-83",
+    "team": "Bulls",
+    "description": "Turnover by J. Giddey (lost ball; steal by J. McCain)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:56.0",
+    "score": "88-83",
+    "team": "76ers",
+    "description": "J. McCain misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:55.0",
+    "score": "88-83",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "88-83",
+    "team": "Bulls",
+    "description": "Shooting foul by J. McCain (drawn by C. White)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "88-84",
+    "team": "Bulls",
+    "description": "C. White makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "88-84",
+    "team": "76ers",
+    "description": "D. Barlow enters the game for J. McCain"
+  },
+  {
+    "quarter": 4,
+    "time": "10:47.0",
+    "score": "88-85",
+    "team": "Bulls",
+    "description": "C. White makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:36.0",
+    "score": "88-85",
+    "team": "76ers",
+    "description": "Shooting foul by J. Smith (drawn by A. Bona)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:36.0",
+    "score": "88-85",
+    "team": "76ers",
+    "description": "A. Bona misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:36.0",
+    "score": "88-85",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "10:36.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "A. Bona makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "10:13.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "Turnover by J. Giddey (bad pass; steal by D. Barlow)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:08.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:05.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 4,
+    "time": "9:43.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 misses 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:41.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "9:26.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:23.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "9:14.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "C. White misses 3-pt jump shot from 28 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "Defensive rebound by D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "9:10.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "T. Maxey enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "8:52.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "Turnover by P. George (lost ball; steal by A. Dosunmu)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "Personal foul by P. George (drawn by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:46.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "K. Huerter enters the game for J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "8:37.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "J. Giddey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:35.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "Defensive rebound by P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "8:31.0",
+    "score": "89-85",
+    "team": "76ers",
+    "description": "P. George misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:29.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "Defensive rebound by K. Huerter"
+  },
+  {
+    "quarter": 4,
+    "time": "8:28.0",
+    "score": "89-85",
+    "team": "Bulls",
+    "description": "Shooting foul by T. Maxey (drawn by J. Giddey)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:28.0",
+    "score": "89-86",
+    "team": "Bulls",
+    "description": "J. Giddey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:28.0",
+    "score": "89-86",
+    "team": "Bulls",
+    "description": "T. Jones enters the game for C. White"
+  },
+  {
+    "quarter": 4,
+    "time": "8:28.0",
+    "score": "89-86",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "8:28.0",
+    "score": "89-87",
+    "team": "Bulls",
+    "description": "J. Giddey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "8:15.0",
+    "score": "91-87",
+    "team": "76ers",
+    "description": "V. Edgecombe makes 2-pt layup from 1 ft (assist by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:03.0",
+    "score": "91-87",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "8:01.0",
+    "score": "91-87",
+    "team": "76ers",
+    "description": "Defensive rebound by A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "7:53.0",
+    "score": "91-87",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:52.0",
+    "score": "91-87",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "7:52.0",
+    "score": "91-87",
+    "team": "Bulls",
+    "description": "Loose ball foul by N. Vu\u010devi\u0107 (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:52.0",
+    "score": "91-87",
+    "team": "Bulls",
+    "description": "M. Buzelis enters the game for J. Giddey"
+  },
+  {
+    "quarter": 4,
+    "time": "7:50.0",
+    "score": "91-87",
+    "team": "76ers",
+    "description": "Personal foul by M. Buzelis (drawn by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:50.0",
+    "score": "91-87",
+    "team": "Bulls",
+    "description": "Z. Collins enters the game for N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "7:35.0",
+    "score": "91-87",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:33.0",
+    "score": "91-87",
+    "team": "Bulls",
+    "description": "Defensive rebound by T. Jones"
+  },
+  {
+    "quarter": 4,
+    "time": "7:23.0",
+    "score": "91-90",
+    "team": "Bulls",
+    "description": "Z. Collins makes 3-pt jump shot from 22 ft (assist by T. Jones)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:03.0",
+    "score": "93-90",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 3 ft (assist by D. Barlow)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-90",
+    "team": "Bulls",
+    "description": "M. Buzelis misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-90",
+    "team": "Bulls",
+    "description": "Offensive rebound by M. Buzelis"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-90",
+    "team": "Bulls",
+    "description": "Shooting foul by P. George (drawn by M. Buzelis)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-91",
+    "team": "Bulls",
+    "description": "M. Buzelis makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-91",
+    "team": "76ers",
+    "description": "J. Embiid enters the game for A. Bona"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-91",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for P. George"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "93-92",
+    "team": "Bulls",
+    "description": "M. Buzelis makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:28.0",
+    "score": "93-92",
+    "team": "76ers",
+    "description": "Personal foul by M. Buzelis (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "93-92",
+    "team": "76ers",
+    "description": "Personal foul by A. Dosunmu (drawn by T. Maxey)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "93-92",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "93-92",
+    "team": "76ers",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "94-92",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:19.0",
+    "score": "95-92",
+    "team": "76ers",
+    "description": "T. Maxey makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:09.0",
+    "score": "95-94",
+    "team": "Bulls",
+    "description": "T. Jones makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:50.0",
+    "score": "95-94",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:48.0",
+    "score": "95-94",
+    "team": "Bulls",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:48.0",
+    "score": "95-94",
+    "team": "Bulls",
+    "description": "Chicago full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "5:37.0",
+    "score": "95-94",
+    "team": "Bulls",
+    "description": "Turnover by M. Buzelis (out of bounds lost ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "95-94",
+    "team": "76ers",
+    "description": "Shooting foul by M. Buzelis (drawn by D. Barlow)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "95-94",
+    "team": "76ers",
+    "description": "D. Barlow misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "95-94",
+    "team": "76ers",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "95-94",
+    "team": "76ers",
+    "description": "P. George enters the game for Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "95-94",
+    "team": "Bulls",
+    "description": "J. Giddey enters the game for M. Buzelis"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "95-94",
+    "team": "Bulls",
+    "description": "C. White enters the game for A. Dosunmu"
+  },
+  {
+    "quarter": 4,
+    "time": "5:26.0",
+    "score": "96-94",
+    "team": "76ers",
+    "description": "D. Barlow makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:11.0",
+    "score": "96-96",
+    "team": "Bulls",
+    "description": "C. White makes 2-pt layup from 1 ft (assist by Z. Collins)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:01.0",
+    "score": "96-96",
+    "team": "76ers",
+    "description": "Personal foul by K. Huerter (drawn by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:01.0",
+    "score": "97-96",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "5:01.0",
+    "score": "97-96",
+    "team": "76ers",
+    "description": "Q. Grimes enters the game for D. Barlow"
+  },
+  {
+    "quarter": 4,
+    "time": "5:01.0",
+    "score": "98-96",
+    "team": "76ers",
+    "description": "J. Embiid makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:45.0",
+    "score": "98-96",
+    "team": "Bulls",
+    "description": "K. Huerter misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:42.0",
+    "score": "98-96",
+    "team": "76ers",
+    "description": "Defensive rebound by Q. Grimes"
+  },
+  {
+    "quarter": 4,
+    "time": "4:32.0",
+    "score": "100-96",
+    "team": "76ers",
+    "description": "T. Maxey makes 2-pt layup from 1 ft (assist by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:32.0",
+    "score": "100-96",
+    "team": "Bulls",
+    "description": "Chicago full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "4:32.0",
+    "score": "100-96",
+    "team": "Bulls",
+    "description": "A. Dosunmu enters the game for Z. Collins"
+  },
+  {
+    "quarter": 4,
+    "time": "4:32.0",
+    "score": "100-96",
+    "team": "Bulls",
+    "description": "J. Smith enters the game for K. Huerter"
+  },
+  {
+    "quarter": 4,
+    "time": "4:32.0",
+    "score": "100-96",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 enters the game for T. Jones"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "100-96",
+    "team": "Bulls",
+    "description": "Shooting foul by V. Edgecombe (drawn by J. Giddey)"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "100-97",
+    "team": "Bulls",
+    "description": "J. Giddey makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:26.0",
+    "score": "100-97",
+    "team": "Bulls",
+    "description": "J. Giddey misses free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "4:23.0",
+    "score": "100-97",
+    "team": "76ers",
+    "description": "Defensive rebound by J. Embiid"
+  },
+  {
+    "quarter": 4,
+    "time": "4:10.0",
+    "score": "100-97",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:08.0",
+    "score": "100-97",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 4,
+    "time": "4:04.0",
+    "score": "100-97",
+    "team": "Bulls",
+    "description": "A. Dosunmu misses 3-pt jump shot from 24 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:00.0",
+    "score": "100-97",
+    "team": "Bulls",
+    "description": "Offensive rebound by J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "3:52.0",
+    "score": "100-99",
+    "team": "Bulls",
+    "description": "J. Giddey makes 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:34.0",
+    "score": "100-99",
+    "team": "76ers",
+    "description": "J. Embiid misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "100-99",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "3:32.0",
+    "score": "100-99",
+    "team": "Bulls",
+    "description": "T. Jones enters the game for A. Dosunmu"
+  },
+  {
+    "quarter": 4,
+    "time": "3:07.0",
+    "score": "100-99",
+    "team": "Bulls",
+    "description": "T. Jones misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:05.0",
+    "score": "100-99",
+    "team": "Bulls",
+    "description": "Offensive rebound by J. Giddey"
+  },
+  {
+    "quarter": 4,
+    "time": "3:03.0",
+    "score": "100-99",
+    "team": "Bulls",
+    "description": "N. Vu\u010devi\u0107 misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:00.0",
+    "score": "100-99",
+    "team": "76ers",
+    "description": "Defensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "2:45.0",
+    "score": "102-99",
+    "team": "76ers",
+    "description": "J. Embiid makes 2-pt layup from 2 ft (assist by P. George)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:31.0",
+    "score": "102-101",
+    "team": "Bulls",
+    "description": "J. Smith makes 2-pt dunk from 1 ft (assist by J. Giddey)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:09.0",
+    "score": "102-101",
+    "team": "76ers",
+    "description": "V. Edgecombe misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:06.0",
+    "score": "102-101",
+    "team": "Bulls",
+    "description": "Defensive rebound by C. White"
+  },
+  {
+    "quarter": 4,
+    "time": "1:54.0",
+    "score": "102-104",
+    "team": "Bulls",
+    "description": "C. White makes 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:43.0",
+    "score": "102-104",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:39.0",
+    "score": "102-104",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "1:27.0",
+    "score": "102-106",
+    "team": "Bulls",
+    "description": "T. Jones makes 2-pt layup from 2 ft (assist by C. White)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:27.0",
+    "score": "102-106",
+    "team": "76ers",
+    "description": "Philadelphia full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "1:21.0",
+    "score": "102-106",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 1 ft (block by N. Vu\u010devi\u0107)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:18.0",
+    "score": "102-106",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "1:00.0",
+    "score": "102-106",
+    "team": "Bulls",
+    "description": "C. White misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:58.0",
+    "score": "102-106",
+    "team": "Bulls",
+    "description": "Offensive rebound by T. Jones"
+  },
+  {
+    "quarter": 4,
+    "time": "0:49.0",
+    "score": "102-106",
+    "team": "Bulls",
+    "description": "C. White misses 2-pt layup from 1 ft (block by J. Embiid)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "102-106",
+    "team": "Bulls",
+    "description": "Offensive rebound by T. Jones"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "T. Jones makes 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:37.0",
+    "score": "102-108",
+    "team": "76ers",
+    "description": "J. Embiid misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:34.0",
+    "score": "102-108",
+    "team": "76ers",
+    "description": "Offensive rebound by V. Edgecombe"
+  },
+  {
+    "quarter": 4,
+    "time": "0:27.0",
+    "score": "102-108",
+    "team": "76ers",
+    "description": "T. Maxey misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:26.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "Defensive rebound by N. Vu\u010devi\u0107"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "Chicago full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "Instant Replay (Challenge: Ruling Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "K. Huerter enters the game for J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "Personal take foul by V. Edgecombe (drawn by T. Jones)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "T. Jones misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-108",
+    "team": "Bulls",
+    "description": "I. Okoro enters the game for K. Huerter"
+  },
+  {
+    "quarter": 4,
+    "time": "0:17.0",
+    "score": "102-109",
+    "team": "Bulls",
+    "description": "T. Jones makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "0:11.0",
+    "score": "102-109",
+    "team": "76ers",
+    "description": "T. Maxey misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:08.0",
+    "score": "102-109",
+    "team": "Bulls",
+    "description": "Defensive rebound by J. Giddey"
+  }
+]

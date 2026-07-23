@@ -1,0 +1,505 @@
+quarter,time,score,team,description
+1,11:46.0,0-0,Hawks,N. Alexander-Walker misses 2-pt layup from 1 ft
+1,11:42.0,0-0,76ers,Defensive rebound by J. Embiid
+1,11:39.0,0-0,76ers,P. George misses 3-pt jump shot from 24 ft
+1,11:36.0,0-0,Hawks,Defensive rebound by O. Okongwu
+1,11:33.0,0-0,Hawks,Atlanta full timeout
+1,11:25.0,0-3,Hawks,N. Alexander-Walker makes 3-pt jump shot from 25 ft (assist by D. Daniels)
+1,11:12.0,2-3,76ers,J. Embiid makes 2-pt jump shot from 15 ft (assist by P. George)
+1,11:03.0,2-3,Hawks,D. Daniels misses 2-pt jump shot from 11 ft (block by J. Embiid)
+1,11:00.0,2-3,Hawks,Offensive rebound by Z. Risacher
+1,10:58.0,2-6,Hawks,O. Okongwu makes 3-pt jump shot from 26 ft (assist by J. Johnson)
+1,10:38.0,5-6,76ers,V. Edgecombe makes 3-pt jump shot from 23 ft (assist by Q. Grimes)
+1,10:29.0,5-8,Hawks,N. Alexander-Walker makes 2-pt hook shot from 5 ft
+1,10:07.0,8-8,76ers,P. George makes 3-pt jump shot from 24 ft (assist by Q. Grimes)
+1,9:57.0,8-11,Hawks,D. Daniels makes 3-pt jump shot from 26 ft (assist by Z. Risacher)
+1,9:41.0,8-11,76ers,P. George misses 2-pt jump shot from 14 ft
+1,9:39.0,8-11,Hawks,Defensive rebound by O. Okongwu
+1,9:32.0,8-11,Hawks,N. Alexander-Walker misses 2-pt layup from 3 ft
+1,9:28.0,8-11,76ers,Defensive rebound by D. Barlow
+1,9:27.0,8-11,76ers,Shooting foul by Z. Risacher (drawn by P. George)
+1,9:27.0,9-11,76ers,P. George makes free throw 1 of 2
+1,9:27.0,10-11,76ers,P. George makes free throw 2 of 2
+1,9:13.0,10-11,Hawks,O. Okongwu misses 3-pt jump shot from 27 ft
+1,9:09.0,10-11,76ers,Defensive rebound by Q. Grimes
+1,8:58.0,10-11,76ers,Shooting foul by D. Daniels (drawn by J. Embiid)
+1,8:58.0,10-11,76ers,J. Embiid misses free throw 1 of 2
+1,8:58.0,10-11,76ers,Offensive rebound by Team
+1,8:58.0,11-11,76ers,J. Embiid makes free throw 2 of 2
+1,8:44.0,11-11,Hawks,J. Johnson misses 2-pt layup from 6 ft
+1,8:43.0,11-11,Hawks,Offensive rebound by D. Daniels
+1,8:43.0,11-11,Hawks,D. Daniels misses 2-pt layup from 3 ft
+1,8:42.0,11-11,Hawks,Offensive rebound by N. Alexander-Walker
+1,8:35.0,11-11,Hawks,Z. Risacher misses 3-pt jump shot from 26 ft
+1,8:32.0,11-11,76ers,Defensive rebound by Q. Grimes
+1,8:26.0,11-11,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+1,8:25.0,11-11,76ers,Offensive rebound by J. Embiid
+1,8:25.0,11-11,76ers,J. Embiid misses 2-pt layup from 5 ft
+1,8:24.0,11-11,Hawks,Defensive rebound by O. Okongwu
+1,8:12.0,11-11,Hawks,J. Johnson misses 2-pt jump shot from 6 ft
+1,8:08.0,11-11,Hawks,Offensive rebound by J. Johnson
+1,8:08.0,11-11,Hawks,J. Johnson misses 2-pt layup at rim
+1,8:08.0,11-11,76ers,Defensive rebound by V. Edgecombe
+1,7:52.0,11-11,76ers,Turnover by V. Edgecombe (bad pass; steal by J. Johnson)
+1,7:50.0,11-11,Hawks,Shooting foul by V. Edgecombe (drawn by J. Johnson)
+1,7:50.0,11-12,Hawks,J. Johnson makes free throw 1 of 2
+1,7:50.0,11-13,Hawks,J. Johnson makes free throw 2 of 2
+1,7:30.0,11-13,76ers,Turnover by Q. Grimes (bad pass; steal by O. Okongwu)
+1,7:28.0,11-13,Hawks,Shooting foul by V. Edgecombe (drawn by Z. Risacher)
+1,7:28.0,11-14,Hawks,Z. Risacher makes free throw 1 of 2
+1,7:28.0,11-14,76ers,J. McCain enters the game for V. Edgecombe
+1,7:28.0,11-15,Hawks,Z. Risacher makes free throw 2 of 2
+1,7:08.0,11-15,76ers,Turnover by J. Embiid (bad pass; steal by N. Alexander-Walker)
+1,7:04.0,11-15,Hawks,D. Daniels misses 2-pt layup from 4 ft
+1,6:59.0,11-15,Hawks,Offensive rebound by D. Daniels
+1,6:59.0,11-17,Hawks,D. Daniels makes 2-pt layup at rim
+1,6:54.0,11-17,76ers,Philadelphia full timeout
+1,6:54.0,11-17,Hawks,M. Gueye enters the game for N. Alexander-Walker
+1,6:54.0,11-17,Hawks,V. Krejci enters the game for O. Okongwu
+1,6:42.0,11-17,76ers,P. George misses 2-pt jump shot from 13 ft
+1,6:40.0,11-17,76ers,Offensive rebound by J. Embiid
+1,6:40.0,11-17,76ers,J. Embiid misses 2-pt layup at rim
+1,6:39.0,11-17,76ers,Offensive rebound by J. Embiid
+1,6:39.0,11-17,76ers,Shooting foul by V. Krejci (drawn by J. Embiid)
+1,6:39.0,12-17,76ers,J. Embiid makes free throw 1 of 2
+1,6:39.0,13-17,76ers,J. Embiid makes free throw 2 of 2
+1,6:25.0,13-17,Hawks,Shooting foul by J. McCain (drawn by V. Krejci)
+1,6:25.0,13-18,Hawks,V. Krejci makes free throw 1 of 3
+1,6:25.0,13-19,Hawks,V. Krejci makes free throw 2 of 3
+1,6:25.0,13-20,Hawks,V. Krejci makes free throw 3 of 3
+1,6:13.0,15-20,76ers,J. Embiid makes 2-pt layup from 2 ft (assist by J. McCain)
+1,6:03.0,15-22,Hawks,J. Johnson makes 2-pt jump shot from 20 ft (assist by D. Daniels)
+1,5:45.0,18-22,76ers,P. George makes 3-pt jump shot from 23 ft (assist by Q. Grimes)
+1,5:36.0,18-22,Hawks,Turnover by M. Gueye (bad pass; steal by D. Barlow)
+1,5:33.0,20-22,76ers,D. Barlow makes 2-pt dunk from 1 ft
+1,5:12.0,20-22,Hawks,Z. Risacher misses 2-pt jump shot from 22 ft
+1,5:11.0,20-22,Hawks,Offensive rebound by Team
+1,5:11.0,20-22,Hawks,L. Kennard enters the game for Z. Risacher
+1,5:08.0,20-22,Hawks,J. Johnson misses 2-pt layup from 7 ft
+1,5:06.0,20-22,76ers,Defensive rebound by J. Embiid
+1,4:48.0,20-22,76ers,J. Embiid misses 2-pt jump shot from 2 ft
+1,4:45.0,20-22,Hawks,Defensive rebound by D. Daniels
+1,4:41.0,20-22,Hawks,Turnover by M. Gueye (bad pass)
+1,4:29.0,20-22,76ers,J. McCain misses 3-pt jump shot from 28 ft
+1,4:26.0,20-22,Hawks,Defensive rebound by L. Kennard
+1,4:26.0,20-22,76ers,J. Edwards enters the game for P. George
+1,4:14.0,20-22,Hawks,M. Gueye misses 3-pt jump shot from 26 ft
+1,4:09.0,20-22,Hawks,Offensive rebound by J. Johnson
+1,4:09.0,20-24,Hawks,J. Johnson makes 2-pt layup at rim
+1,3:46.0,20-24,76ers,J. Embiid misses 3-pt jump shot from 24 ft
+1,3:44.0,20-24,Hawks,Defensive rebound by D. Daniels
+1,3:37.0,20-26,Hawks,D. Daniels makes 2-pt dunk from 2 ft (assist by J. Johnson)
+1,3:19.0,20-26,76ers,J. Edwards misses 2-pt layup from 3 ft (block by M. Gueye)
+1,3:16.0,20-26,76ers,Offensive rebound by J. Edwards
+1,3:13.0,23-26,76ers,D. Barlow makes 3-pt jump shot from 27 ft (assist by J. Edwards)
+1,3:01.0,23-26,Hawks,Shooting foul by J. Embiid (drawn by M. Gueye)
+1,3:01.0,23-26,Hawks,Violation by Team (delay of game)
+1,3:01.0,23-26,Hawks,M. Gueye misses free throw 1 of 2
+1,3:01.0,23-26,Hawks,Offensive rebound by Team
+1,3:01.0,23-26,76ers,A. Drummond enters the game for J. Embiid
+1,3:01.0,23-26,Hawks,N. Alexander-Walker enters the game for D. Daniels
+1,3:01.0,23-26,Hawks,O. Okongwu enters the game for J. Johnson
+1,3:01.0,23-27,Hawks,M. Gueye makes free throw 2 of 2
+1,2:49.0,23-27,76ers,J. Edwards misses 3-pt jump shot from 25 ft
+1,2:44.0,23-27,Hawks,Defensive rebound by M. Gueye
+1,2:33.0,23-30,Hawks,V. Krejci makes 3-pt jump shot from 26 ft (assist by L. Kennard)
+1,2:15.0,26-30,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by A. Drummond)
+1,2:02.0,26-32,Hawks,V. Krejci makes 2-pt layup from 1 ft (assist by O. Okongwu)
+1,1:49.0,26-32,76ers,J. Edwards misses 3-pt jump shot from 24 ft
+1,1:46.0,26-32,Hawks,Defensive rebound by N. Alexander-Walker
+1,1:39.0,26-35,Hawks,V. Krejci makes 3-pt jump shot from 24 ft (assist by N. Alexander-Walker)
+1,1:39.0,26-35,76ers,P. George enters the game for D. Barlow
+1,1:18.0,26-35,76ers,Q. Grimes misses 2-pt jump shot from 14 ft
+1,1:17.0,26-35,76ers,Offensive rebound by J. Edwards
+1,1:17.0,26-35,76ers,J. Edwards misses 2-pt layup from 5 ft
+1,1:16.0,26-35,Hawks,Defensive rebound by O. Okongwu
+1,1:11.0,26-35,Hawks,Personal foul by J. Edwards (drawn by N. Alexander-Walker)
+1,1:11.0,26-36,Hawks,N. Alexander-Walker makes free throw 1 of 2
+1,1:11.0,26-37,Hawks,N. Alexander-Walker makes free throw 2 of 2
+1,0:54.0,26-37,76ers,J. Edwards misses 3-pt jump shot from 25 ft
+1,0:51.0,26-37,Hawks,Defensive rebound by O. Okongwu
+1,0:40.0,26-37,Hawks,N. Alexander-Walker misses 2-pt layup from 2 ft
+1,0:37.0,26-37,76ers,Defensive rebound by J. McCain
+1,0:34.0,29-37,76ers,Q. Grimes makes 3-pt jump shot from 23 ft (assist by J. McCain)
+1,0:18.0,29-37,Hawks,Shooting foul by A. Drummond (drawn by L. Kennard)
+1,0:18.0,29-38,Hawks,L. Kennard makes free throw 1 of 2
+1,0:18.0,29-38,76ers,J. Embiid enters the game for A. Drummond
+1,0:18.0,29-39,Hawks,L. Kennard makes free throw 2 of 2
+1,0:00.0,29-39,76ers,J. Embiid misses 2-pt jump shot from 16 ft
+1,0:00.0,29-39,Hawks,Defensive rebound by O. Okongwu
+2,11:45.0,32-39,76ers,P. George makes 3-pt jump shot from 25 ft
+2,11:30.0,32-39,Hawks,L. Kennard misses 3-pt jump shot from 26 ft
+2,11:28.0,32-39,76ers,Defensive rebound by A. Drummond
+2,11:20.0,35-39,76ers,P. George makes 3-pt jump shot from 24 ft
+2,11:04.0,35-41,Hawks,Z. Risacher makes 2-pt jump shot from 16 ft (assist by K. Wallace)
+2,10:50.0,35-41,76ers,P. George misses 2-pt jump shot from 12 ft
+2,10:46.0,35-41,76ers,Offensive rebound by A. Drummond
+2,10:44.0,37-41,76ers,P. George makes 2-pt layup from 3 ft (assist by A. Drummond)
+2,10:44.0,37-41,76ers,Shooting foul by K. Wallace (drawn by P. George)
+2,10:44.0,38-41,76ers,P. George makes free throw 1 of 1
+2,10:27.0,38-41,Hawks,Turnover by K. Wallace (bad pass; steal by A. Drummond)
+2,10:24.0,38-41,76ers,A. Drummond misses 2-pt dunk at rim
+2,10:23.0,38-41,Hawks,Defensive rebound by Team
+2,10:08.0,38-41,Hawks,K. Wallace misses 3-pt jump shot from 27 ft (block by A. Drummond)
+2,10:04.0,38-41,76ers,Defensive rebound by V. Edgecombe
+2,9:59.0,38-41,76ers,V. Edgecombe misses 2-pt jump shot from 4 ft (block by O. Okongwu)
+2,9:55.0,38-41,Hawks,Defensive rebound by K. Wallace
+2,9:53.0,38-41,Hawks,A. Newell misses 2-pt layup from 2 ft (block by P. George)
+2,9:50.0,38-41,76ers,Defensive rebound by J. Walker
+2,9:30.0,38-41,76ers,J. Walker misses 2-pt layup from 3 ft (block by O. Okongwu)
+2,9:27.0,38-41,Hawks,Defensive rebound by A. Newell
+2,9:22.0,38-41,Hawks,Z. Risacher misses 3-pt jump shot from 23 ft
+2,9:20.0,38-41,76ers,Defensive rebound by A. Drummond
+2,9:06.0,38-41,76ers,V. Edgecombe misses 3-pt jump shot from 23 ft
+2,9:03.0,38-41,Hawks,Defensive rebound by O. Okongwu
+2,8:58.0,38-41,Hawks,Offensive foul by O. Okongwu (drawn by P. George)
+2,8:58.0,38-41,Hawks,Turnover by O. Okongwu (offensive foul)
+2,8:58.0,38-41,Hawks,N. Alexander-Walker enters the game for Z. Risacher
+2,8:58.0,38-41,Hawks,D. Daniels enters the game for K. Wallace
+2,8:48.0,38-41,76ers,Personal foul by D. Daniels (drawn by P. George)
+2,8:35.0,38-41,76ers,P. George misses 2-pt jump shot from 11 ft
+2,8:30.0,38-41,76ers,Offensive rebound by A. Drummond
+2,8:30.0,40-41,76ers,A. Drummond makes 2-pt layup at rim
+2,8:19.0,40-41,Hawks,O. Okongwu misses 2-pt layup from 7 ft
+2,8:16.0,40-41,Hawks,Offensive rebound by O. Okongwu
+2,8:13.0,40-41,Hawks,Turnover by N. Alexander-Walker (bad pass)
+2,8:13.0,40-41,76ers,K. Lowry enters the game for J. McCain
+2,8:13.0,40-41,Hawks,J. Johnson enters the game for O. Okongwu
+2,7:54.0,42-41,76ers,V. Edgecombe makes 2-pt layup from 2 ft (assist by K. Lowry)
+2,7:45.0,42-44,Hawks,L. Kennard makes 3-pt jump shot from 26 ft (assist by N. Alexander-Walker)
+2,7:30.0,42-44,76ers,P. George misses 2-pt layup from 1 ft
+2,7:29.0,42-44,Hawks,Defensive rebound by Team
+2,7:20.0,42-44,Hawks,D. Daniels misses 3-pt jump shot from 26 ft
+2,7:16.0,42-44,Hawks,Offensive rebound by L. Kennard
+2,7:14.0,42-44,Hawks,N. Alexander-Walker misses 3-pt jump shot from 24 ft
+2,7:12.0,42-44,76ers,Defensive rebound by Team
+2,7:12.0,42-44,Hawks,Loose ball foul by A. Newell (drawn by K. Lowry)
+2,7:12.0,42-44,76ers,Q. Grimes enters the game for P. George
+2,7:04.0,42-44,76ers,Q. Grimes misses 3-pt jump shot from 24 ft
+2,7:03.0,42-44,76ers,Offensive rebound by J. Walker
+2,7:03.0,42-44,76ers,Shooting foul by J. Johnson (drawn by J. Walker)
+2,7:03.0,42-44,76ers,J. Walker misses free throw 1 of 2
+2,7:03.0,42-44,76ers,Offensive rebound by Team
+2,7:03.0,43-44,76ers,J. Walker makes free throw 2 of 2
+2,6:49.0,43-46,Hawks,D. Daniels makes 2-pt layup from 1 ft (assist by A. Newell)
+2,6:34.0,45-46,76ers,V. Edgecombe makes 2-pt layup from 1 ft (assist by A. Drummond)
+2,6:23.0,45-46,Hawks,N. Alexander-Walker misses 2-pt layup from 4 ft
+2,6:20.0,45-46,76ers,Defensive rebound by A. Drummond
+2,6:14.0,45-46,76ers,Turnover by K. Lowry (traveling)
+2,6:14.0,45-46,Hawks,Atlanta full timeout
+2,6:14.0,45-46,76ers,J. Embiid enters the game for J. Walker
+2,6:02.0,45-46,Hawks,Shooting foul by K. Lowry (drawn by D. Daniels)
+2,6:02.0,45-46,Hawks,D. Daniels misses free throw 1 of 2
+2,6:02.0,45-46,Hawks,Offensive rebound by Team
+2,6:02.0,45-46,Hawks,O. Okongwu enters the game for A. Newell
+2,6:02.0,45-46,Hawks,D. Daniels misses free throw 2 of 2
+2,5:59.0,45-46,76ers,Defensive rebound by A. Drummond
+2,5:47.0,47-46,76ers,J. Embiid makes 2-pt jump shot from 14 ft (assist by V. Edgecombe)
+2,5:35.0,47-46,Hawks,Turnover by D. Daniels (bad pass)
+2,5:35.0,47-46,Hawks,V. Krejci enters the game for L. Kennard
+2,5:16.0,47-46,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+2,5:13.0,47-46,Hawks,Defensive rebound by O. Okongwu
+2,5:05.0,47-46,Hawks,O. Okongwu misses 2-pt jump shot from 8 ft
+2,5:03.0,47-46,Hawks,Offensive rebound by Team
+2,5:03.0,47-46,76ers,Loose ball foul by K. Lowry (drawn by D. Daniels)
+2,4:57.0,47-46,Hawks,V. Krejci misses 3-pt jump shot from 23 ft
+2,4:53.0,47-46,Hawks,Offensive rebound by O. Okongwu
+2,4:53.0,47-46,Hawks,O. Okongwu misses 2-pt layup from 3 ft
+2,4:53.0,47-46,76ers,Defensive rebound by J. Embiid
+2,4:46.0,47-46,76ers,V. Edgecombe misses 2-pt layup from 3 ft
+2,4:43.0,47-46,Hawks,Defensive rebound by V. Krejci
+2,4:38.0,47-49,Hawks,O. Okongwu makes 3-pt jump shot from 27 ft (assist by J. Johnson)
+2,4:24.0,47-49,76ers,J. Embiid misses 3-pt jump shot from 24 ft
+2,4:19.0,47-49,Hawks,Defensive rebound by N. Alexander-Walker
+2,4:17.0,47-49,Hawks,Turnover by N. Alexander-Walker (bad pass; steal by Q. Grimes)
+2,4:14.0,47-49,76ers,Personal foul by V. Krejci (drawn by Q. Grimes)
+2,4:14.0,48-49,76ers,Q. Grimes makes free throw 1 of 2
+2,4:14.0,48-49,76ers,D. Barlow enters the game for A. Drummond
+2,4:14.0,49-49,76ers,Q. Grimes makes free throw 2 of 2
+2,3:59.0,49-49,Hawks,Personal foul by D. Barlow (drawn by O. Okongwu)
+2,3:50.0,49-49,Hawks,O. Okongwu misses 2-pt layup from 9 ft
+2,3:45.0,49-49,Hawks,Offensive rebound by O. Okongwu
+2,3:45.0,49-51,Hawks,O. Okongwu makes 2-pt layup at rim
+2,3:39.0,49-51,76ers,V. Edgecombe misses 3-pt jump shot from 25 ft
+2,3:37.0,49-51,Hawks,Defensive rebound by J. Johnson
+2,3:32.0,49-51,Hawks,J. Johnson misses 2-pt layup from 3 ft (block by J. Embiid)
+2,3:28.0,49-51,76ers,Defensive rebound by K. Lowry
+2,3:27.0,49-51,76ers,Q. Grimes misses 2-pt layup from 1 ft (block by D. Daniels)
+2,3:26.0,49-51,Hawks,Defensive rebound by N. Alexander-Walker
+2,3:09.0,49-54,Hawks,V. Krejci makes 3-pt jump shot from 27 ft (assist by J. Johnson)
+2,2:52.0,49-54,76ers,Shooting foul by O. Okongwu (drawn by J. Embiid)
+2,2:52.0,49-54,76ers,Philadelphia full timeout
+2,2:52.0,50-54,76ers,J. Embiid makes free throw 1 of 2
+2,2:52.0,51-54,76ers,J. Embiid makes free throw 2 of 2
+2,2:36.0,51-54,Hawks,J. Johnson misses 2-pt jump shot from 12 ft
+2,2:31.0,51-54,76ers,Defensive rebound by D. Barlow
+2,2:23.0,51-54,76ers,J. Embiid misses 2-pt jump shot from 10 ft
+2,2:20.0,51-54,Hawks,Defensive rebound by J. Johnson
+2,2:12.0,51-54,Hawks,J. Johnson misses 3-pt jump shot from 26 ft
+2,2:10.0,51-54,76ers,Defensive rebound by D. Barlow
+2,1:57.0,51-54,76ers,Turnover by D. Barlow (traveling)
+2,1:47.0,51-54,Hawks,O. Okongwu misses 3-pt jump shot from 26 ft
+2,1:43.0,51-54,76ers,Defensive rebound by J. Embiid
+2,1:36.0,51-54,76ers,J. Embiid misses 2-pt jump shot from 6 ft
+2,1:32.0,51-54,76ers,Offensive rebound by J. Embiid
+2,1:32.0,53-54,76ers,J. Embiid makes 2-pt layup at rim
+2,1:27.0,53-56,Hawks,D. Daniels makes 2-pt layup from 2 ft
+2,1:08.0,53-56,76ers,Shooting foul by J. Johnson (drawn by D. Barlow)
+2,1:08.0,54-56,76ers,D. Barlow makes free throw 1 of 2
+2,1:08.0,55-56,76ers,D. Barlow makes free throw 2 of 2
+2,0:43.0,55-56,Hawks,Turnover by Team (shot clock)
+2,0:38.0,55-56,Hawks,Flagrant foul type 1 by J. Embiid (drawn by O. Okongwu)
+2,0:38.0,55-56,76ers,Turnover by J. Embiid (offensive foul)
+2,0:38.0,55-56,76ers,Instant Replay (Request: Ruling Stands)
+2,0:38.0,55-56,Hawks,O. Okongwu misses flagrant free throw 1 of 2
+2,0:38.0,55-56,Hawks,Offensive rebound by Team
+2,0:38.0,55-57,Hawks,O. Okongwu makes flagrant free throw 2 of 2
+2,0:33.0,55-59,Hawks,V. Krejci makes 2-pt jump shot from 9 ft (assist by J. Johnson)
+2,0:26.0,55-59,76ers,K. Lowry misses 3-pt jump shot from 24 ft
+2,0:23.0,55-59,Hawks,Defensive rebound by D. Daniels
+2,0:07.0,55-59,Hawks,J. Johnson misses 2-pt jump shot from 9 ft
+2,0:06.0,55-59,76ers,Defensive rebound by J. Embiid
+2,0:00.0,55-59,76ers,V. Edgecombe misses 3-pt jump shot from 24 ft
+2,0:00.0,55-59,76ers,Offensive rebound by Team
+3,11:48.0,55-59,76ers,J. Embiid misses 2-pt layup from 2 ft
+3,11:45.0,55-59,Hawks,Defensive rebound by O. Okongwu
+3,11:34.0,55-61,Hawks,J. Johnson makes 2-pt jump shot from 5 ft (assist by O. Okongwu)
+3,11:16.0,55-61,76ers,Personal foul by N. Alexander-Walker (drawn by Q. Grimes)
+3,11:10.0,55-61,76ers,Q. Grimes misses 3-pt jump shot from 27 ft
+3,11:05.0,55-61,76ers,Offensive rebound by D. Barlow
+3,11:05.0,57-61,76ers,D. Barlow makes 2-pt layup at rim
+3,10:54.0,57-61,Hawks,Shooting foul by P. George (drawn by O. Okongwu)
+3,10:54.0,57-62,Hawks,O. Okongwu makes free throw 1 of 2
+3,10:54.0,57-63,Hawks,O. Okongwu makes free throw 2 of 2
+3,10:41.0,59-63,76ers,P. George makes 2-pt layup from 7 ft
+3,10:33.0,59-65,Hawks,D. Daniels makes 2-pt dunk from 1 ft (assist by O. Okongwu)
+3,10:10.0,59-65,Hawks,Violation by Team (kicked ball)
+3,9:59.0,61-65,76ers,V. Edgecombe makes 2-pt layup from 2 ft (assist by Q. Grimes)
+3,9:47.0,61-68,Hawks,Z. Risacher makes 3-pt jump shot from 26 ft (assist by N. Alexander-Walker)
+3,9:35.0,61-68,76ers,V. Edgecombe misses 2-pt layup from 2 ft
+3,9:33.0,61-68,76ers,Offensive rebound by D. Barlow
+3,9:32.0,64-68,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by D. Barlow)
+3,9:19.0,64-70,Hawks,J. Johnson makes 2-pt jump shot from 19 ft
+3,9:07.0,64-70,76ers,Personal foul by N. Alexander-Walker (drawn by Q. Grimes)
+3,8:55.0,66-70,76ers,P. George makes 2-pt layup from 2 ft (assist by V. Edgecombe)
+3,8:45.0,66-70,Hawks,O. Okongwu misses 3-pt jump shot from 24 ft
+3,8:42.0,66-70,Hawks,Offensive rebound by D. Daniels
+3,8:40.0,66-70,Hawks,O. Okongwu misses 2-pt dunk at rim (block by D. Barlow)
+3,8:37.0,66-70,76ers,Defensive rebound by P. George
+3,8:34.0,66-70,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+3,8:32.0,66-70,Hawks,Defensive rebound by O. Okongwu
+3,8:26.0,66-70,Hawks,Turnover by O. Okongwu (bad pass)
+3,8:09.0,66-70,76ers,J. Embiid misses 2-pt jump shot from 22 ft
+3,8:06.0,66-70,Hawks,Defensive rebound by J. Johnson
+3,8:06.0,66-70,Hawks,Turnover by J. Johnson (bad pass)
+3,7:57.0,66-70,76ers,J. Embiid misses 2-pt layup from 3 ft
+3,7:55.0,66-70,Hawks,Defensive rebound by O. Okongwu
+3,7:52.0,66-70,Hawks,N. Alexander-Walker misses 2-pt layup from 2 ft
+3,7:50.0,66-70,Hawks,Offensive rebound by Team
+3,7:45.0,66-73,Hawks,Z. Risacher makes 3-pt jump shot from 25 ft (assist by N. Alexander-Walker)
+3,7:26.0,66-73,76ers,J. Embiid misses 2-pt layup from 4 ft
+3,7:23.0,66-73,76ers,Offensive rebound by J. Embiid
+3,7:23.0,68-73,76ers,J. Embiid makes 2-pt layup at rim
+3,7:15.0,68-73,Hawks,D. Daniels misses 2-pt layup at rim
+3,7:13.0,68-73,Hawks,Offensive rebound by D. Daniels
+3,7:09.0,68-76,Hawks,O. Okongwu makes 3-pt jump shot from 24 ft (assist by N. Alexander-Walker)
+3,6:50.0,68-76,Hawks,Atlanta full timeout
+3,6:48.0,68-76,76ers,Personal foul by O. Okongwu (drawn by J. Embiid)
+3,6:48.0,68-76,Hawks,M. Gueye enters the game for O. Okongwu
+3,6:39.0,68-76,76ers,Q. Grimes misses 2-pt layup from 3 ft
+3,6:35.0,68-76,76ers,Offensive rebound by J. Embiid
+3,6:35.0,70-76,76ers,J. Embiid makes 2-pt layup at rim
+3,6:28.0,70-76,Hawks,Turnover by J. Johnson (bad pass; steal by D. Barlow)
+3,6:23.0,73-76,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+3,6:15.0,73-76,Hawks,N. Alexander-Walker misses 3-pt jump shot from 24 ft
+3,6:13.0,73-76,76ers,Defensive rebound by D. Barlow
+3,5:56.0,73-76,76ers,Turnover by V. Edgecombe (bad pass; steal by M. Gueye)
+3,5:52.0,73-76,Hawks,N. Alexander-Walker misses 2-pt layup from 1 ft
+3,5:48.0,73-76,Hawks,Offensive rebound by J. Johnson
+3,5:48.0,73-78,Hawks,J. Johnson makes 2-pt layup at rim
+3,5:25.0,73-78,76ers,D. Barlow misses 2-pt layup from 3 ft (block by J. Johnson)
+3,5:24.0,73-78,76ers,Offensive rebound by Team
+3,5:24.0,73-78,76ers,Turnover by Team (shot clock)
+3,5:24.0,73-78,Hawks,V. Krejci enters the game for N. Alexander-Walker
+3,5:12.0,73-80,Hawks,D. Daniels makes 2-pt jump shot from 2 ft (assist by V. Krejci)
+3,4:53.0,73-80,76ers,Turnover by P. George (bad pass; steal by Z. Risacher)
+3,4:46.0,73-82,Hawks,D. Daniels makes 2-pt hook shot from 3 ft (assist by J. Johnson)
+3,4:30.0,75-82,76ers,D. Barlow makes 2-pt layup from 2 ft (assist by J. Embiid)
+3,4:30.0,75-82,76ers,Shooting foul by J. Johnson (drawn by D. Barlow)
+3,4:30.0,75-82,76ers,A. Drummond enters the game for J. Embiid
+3,4:30.0,75-82,76ers,J. Edwards enters the game for P. George
+3,4:30.0,75-82,Hawks,L. Kennard enters the game for Z. Risacher
+3,4:30.0,75-82,76ers,D. Barlow misses free throw 1 of 1
+3,4:25.0,75-82,76ers,Offensive rebound by A. Drummond
+3,4:24.0,77-82,76ers,A. Drummond makes 2-pt layup from 3 ft
+3,4:10.0,77-84,Hawks,D. Daniels makes 2-pt layup from 1 ft (assist by J. Johnson)
+3,3:52.0,80-84,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+3,3:42.0,80-84,Hawks,J. Johnson misses 2-pt jump shot from 10 ft
+3,3:39.0,80-84,76ers,Defensive rebound by V. Edgecombe
+3,3:28.0,80-84,76ers,Q. Grimes misses 2-pt layup from 3 ft
+3,3:25.0,80-84,Hawks,Defensive rebound by J. Johnson
+3,3:23.0,80-86,Hawks,D. Daniels makes 2-pt layup from 1 ft (assist by J. Johnson)
+3,3:14.0,80-86,76ers,Philadelphia full timeout
+3,3:14.0,80-86,76ers,J. Walker enters the game for D. Barlow
+3,3:14.0,80-86,Hawks,N. Alexander-Walker enters the game for D. Daniels
+3,3:14.0,80-86,Hawks,O. Okongwu enters the game for J. Johnson
+3,3:04.0,80-86,76ers,Shooting foul by M. Gueye (drawn by V. Edgecombe)
+3,3:04.0,81-86,76ers,V. Edgecombe makes free throw 1 of 3
+3,3:04.0,82-86,76ers,V. Edgecombe makes free throw 2 of 3
+3,3:04.0,82-86,Hawks,A. Newell enters the game for M. Gueye
+3,3:04.0,83-86,76ers,V. Edgecombe makes free throw 3 of 3
+3,2:46.0,83-89,Hawks,V. Krejci makes 3-pt jump shot from 25 ft (assist by A. Newell)
+3,2:28.0,85-89,76ers,V. Edgecombe makes 2-pt layup from 3 ft (assist by J. Walker)
+3,2:28.0,85-89,76ers,Shooting foul by A. Newell (drawn by V. Edgecombe)
+3,2:28.0,86-89,76ers,V. Edgecombe makes free throw 1 of 1
+3,2:08.0,86-89,Hawks,N. Alexander-Walker misses 2-pt layup from 2 ft
+3,2:06.0,86-89,Hawks,Offensive rebound by A. Newell
+3,2:04.0,86-89,Hawks,Turnover by A. Newell (lost ball; steal by J. Walker)
+3,1:57.0,86-89,76ers,V. Edgecombe misses 2-pt jump shot from 10 ft
+3,1:55.0,86-89,76ers,Offensive rebound by A. Drummond
+3,1:54.0,86-89,76ers,Personal foul by N. Alexander-Walker (drawn by A. Drummond)
+3,1:54.0,87-89,76ers,A. Drummond makes free throw 1 of 2
+3,1:54.0,87-89,76ers,A. Drummond misses free throw 2 of 2
+3,1:51.0,87-89,Hawks,Defensive rebound by L. Kennard
+3,1:41.0,87-89,Hawks,N. Alexander-Walker misses 2-pt jump shot from 20 ft (block by A. Drummond)
+3,1:40.0,87-89,Hawks,Offensive rebound by Team
+3,1:40.0,87-89,76ers,J. McCain enters the game for Q. Grimes
+3,1:31.0,87-89,Hawks,Turnover by O. Okongwu (lost ball; steal by J. Edwards)
+3,1:21.0,87-89,76ers,A. Drummond misses 3-pt jump shot from 26 ft
+3,1:16.0,87-89,Hawks,Defensive rebound by V. Krejci
+3,1:04.0,87-89,Hawks,V. Krejci misses 3-pt jump shot from 25 ft (block by A. Drummond)
+3,1:01.0,87-89,Hawks,Offensive rebound by N. Alexander-Walker
+3,1:01.0,87-89,Hawks,N. Alexander-Walker misses 2-pt layup from 6 ft (block by J. Edwards)
+3,0:58.0,87-89,76ers,Defensive rebound by J. McCain
+3,0:56.0,87-89,76ers,J. McCain misses 2-pt layup from 2 ft
+3,0:53.0,87-89,76ers,Offensive rebound by A. Drummond
+3,0:53.0,87-89,76ers,A. Drummond misses 2-pt layup at rim
+3,0:52.0,87-89,76ers,Offensive rebound by J. Walker
+3,0:52.0,87-89,76ers,Shooting foul by L. Kennard (drawn by J. Walker)
+3,0:52.0,87-89,76ers,J. Walker misses free throw 1 of 2
+3,0:52.0,87-89,76ers,Offensive rebound by Team
+3,0:52.0,88-89,76ers,J. Walker makes free throw 2 of 2
+3,0:36.0,88-92,Hawks,A. Newell makes 3-pt jump shot from 24 ft (assist by O. Okongwu)
+3,0:29.0,91-92,76ers,V. Edgecombe makes 3-pt jump shot from 26 ft (assist by J. McCain)
+3,0:24.0,91-94,Hawks,A. Newell makes 2-pt dunk at rim (assist by N. Alexander-Walker)
+3,0:02.0,91-94,76ers,J. McCain misses 2-pt jump shot from 13 ft
+3,0:01.0,91-94,76ers,Offensive rebound by J. Walker
+4,11:51.0,91-97,Hawks,O. Okongwu makes 3-pt jump shot from 24 ft (assist by D. Daniels)
+4,11:32.0,91-97,76ers,V. Edgecombe misses 2-pt layup from 3 ft
+4,11:29.0,91-97,Hawks,Defensive rebound by V. Krejci
+4,11:22.0,91-97,Hawks,Turnover by D. Daniels (lost ball; steal by J. McCain)
+4,11:14.0,91-97,76ers,P. George misses 2-pt jump shot from 10 ft
+4,11:11.0,91-97,Hawks,Defensive rebound by L. Kennard
+4,10:59.0,91-97,Hawks,Personal foul by V. Edgecombe (drawn by A. Newell)
+4,10:47.0,91-97,Hawks,A. Newell misses 2-pt jump shot from 4 ft (block by J. Walker)
+4,10:46.0,91-97,Hawks,Offensive rebound by Team
+4,10:43.0,91-97,Hawks,O. Okongwu misses 2-pt jump shot from 23 ft
+4,10:41.0,91-97,76ers,Defensive rebound by J. McCain
+4,10:33.0,91-97,76ers,J. McCain misses 2-pt layup from 3 ft
+4,10:31.0,91-97,76ers,Offensive rebound by J. Walker
+4,10:29.0,91-97,76ers,J. Walker misses 2-pt layup from 3 ft
+4,10:29.0,91-97,Hawks,Defensive rebound by A. Newell
+4,10:25.0,91-97,Hawks,Turnover by D. Daniels (lost ball; steal by J. McCain)
+4,10:21.0,91-97,76ers,Shooting foul by V. Krejci (drawn by J. Walker)
+4,10:21.0,92-97,76ers,J. Walker makes free throw 1 of 2
+4,10:21.0,93-97,76ers,J. Walker makes free throw 2 of 2
+4,9:57.0,93-97,Hawks,D. Daniels misses 2-pt jump shot from 21 ft
+4,9:53.0,93-97,Hawks,Offensive rebound by A. Newell
+4,9:52.0,93-99,Hawks,A. Newell makes 2-pt layup from 1 ft
+4,9:31.0,93-99,76ers,J. McCain misses 3-pt jump shot from 26 ft
+4,9:27.0,93-99,Hawks,Defensive rebound by V. Krejci
+4,9:20.0,93-99,Hawks,O. Okongwu misses 3-pt jump shot from 25 ft
+4,9:17.0,93-99,76ers,Defensive rebound by V. Edgecombe
+4,9:10.0,93-99,76ers,Turnover by P. George (lost ball; steal by D. Daniels)
+4,9:06.0,93-101,Hawks,D. Daniels makes 2-pt jump shot from 2 ft
+4,9:06.0,93-101,76ers,Philadelphia full timeout
+4,9:06.0,93-101,76ers,Q. Grimes enters the game for V. Edgecombe
+4,9:06.0,93-101,Hawks,J. Johnson enters the game for V. Krejci
+4,9:06.0,93-101,Hawks,Z. Risacher enters the game for O. Okongwu
+4,8:52.0,93-101,76ers,Shooting foul by Z. Risacher (drawn by P. George)
+4,8:52.0,94-101,76ers,P. George makes free throw 1 of 3
+4,8:52.0,95-101,76ers,P. George makes free throw 2 of 3
+4,8:52.0,96-101,76ers,P. George makes free throw 3 of 3
+4,8:37.0,96-103,Hawks,A. Newell makes 2-pt layup from 3 ft (assist by L. Kennard)
+4,8:18.0,96-103,76ers,A. Drummond misses 2-pt jump shot from 7 ft
+4,8:16.0,96-103,Hawks,Defensive rebound by J. Johnson
+4,8:08.0,96-106,Hawks,Z. Risacher makes 3-pt jump shot from 24 ft (assist by J. Johnson)
+4,7:49.0,98-106,76ers,P. George makes 2-pt jump shot from 12 ft (assist by J. McCain)
+4,7:26.0,98-106,Hawks,J. Johnson misses 2-pt jump shot from 5 ft
+4,7:24.0,98-106,76ers,Defensive rebound by A. Drummond
+4,7:13.0,101-106,76ers,P. George makes 3-pt jump shot from 26 ft (assist by J. McCain)
+4,7:10.0,101-106,Hawks,Atlanta full timeout
+4,7:10.0,101-106,76ers,V. Edgecombe enters the game for A. Drummond
+4,7:10.0,101-106,76ers,J. Embiid enters the game for J. McCain
+4,7:10.0,101-106,Hawks,N. Alexander-Walker enters the game for L. Kennard
+4,7:10.0,101-106,Hawks,O. Okongwu enters the game for A. Newell
+4,7:05.0,101-106,Hawks,Personal foul by J. Walker (drawn by J. Johnson)
+4,6:56.0,101-109,Hawks,N. Alexander-Walker makes 3-pt jump shot from 25 ft (assist by J. Johnson)
+4,6:40.0,103-109,76ers,J. Embiid makes 2-pt jump shot from 6 ft (assist by P. George)
+4,6:22.0,103-109,Hawks,Turnover by O. Okongwu (lost ball; steal by Q. Grimes)
+4,6:18.0,103-109,76ers,Turnover by Q. Grimes (bad pass; steal by Z. Risacher)
+4,6:11.0,103-109,Hawks,Z. Risacher misses 2-pt layup from 2 ft
+4,6:09.0,103-109,76ers,Defensive rebound by J. Embiid
+4,6:01.0,106-109,76ers,P. George makes 3-pt jump shot from 28 ft
+4,5:47.0,106-109,Hawks,N. Alexander-Walker misses 2-pt jump shot from 11 ft
+4,5:43.0,106-109,76ers,Defensive rebound by J. Embiid
+4,5:32.0,106-109,76ers,P. George misses 2-pt jump shot from 7 ft (block by D. Daniels)
+4,5:30.0,106-109,Hawks,Defensive rebound by D. Daniels
+4,5:28.0,106-111,Hawks,Z. Risacher makes 2-pt jump shot from 22 ft (assist by D. Daniels)
+4,5:05.0,106-111,76ers,Personal foul by O. Okongwu (drawn by J. Embiid)
+4,5:05.0,106-111,Hawks,V. Krejci enters the game for Z. Risacher
+4,4:56.0,106-111,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+4,4:52.0,106-111,Hawks,Defensive rebound by D. Daniels
+4,4:44.0,106-111,Hawks,V. Krejci misses 2-pt jump shot from 5 ft
+4,4:40.0,106-111,76ers,Defensive rebound by P. George
+4,4:30.0,106-111,76ers,Personal foul by V. Krejci (drawn by P. George)
+4,4:14.0,109-111,76ers,P. George makes 3-pt jump shot from 27 ft
+4,4:02.0,109-111,Hawks,N. Alexander-Walker misses 3-pt jump shot from 25 ft
+4,3:59.0,109-111,76ers,Defensive rebound by P. George
+4,3:44.0,109-111,76ers,P. George misses 3-pt jump shot from 25 ft
+4,3:39.0,109-111,Hawks,Defensive rebound by N. Alexander-Walker
+4,3:37.0,109-111,Hawks,Atlanta full timeout
+4,3:37.0,109-111,Hawks,Instant Replay (Challenge: Ruling Stands)
+4,3:37.0,109-111,76ers,D. Barlow enters the game for J. Walker
+4,3:31.0,109-114,Hawks,O. Okongwu makes 3-pt jump shot from 25 ft (assist by J. Johnson)
+4,3:11.0,109-114,76ers,V. Edgecombe misses 3-pt jump shot from 26 ft
+4,3:06.0,109-114,Hawks,Defensive rebound by J. Johnson
+4,3:01.0,109-114,Hawks,J. Johnson misses 2-pt layup from 5 ft (block by V. Edgecombe)
+4,2:58.0,109-114,76ers,Defensive rebound by V. Edgecombe
+4,2:53.0,109-114,76ers,Turnover by J. Embiid (lost ball; steal by V. Krejci)
+4,2:48.0,109-114,Hawks,Turnover by V. Krejci (lost ball; steal by J. Embiid)
+4,2:40.0,109-114,76ers,V. Edgecombe misses 2-pt layup from 1 ft
+4,2:35.0,109-114,76ers,Offensive rebound by D. Barlow
+4,2:35.0,109-114,76ers,D. Barlow misses 2-pt layup at rim
+4,2:34.0,109-114,Hawks,Defensive rebound by O. Okongwu
+4,2:24.0,109-114,Hawks,N. Alexander-Walker misses 2-pt layup from 2 ft
+4,2:22.0,109-114,76ers,Defensive rebound by P. George
+4,2:04.0,112-114,76ers,J. Embiid makes 3-pt jump shot from 26 ft (assist by Q. Grimes)
+4,1:39.0,112-114,Hawks,N. Alexander-Walker misses 2-pt layup from 3 ft
+4,1:38.0,112-114,Hawks,Offensive rebound by D. Daniels
+4,1:38.0,112-116,Hawks,D. Daniels makes 2-pt layup at rim
+4,1:38.0,112-116,76ers,Violation by Team (def goaltending)
+4,1:38.0,112-116,76ers,Instant Replay (Request: Ruling Stands)
+4,1:31.0,114-116,76ers,V. Edgecombe makes 2-pt layup from 2 ft
+4,1:19.0,114-116,Hawks,J. Johnson misses 2-pt layup from 1 ft
+4,1:18.0,114-116,Hawks,Offensive rebound by J. Johnson
+4,1:15.0,114-118,Hawks,D. Daniels makes 2-pt jump shot from 9 ft (assist by J. Johnson)
+4,1:03.0,117-118,76ers,Q. Grimes makes 3-pt jump shot from 24 ft (assist by P. George)
+4,0:43.0,117-118,Hawks,O. Okongwu misses 2-pt jump shot from 5 ft
+4,0:41.0,117-118,76ers,Defensive rebound by J. Embiid
+4,0:24.0,117-118,76ers,P. George misses 3-pt jump shot from 24 ft
+4,0:20.0,117-118,76ers,Offensive rebound by V. Edgecombe
+4,0:10.0,117-118,76ers,Q. Grimes misses 3-pt jump shot from 26 ft
+4,0:06.0,117-118,Hawks,Defensive rebound by N. Alexander-Walker
+4,0:02.0,117-118,Hawks,Personal take foul by V. Edgecombe (drawn by N. Alexander-Walker)
+4,0:02.0,117-118,Hawks,Atlanta full timeout
+4,0:02.0,117-118,Hawks,L. Kennard enters the game for D. Daniels
+4,0:02.0,117-118,Hawks,Atlanta full timeout
+4,0:01.0,117-118,Hawks,Personal take foul by V. Edgecombe (drawn by N. Alexander-Walker)
+4,0:01.0,117-119,Hawks,N. Alexander-Walker makes free throw 1 of 2
+4,0:01.0,117-120,Hawks,N. Alexander-Walker makes free throw 2 of 2
+4,0:01.0,117-120,Hawks,D. Daniels enters the game for L. Kennard
+4,0:01.0,117-120,76ers,Philadelphia full timeout
+4,0:01.0,117-120,76ers,K. Lowry enters the game for D. Barlow
+4,0:00.0,117-120,76ers,Q. Grimes misses 3-pt jump shot from 23 ft
+4,0:00.0,117-120,76ers,Offensive rebound by Team

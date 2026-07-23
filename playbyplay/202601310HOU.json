@@ -1,0 +1,3390 @@
+[
+  {
+    "quarter": 1,
+    "time": "11:44.0",
+    "score": "0-0",
+    "team": "Rockets",
+    "description": "J. Smith misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:42.0",
+    "score": "0-0",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "11:42.0",
+    "score": "0-0",
+    "team": "Mavericks",
+    "description": "Loose ball foul by P. Washington (drawn by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 1,
+    "time": "11:32.0",
+    "score": "0-0",
+    "team": "Rockets",
+    "description": "J. Smith misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:31.0",
+    "score": "0-0",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 1,
+    "time": "11:19.0",
+    "score": "2-0",
+    "team": "Mavericks",
+    "description": "P. Washington makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:06.0",
+    "score": "2-0",
+    "team": "Rockets",
+    "description": "T. Eason misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "11:05.0",
+    "score": "2-0",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 1,
+    "time": "10:59.0",
+    "score": "2-0",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:59.0",
+    "score": "2-0",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 1,
+    "time": "10:44.0",
+    "score": "2-0",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:43.0",
+    "score": "2-0",
+    "team": "Rockets",
+    "description": "Defensive rebound by K. Durant"
+  },
+  {
+    "quarter": 1,
+    "time": "10:32.0",
+    "score": "2-3",
+    "team": "Rockets",
+    "description": "T. Eason makes 3-pt jump shot from 27 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:23.0",
+    "score": "2-3",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:22.0",
+    "score": "2-3",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 1,
+    "time": "10:15.0",
+    "score": "2-3",
+    "team": "Rockets",
+    "description": "Shooting foul by D. Gafford (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "10:15.0",
+    "score": "2-3",
+    "team": "Rockets",
+    "description": "A. Thompson misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "10:15.0",
+    "score": "2-3",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "10:15.0",
+    "score": "2-4",
+    "team": "Rockets",
+    "description": "A. Thompson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "10:04.0",
+    "score": "2-4",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "10:03.0",
+    "score": "2-4",
+    "team": "Rockets",
+    "description": "Defensive rebound by K. Durant"
+  },
+  {
+    "quarter": 1,
+    "time": "9:58.0",
+    "score": "2-4",
+    "team": "Rockets",
+    "description": "T. Eason misses 2-pt layup from 3 ft (block by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:57.0",
+    "score": "2-4",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 1,
+    "time": "9:49.0",
+    "score": "2-4",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:48.0",
+    "score": "2-4",
+    "team": "Rockets",
+    "description": "Defensive rebound by K. Durant"
+  },
+  {
+    "quarter": 1,
+    "time": "9:32.0",
+    "score": "2-4",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt hook shot from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:31.0",
+    "score": "2-4",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 1,
+    "time": "9:25.0",
+    "score": "4-4",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt layup from 4 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "9:02.0",
+    "score": "4-4",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "9:01.0",
+    "score": "4-4",
+    "team": "Rockets",
+    "description": "Offensive rebound by T. Eason"
+  },
+  {
+    "quarter": 1,
+    "time": "8:48.0",
+    "score": "4-4",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 20 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:46.0",
+    "score": "4-4",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "8:40.0",
+    "score": "4-4",
+    "team": "Mavericks",
+    "description": "Personal foul by T. Eason (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:33.0",
+    "score": "4-4",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:32.0",
+    "score": "4-4",
+    "team": "Rockets",
+    "description": "Defensive rebound by K. Durant"
+  },
+  {
+    "quarter": 1,
+    "time": "8:22.0",
+    "score": "4-4",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:21.0",
+    "score": "4-4",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "8:15.0",
+    "score": "4-4",
+    "team": "Mavericks",
+    "description": "Shooting foul by A. \u015eeng\u00fcn (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "8:15.0",
+    "score": "5-4",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:15.0",
+    "score": "6-4",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "8:04.0",
+    "score": "6-4",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "8:04.0",
+    "score": "6-4",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "8:04.0",
+    "score": "6-4",
+    "team": "Mavericks",
+    "description": "D. Powell enters the game for D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "7:52.0",
+    "score": "6-6",
+    "team": "Rockets",
+    "description": "K. Durant makes 2-pt jump shot from 8 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:34.0",
+    "score": "8-6",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:18.0",
+    "score": "8-6",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "7:17.0",
+    "score": "8-6",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Powell"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "8-6",
+    "team": "Mavericks",
+    "description": "Shooting foul by K. Durant (drawn by N. Marshall)"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "8-6",
+    "team": "Mavericks",
+    "description": "N. Marshall misses free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "8-6",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "8-6",
+    "team": "Rockets",
+    "description": "J. Okogie enters the game for J. Smith"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "8-6",
+    "team": "Mavericks",
+    "description": "N. Marshall misses free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "7:10.0",
+    "score": "8-6",
+    "team": "Rockets",
+    "description": "Defensive rebound by T. Eason"
+  },
+  {
+    "quarter": 1,
+    "time": "6:54.0",
+    "score": "8-9",
+    "team": "Rockets",
+    "description": "J. Okogie makes 3-pt jump shot from 23 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:42.0",
+    "score": "8-9",
+    "team": "Mavericks",
+    "description": "D. Powell misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:41.0",
+    "score": "8-9",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Okogie"
+  },
+  {
+    "quarter": 1,
+    "time": "6:34.0",
+    "score": "8-11",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:18.0",
+    "score": "8-11",
+    "team": "Mavericks",
+    "description": "P. Washington misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "6:17.0",
+    "score": "8-11",
+    "team": "Rockets",
+    "description": "Defensive rebound by T. Eason"
+  },
+  {
+    "quarter": 1,
+    "time": "6:12.0",
+    "score": "8-13",
+    "team": "Rockets",
+    "description": "K. Durant makes 2-pt jump shot from 12 ft (assist by T. Eason)"
+  },
+  {
+    "quarter": 1,
+    "time": "6:12.0",
+    "score": "8-13",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "6:12.0",
+    "score": "8-13",
+    "team": "Mavericks",
+    "description": "B. Williams enters the game for N. Marshall"
+  },
+  {
+    "quarter": 1,
+    "time": "5:56.0",
+    "score": "8-13",
+    "team": "Mavericks",
+    "description": "Turnover by P. Washington (lost ball; steal by T. Eason)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:52.0",
+    "score": "8-15",
+    "team": "Rockets",
+    "description": "T. Eason makes 2-pt layup from 6 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:31.0",
+    "score": "8-15",
+    "team": "Mavericks",
+    "description": "B. Williams misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:30.0",
+    "score": "8-15",
+    "team": "Mavericks",
+    "description": "Offensive rebound by P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "10-15",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "10-15",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. Okogie (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "10-15",
+    "team": "Mavericks",
+    "description": "D. Gafford enters the game for D. Powell"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "10-15",
+    "team": "Rockets",
+    "description": "R. Sheppard enters the game for A. Thompson"
+  },
+  {
+    "quarter": 1,
+    "time": "5:22.0",
+    "score": "11-15",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "5:09.0",
+    "score": "11-15",
+    "team": "Rockets",
+    "description": "J. Okogie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "5:09.0",
+    "score": "11-15",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 1,
+    "time": "5:00.0",
+    "score": "14-15",
+    "team": "Mavericks",
+    "description": "B. Williams makes 3-pt jump shot from 24 ft (assist by D. Gafford)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:47.0",
+    "score": "14-17",
+    "team": "Rockets",
+    "description": "K. Durant makes 2-pt jump shot from 10 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:34.0",
+    "score": "14-17",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:32.0",
+    "score": "14-17",
+    "team": "Mavericks",
+    "description": "Offensive rebound by P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "4:26.0",
+    "score": "16-17",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt layup from 4 ft (assist by P. Washington)"
+  },
+  {
+    "quarter": 1,
+    "time": "4:12.0",
+    "score": "16-17",
+    "team": "Rockets",
+    "description": "R. Sheppard misses 3-pt jump shot from 29 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:10.0",
+    "score": "16-17",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "4:03.0",
+    "score": "16-17",
+    "team": "Mavericks",
+    "description": "P. Washington misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "4:02.0",
+    "score": "16-17",
+    "team": "Mavericks",
+    "description": "Offensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "4:02.0",
+    "score": "18-17",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 1,
+    "time": "3:45.0",
+    "score": "18-17",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:44.0",
+    "score": "18-17",
+    "team": "Rockets",
+    "description": "Offensive rebound by J. Okogie"
+  },
+  {
+    "quarter": 1,
+    "time": "3:44.0",
+    "score": "18-19",
+    "team": "Rockets",
+    "description": "J. Okogie makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:28.0",
+    "score": "18-19",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "3:23.0",
+    "score": "18-19",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Okogie"
+  },
+  {
+    "quarter": 1,
+    "time": "3:17.0",
+    "score": "18-21",
+    "team": "Rockets",
+    "description": "T. Eason makes 2-pt layup from 3 ft (assist by J. Okogie)"
+  },
+  {
+    "quarter": 1,
+    "time": "2:58.0",
+    "score": "20-21",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:46.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt dunk from 3 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:45.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "Offensive rebound by T. Eason"
+  },
+  {
+    "quarter": 1,
+    "time": "2:39.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "J. Okogie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "Houston full timeout"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for M. Christie"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Mavericks",
+    "description": "C. Martin enters the game for C. Flagg"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Mavericks",
+    "description": "K. Thompson enters the game for P. Washington"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "C. Capela enters the game for K. Durant"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "D. Finney-Smith enters the game for T. Eason"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "J. Smith enters the game for J. Okogie"
+  },
+  {
+    "quarter": 1,
+    "time": "2:37.0",
+    "score": "20-21",
+    "team": "Rockets",
+    "description": "A. Thompson enters the game for A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 1,
+    "time": "2:27.0",
+    "score": "22-21",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "2:02.0",
+    "score": "22-21",
+    "team": "Rockets",
+    "description": "Turnover by R. Sheppard (bad pass; steal by C. Martin)"
+  },
+  {
+    "quarter": 1,
+    "time": "1:57.0",
+    "score": "22-21",
+    "team": "Mavericks",
+    "description": "B. Williams misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:57.0",
+    "score": "22-21",
+    "team": "Rockets",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "1:57.0",
+    "score": "22-21",
+    "team": "Mavericks",
+    "description": "M. Cisse enters the game for D. Gafford"
+  },
+  {
+    "quarter": 1,
+    "time": "1:48.0",
+    "score": "22-23",
+    "team": "Rockets",
+    "description": "R. Sheppard makes 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:32.0",
+    "score": "22-23",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "1:31.0",
+    "score": "22-23",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 1,
+    "time": "1:14.0",
+    "score": "22-26",
+    "team": "Rockets",
+    "description": "J. Smith makes 3-pt jump shot from 26 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:56.0",
+    "score": "25-26",
+    "team": "Mavericks",
+    "description": "B. Williams makes 3-pt jump shot from 25 ft (assist by C. Martin)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:39.0",
+    "score": "25-28",
+    "team": "Rockets",
+    "description": "C. Capela makes 2-pt hook shot from 8 ft (assist by R. Sheppard)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:37.0",
+    "score": "27-28",
+    "team": "Mavericks",
+    "description": "B. Williams makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:37.0",
+    "score": "27-28",
+    "team": "Mavericks",
+    "description": "Shooting foul by R. Sheppard (drawn by B. Williams)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:37.0",
+    "score": "27-28",
+    "team": "Rockets",
+    "description": "K. Durant enters the game for D. Finney-Smith"
+  },
+  {
+    "quarter": 1,
+    "time": "0:37.0",
+    "score": "28-28",
+    "team": "Mavericks",
+    "description": "B. Williams makes free throw 1 of 1"
+  },
+  {
+    "quarter": 1,
+    "time": "0:21.0",
+    "score": "28-30",
+    "team": "Rockets",
+    "description": "C. Capela makes 2-pt dunk from 3 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-30",
+    "team": "Mavericks",
+    "description": "Turnover by B. Williams (bad pass; steal by A. Thompson)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-30",
+    "team": "Mavericks",
+    "description": "Clear path foul by A. Thompson"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-30",
+    "team": "Mavericks",
+    "description": "Instant Replay (Request: Ruling Stands)"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-31",
+    "team": "Rockets",
+    "description": "A. Thompson makes clear path free throw 1 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-31",
+    "team": "Mavericks",
+    "description": "M. Christie enters the game for B. Williams"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-31",
+    "team": "Rockets",
+    "description": "A. Thompson misses clear path free throw 2 of 2"
+  },
+  {
+    "quarter": 1,
+    "time": "0:09.0",
+    "score": "28-31",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 1,
+    "time": "0:01.0",
+    "score": "28-31",
+    "team": "Rockets",
+    "description": "R. Sheppard misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 1,
+    "time": "0:00.0",
+    "score": "28-31",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "11:51.0",
+    "score": "28-31",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:50.0",
+    "score": "28-31",
+    "team": "Mavericks",
+    "description": "Offensive rebound by K. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "11:40.0",
+    "score": "28-31",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "11:40.0",
+    "score": "28-31",
+    "team": "Rockets",
+    "description": "Defensive rebound by C. Capela"
+  },
+  {
+    "quarter": 2,
+    "time": "11:24.0",
+    "score": "28-33",
+    "team": "Rockets",
+    "description": "R. Sheppard makes 2-pt jump shot from 19 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "11:04.0",
+    "score": "30-33",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:43.0",
+    "score": "30-35",
+    "team": "Rockets",
+    "description": "D. Finney-Smith makes 2-pt jump shot from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:26.0",
+    "score": "30-35",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:26.0",
+    "score": "30-35",
+    "team": "Mavericks",
+    "description": "Offensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "10:25.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "10:12.0",
+    "score": "32-35",
+    "team": "Rockets",
+    "description": "D. Finney-Smith misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "10:12.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Martin"
+  },
+  {
+    "quarter": 2,
+    "time": "9:54.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "D. Gafford misses 2-pt layup from 5 ft (block by R. Sheppard)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:54.0",
+    "score": "32-35",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "9:52.0",
+    "score": "35-35",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 3-pt jump shot from 24 ft (assist by N. Marshall)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:29.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "C. Capela makes 2-pt hook shot from 5 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:07.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "Turnover by K. Thompson (lost ball; steal by R. Sheppard)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:04.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "Personal foul by N. Marshall (drawn by R. Sheppard)"
+  },
+  {
+    "quarter": 2,
+    "time": "9:04.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "C. Flagg enters the game for N. Marshall"
+  },
+  {
+    "quarter": 2,
+    "time": "9:04.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "R. Nembhard enters the game for C. Martin"
+  },
+  {
+    "quarter": 2,
+    "time": "9:04.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "P. Washington enters the game for B. Williams"
+  },
+  {
+    "quarter": 2,
+    "time": "9:04.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "J. Smith enters the game for A. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "8:55.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "C. Capela misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:54.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "8:47.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "D. Gafford misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:46.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "Defensive rebound by K. Durant"
+  },
+  {
+    "quarter": 2,
+    "time": "8:41.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "K. Durant misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:38.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 2,
+    "time": "8:22.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:20.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 2,
+    "time": "8:07.0",
+    "score": "35-37",
+    "team": "Rockets",
+    "description": "J. Smith misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "8:05.0",
+    "score": "35-37",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "7:59.0",
+    "score": "37-37",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt dunk from 4 ft (assist by R. Nembhard)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "37-37",
+    "team": "Rockets",
+    "description": "Houston full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "37-37",
+    "team": "Mavericks",
+    "description": "D. Powell enters the game for D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "37-37",
+    "team": "Rockets",
+    "description": "T. Eason enters the game for C. Capela"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "37-37",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn enters the game for D. Finney-Smith"
+  },
+  {
+    "quarter": 2,
+    "time": "7:57.0",
+    "score": "37-37",
+    "team": "Rockets",
+    "description": "A. Thompson enters the game for R. Sheppard"
+  },
+  {
+    "quarter": 2,
+    "time": "7:40.0",
+    "score": "37-37",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:39.0",
+    "score": "37-37",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Powell"
+  },
+  {
+    "quarter": 2,
+    "time": "7:27.0",
+    "score": "39-37",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 8 ft (assist by R. Nembhard)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:16.0",
+    "score": "39-40",
+    "team": "Rockets",
+    "description": "J. Smith makes 3-pt jump shot from 26 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "7:01.0",
+    "score": "39-40",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "7:00.0",
+    "score": "39-40",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 2,
+    "time": "6:52.0",
+    "score": "39-42",
+    "team": "Rockets",
+    "description": "J. Smith makes 2-pt jump shot from 12 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "6:38.0",
+    "score": "39-42",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:37.0",
+    "score": "39-42",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 2,
+    "time": "6:25.0",
+    "score": "39-42",
+    "team": "Rockets",
+    "description": "J. Smith misses 2-pt jump shot from 11 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "6:24.0",
+    "score": "39-42",
+    "team": "Mavericks",
+    "description": "Defensive rebound by P. Washington"
+  },
+  {
+    "quarter": 2,
+    "time": "6:15.0",
+    "score": "41-42",
+    "team": "Mavericks",
+    "description": "P. Washington makes 2-pt layup from 3 ft (assist by R. Nembhard)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:52.0",
+    "score": "41-42",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:51.0",
+    "score": "41-42",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Powell"
+  },
+  {
+    "quarter": 2,
+    "time": "5:44.0",
+    "score": "41-42",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:42.0",
+    "score": "41-42",
+    "team": "Rockets",
+    "description": "Defensive rebound by T. Eason"
+  },
+  {
+    "quarter": 2,
+    "time": "5:31.0",
+    "score": "41-42",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:30.0",
+    "score": "41-42",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "5:30.0",
+    "score": "41-42",
+    "team": "Rockets",
+    "description": "Shooting foul by D. Powell (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:30.0",
+    "score": "41-43",
+    "team": "Rockets",
+    "description": "A. Thompson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:30.0",
+    "score": "41-43",
+    "team": "Mavericks",
+    "description": "M. Christie enters the game for K. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "5:30.0",
+    "score": "41-43",
+    "team": "Rockets",
+    "description": "J. Okogie enters the game for K. Durant"
+  },
+  {
+    "quarter": 2,
+    "time": "5:30.0",
+    "score": "41-44",
+    "team": "Rockets",
+    "description": "A. Thompson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "5:18.0",
+    "score": "41-44",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "5:15.0",
+    "score": "41-44",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Okogie"
+  },
+  {
+    "quarter": 2,
+    "time": "5:05.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes 2-pt hook shot from 8 ft (assist by J. Smith)"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 2,
+    "time": "5:04.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for R. Nembhard"
+  },
+  {
+    "quarter": 2,
+    "time": "4:49.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:47.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 2,
+    "time": "4:38.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt hook shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "4:38.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 2,
+    "time": "4:32.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. Smith (drawn by P. Washington)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:32.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "P. Washington misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:32.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "4:32.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "P. Washington misses free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:32.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "Shooting foul by D. Powell (drawn by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "41-46",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "41-46",
+    "team": "Mavericks",
+    "description": "D. Gafford enters the game for D. Powell"
+  },
+  {
+    "quarter": 2,
+    "time": "4:15.0",
+    "score": "41-47",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "3:58.0",
+    "score": "44-47",
+    "team": "Mavericks",
+    "description": "M. Christie makes 3-pt jump shot from 25 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:31.0",
+    "score": "44-49",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:22.0",
+    "score": "44-49",
+    "team": "Mavericks",
+    "description": "Turnover by P. Washington (lost ball; steal by T. Eason)"
+  },
+  {
+    "quarter": 2,
+    "time": "3:12.0",
+    "score": "44-49",
+    "team": "Rockets",
+    "description": "J. Okogie misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "3:12.0",
+    "score": "44-49",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 2,
+    "time": "2:58.0",
+    "score": "44-52",
+    "team": "Rockets",
+    "description": "J. Smith makes 3-pt jump shot from 26 ft (assist by T. Eason)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:49.0",
+    "score": "44-52",
+    "team": "Mavericks",
+    "description": "Personal foul by J. Okogie (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 2,
+    "time": "2:39.0",
+    "score": "44-52",
+    "team": "Mavericks",
+    "description": "P. Washington misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:38.0",
+    "score": "44-52",
+    "team": "Mavericks",
+    "description": "Offensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "2:38.0",
+    "score": "46-52",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "2:21.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "T. Eason misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "2:20.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "Offensive rebound by T. Eason"
+  },
+  {
+    "quarter": 2,
+    "time": "2:20.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "T. Eason misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "2:19.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "Offensive rebound by J. Smith"
+  },
+  {
+    "quarter": 2,
+    "time": "1:59.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "T. Eason misses 2-pt jump shot from 14 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:58.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 2,
+    "time": "1:56.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt layup at rim"
+  },
+  {
+    "quarter": 2,
+    "time": "1:54.0",
+    "score": "46-52",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 2,
+    "time": "1:53.0",
+    "score": "46-54",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:40.0",
+    "score": "48-54",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk from 3 ft (assist by N. Marshall)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:20.0",
+    "score": "48-54",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "1:19.0",
+    "score": "48-54",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:19.0",
+    "score": "48-54",
+    "team": "Rockets",
+    "description": "Loose ball foul by A. \u015eeng\u00fcn (drawn by D. Gafford)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:19.0",
+    "score": "48-54",
+    "team": "Rockets",
+    "description": "K. Durant enters the game for T. Eason"
+  },
+  {
+    "quarter": 2,
+    "time": "1:03.0",
+    "score": "48-54",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. Smith (drawn by N. Marshall)"
+  },
+  {
+    "quarter": 2,
+    "time": "1:03.0",
+    "score": "48-54",
+    "team": "Mavericks",
+    "description": "N. Marshall misses free throw 1 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "1:03.0",
+    "score": "48-54",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "1:03.0",
+    "score": "49-54",
+    "team": "Mavericks",
+    "description": "N. Marshall makes free throw 2 of 2"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "49-54",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:51.0",
+    "score": "49-54",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "0:45.0",
+    "score": "49-54",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt layup from 6 ft (block by J. Okogie)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:45.0",
+    "score": "49-54",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 2,
+    "time": "0:38.0",
+    "score": "51-54",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:33.0",
+    "score": "51-56",
+    "team": "Rockets",
+    "description": "J. Smith makes 2-pt dunk from 3 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:19.0",
+    "score": "51-56",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:18.0",
+    "score": "51-56",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 2,
+    "time": "0:06.0",
+    "score": "51-59",
+    "team": "Rockets",
+    "description": "K. Durant makes 3-pt jump shot from 23 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "Offensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "D. Gafford misses 2-pt layup from 1 ft"
+  },
+  {
+    "quarter": 2,
+    "time": "0:01.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:49.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "P. Washington misses 2-pt layup from 5 ft (block by J. Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:49.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "11:42.0",
+    "score": "51-59",
+    "team": "Mavericks",
+    "description": "Turnover by M. Christie (out of bounds lost ball)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:32.0",
+    "score": "51-61",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes 2-pt dunk from 3 ft (assist by J. Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "11:14.0",
+    "score": "51-61",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt layup from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "11:13.0",
+    "score": "51-61",
+    "team": "Mavericks",
+    "description": "Offensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "11:13.0",
+    "score": "53-61",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "10:50.0",
+    "score": "53-63",
+    "team": "Rockets",
+    "description": "K. Durant makes 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:37.0",
+    "score": "53-63",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:36.0",
+    "score": "53-63",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "10:28.0",
+    "score": "53-63",
+    "team": "Rockets",
+    "description": "T. Eason misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:26.0",
+    "score": "53-63",
+    "team": "Mavericks",
+    "description": "Defensive rebound by M. Christie"
+  },
+  {
+    "quarter": 3,
+    "time": "10:12.0",
+    "score": "55-63",
+    "team": "Mavericks",
+    "description": "P. Washington makes 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "10:12.0",
+    "score": "55-63",
+    "team": "Mavericks",
+    "description": "Shooting foul by A. \u015eeng\u00fcn (drawn by P. Washington)"
+  },
+  {
+    "quarter": 3,
+    "time": "10:12.0",
+    "score": "56-63",
+    "team": "Mavericks",
+    "description": "P. Washington makes free throw 1 of 1"
+  },
+  {
+    "quarter": 3,
+    "time": "9:59.0",
+    "score": "56-63",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:59.0",
+    "score": "56-63",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 3,
+    "time": "9:49.0",
+    "score": "56-63",
+    "team": "Mavericks",
+    "description": "M. Christie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:48.0",
+    "score": "56-63",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "9:37.0",
+    "score": "56-65",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes 2-pt layup from 3 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "56-65",
+    "team": "Mavericks",
+    "description": "Shooting foul by T. Eason (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "56-65",
+    "team": "Rockets",
+    "description": "Houston full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "56-65",
+    "team": "Rockets",
+    "description": "Instant Replay (Challenge: Stands)"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "56-65",
+    "team": "Mavericks",
+    "description": "C. Flagg misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "56-65",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "9:21.0",
+    "score": "57-65",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "9:05.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt jump shot from 10 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "9:03.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "8:59.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "T. Eason misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:58.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "8:58.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "J. Smith misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:56.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "57-65",
+    "team": "Rockets",
+    "description": "Shooting foul by C. Flagg (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "57-66",
+    "team": "Rockets",
+    "description": "A. Thompson makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:55.0",
+    "score": "57-67",
+    "team": "Rockets",
+    "description": "A. Thompson makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "8:38.0",
+    "score": "57-67",
+    "team": "Mavericks",
+    "description": "P. Washington misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:37.0",
+    "score": "57-67",
+    "team": "Mavericks",
+    "description": "Offensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 3,
+    "time": "8:37.0",
+    "score": "59-67",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "8:23.0",
+    "score": "59-69",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "8:12.0",
+    "score": "62-69",
+    "team": "Mavericks",
+    "description": "M. Christie makes 3-pt jump shot from 25 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:57.0",
+    "score": "62-69",
+    "team": "Rockets",
+    "description": "T. Eason misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "7:56.0",
+    "score": "62-69",
+    "team": "Rockets",
+    "description": "Offensive rebound by J. Smith"
+  },
+  {
+    "quarter": 3,
+    "time": "7:56.0",
+    "score": "62-71",
+    "team": "Rockets",
+    "description": "J. Smith makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 3,
+    "time": "7:37.0",
+    "score": "62-71",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt jump shot from 7 ft (block by J. Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:37.0",
+    "score": "62-71",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "7:33.0",
+    "score": "62-73",
+    "team": "Rockets",
+    "description": "T. Eason makes 2-pt dunk from 2 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "7:13.0",
+    "score": "64-73",
+    "team": "Mavericks",
+    "description": "P. Washington makes 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:55.0",
+    "score": "64-76",
+    "team": "Rockets",
+    "description": "T. Eason makes 3-pt jump shot from 23 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:42.0",
+    "score": "64-76",
+    "team": "Mavericks",
+    "description": "M. Christie misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "6:41.0",
+    "score": "64-76",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "64-76",
+    "team": "Rockets",
+    "description": "Shooting foul by P. Washington (drawn by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "64-77",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "64-77",
+    "team": "Mavericks",
+    "description": "M. Cisse enters the game for D. Gafford"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "64-77",
+    "team": "Mavericks",
+    "description": "K. Thompson enters the game for N. Marshall"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "64-77",
+    "team": "Rockets",
+    "description": "J. Okogie enters the game for J. Smith"
+  },
+  {
+    "quarter": 3,
+    "time": "6:27.0",
+    "score": "64-77",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "6:25.0",
+    "score": "64-77",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "6:08.0",
+    "score": "67-77",
+    "team": "Mavericks",
+    "description": "M. Christie makes 3-pt jump shot from 26 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:58.0",
+    "score": "67-79",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt layup from 3 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:42.0",
+    "score": "69-79",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:29.0",
+    "score": "69-79",
+    "team": "Rockets",
+    "description": "Turnover by A. \u015eeng\u00fcn (lost ball; steal by P. Washington)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:25.0",
+    "score": "69-79",
+    "team": "Mavericks",
+    "description": "Turnover by P. Washington (lost ball; steal by K. Durant)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:20.0",
+    "score": "69-82",
+    "team": "Rockets",
+    "description": "J. Okogie makes 3-pt jump shot from 23 ft (assist by T. Eason)"
+  },
+  {
+    "quarter": 3,
+    "time": "5:19.0",
+    "score": "69-82",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 3,
+    "time": "5:19.0",
+    "score": "69-82",
+    "team": "Mavericks",
+    "description": "C. Martin enters the game for P. Washington"
+  },
+  {
+    "quarter": 3,
+    "time": "5:19.0",
+    "score": "69-82",
+    "team": "Rockets",
+    "description": "D. Finney-Smith enters the game for T. Eason"
+  },
+  {
+    "quarter": 3,
+    "time": "5:04.0",
+    "score": "69-82",
+    "team": "Mavericks",
+    "description": "C. Martin misses 2-pt jump shot from 22 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "5:03.0",
+    "score": "69-82",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Okogie"
+  },
+  {
+    "quarter": 3,
+    "time": "4:52.0",
+    "score": "69-82",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:51.0",
+    "score": "69-82",
+    "team": "Mavericks",
+    "description": "Defensive rebound by M. Cisse"
+  },
+  {
+    "quarter": 3,
+    "time": "4:45.0",
+    "score": "71-82",
+    "team": "Mavericks",
+    "description": "M. Cisse makes 2-pt dunk from 3 ft (assist by C. Martin)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:33.0",
+    "score": "71-82",
+    "team": "Rockets",
+    "description": "Personal foul by M. Cisse (drawn by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:33.0",
+    "score": "71-82",
+    "team": "Mavericks",
+    "description": "R. Nembhard enters the game for M. Christie"
+  },
+  {
+    "quarter": 3,
+    "time": "4:33.0",
+    "score": "71-82",
+    "team": "Rockets",
+    "description": "R. Sheppard enters the game for A. Thompson"
+  },
+  {
+    "quarter": 3,
+    "time": "4:21.0",
+    "score": "71-82",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "4:18.0",
+    "score": "71-82",
+    "team": "Rockets",
+    "description": "Offensive rebound by D. Finney-Smith"
+  },
+  {
+    "quarter": 3,
+    "time": "4:15.0",
+    "score": "71-82",
+    "team": "Rockets",
+    "description": "Turnover by K. Durant (lost ball; steal by C. Martin)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:12.0",
+    "score": "71-82",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. Okogie (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "4:12.0",
+    "score": "71-82",
+    "team": "Mavericks",
+    "description": "C. Flagg misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "4:12.0",
+    "score": "71-82",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "4:12.0",
+    "score": "72-82",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:53.0",
+    "score": "72-82",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "3:50.0",
+    "score": "72-82",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "3:35.0",
+    "score": "72-82",
+    "team": "Mavericks",
+    "description": "Shooting foul by R. Sheppard (drawn by M. Cisse)"
+  },
+  {
+    "quarter": 3,
+    "time": "3:35.0",
+    "score": "72-82",
+    "team": "Mavericks",
+    "description": "M. Cisse misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:35.0",
+    "score": "72-82",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "3:35.0",
+    "score": "73-82",
+    "team": "Mavericks",
+    "description": "M. Cisse makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "3:14.0",
+    "score": "73-84",
+    "team": "Rockets",
+    "description": "J. Okogie makes 2-pt dunk from 1 ft (assist by D. Finney-Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:56.0",
+    "score": "76-84",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 3-pt jump shot from 27 ft (assist by C. Martin)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:39.0",
+    "score": "76-84",
+    "team": "Rockets",
+    "description": "D. Finney-Smith misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:38.0",
+    "score": "76-84",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Martin"
+  },
+  {
+    "quarter": 3,
+    "time": "2:25.0",
+    "score": "78-84",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt layup from 12 ft (assist by C. Martin)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:11.0",
+    "score": "78-84",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 21 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "2:10.0",
+    "score": "78-84",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "2:05.0",
+    "score": "78-84",
+    "team": "Mavericks",
+    "description": "C. Martin misses 2-pt layup from 4 ft (block by D. Finney-Smith)"
+  },
+  {
+    "quarter": 3,
+    "time": "2:04.0",
+    "score": "78-84",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "1:58.0",
+    "score": "78-87",
+    "team": "Rockets",
+    "description": "J. Okogie makes 3-pt jump shot from 23 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:28.0",
+    "score": "81-87",
+    "team": "Mavericks",
+    "description": "C. Martin makes 3-pt jump shot from 26 ft (assist by C. Flagg)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:07.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "K. Durant misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "1:05.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "Turnover by A. \u015eeng\u00fcn (bad pass)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "Loose ball foul by K. Durant (drawn by C. Martin)"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Mavericks",
+    "description": "C. Martin misses free throw 1 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for C. Flagg"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "C. Capela enters the game for K. Durant"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "J. Smith enters the game for D. Finney-Smith"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "81-87",
+    "team": "Rockets",
+    "description": "A. Thompson enters the game for A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 3,
+    "time": "1:04.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "C. Martin makes free throw 2 of 2"
+  },
+  {
+    "quarter": 3,
+    "time": "0:54.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "Personal foul by K. Thompson (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 3,
+    "time": "0:47.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "R. Sheppard misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:46.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 3,
+    "time": "0:29.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:28.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "Defensive rebound by C. Capela"
+  },
+  {
+    "quarter": 3,
+    "time": "0:08.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt jump shot from 6 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:07.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Martin"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 9 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Offensive rebound by C. Martin"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "C. Martin misses 2-pt layup from 2 ft"
+  },
+  {
+    "quarter": 3,
+    "time": "0:00.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:43.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "C. Capela misses 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:42.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:42.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "Loose ball foul by C. Capela (drawn by D. Gafford)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:28.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Turnover by K. Thompson (bad pass; steal by R. Sheppard)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:24.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "J. Okogie misses 3-pt jump shot from 23 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "11:23.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:12.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Turnover by R. Nembhard (bad pass; steal by C. Capela)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:09.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "J. Okogie misses 2-pt layup from 5 ft (block by R. Nembhard)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:09.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "11:09.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "11:09.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Instant Replay (Challenge: Stands)"
+  },
+  {
+    "quarter": 4,
+    "time": "11:00.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:59.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "Defensive rebound by D. Gafford"
+  },
+  {
+    "quarter": 4,
+    "time": "10:38.0",
+    "score": "82-87",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 3-pt jump shot from 27 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:37.0",
+    "score": "82-87",
+    "team": "Rockets",
+    "description": "Defensive rebound by C. Capela"
+  },
+  {
+    "quarter": 4,
+    "time": "10:25.0",
+    "score": "82-89",
+    "team": "Rockets",
+    "description": "R. Sheppard makes 2-pt jump shot from 14 ft (assist by C. Capela)"
+  },
+  {
+    "quarter": 4,
+    "time": "10:09.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "R. Nembhard misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "10:08.0",
+    "score": "82-89",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "10:00.0",
+    "score": "82-89",
+    "team": "Rockets",
+    "description": "R. Sheppard misses 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:59.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "Defensive rebound by R. Nembhard"
+  },
+  {
+    "quarter": 4,
+    "time": "9:54.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "Turnover by C. Flagg (lost ball; steal by J. Okogie)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:45.0",
+    "score": "82-89",
+    "team": "Rockets",
+    "description": "C. Capela misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:44.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "Shooting foul by R. Sheppard (drawn by N. Marshall)"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "N. Marshall misses free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "M. Christie enters the game for C. Flagg"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-89",
+    "team": "Mavericks",
+    "description": "C. Martin enters the game for R. Nembhard"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "82-89",
+    "team": "Rockets",
+    "description": "K. Durant enters the game for J. Okogie"
+  },
+  {
+    "quarter": 4,
+    "time": "9:30.0",
+    "score": "83-89",
+    "team": "Mavericks",
+    "description": "N. Marshall makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "9:20.0",
+    "score": "83-89",
+    "team": "Rockets",
+    "description": "R. Sheppard misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:19.0",
+    "score": "83-89",
+    "team": "Mavericks",
+    "description": "Defensive rebound by K. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "9:08.0",
+    "score": "83-89",
+    "team": "Mavericks",
+    "description": "K. Thompson misses 2-pt jump shot from 15 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "9:07.0",
+    "score": "83-89",
+    "team": "Rockets",
+    "description": "Defensive rebound by R. Sheppard"
+  },
+  {
+    "quarter": 4,
+    "time": "8:58.0",
+    "score": "83-91",
+    "team": "Rockets",
+    "description": "J. Smith makes 2-pt jump shot from 13 ft (assist by A. Thompson)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:47.0",
+    "score": "83-91",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt layup from 3 ft (block by J. Smith)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:47.0",
+    "score": "83-91",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "8:42.0",
+    "score": "83-93",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt layup from 4 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:42.0",
+    "score": "83-93",
+    "team": "Rockets",
+    "description": "Shooting foul by M. Christie (drawn by A. Thompson)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:42.0",
+    "score": "83-93",
+    "team": "Mavericks",
+    "description": "M. Cisse enters the game for D. Gafford"
+  },
+  {
+    "quarter": 4,
+    "time": "8:42.0",
+    "score": "83-93",
+    "team": "Rockets",
+    "description": "T. Eason enters the game for R. Sheppard"
+  },
+  {
+    "quarter": 4,
+    "time": "8:42.0",
+    "score": "83-94",
+    "team": "Rockets",
+    "description": "A. Thompson makes free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "8:31.0",
+    "score": "83-94",
+    "team": "Mavericks",
+    "description": "Turnover by M. Christie (lost ball; steal by A. Thompson)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:14.0",
+    "score": "83-94",
+    "team": "Rockets",
+    "description": "J. Smith misses 2-pt jump shot from 6 ft (block by M. Cisse)"
+  },
+  {
+    "quarter": 4,
+    "time": "8:09.0",
+    "score": "83-94",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 4,
+    "time": "7:51.0",
+    "score": "85-94",
+    "team": "Mavericks",
+    "description": "M. Christie makes 2-pt jump shot from 16 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:30.0",
+    "score": "85-94",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt jump shot from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:29.0",
+    "score": "85-94",
+    "team": "Mavericks",
+    "description": "Defensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 4,
+    "time": "7:10.0",
+    "score": "85-94",
+    "team": "Mavericks",
+    "description": "N. Marshall misses 2-pt jump shot from 8 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "7:09.0",
+    "score": "85-94",
+    "team": "Rockets",
+    "description": "Defensive rebound by C. Capela"
+  },
+  {
+    "quarter": 4,
+    "time": "7:02.0",
+    "score": "85-94",
+    "team": "Rockets",
+    "description": "Shooting foul by M. Cisse (drawn by J. Smith)"
+  },
+  {
+    "quarter": 4,
+    "time": "7:02.0",
+    "score": "85-95",
+    "team": "Rockets",
+    "description": "J. Smith makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "7:02.0",
+    "score": "85-95",
+    "team": "Mavericks",
+    "description": "C. Flagg enters the game for N. Marshall"
+  },
+  {
+    "quarter": 4,
+    "time": "7:02.0",
+    "score": "85-95",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn enters the game for C. Capela"
+  },
+  {
+    "quarter": 4,
+    "time": "7:02.0",
+    "score": "85-96",
+    "team": "Rockets",
+    "description": "J. Smith makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "6:50.0",
+    "score": "85-96",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "6:49.0",
+    "score": "85-96",
+    "team": "Mavericks",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "6:49.0",
+    "score": "85-96",
+    "team": "Rockets",
+    "description": "Loose ball foul by A. \u015eeng\u00fcn (drawn by M. Cisse)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:41.0",
+    "score": "88-96",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 3-pt jump shot from 25 ft (assist by M. Cisse)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:18.0",
+    "score": "88-99",
+    "team": "Rockets",
+    "description": "T. Eason makes 3-pt jump shot from 25 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 4,
+    "time": "6:04.0",
+    "score": "91-99",
+    "team": "Mavericks",
+    "description": "K. Thompson makes 3-pt jump shot from 26 ft (assist by C. Martin)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:36.0",
+    "score": "91-99",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt hook shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:35.0",
+    "score": "91-99",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 4,
+    "time": "5:32.0",
+    "score": "91-99",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt layup from 4 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "5:31.0",
+    "score": "91-99",
+    "team": "Rockets",
+    "description": "Defensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "5:31.0",
+    "score": "91-99",
+    "team": "Rockets",
+    "description": "J. Okogie enters the game for J. Smith"
+  },
+  {
+    "quarter": 4,
+    "time": "5:16.0",
+    "score": "91-101",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes 2-pt dunk from 3 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 4,
+    "time": "5:04.0",
+    "score": "93-101",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt hook shot from 6 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:34.0",
+    "score": "93-101",
+    "team": "Rockets",
+    "description": "J. Okogie misses 2-pt jump shot from 18 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "4:32.0",
+    "score": "93-101",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "4:31.0",
+    "score": "93-103",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt layup at rim"
+  },
+  {
+    "quarter": 4,
+    "time": "4:19.0",
+    "score": "95-103",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 7 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "95-103",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt hook shot from 9 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "95-103",
+    "team": "Rockets",
+    "description": "Offensive rebound by Team"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "95-103",
+    "team": "Rockets",
+    "description": "Turnover by Team (shot clock)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:46.0",
+    "score": "95-103",
+    "team": "Mavericks",
+    "description": "D. Gafford enters the game for M. Cisse"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "97-103",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt jump shot from 12 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "97-103",
+    "team": "Mavericks",
+    "description": "Shooting foul by J. Okogie (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "97-103",
+    "team": "Mavericks",
+    "description": "N. Marshall enters the game for C. Martin"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "97-103",
+    "team": "Rockets",
+    "description": "J. Smith enters the game for J. Okogie"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "97-103",
+    "team": "Mavericks",
+    "description": "C. Flagg misses free throw 1 of 1"
+  },
+  {
+    "quarter": 4,
+    "time": "3:39.0",
+    "score": "97-103",
+    "team": "Rockets",
+    "description": "Defensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "3:26.0",
+    "score": "97-105",
+    "team": "Rockets",
+    "description": "K. Durant makes 2-pt jump shot from 13 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:26.0",
+    "score": "97-105",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "3:18.0",
+    "score": "97-105",
+    "team": "Mavericks",
+    "description": "Turnover by C. Flagg (bad pass; steal by K. Durant)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:14.0",
+    "score": "97-105",
+    "team": "Rockets",
+    "description": "Turnover by T. Eason (bad pass)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:05.0",
+    "score": "97-105",
+    "team": "Mavericks",
+    "description": "Shooting foul by T. Eason (drawn by C. Flagg)"
+  },
+  {
+    "quarter": 4,
+    "time": "3:05.0",
+    "score": "98-105",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "3:05.0",
+    "score": "99-105",
+    "team": "Mavericks",
+    "description": "C. Flagg makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:47.0",
+    "score": "99-105",
+    "team": "Rockets",
+    "description": "K. Durant misses 2-pt jump shot from 13 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:44.0",
+    "score": "99-105",
+    "team": "Mavericks",
+    "description": "Defensive rebound by M. Christie"
+  },
+  {
+    "quarter": 4,
+    "time": "2:37.0",
+    "score": "99-105",
+    "team": "Mavericks",
+    "description": "Personal foul by T. Eason (drawn by D. Gafford)"
+  },
+  {
+    "quarter": 4,
+    "time": "2:37.0",
+    "score": "100-105",
+    "team": "Mavericks",
+    "description": "D. Gafford makes free throw 1 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:37.0",
+    "score": "101-105",
+    "team": "Mavericks",
+    "description": "D. Gafford makes free throw 2 of 2"
+  },
+  {
+    "quarter": 4,
+    "time": "2:26.0",
+    "score": "101-105",
+    "team": "Rockets",
+    "description": "K. Durant misses 3-pt jump shot from 25 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "2:25.0",
+    "score": "101-105",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 4,
+    "time": "2:14.0",
+    "score": "103-105",
+    "team": "Mavericks",
+    "description": "D. Gafford makes 2-pt dunk from 3 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:54.0",
+    "score": "103-107",
+    "team": "Rockets",
+    "description": "A. Thompson makes 2-pt dunk from 3 ft (assist by A. \u015eeng\u00fcn)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:34.0",
+    "score": "105-107",
+    "team": "Mavericks",
+    "description": "C. Flagg makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:12.0",
+    "score": "105-107",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn misses 2-pt layup from 3 ft (block by M. Christie)"
+  },
+  {
+    "quarter": 4,
+    "time": "1:11.0",
+    "score": "105-107",
+    "team": "Rockets",
+    "description": "Offensive rebound by A. Thompson"
+  },
+  {
+    "quarter": 4,
+    "time": "1:11.0",
+    "score": "105-107",
+    "team": "Rockets",
+    "description": "A. Thompson misses 2-pt layup from 9 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "1:08.0",
+    "score": "105-107",
+    "team": "Mavericks",
+    "description": "Defensive rebound by C. Flagg"
+  },
+  {
+    "quarter": 4,
+    "time": "1:03.0",
+    "score": "105-107",
+    "team": "Rockets",
+    "description": "Violation by Team (kicked ball)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:50.0",
+    "score": "105-107",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt jump shot from 17 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:49.0",
+    "score": "105-107",
+    "team": "Mavericks",
+    "description": "Offensive rebound by N. Marshall"
+  },
+  {
+    "quarter": 4,
+    "time": "0:47.0",
+    "score": "107-107",
+    "team": "Mavericks",
+    "description": "N. Marshall makes 2-pt jump shot from 13 ft (assist by M. Christie)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:28.0",
+    "score": "107-109",
+    "team": "Rockets",
+    "description": "A. \u015eeng\u00fcn makes 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:28.0",
+    "score": "107-109",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:28.0",
+    "score": "107-109",
+    "team": "Rockets",
+    "description": "J. Okogie enters the game for A. \u015eeng\u00fcn"
+  },
+  {
+    "quarter": 4,
+    "time": "0:25.0",
+    "score": "107-109",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 2-pt layup from 5 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:24.0",
+    "score": "107-109",
+    "team": "Rockets",
+    "description": "Defensive rebound by T. Eason"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "107-111",
+    "team": "Rockets",
+    "description": "T. Eason makes 2-pt dunk from 4 ft (assist by K. Durant)"
+  },
+  {
+    "quarter": 4,
+    "time": "0:14.0",
+    "score": "107-111",
+    "team": "Mavericks",
+    "description": "Dallas full timeout"
+  },
+  {
+    "quarter": 4,
+    "time": "0:09.0",
+    "score": "107-111",
+    "team": "Mavericks",
+    "description": "C. Flagg misses 3-pt jump shot from 26 ft"
+  },
+  {
+    "quarter": 4,
+    "time": "0:07.0",
+    "score": "107-111",
+    "team": "Rockets",
+    "description": "Defensive rebound by J. Smith"
+  }
+]
