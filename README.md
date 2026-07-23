@@ -6,6 +6,25 @@ A Python-based toolkit for downloading NBA game footage from YouTube, analyzing 
 
 This project uses computer vision (via Ollama LLMs) to read game scoreboards from video frames and match them with official play-by-play data from Basketball Reference, enabling automatic generation of individual play clips from full game footage.
 
+## Web UI
+
+The project includes a React frontend in [`frontend/`](frontend/) that wraps the full clip pipeline in a browser UI. It talks to the Flask API in `src/app.py` and mirrors the CLI workflow: download video, scrape play-by-play, match timestamps, review labels, and generate clips.
+
+**Development** (hot reload, API proxied to Flask on port 5001):
+
+```bash
+# Terminal 1 — Ollama (skip if already running)
+ollama serve                  # only if the server is not up
+
+# Terminal 2 — backend
+python3 src/app.py
+
+# Terminal 3 — frontend
+cd frontend && npm install && npm run dev
+```
+
+Open http://localhost:5173
+
 ## Focused Workflow Docs
 
 - [Clip Generation and Labeling Pipeline](docs/clip-generation-labeling-pipeline.md)
@@ -15,9 +34,37 @@ This project uses computer vision (via Ollama LLMs) to read game scoreboards fro
 ### System Dependencies
 - **Python 3.7+**
 - **ffmpeg** - Required for video processing
-- **Ollama** - Local LLM server for vision analysis
-  - Install from: https://ollama.ai
-  - Required model: `llama3.2-vision` (recommended) or `llava`
+- **Ollama** - Local LLM server for vision analysis (see setup below)
+
+### Ollama
+
+Install from https://ollama.ai or via Homebrew:
+
+```bash
+brew install ollama
+```
+
+Start the server (on macOS the Ollama app usually runs this automatically; use this if the API is not reachable):
+
+```bash
+ollama serve
+```
+
+Pull the vision model used for scoreboard reading:
+
+```bash
+ollama pull llama3.2-vision   # recommended
+# ollama pull llava           # faster, less accurate alternative
+```
+
+Verify Ollama is running and the model is available:
+
+```bash
+ollama list
+curl http://localhost:11434/api/tags
+```
+
+The backend expects Ollama at `http://localhost:11434`. The Web UI status bar shows online/offline status.
 
 ### Python Packages
 ```bash
@@ -251,6 +298,8 @@ python3 generate_clips.py \
 
 ```
 clip/
+├── frontend/                      # React UI (see frontend/README.md)
+│   └── dist/                      # Production build (served by Flask)
 ├── film/                          # Downloaded videos
 │   └── GAME_NAME.mp4
 ├── playbyplay/                    # Scraped play-by-play data
