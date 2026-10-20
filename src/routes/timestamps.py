@@ -124,3 +124,29 @@ def get_clip_runs():
         runs.append({"name": entry, "path": entry, "clip_count": clip_count})
 
     return jsonify({"runs": runs})
+
+
+@bp.route('/api/clip-library')
+def clip_library():
+    """Join local clips to their source footage using run metadata."""
+    from glob import glob
+    clips = []
+    for metadata_path in sorted(glob(os.path.join(BASE_DIR, 'output', 'clips', '*', 'clips_metadata.json')), reverse=True):
+        try:
+            with open(metadata_path) as stream:
+                metadata = json.load(stream)
+            run = os.path.basename(os.path.dirname(metadata_path))
+            for clip in metadata.get('clips', []):
+                filename = os.path.basename(clip.get('filename', ''))
+                if not filename or not os.path.isfile(os.path.join(os.path.dirname(metadata_path), filename)):
+                    continue
+                clips.append({**clip, 'run': run, 'source_video': os.path.basename(metadata.get('source_video', '')), 'url': f'/api/local-clips/{run}/{filename}'})
+        except (OSError, ValueError, TypeError):
+            continue
+    return jsonify({'clips': clips})
+
+
+@bp.route('/api/local-clips/<path:filename>')
+def serve_local_clip(filename):
+    from flask import send_from_directory
+    return send_from_directory(os.path.join(BASE_DIR, 'output', 'clips'), filename, conditional=True)

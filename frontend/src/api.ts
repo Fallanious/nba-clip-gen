@@ -16,7 +16,9 @@ const BASE = '';
 
 async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${url}`, init);
-  return res.json();
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
+  return data;
 }
 
 function postJSON<T>(url: string, body: Record<string, unknown>): Promise<T> {

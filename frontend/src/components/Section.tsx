@@ -6,7 +6,7 @@ interface SectionProps {
   defaultOpen?: boolean;
 }
 
-export default function Section({ title, children, defaultOpen = false }: SectionProps) {
+export default function Section({ title, children, defaultOpen = true }: SectionProps) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
