@@ -11,10 +11,30 @@ bp = Blueprint("jobs", __name__)
 jobs = {}
 
 
+def _with_venv_python(cmd):
+    """Run project scripts with the virtualenv interpreter.
+
+    ``python3`` on PATH can be an older install. YouTube rejects that
+    yt-dlp with HTTP 403, so downloads must use the env we update.
+    """
+    if not cmd or os.path.basename(cmd[0]) not in ("python", "python3"):
+        return cmd
+    venv_python = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+        ".venv", "bin", "python",
+    )
+    executable = venv_python if os.path.isfile(venv_python) else cmd[0]
+    rest = cmd[1:]
+    if rest and rest[0] == "-u":
+        return [executable, *rest]
+    return [executable, "-u", *rest]
+
+
 def run_script_async(job_id, cmd, cwd=None):
     """Run a script asynchronously and store output."""
     from routes.jobs import jobs  # ensure we reference the module-level dict
 
+    cmd = _with_venv_python(cmd)
     jobs[job_id] = {
         "status": "running",
         "output": "",
@@ -22,9 +42,6 @@ def run_script_async(job_id, cmd, cwd=None):
         "return_code": None,
         "pid": None,
     }
-
-    if cmd and cmd[0] in ("python", "python3"):
-        cmd = [cmd[0], "-u"] + cmd[1:]
 
     try:
         env = os.environ.copy()
