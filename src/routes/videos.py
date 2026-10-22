@@ -107,6 +107,7 @@ def list_videos():
                 "name": f,
                 "path": f"film/{f}",
                 "size_mb": round(size_mb, 1),
+                "mtime": os.path.getmtime(path),
                 "parsed": parsed,
             })
     return jsonify({"videos": videos})

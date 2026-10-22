@@ -4,6 +4,7 @@ export interface Video {
   name: string;
   path: string;
   size_mb: number;
+  mtime: number;
   parsed: ParsedVideo | null;
 }
 
@@ -19,6 +20,8 @@ export interface ParsedVideo {
 export interface PlayByPlayFile {
   name: string;
   path: string;
+  mtime: number;
+  size: number;
 }
 
 export interface TimestampFile {

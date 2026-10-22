@@ -1,6 +1,24 @@
 import os
 import sys
+import time
 import yt_dlp
+
+
+def _video_saved_since(folder, started):
+    """Return a non-empty video written to film during this download."""
+    newest = None
+    newest_mtime = started - 2
+    for name in os.listdir(folder):
+        if not name.endswith((".mp4", ".mkv", ".webm")):
+            continue
+        path = os.path.join(folder, name)
+        if not os.path.isfile(path) or os.path.getsize(path) <= 0:
+            continue
+        mtime = os.path.getmtime(path)
+        if mtime >= newest_mtime:
+            newest = path
+            newest_mtime = mtime
+    return newest
 
 
 def download_video(url, output_folder="film"):
@@ -28,16 +46,23 @@ def download_video(url, output_folder="film"):
         'ignoreerrors': False,
     }
     
+    started = time.time()
+    ydl_opts['quiet'] = True
+    ydl_opts['no_warnings'] = True
+    ydl_opts['noprogress'] = True
+
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            print(f"Downloading video from: {url}")
-            print(f"Saving to: {output_path}")
-            info = ydl.extract_info(url, download=True)
-            filename = ydl.prepare_filename(info)
-            print(f"Download completed! Video saved as: {os.path.basename(filename)}")
+            ydl.extract_info(url, download=True)
     except Exception as e:
-        print(f"Error downloading video: {e}")
+        print(f"Download failed: {e}")
         sys.exit(1)
+
+    saved = _video_saved_since(output_path, started)
+    if not saved:
+        print("Download failed: no video file was saved to film")
+        sys.exit(1)
+    print(f"Saved {os.path.basename(saved)}")
 
 
 def check_ffmpeg():

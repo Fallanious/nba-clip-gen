@@ -38,7 +38,13 @@ def list_playbyplay():
     files = []
     for f in sorted(os.listdir(pbp_dir)):
         if f.endswith(".json"):
-            files.append({"name": f, "path": f"playbyplay/{f}"})
+            path = os.path.join(pbp_dir, f)
+            files.append({
+                "name": f,
+                "path": f"playbyplay/{f}",
+                "mtime": os.path.getmtime(path),
+                "size": os.path.getsize(path),
+            })
     return jsonify({"files": files})
 
 
