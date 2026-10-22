@@ -1,11 +1,12 @@
 """Action endpoints: download, scrape, match, generate."""
 
 import os
+import time
 import uuid
 import threading
 from flask import Blueprint, jsonify, request
 
-from routes.jobs import jobs, run_script_async
+from routes.jobs import run_script_async, jobs
 from utils.video import get_video_duration
 
 bp = Blueprint("actions", __name__)
@@ -13,9 +14,19 @@ bp = Blueprint("actions", __name__)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
-def _start_job(cmd):
-    """Helper: create job, launch thread, return job_id."""
+def _start_job(cmd, kind="Task", label=""):
+    """Create a job record, launch it, and return the id."""
     job_id = str(uuid.uuid4())[:8]
+    jobs[job_id] = {
+        "status": "running",
+        "output": "",
+        "error": None,
+        "return_code": None,
+        "pid": None,
+        "kind": kind,
+        "label": label,
+        "started_at": time.time(),
+    }
     thread = threading.Thread(target=run_script_async, args=(job_id, cmd))
     thread.start()
     return job_id
@@ -28,7 +39,7 @@ def download_video():
     if not url:
         return jsonify({"error": "URL is required"}), 400
 
-    job_id = _start_job(["python3", "src/download_video.py", url])
+    job_id = _start_job(["python3", "src/download_video.py", url], kind="Download", label=url)
     return jsonify({"job_id": job_id, "message": "Download started"})
 
 
@@ -39,7 +50,7 @@ def scrape_playbyplay():
     if not url:
         return jsonify({"error": "URL is required"}), 400
 
-    job_id = _start_job(["python3", "src/scrape_playbyplay.py", url])
+    job_id = _start_job(["python3", "src/scrape_playbyplay.py", url], kind="Scrape play-by-play", label=url)
     return jsonify({"job_id": job_id, "message": "Scraping started"})
 
 
@@ -58,6 +69,7 @@ def match_timestamps():
     if not video or not playbyplay:
         return jsonify({"error": "Video and playbyplay are required"}), 400
 
+    label = os.path.basename(video)
     if num_workers <= 1:
         job_id = _start_job([
             "python3", "src/match_play_timestamps.py",
@@ -66,7 +78,7 @@ def match_timestamps():
             "--sample-interval", str(sample_interval),
             "--max-plays", str(max_plays),
             "--start-time", str(start_time),
-        ])
+        ], kind="Match timestamps", label=label)
         return jsonify({"job_id": job_id, "job_ids": [job_id], "message": "Matching started"})
 
     # Multiple workers — split video into time ranges
@@ -82,10 +94,6 @@ def match_timestamps():
     for i in range(num_workers):
         worker_start = start_time + int(i * chunk_size)
         worker_end = start_time + int((i + 1) * chunk_size) if i < num_workers - 1 else int(duration)
-
-        job_id = str(uuid.uuid4())[:8]
-        job_ids.append(job_id)
-
         cmd = [
             "python3", "src/match_play_timestamps.py",
             video, playbyplay,
@@ -96,9 +104,8 @@ def match_timestamps():
             "--end-time", str(worker_end),
             "--worker-id", str(i + 1),
         ]
-
-        thread = threading.Thread(target=run_script_async, args=(job_id, cmd))
-        thread.start()
+        job_id = _start_job(cmd, kind="Match timestamps", label=f"Worker {i + 1} · {label}")
+        job_ids.append(job_id)
 
     return jsonify({
         "job_ids": job_ids,
@@ -122,6 +129,6 @@ def generate_clips():
     if no_audio:
         cmd.append("--no-audio")
 
-    job_id = _start_job(cmd)
+    job_id = _start_job(cmd, kind="Generate clips", label=os.path.basename(video))
     return jsonify({"job_id": job_id, "message": "Generating clips"})
 

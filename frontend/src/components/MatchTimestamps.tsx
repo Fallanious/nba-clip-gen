@@ -1,21 +1,17 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { startMatch, fetchSuggestedPBP, stopJob, getVideoUrl } from '../api';
-import { useJob } from '../hooks/useJob';
-import { useMultipleJobs } from '../hooks/useJob';
+import { startMatch, fetchSuggestedPBP, getVideoUrl } from '../api';
 import type { Video, PlayByPlayFile } from '../types';
 import Section from './Section';
-import OutputArea from './OutputArea';
 
 interface Props {
   videos: Video[];
   pbpFiles: PlayByPlayFile[];
   onRefreshVideos: () => void;
   onRefreshPBP: () => void;
-  onComplete: () => void;
 }
 
 export default function MatchTimestamps({
-  videos, pbpFiles, onRefreshVideos, onRefreshPBP, onComplete,
+  videos, pbpFiles, onRefreshVideos, onRefreshPBP,
 }: Props) {
   const [video, setVideo] = useState('');
   const [pbp, setPbp] = useState('');
@@ -26,15 +22,12 @@ export default function MatchTimestamps({
   const [maxPlays, setMaxPlays] = useState<number | ''>(50);
   const [startTime, setStartTime] = useState<number | ''>(50);
   const [workers, setWorkers] = useState<number | ''>(1);
-  const [isRunning, setIsRunning] = useState(false);
+  const [starting, setStarting] = useState(false);
+  const [notice, setNotice] = useState('');
+  const [noticeOk, setNoticeOk] = useState(true);
 
-  const jobIds = useRef<string[]>([]);
   const playerRef = useRef<HTMLVideoElement>(null);
   const seekFromInput = useRef(false);
-  const singleJob = useJob();
-  const multiJob = useMultipleJobs();
-
-  const activeJob = Number(workers) > 1 ? multiJob : singleJob;
 
   const setOptionalNumber = (raw: string, set: (value: number | '') => void) => {
     if (raw === '') {
@@ -92,8 +85,9 @@ export default function MatchTimestamps({
   }, []);
 
   const handleStart = async () => {
-    if (!video || !pbp) return;
-    setIsRunning(true);
+    if (!video || !pbp || starting) return;
+    setStarting(true);
+    setNotice('');
 
     try {
       const data = await startMatch({
@@ -104,36 +98,16 @@ export default function MatchTimestamps({
         start_time: startTime === '' ? 0 : startTime,
         num_workers: workers === '' ? 1 : workers,
       });
-      if (data.error) {
-        setIsRunning(false);
-        return;
-      }
-
-      jobIds.current = data.job_ids || [data.job_id];
-
-      const done = () => {
-        setIsRunning(false);
-        jobIds.current = [];
-        onComplete();
-      };
-
-      if (data.job_ids && data.job_ids.length > 1) {
-        multiJob.startPolling(data.job_ids, done);
-      } else {
-        singleJob.startPolling(data.job_id, done);
-      }
-    } catch {
-      setIsRunning(false);
-    }
-  };
-
-  const handleStop = async () => {
-    try {
-      await Promise.all(jobIds.current.map(id => stopJob(id)));
-      setIsRunning(false);
-      jobIds.current = [];
+      const ids = data.job_ids?.length ? data.job_ids : [data.job_id];
+      setNoticeOk(true);
+      setNotice(
+        `Matching is running. Job ${ids.join(', ')}. This can take up to 30 minutes. Follow progress on the Processes tab.`
+      );
     } catch (err) {
-      console.error(err);
+      setNoticeOk(false);
+      setNotice(err instanceof Error ? err.message : 'Could not start matching.');
+    } finally {
+      setStarting(false);
     }
   };
 
@@ -215,14 +189,11 @@ export default function MatchTimestamps({
           </div>
 
           <div className="form-row">
-            {!isRunning ? (
-              <button onClick={handleStart}>Match Timestamps</button>
-            ) : (
-              <button className="btn-stop" onClick={handleStop}>Stop</button>
-            )}
+            <button onClick={handleStart} disabled={starting || !video || !pbp}>
+              {starting ? 'Starting…' : 'Match Timestamps'}
+            </button>
           </div>
-
-          <OutputArea text={activeJob.output} status={activeJob.status} />
+          {notice && <p className={`download-message ${noticeOk ? 'success' : 'failure'}`}>{notice}</p>}
         </div>
       </div>
     </Section>

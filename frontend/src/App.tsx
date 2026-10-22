@@ -1,11 +1,12 @@
-import { useState, useEffect, useCallback } from 'react';
-import { fetchVideos, fetchPlayByPlay, fetchTimestamps, getVideoUrl } from './api';
-import type { Video, PlayByPlayFile, TimestampFile } from './types';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import { fetchVideos, fetchPlayByPlay, fetchTimestamps, fetchJobs, getVideoUrl } from './api';
+import type { Video, PlayByPlayFile, TimestampFile, ProcessJob } from './types';
 import DownloadVideo from './components/DownloadVideo';
 import ScrapePlayByPlay from './components/ScrapePlayByPlay';
 import MatchTimestamps from './components/MatchTimestamps';
 import EditLabels from './components/EditLabels';
 import GenerateClips from './components/GenerateClips';
+import Processes from './components/Processes';
 
 type Clip = { filename: string; source_video: string; url: string; run: string; description?: string; label?: string; quarter?: number; game_time?: string; duration?: number; attributes?: { action_type?: string } };
 const steps = ['Footage', 'Game data', 'Match plays', 'Review', 'Generate'];
@@ -24,11 +25,23 @@ export default function App() {
   const [run, setRun] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
-  const [view, setView] = useState<'library' | 'splice'>('library');
+  const [view, setView] = useState<'library' | 'splice' | 'processes'>('library');
   const [step, setStep] = useState(0);
+  const [jobs, setJobs] = useState<ProcessJob[]>([]);
+  const seenJobs = useRef<Record<string, string>>({});
   const loadVideos = useCallback(async () => { setVideos(await fetchVideos()); }, []);
   const loadPBP = useCallback(async () => { setPbpFiles(await fetchPlayByPlay()); }, []);
   const loadTimestamps = useCallback(async () => { setTimestampFiles(await fetchTimestamps()); }, []);
+  const refreshJobs = useCallback(async () => {
+    const list = await fetchJobs();
+    setJobs(list);
+    const finishedMatch = list.some(job => {
+      const prev = seenJobs.current[job.id];
+      seenJobs.current[job.id] = job.status;
+      return prev === 'running' && job.status === 'completed' && job.kind === 'Match timestamps';
+    });
+    if (finishedMatch) await loadTimestamps();
+  }, [loadTimestamps]);
 
   const refresh = useCallback(async () => {
     try {
@@ -45,6 +58,18 @@ export default function App() {
 
   useEffect(() => { void refresh(); }, [refresh]);
 
+  useEffect(() => {
+    let stop = false;
+    const tick = async () => {
+      try {
+        if (!stop) await refreshJobs();
+      } catch { /* backend may be restarting */ }
+    };
+    void tick();
+    const id = window.setInterval(() => void tick(), 3000);
+    return () => { stop = true; window.clearInterval(id); };
+  }, [refreshJobs]);
+
   const video = videos.find(v => v.path === selected) || videos[0];
   const gameClips = clips.filter(c => c.source_video === video?.name);
   const runs = [...new Set(gameClips.map(c => c.run))];
@@ -53,7 +78,7 @@ export default function App() {
 
 
   return <div className="app-shell">
-    <aside className="sidebar"><a className="brand" href="/">CLIP<span>FILM ROOM</span></a><nav className="side-nav" aria-label="Workspace"><button className={view === 'library' ? 'nav-selected' : 'nav-item'} onClick={() => setView('library')}>{view === 'library' ? '▸ ' : ''}Library</button><button className={view === 'splice' ? 'nav-selected' : 'nav-item'} onClick={() => { setStep(0); setView('splice'); }}>{view === 'splice' ? '▸ ' : ''}Splice</button></nav><p className="local-note">YOUR LOCAL WORKSPACE</p></aside>
+    <aside className="sidebar"><a className="brand" href="/">CLIP<span>FILM ROOM</span></a><nav className="side-nav" aria-label="Workspace"><button className={view === 'library' ? 'nav-selected' : 'nav-item'} onClick={() => setView('library')}>{view === 'library' ? '▸ ' : ''}Library</button><button className={view === 'splice' ? 'nav-selected' : 'nav-item'} onClick={() => { setStep(0); setView('splice'); }}>{view === 'splice' ? '▸ ' : ''}Splice</button><button className={view === 'processes' ? 'nav-selected' : 'nav-item'} onClick={() => setView('processes')}>{view === 'processes' ? '▸ ' : ''}Processes{jobs.some(job => job.status === 'running') ? ` (${jobs.filter(job => job.status === 'running').length})` : ''}</button></nav><p className="local-note">YOUR LOCAL WORKSPACE</p></aside>
     <main>
       {view === 'library' && <>
       <header><div><p className="eyebrow">SCOUT. STUDY. REPEAT.</p><h1>Game Library</h1><p>Find the plays worth a closer look.</p></div></header>
@@ -72,11 +97,12 @@ export default function App() {
       <nav className="steps" aria-label="Clip generation">{steps.map((s, i) => <button aria-current={step === i ? 'step' : undefined} className={step === i ? 'selected' : 'quiet'} onClick={() => setStep(i)} key={s}>{i + 1}. {s}</button>)}</nav>
       <div hidden={step !== 0}><DownloadVideo onComplete={loadVideos} /><p className="step-note">Already have footage in film? Continue to game data.</p></div>
       <div hidden={step !== 1}><ScrapePlayByPlay videos={videos} onComplete={loadPBP} /></div>
-      <div hidden={step !== 2}><MatchTimestamps videos={videos} pbpFiles={pbpFiles} onRefreshVideos={loadVideos} onRefreshPBP={loadPBP} onComplete={loadTimestamps} /></div>
+      <div hidden={step !== 2}><MatchTimestamps videos={videos} pbpFiles={pbpFiles} onRefreshVideos={loadVideos} onRefreshPBP={loadPBP} /></div>
       <div hidden={step !== 3}><EditLabels timestampFiles={timestampFiles} onRefreshTimestamps={loadTimestamps} /></div>
       <div hidden={step !== 4}><GenerateClips videos={videos} timestampFiles={timestampFiles} onRefreshTimestamps={loadTimestamps} /><p className="step-note">Clips are saved to output/clips/&lt;timestamp&gt;. Return to the library after generation completes.</p></div>
       <div className="wizard-footer"><button className="quiet" disabled={step === 0} onClick={() => setStep(step - 1)}>Back</button>{step < 4 ? <button onClick={() => setStep(step + 1)}>Continue</button> : <button onClick={() => { setView('library'); void refresh(); }}>Return to library</button>}</div>
       </>}
+      {view === 'processes' && <Processes jobs={jobs} onChanged={() => void refreshJobs()} />}
     </main>
   </div>;
 }

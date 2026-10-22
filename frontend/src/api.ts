@@ -10,6 +10,7 @@ import type {
   Job,
   JobStartResponse,
   MatchResponse,
+  ProcessJob,
 } from './types';
 
 const BASE = '';
@@ -41,6 +42,11 @@ export async function fetchJob(jobId: string): Promise<Job> {
 
 export async function stopJob(jobId: string): Promise<{ message: string }> {
   return postJSON(`/api/job/${jobId}/stop`, {});
+}
+
+export async function fetchJobs(): Promise<ProcessJob[]> {
+  const data = await fetchJSON<{ jobs: ProcessJob[] }>('/api/jobs');
+  return data.jobs;
 }
 
 // ============ File Listings ============

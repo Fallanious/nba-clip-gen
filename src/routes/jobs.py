@@ -1,8 +1,10 @@
 """Job management: async script execution and status endpoints."""
 
 import os
+import re
 import signal
 import subprocess
+import time
 from flask import Blueprint, jsonify
 
 bp = Blueprint("jobs", __name__)
@@ -35,13 +37,19 @@ def run_script_async(job_id, cmd, cwd=None):
     from routes.jobs import jobs  # ensure we reference the module-level dict
 
     cmd = _with_venv_python(cmd)
-    jobs[job_id] = {
+    job = jobs.setdefault(job_id, {})
+    if job.get("status") == "cancelled":
+        return
+    job.update({
         "status": "running",
-        "output": "",
-        "error": None,
+        "output": job.get("output", ""),
+        "error": job.get("error"),
         "return_code": None,
         "pid": None,
-    }
+        "kind": job.get("kind", "Task"),
+        "label": job.get("label", ""),
+        "started_at": job.get("started_at", time.time()),
+    })
 
     try:
         env = os.environ.copy()
@@ -58,6 +66,10 @@ def run_script_async(job_id, cmd, cwd=None):
         )
 
         jobs[job_id]["pid"] = process.pid
+        if jobs[job_id].get("status") == "cancelled":
+            process.terminate()
+            process.wait()
+            return
 
         output_lines = []
         for line in process.stdout:
@@ -100,7 +112,9 @@ def stop_job(job_id):
 
     pid = job.get("pid")
     if not pid:
-        return jsonify({"error": "No process ID found"}), 400
+        job["status"] = "cancelled"
+        job["output"] = (job.get("output") or "") + "\n\n--- Process stopped by user ---\n"
+        return jsonify({"message": "Job stopped", "job_id": job_id})
 
     try:
         os.kill(pid, signal.SIGTERM)
@@ -112,3 +126,43 @@ def stop_job(job_id):
         return jsonify({"message": "Process already ended", "job_id": job_id})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+def _match_progress(output):
+    """Pull the latest play count out of matcher logs."""
+    found = re.findall(r"Progress: (\d+)/(\d+) plays matched", output or "")
+    if found:
+        done, total = found[-1]
+        return {"done": int(done), "total": int(total)}
+    planned = re.search(r"Will match first (\d+) plays", output or "")
+    if planned:
+        return {"done": 0, "total": int(planned.group(1))}
+    return None
+
+
+def _latest_line(output):
+    lines = [line.strip() for line in (output or "").splitlines() if line.strip()]
+    if not lines:
+        return ""
+    return lines[-1][:160]
+
+
+def _public_job(job_id, job):
+    return {
+        "id": job_id,
+        "status": job.get("status", "running"),
+        "kind": job.get("kind", "Task"),
+        "label": job.get("label", ""),
+        "started_at": job.get("started_at"),
+        "error": job.get("error"),
+        "progress": _match_progress(job.get("output", "")),
+        "latest": _latest_line(job.get("output", "")),
+    }
+
+
+@bp.route("/api/jobs")
+def list_jobs():
+    """List in-memory jobs without their full logs."""
+    items = [_public_job(job_id, job) for job_id, job in jobs.items()]
+    items.sort(key=lambda item: (item["status"] != "running", -(item["started_at"] or 0)))
+    return jsonify({"jobs": items})
