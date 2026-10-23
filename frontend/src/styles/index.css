@@ -494,6 +494,38 @@ footer {
   text-align: center
 }
 
+.match-stage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px
+}
+
+.scoreboard-layer {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none
+}
+
+.scoreboard-layer.marking {
+  pointer-events: auto;
+  cursor: crosshair;
+  outline: 2px solid #c9a227
+}
+
+.scoreboard-box {
+  position: absolute;
+  border: 2px solid #f5c451;
+  background: rgba(245, 196, 81, 0.2);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.45)
+}
+
+.match-mark-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px
+}
+
 .btn-small {
   flex: 0 0 auto;
   padding: 10px;

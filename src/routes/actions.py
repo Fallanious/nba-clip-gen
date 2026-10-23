@@ -14,6 +14,20 @@ bp = Blueprint("actions", __name__)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
+def _crop_args(data):
+    """Pass a scoreboard box through as frame fractions."""
+    crop = (data or {}).get("crop")
+    if not crop:
+        return []
+    try:
+        values = [float(crop[key]) for key in ("x", "y", "w", "h")]
+    except (TypeError, KeyError, ValueError):
+        return []
+    if values[2] <= 0 or values[3] <= 0:
+        return []
+    return ["--crop", ",".join(str(value) for value in values)]
+
+
 def _start_job(cmd, kind="Task", label=""):
     """Create a job record, launch it, and return the id."""
     job_id = str(uuid.uuid4())[:8]
@@ -70,6 +84,7 @@ def match_timestamps():
         return jsonify({"error": "Video and playbyplay are required"}), 400
 
     label = os.path.basename(video)
+    crop_args = _crop_args(data)
     if num_workers <= 1:
         job_id = _start_job([
             "python3", "src/match_play_timestamps.py",
@@ -78,6 +93,7 @@ def match_timestamps():
             "--sample-interval", str(sample_interval),
             "--max-plays", str(max_plays),
             "--start-time", str(start_time),
+            *crop_args,
         ], kind="Match timestamps", label=label)
         return jsonify({"job_id": job_id, "job_ids": [job_id], "message": "Matching started"})
 
@@ -103,6 +119,7 @@ def match_timestamps():
             "--start-time", str(worker_start),
             "--end-time", str(worker_end),
             "--worker-id", str(i + 1),
+            *crop_args,
         ]
         job_id = _start_job(cmd, kind="Match timestamps", label=f"Worker {i + 1} · {label}")
         job_ids.append(job_id)

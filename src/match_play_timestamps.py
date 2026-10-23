@@ -16,45 +16,85 @@ from datetime import datetime
 import requests
 
 
-def extract_frame_at_time(video_path, time_seconds, output_path):
-    """Extract a single frame at specific timestamp."""
+def video_dimensions(video_path):
+    """Return width and height of the first video stream."""
+    cmd = [
+        'ffprobe', '-v', 'error', '-select_streams', 'v:0',
+        '-show_entries', 'stream=width,height',
+        '-of', 'csv=p=0:s=x',
+        video_path,
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+    width, height = result.stdout.strip().split('x')
+    return int(width), int(height)
+
+
+def crop_box_pixels(spec, width, height):
+    """Turn x,y,w,h fractions into an even pixel crop ffmpeg can encode."""
+    parts = [float(part) for part in spec.split(',')]
+    if len(parts) != 4:
+        raise ValueError('crop needs x,y,w,h')
+    x, y, w, h = parts
+    if min(x, y) < 0 or w <= 0 or h <= 0 or x + w > 1.02 or y + h > 1.02:
+        raise ValueError(f'crop fractions out of range: {spec}')
+    px = int(round(x * width))
+    py = int(round(y * height))
+    pw = int(round(w * width))
+    ph = int(round(h * height))
+    px = max(0, min(px, width - 2))
+    py = max(0, min(py, height - 2))
+    pw = max(2, min(pw, width - px))
+    ph = max(2, min(ph, height - py))
+    px -= px % 2
+    py -= py % 2
+    pw -= pw % 2
+    ph -= ph % 2
+    return px, py, pw, ph
+
+
+def extract_frame_at_time(video_path, time_seconds, output_path, crop=None):
+    """Extract a single frame at specific timestamp, optionally cropped."""
     cmd = [
         'ffmpeg',
         '-ss', str(time_seconds),
         '-i', video_path,
         '-vframes', '1',
-        '-q:v', '2',
-        output_path,
-        '-y'
     ]
+    if crop:
+        x, y, w, h = crop
+        cmd.extend(['-vf', f'crop={w}:{h}:{x}:{y}'])
+    cmd.extend(['-q:v', '2', output_path, '-y'])
     subprocess.run(cmd, check=True, stderr=subprocess.PIPE)
 
 
-def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b'):
+def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b', cropped=False):
     """Send frame to Ollama to read scoreboard information."""
     with open(image_path, 'rb') as f:
         image_data = base64.b64encode(f.read()).decode('utf-8')
-    
-    prompt = """This is a frame from an NBA basketball broadcast between two teams.
 
-Look at the bottom of the screen for a scoreboard overlay. The scoreboard shows the score, quarter, and time remaining.
+    where = (
+        "This image is a crop of the scoreboard from an NBA broadcast."
+        if cropped else
+        "This is a frame from an NBA basketball broadcast between two teams.\n\nLook at the bottom of the screen for a scoreboard overlay. The scoreboard shows the score, quarter, and time remaining."
+    )
+    prompt = f"""{where}
 
 Respond with ONLY a JSON object in this exact format:
-{
+{{
   "quarter": <number 1-4>,
   "score": "<team1_score>-<team2_score>",
   "time": "<minutes>:<seconds>"
-}
+}}
 
 CRITICAL RULES:
-- Only include fields you can CLEARLY READ from the actual scoreboard in THIS specific frame
-- If the scoreboard is not visible or you cannot read it with certainty, respond with: {}
+- Only include fields you can CLEARLY READ from the actual scoreboard in THIS specific image
+- If the scoreboard is not visible or you cannot read it with certainty, respond with: {{}}
 - DO NOT make up values or use placeholder data
 - DO NOT include any text outside the JSON object
-- The score format should be two numbers separated by a dash (Celtics score first, 76ers second)
+- The score format should be two numbers separated by a dash
 - The time format should be minutes:seconds
 
-If you cannot see a scoreboard clearly in this frame, respond with an empty JSON object: {}"""
+If you cannot see a scoreboard clearly, respond with an empty JSON object: {{}}"""
     
     payload = {
         "model": model,
@@ -67,7 +107,7 @@ If you cannot see a scoreboard clearly in this frame, respond with an empty JSON
         response = requests.post(
             'http://localhost:11434/api/generate',
             json=payload,
-            timeout=60
+            timeout=90
         )
         
         if response.status_code == 200:
@@ -334,6 +374,7 @@ def main():
     parser.add_argument('--end-time', type=int, default=None, help='Stop sampling at this time in seconds (default: end of video)')
     parser.add_argument('--worker-id', type=int, default=None, help='Worker ID for parallel processing (used in output filename)')
     parser.add_argument('--model', default='qwen3-vl:4b', help='Ollama vision model (default: qwen3-vl:4b)')
+    parser.add_argument('--crop', default=None, help='Scoreboard crop as x,y,w,h fractions of the frame')
     parser.add_argument('--output', '-o', help='Output JSON file path')
     
     args = parser.parse_args()
@@ -389,6 +430,15 @@ def main():
     print(f"Video duration: {video_duration:.2f}s")
     print(f"Starting from: {args.start_time}s")
     print(f"Sampling every {args.sample_interval}s")
+    crop_px = None
+    if args.crop:
+        frame_w, frame_h = video_dimensions(args.video)
+        try:
+            crop_px = crop_box_pixels(args.crop, frame_w, frame_h)
+        except ValueError as exc:
+            print(f"Error: {exc}")
+            sys.exit(1)
+        print(f"Scoreboard crop: {crop_px[0]},{crop_px[1]} {crop_px[2]}x{crop_px[3]}")
     print("="*70)
     
     # Create debug directory for frames (with timestamp)
@@ -419,11 +469,11 @@ def main():
             print(f"  Looking for play #{next_play_idx + 1} (matched {len(matched_plays)}/{args.max_plays})")
         
         frame_path = os.path.join(debug_dir, f'frame_{current_time}.jpg')
-        extract_frame_at_time(args.video, current_time, frame_path)
+        extract_frame_at_time(args.video, current_time, frame_path, crop_px)
         
         # Analyze frame
         print(f"  Analyzing scoreboard...")
-        response = analyze_frame_scoreboard(frame_path, model=args.model)
+        response = analyze_frame_scoreboard(frame_path, model=args.model, cropped=crop_px is not None)
         
         if response:
             print(f"  LLM Response: {response}")

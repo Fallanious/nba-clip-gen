@@ -107,6 +107,7 @@ export interface MatchParams {
   max_plays: number;
   start_time: number;
   num_workers: number;
+  crop?: { x: number; y: number; w: number; h: number } | null;
 }
 
 export async function startMatch(params: MatchParams): Promise<MatchResponse> {

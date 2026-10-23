@@ -3,6 +3,61 @@ import { startMatch, fetchSuggestedPBP, getVideoUrl } from '../api';
 import type { Video, PlayByPlayFile } from '../types';
 import Section from './Section';
 
+interface Crop {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+interface Props {
+  videos: Video[];
+  pbpFiles: PlayByPlayFile[];
+  onRefreshVideos: () => void;
+  onRefreshPBP: () => void;
+}
+
+function contentBox(stage: HTMLElement, player: HTMLVideoElement) {
+  const stageRect = stage.getBoundingClientRect();
+  const rect = player.getBoundingClientRect();
+  const videoRatio = player.videoWidth / player.videoHeight;
+  const elementRatio = rect.width / rect.height;
+  let width = rect.width;
+  let height = rect.height;
+  let offsetX = 0;
+  let offsetY = 0;
+  if (videoRatio > elementRatio) {
+    height = rect.width / videoRatio;
+    offsetY = (rect.height - height) / 2;
+  } else {
+    width = rect.height * videoRatio;
+    offsetX = (rect.width - width) / 2;
+  }
+  return {
+    left: rect.left - stageRect.left + offsetX,
+    top: rect.top - stageRect.top + offsetY,
+    width,
+    height,
+  };
+}
+
+function pointerFraction(event: React.PointerEvent<HTMLDivElement>) {
+  const rect = event.currentTarget.getBoundingClientRect();
+  return {
+    x: Math.min(1, Math.max(0, (event.clientX - rect.left) / rect.width)),
+    y: Math.min(1, Math.max(0, (event.clientY - rect.top) / rect.height)),
+  };
+}
+
+function boxStyle(box: Crop) {
+  return {
+    left: `${box.x * 100}%`,
+    top: `${box.y * 100}%`,
+    width: `${box.w * 100}%`,
+    height: `${box.h * 100}%`,
+  };
+}
+
 interface Props {
   videos: Video[];
   pbpFiles: PlayByPlayFile[];
@@ -25,9 +80,15 @@ export default function MatchTimestamps({
   const [starting, setStarting] = useState(false);
   const [notice, setNotice] = useState('');
   const [noticeOk, setNoticeOk] = useState(true);
+  const [marking, setMarking] = useState(false);
+  const [crop, setCrop] = useState<Crop | null>(null);
+  const [draft, setDraft] = useState<Crop | null>(null);
+  const [frame, setFrame] = useState<{ left: number; top: number; width: number; height: number } | null>(null);
 
   const playerRef = useRef<HTMLVideoElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
   const seekFromInput = useRef(false);
+  const dragStart = useRef<{ x: number; y: number } | null>(null);
 
   const setOptionalNumber = (raw: string, set: (value: number | '') => void) => {
     if (raw === '') {
@@ -50,6 +111,27 @@ export default function MatchTimestamps({
     else player.addEventListener('loadedmetadata', seek, { once: true });
   }, [video, startTime]);
 
+  useEffect(() => {
+    const stage = stageRef.current;
+    const player = playerRef.current;
+    if (!stage || !player) return;
+    const measure = () => {
+      if (!player.videoWidth) {
+        setFrame(null);
+        return;
+      }
+      setFrame(contentBox(stage, player));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(stage);
+    player.addEventListener('loadedmetadata', measure);
+    return () => {
+      observer.disconnect();
+      player.removeEventListener('loadedmetadata', measure);
+    };
+  }, [video]);
+
   const handlePlayerSeek = () => {
     const player = playerRef.current;
     if (!player) return;
@@ -62,6 +144,9 @@ export default function MatchTimestamps({
 
   const handleVideoChange = useCallback(async (value: string) => {
     setVideo(value);
+    setCrop(null);
+    setDraft(null);
+    setMarking(false);
     if (!value) {
       setPbpHint('');
       return;
@@ -97,6 +182,7 @@ export default function MatchTimestamps({
         max_plays: maxPlays === '' ? 50 : maxPlays,
         start_time: startTime === '' ? 0 : startTime,
         num_workers: workers === '' ? 1 : workers,
+        crop,
       });
       const ids = data.job_ids?.length ? data.job_ids : [data.job_id];
       setNoticeOk(true);
@@ -111,24 +197,100 @@ export default function MatchTimestamps({
     }
   };
 
+  const beginMark = () => {
+    playerRef.current?.pause();
+    setMarking(true);
+  };
+
+  const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!marking) return;
+    const point = pointerFraction(event);
+    dragStart.current = point;
+    try {
+      event.currentTarget.setPointerCapture(event.pointerId);
+    } catch {
+      /* The drag still tracks from the move events. */
+    }
+    setDraft({ x: point.x, y: point.y, w: 0, h: 0 });
+  };
+
+  const onPointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    const start = dragStart.current;
+    if (!start) return;
+    const point = pointerFraction(event);
+    setDraft({
+      x: Math.min(start.x, point.x),
+      y: Math.min(start.y, point.y),
+      w: Math.abs(point.x - start.x),
+      h: Math.abs(point.y - start.y),
+    });
+  };
+
+  const onPointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    const start = dragStart.current;
+    dragStart.current = null;
+    if (!start) return;
+    const point = pointerFraction(event);
+    const next = {
+      x: Math.min(start.x, point.x),
+      y: Math.min(start.y, point.y),
+      w: Math.abs(point.x - start.x),
+      h: Math.abs(point.y - start.y),
+    };
+    setDraft(null);
+    if (next.w > 0.02 && next.h > 0.02) {
+      setCrop(next);
+      setMarking(false);
+    }
+  };
+
+  const shownBox = draft || crop;
+
   return (
     <Section title="3. Match Timestamps">
       <div className="match-layout">
         <div className="match-preview">
           {video ? (
-            <video
-              key={video}
-              ref={playerRef}
-              className="match-player"
-              controls
-              preload="metadata"
-              src={getVideoUrl(video)}
-              onSeeked={handlePlayerSeek}
-            />
+            <div className="match-stage" ref={stageRef}>
+              <video
+                key={video}
+                ref={playerRef}
+                className="match-player"
+                controls
+                preload="metadata"
+                src={getVideoUrl(video)}
+                onSeeked={handlePlayerSeek}
+              />
+              {frame && (
+                <div
+                  className={`scoreboard-layer ${marking ? 'marking' : ''}`}
+                  style={frame}
+                  aria-label="Scoreboard area"
+                  role="application"
+                  onPointerDown={onPointerDown}
+                  onPointerMove={onPointerMove}
+                  onPointerUp={onPointerUp}
+                >
+                  {shownBox && <div className="scoreboard-box" style={boxStyle(shownBox)} />}
+                </div>
+              )}
+            </div>
           ) : (
             <div className="match-player match-player-empty">Select a video to preview the full game.</div>
           )}
-          <p className="info-text">Scrub to the first frame of live play. Start time skips the intro before that.</p>
+          <div className="match-mark-row">
+            <button className="quiet" type="button" disabled={!video || !frame} onClick={() => (marking ? setMarking(false) : beginMark())}>
+              {marking ? 'Cancel mark' : 'Mark scoreboard'}
+            </button>
+            {crop && <button className="quiet" type="button" onClick={() => setCrop(null)}>Clear</button>}
+          </div>
+          <p className="info-text">
+            {marking
+              ? 'Drag a rectangle around the scoreboard.'
+              : crop
+                ? 'Scoreboard marked. Matching sends only that crop, so frames without it come back empty.'
+                : 'Scrub to the first frame of live play, then mark the scoreboard.'}
+          </p>
         </div>
         <div>
           <div className="form-group">
