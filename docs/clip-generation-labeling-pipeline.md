@@ -6,7 +6,7 @@ This guide is the focused workflow for creating clip datasets and labels from fu
 
 - Timestamped play matches in `output/cliptimestamps/`
 - Per-play clips in `output/clips/<run_timestamp>/`
-- Clip metadata in `clips_metadata.json` (used downstream for model targets)
+- Clip metadata in `clips_metadata.json`
 - Optional label-organized symlinks in `output/clips_by_label/`
 
 ## Prerequisites
@@ -64,7 +64,7 @@ Output directory:
 - `output/clips/<timestamp>/clip_*.mp4`
 - `output/clips/<timestamp>/clips_metadata.json`
 
-Each entry in `clips_metadata.json` includes an `attributes` dict with `action_type`, `shot_subtype`, `outcome`, `shot_distance_bucket`, `assisted`, and `team`. These are the multi-head supervision targets consumed by VideoMAE training.
+Each entry in `clips_metadata.json` includes an `attributes` dict with `action_type`, `shot_subtype`, `outcome`, `shot_distance_bucket`, `assisted`, and `team`. Those fields are parsed from the play description.
 
 ## 5) Backfill attributes on existing clip runs (optional)
 
@@ -79,8 +79,8 @@ This rewrites every `output/clips/*/clips_metadata.json` with an `attributes` di
 ## Labeling flow and quality control
 
 - Attributes are assigned from play description parsing in `src/utils/labels.py` (`extract_attributes`).
-- The `attributes` dict on each clip record inside `clips_metadata.json` is the source-of-truth target used by downstream model training.
-- If attributes are ambiguous (rare putbacks, fouls, compound plays), correct them in your metadata/review loop before training.
+- The `attributes` dict on each clip record inside `clips_metadata.json` is the label stored with that clip.
+- If attributes are ambiguous (rare putbacks, fouls, compound plays), correct them in the review step.
 
 ## Suggested quick validation loop
 

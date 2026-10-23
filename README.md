@@ -53,7 +53,7 @@ ollama serve
 Pull the vision model used for scoreboard reading:
 
 ```bash
-ollama pull llama3.2-vision   # recommended
+ollama pull qwen3-vl:4b       # recommended
 # ollama pull llava           # faster, less accurate alternative
 ```
 
@@ -147,7 +147,7 @@ python3 match_play_timestamps.py \
 - `--max-plays N` - Limit number of plays to process (for testing)
 - `--start-time N` - Skip first N seconds (useful for pre-game footage)
 - `--sample-interval N` - Seconds between frame samples (default: 10)
-- `--model NAME` - Ollama model to use (default: llama3.2-vision)
+- `--model NAME` - Ollama model to use (default: qwen3-vl:4b)
 
 **How it works:**
 1. Samples frames at regular intervals from the video
@@ -186,41 +186,6 @@ python3 generate_clips.py \
 - Generates descriptive filenames based on play data
 - Creates organized timestamped output directories
 - Includes detailed metadata JSON
-
----
-
-### Step 5: Train VideoMAE Multi-Head Model (Optional)
-
-Fine-tune a pretrained VideoMAE backbone with one classification head per
-attribute (`action_type`, `shot_subtype`, `outcome`, `shot_distance_bucket`,
-`assisted`, `team`):
-
-```bash
-python3 src/train_videomae.py \
-  --clips-glob "output/clips/*/clips_metadata.json" \
-  --epochs 30 \
-  --freeze-epochs 10 \
-  --batch-size 4 \
-  --out-dir output/videomae_model
-```
-
-**Output:**
-- `output/videomae_model/videomae_multihead.pt` - best checkpoint
-- `output/videomae_model/train_report.json` - per-head macro-F1, confusion
-  matrices, epoch history, and the exact label/team vocabularies used
-
-**Predict on new clips:**
-
-```bash
-python3 src/predict_videomae.py --clip path/to/clip.mp4
-python3 src/predict_videomae.py --clips-dir output/clips/20260205_130857
-python3 src/predict_videomae.py \
-  --metadata output/clips/20260205_130857/clips_metadata.json \
-  --write-back
-```
-
-The `--write-back` flag merges predictions into each clip record as
-`predicted_attributes`, `predicted_scores`, and `predicted_top3`.
 
 ---
 
@@ -271,7 +236,7 @@ python3 generate_clips.py \
 - Different play types may need different buffers (fast breaks vs. set plays)
 
 ### Model Selection
-- **llama3.2-vision** (recommended) - Much better at reading scoreboard text
+- **qwen3-vl:4b** (recommended) - Reads the scoreboard on current Ollama
 - **llava** - Faster but less accurate for text recognition
 
 ### Processing Speed

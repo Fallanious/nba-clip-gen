@@ -14,7 +14,7 @@ React + TypeScript UI for the NBA clip pipeline. Each section in the app maps to
 brew install ollama           # or install from https://ollama.ai
 
 ollama serve                  # skip on macOS if the Ollama app is already running
-ollama pull llama3.2-vision   # first time only
+ollama pull qwen3-vl:4b       # first time only
 
 ollama list                   # confirm the model is downloaded
 ```
@@ -35,7 +35,7 @@ Start Ollama, the Flask API, then the Vite dev server:
 ```bash
 # Ollama (skip serve if already running)
 ollama serve
-ollama pull llama3.2-vision   # first time only
+ollama pull qwen3-vl:4b       # first time only
 
 # From project root
 python3 src/app.py

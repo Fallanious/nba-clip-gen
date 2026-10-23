@@ -30,7 +30,7 @@ def extract_frame_at_time(video_path, time_seconds, output_path):
     subprocess.run(cmd, check=True, stderr=subprocess.PIPE)
 
 
-def analyze_frame_scoreboard(image_path, model='llama3.2-vision'):
+def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b'):
     """Send frame to Ollama to read scoreboard information."""
     with open(image_path, 'rb') as f:
         image_data = base64.b64encode(f.read()).decode('utf-8')
@@ -333,6 +333,7 @@ def main():
     parser.add_argument('--start-time', type=int, default=0, help='Start sampling from this time in seconds (default: 0, useful to skip pre-game footage)')
     parser.add_argument('--end-time', type=int, default=None, help='Stop sampling at this time in seconds (default: end of video)')
     parser.add_argument('--worker-id', type=int, default=None, help='Worker ID for parallel processing (used in output filename)')
+    parser.add_argument('--model', default='qwen3-vl:4b', help='Ollama vision model (default: qwen3-vl:4b)')
     parser.add_argument('--output', '-o', help='Output JSON file path')
     
     args = parser.parse_args()
@@ -368,6 +369,7 @@ def main():
     compound_count = sum(1 for p in plays if p.get('is_compound'))
     print(f"Condensed to {len(plays)} distinct plays ({compound_count} compound plays)")
     print(f"Will match first {args.max_plays} plays")
+    print(f"Vision model: {args.model}")
     if args.player_name:
       new_plays_by_player = []
       print(f"Filtering for plays involving: {args.player_name}")
@@ -421,7 +423,7 @@ def main():
         
         # Analyze frame
         print(f"  Analyzing scoreboard...")
-        response = analyze_frame_scoreboard(frame_path)
+        response = analyze_frame_scoreboard(frame_path, model=args.model)
         
         if response:
             print(f"  LLM Response: {response}")
