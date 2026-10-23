@@ -147,6 +147,12 @@ def _latest_line(output):
     return lines[-1][:160]
 
 
+def _log_tail(output, limit=80):
+    """Recent lines only. The full log can grow for the whole match."""
+    lines = (output or "").splitlines()
+    return "\n".join(lines[-limit:])
+
+
 def _public_job(job_id, job):
     return {
         "id": job_id,
@@ -157,6 +163,7 @@ def _public_job(job_id, job):
         "error": job.get("error"),
         "progress": _match_progress(job.get("output", "")),
         "latest": _latest_line(job.get("output", "")),
+        "log": _log_tail(job.get("output", "")),
     }
 
 

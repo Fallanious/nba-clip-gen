@@ -71,12 +71,14 @@ If you cannot see a scoreboard clearly in this frame, respond with an empty JSON
         )
         
         if response.status_code == 200:
-            result = response.json()
-            return result.get('response', '')
-        else:
-            return None
+            text = response.json().get('response', '')
+            if not text:
+                print("  Ollama returned an empty response")
+            return text
+        print(f"  Ollama returned {response.status_code}: {response.text[:300]}")
+        return None
     except Exception as e:
-        print(f"Error analyzing frame: {e}")
+        print(f"  Error analyzing frame: {e}")
         return None
 
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { stopJob } from '../api';
 import type { ProcessJob } from '../types';
 
@@ -17,6 +17,28 @@ const statusLabel: Record<ProcessJob['status'], string> = {
 function startedLabel(startedAt: number | null) {
   if (!startedAt) return '';
   return new Date(startedAt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+}
+
+function ProcessLog({ text }: { text: string }) {
+  const ref = useRef<HTMLPreElement>(null);
+  const stick = useRef(true);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (el && stick.current) el.scrollTop = el.scrollHeight;
+  }, [text]);
+
+  return (
+    <pre
+      className="process-log"
+      ref={ref}
+      onScroll={() => {
+        const el = ref.current;
+        if (!el) return;
+        stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 48;
+      }}
+    >{text || 'Waiting for output…'}</pre>
+  );
 }
 
 export default function Processes({ jobs, onChanged }: Props) {
@@ -86,6 +108,7 @@ export default function Processes({ jobs, onChanged }: Props) {
                     ? 'Working. A match can take up to 30 minutes.'
                     : job.error || ''}
               </p>
+              <ProcessLog text={job.log} />
             </article>
           );
         })}

@@ -93,6 +93,7 @@ export interface ProcessJob {
   error: string | null;
   progress: { done: number; total: number } | null;
   latest: string;
+  log: string;
 }
 
 export interface OllamaStatus {
