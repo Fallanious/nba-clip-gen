@@ -90,6 +90,7 @@ export interface ProcessJob {
   kind: string;
   label: string;
   started_at: number | null;
+  finished_at: number | null;
   error: string | null;
   progress: { done: number; total: number } | null;
   latest: string;

@@ -14,9 +14,9 @@ const statusLabel: Record<ProcessJob['status'], string> = {
   cancelled: 'Stopped',
 };
 
-function startedLabel(startedAt: number | null) {
-  if (!startedAt) return '';
-  return new Date(startedAt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+function clockLabel(at: number | null) {
+  if (!at) return '';
+  return new Date(at * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
 }
 
 function ProcessLog({ text }: { text: string }) {
@@ -82,7 +82,8 @@ export default function Processes({ jobs, onChanged }: Props) {
                   <p>{job.label || 'Local job'}</p>
                   <p className="process-meta">
                     <span className="process-id">{job.id}</span>
-                    {job.started_at ? ` · started ${startedLabel(job.started_at)}` : ''}
+                    {job.started_at ? ` · started ${clockLabel(job.started_at)}` : ''}
+                    {job.finished_at ? ` · ended ${clockLabel(job.finished_at)}` : ''}
                   </p>
                 </div>
                 <div className="process-actions">

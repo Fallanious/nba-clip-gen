@@ -83,10 +83,12 @@ def run_script_async(job_id, cmd, cwd=None):
         if jobs[job_id].get("status") != "cancelled":
             jobs[job_id]["return_code"] = process.returncode
             jobs[job_id]["status"] = "completed" if process.returncode == 0 else "failed"
+            _mark_finished(jobs[job_id])
 
     except Exception as e:
         jobs[job_id]["status"] = "failed"
         jobs[job_id]["error"] = str(e)
+        _mark_finished(jobs[job_id])
 
 
 # ---------- endpoints ----------
@@ -114,18 +116,27 @@ def stop_job(job_id):
     if not pid:
         job["status"] = "cancelled"
         job["output"] = (job.get("output") or "") + "\n\n--- Process stopped by user ---\n"
+        _mark_finished(job)
         return jsonify({"message": "Job stopped", "job_id": job_id})
 
     try:
         os.kill(pid, signal.SIGTERM)
         job["status"] = "cancelled"
         job["output"] += "\n\n--- Process stopped by user ---\n"
+        _mark_finished(job)
         return jsonify({"message": "Job stopped", "job_id": job_id})
     except ProcessLookupError:
         job["status"] = "cancelled"
+        _mark_finished(job)
         return jsonify({"message": "Process already ended", "job_id": job_id})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+def _mark_finished(job):
+    """Record the clock time once, the first time a job leaves running."""
+    if not job.get("finished_at"):
+        job["finished_at"] = time.time()
 
 
 def _match_progress(output):
@@ -160,6 +171,7 @@ def _public_job(job_id, job):
         "kind": job.get("kind", "Task"),
         "label": job.get("label", ""),
         "started_at": job.get("started_at"),
+        "finished_at": job.get("finished_at"),
         "error": job.get("error"),
         "progress": _match_progress(job.get("output", "")),
         "latest": _latest_line(job.get("output", "")),

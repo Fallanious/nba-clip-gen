@@ -40,6 +40,7 @@ def _start_job(cmd, kind="Task", label=""):
         "kind": kind,
         "label": label,
         "started_at": time.time(),
+        "finished_at": None,
     }
     thread = threading.Thread(target=run_script_async, args=(job_id, cmd))
     thread.start()
