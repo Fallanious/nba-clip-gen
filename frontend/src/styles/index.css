@@ -828,3 +828,17 @@ footer {
     padding: 8px
   }
 }
+.process-activity { margin-top: 16px; min-width: 0; }
+.process-activity > .tabs { margin-bottom: 14px; }
+.process-highlights { list-style: none; padding: 0; margin: 8px 0 0; max-height: 340px; overflow: auto; }
+.process-highlights li { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid #e4e4e8; }
+.process-highlights li > div { min-width: 0; overflow-wrap: anywhere; }
+.process-highlights strong { font-size: 13px; font-weight: 500; }
+.process-highlights p, .process-summary p { margin: 4px 0 0; font-size: 12px; color: #666; white-space: pre-wrap; overflow-wrap: anywhere; }
+.highlight-mark { flex: 0 0 16px; color: #666; }
+.success .highlight-mark { color: #1f7a3a; }
+.error .highlight-mark { color: #b42318; }
+.process-summary { padding: 10px 12px; background: #f4f4f5; border-radius: 8px; margin-bottom: 10px; font-size: 13px; }
+.process-summary summary { cursor: pointer; }
+.process-summary.warning summary { color: #805a1c; }
+.process-empty { padding: 14px 0; }

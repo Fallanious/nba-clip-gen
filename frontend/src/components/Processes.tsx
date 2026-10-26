@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { stopJob } from '../api';
 import type { ProcessJob } from '../types';
 
@@ -38,6 +38,61 @@ function ProcessLog({ text }: { text: string }) {
         stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 48;
       }}
     >{text || 'Waiting for output…'}</pre>
+  );
+}
+
+function ProcessActivity({ job }: { job: ProcessJob }) {
+  const [tab, setTab] = useState('highlights');
+  const id = useId();
+  const events = job.highlights?.events ?? [];
+  const summaries = job.highlights?.summaries ?? [];
+  const tabs = ['highlights', 'technical'];
+  return (
+    <section className="process-activity" aria-label="Process activity">
+      <div className="tabs" role="tablist" aria-label="Log view">
+        {tabs.map((name, index) => (
+          <button key={name} id={`${id}-${name}`} role="tab"
+            className={tab === name ? 'selected' : 'quiet'}
+            aria-selected={tab === name} aria-controls={`${id}-${name}-panel`}
+            tabIndex={tab === name ? 0 : -1}
+            onClick={() => setTab(name)}
+            onKeyDown={event => {
+              const next = event.key === 'Home' ? 0 : event.key === 'End' ? 1
+                : event.key === 'ArrowRight' || event.key === 'ArrowLeft' ? 1 - index : null;
+              if (next !== null) {
+                event.preventDefault();
+                setTab(tabs[next]);
+                document.getElementById(`${id}-${tabs[next]}`)?.focus();
+              }
+            }}>
+            {name === 'highlights' ? 'Highlights' : 'Technical log'}
+          </button>
+        ))}
+      </div>
+      <div id={`${id}-highlights-panel`} role="tabpanel" aria-labelledby={`${id}-highlights`} hidden={tab !== 'highlights'}>
+        {job.error && <p className="notice">{job.error}</p>}
+        {summaries.map((item, i) => (
+          <details className={`process-summary ${item.level}`} key={i}>
+            <summary>{item.title}</summary><p>{item.detail}</p>
+          </details>
+        ))}
+        {events.length ? <>
+          <p className="process-meta">Latest activity first · Up to 20 highlights</p>
+          <ul className="process-highlights">
+            {events.map((item, i) => <li key={i} className={item.level}>
+              <span className="highlight-mark" aria-label={item.level}>{item.level === 'success' ? '✓' : item.level === 'error' ? '!' : '·'}</span>
+              <div><strong>{item.title}</strong>{item.detail && <p>{item.detail}</p>}</div>
+            </li>)}
+          </ul>
+        </> : <p className="process-meta process-empty">
+          {job.status === 'running' ? 'Waiting for the first highlight. Technical log shows live output.' : 'No highlights recorded. See Technical log for output.'}
+        </p>}
+      </div>
+      <div id={`${id}-technical-panel`} role="tabpanel" aria-labelledby={`${id}-technical`} hidden={tab !== 'technical'}>
+        <p className="process-meta">Most recent 80 lines of raw output</p>
+        {tab === 'technical' && <ProcessLog text={job.log} />}
+      </div>
+    </section>
   );
 }
 
@@ -109,7 +164,7 @@ export default function Processes({ jobs, onChanged }: Props) {
                     ? 'Working. A match can take up to 30 minutes.'
                     : job.error || ''}
               </p>
-              <ProcessLog text={job.log} />
+              <ProcessActivity job={job} />
             </article>
           );
         })}
