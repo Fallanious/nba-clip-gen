@@ -15,6 +15,7 @@ output/
 
 # Film directory (downloaded videos)
 film/
+docs/
 # downloaded play by play
 playbyplay/
 
@@ -55,3 +56,5 @@ frontend/dist/
 
 #yolo
 yolo*
+
+.env
