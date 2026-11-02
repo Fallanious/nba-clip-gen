@@ -287,8 +287,8 @@ def test_playback_unconfigured_still_404_for_missing_clip(client):
     assert client.get(PB.format(1)).status_code in (404, 503)  # Q-2: ordering of validation vs config check
 
 
-def test_playback_clip_mode_success(client, playback_configured):
-    r = client.get(PB.format(PLAYABLE_CLIP))
+def test_playback_clip_mode_success(playback_client, playback_configured):
+    r = playback_client.get(PB.format(PLAYABLE_CLIP))
     assert r.status_code == 200, r.get_data(as_text=True)
     assert_no_store(r)
     b = r.get_json()
@@ -316,8 +316,8 @@ def test_playback_ttl_out_of_range_fails_startup(monkeypatch, fake_db, playback_
         _make_app()
 
 
-def test_playback_fallback_mode(client, playback_configured):
-    r = client.get(PB.format(NOT_READY_WITH_GAME_KEY))
+def test_playback_fallback_mode(playback_client, playback_configured):
+    r = playback_client.get(PB.format(NOT_READY_WITH_GAME_KEY))
     assert r.status_code == 200
     b = r.get_json()
     c = CLIPS[NOT_READY_WITH_GAME_KEY]
@@ -335,27 +335,27 @@ def test_playback_409_fallback_disabled(client, monkeypatch, playback_configured
     assert err["details"] == {"status": status, "fallback_available": False}
 
 
-def test_playback_409_no_game_key(client, playback_configured):
-    err = assert_error(client.get(PB.format(NOT_READY_NO_GAME_KEY)), 409, "clip_not_ready")
+def test_playback_409_no_game_key(playback_client, playback_configured):
+    err = assert_error(playback_client.get(PB.format(NOT_READY_NO_GAME_KEY)), 409, "clip_not_ready")
     assert err["details"]["status"] == "pending"
 
 
-def test_playback_mode_clip_on_unrendered_409(client, playback_configured):
-    assert_error(client.get(PB.format(NOT_READY_WITH_GAME_KEY) + "?mode=clip"), 409, "clip_not_ready")
+def test_playback_mode_clip_on_unrendered_409(playback_client, playback_configured):
+    assert_error(playback_client.get(PB.format(NOT_READY_WITH_GAME_KEY) + "?mode=clip"), 409, "clip_not_ready")
 
 
-def test_playback_mode_fallback_on_uploaded(client, playback_configured):
-    b = client.get(PB.format(PLAYABLE_CLIP) + "?mode=fallback").get_json()
+def test_playback_mode_fallback_on_uploaded(playback_client, playback_configured):
+    b = playback_client.get(PB.format(PLAYABLE_CLIP) + "?mode=fallback").get_json()
     assert b["mode"] == "fallback"  # game 77 has s3_key
 
 
-def test_playback_mode_invalid(client, playback_configured):
-    assert_error(client.get(PB.format(PLAYABLE_CLIP) + "?mode=stream"), 400, "invalid_param", "mode")
+def test_playback_mode_invalid(playback_client, playback_configured):
+    assert_error(playback_client.get(PB.format(PLAYABLE_CLIP) + "?mode=stream"), 400, "invalid_param", "mode")
 
 
 @pytest.mark.parametrize("cid", ["1", "abc", "0"])
-def test_playback_404(client, playback_configured, cid):
-    assert_error(client.get(PB.format(cid)), 404, "not_found")
+def test_playback_404(playback_client, playback_configured, cid):
+    assert_error(playback_client.get(PB.format(cid)), 404, "not_found")
     assert playback_configured.calls == []
 
 
@@ -389,10 +389,10 @@ def test_playback_head_timeout_502(monkeypatch, fake_db, playback_configured):
     assert_error(_verify_client(monkeypatch).get(PB.format(PLAYABLE_CLIP)), 502, "storage_error")
 
 
-def test_playback_no_credentials_503(client, playback_configured):
+def test_playback_no_credentials_503(playback_client, playback_configured):
     from botocore.exceptions import NoCredentialsError
     playback_configured.sign_exc = NoCredentialsError()
-    assert_error(client.get(PB.format(PLAYABLE_CLIP)), 503, "storage_unavailable")
+    assert_error(playback_client.get(PB.format(PLAYABLE_CLIP)), 503, "storage_unavailable")
 
 
 def test_playback_verify_head_called_with_key(monkeypatch, fake_db, playback_configured):
@@ -400,24 +400,24 @@ def test_playback_verify_head_called_with_key(monkeypatch, fake_db, playback_con
     assert playback_configured.head_calls == [("qa-fake-bucket", CLIPS[90412]["s3_key"])]
 
 
-def test_playback_url_not_logged(client, playback_configured, caplog):
+def test_playback_url_not_logged(playback_client, playback_configured, caplog):
     import logging
     caplog.set_level(logging.DEBUG)
-    client.get(PB.format(PLAYABLE_CLIP))
+    playback_client.get(PB.format(PLAYABLE_CLIP))
     assert "X-Amz-Signature" not in caplog.text
 
 
-def test_playback_db_503(client, fake_db, playback_configured):
+def test_playback_db_503(fake_db, playback_client, playback_configured):
     fake_db.fail_with = OperationalError("x", {}, Exception("timeout"))
-    assert_error(client.get(PB.format(PLAYABLE_CLIP)), 503, "db_unavailable")
+    assert_error(playback_client.get(PB.format(PLAYABLE_CLIP)), 503, "db_unavailable")
 
 
-def test_playback_authorize_called_before_sign(client, monkeypatch, playback_configured):
+def test_playback_authorize_called_before_sign(playback_client, monkeypatch, playback_configured):
     import routes.players as authz
     seen = []
     orig = authz.authorize_clip
     monkeypatch.setattr(authz, "authorize_clip", lambda u, c: (seen.append(len(playback_configured.calls)), orig(u, c))[1])
-    client.get(PB.format(PLAYABLE_CLIP))
+    playback_client.get(PB.format(PLAYABLE_CLIP))
     assert seen == [0]
 
 

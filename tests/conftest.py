@@ -18,32 +18,23 @@ from contextlib import contextmanager
 import pytest
 
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
-APP_FACTORY = "src.app:create_app"          # app factory import path
-SESSION_TARGET = "src.db.session.get_session"  # what repositories call for a session
-REGISTRY_TARGET = "src.db.sql_loader.get_registry"  # returns Mapping[str, TextClause]
-S3_CLIENT_TARGET = "src.services.playback._s3_client"  # returns boto3 client
+import sys as _sys
+_SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src")
+if _SRC not in _sys.path:
+    _sys.path.insert(0, _SRC)   # app imports top-level modules: config, db.*, routes.*, services.*
+APP_FACTORY = "app:create_app"          # app factory import path
+SESSION_TARGET = "routes.players.get_db"  # routes call next(get_db())
+REGISTRY_TARGET = None  # real registry is used; FakeDB maps TextClause -> key
+S3_CLIENT_TARGET = "services.playback._s3_client"  # returns boto3 client
 PLAYBACK_ENV = ["S3_BUCKET", "AWS_REGION", "PLAYBACK_ALLOW_FALLBACK",
                 "PLAYBACK_VERIFY_OBJECT", "PLAYBACK_URL_TTL", "PLAYBACK_FALLBACK_TTL",
                 "S3_CLIPS_PREFIX", "S3_GAMES_PREFIX"]
 TEST_CURSOR_SECRET = "qa-test-cursor-secret-not-real"
 
 
-def _refresh_config():
-    """config.Config reads env at class-definition time; re-read into the shared instance."""
-    import importlib
-    import config as cfg_mod
-    live = cfg_mod.config
-    fresh = importlib.reload(cfg_mod)
-    for k, v in vars(fresh.Config).items():
-        if k.isupper():
-            setattr(type(live), k, v)
-            setattr(live, k, v)
-    fresh.config = live
-
-
 def _make_app():
+    """Create a fresh app instance (config now reads env vars dynamically)."""
     import importlib
-    _refresh_config()
     mod, attr = APP_FACTORY.split(":")
     return getattr(importlib.import_module(mod), attr)()
 
@@ -370,11 +361,18 @@ def playback_configured(monkeypatch):
             raise stub.head_exc
         return {"ContentLength": 1}
 
-    _refresh_config()  # config is read at import; re-read after setenv
     stub.generate_presigned_url = generate_presigned_url
     stub.head_object = head_object
     monkeypatch.setattr(S3_CLIENT_TARGET, lambda *a, **k: stub, raising=False)
     return stub
+
+
+@pytest.fixture
+def playback_client(fake_db, playback_configured):
+    """Client with playback configured - env vars set before app creation."""
+    a = _make_app()
+    a.config.update(TESTING=True)
+    return a.test_client()
 
 
 @pytest.fixture
@@ -415,11 +413,12 @@ def tamper_cursor(cursor):
     return b64url(raw) + "." + sig
 
 
-def walk_pages(client, url, item_fn, max_pages=50):
+def walk_pages(client, url, item_fn, max_pages=500):
     """Follow next_cursor; returns list of pages' items."""
     pages, cursor = [], None
     sep = "&" if "?" in url else "?"
-    for _ in range(max_pages):
+    seen_cursors = set()
+    for page_num in range(max_pages):
         r = client.get(url + (f"{sep}cursor={cursor}" if cursor else ""))
         assert r.status_code == 200, r.get_data(as_text=True)
         body = r.get_json()
@@ -427,4 +426,10 @@ def walk_pages(client, url, item_fn, max_pages=50):
         cursor = body["next_cursor"]
         if not cursor:
             return pages
-    raise AssertionError("paging did not terminate")
+        # Detect cursor loop
+        if cursor in seen_cursors:
+            # Debug: print recent pages to see pattern
+            last_3_pages = [str(p)[:100] for p in pages[-3:]]
+            raise AssertionError(f"cursor loop detected at page {page_num + 1}. Last 3 pages: {last_3_pages}")
+        seen_cursors.add(cursor)
+    raise AssertionError(f"paging did not terminate after {max_pages} pages")

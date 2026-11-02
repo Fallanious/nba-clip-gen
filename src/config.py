@@ -8,48 +8,72 @@ load_dotenv()
 
 
 class Config:
-    """Application configuration."""
+    """Application configuration - reads env vars dynamically for test compatibility."""
 
-    # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "")
+    @property
+    def DATABASE_URL(self) -> str:
+        return os.getenv("DATABASE_URL", "")
 
-    # CORS
-    ALLOWED_ORIGINS: list[str] = [
-        origin.strip()
-        for origin in os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:5001").split(",")
-        if origin.strip()
-    ]
+    @property
+    def ALLOWED_ORIGINS(self) -> list[str]:
+        return [
+            origin.strip()
+            for origin in os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:5001").split(",")
+            if origin.strip()
+        ]
 
-    # AWS / S3
-    AWS_REGION: str = os.getenv("AWS_REGION", "us-east-2")
-    S3_BUCKET: Optional[str] = os.getenv("S3_BUCKET")
-    S3_CLIPS_PREFIX: str = os.getenv("S3_CLIPS_PREFIX", "clips/")
-    S3_GAMES_PREFIX: str = os.getenv("S3_GAMES_PREFIX", "games/")
+    @property
+    def AWS_REGION(self) -> str:
+        return os.getenv("AWS_REGION", "us-east-2")
 
-    # Playback
-    PLAYBACK_URL_TTL: int = int(os.getenv("PLAYBACK_URL_TTL", "300"))
-    PLAYBACK_FALLBACK_TTL: int = int(os.getenv("PLAYBACK_FALLBACK_TTL", "900"))
-    PLAYBACK_ALLOW_FALLBACK: bool = os.getenv("PLAYBACK_ALLOW_FALLBACK", "true").lower() == "true"
-    PLAYBACK_VERIFY_OBJECT: bool = os.getenv("PLAYBACK_VERIFY_OBJECT", "true").lower() == "true"
+    @property
+    def S3_BUCKET(self) -> Optional[str]:
+        return os.getenv("S3_BUCKET")
 
-    # Security
-    CURSOR_SECRET: str = os.getenv("CURSOR_SECRET", "dev-secret-change-in-production")
+    @property
+    def S3_CLIPS_PREFIX(self) -> str:
+        return os.getenv("S3_CLIPS_PREFIX", "clips/")
 
-    # App
-    APP_ENV: str = os.getenv("APP_ENV", "dev")
+    @property
+    def S3_GAMES_PREFIX(self) -> str:
+        return os.getenv("S3_GAMES_PREFIX", "games/")
 
-    # Ollama (existing)
-    OLLAMA_URL: str = os.getenv("OLLAMA_URL", "http://localhost:11434")
+    @property
+    def PLAYBACK_URL_TTL(self) -> int:
+        return int(os.getenv("PLAYBACK_URL_TTL", "300"))
 
-    @classmethod
-    def validate(cls):
+    @property
+    def PLAYBACK_FALLBACK_TTL(self) -> int:
+        return int(os.getenv("PLAYBACK_FALLBACK_TTL", "900"))
+
+    @property
+    def PLAYBACK_ALLOW_FALLBACK(self) -> bool:
+        return os.getenv("PLAYBACK_ALLOW_FALLBACK", "true").lower() == "true"
+
+    @property
+    def PLAYBACK_VERIFY_OBJECT(self) -> bool:
+        return os.getenv("PLAYBACK_VERIFY_OBJECT", "true").lower() == "true"
+
+    @property
+    def CURSOR_SECRET(self) -> str:
+        return os.getenv("CURSOR_SECRET", "dev-secret-change-in-production")
+
+    @property
+    def APP_ENV(self) -> str:
+        return os.getenv("APP_ENV", "dev")
+
+    @property
+    def OLLAMA_URL(self) -> str:
+        return os.getenv("OLLAMA_URL", "http://localhost:11434")
+
+    def validate(self):
         """Validate required configuration at startup."""
         errors = []
 
-        if cls.PLAYBACK_URL_TTL < 60 or cls.PLAYBACK_URL_TTL > 3600:
+        if self.PLAYBACK_URL_TTL < 60 or self.PLAYBACK_URL_TTL > 3600:
             errors.append("PLAYBACK_URL_TTL must be 60-3600")
 
-        if cls.PLAYBACK_FALLBACK_TTL < 60 or cls.PLAYBACK_FALLBACK_TTL > 3600:
+        if self.PLAYBACK_FALLBACK_TTL < 60 or self.PLAYBACK_FALLBACK_TTL > 3600:
             errors.append("PLAYBACK_FALLBACK_TTL must be 60-3600")
 
         if errors:
