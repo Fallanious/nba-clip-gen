@@ -235,7 +235,7 @@ def test_cursor_size_limit_in_bytes(monkeypatch):
         pagination.decode_cursor(at_limit, {})
     assert ei.value.code == "invalid_cursor"
     assert ei.value.status == 400
-    assert hmac_calls or decode_calls, "1024-byte cursor must pass the size check"
+    assert hmac_calls, "1024-byte cursor must pass the size check and reach HMAC"
 
     hmac_calls.clear()
     decode_calls.clear()
@@ -254,7 +254,7 @@ def test_cursor_size_limit_in_bytes(monkeypatch):
     assert len(utf8_ok.encode("utf-8")) == 1024
     with pytest.raises(ApiError):
         pagination.decode_cursor(utf8_ok, {})
-    assert hmac_calls or decode_calls
+    assert hmac_calls, "1024-byte UTF-8 cursor must pass the size check and reach HMAC"
     hmac_calls.clear()
     decode_calls.clear()
     utf8_bad = "é" * 512 + "x"  # 1025 bytes
