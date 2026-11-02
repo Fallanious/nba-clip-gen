@@ -39,7 +39,7 @@ def _mime_for_key(key: str) -> str:
 def _allow_fallback() -> bool:
     """Fallback presigns full game video; disabled in production unless explicitly enabled."""
     raw = os.getenv("PLAYBACK_ALLOW_FALLBACK")
-    if config.APP_ENV == "production" and raw is None:
+    if config.APP_ENV in {"prod", "production"} and raw is None:
         return False
     if raw is None:
         return True

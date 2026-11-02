@@ -1,5 +1,4 @@
 """CI workflow and Neon guard checks (PR #3 D4)."""
-import json
 import os
 import re
 import subprocess
@@ -10,12 +9,21 @@ import pytest
 import yaml
 
 WORKFLOW = Path(".github/workflows/integration.yml")
+SHA_PIN = re.compile(r"^[A-Za-z0-9._-]+/[A-Za-z0-9._-]+@[0-9a-f]{40}$")
+SECRET_REF = re.compile(r"^\$\{\{\s*secrets\.[A-Z0-9_]+\s*\}\}$")
+
+
+def _data():
+    return yaml.safe_load(WORKFLOW.read_text())
+
+
+def _jobs():
+    return _data()["jobs"]
 
 
 def _job():
-    data = yaml.safe_load(WORKFLOW.read_text())
-    jobs = data["jobs"]
-    return next(iter(jobs.values()))
+    jobs = _jobs()
+    return jobs.get("integration") or next(iter(jobs.values()))
 
 
 def _walk_env(node, found):
@@ -35,9 +43,8 @@ def test_integration_job_uses_secret_not_literal():
     urls = []
     _walk_env(job, urls)
     assert urls, "expected DATABASE_URL on the job or a step"
-    secret_re = re.compile(r"^\$\{\{\s*secrets\.[A-Z0-9_]+\s*\}\}$")
     for value in urls:
-        assert secret_re.match(str(value)), value
+        assert SECRET_REF.match(str(value)), value
 
     github_root = Path(".github")
     for path in github_root.rglob("*"):
@@ -53,11 +60,24 @@ def test_integration_job_uses_secret_not_literal():
         assert "printenv" not in run
 
 
+def test_no_job_level_secrets_if():
+    """GitHub rejects `if: secrets.*` on jobs; skip via step-level has_db instead."""
+    for name, job in _jobs().items():
+        job_if = str(job.get("if") or "")
+        assert "secrets." not in job_if, f"job {name} has secrets in if: {job_if}"
+
+
+def test_actions_are_sha_pinned():
+    for name, job in _jobs().items():
+        for step in job.get("steps") or []:
+            uses = str(step.get("uses") or "").strip()
+            if not uses:
+                continue
+            assert SHA_PIN.match(uses), f"{name} unpinned action: {uses}"
+
+
 def test_integration_job_skips_without_secret():
     job = _job()
-    job_if = str(job.get("if") or "")
-    secret_if = bool(re.search(r"secrets\.[A-Z0-9_]+\s*!=\s*''", job_if))
-
     steps = job.get("steps") or []
     has_db_step = False
     later_gated = True
@@ -72,7 +92,7 @@ def test_integration_job_skips_without_secret():
                 if f"steps.{check_id}.outputs.has_db == 'true'" not in later_if:
                     later_gated = False
             break
-    assert secret_if or (has_db_step and later_gated)
+    assert has_db_step and later_gated
 
     pytest_runs = False
     for step in steps:
@@ -101,7 +121,7 @@ def test_integration_job_never_targets_default_or_production():
     for step in job.get("steps") or []:
         uses = str(step.get("uses") or "")
         if "neondatabase/create-branch-action" in uses:
-            assert "@" in uses and re.search(r"@[0-9a-f]{40}$", uses)
+            assert SHA_PIN.match(uses)
             parent = (step.get("with") or {}).get("parent") or ""
             assert parent in ("dev",) or "vars.NEON_DEV_BRANCH_ID" in str(parent)
         with_ = step.get("with") or {}
@@ -112,30 +132,66 @@ def test_integration_job_never_targets_default_or_production():
                     assert word not in blob
 
     assert "python scripts/ci_guard_db.py" in text
+    assert "vars.NEON_DEV_ENDPOINT_ID" in text
+    assert "NEON_BRANCH_JSON" not in text
     steps = job.get("steps") or []
     guard_i = next(i for i, s in enumerate(steps) if "ci_guard_db.py" in str(s.get("run") or ""))
     pytest_i = next(i for i, s in enumerate(steps) if "pytest -m integration" in str(s.get("run") or ""))
     assert guard_i < pytest_i
+    guard_env = (steps[guard_i].get("env") or {})
+    assert "NEON_DEV_ENDPOINT_ID" in guard_env
+    assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
 
 
-def test_ci_guard_db_rejects_prod(tmp_path):
-    script = "scripts/ci_guard_db.py"
+def _run_guard(env):
+    cleaned = {k: v for k, v in os.environ.items() if k not in {"DATABASE_URL", "NEON_DEV_ENDPOINT_ID", "NEON_BRANCH_JSON"}}
+    cleaned.update(env)
+    return subprocess.run(
+        [sys.executable, "scripts/ci_guard_db.py"],
+        env=cleaned,
+        capture_output=True,
+        text=True,
+    )
 
-    def run(url, meta):
-        branch = tmp_path / "neon.json"
-        branch.write_text(json.dumps(meta))
-        env = {**os.environ, "DATABASE_URL": url, "NEON_BRANCH_JSON": str(branch)}
-        return subprocess.run(
-            [sys.executable, script],
-            env=env,
-            capture_output=True,
-            text=True,
-        )
 
-    assert run("postgresql://u:p@ep-x-prod.neon.tech/db", {"default": False, "primary": False}).returncode != 0
-    assert run("postgresql://u:p@ep-dev.neon.tech/db", {"default": True}).returncode != 0
-    assert run("postgresql://u:p@ep-dev.neon.tech/db", {"primary": True}).returncode != 0
-    assert run("postgresql://u:p@ep-dev.neon.tech/db", {"default": False, "primary": False}).returncode == 0
+def test_ci_guard_db_requires_endpoint_and_url():
+    assert _run_guard({"DATABASE_URL": "postgresql://u:p@ep-dev-abc.neon.tech/db"}).returncode != 0
+    assert _run_guard({"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}).returncode != 0
+    assert _run_guard({}).returncode != 0
+
+
+def test_ci_guard_db_rejects_mismatched_or_prod_endpoint():
+    env = {"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}
+    mismatch = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-other-xyz.neon.tech/db",
+    })
+    assert mismatch.returncode != 0
+    prod = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-x-production.neon.tech/db",
+    })
+    assert prod.returncode != 0
+    # Matching first label is accepted; credentials must not appear in output.
+    ok = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db",
+    })
+    assert ok.returncode == 0
+    out = ok.stdout + ok.stderr + mismatch.stdout + mismatch.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
+
+
+def test_ci_guard_unused_branch_json_ignored(tmp_path):
+    branch = tmp_path / "neon.json"
+    branch.write_text('{"default": true, "primary": true}')
+    result = _run_guard({
+        "NEON_BRANCH_JSON": str(branch),
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.neon.tech/db",
+    })
+    assert result.returncode == 0
 
 
 @pytest.mark.parametrize("url", [
