@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Flask API Backend - Foundation only."""
-import os, sys, uuid
+import os, sys, uuid, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from flask import Flask, g, request
 from flask_cors import CORS
 
 def create_app():
     from config import config
+    from auth import validate_auth_for_startup
     from errors import register_error_handlers
     from routes.jobs import bp as jobs_bp
     from routes.videos import bp as videos_bp
@@ -15,6 +16,7 @@ def create_app():
     
     app = Flask(__name__)
     config.validate()
+    validate_auth_for_startup()
     CORS(app, origins=config.ALLOWED_ORIGINS)
     register_error_handlers(app)
     
@@ -25,7 +27,13 @@ def create_app():
     
     @app.before_request
     def add_request_id():
-        g.request_id = request.headers.get('X-Request-Id', str(uuid.uuid4()))
+        """Add or validate request ID."""
+        req_id = request.headers.get('X-Request-Id', '')
+        # Accept only UUID or alphanumeric with hyphens (1-64 chars)
+        if req_id and re.match(r'^[A-Za-z0-9-]{1,64}$', req_id):
+            g.request_id = req_id
+        else:
+            g.request_id = str(uuid.uuid4())
     
     @app.after_request
     def add_response_headers(response):
@@ -40,6 +48,6 @@ if __name__ == "__main__":
     from config import config
     app.run(
         debug=config.DEBUG,
-        host="0.0.0.0",
+        host=os.getenv("BIND_HOST", "127.0.0.1"),  # Default to localhost; use 0.0.0.0 or gunicorn in prod
         port=int(os.getenv("PORT", "5001"))
     )

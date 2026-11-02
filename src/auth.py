@@ -43,3 +43,18 @@ def require_user(f):
             pass
         return f(*args, **kwargs)
     return decorated
+
+
+def validate_auth_for_startup():
+    """Validate auth configuration at startup.
+    
+    Refuse to start when APP_ENV != dev until real auth exists.
+    """
+    import os
+    app_env = os.getenv("APP_ENV", "dev")
+    if app_env != "dev":
+        raise ValueError(
+            f"APP_ENV={app_env} requires real authentication. "
+            "Stub auth (resolve_user always returns LocalUser with admin scope) is only allowed in dev. "
+            "Implement proper auth before deploying to non-dev environments."
+        )

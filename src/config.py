@@ -59,7 +59,10 @@ class Config:
         """Required secret for cursor signing - must be at least 32 bytes."""
         secret = os.getenv("CURSOR_SECRET")
         if not secret:
-            raise ValueError("CURSOR_SECRET environment variable is required")
+            # Allow dev fallback only in dev environment
+            if self.APP_ENV == "dev":
+                return "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # exactly 32 bytes
+            raise ValueError("CURSOR_SECRET environment variable is required (no dev fallback outside APP_ENV=dev)")
         return secret
 
     @property
