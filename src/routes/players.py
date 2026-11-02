@@ -17,9 +17,12 @@ from repositories import players as players_repo
 from repositories import clips as clips_repo
 
 try:
-    from services.playback import get_playback_url
+    from services.playback import get_playback_url, _allow_fallback
 except ImportError:  # playback lands in a later stack layer
     get_playback_url = None
+    def _allow_fallback():
+        from config import config as _cfg
+        return _cfg.PLAYBACK_ALLOW_FALLBACK
 
 bp = Blueprint('players', __name__, url_prefix='/api')
 
@@ -699,7 +702,7 @@ def get_clip_endpoint(clip_id: int):
         "team": {"id": str(row["team_id"]), "abbr": row.get("team_abbr")} if row.get("team_abbr") else None,
         "players": players_json,
         "playable": row["status"] == "uploaded" and row.get("s3_key") is not None,
-        "fallback_available": row["status"] != "uploaded" and row["has_source"] and config.PLAYBACK_ALLOW_FALLBACK
+        "fallback_available": row["status"] != "uploaded" and row["has_source"] and _allow_fallback()
     }
 
     result = jsonify(clip)
