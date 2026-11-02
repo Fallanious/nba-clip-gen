@@ -8,3 +8,10 @@ beautifulsoup4
 lxml
 flask
 flask-cors
+sqlalchemy>=2.0
+alembic
+psycopg[binary]
+python-dotenv
+boto3
+pytest
+pytest-cov
