@@ -137,14 +137,25 @@ def test_output_template_and_returned_path_mkv(which, fake_run, tmp_path):
     argv = [str(x) for x in fake_run[0]]
     tmpl = flag_value(argv, "-o")
     assert tmpl.startswith(str(tmp_path)) and tmpl.endswith(".%(ext)s")
+    assert "%(id)s" in tmpl and "%(title)s" not in tmpl
     assert path and str(path).endswith(".mkv") and os.path.isfile(path)
+
+
+def test_double_dash_is_second_to_last_and_url_is_last(which, fake_run, tmp_path):
+    """HIGH: every option, including -o, must come before `--`; URL is last."""
+    load(DOWNLOAD_MODULE, DOWNLOAD_FN)(URL, output_folder=str(tmp_path))
+    argv = [str(x) for x in fake_run[0]]
+    assert argv[-1] == URL
+    assert argv[-2] == "--"
+    assert argv.index("-o") < argv.index("--")
+    assert "%(id)s" in flag_value(argv, "-o")
 
 
 def test_ytdlp_failure_surfaces(which, monkeypatch, tmp_path):
     import subprocess
-    def boom(cmd, *a, **k):
+    def boom(cmd, timeout=None):
         raise subprocess.CalledProcessError(1, cmd, stderr=b"ERROR: HTTP Error 403")
-    monkeypatch.setattr(subprocess, "run", boom)
+    monkeypatch.setattr(load(DOWNLOAD_MODULE), "run_ytdlp_subprocess", boom)
     with pytest.raises(BaseException) as ei:
         load(DOWNLOAD_MODULE, DOWNLOAD_FN)(URL, output_folder=str(tmp_path))
     assert not isinstance(ei.value, SystemExit) or ei.value.code != 0

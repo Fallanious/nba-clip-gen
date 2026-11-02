@@ -104,6 +104,8 @@ The backend expects Ollama at `http://localhost:11434`. The Web UI status bar sh
 ### Python Packages
 ```bash
 pip install -r requirements.txt
+# development tools (pytest, ruff, ...):
+pip install -r requirements-dev.txt
 ```
 
 Required packages:
@@ -122,7 +124,7 @@ Download NBA game footage as MKV (Matroska format):
 python3 src/download_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-**Output:** `film/VIDEO_TITLE.mkv`
+**Output:** `film/<VIDEO_ID>.mkv` (ASCII-restricted filename from the YouTube video id)
 
 **Configuration:**
 

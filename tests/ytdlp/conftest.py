@@ -69,7 +69,8 @@ def which(monkeypatch):
 def fake_run(monkeypatch, tmp_path):
     """Record subprocess.run/Popen calls; for yt-dlp, create the mkv the CLI would produce."""
     calls = []
-    def run(cmd, *a, **k):
+
+    def _record_and_maybe_write(cmd):
         calls.append(list(cmd))
         argv = [str(x) for x in cmd]
         if any("yt-dlp" in x or x == "yt_dlp" for x in argv[:3]) and "-o" in argv:
@@ -77,9 +78,22 @@ def fake_run(monkeypatch, tmp_path):
             out = tmpl.replace("%(title)s", "Game").replace("%(id)s", "abc").replace("%(ext)s", "mkv")
             os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
             open(out, "wb").write(b"\x1aE\xdf\xa3fake-mkv")
+
+    def run(cmd, *a, **k):
+        _record_and_maybe_write(cmd)
         return subprocess.CompletedProcess(cmd, 0, stdout=b"", stderr=b"")
+
+    def ytdlp_run(cmd, timeout=None):
+        _record_and_maybe_write(cmd)
+        return subprocess.CompletedProcess(cmd, 0, stdout=b"", stderr=b"")
+
     monkeypatch.setattr(subprocess, "run", run)
-    monkeypatch.setattr(subprocess, "Popen", lambda cmd, *a, **k: (_ for _ in ()).throw(AssertionError(f"Popen not mocked: {cmd}")))
+    monkeypatch.setattr(
+        subprocess,
+        "Popen",
+        lambda cmd, *a, **k: (_ for _ in ()).throw(AssertionError(f"Popen not mocked: {cmd}")),
+    )
+    monkeypatch.setattr(importlib.import_module("download_video"), "run_ytdlp_subprocess", ytdlp_run)
     return calls
 
 
