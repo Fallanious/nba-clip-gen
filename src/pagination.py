@@ -16,8 +16,16 @@ MAX_AGE_DEFAULT = 86400
 
 
 def _normalize_filters(filters: dict[str, Any]) -> str:
-    """Normalize filters to a canonical string for hashing."""
-    return json.dumps(filters, sort_keys=True, separators=(",", ":"))
+    """Canonical JSON: dict keys sorted, list/tuple/set values sorted.
+
+    Clients may reorder query params between pages; hashing must not care.
+    default=str so a date/UUID filter becomes invalid_cursor, not a 500.
+    """
+    canon = {
+        k: sorted(v, key=lambda x: json.dumps(x, default=str)) if isinstance(v, (list, tuple, set)) else v
+        for k, v in filters.items()
+    }
+    return json.dumps(canon, sort_keys=True, separators=(",", ":"), default=str)
 
 
 def _filter_hash(filters: dict[str, Any]) -> str:
@@ -58,7 +66,7 @@ def encode_cursor(key: list[Any], filters: dict[str, Any]) -> str:
 
 
 def _invalid():
-    raise ApiError(code="invalid_cursor", message="Invalid cursor format", status=400)
+    raise ApiError(code="invalid_cursor", message="Invalid cursor format", status=400) from None
 
 
 def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
@@ -87,6 +95,8 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
             payload_b64_pad = payload_b64
 
         payload = json.loads(base64.urlsafe_b64decode(payload_b64_pad).decode())
+        if not isinstance(payload, dict):
+            _invalid()
 
         if payload.get("v") != CURSOR_VERSION:
             _invalid()
@@ -111,9 +121,16 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
                 status=400,
             )
 
-        return payload.get("k", [])
+        key = payload.get("k")
+        if not isinstance(key, list):
+            _invalid()
+        return key
 
     except ApiError:
         raise
-    except (ValueError, KeyError, TypeError, json.JSONDecodeError):
-        _invalid()
+    except (ValueError, KeyError, TypeError, json.JSONDecodeError, AttributeError):
+        raise ApiError(
+            code="invalid_cursor",
+            message="Invalid cursor format",
+            status=400,
+        ) from None

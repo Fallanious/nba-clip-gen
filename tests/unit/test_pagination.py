@@ -26,10 +26,9 @@ def test_sorted_list_filters_hash_the_same():
 
     key = ["A", 1]
     c1 = encode_cursor(key, {"roles": ["shot", "assist"]})
-    # Hash is of the dict as given; callers must sort. Decode with same list.
+    # List order must not matter: clients may reorder query params between pages.
+    assert decode_cursor(c1, {"roles": ["assist", "shot"]}) == key
     assert decode_cursor(c1, {"roles": ["shot", "assist"]}) == key
-    with pytest.raises(Exception):
-        decode_cursor(c1, {"roles": ["assist", "shot"]})
 
 
 def test_filter_mismatch_rejected():
@@ -81,9 +80,61 @@ def test_key_version_mismatch(monkeypatch):
 
 
 def test_filter_fingerprint_is_sha256_not_sha1():
-    from pagination import _filter_hash
+    from pagination import _filter_hash, _normalize_filters
     h = _filter_hash({"q": "x"})
     assert len(h) >= 16
-    import hashlib, json
-    expected = hashlib.sha256(json.dumps({"q": "x"}, sort_keys=True, separators=(",", ":")).encode()).hexdigest()[:16]
+    import hashlib
+    expected = hashlib.sha256(_normalize_filters({"q": "x"}).encode()).hexdigest()[:16]
     assert h == expected
+
+
+def test_date_filter_does_not_500():
+    """default=str so date values hash instead of TypeError -> 500."""
+    from datetime import date
+    from pagination import encode_cursor, decode_cursor
+
+    filters = {"date_from": date(2026, 1, 1)}
+    cur = encode_cursor(["A", 1], filters)
+    assert decode_cursor(cur, filters) == ["A", 1]
+
+
+def test_malformed_signed_payload_is_invalid_cursor(monkeypatch):
+    """A signed payload that is not a dict, or whose k is not a list, is 400."""
+    import json, base64, hmac, hashlib
+    from pagination import decode_cursor, _sign
+    from errors import ApiError
+    from config import config
+
+    def signed(obj):
+        payload_json = json.dumps(obj, separators=(",", ":"))
+        payload_b64 = base64.urlsafe_b64encode(payload_json.encode()).decode().rstrip("=")
+        return f"{payload_b64}.{_sign(payload_b64)}"
+
+    with pytest.raises(ApiError) as ei:
+        decode_cursor(signed([1, 2, 3]), {"q": "a"})
+    assert ei.value.code == "invalid_cursor"
+    assert ei.value.status == 400
+
+    bad_k = {"v": 1, "k": "not-a-list", "f": "x", "iat": int(time.time()), "kv": 1}
+    with pytest.raises(ApiError) as ei:
+        decode_cursor(signed(bad_k), {"q": "a"})
+    assert ei.value.code == "invalid_cursor"
+
+
+def test_decode_errors_are_not_chained():
+    from pagination import decode_cursor
+    from errors import ApiError
+
+    with pytest.raises(ApiError) as ei:
+        decode_cursor("not-a-cursor", {"q": "a"})
+    assert ei.value.__cause__ is None
+
+
+def test_validate_requires_secret_outside_dev(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "production")
+    monkeypatch.delenv("CURSOR_SECRET", raising=False)
+    import importlib
+    import config as config_module
+    importlib.reload(config_module)
+    with pytest.raises(ValueError):
+        config_module.config.validate()
