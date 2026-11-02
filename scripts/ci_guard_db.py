@@ -14,24 +14,41 @@ Accepted hosts (and the pooled variant; cell label is optional):
 Lookalikes such as ep-<id>.evil.example are rejected.
 The pooled form uses a hyphenated ``-pooler`` suffix on the first label, not
 a ``.pooler`` DNS label.
+
+The URL is parsed with psycopg.conninfo.conninfo_to_dict so query overrides
+(host, hostaddr, service, options, port) cannot hide a production target.
+Only sslmode, channel_binding, connect_timeout, and application_name are
+allowed as extra parameters. sslmode must be require or verify-full.
 """
 from __future__ import annotations
 
 import os
 import re
 import sys
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
+
+from psycopg.conninfo import conninfo_to_dict
 
 # ep-<id>[-pooler].[c-<n>.]<region>.aws.neon.tech
 _NEON_HOST = re.compile(
     r"^"
     r"(?P<label>ep-[a-z0-9-]+)"
-    r"(?:\.(?P<cell>c-\d+))?"
+    r"(?:\.(?P<cell>c-[1-9][0-9]{0,3}))?"
     r"\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)"
     r"\.aws\.neon\.tech"
-    r"$"
+    r"$",
+    re.ASCII,
 )
 _POOLER_SUFFIX = "-pooler"
+_ALLOWED_PARAMS = frozenset({
+    "sslmode",
+    "channel_binding",
+    "connect_timeout",
+    "application_name",
+})
+_IDENTITY_KEYS = frozenset({"user", "password", "dbname", "host"})
+_FORBIDDEN_OVERRIDES = frozenset({"host", "hostaddr", "service", "options", "port"})
+_ALLOWED_SSLMODES = frozenset({"require", "verify-full"})
 
 
 def _endpoint_from_label(label: str) -> str:
@@ -67,31 +84,54 @@ def _host_endpoint_id(host: str) -> str | None:
     return None if parsed is None else parsed[0]
 
 
+def _query_keys(url: str) -> set[str]:
+    parsed = urlparse(url)
+    if not parsed.scheme:
+        return set()
+    return {k.lower() for k in parse_qs(parsed.query, keep_blank_values=True)}
+
+
+def _fail(message: str) -> int:
+    print(message, file=sys.stderr)
+    return 1
+
+
 def main() -> int:
     expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
     if not expected:
-        print("NEON_DEV_ENDPOINT_ID is required", file=sys.stderr)
-        return 1
+        return _fail("NEON_DEV_ENDPOINT_ID is required")
 
     url = os.environ.get("DATABASE_URL") or ""
     if not url:
-        print("DATABASE_URL is required", file=sys.stderr)
-        return 1
+        return _fail("DATABASE_URL is required")
 
-    host = (urlparse(url).hostname or "").lower()
+    try:
+        info = conninfo_to_dict(url)
+    except Exception:
+        return _fail("DATABASE_URL is invalid")
+
+    if _query_keys(url) & _FORBIDDEN_OVERRIDES:
+        return _fail("DATABASE_URL parameters are not allowed")
+
+    extra = set(k.lower() for k in info) - _IDENTITY_KEYS
+    if extra - _ALLOWED_PARAMS:
+        return _fail("DATABASE_URL parameters are not allowed")
+
+    sslmode = str(info.get("sslmode") or "").strip().lower()
+    if sslmode not in _ALLOWED_SSLMODES:
+        return _fail("DATABASE_URL sslmode must be require or verify-full")
+
+    host = str(info.get("host") or "").lower()
     if not host:
-        print("DATABASE_URL host is required", file=sys.stderr)
-        return 1
+        return _fail("DATABASE_URL host is required")
 
     parsed = _parse_neon_host(host)
     if parsed is None or parsed[0] != expected:
-        print("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID", file=sys.stderr)
-        return 1
+        return _fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
 
     expected_region = (os.environ.get("NEON_DEV_REGION") or "").strip().lower()
     if expected_region and _canonical_region(parsed[1]) != _canonical_region(expected_region):
-        print("DATABASE_URL host region does not match NEON_DEV_REGION", file=sys.stderr)
-        return 1
+        return _fail("DATABASE_URL host region does not match NEON_DEV_REGION")
     return 0
 
 
