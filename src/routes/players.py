@@ -21,8 +21,12 @@ try:
 except ImportError:  # playback lands in a later stack layer
     get_playback_url = None
     def _allow_fallback():
+        import os
         from config import config as _cfg
-        return _cfg.PLAYBACK_ALLOW_FALLBACK
+        raw = os.getenv("PLAYBACK_ALLOW_FALLBACK")
+        if raw is not None:
+            return raw.lower() == "true"
+        return _cfg.APP_ENV == "dev"
 
 bp = Blueprint('players', __name__, url_prefix='/api')
 

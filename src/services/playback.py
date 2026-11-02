@@ -37,13 +37,15 @@ def _mime_for_key(key: str) -> str:
 
 
 def _allow_fallback() -> bool:
-    """Fallback presigns full game video; disabled in production unless explicitly enabled."""
+    """Fallback presigns full game video.
+
+    Off by default in every environment except explicit ``dev``. Set
+    PLAYBACK_ALLOW_FALLBACK=true to enable elsewhere.
+    """
     raw = os.getenv("PLAYBACK_ALLOW_FALLBACK")
-    if config.APP_ENV in {"prod", "production"} and raw is None:
-        return False
-    if raw is None:
-        return True
-    return raw.lower() == "true"
+    if raw is not None:
+        return raw.lower() == "true"
+    return config.APP_ENV == "dev"
 
 
 def _get_s3_client():
