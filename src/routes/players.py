@@ -5,7 +5,7 @@ import json
 import hashlib
 from datetime import date, datetime
 from typing import Optional
-from flask import Blueprint, request, g, jsonify
+from flask import Blueprint, request, g, jsonify, make_response
 from sqlalchemy.orm import Session
 
 from auth import require_user
@@ -24,6 +24,68 @@ except ImportError:  # playback lands in a later stack layer
 bp = Blueprint('players', __name__, url_prefix='/api')
 
 ENUM_LIST_MAX = 20
+_PLAYERS_LIST_CC = "private, max-age=60"
+_RESOURCE_CC = "private, max-age=300"
+
+
+def _weak_etag(parts) -> str:
+    raw = json.dumps(parts, sort_keys=True, default=str, separators=(",", ":"))
+    return f'W/"{hashlib.md5(raw.encode("utf-8")).hexdigest()}"'
+
+
+def _not_modified(etag: str, cache_control: str):
+    """304 must repeat ETag, Cache-Control, and Vary. Empty body."""
+    resp = make_response(b"", 304)
+    resp.headers["ETag"] = etag
+    resp.headers["Cache-Control"] = cache_control
+    resp.headers["Vary"] = "Origin"
+    return resp
+
+
+def _json_cached(payload, etag: str, cache_control: str):
+    result = jsonify(payload)
+    result.headers["ETag"] = etag
+    result.headers["Cache-Control"] = cache_control
+    result.headers["Vary"] = "Origin"
+    return result
+
+
+def _reject_empty(param_name: str, raw: Optional[str]) -> str:
+    if raw is None or not str(raw).strip():
+        raise ApiError(
+            code="invalid_param",
+            message=f"{param_name} cannot be empty",
+            status=400,
+            details={"param": param_name},
+        )
+    return str(raw).strip()
+
+
+def _clips_cursor_filters(
+    player_id,
+    roles,
+    date_from,
+    date_to,
+    season,
+    game_id,
+    action_types,
+    shot_subtypes,
+    outcome,
+    status_param,
+):
+    """Single source for encode and decode so filter hashes cannot drift."""
+    return {
+        "player_id": player_id,
+        "roles": sorted(roles) if roles else None,
+        "date_from": date_from.isoformat() if date_from else None,
+        "date_to": date_to.isoformat() if date_to else None,
+        "season": season,
+        "game_id": game_id,
+        "action_types": sorted(action_types) if action_types else None,
+        "shot_subtypes": sorted(shot_subtypes) if shot_subtypes else None,
+        "outcome": outcome,
+        "status": status_param,
+    }
 
 
 def _parse_int(value: str, param_name: str, min_val: int = 1) -> int:
@@ -140,6 +202,13 @@ def _parse_enum_list(values: str, param_name: str, allowed: set[str]) -> Optiona
         items = values
     else:
         items = [v.strip() for v in values.split(',')]
+    if any(item == "" for item in items):
+        raise ApiError(
+            code="invalid_param",
+            message=f"{param_name} cannot be empty",
+            status=400,
+            details={"param": param_name}
+        )
 
     if len(items) > ENUM_LIST_MAX:
         raise ApiError(
@@ -242,9 +311,9 @@ def _serialize_clip_row(row) -> dict:
         "action_type": row.get("action_type"),
         "shot_subtype": row.get("shot_subtype"),
         "outcome": row.get("outcome"),
-        "duration_s": float(row["duration_s"]) if row.get("duration_s") else None,
+        "duration_s": float(row["duration_s"]) if row.get("duration_s") is not None else None,
         "roles": row["roles"],
-        "team_id": str(row["team_id"]) if row.get("team_id") else None,
+        "team_id": str(row["team_id"]) if row.get("team_id") is not None else None,
         "status": row["status"],
         "playable": row["status"] == "uploaded" and row["has_object"]
     }
@@ -352,7 +421,18 @@ def search_players_endpoint():
                 )
             cursor_last_name, cursor_id = cursor_key
 
-    # Query
+    etag = _weak_etag([
+        "GET /api/players",
+        q,
+        team_id,
+        active,
+        limit,
+        cursor_str,
+    ])
+    if request.headers.get("If-None-Match") == etag:
+        return _not_modified(etag, _PLAYERS_LIST_CC)
+
+    # Query (skipped on 304)
     session = db_session.get_db()
     rows = players_repo.search_players(
         session,
@@ -390,20 +470,7 @@ def search_players_endpoint():
         "next_cursor": next_cursor,
         "limit": limit
     }
-
-    result = jsonify(response)
-    result.headers['Cache-Control'] = 'private, max-age=60'
-    result.headers['Vary'] = 'Origin'
-
-    # Add ETag
-    etag = hashlib.md5(json.dumps(response).encode()).hexdigest()
-    result.headers['ETag'] = f'W/"{etag}"'
-
-    # Check If-None-Match
-    if request.headers.get('If-None-Match') == f'W/"{etag}"':
-        return '', 304
-
-    return result
+    return _json_cached(response, etag, _PLAYERS_LIST_CC)
 
 
 @bp.route('/players/<int:player_id>', methods=['GET'])
@@ -430,21 +497,35 @@ def get_player_endpoint(player_id: int):
     elif role_counts is None:
         role_counts = {}
 
+    etag = _weak_etag([
+        "GET /api/players/:id",
+        player_id,
+        row.get("clip_count"),
+        row.get("last_clip_date"),
+        row.get("updated_at"),
+        row.get("full_name"),
+    ])
+    if request.headers.get("If-None-Match") == etag:
+        return _not_modified(etag, _RESOURCE_CC)
+
     # Serialize (role_counts come from the same players/get round trip)
     player = _serialize_player_detail(row, dict(role_counts))
+    return _json_cached(player, etag, _RESOURCE_CC)
 
-    result = jsonify(player)
-    result.headers['Cache-Control'] = 'private, max-age=300'
-    result.headers['Vary'] = 'Origin'
 
-    # Add ETag
-    etag = hashlib.md5(json.dumps(player).encode()).hexdigest()
-    result.headers['ETag'] = f'W/"{etag}"'
-
-    if request.headers.get('If-None-Match') == f'W/"{etag}"':
-        return '', 304
-
-    return result
+def _listed_or_none(name: str, allowed: set[str]) -> Optional[list[str]]:
+    """Parse a repeated/csv enum query param. Absent -> None; empty/whitespace -> 400."""
+    if name not in request.args:
+        return None
+    raw_list = request.args.getlist(name)
+    if any(not str(v).strip() for v in raw_list):
+        raise ApiError(
+            code="invalid_param",
+            message=f"{name} cannot be empty",
+            status=400,
+            details={"param": name},
+        )
+    return _parse_enum_list(",".join(raw_list), name, allowed)
 
 
 @bp.route('/players/<int:player_id>/clips', methods=['GET'])
@@ -453,65 +534,61 @@ def get_player_clips_endpoint(player_id: int):
     """GET /api/players/:id/clips - Get clips for a player."""
     session = db_session.get_db()
 
-    # Verify player exists
-    if not players_repo.player_exists(session, player_id):
+    row = players_repo.get_player(session, player_id)
+    if not row:
         raise ApiError(
             code="not_found",
             message="Player not found",
             status=404
         )
+    authorize_player(g.user, row)
 
-    # Parse filters
     VALID_ROLES = {'shot', 'assist', 'block', 'steal', 'rebound', 'foul', 'fouled', 'turnover'}
-    roles_param = request.args.getlist('role')
-    if not roles_param and 'role' in request.args:
-        # Single role= present
-        roles_param = [request.args.get('role')]
-    
-    # Validate no empty role values
-    if any(r == '' or (r and not r.strip()) for r in roles_param):
-        raise ApiError(
-            code="invalid_param",
-            message="role cannot be empty",
-            status=400,
-            details={"param": "role"}
-        )
-    
-    roles = _parse_enum_list(','.join(roles_param) if roles_param else '', 'role', VALID_ROLES)
+    roles = _listed_or_none('role', VALID_ROLES)
 
     VALID_ACTIONS = {'shot', 'rebound', 'steal', 'block', 'turnover', 'foul', 'free_throw', 'other'}
-    action_types_param = request.args.getlist('action_type') or [request.args.get('action_type', '')]
-    action_types = _parse_enum_list(','.join(a for a in action_types_param if a), 'action_type', VALID_ACTIONS)
+    action_types = _listed_or_none('action_type', VALID_ACTIONS)
 
     VALID_SUBTYPES = {'dunk', 'layup', 'midrange', 'three_pointer', 'hook', 'floater'}
-    subtypes_param = request.args.getlist('shot_subtype') or [request.args.get('shot_subtype', '')]
-    shot_subtypes = _parse_enum_list(','.join(s for s in subtypes_param if s), 'shot_subtype', VALID_SUBTYPES)
+    shot_subtypes = _listed_or_none('shot_subtype', VALID_SUBTYPES)
 
-    outcome = request.args.get('outcome', '')
-    if outcome and outcome not in ('made', 'missed'):
-        raise ApiError(
-            code="invalid_param",
-            message="outcome must be 'made' or 'missed'",
-            status=400,
-            details={"param": "outcome"}
-        )
-    outcome = outcome if outcome else None
+    if 'outcome' in request.args:
+        outcome = _reject_empty('outcome', request.args.get('outcome'))
+        if outcome not in ('made', 'missed'):
+            raise ApiError(
+                code="invalid_param",
+                message="outcome must be 'made' or 'missed'",
+                status=400,
+                details={"param": "outcome"}
+            )
+    else:
+        outcome = None
 
-    season = request.args.get('season', '')
-    if season and not re.match(r'^\d{4}-\d{2}$', season):
-        raise ApiError(
-            code="invalid_param",
-            message="season must match YYYY-YY format",
-            status=400,
-            details={"param": "season"}
-        )
-    season = season if season else None
+    if 'season' in request.args:
+        season = _reject_empty('season', request.args.get('season'))
+        if not re.match(r'^\d{4}-\d{2}$', season):
+            raise ApiError(
+                code="invalid_param",
+                message="season must match YYYY-YY format",
+                status=400,
+                details={"param": "season"}
+            )
+    else:
+        season = None
 
-    game_id_str = request.args.get('game_id', '')
-    game_id = _parse_int(game_id_str, 'game_id') if game_id_str else None
+    if 'game_id' in request.args:
+        game_id = _parse_int(_reject_empty('game_id', request.args.get('game_id')), 'game_id')
+    else:
+        game_id = None
 
-    date_from = _parse_date(request.args.get('date_from', ''), 'date_from')
-    date_to = _parse_date(request.args.get('date_to', ''), 'date_to')
+    if 'date_from' in request.args:
+        date_from = _parse_date(_reject_empty('date_from', request.args.get('date_from')), 'date_from')
+    else:
+        date_from = None
+    if 'date_to' in request.args:
+        date_to = _parse_date(_reject_empty('date_to', request.args.get('date_to')), 'date_to')
+    else:
+        date_to = None
 
     if date_from and date_to and date_from > date_to:
         raise ApiError(
@@ -520,7 +597,10 @@ def get_player_clips_endpoint(player_id: int):
             status=422
         )
 
-    status_param = request.args.get('status', 'playable')
+    if 'status' in request.args:
+        status_param = _reject_empty('status', request.args.get('status'))
+    else:
+        status_param = 'playable'
     if status_param not in ('playable', 'all'):
         raise ApiError(
             code="invalid_param",
@@ -532,7 +612,10 @@ def get_player_clips_endpoint(player_id: int):
     if status_all:
         require_admin(g.user)
 
-    limit_str = request.args.get('limit', '50')
+    if 'limit' in request.args:
+        limit_str = _reject_empty('limit', request.args.get('limit'))
+    else:
+        limit_str = '50'
     limit = _parse_int(limit_str, 'limit', min_val=1)
     if limit > 200:
         raise ApiError(
@@ -542,36 +625,37 @@ def get_player_clips_endpoint(player_id: int):
             details={"param": "limit"}
         )
 
-    # Parse cursor
-    cursor_str = request.args.get('cursor', '')
     cursor_date = None
+    cursor_game_id = None
+    cursor_period = None
+    cursor_play_index = None
     cursor_id = None
+    cursor_str = None
+    if 'cursor' in request.args:
+        cursor_str = _reject_empty('cursor', request.args.get('cursor'))
+
+    filters = _clips_cursor_filters(
+        player_id, roles, date_from, date_to, season, game_id,
+        action_types, shot_subtypes, outcome, status_param,
+    )
 
     if cursor_str:
-        filters = {
-            "player_id": player_id,  # Add player_id to filter hash
-            "roles": sorted(roles) if roles else None,  # Sort list filters
-            "date_from": date_from.isoformat() if date_from else None,
-            "date_to": date_to.isoformat() if date_to else None,
-            "season": season,
-            "game_id": game_id,
-            "action_types": sorted(action_types) if action_types else None,  # Sort list filters
-            "shot_subtypes": sorted(shot_subtypes) if shot_subtypes else None,  # Sort list filters
-            "outcome": outcome,
-            "status": status_param
-        }
         cursor_key = decode_cursor(cursor_str, filters)
 
-        if len(cursor_key) != 2:
+        if len(cursor_key) != 5:
             raise ApiError(
                 code="invalid_cursor",
                 message="Invalid cursor format",
                 status=400
             )
 
-        cursor_date_str, cursor_id = cursor_key
+        cursor_date_str, cursor_game_id, cursor_period, cursor_play_index, cursor_id = cursor_key
         try:
             cursor_date = datetime.strptime(str(cursor_date_str), "%Y-%m-%d").date()
+            cursor_game_id = int(cursor_game_id)
+            cursor_period = int(cursor_period)
+            cursor_play_index = int(cursor_play_index)
+            cursor_id = int(cursor_id)
         except (TypeError, ValueError):
             raise ApiError(
                 code="invalid_cursor",
@@ -579,7 +663,18 @@ def get_player_clips_endpoint(player_id: int):
                 status=400,
             )
 
-    # Query
+    etag = _weak_etag([
+        "GET /api/players/:id/clips",
+        player_id,
+        filters,
+        row.get("clip_count"),
+        row.get("last_clip_date"),
+        limit,
+        cursor_str,
+    ])
+    if request.headers.get("If-None-Match") == etag:
+        return _not_modified(etag, _RESOURCE_CC)
+
     rows = clips_repo.get_player_clips(
         session,
         player_id=player_id,
@@ -593,6 +688,9 @@ def get_player_clips_endpoint(player_id: int):
         outcome=outcome,
         status_all=status_all,
         cursor_date=cursor_date,
+        cursor_game_id=cursor_game_id,
+        cursor_period=cursor_period,
+        cursor_play_index=cursor_play_index,
         cursor_id=cursor_id,
         limit=limit
     )
@@ -610,20 +708,13 @@ def get_player_clips_endpoint(player_id: int):
     next_cursor = None
     if has_next and rows:
         last = rows[-1]
-        
-        key = [last["game_date"].isoformat(), int(last["clip_id"])]
-        filters = {
-            "player_id": player_id,  # Add player_id to filter hash
-            "roles": sorted(roles) if roles else None,  # Sort list filters
-            "date_from": date_from.isoformat() if date_from else None,
-            "date_to": date_to.isoformat() if date_to else None,
-            "season": season,
-            "game_id": game_id,
-            "action_types": sorted(action_types) if action_types else None,  # Sort list filters
-            "shot_subtypes": sorted(shot_subtypes) if shot_subtypes else None,  # Sort list filters
-            "outcome": outcome,
-            "status": status_param
-        }
+        key = [
+            last["game_date"].isoformat(),
+            int(last["game_id"]),
+            int(last["period"]),
+            int(last["play_index"]),
+            int(last["clip_id"]),
+        ]
         next_cursor = encode_cursor(key, filters)
 
         # Mark last game as continuing if lookahead row is same game
@@ -637,18 +728,7 @@ def get_player_clips_endpoint(player_id: int):
         "item_count": len(rows),
         "games": games
     }
-
-    result = jsonify(response)
-    result.headers['Cache-Control'] = 'private, max-age=300'
-    result.headers['Vary'] = 'Origin'
-
-    etag = hashlib.md5(json.dumps(response).encode()).hexdigest()
-    result.headers['ETag'] = f'W/"{etag}"'
-
-    if request.headers.get('If-None-Match') == f'W/"{etag}"':
-        return '', 304
-
-    return result
+    return _json_cached(response, etag, _RESOURCE_CC)
 
 
 @bp.route('/clips/<int:clip_id>', methods=['GET'])
@@ -668,7 +748,17 @@ def get_clip_endpoint(clip_id: int):
     # Check authorization
     authorize_clip(g.user, row)
 
-    # Serialize
+    etag = _weak_etag([
+        "GET /api/clips/:id",
+        clip_id,
+        row.get("status"),
+        row.get("duration_s"),
+        row.get("updated_at"),
+        row.get("s3_key"),
+    ])
+    if request.headers.get("If-None-Match") == etag:
+        return _not_modified(etag, _RESOURCE_CC)
+
     from config import config
     players_json = json.loads(row["players"]) if isinstance(row["players"], str) else row["players"]
 
@@ -687,32 +777,21 @@ def get_clip_endpoint(clip_id: int):
         "attributes": row.get("attributes", {}),
         "video_start_s": float(row["video_start_s"]),
         "video_end_s": float(row["video_end_s"]),
-        "duration_s": float(row["duration_s"]) if row.get("duration_s") else None,
+        "duration_s": float(row["duration_s"]) if row.get("duration_s") is not None else None,
         "status": row["status"],
-        "team_id": str(row["team_id"]) if row.get("team_id") else None,
+        "team_id": str(row["team_id"]) if row.get("team_id") is not None else None,
         "game": {
             "bbref_id": row["bbref_id"],
             "season": row["season"],
             "home_abbr": row["home_abbr"],
             "away_abbr": row["away_abbr"],
         },
-        "team": {"id": str(row["team_id"]), "abbr": row.get("team_abbr")} if row.get("team_abbr") else None,
+        "team": {"id": str(row["team_id"]), "abbr": row.get("team_abbr")} if row.get("team_id") is not None else None,
         "players": players_json,
         "playable": row["status"] == "uploaded" and row.get("s3_key") is not None,
-        "fallback_available": row["status"] != "uploaded" and row["has_source"] and config.PLAYBACK_ALLOW_FALLBACK
+        "fallback_available": row["status"] != "uploaded" and row["has_source"] and _allow_fallback()
     }
-
-    result = jsonify(clip)
-    result.headers['Cache-Control'] = 'private, max-age=300'
-    result.headers['Vary'] = 'Origin'
-
-    etag = hashlib.md5(json.dumps(clip).encode()).hexdigest()
-    result.headers['ETag'] = f'W/"{etag}"'
-
-    if request.headers.get('If-None-Match') == f'W/"{etag}"':
-        return '', 304
-
-    return result
+    return _json_cached(clip, etag, _RESOURCE_CC)
 
 
 @bp.route('/clips/<int:clip_id>/playback-url', methods=['GET'])

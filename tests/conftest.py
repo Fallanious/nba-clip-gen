@@ -214,6 +214,23 @@ class FakeDB:
                 return [{"id": tid}]
         return []
 
+    def _clip_display_key(self, cid):
+        c = CLIPS[cid]
+        return (-c["game_date"].toordinal(), -c["game_id"], c["period"], c["play_index"], cid)
+
+    def _clip_after_cursor(self, c, p):
+        if p.get("c_date") is None:
+            return True
+        if c["game_date"] < p["c_date"]:
+            return True
+        if c["game_date"] > p["c_date"]:
+            return False
+        if c["game_id"] < p["c_game_id"]:
+            return True
+        if c["game_id"] > p["c_game_id"]:
+            return False
+        return (c["period"], c["play_index"], c["id"]) > (p["c_period"], p["c_play_index"], p["c_id"])
+
     def q_clips_by_player(self, p):
         grouped = {}
         for pid, cid, role in CLIP_PLAYERS:
@@ -229,10 +246,10 @@ class FakeDB:
                   and (not p.get("subtypes") or c["shot_subtype"] in p["subtypes"])
                   and (p.get("outcome") is None or c["outcome"] == p["outcome"])
                   and (p.get("status_all") or (c["status"] == "uploaded" and c["s3_key"]))
-                  and (p.get("c_date") is None or (c["game_date"], cid) < (p["c_date"], p["c_id"])))
+                  and self._clip_after_cursor(c, p))
             if ok:
                 grouped.setdefault(cid, []).append(role)
-        keys = sorted(grouped, key=lambda cid: (CLIPS[cid]["game_date"], cid), reverse=True)[: p["limit"] + 1]
+        keys = sorted(grouped, key=self._clip_display_key)[: p["limit"] + 1]
         out = []
         for cid in keys:
             c, g = CLIPS[cid], GAMES[CLIPS[cid]["game_id"]]
@@ -254,7 +271,7 @@ class FakeDB:
                    for pid, cid, r in CLIP_PLAYERS if cid == c["id"]]
         return [{**c, "bbref_id": g["bbref_id"], "season": g["season"], "has_source": g["s3_key"] is not None,
                  "home_abbr": TEAMS[g["home"]][0], "away_abbr": TEAMS[g["away"]][0],
-                 "team_abbr": TEAMS[c["team_id"]][0] if c["team_id"] else None, "players": players}]
+                 "team_abbr": TEAMS[c["team_id"]][0] if c["team_id"] is not None else None, "players": players}]
 
     def q_clips_playback_target(self, p):
         c = CLIPS.get(int(p["id"]))
