@@ -56,11 +56,22 @@ class Config:
 
     @property
     def CURSOR_SECRET(self) -> str:
-        return os.getenv("CURSOR_SECRET", "dev-secret-change-in-production")
+        """Required secret for cursor signing - must be at least 32 bytes."""
+        secret = os.getenv("CURSOR_SECRET")
+        if not secret:
+            raise ValueError("CURSOR_SECRET environment variable is required")
+        return secret
 
     @property
     def APP_ENV(self) -> str:
         return os.getenv("APP_ENV", "dev")
+
+    @property
+    def DEBUG(self) -> bool:
+        """Debug mode flag - defaults to off, forced off in production."""
+        if self.APP_ENV == "production":
+            return False
+        return os.getenv("DEBUG", "false").lower() == "true"
 
     @property
     def OLLAMA_URL(self) -> str:
@@ -69,6 +80,10 @@ class Config:
     def validate(self):
         """Validate required configuration at startup."""
         errors = []
+
+        # Validate CURSOR_SECRET length
+        if len(self.CURSOR_SECRET.encode('utf-8')) < 32:
+            errors.append("CURSOR_SECRET must be at least 32 bytes")
 
         if self.PLAYBACK_URL_TTL < 60 or self.PLAYBACK_URL_TTL > 3600:
             errors.append("PLAYBACK_URL_TTL must be 60-3600")
