@@ -349,30 +349,77 @@ def test_playback_fallback_mode(playback_client, playback_configured):
     assert playback_configured.calls[-1][1]["Key"] == "games/202504010PHI.mp4"
 
 
-def test_fallback_presign_content_type_follows_key(playback_client, fake_db, playback_configured):
-    """QA: Verify ResponseContentType and mime derive from the game key's extension."""
-    # Patch a clip with .mkv game key
+@pytest.mark.parametrize("key,mime", [
+    ("games/test.mkv", "video/x-matroska"),
+    ("games/test.MKV", "video/x-matroska"),
+    ("games/test.mp4", "video/mp4"),
+    ("games/test.webm", "video/webm"),
+])
+def test_fallback_presign_content_type_follows_key(playback_client, fake_db, playback_configured, key, mime):
+    """PR #2: presigned Content-Type follows the file extension, not a hardcoded video/mp4."""
+    fake_db.q_clips_playback_target = lambda p: [{
+        "id": 500,
+        "game_id": 1,
+        "status": "pending",
+        "s3_key": None,
+        "game_key": key,
+        "video_start_s": 10.0,
+        "video_end_s": 20.0
+    }]
+
+    r = playback_client.get(PB.format(500))
+    assert r.status_code == 200, r.get_data(as_text=True)
+    b = r.get_json()
+    assert b["mime"] == mime
+    assert len(playback_configured.calls) == 1
+    assert playback_configured.calls[0][1]["ResponseContentType"] == mime
+    assert playback_configured.calls[0][1]["Key"] == key
+
+
+def test_fallback_presign_matches_pr2_fake_s3_shape(monkeypatch):
+    """Same shape as PR #2 tests/ytdlp/test_review_followups.py (fake_s3.presign[-1])."""
+    from types import SimpleNamespace
+    import services.playback as mod
+
+    calls = SimpleNamespace(presign=[])
+
+    class C:
+        def generate_presigned_url(self, op, Params, ExpiresIn):
+            calls.presign.append(Params)
+            return "https://b.s3/k?sig=fake"
+
+        def head_object(self, **k):
+            return {}
+
+    monkeypatch.setattr(mod, "_s3_client", lambda *a, **k: C())
+    monkeypatch.setenv("S3_BUCKET", "qa-fake-bucket")
+    monkeypatch.setenv("AWS_REGION", "us-east-2")
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "true")
+    monkeypatch.setenv("PLAYBACK_VERIFY_OBJECT", "false")
+    res = mod.get_playback_url(
+        dict(
+            id=1, status="pending", s3_key=None,
+            video_start_s=1.0, video_end_s=5.0,
+            game_key="games/202604240PHI.mkv",
+        ),
+        "auto",
+    )
+    assert calls.presign[-1]["ResponseContentType"] == "video/x-matroska"
+    assert res["mime"] == "video/x-matroska"
+
+
+def test_fallback_null_offsets_are_clip_not_ready(playback_client, fake_db, playback_configured):
     fake_db.q_clips_playback_target = lambda p: [{
         "id": 500,
         "game_id": 1,
         "status": "pending",
         "s3_key": None,
         "game_key": "games/test.mkv",
-        "video_start_s": 10.0,
-        "video_end_s": 20.0
+        "video_start_s": None,
+        "video_end_s": None,
     }]
-    
-    r = playback_client.get(PB.format(500))
-    
-    assert r.status_code == 200
-    b = r.get_json()
-    
-    # Verify mime type in response
-    assert b["mime"] == "video/x-matroska"
-    
-    # Verify ResponseContentType in presigned URL params
-    assert len(playback_configured.calls) == 1
-    assert playback_configured.calls[0][1]["ResponseContentType"] == "video/x-matroska"
+    assert_error(playback_client.get(PB.format(500)), 409, "clip_not_ready")
+    assert playback_configured.calls == []
 
 
 @pytest.mark.parametrize("status", ["pending", "failed", "rendered"])
