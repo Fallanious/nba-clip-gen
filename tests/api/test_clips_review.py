@@ -350,7 +350,10 @@ def test_ci_runs_integration_on_neon_branch():
 
 def test_mime_for_key_uses_x_matroska(monkeypatch):
     from services.playback import _mime_for_key
-    monkeypatch.setattr("services.playback.mimetypes.guess_type", lambda key: ("video/matroska", None))
+    monkeypatch.setattr(
+        "services.playback.mimetypes.guess_type",
+        lambda key: ("video/matroska", None) if str(key).endswith(".mkv") else (None, None),
+    )
     assert _mime_for_key("games/test.mkv") == "video/x-matroska"
     assert _mime_for_key("clips/a.mp4") == "video/mp4"
     assert _mime_for_key("noext") == "application/octet-stream"
