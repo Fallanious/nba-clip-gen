@@ -67,7 +67,7 @@ def create_app():
     def add_request_id():
         """Accept only UUID or [A-Za-z0-9-]{1,64}; otherwise mint a UUID."""
         req_id = request.headers.get('X-Request-Id', '')
-        if req_id and re.match(r'^[A-Za-z0-9-]{1,64}$', req_id):
+        if req_id and re.fullmatch(r'[A-Za-z0-9-]{1,64}', req_id):
             g.request_id = req_id
         else:
             g.request_id = str(uuid.uuid4())
