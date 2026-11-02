@@ -48,6 +48,7 @@ jobs:
           DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
           # Endpoint id of Neon branch br-odd-smoke-b465tvf8 (set in repo vars; never a secret).
           NEON_DEV_ENDPOINT_ID: ${{ vars.NEON_DEV_ENDPOINT_ID }}
+          NEON_DEV_REGION: ${{ vars.NEON_DEV_REGION }}
         run: python scripts/ci_guard_db.py
       - name: Run integration tests against Neon
         if: steps.check_db.outputs.has_db == 'true'
