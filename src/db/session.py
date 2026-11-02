@@ -41,8 +41,12 @@ def _open_session():
     if not SessionLocal:
         raise RuntimeError("Database not configured. Set DATABASE_URL environment variable.")
     session = SessionLocal()
-    session.connection()
-    return session
+    try:
+        session.connection()
+        return session
+    except Exception:
+        session.close()
+        raise
 
 
 def _unavailable(cause: BaseException):
