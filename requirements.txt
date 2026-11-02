@@ -9,3 +9,4 @@ lxml
 flask
 flask-cors
 pytest
+boto3

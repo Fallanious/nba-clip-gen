@@ -28,17 +28,32 @@ def _video_saved_since(folder, started):
     return newest
 
 
-def detect_js_runtime():
+def detect_js_runtime(runtime=None):
     """
     Detect available JavaScript runtime (node or deno).
+    
+    Args:
+        runtime: Specific runtime to validate ('node' or 'deno'), or None for auto-detect
     
     Returns:
         str: 'node' or 'deno'
         
     Raises:
         JsRuntimeNotFound: If neither node nor deno is available
+        ValueError: If runtime argument is not 'node' or 'deno'
     """
-    # Prefer node over deno
+    # Validate runtime argument if provided
+    if runtime is not None:
+        if runtime not in ('node', 'deno'):
+            raise ValueError(f"Invalid runtime '{runtime}': must be 'node' or 'deno'")
+        if not shutil.which(runtime):
+            raise JsRuntimeNotFound(
+                f"Specified JavaScript runtime '{runtime}' not found on PATH. "
+                f"Please install {runtime}."
+            )
+        return runtime
+    
+    # Auto-detect: prefer node over deno
     if shutil.which('node'):
         return 'node'
     if shutil.which('deno'):
@@ -139,18 +154,10 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None):
         
     Raises:
         JsRuntimeNotFound: If no JavaScript runtime is available
-        ValueError: If resolution is invalid
+        ValueError: If resolution is invalid or runtime is not 'node'/'deno'
     """
     # Detect or validate JS runtime
-    if runtime is None:
-        runtime = detect_js_runtime()
-    else:
-        # Verify specified runtime exists
-        if not shutil.which(runtime):
-            raise JsRuntimeNotFound(
-                f"Specified JavaScript runtime '{runtime}' not found on PATH. "
-                f"Please install {runtime} or use an available runtime."
-            )
+    runtime = detect_js_runtime(runtime)
     
     # Resolve resolution
     res = resolve_resolution(resolution)
@@ -219,14 +226,13 @@ def download_video(url, output_folder="film", resolution=None):
     
     started = time.time()
     
-    # Run yt-dlp
+    # Run yt-dlp with streaming output (don't capture stdout/stderr)
     try:
-        subprocess.run(cmd, check=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+        subprocess.run(cmd, check=True)
     except subprocess.CalledProcessError as e:
-        stderr = e.stderr.decode('utf-8') if e.stderr else ''
         raise subprocess.CalledProcessError(
             e.returncode, e.cmd,
-            stderr=f"yt-dlp failed: {stderr}".encode('utf-8')
+            stderr=f"yt-dlp failed with exit code {e.returncode}".encode('utf-8')
         )
     
     # Find saved file

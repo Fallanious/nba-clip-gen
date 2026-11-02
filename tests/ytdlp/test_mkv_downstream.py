@@ -94,7 +94,20 @@ def test_upload_sets_content_type_mkv(fake_s3, tmp_path):
 
 # ---------- leftover hardcoded .mp4 audit ----------
 ALLOWED_MP4 = [  # file -> regex of lines that may legitimately mention mp4 (clip output is still mp4)
-    (r"generate_clips\.py", r"default='mp4'|%\(prog\)s video|\.mp4\b.*example|mkv.* to mp4|mp4|\.mov\)|input_ext.*output_ext|force_reencode"),
+    # Lines with default='mp4' and help text  
+    (r"generate_clips\.py", r"default='mp4'"),
+    # Example usage lines
+    (r"generate_clips\.py", r"%\(prog\)s video\.mp4"),
+    # Line 91: docstring note about mkv to mp4
+    (r"generate_clips\.py", r"Note.*mkv.*mp4.*browser"),
+    # Lines 99-101: mkv→mp4 codec safety comments and code
+    (r"generate_clips\.py", r"mkv.*VP9.*mp4"),
+    (r"generate_clips\.py", r"Safari.*mkv.*mp4"),
+    (r"generate_clips\.py", r"force_reencode.*mkv.*mp4"),
+    # Lines 122-123: faststart flag comments and code
+    (r"generate_clips\.py", r"faststart.*mp4"),
+    (r"generate_clips\.py", r"output_ext.*mp4.*mov"),
+    # Multi-format tuple patterns in routes
     (r"routes/(videos|timestamps)\.py", r"\(\s*\"\.mp4\",\s*\"\.mkv\"|# Support all video formats.*mp4"),
     (r"services/(playback|storage)\.py", r"video/mp4"),
     (r"download_video\.py", r"\.mp4.*\.mkv.*\.webm"),

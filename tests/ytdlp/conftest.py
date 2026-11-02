@@ -9,7 +9,7 @@ import importlib, os, sys, subprocess
 from types import SimpleNamespace
 import pytest
 
-REPO_ROOT = os.environ.get("NBA_CLIP_GEN_ROOT", os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+REPO_ROOT = os.environ.get("NBA_CLIP_GEN_ROOT", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 SRC = os.path.join(REPO_ROOT, "src")
 if SRC not in sys.path:
     sys.path.insert(0, SRC)  # repo imports top-level modules (config, routes.*, ...)
@@ -85,11 +85,8 @@ def fake_run(monkeypatch, tmp_path):
 
 @pytest.fixture
 def fake_s3(monkeypatch):
-    """Mock S3 client. Skips tests if boto3 is unavailable."""
-    try:
-        import boto3
-    except ImportError:
-        pytest.skip("boto3 not installed (optional dependency)")
+    """Mock S3 client for upload tests."""
+    import boto3
     
     calls = SimpleNamespace(upload=[], put=[], presign=[])
     class C:
