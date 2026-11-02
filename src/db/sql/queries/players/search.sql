@@ -12,8 +12,8 @@ WHERE ( lower(f_unaccent(p.full_name)) % lower(f_unaccent(:q))
   AND (CAST(:team_id AS smallint) IS NULL OR p.team_id = :team_id)
   AND (CAST(:active AS boolean) IS NULL OR p.is_active = :active)
   AND ( CAST(:c_score AS real) IS NULL
-        OR similarity(lower(f_unaccent(p.full_name)), lower(f_unaccent(:q))) < :c_score
-        OR ( similarity(lower(f_unaccent(p.full_name)), lower(f_unaccent(:q))) = :c_score
+        OR CAST(similarity(lower(f_unaccent(p.full_name)), lower(f_unaccent(:q))) AS real) < CAST(:c_score AS real)
+        OR ( CAST(similarity(lower(f_unaccent(p.full_name)), lower(f_unaccent(:q))) AS real) = CAST(:c_score AS real)
              AND (p.last_name, p.id) > (:c_last_name, :c_id) ) )
 ORDER BY score DESC, p.last_name, p.id
 LIMIT :limit + 1;

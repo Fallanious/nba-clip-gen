@@ -3,7 +3,7 @@
 import re
 from pathlib import Path
 from typing import Mapping
-from sqlalchemy import text, bindparam, BigInteger, Date, Text, Numeric
+from sqlalchemy import text, bindparam, BigInteger, Date, Text, Boolean, Float, Integer, SmallInteger
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.sql import TextClause
 
@@ -28,19 +28,19 @@ def _apply_type_hints(key: str, sql_text: str) -> TextClause:
     type_hints = {
         "players/search": {
             "q": Text,
-            "team_id": BigInteger,
-            "active": Text,
-            "c_score": Numeric,
+            "team_id": SmallInteger,
+            "active": Boolean,
+            "c_score": Float,
             "c_last_name": Text,
             "c_id": BigInteger,
-            "limit": BigInteger,
+            "limit": Integer,
         },
         "players/search_browse": {
-            "team_id": BigInteger,
-            "active": Text,
+            "team_id": SmallInteger,
+            "active": Boolean,
             "c_last_name": Text,
             "c_id": BigInteger,
-            "limit": BigInteger,
+            "limit": Integer,
         },
         "players/get": {
             "id": BigInteger,
@@ -61,10 +61,10 @@ def _apply_type_hints(key: str, sql_text: str) -> TextClause:
             "action_types": ARRAY(Text),
             "subtypes": ARRAY(Text),
             "outcome": Text,
-            "status_all": Text,
+            "status_all": Boolean,
             "c_date": Date,
             "c_id": BigInteger,
-            "limit": BigInteger,
+            "limit": Integer,
         },
         "clips/get": {
             "id": BigInteger,
@@ -75,11 +75,14 @@ def _apply_type_hints(key: str, sql_text: str) -> TextClause:
     }
 
     hints = type_hints.get(key, {})
+    used = _extract_params_from_sql(sql_text)
     if hints:
         params = []
         for param_name, param_type in hints.items():
-            params.append(bindparam(param_name, type_=param_type))
-        stmt = stmt.bindparams(*params)
+            if param_name in used:
+                params.append(bindparam(param_name, type_=param_type))
+        if params:
+            stmt = stmt.bindparams(*params)
 
     return stmt
 
@@ -130,6 +133,7 @@ def load_queries() -> Mapping[str, TextClause]:
         raise RuntimeError(f"Queries directory not found: {queries_dir}")
 
     registry = {}
+    raw_sql_registry = {}
     required_keys = {
         "players/search",
         "players/search_browse",
@@ -153,36 +157,39 @@ def load_queries() -> Mapping[str, TextClause]:
         # Validate
         _validate_sql_file(key, sql_content)
 
-        # Check that declared params match used params
-        declared_params = _extract_params_from_header(raw_sql)
-        used_params = _extract_params_from_sql(sql_content)
-        if declared_params and declared_params != used_params:
-            missing = used_params - declared_params
-            extra = declared_params - used_params
-            msg_parts = []
-            if missing:
-                msg_parts.append(f"missing from header: {missing}")
-            if extra:
-                msg_parts.append(f"not used in SQL: {extra}")
-            raise ValueError(f"Parameter mismatch in {key}: {', '.join(msg_parts)}")
+        # Check that declared params match used params (skip templated queries)
+        if "/*dynamic_filters*/" not in sql_content:
+            declared_params = _extract_params_from_header(raw_sql)
+            used_params = _extract_params_from_sql(sql_content)
+            if declared_params and declared_params != used_params:
+                missing = used_params - declared_params
+                extra = declared_params - used_params
+                msg_parts = []
+                if missing:
+                    msg_parts.append(f"missing from header: {missing}")
+                if extra:
+                    msg_parts.append(f"not used in SQL: {extra}")
+                raise ValueError(f"Parameter mismatch in {key}: {', '.join(msg_parts)}")
 
         # Apply type hints and store
         registry[key] = _apply_type_hints(key, sql_content)
+        raw_sql_registry[key] = sql_content
 
     # Ensure all required keys are present
     missing = required_keys - registry.keys()
     if missing:
         raise RuntimeError(f"Missing required SQL files: {missing}")
 
-    return registry
+    return registry, raw_sql_registry
 
 
 # Global registry loaded once at module import
 try:
-    registry = load_queries()
+    registry, raw_sql_registry = load_queries()
 except Exception as e:
     # In some contexts (tests without SQL files), we may not have queries yet
     registry = {}
+    raw_sql_registry = {}
     import sys
     print(f"Warning: Could not load SQL registry: {e}", file=sys.stderr)
 
@@ -190,3 +197,8 @@ except Exception as e:
 def get_registry() -> Mapping[str, TextClause]:
     """Get the loaded SQL registry."""
     return registry
+
+
+def get_raw_sql(key: str) -> str:
+    """Return the stripped SQL text for a query key (for dynamic filter assembly)."""
+    return raw_sql_registry[key]
