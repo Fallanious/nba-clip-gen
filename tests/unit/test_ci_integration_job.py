@@ -133,6 +133,7 @@ def test_integration_job_never_targets_default_or_production():
 
     assert "python scripts/ci_guard_db.py" in text
     assert "vars.NEON_DEV_ENDPOINT_ID" in text
+    assert "vars.NEON_DEV_REGION" in text
     assert "NEON_BRANCH_JSON" not in text
     steps = job.get("steps") or []
     guard_i = next(i for i, s in enumerate(steps) if "ci_guard_db.py" in str(s.get("run") or ""))
@@ -141,10 +142,14 @@ def test_integration_job_never_targets_default_or_production():
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
+    assert "NEON_DEV_REGION" in guard_env
+    assert "vars.NEON_DEV_REGION" in str(guard_env["NEON_DEV_REGION"])
 
 
 def _run_guard(env):
-    cleaned = {k: v for k, v in os.environ.items() if k not in {"DATABASE_URL", "NEON_DEV_ENDPOINT_ID", "NEON_BRANCH_JSON"}}
+    cleaned = {k: v for k, v in os.environ.items() if k not in {
+        "DATABASE_URL", "NEON_DEV_ENDPOINT_ID", "NEON_DEV_REGION", "NEON_BRANCH_JSON",
+    }}
     cleaned.update(env)
     return subprocess.run(
         [sys.executable, "scripts/ci_guard_db.py"],
@@ -209,6 +214,46 @@ def test_ci_guard_rejects_lookalike_hosts(host):
     })
     assert result.returncode != 0
     assert "u:p" not in result.stdout + result.stderr
+
+
+def test_ci_guard_region_optional_when_unset():
+    env = {"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}
+    west = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-west-2.aws.neon.tech/db",
+    })
+    assert west.returncode == 0
+    empty = _run_guard({
+        **env,
+        "NEON_DEV_REGION": "",
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.eu-central-1.aws.neon.tech/db",
+    })
+    assert empty.returncode == 0
+
+
+def test_ci_guard_region_must_match_when_set():
+    env = {
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "NEON_DEV_REGION": "us-east-1",
+    }
+    ok = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db",
+    })
+    assert ok.returncode == 0
+    pooled = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db",
+    })
+    assert pooled.returncode == 0
+    mismatch = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-west-2.aws.neon.tech/db",
+    })
+    assert mismatch.returncode != 0
+    out = ok.stdout + ok.stderr + mismatch.stdout + mismatch.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
 
 
 def test_ci_guard_unused_branch_json_ignored(tmp_path):
