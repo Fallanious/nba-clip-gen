@@ -206,6 +206,9 @@ def test_ci_guard_accepts_pooled_host():
     "ep-dev-abc.us-east-1.neon.tech",
     "not-an-endpoint.us-east-1.aws.neon.tech",
     "ep-dev-abc.us-east-1.aws.neon.tech.evil.example",
+    "ep-dev-abc.pooler.us-east-1.aws.neon.tech",
+    "ep-dev-abc.c-6.us-east-2.aws.neon.tech.evil.example",
+    "ep-dev-abc.c-6.us-east-2.neon.tech",
 ])
 def test_ci_guard_rejects_lookalike_hosts(host):
     result = _run_guard({
@@ -246,6 +249,12 @@ def test_ci_guard_region_must_match_when_set():
         "DATABASE_URL": "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db",
     })
     assert pooled.returncode == 0
+    aws_prefix = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "NEON_DEV_REGION": "aws-us-east-1",
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db",
+    })
+    assert aws_prefix.returncode == 0
     mismatch = _run_guard({
         **env,
         "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-west-2.aws.neon.tech/db",
@@ -254,6 +263,71 @@ def test_ci_guard_region_must_match_when_set():
     out = ok.stdout + ok.stderr + mismatch.stdout + mismatch.stderr
     assert "u:p" not in out
     assert "postgresql://" not in out
+
+
+DEV_ENDPOINT_ID = "ep-rapid-smoke-b4t1v549"
+DEV_DIRECT_HOST = "ep-rapid-smoke-b4t1v549.c-6.us-east-2.aws.neon.tech"
+DEV_POOLED_HOST = "ep-rapid-smoke-b4t1v549-pooler.c-6.us-east-2.aws.neon.tech"
+
+
+def test_ci_guard_accepts_neon_cell_direct_and_pooled_hosts():
+    """Real Neon hosts insert a c-<n> cell label; -pooler is a suffix, not .pooler."""
+    env = {"NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID}
+    direct = _run_guard({
+        **env,
+        "DATABASE_URL": f"postgresql://{DEV_DIRECT_HOST}/db",
+    })
+    pooled = _run_guard({
+        **env,
+        "DATABASE_URL": f"postgresql://{DEV_POOLED_HOST}/db",
+    })
+    assert direct.returncode == 0, direct.stderr
+    assert pooled.returncode == 0, pooled.stderr
+    out = direct.stdout + direct.stderr + pooled.stdout + pooled.stderr
+    assert "postgresql://" not in out
+    assert DEV_DIRECT_HOST not in out
+    assert DEV_POOLED_HOST not in out
+
+
+def test_ci_guard_rejects_mismatched_id_on_cell_host():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
+        "DATABASE_URL": "postgresql://ep-other-xyz-pooler.c-6.us-east-2.aws.neon.tech/db",
+    })
+    assert result.returncode != 0
+    assert "postgresql://" not in result.stdout + result.stderr
+
+
+def test_ci_guard_rejects_cell_lookalike_domain():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
+        "DATABASE_URL": f"postgresql://{DEV_POOLED_HOST}.evil.example/db",
+    })
+    assert result.returncode != 0
+    assert "postgresql://" not in result.stdout + result.stderr
+
+
+def test_ci_guard_cell_host_region_label_only():
+    env = {
+        "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
+        "NEON_DEV_REGION": "us-east-2",
+    }
+    ok = _run_guard({
+        **env,
+        "DATABASE_URL": f"postgresql://{DEV_POOLED_HOST}/db",
+    })
+    assert ok.returncode == 0
+    aws_prefix = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
+        "NEON_DEV_REGION": "aws-us-east-2",
+        "DATABASE_URL": f"postgresql://{DEV_DIRECT_HOST}/db",
+    })
+    assert aws_prefix.returncode == 0
+    mismatch = _run_guard({
+        **env,
+        "DATABASE_URL": "postgresql://ep-rapid-smoke-b4t1v549.c-6.us-west-2.aws.neon.tech/db",
+    })
+    assert mismatch.returncode != 0
 
 
 def test_ci_guard_unused_branch_json_ignored(tmp_path):
