@@ -4,13 +4,16 @@
 Requires NEON_DEV_ENDPOINT_ID (from GitHub vars.NEON_DEV_ENDPOINT_ID), the
 endpoint id of Neon branch br-odd-smoke-b465tvf8. Refuses to run if that var
 is unset or does not match the URL host. If NEON_DEV_REGION (vars.NEON_DEV_REGION)
-is set, the host region must match it; if unset, any Neon region is accepted.
+is set, the host region label must match it (us-east-2, also aws-us-east-2);
+if unset, any Neon region is accepted.
 Never prints credentials.
 
-Accepted hosts (and the pooled variant):
-  ep-<id>.<region>.aws.neon.tech
-  ep-<id>-pooler.<region>.aws.neon.tech
+Accepted hosts (and the pooled variant; cell label is optional):
+  ep-<id>[.c-<n>].<region>.aws.neon.tech
+  ep-<id>-pooler[.c-<n>].<region>.aws.neon.tech
 Lookalikes such as ep-<id>.evil.example are rejected.
+The pooled form uses a hyphenated ``-pooler`` suffix on the first label, not
+a ``.pooler`` DNS label.
 """
 from __future__ import annotations
 
@@ -19,21 +22,35 @@ import re
 import sys
 from urllib.parse import urlparse
 
-# ep-<id>[-pooler].<region>.aws.neon.tech  (region like us-east-1)
+# ep-<id>[-pooler].[c-<n>.]<region>.aws.neon.tech
 _NEON_HOST = re.compile(
     r"^"
     r"(?P<label>ep-[a-z0-9-]+)"
+    r"(?:\.(?P<cell>c-\d+))?"
     r"\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)"
     r"\.aws\.neon\.tech"
     r"$"
 )
+_POOLER_SUFFIX = "-pooler"
 
 
 def _endpoint_from_label(label: str) -> str:
-    """Map compute or pooled first-label to the endpoint id."""
-    if label.endswith("-pooler"):
-        return label[: -len("-pooler")]
+    """Map compute or pooled first-label to the endpoint id.
+
+    Only a hyphenated ``-pooler`` suffix is stripped (``ep-<id>-pooler``).
+    A ``.pooler`` DNS label is not accepted.
+    """
+    if label.endswith(_POOLER_SUFFIX) and len(label) > len(_POOLER_SUFFIX):
+        return label[: -len(_POOLER_SUFFIX)]
     return label
+
+
+def _canonical_region(value: str) -> str:
+    """Region label only: us-east-2, also accepting aws-us-east-2."""
+    region = (value or "").strip().lower()
+    if region.startswith("aws-"):
+        return region[len("aws-"):]
+    return region
 
 
 def _parse_neon_host(host: str) -> tuple[str, str] | None:
@@ -72,7 +89,7 @@ def main() -> int:
         return 1
 
     expected_region = (os.environ.get("NEON_DEV_REGION") or "").strip().lower()
-    if expected_region and parsed[1] != expected_region:
+    if expected_region and _canonical_region(parsed[1]) != _canonical_region(expected_region):
         print("DATABASE_URL host region does not match NEON_DEV_REGION", file=sys.stderr)
         return 1
     return 0
