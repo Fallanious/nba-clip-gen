@@ -2,11 +2,13 @@
 import pytest
 import sys
 import os
+import re
 
 sys.path.insert(0, 'src')
 
 
 def test_config():
+    os.environ['APP_ENV'] = 'dev'
     os.environ['DATABASE_URL'] = 'postgresql://test'
     os.environ['CURSOR_SECRET'] = '12345678901234567890123456789012'  # 32 bytes
     from config import config
@@ -35,6 +37,7 @@ def test_cursor_secret_required():
 
 def test_cursor_secret_minimum_length():
     """SECURITY: CURSOR_SECRET must be at least 32 bytes."""
+    os.environ['APP_ENV'] = 'dev'
     os.environ['CURSOR_SECRET'] = 'short'
     
     import importlib
@@ -47,6 +50,7 @@ def test_cursor_secret_minimum_length():
 
 def test_cursor_secret_valid():
     """SECURITY: Valid CURSOR_SECRET passes validation."""
+    os.environ['APP_ENV'] = 'dev'
     os.environ['CURSOR_SECRET'] = '12345678901234567890123456789012'  # exactly 32 bytes
     
     import importlib
@@ -106,7 +110,10 @@ def test_cursor_secret_dev_fallback_in_dev():
     importlib.reload(config_module)
     
     secret = config_module.config.CURSOR_SECRET
-    assert len(secret.encode()) >= 32  # Dev fallback meets minimum
+    assert len(secret.encode()) >= 32  # Per-process random fallback meets minimum
+    assert secret != "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    assert secret != "dev-secret-change-in-production"
+    assert config_module.config.CURSOR_SECRET == secret  # stable for the process
 
 
 def test_cursor_secret_no_fallback_in_production():
@@ -180,6 +187,14 @@ def test_request_id_validation():
         r = client.get('/api/jobs', headers={'X-Request-Id': 'a' * 65})
         assert r.headers.get('X-Request-Id') != ('a' * 65)
 
+        import inspect
+        from app import create_app as factory
+        src = inspect.getsource(factory)
+        assert "re.fullmatch" in src
+        assert "re.match" not in src
+        # '$' in re.match allows a trailing newline; fullmatch does not
+        assert re.fullmatch(r"[A-Za-z0-9-]{1,64}", "req-123-abc\n") is None
+
 
 def test_bind_host_defaults_to_localhost():
     """SECURITY: default bind is 127.0.0.1, not 0.0.0.0."""
@@ -204,3 +219,37 @@ def test_apierror_503_sets_retry_after():
         assert r.status_code == 503
         assert r.headers.get('Retry-After') == '2'
         assert r.get_json()['error']['code'] == 'db_unavailable'
+
+
+@pytest.mark.parametrize("raw", [None, "", " ", "Prod ", "qa"])
+def test_app_env_required(raw, monkeypatch):
+    """APP_ENV has no default; missing or unknown values refuse to start."""
+    if raw is None:
+        monkeypatch.delenv("APP_ENV", raising=False)
+    else:
+        monkeypatch.setenv("APP_ENV", raw)
+    monkeypatch.setenv("CURSOR_SECRET", "k" * 32)
+    from config import Config
+    with pytest.raises(ValueError, match="APP_ENV") as ei:
+        Config().validate()
+    assert "k" * 32 not in str(ei.value)
+
+
+@pytest.mark.parametrize("env", ["dev", "test", "prod", "production", "staging"])
+def test_known_app_env_accepted(env, monkeypatch):
+    monkeypatch.setenv("APP_ENV", env)
+    monkeypatch.setenv("CURSOR_SECRET", "k" * 32)
+    from config import Config
+    Config().validate()
+
+
+def test_stub_admin_only_in_explicit_dev(monkeypatch):
+    from auth import resolve_user, validate_auth_for_startup
+    monkeypatch.setenv("APP_ENV", "dev")
+    validate_auth_for_startup()
+    resolve_user(None)
+    monkeypatch.setenv("APP_ENV", "prod")
+    with pytest.raises(ValueError, match="explicitly dev"):
+        validate_auth_for_startup()
+    with pytest.raises(RuntimeError, match="explicitly dev"):
+        resolve_user(None)

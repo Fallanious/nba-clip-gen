@@ -112,6 +112,44 @@ def test_session_retry_then_503_with_fake_engine():
         assert call_count[0] == 1
 
 
+def test_failed_checkout_closes_session():
+    """If connection() raises, the session is closed instead of leaked."""
+    from unittest.mock import patch
+    from sqlalchemy.exc import OperationalError
+    from errors import ApiError
+    from db.session import get_session
+
+    closed = []
+
+    class FakeSession:
+        def connection(self):
+            raise OperationalError("wake", None, None)
+
+        def close(self):
+            closed.append(True)
+
+        def rollback(self):
+            pass
+
+        def commit(self):
+            pass
+
+    with patch("db.session.SessionLocal", FakeSession):
+        with pytest.raises(ApiError) as exc_info:
+            with get_session(retry_on_wake=False):
+                pass
+        assert exc_info.value.code == "db_unavailable"
+        assert exc_info.value.status == 503
+    assert closed == [True]
+
+    closed.clear()
+    with patch("db.session.SessionLocal", FakeSession):
+        with pytest.raises(ApiError):
+            with get_session(retry_on_wake=True):
+                pass
+    assert closed == [True, True]
+
+
 def test_get_db_is_lazy():
     """No session is opened until get_db() is called."""
     os.environ.setdefault("CURSOR_SECRET", "12345678901234567890123456789012")
@@ -191,7 +229,10 @@ def test_bind_types_are_native():
 
     clips = registry["clips/by_player"]
     assert isinstance(clips._bindparams["limit"].type, Integer)
-    assert "status_all" not in clips._bindparams  # spliced dynamically, not a standing bind)
+    assert isinstance(clips._bindparams["status_all"].type, Boolean)
+    from sqlalchemy import BigInteger
+    assert isinstance(clips._bindparams["c_game_id"].type, BigInteger)
+    assert isinstance(clips._bindparams["c_period"].type, Integer)
 
 
 def test_teardown_reraises(monkeypatch):
