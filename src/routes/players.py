@@ -17,9 +17,12 @@ from repositories import players as players_repo
 from repositories import clips as clips_repo
 
 try:
-    from services.playback import get_playback_url
+    from services.playback import get_playback_url, _allow_fallback
 except ImportError:  # playback lands in a later stack layer
     get_playback_url = None
+    def _allow_fallback():
+        from config import config as _cfg
+        return _cfg.PLAYBACK_ALLOW_FALLBACK
 
 bp = Blueprint('players', __name__, url_prefix='/api')
 
