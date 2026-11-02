@@ -1,0 +1,24 @@
+name: integration
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  integration:
+    name: Neon integration tests
+    runs-on: ubuntu-latest
+    # Skip the whole job when the secret is unset. Never point this at production.
+    if: ${{ secrets.NEON_DEV_DATABASE_URL != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependencies
+        run: pip install -r requirements.txt
+      - name: Run integration tests against Neon dev
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
+          APP_ENV: dev
+        run: pytest -m integration -q
