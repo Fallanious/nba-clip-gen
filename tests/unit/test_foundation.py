@@ -7,6 +7,7 @@ sys.path.insert(0, 'src')
 
 
 def test_config():
+    os.environ['APP_ENV'] = 'dev'
     os.environ['DATABASE_URL'] = 'postgresql://test'
     os.environ['CURSOR_SECRET'] = '12345678901234567890123456789012'  # 32 bytes
     from config import config
@@ -35,6 +36,7 @@ def test_cursor_secret_required():
 
 def test_cursor_secret_minimum_length():
     """SECURITY: CURSOR_SECRET must be at least 32 bytes."""
+    os.environ['APP_ENV'] = 'dev'
     os.environ['CURSOR_SECRET'] = 'short'
     
     import importlib
@@ -47,6 +49,7 @@ def test_cursor_secret_minimum_length():
 
 def test_cursor_secret_valid():
     """SECURITY: Valid CURSOR_SECRET passes validation."""
+    os.environ['APP_ENV'] = 'dev'
     os.environ['CURSOR_SECRET'] = '12345678901234567890123456789012'  # exactly 32 bytes
     
     import importlib
@@ -106,7 +109,10 @@ def test_cursor_secret_dev_fallback_in_dev():
     importlib.reload(config_module)
     
     secret = config_module.config.CURSOR_SECRET
-    assert len(secret.encode()) >= 32  # Dev fallback meets minimum
+    assert len(secret.encode()) >= 32  # Per-process random fallback meets minimum
+    assert secret != "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    assert secret != "dev-secret-change-in-production"
+    assert config_module.config.CURSOR_SECRET == secret  # stable for the process
 
 
 def test_cursor_secret_no_fallback_in_production():
