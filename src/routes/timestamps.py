@@ -104,7 +104,8 @@ def get_clips():
         if run_filter and rel_root != run_filter:
             continue
         for filename in files:
-            if not filename.endswith(".mp4"):
+            # Support all video formats (mp4, mkv, webm)
+            if not filename.endswith((".mp4", ".mkv", ".webm")):
                 continue
             full = os.path.join(root, filename)
             rel_path = os.path.relpath(full, BASE_DIR).replace("\\", "/")
@@ -126,7 +127,8 @@ def get_clip_runs():
         run_path = os.path.join(clips_dir, entry)
         if not os.path.isdir(run_path):
             continue
-        clip_count = len([f for f in os.listdir(run_path) if f.endswith(".mp4")])
+        # Support all video formats (mp4, mkv, webm)
+        clip_count = len([f for f in os.listdir(run_path) if f.endswith((".mp4", ".mkv", ".webm"))])
         runs.append({"name": entry, "path": entry, "clip_count": clip_count})
 
     return jsonify({"runs": runs})
