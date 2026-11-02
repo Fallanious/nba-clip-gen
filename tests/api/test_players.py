@@ -224,7 +224,7 @@ def test_cursor_survives_limit_change(client):
 def test_cursor_secret_rotation_invalidates(client, app, monkeypatch):
     c = _cursor(client)
     monkeypatch.setenv("CURSOR_SECRET", "rotated-test-secret")
-    from conftest import _make_app
+    from tests.conftest import _make_app
     fresh = _make_app().test_client()
     assert_error(fresh.get(f"/api/players?limit=2&cursor={c}"), 400, "invalid_cursor")
 
@@ -260,7 +260,8 @@ def test_db_unavailable_503_retry_after(client, fake_db):
         assert r.headers.get("Retry-After") == "2"
 
 
-def test_internal_500_no_stack(client, fake_db):
+def test_internal_500_no_stack(app, client, fake_db):
+    app.config["PROPAGATE_EXCEPTIONS"] = False  # TESTING=True re-raises by default
     fake_db.fail_with = RuntimeError("boom secret-ish detail")
     r = client.get("/api/players")
     err = assert_error(r, 500, "internal")

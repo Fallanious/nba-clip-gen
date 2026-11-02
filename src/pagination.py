@@ -87,9 +87,9 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
 
         return payload.get("k", [])
 
-    except (ValueError, KeyError, json.JSONDecodeError) as e:
+    except (ValueError, KeyError, json.JSONDecodeError):
         raise ApiError(
             code="invalid_cursor",
-            message=f"Invalid cursor: {str(e)}",
+            message="Invalid cursor format",
             status=400
         )

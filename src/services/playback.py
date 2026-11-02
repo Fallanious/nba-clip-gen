@@ -3,7 +3,7 @@
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 import boto3
-from botocore.exceptions import ClientError, NoCredentialsError
+from botocore.exceptions import ClientError, NoCredentialsError, ReadTimeoutError, EndpointConnectionError
 from config import config
 from errors import ApiError
 
@@ -40,7 +40,8 @@ def _verify_object(s3_client, bucket: str, key: str) -> None:
     try:
         s3_client.head_object(Bucket=bucket, Key=key)
     except ClientError as e:
-        if e.response['Error']['Code'] == '404':
+        error_code = e.response.get('Error', {}).get('Code', '')
+        if error_code in ('404', 'NoSuchKey'):
             raise ApiError(
                 code="media_missing",
                 message="Media file not found",
@@ -52,6 +53,13 @@ def _verify_object(s3_client, bucket: str, key: str) -> None:
                 message="Storage service error",
                 status=502
             )
+    except (ConnectionError, TimeoutError) as e:
+        # Handle network errors
+        raise ApiError(
+            code="storage_error",
+            message="Storage service error",
+            status=502
+        )
 
 
 def generate_presigned_url(
@@ -75,22 +83,31 @@ def generate_presigned_url(
 
     s3_client = _s3_client()
 
-    # Verify object exists (if configured)
-    _verify_object(s3_client, bucket, s3_key)
+    try:
+        # Verify object exists (if configured)
+        _verify_object(s3_client, bucket, s3_key)
 
-    # Generate presigned URL
-    url = s3_client.generate_presigned_url(
-        'get_object',
-        Params={
-            'Bucket': bucket,
-            'Key': s3_key,
-            'ResponseContentType': 'video/mp4',
-            'ResponseCacheControl': 'private, max-age=300',
-        },
-        ExpiresIn=ttl
-    )
+        # Generate presigned URL
+        url = s3_client.generate_presigned_url(
+            'get_object',
+            Params={
+                'Bucket': bucket,
+                'Key': s3_key,
+                'ResponseContentType': 'video/mp4',
+                'ResponseCacheControl': 'private, max-age=300',
+            },
+            ExpiresIn=ttl
+        )
+    except (ReadTimeoutError, EndpointConnectionError):
+        raise ApiError(
+            code="storage_error",
+            message="Storage service error",
+            status=502
+        )
 
     expires_at = datetime.now(timezone.utc) + timedelta(seconds=ttl)
+    # Format with Z suffix instead of +00:00
+    expires_at = expires_at.replace(tzinfo=None)
 
     return url, expires_at
 
@@ -144,16 +161,20 @@ def get_playback_url(clip_data: dict, mode: Optional[str] = None) -> dict:
             "mode": "clip",
             "url": url,
             "mime": "video/mp4",
-            "expires_at": expires_at.isoformat(),
+            "expires_at": expires_at.isoformat() + "Z",
             "ttl_s": ttl
         }
 
     elif mode == 'fallback':
         if not config.PLAYBACK_ALLOW_FALLBACK:
             raise ApiError(
-                code="forbidden",
-                message="Fallback mode not allowed",
-                status=403
+                code="clip_not_ready",
+                message="Clip is not ready for playback",
+                status=409,
+                details={
+                    "status": clip_data['status'],
+                    "fallback_available": False
+                }
             )
 
         if not clip_data['game_key']:
@@ -178,7 +199,7 @@ def get_playback_url(clip_data: dict, mode: Optional[str] = None) -> dict:
             "mime": "video/mp4",
             "start_s": float(clip_data['video_start_s']),
             "end_s": float(clip_data['video_end_s']),
-            "expires_at": expires_at.isoformat(),
+            "expires_at": expires_at.isoformat() + "Z",
             "ttl_s": ttl
         }
 

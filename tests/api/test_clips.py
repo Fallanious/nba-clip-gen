@@ -252,7 +252,7 @@ def test_clip_detail(client):
     ("true", NOT_READY_NO_GAME_KEY, False)])
 def test_clip_detail_fallback_available(client, monkeypatch, allow, cid, expected):
     monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", allow)
-    from conftest import _make_app
+    from tests.conftest import _make_app
     b = _make_app().test_client().get(f"/api/clips/{cid}").get_json()
     assert b["playable"] is False and b["fallback_available"] is expected
 
@@ -303,7 +303,7 @@ def test_playback_clip_mode_success(client, playback_configured):
 
 def test_playback_custom_ttl(client, monkeypatch, playback_configured):
     monkeypatch.setenv("PLAYBACK_URL_TTL", "600")
-    from conftest import _make_app
+    from tests.conftest import _make_app
     b = _make_app().test_client().get(PB.format(PLAYABLE_CLIP)).get_json()
     assert b["ttl_s"] == 600
 
@@ -311,7 +311,7 @@ def test_playback_custom_ttl(client, monkeypatch, playback_configured):
 @pytest.mark.parametrize("ttl", ["59", "3601", "abc"])
 def test_playback_ttl_out_of_range_fails_startup(monkeypatch, fake_db, playback_configured, ttl):
     monkeypatch.setenv("PLAYBACK_URL_TTL", ttl)
-    from conftest import _make_app
+    from tests.conftest import _make_app
     with pytest.raises(Exception):
         _make_app()
 
@@ -329,7 +329,7 @@ def test_playback_fallback_mode(client, playback_configured):
 @pytest.mark.parametrize("status", ["pending", "failed", "rendered"])
 def test_playback_409_fallback_disabled(client, monkeypatch, playback_configured, status):
     monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "false")
-    from conftest import _make_app
+    from tests.conftest import _make_app
     r = _make_app().test_client().get(PB.format(NOT_READY[status]))
     err = assert_error(r, 409, "clip_not_ready")
     assert err["details"] == {"status": status, "fallback_available": False}
@@ -366,7 +366,7 @@ def _client_error(code):
 
 def _verify_client(monkeypatch):
     monkeypatch.setenv("PLAYBACK_VERIFY_OBJECT", "true")
-    from conftest import _make_app
+    from tests.conftest import _make_app
     return _make_app().test_client()
 
 
@@ -413,7 +413,7 @@ def test_playback_db_503(client, fake_db, playback_configured):
 
 
 def test_playback_authorize_called_before_sign(client, monkeypatch, playback_configured):
-    from src import authz  # ADAPT if module differs
+    import routes.players as authz
     seen = []
     orig = authz.authorize_clip
     monkeypatch.setattr(authz, "authorize_clip", lambda u, c: (seen.append(len(playback_configured.calls)), orig(u, c))[1])

@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 
 from auth import require_user
 from authz import authorize_player, authorize_clip
-from db.session import get_db
+from db import session as db_session
 from errors import ApiError
 from pagination import encode_cursor, decode_cursor
 from repositories import players as players_repo
@@ -38,11 +38,18 @@ def _parse_int(value: str, param_name: str, min_val: int = 1) -> int:
 
 def _parse_bool(value: str, param_name: str) -> Optional[bool]:
     """Parse boolean parameter."""
-    if value is None or value == "":
+    if value is None:
         return None
-    if value.lower() in ("true", "1", "yes"):
+    if value == "":
+        raise ApiError(
+            code="invalid_param",
+            message=f"{param_name} cannot be empty",
+            status=400,
+            details={"param": param_name}
+        )
+    if value.lower() == "true":
         return True
-    elif value.lower() in ("false", "0", "no"):
+    elif value.lower() == "false":
         return False
     elif value.lower() == "all":
         return None
@@ -75,10 +82,21 @@ def _parse_team_abbr(value: str) -> Optional[int]:
     
     Returns team_id or None. Raises ApiError if format invalid or team not found.
     """
-    if not value:
+    if value is None:
         return None
+    
+    # Empty string or only whitespace is invalid
+    if value == "" or not value.strip():
+        raise ApiError(
+            code="invalid_param",
+            message="team cannot be empty",
+            status=400,
+            details={"param": "team"}
+        )
+    
+    value = value.strip()
 
-    value = value.strip().upper()
+    value = value.upper()
     if not re.match(r'^[A-Z]{3}$', value):
         raise ApiError(
             code="invalid_param",
@@ -87,12 +105,13 @@ def _parse_team_abbr(value: str) -> Optional[int]:
             details={"param": "team"}
         )
 
-    # Look up team by abbreviation
-    session = next(get_db())
+    # Look up team by abbreviation using SQL query
+    from db.sql_loader import registry
+    session = next(db_session.get_db())
     result = session.execute(
-        "SELECT id FROM teams WHERE abbr = :abbr",
+        registry["teams/by_abbr"],
         {"abbr": value}
-    ).first()
+    ).mappings().first()
 
     if not result:
         raise ApiError(
@@ -102,7 +121,7 @@ def _parse_team_abbr(value: str) -> Optional[int]:
             details={"param": "team"}
         )
 
-    return result[0]
+    return result["id"]
 
 
 def _parse_enum_list(values: str, param_name: str, allowed: set[str]) -> Optional[list[str]]:
@@ -130,8 +149,19 @@ def _parse_enum_list(values: str, param_name: str, allowed: set[str]) -> Optiona
     return items if items else None
 
 
-def _format_game_clock(interval) -> Optional[str]:
-    """Format interval as MM:SS."""
+def _format_game_clock_iso(interval) -> Optional[str]:
+    """Format interval as ISO 8601 duration (PT4M12S)."""
+    if interval is None:
+        return None
+
+    total_seconds = int(interval.total_seconds())
+    minutes = total_seconds // 60
+    seconds = total_seconds % 60
+    return f"PT{minutes}M{seconds}S"
+
+
+def _format_game_clock_display(interval) -> Optional[str]:
+    """Format interval as human-readable time (M:SS)."""
     if interval is None:
         return None
 
@@ -192,8 +222,8 @@ def _serialize_clip_row(row) -> dict:
         "id": str(row["clip_id"]),
         "play_index": row["play_index"],
         "period": row["period"],
-        "game_clock": str(row["game_clock"]) if row.get("game_clock") else None,
-        "game_clock_display": _format_game_clock(row.get("game_clock")),
+        "game_clock": _format_game_clock_iso(row.get("game_clock")),
+        "game_clock_display": _format_game_clock_display(row.get("game_clock")),
         "description": row["description"],
         "action_type": row.get("action_type"),
         "shot_subtype": row.get("shot_subtype"),
@@ -248,7 +278,12 @@ def search_players_endpoint():
     # Parse parameters
     q = request.args.get('q', '').strip()
     if q and len(q) < 2:
-        q = None  # Treat as absent if too short
+        raise ApiError(
+            code="invalid_param",
+            message="q must be 2-100 characters",
+            status=400,
+            details={"param": "q"}
+        )
 
     if q and len(q) > 100:
         raise ApiError(
@@ -258,8 +293,8 @@ def search_players_endpoint():
             details={"param": "q"}
         )
 
-    team_abbr = request.args.get('team', '')
-    team_id = _parse_team_abbr(team_abbr) if team_abbr else None
+    team_abbr = request.args.get('team')
+    team_id = _parse_team_abbr(team_abbr)
 
     active_str = request.args.get('active', 'true')
     active = _parse_bool(active_str, 'active')
@@ -304,7 +339,7 @@ def search_players_endpoint():
             cursor_last_name, cursor_id = cursor_key
 
     # Query
-    session = next(get_db())
+    session = next(db_session.get_db())
     rows = players_repo.search_players(
         session,
         q=q,
@@ -361,7 +396,7 @@ def search_players_endpoint():
 @require_user
 def get_player_endpoint(player_id: int):
     """GET /api/players/:id - Get player detail."""
-    session = next(get_db())
+    session = next(db_session.get_db())
 
     # Get player
     row = players_repo.get_player(session, player_id)
@@ -399,7 +434,7 @@ def get_player_endpoint(player_id: int):
 @require_user
 def get_player_clips_endpoint(player_id: int):
     """GET /api/players/:id/clips - Get clips for a player."""
-    session = next(get_db())
+    session = next(db_session.get_db())
 
     # Verify player exists
     if not players_repo.player_exists(session, player_id):
@@ -411,8 +446,21 @@ def get_player_clips_endpoint(player_id: int):
 
     # Parse filters
     VALID_ROLES = {'shot', 'assist', 'block', 'steal', 'rebound', 'foul', 'fouled', 'turnover'}
-    roles_param = request.args.getlist('role') or [request.args.get('role', '')]
-    roles = _parse_enum_list(','.join(r for r in roles_param if r), 'role', VALID_ROLES)
+    roles_param = request.args.getlist('role')
+    if not roles_param and 'role' in request.args:
+        # Single role= present
+        roles_param = [request.args.get('role')]
+    
+    # Validate no empty role values
+    if any(r == '' or (r and not r.strip()) for r in roles_param):
+        raise ApiError(
+            code="invalid_param",
+            message="role cannot be empty",
+            status=400,
+            details={"param": "role"}
+        )
+    
+    roles = _parse_enum_list(','.join(roles_param) if roles_param else '', 'role', VALID_ROLES)
 
     VALID_ACTIONS = {'shot', 'rebound', 'steal', 'block', 'turnover', 'foul', 'free_throw', 'other'}
     action_types_param = request.args.getlist('action_type') or [request.args.get('action_type', '')]
@@ -482,13 +530,14 @@ def get_player_clips_endpoint(player_id: int):
 
     if cursor_str:
         filters = {
-            "roles": roles,
+            "player_id": player_id,  # Add player_id to filter hash
+            "roles": sorted(roles) if roles else None,  # Sort list filters
             "date_from": date_from.isoformat() if date_from else None,
             "date_to": date_to.isoformat() if date_to else None,
             "season": season,
             "game_id": game_id,
-            "action_types": action_types,
-            "shot_subtypes": shot_subtypes,
+            "action_types": sorted(action_types) if action_types else None,  # Sort list filters
+            "shot_subtypes": sorted(shot_subtypes) if shot_subtypes else None,  # Sort list filters
             "outcome": outcome,
             "status": status_param
         }
@@ -522,44 +571,38 @@ def get_player_clips_endpoint(player_id: int):
         limit=limit
     )
 
-    # Check for next page
+    # Check for next page and save lookahead row before slicing
     has_next = len(rows) > limit
+    lookahead_row = rows[limit] if has_next else None
     if has_next:
         rows = rows[:limit]
-
-    # Check if last game continues
-    continues = False
-    if has_next and rows:
-        last_game_id = rows[-1]["game_id"]
-        # The lookahead row we dropped would tell us if it's the same game
-        # Since we already sliced, we need to check the original result
-        # Actually, we need to keep the extra row temporarily
-        pass  # For now, set continues based on heuristic
 
     # Group by game
     games = _group_clips_by_game(rows)
 
-    # Build next cursor
+    # Build next cursor and check continues
     next_cursor = None
     if has_next and rows:
         last = rows[-1]
+        
         key = [last["game_date"].isoformat(), int(last["clip_id"])]
         filters = {
-            "roles": roles,
+            "player_id": player_id,  # Add player_id to filter hash
+            "roles": sorted(roles) if roles else None,  # Sort list filters
             "date_from": date_from.isoformat() if date_from else None,
             "date_to": date_to.isoformat() if date_to else None,
             "season": season,
             "game_id": game_id,
-            "action_types": action_types,
-            "shot_subtypes": shot_subtypes,
+            "action_types": sorted(action_types) if action_types else None,  # Sort list filters
+            "shot_subtypes": sorted(shot_subtypes) if shot_subtypes else None,  # Sort list filters
             "outcome": outcome,
             "status": status_param
         }
         next_cursor = encode_cursor(key, filters)
 
-        # Mark last game as potentially continuing
-        if games:
-            games[-1]["continues"] = True
+        # Mark last game as continuing if lookahead row is same game
+        if games and lookahead_row:
+            games[-1]["continues"] = (lookahead_row["game_id"] == last["game_id"])
 
     response = {
         "player_id": str(player_id),
@@ -586,7 +629,7 @@ def get_player_clips_endpoint(player_id: int):
 @require_user
 def get_clip_endpoint(clip_id: int):
     """GET /api/clips/:id - Get clip detail."""
-    session = next(get_db())
+    session = next(db_session.get_db())
 
     row = clips_repo.get_clip(session, clip_id)
     if not row:
@@ -609,8 +652,8 @@ def get_clip_endpoint(clip_id: int):
         "game_date": row["game_date"].isoformat(),
         "play_index": row["play_index"],
         "period": row["period"],
-        "game_clock": str(row["game_clock"]) if row.get("game_clock") else None,
-        "game_clock_display": _format_game_clock(row.get("game_clock")),
+        "game_clock": _format_game_clock_iso(row.get("game_clock")),
+        "game_clock_display": _format_game_clock_display(row.get("game_clock")),
         "description": row["description"],
         "action_type": row.get("action_type"),
         "shot_subtype": row.get("shot_subtype"),
@@ -650,7 +693,7 @@ def get_clip_endpoint(clip_id: int):
 @require_user
 def get_playback_url_endpoint(clip_id: int):
     """GET /api/clips/:id/playback-url - Get presigned playback URL."""
-    session = next(get_db())
+    session = next(db_session.get_db())
 
     # Get minimal clip data
     clip_data = clips_repo.get_playback_target(session, clip_id)

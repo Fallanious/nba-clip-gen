@@ -14,6 +14,7 @@ below and `_make_app()`.
 """
 import base64, json, os, re, unicodedata, datetime as dt
 from types import SimpleNamespace
+from contextlib import contextmanager
 import pytest
 
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
@@ -27,8 +28,22 @@ PLAYBACK_ENV = ["S3_BUCKET", "AWS_REGION", "PLAYBACK_ALLOW_FALLBACK",
 TEST_CURSOR_SECRET = "qa-test-cursor-secret-not-real"
 
 
+def _refresh_config():
+    """config.Config reads env at class-definition time; re-read into the shared instance."""
+    import importlib
+    import config as cfg_mod
+    live = cfg_mod.config
+    fresh = importlib.reload(cfg_mod)
+    for k, v in vars(fresh.Config).items():
+        if k.isupper():
+            setattr(type(live), k, v)
+            setattr(live, k, v)
+    fresh.config = live
+
+
 def _make_app():
     import importlib
+    _refresh_config()
     mod, attr = APP_FACTORY.split(":")
     return getattr(importlib.import_module(mod), attr)()
 
@@ -195,6 +210,14 @@ class FakeDB:
     def q_players_exists(self, p):  # whatever key DEV uses for SELECT 1 (if any)
         return [{"?column?": 1}] if any(x["id"] == int(p.get("id", p.get("pid"))) for x in PLAYERS) else []
 
+    def q_teams_by_abbr(self, p):
+        """Look up team by abbreviation."""
+        abbr = p["abbr"].upper()
+        for tid, (tabbr, city, name) in TEAMS.items():
+            if tabbr == abbr:
+                return [{"id": tid}]
+        return []
+
     def q_clips_by_player(self, p):
         grouped = {}
         for pid, cid, role in CLIP_PLAYERS:
@@ -293,14 +316,29 @@ def base_env(monkeypatch):
 @pytest.fixture
 def fake_db(monkeypatch, base_env):
     db = FakeDB()
-    monkeypatch.setenv("DATABASE_URL", "postgresql://unit:unit@127.0.0.1:9/none")  # unreachable on purpose
-    monkeypatch.setattr(REGISTRY_TARGET, lambda *a, **k: _Registry(), raising=False)
-    monkeypatch.setattr(SESSION_TARGET, lambda *a, **k: _Session(db), raising=False)
+    # DATABASE_URL unset triggers test mode in session.py (no engine creation)
+    monkeypatch.delenv("DATABASE_URL", raising=False)
+    
+    # Patch BEFORE any app imports happen
+    # Patch the registry dict itself (used by repositories as `registry["key"]`)
+    # Try both with and without src prefix
+    monkeypatch.setattr("src.db.sql_loader.registry", _Registry(), raising=False)
+    monkeypatch.setattr("db.sql_loader.registry", _Registry(), raising=False)
+    
+    # Patch get_db at the definition site BEFORE routes import it
+    def fake_get_db():
+        yield _Session(db)
+    
+    monkeypatch.setattr("src.db.session.get_db", fake_get_db, raising=False)
+    monkeypatch.setattr("db.session.get_db", fake_get_db, raising=False)
+    
     return db
 
 
 @pytest.fixture
-def app(fake_db):
+def app(fake_db, monkeypatch):
+    # Ensure patches are in place before create_app imports anything
+    # The fake_db fixture has already patched everything we need
     a = _make_app()
     a.config.update(TESTING=True)
     return a
@@ -332,6 +370,7 @@ def playback_configured(monkeypatch):
             raise stub.head_exc
         return {"ContentLength": 1}
 
+    _refresh_config()  # config is read at import; re-read after setenv
     stub.generate_presigned_url = generate_presigned_url
     stub.head_object = head_object
     monkeypatch.setattr(S3_CLIENT_TARGET, lambda *a, **k: stub, raising=False)
