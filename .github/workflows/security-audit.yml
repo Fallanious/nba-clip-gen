@@ -25,7 +25,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install pip-audit
-        run: python -m pip install pip-audit==2.10.1
+        run: python -m pip install --require-hashes -r requirements-pip-audit.txt
 
       - name: Audit lock file
         run: pip-audit --desc -r requirements.lock

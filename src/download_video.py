@@ -6,6 +6,7 @@ import shutil
 import signal
 import argparse
 import subprocess
+import threading
 from urllib.parse import urlparse
 
 
@@ -38,6 +39,8 @@ ALLOWED_YOUTUBE_HOSTS = frozenset({
 })
 
 STDERR_MAX_LENGTH = 500
+# Cap raw captured yt-dlp stderr so a noisy child cannot fill memory.
+STDERR_CAPTURE_MAX = 64 * 1024
 
 
 def _video_saved_since(folder, started):
@@ -284,24 +287,55 @@ def _kill_process_group(proc):
         pass
 
 
+def _drain_stderr_capped(stream, max_bytes=STDERR_CAPTURE_MAX):
+    """Read stderr, keep at most max_bytes, and drain the rest so the child cannot block."""
+    if stream is None:
+        return b""
+    buf = bytearray()
+    while True:
+        chunk = stream.read(4096)
+        if not chunk:
+            break
+        room = max_bytes - len(buf)
+        if room > 0:
+            buf.extend(chunk[:room])
+    return bytes(buf)
+
+
 def run_ytdlp_subprocess(cmd, timeout):
     """
     Run yt-dlp in a new session and kill the whole process group on timeout.
 
     stdout is inherited so progress streams to the job log. stderr is captured
-    so failures can be sanitized before they are raised or logged.
+    with a hard size cap so failures can be sanitized without unbounded buffering.
     """
     proc = subprocess.Popen(
         cmd,
         stdout=None,
         stderr=subprocess.PIPE,
         start_new_session=True,
+        bufsize=0,
     )
+    captured = []
+
+    def _reader():
+        captured.append(_drain_stderr_capped(proc.stderr, STDERR_CAPTURE_MAX))
+
+    reader = threading.Thread(target=_reader, daemon=True)
+    reader.start()
     try:
-        _, stderr = proc.communicate(timeout=timeout)
+        proc.wait(timeout=timeout)
     except subprocess.TimeoutExpired:
         _kill_process_group(proc)
+        try:
+            if proc.stderr:
+                proc.stderr.close()
+        except Exception:
+            pass
+        reader.join(timeout=5)
         raise subprocess.TimeoutExpired(cmd, timeout, output=b"Download timed out")
+    reader.join(timeout=5)
+    stderr = captured[0] if captured else b""
     if proc.returncode:
         raise subprocess.CalledProcessError(proc.returncode, cmd, stderr=stderr)
     return subprocess.CompletedProcess(cmd, proc.returncode, stdout=b"", stderr=stderr)

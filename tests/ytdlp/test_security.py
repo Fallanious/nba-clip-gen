@@ -21,6 +21,8 @@ from download_video import (
     MIN_MAX_FILESIZE,
     MIN_SOCKET_TIMEOUT,
     MIN_TIMEOUT,
+    STDERR_CAPTURE_MAX,
+    _drain_stderr_capped,
     _sanitize_stderr,
     _validate_youtube_url,
     build_ytdlp_cmd,
@@ -288,6 +290,8 @@ class TestRealYtDlpCli:
 
 class TestProcessGroupKill:
     def test_timeout_kills_process_group(self, monkeypatch):
+        import io
+
         killed = []
 
         class FakePopen:
@@ -296,13 +300,10 @@ class TestProcessGroupKill:
                 self.pid = 4242
                 self.returncode = None
                 self.args = cmd
-
-            def communicate(self, timeout=None):
-                raise subprocess.TimeoutExpired(self.args, timeout)
+                self.stderr = io.BytesIO(b"")
 
             def wait(self, timeout=None):
-                self.returncode = -9
-                return -9
+                raise subprocess.TimeoutExpired(self.args, timeout)
 
             def kill(self):
                 killed.append(("kill", self.pid))
@@ -322,6 +323,8 @@ class TestProcessGroupKill:
         assert (4242, signal.SIGKILL) in killed
 
     def test_popen_uses_new_session(self, monkeypatch):
+        import io
+
         seen = {}
 
         class FakePopen:
@@ -329,13 +332,15 @@ class TestProcessGroupKill:
                 seen.update(k)
                 self.pid = 1
                 self.returncode = 0
+                self.stderr = io.BytesIO(b"")
 
-            def communicate(self, timeout=None):
-                return b"", b""
+            def wait(self, timeout=None):
+                return 0
 
         monkeypatch.setattr(subprocess, "Popen", FakePopen)
         run_ytdlp_subprocess(["true"], timeout=5)
         assert seen.get("start_new_session") is True
+        assert seen.get("bufsize") == 0
 
 
 # ==================== Stderr Sanitization Tests ====================
@@ -373,6 +378,25 @@ class TestStderrSanitization:
     def test_sanitize_none_stderr(self):
         result = _sanitize_stderr(None)
         assert "No error details available" in result
+
+    def test_drain_stderr_capped_keeps_limit(self):
+        import io
+
+        data = b"A" * (STDERR_CAPTURE_MAX + 8000)
+        result = _drain_stderr_capped(io.BytesIO(data))
+        assert len(result) == STDERR_CAPTURE_MAX
+        assert result == b"A" * STDERR_CAPTURE_MAX
+
+    def test_run_ytdlp_subprocess_caps_stderr(self):
+        n = STDERR_CAPTURE_MAX + 20000
+        script = (
+            "import sys; sys.stderr.buffer.write(b'Z' * %d); "
+            "sys.stderr.buffer.flush(); raise SystemExit(1)" % n
+        )
+        with pytest.raises(subprocess.CalledProcessError) as ei:
+            run_ytdlp_subprocess([sys.executable, "-c", script], timeout=10)
+        assert ei.value.stderr is not None
+        assert len(ei.value.stderr) <= STDERR_CAPTURE_MAX
 
 
 # ==================== bbref_id Validation Tests ====================
@@ -487,6 +511,14 @@ class TestSecurityIntegration:
 # ==================== Supply chain / repo policy Tests ====================
 
 class TestSupplyChain:
+    def _lock_version(self, text, name):
+        match = re.search(rf"^{re.escape(name)}==([0-9][^\s\\]+)", text, re.M)
+        assert match, f"{name} missing from lock/requirements"
+        return match.group(1)
+
+    def _version_tuple(self, ver):
+        return tuple(int(p) if p.isdigit() else p for p in ver.split("."))
+
     def test_requirements_lock_has_hashes_and_ytdlp_pin(self):
         lock_path = os.path.join(REPO_ROOT, "requirements.lock")
         assert os.path.isfile(lock_path), "requirements.lock is missing"
@@ -495,6 +527,14 @@ class TestSupplyChain:
         assert "yt-dlp==2026.10.26" in lock
         for pkg in ("boto3==", "sqlalchemy==", "python-dotenv==", "psycopg==", "alembic==", "click=="):
             assert pkg in lock
+        assert "flask==3.1.0" not in lock
+        assert "lxml==5.3.0" not in lock
+        assert "python-dotenv==1.0.1" not in lock
+        assert "requests==2.32.3" not in lock
+        assert self._version_tuple(self._lock_version(lock, "flask")) >= (3, 1, 3)
+        assert self._version_tuple(self._lock_version(lock, "lxml")) >= (6, 1, 0)
+        assert self._version_tuple(self._lock_version(lock, "python-dotenv")) >= (1, 2, 2)
+        assert self._version_tuple(self._lock_version(lock, "requests")) >= (2, 33, 0)
 
     def test_runtime_requirements_pin_ytdlp_and_db_libs(self):
         req = open(os.path.join(REPO_ROOT, "requirements.txt"), encoding="utf-8").read()
@@ -503,12 +543,31 @@ class TestSupplyChain:
             assert pkg in req
         for dev in ("uv==", "pylint==", "black==", "ruff==", "pytest=="):
             assert not re.search(rf"^{re.escape(dev)}", req, re.M)
+        assert self._version_tuple(self._lock_version(req, "flask")) >= (3, 1, 3)
+        assert self._version_tuple(self._lock_version(req, "lxml")) >= (6, 1, 0)
+        assert self._version_tuple(self._lock_version(req, "python-dotenv")) >= (1, 2, 2)
+        assert self._version_tuple(self._lock_version(req, "requests")) >= (2, 33, 0)
 
     def test_dev_tools_live_in_requirements_dev(self):
         dev = open(os.path.join(REPO_ROOT, "requirements-dev.txt"), encoding="utf-8").read()
         assert "-r requirements.txt" in dev
-        for pkg in ("uv==", "pylint==", "black==", "ruff==", "pytest=="):
+        for pkg in ("uv==", "pylint==", "black==", "ruff==", "pytest==", "pip-audit=="):
             assert pkg in dev
+
+    def test_requirements_dev_lock_has_hashes(self):
+        lock_path = os.path.join(REPO_ROOT, "requirements-dev.lock")
+        assert os.path.isfile(lock_path), "requirements-dev.lock is missing"
+        lock = open(lock_path, encoding="utf-8").read()
+        assert "--hash=sha256:" in lock
+        for pkg in ("pytest==", "pip-audit==", "black==", "ruff==", "pylint=="):
+            assert pkg in lock
+
+    def test_pip_audit_install_uses_hashed_requirements(self):
+        hashed = os.path.join(REPO_ROOT, "requirements-pip-audit.txt")
+        assert os.path.isfile(hashed)
+        text = open(hashed, encoding="utf-8").read()
+        assert "pip-audit==2.10.1" in text
+        assert "--hash=sha256:" in text
 
     def test_security_audit_workflow_hardening(self):
         path = os.path.join(REPO_ROOT, ".github", "workflows", "security-audit.yml")
@@ -516,7 +575,9 @@ class TestSupplyChain:
         assert "contents: read" in src
         assert re.search(r"actions/checkout@[0-9a-f]{40}", src)
         assert re.search(r"actions/setup-python@[0-9a-f]{40}", src)
-        assert "pip-audit==2.10.1" in src
+        assert "--require-hashes" in src
+        assert "requirements-pip-audit.txt" in src
+        assert "pip install pip-audit==2.10.1" not in src
         assert "requirements.lock" in src
         assert "pip install -r requirements.txt" not in src
         assert "pip-audit --desc -r requirements.lock" in src
