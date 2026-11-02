@@ -600,6 +600,7 @@ class TestSupplyChain:
         assert "pip install -r requirements.txt" not in src
         assert "pip-audit --desc -r requirements.lock" in src
         assert "pip-audit --desc -r requirements-dev.lock" in src
+        assert "pip-audit --desc -r requirements-pip-audit.txt" in src
 
     def test_readme_does_not_document_removed_js_runtime_config(self):
         readme = open(os.path.join(REPO_ROOT, "README.md"), encoding="utf-8").read()

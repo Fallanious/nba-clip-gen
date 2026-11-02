@@ -127,16 +127,18 @@ def test_installed_versions_match_pins():
     import importlib.metadata
 
     pins = _pins(os.path.join(REPO_ROOT, "requirements.txt"))
+    missing = []
+    mismatches = []
     for name, ver in pins.items():
-        dist_name = name
         try:
-            installed = importlib.metadata.version(dist_name)
+            installed = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:
+            missing.append(f"{name}=={ver}")
             continue
         if installed != ver:
-            if not os.environ.get("CI"):
-                pytest.skip(f"{name}: installed {installed} != pin {ver} (stale venv)")
-            assert installed == ver, f"{name}: installed {installed} != pin {ver}"
+            mismatches.append(f"{name}: installed {installed} != pin {ver}")
+    assert not missing, "pinned packages not installed:\n" + "\n".join(missing)
+    assert not mismatches, "installed versions do not match pins:\n" + "\n".join(mismatches)
 
 
 def test_ytdlp_supports_js_runtimes_flag():
@@ -165,8 +167,12 @@ def test_ci_workflow_runs_pip_audit_on_all_locks():
             if "run" in step:
                 runs.append(step["run"])
     joined = "\n".join(runs)
-    assert "pip-audit" in joined and "-r requirements.lock" in joined
-    assert "-r requirements-dev.lock" in joined
+    audit_runs = [r for r in runs if re.search(r"^\s*pip-audit\b", r, re.M)]
+    joined_audit = "\n".join(audit_runs)
+    assert audit_runs, "expected pip-audit steps in the workflow"
+    assert "-r requirements.lock" in joined_audit
+    assert "-r requirements-dev.lock" in joined_audit
+    assert "-r requirements-pip-audit.txt" in joined_audit
     assert "--require-hashes" in joined
     assert uses, "expected SHA-pinned actions"
     for spec in uses:
@@ -175,16 +181,18 @@ def test_ci_workflow_runs_pip_audit_on_all_locks():
 
 
 def test_ci_runs_pytest():
-    workflows = os.path.join(REPO_ROOT, ".github", "workflows")
+    path = os.path.join(REPO_ROOT, ".github", "workflows", "security-audit.yml")
+    data = yaml.safe_load(open(path, encoding="utf-8"))
     found = False
-    for name in os.listdir(workflows):
-        if not name.endswith((".yml", ".yaml")):
-            continue
-        text = open(os.path.join(workflows, name), encoding="utf-8").read()
-        if "pytest tests/ytdlp" in text:
-            found = True
+    for job in (data.get("jobs") or {}).values():
+        for step in job.get("steps") or []:
+            run = step.get("run") or ""
+            if re.search(r"\bpytest\b", run) and "tests/ytdlp" in run:
+                found = True
+                break
+        if found:
             break
-    assert found, "no workflow step runs `pytest tests/ytdlp`"
+    assert found, "no workflow step runs pytest on tests/ytdlp"
 
 
 @pytest.mark.network
