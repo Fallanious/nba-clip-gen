@@ -4,6 +4,7 @@ import time
 import shutil
 import subprocess
 import argparse
+import re
 
 
 class JsRuntimeNotFound(RuntimeError):
@@ -26,6 +27,75 @@ def _video_saved_since(folder, started):
             newest = path
             newest_mtime = mtime
     return newest
+
+
+def _sanitize_stderr(stderr_bytes, max_length=500):
+    """
+    Sanitize and truncate stderr output from yt-dlp.
+    
+    Args:
+        stderr_bytes: Raw stderr bytes from subprocess
+        max_length: Maximum length of sanitized output
+        
+    Returns:
+        str: Sanitized and truncated error message
+    """
+    if not stderr_bytes:
+        return "No error details available"
+    
+    try:
+        stderr = stderr_bytes.decode('utf-8', errors='replace')
+    except Exception:
+        return "Error decoding stderr"
+    
+    # Remove control characters and excessive whitespace
+    stderr = re.sub(r'[\x00-\x08\x0b-\x0c\x0e-\x1f\x7f-\x9f]', '', stderr)
+    stderr = ' '.join(stderr.split())
+    
+    # Truncate to max length
+    if len(stderr) > max_length:
+        stderr = stderr[:max_length] + "... (truncated)"
+    
+    return stderr
+
+
+def _validate_youtube_url(url):
+    """
+    Validate that URL is a safe YouTube URL.
+    
+    Args:
+        url: URL to validate
+        
+    Returns:
+        bool: True if valid YouTube URL
+        
+    Raises:
+        ValueError: If URL is invalid or not from YouTube
+    """
+    if not url:
+        raise ValueError("URL cannot be empty")
+    
+    # Must be https
+    if not url.startswith('https://'):
+        raise ValueError("Only HTTPS URLs are allowed")
+    
+    # Must be from youtube.com or youtu.be
+    # Parse hostname safely
+    from urllib.parse import urlparse
+    try:
+        parsed = urlparse(url)
+    except Exception as e:
+        raise ValueError(f"Invalid URL format: {e}")
+    
+    hostname = parsed.hostname
+    if not hostname:
+        raise ValueError("URL must have a valid hostname")
+    
+    hostname = hostname.lower()
+    if hostname not in ('youtube.com', 'www.youtube.com', 'youtu.be', 'www.youtu.be', 'm.youtube.com'):
+        raise ValueError(f"Only YouTube URLs are allowed (youtube.com or youtu.be), got: {hostname}")
+    
+    return True
 
 
 def detect_js_runtime(runtime=None):
@@ -142,10 +212,10 @@ def _with_venv_python(cmd):
 
 def build_ytdlp_cmd(url, resolution=None, runtime=None):
     """
-    Build yt-dlp command using recommended invocation.
+    Build yt-dlp command using recommended invocation with security controls.
     
     Args:
-        url: Video URL to download
+        url: Video URL to download (must be HTTPS YouTube URL)
         resolution: Maximum resolution (int, string, or None for default/env)
         runtime: JavaScript runtime to use ('node', 'deno', or None for auto-detect)
         
@@ -154,13 +224,20 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None):
         
     Raises:
         JsRuntimeNotFound: If no JavaScript runtime is available
-        ValueError: If resolution is invalid or runtime is not 'node'/'deno'
+        ValueError: If resolution is invalid, runtime is not 'node'/'deno', or URL is unsafe
     """
+    # Validate URL first
+    _validate_youtube_url(url)
+    
     # Detect or validate JS runtime
     runtime = detect_js_runtime(runtime)
     
     # Resolve resolution
     res = resolve_resolution(resolution)
+    
+    # Get security timeouts from environment
+    socket_timeout = int(os.environ.get('YTDLP_SOCKET_TIMEOUT', '300'))  # 5 minutes default
+    max_filesize = int(os.environ.get('YTDLP_MAX_FILESIZE', '5368709120'))  # 5GB default
     
     # Build command: python -m yt_dlp --js-runtimes <runtime> -S "res:<N>,+size" -f "bv*+ba/b" --merge-output-format mkv URL
     cmd = [
@@ -169,13 +246,19 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None):
         "-S", f"res:{res},+size",
         "-f", "bv*+ba/b",
         "--merge-output-format", "mkv",
+        "--restrict-filenames",  # Security: sanitize filenames
     ]
     
-    # Handle URLs that look like options
-    if url.startswith("-"):
-        cmd.extend(["--", url])
-    else:
-        cmd.append(url)
+    # Add security timeouts
+    if socket_timeout > 0:
+        cmd.extend(["--socket-timeout", str(socket_timeout)])
+    
+    if max_filesize > 0:
+        cmd.extend(["--max-filesize", str(max_filesize)])
+    
+    # Always use -- to separate options from URL (security: prevent URL as option)
+    cmd.append("--")
+    cmd.append(url)
     
     return _with_venv_python(cmd)
 
@@ -185,7 +268,7 @@ def download_video(url, output_folder="film", resolution=None):
     Download video using yt-dlp with recommended invocation.
     
     Args:
-        url: Video URL to download
+        url: Video URL to download (must be HTTPS YouTube URL)
         output_folder: Folder to save video (default: 'film')
         resolution: Maximum resolution in pixels (None uses YTDLP_MAX_RES env or default 720)
         
@@ -194,9 +277,13 @@ def download_video(url, output_folder="film", resolution=None):
         
     Raises:
         JsRuntimeNotFound: If no JavaScript runtime is available
-        ValueError: If resolution is invalid
+        ValueError: If resolution is invalid or URL is unsafe
         subprocess.CalledProcessError: If yt-dlp fails
+        subprocess.TimeoutExpired: If download times out
     """
+    # Validate URL
+    _validate_youtube_url(url)
+    
     # Create output folder (handle both absolute and relative paths)
     if os.path.isabs(output_folder):
         output_path = output_folder
@@ -210,15 +297,12 @@ def download_video(url, output_folder="film", resolution=None):
     # Build command
     cmd = build_ytdlp_cmd(url, resolution=resolution)
     
-    # Add output template with absolute path
-    template = os.path.join(os.path.abspath(output_path), "%(title)s.%(ext)s")
-    # Insert -o before the URL (last arg or after --)
-    if "--" in cmd:
-        idx = cmd.index("--")
-    else:
-        idx = len(cmd) - 1
-    cmd.insert(idx, "-o")
-    cmd.insert(idx + 1, template)
+    # Add output template with absolute path - use video ID instead of title for security
+    template = os.path.join(os.path.abspath(output_path), "%(id)s.%(ext)s")
+    # Insert -o before the URL (after --)
+    url_idx = cmd.index(url)
+    cmd.insert(url_idx, "-o")
+    cmd.insert(url_idx + 1, template)
     
     print(f"Downloading to {output_folder}...")
     print(f"Resolution: {resolve_resolution(resolution)}p")
@@ -226,13 +310,23 @@ def download_video(url, output_folder="film", resolution=None):
     
     started = time.time()
     
-    # Run yt-dlp with streaming output (don't capture stdout/stderr)
+    # Get timeout from environment
+    timeout = int(os.environ.get('YTDLP_TIMEOUT', '1800'))  # 30 minutes default
+    
+    # Run yt-dlp with timeout
     try:
-        subprocess.run(cmd, check=True)
+        subprocess.run(cmd, check=True, timeout=timeout, capture_output=True)
+    except subprocess.TimeoutExpired as e:
+        raise subprocess.TimeoutExpired(
+            e.cmd, e.timeout,
+            output=b"Download timed out"
+        )
     except subprocess.CalledProcessError as e:
+        # Sanitize stderr before raising
+        sanitized = _sanitize_stderr(e.stderr)
         raise subprocess.CalledProcessError(
             e.returncode, e.cmd,
-            stderr=f"yt-dlp failed with exit code {e.returncode}".encode('utf-8')
+            stderr=f"yt-dlp failed: {sanitized}".encode('utf-8')
         )
     
     # Find saved file
@@ -253,6 +347,9 @@ def main():
 Environment Variables:
   YTDLP_MAX_RES        Maximum video resolution in pixels (default: 720)
                        Valid range: 144-4320
+  YTDLP_TIMEOUT        Download timeout in seconds (default: 1800)
+  YTDLP_SOCKET_TIMEOUT Socket timeout in seconds (default: 300)
+  YTDLP_MAX_FILESIZE   Maximum file size in bytes (default: 5GB)
 
 Examples:
   %(prog)s "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -261,7 +358,7 @@ Examples:
         """
     )
     
-    parser.add_argument('url', help='YouTube video URL to download')
+    parser.add_argument('url', help='YouTube video URL to download (HTTPS only)')
     parser.add_argument(
         '--resolution',
         type=int,
@@ -284,8 +381,11 @@ Examples:
     except ValueError as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)
+    except subprocess.TimeoutExpired as e:
+        print(f"ERROR: Download timed out after {e.timeout} seconds", file=sys.stderr)
+        sys.exit(1)
     except subprocess.CalledProcessError as e:
-        stderr = e.stderr.decode('utf-8') if e.stderr else str(e)
+        stderr = _sanitize_stderr(e.stderr)
         print(f"ERROR: {stderr}", file=sys.stderr)
         sys.exit(1)
     except Exception as e:

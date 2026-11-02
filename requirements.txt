@@ -1,12 +1,19 @@
-uv
-pylint
-black
-ruff
-yt-dlp
-requests
-beautifulsoup4
-lxml
-flask
-flask-cors
-pytest
-boto3
+# Development tools
+uv==0.5.11
+pylint==3.3.4
+black==25.1.0
+ruff==0.9.1
+
+# Core dependencies - pinned for security
+yt-dlp==2024.11.4
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+flask==3.1.0
+flask-cors==6.0.5
+boto3==1.35.98
+sqlalchemy==2.0.36
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.4

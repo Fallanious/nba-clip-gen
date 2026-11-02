@@ -33,11 +33,19 @@ def test_argv_is_list_no_shell(which, fake_run, tmp_path):
     assert fake_run and isinstance(fake_run[0], list)
 
 
-@pytest.mark.parametrize("hostile", ["https://x.test/v?a=1;rm -rf /", "--exec=touch /tmp/pwn"])
+@pytest.mark.parametrize("hostile", ["https://www.youtube.com/watch?v=-exec%3Dtouch%20pwn"])
 def test_url_not_treated_as_option(which, hostile):
+    """Test URL is placed after -- separator."""
     argv = build(hostile)
-    if hostile.startswith("-"):
-        assert "--" in argv and argv.index("--") < argv.index(hostile), "option-looking URL must follow --"
+    assert "--" in argv, "URLs must be separated with --"
+    # Verify URL comes after --
+    dash_idx = argv.index("--")
+    url_in_cmd = False
+    for i in range(dash_idx + 1, len(argv)):
+        if "youtube.com" in argv[i]:
+            url_in_cmd = True
+            break
+    assert url_in_cmd, "URL must appear after --"
 
 
 # ---------- resolution ----------
