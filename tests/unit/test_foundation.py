@@ -2,6 +2,7 @@
 import pytest
 import sys
 import os
+import re
 
 sys.path.insert(0, 'src')
 
@@ -186,6 +187,14 @@ def test_request_id_validation():
         r = client.get('/api/jobs', headers={'X-Request-Id': 'a' * 65})
         assert r.headers.get('X-Request-Id') != ('a' * 65)
 
+        import inspect
+        from app import create_app as factory
+        src = inspect.getsource(factory)
+        assert "re.fullmatch" in src
+        assert "re.match" not in src
+        # '$' in re.match allows a trailing newline; fullmatch does not
+        assert re.fullmatch(r"[A-Za-z0-9-]{1,64}", "req-123-abc\n") is None
+
 
 def test_bind_host_defaults_to_localhost():
     """SECURITY: default bind is 127.0.0.1, not 0.0.0.0."""
@@ -210,3 +219,37 @@ def test_apierror_503_sets_retry_after():
         assert r.status_code == 503
         assert r.headers.get('Retry-After') == '2'
         assert r.get_json()['error']['code'] == 'db_unavailable'
+
+
+@pytest.mark.parametrize("raw", [None, "", " ", "Prod ", "qa"])
+def test_app_env_required(raw, monkeypatch):
+    """APP_ENV has no default; missing or unknown values refuse to start."""
+    if raw is None:
+        monkeypatch.delenv("APP_ENV", raising=False)
+    else:
+        monkeypatch.setenv("APP_ENV", raw)
+    monkeypatch.setenv("CURSOR_SECRET", "k" * 32)
+    from config import Config
+    with pytest.raises(ValueError, match="APP_ENV") as ei:
+        Config().validate()
+    assert "k" * 32 not in str(ei.value)
+
+
+@pytest.mark.parametrize("env", ["dev", "test", "prod", "production", "staging"])
+def test_known_app_env_accepted(env, monkeypatch):
+    monkeypatch.setenv("APP_ENV", env)
+    monkeypatch.setenv("CURSOR_SECRET", "k" * 32)
+    from config import Config
+    Config().validate()
+
+
+def test_stub_admin_only_in_explicit_dev(monkeypatch):
+    from auth import resolve_user, validate_auth_for_startup
+    monkeypatch.setenv("APP_ENV", "dev")
+    validate_auth_for_startup()
+    resolve_user(None)
+    monkeypatch.setenv("APP_ENV", "prod")
+    with pytest.raises(ValueError, match="explicitly dev"):
+        validate_auth_for_startup()
+    with pytest.raises(RuntimeError, match="explicitly dev"):
+        resolve_user(None)

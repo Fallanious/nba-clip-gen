@@ -71,7 +71,7 @@ def test_signature_variants_rejected_via_compare_digest(mutate, monkeypatch):
     assert called, "hmac.compare_digest must be invoked"
 
 
-@pytest.mark.parametrize("env", ["dev", "test", "prod"])
+@pytest.mark.parametrize("env", ["dev", "test", "prod", "production", "staging"])
 def test_known_app_env_boots(env, monkeypatch):
     monkeypatch.setenv("APP_ENV", env)
     monkeypatch.setenv("CURSOR_SECRET", "k" * 32)
@@ -228,13 +228,14 @@ def test_cursor_size_limit_in_bytes(monkeypatch):
 
     hmac_calls.clear()
     decode_calls.clear()
-    at_limit = "A" * pagination.MAX_CURSOR_BYTES
+    # 1024 bytes *with* a separator so the size check passes and HMAC/decode run.
+    at_limit = "x." + ("A" * (pagination.MAX_CURSOR_BYTES - 2))
     assert len(at_limit.encode("utf-8")) == 1024
     with pytest.raises(ApiError) as ei:
         pagination.decode_cursor(at_limit, {})
     assert ei.value.code == "invalid_cursor"
     assert ei.value.status == 400
-    # 1024 bytes is allowed through the size check, so HMAC may run.
+    assert hmac_calls or decode_calls, "1024-byte cursor must pass the size check"
 
     hmac_calls.clear()
     decode_calls.clear()
@@ -249,10 +250,11 @@ def test_cursor_size_limit_in_bytes(monkeypatch):
 
     hmac_calls.clear()
     decode_calls.clear()
-    utf8_ok = "é" * 512  # 1024 bytes
+    utf8_ok = "." + ("é" * 511) + "a"  # 1 + 1022 + 1 = 1024 bytes, has separator
     assert len(utf8_ok.encode("utf-8")) == 1024
     with pytest.raises(ApiError):
         pagination.decode_cursor(utf8_ok, {})
+    assert hmac_calls or decode_calls
     hmac_calls.clear()
     decode_calls.clear()
     utf8_bad = "é" * 512 + "x"  # 1025 bytes
