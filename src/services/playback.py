@@ -3,7 +3,6 @@
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 import os
-import mimetypes
 import boto3
 from botocore.exceptions import (
     ClientError, NoCredentialsError, ReadTimeoutError, EndpointConnectionError, BotoCoreError,
@@ -11,9 +10,7 @@ from botocore.exceptions import (
 from config import config
 from errors import ApiError
 
-# Match PR #2 services.storage.CONTENT_TYPES so upload ContentType and
-# presign ResponseContentType agree. Prefer video/x-matroska over RFC 9559
-# video/matroska, which some mimetypes databases emit for .mkv.
+# Explicit table so MIME does not depend on the OS mime.types database.
 _MIME_BY_EXT = {
     ".mkv": "video/x-matroska",
     ".mp4": "video/mp4",
@@ -22,12 +19,9 @@ _MIME_BY_EXT = {
 
 
 def _mime_for_key(key: str) -> str:
-    """Content-Type from the object key's extension."""
+    """Content-Type from the object key's extension. Table only; never guess."""
     ext = os.path.splitext(key or "")[1].lower()
-    if ext in _MIME_BY_EXT:
-        return _MIME_BY_EXT[ext]
-    guessed, _ = mimetypes.guess_type(key or "")
-    return guessed or "application/octet-stream"
+    return _MIME_BY_EXT.get(ext, "application/octet-stream")
 
 
 def _allow_fallback() -> bool:
