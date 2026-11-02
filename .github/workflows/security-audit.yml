@@ -29,3 +29,12 @@ jobs:
 
       - name: Audit lock file
         run: pip-audit --desc -r requirements.lock
+
+      - name: Audit dev lock file
+        run: pip-audit --desc -r requirements-dev.lock
+
+      - name: Install project and test dependencies
+        run: python -m pip install --require-hashes -r requirements-dev.lock
+
+      - name: Run yt-dlp tests
+        run: pytest tests/ytdlp

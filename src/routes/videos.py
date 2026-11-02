@@ -87,7 +87,10 @@ def parse_video_filename(filename):
 def serve_video(filename):
     """Serve a video file from the film directory with range request support."""
     film_dir = os.path.join(BASE_DIR, "film")
-    return send_from_directory(film_dir, filename, conditional=True)
+    kwargs = {"conditional": True}
+    if os.path.splitext(filename)[1].lower() == ".mkv":
+        kwargs["mimetype"] = "video/x-matroska"
+    return send_from_directory(film_dir, filename, **kwargs)
 
 
 @bp.route("/api/videos")

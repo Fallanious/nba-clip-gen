@@ -77,6 +77,30 @@ def combine_clips(clip_paths, output_path):
         return False
 
 
+def probe_codecs(path):
+    """Return (vcodec, acodec) for the first video and audio streams via ffprobe."""
+    cmd = [
+        'ffprobe',
+        '-v', 'error',
+        '-show_entries', 'stream=codec_type,codec_name',
+        '-of', 'json',
+        path,
+    ]
+    result = subprocess.run(
+        cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+    )
+    data = json.loads(result.stdout or '{}')
+    vcodec = acodec = None
+    for stream in data.get('streams') or []:
+        codec_type = stream.get('codec_type')
+        codec_name = stream.get('codec_name')
+        if codec_type == 'video' and vcodec is None:
+            vcodec = codec_name
+        elif codec_type == 'audio' and acodec is None:
+            acodec = codec_name
+    return vcodec, acodec
+
+
 def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True, fast_copy=True):
     """
     Extract a clip from video using ffmpeg.
@@ -88,17 +112,21 @@ def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True,
         output_path: Output clip path
         keep_audio: Include audio in clip
         fast_copy: Use codec copy for faster extraction (no re-encoding)
-                   Note: When going from mkv to mp4, re-encoding is enforced for browser compatibility
+                   Note: mp4/mov clip output is re-encoded unless the source is already H.264+AAC
     """
     duration = end_time - start_time
     
-    # Determine if we need to re-encode for browser compatibility
-    input_ext = os.path.splitext(video_path)[1].lower()
     output_ext = os.path.splitext(output_path)[1].lower()
     
-    # mkv from bv*+ba/b may contain VP9/AV1+Opus. Using -c copy into mp4 can result in
-    # codecs that play poorly in Safari. Always re-encode mkv→mp4 to H.264/AAC.
-    force_reencode = input_ext == '.mkv' and output_ext == '.mp4'
+    # mkv/webm/mov from bv*+ba/b may contain VP9/AV1+Opus. Using -c copy into mp4 can result in
+    # codecs that play poorly in Safari. Re-encode mp4/mov clips unless probe_codecs reports H.264+AAC.
+    force_reencode = not fast_copy
+    if fast_copy and output_ext in ('.mp4', '.mov'):
+        try:
+            vcodec, acodec = probe_codecs(video_path)
+            force_reencode = vcodec != 'h264' or acodec != 'aac'
+        except (subprocess.CalledProcessError, OSError, ValueError):
+            force_reencode = True
     
     # Build ffmpeg command
     # Use -ss before -i for faster seeking

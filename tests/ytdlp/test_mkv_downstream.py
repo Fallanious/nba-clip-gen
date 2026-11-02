@@ -23,6 +23,15 @@ def test_mkv_to_mp4_fast_copy_is_browser_safe(fake_run, tmp_path):
     assert "libx264" in argv or "-c copy" not in argv, "copying unknown codecs from mkv into mp4"
 
 
+@pytest.mark.parametrize("src_name", ["g.webm", "g.mp4"])
+def test_non_mkv_to_mp4_also_reencodes(fake_run, tmp_path, src_name):
+    """`/b` fallback can yield webm (VP9/Opus) or an mp4 that still carries AV1."""
+    load(CLIPS_MODULE, "extract_clip")(str(tmp_path / src_name), 0, 5, str(tmp_path / "c.mp4"))
+    argv = " ".join(map(str, fake_run[-1]))
+    assert "libx264" in argv
+    assert "-c copy" not in argv
+
+
 def test_faststart_only_for_mp4_output(fake_run, tmp_path):
     load(CLIPS_MODULE, "extract_clip")(str(tmp_path / "g.mkv"), 0, 5, str(tmp_path / "c.mkv"))
     assert "+faststart" not in map(str, fake_run[-1])  # mov/mp4-only muxer flag
@@ -93,42 +102,104 @@ def test_upload_sets_content_type_mkv(fake_s3, tmp_path):
 
 
 # ---------- leftover hardcoded .mp4 audit ----------
-ALLOWED_MP4 = [  # file -> regex of lines that may legitimately mention mp4 (clip output is still mp4)
-    # Lines with default='mp4' and help text  
-    (r"generate_clips\.py", r"default='mp4'"),
-    # Example usage lines
-    (r"generate_clips\.py", r"%\(prog\)s video\.mp4"),
-    # Line 91: docstring note about mkv to mp4
-    (r"generate_clips\.py", r"Note.*mkv.*mp4.*browser"),
-    # Lines 99-101: mkv→mp4 codec safety comments and code
-    (r"generate_clips\.py", r"mkv.*VP9.*mp4"),
-    (r"generate_clips\.py", r"Safari.*mkv.*mp4"),
-    (r"generate_clips\.py", r"force_reencode.*mkv.*mp4"),
-    # Lines 122-123: faststart flag comments and code
-    (r"generate_clips\.py", r"faststart.*mp4"),
-    (r"generate_clips\.py", r"output_ext.*mp4.*mov"),
-    # Multi-format tuple patterns in routes
-    (r"routes/(videos|timestamps)\.py", r"\(\s*\"\.mp4\",\s*\"\.mkv\"|# Support all video formats.*mp4"),
-    (r"services/(playback|storage)\.py", r"video/mp4"),
-    (r"download_video\.py", r"\.mp4.*\.mkv.*\.webm"),
-]
+# Exact (relpath, stripped line) -> reason. Unanchored regexes were matching stray lines.
+ALLOWED_MP4 = {  # (relpath, exact stripped line) -> reason
+    ("src/download_video.py", 'if not name.endswith((".mp4", ".mkv", ".webm")):'): "saved-file scan",
+    ("src/generate_clips.py", "Note: mp4/mov clip output is re-encoded unless the source is already H.264+AAC"): "doc",
+    ("src/generate_clips.py", "# mkv/webm/mov from bv*+ba/b may contain VP9/AV1+Opus. Using -c copy into mp4 can result in"): "doc",
+    ("src/generate_clips.py", "# codecs that play poorly in Safari. Re-encode mp4/mov clips unless probe_codecs reports H.264+AAC."): "doc",
+    ("src/generate_clips.py", "if fast_copy and output_ext in ('.mp4', '.mov'):"): "probe-based re-encode guard",
+    ("src/generate_clips.py", "# Add faststart flag for web compatibility (only for mp4/mov)"): "doc",
+    ("src/generate_clips.py", "if output_ext in ('.mp4', '.mov'):"): "faststart guard",
+    ("src/generate_clips.py", "%(prog)s video.mp4 timestamps.json"): "usage",
+    ("src/generate_clips.py", "%(prog)s video.mp4 timestamps.json --output-dir output/my_clips"): "usage",
+    ("src/generate_clips.py", "%(prog)s video.mp4 timestamps.json --combined"): "usage",
+    ("src/generate_clips.py", "%(prog)s video.mp4 timestamps.json --no-audio --combined"): "usage",
+    ("src/generate_clips.py", "parser.add_argument('--format', default='mp4', help='Output video format (default: mp4)')"): "clip default",
+    ("src/routes/timestamps.py", 'for ext in (".mp4", ".mkv", ".webm"):'): "infer video",
+    ("src/routes/timestamps.py", "# Support all video formats (mp4, mkv, webm)"): "doc (x2)",
+    ("src/routes/timestamps.py", 'if not filename.endswith((".mp4", ".mkv", ".webm")):'): "clip list",
+    ("src/routes/timestamps.py", 'clip_count = len([f for f in os.listdir(run_path) if f.endswith((".mp4", ".mkv", ".webm"))])'): "run count",
+    ("src/routes/videos.py", 'if f.endswith((".mp4", ".mkv", ".webm")):'): "film list",
+    ("src/services/storage.py", '".mp4": "video/mp4",'): "content-type map",
+}
+EXPECTED_COUNTS = {
+    ("src/routes/timestamps.py", "# Support all video formats (mp4, mkv, webm)"): 2,
+}
 
 
-def _mp4_hits():
+def _iter_mp4_lines(src_root, rel_prefix="src"):
     hits = []
-    for d in SCAN_DIRS:
-        for root, _, files in os.walk(os.path.join(REPO_ROOT, d)):
-            for f in files:
-                if not f.endswith(".py"):
-                    continue
-                p = os.path.join(root, f); rel = os.path.relpath(p, REPO_ROOT)
-                for i, line in enumerate(open(p, encoding="utf-8"), 1):
-                    if re.search(r"mp4", line, re.I) and not any(
-                            re.search(fr, rel) and re.search(lr, line) for fr, lr in ALLOWED_MP4):
-                        hits.append(f"{rel}:{i}: {line.strip()}")
+    for root, _, files in os.walk(src_root):
+        for f in files:
+            if not f.endswith(".py"):
+                continue
+            p = os.path.join(root, f)
+            rel = os.path.join(rel_prefix, os.path.relpath(p, src_root)).replace("\\", "/")
+            for line in open(p, encoding="utf-8"):
+                if re.search(r"mp4", line, re.I):
+                    hits.append((rel, line.strip()))
     return hits
 
 
+def _unreviewed_mp4_hits(src_root, rel_prefix="src"):
+    return [
+        (rel, stripped)
+        for rel, stripped in _iter_mp4_lines(src_root, rel_prefix=rel_prefix)
+        if (rel, stripped) not in ALLOWED_MP4
+    ]
+
+
 def test_no_unreviewed_hardcoded_mp4():
-    hits = _mp4_hits()
-    assert not hits, "Unreviewed mp4 references (fix or add to ALLOWED_MP4 with a reason):\n" + "\n".join(hits)
+    hits = _unreviewed_mp4_hits(os.path.join(REPO_ROOT, "src"))
+    assert not hits, "Unreviewed mp4 references (fix or add to ALLOWED_MP4 with a reason):\n" + "\n".join(
+        f"{rel}: {stripped}" for rel, stripped in hits
+    )
+
+
+def test_allowed_mp4_entries_each_match_exactly_n():
+    counts = {}
+    for key in _iter_mp4_lines(os.path.join(REPO_ROOT, "src")):
+        counts[key] = counts.get(key, 0) + 1
+    for key in ALLOWED_MP4:
+        expected = EXPECTED_COUNTS.get(key, 1)
+        actual = counts.get(key, 0)
+        assert actual == expected, f"{key}: expected {expected} occurrence(s), found {actual}"
+
+
+def test_mp4_audit_catches_stray_line(tmp_path):
+    """Self-test: unanchored allow-list entries used to miss these strays."""
+    import shutil
+
+    copied = tmp_path / "src"
+    shutil.copytree(os.path.join(REPO_ROOT, "src"), copied)
+
+    stray_replace = "out = p.replace('.mp4', '_x')  # faststart mp4"
+    (copied / "generate_clips.py").write_text(
+        (copied / "generate_clips.py").read_text(encoding="utf-8") + "\n" + stray_replace + "\n",
+        encoding="utf-8",
+    )
+    hits = _unreviewed_mp4_hits(str(copied))
+    assert hits == [("src/generate_clips.py", stray_replace)]
+
+    stray_default = "parser_extra_default = dict(fmt='x', default='mp4')"
+    (copied / "generate_clips.py").write_text(
+        (copied / "generate_clips.py").read_text(encoding="utf-8") + stray_default + "\n",
+        encoding="utf-8",
+    )
+    hits = _unreviewed_mp4_hits(str(copied))
+    assert ("src/generate_clips.py", stray_default) in hits
+    assert ("src/generate_clips.py", stray_replace) in hits
+
+    stray_mime = "LEGACY_TYPE = 'video/mp4'"
+    (copied / "services" / "storage.py").write_text(
+        (copied / "services" / "storage.py").read_text(encoding="utf-8") + stray_mime + "\n",
+        encoding="utf-8",
+    )
+    hits = _unreviewed_mp4_hits(str(copied))
+    assert ("src/services/storage.py", stray_mime) in hits
+    assert set(hits) == {
+        ("src/generate_clips.py", stray_replace),
+        ("src/generate_clips.py", stray_default),
+        ("src/services/storage.py", stray_mime),
+    }

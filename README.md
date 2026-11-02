@@ -67,9 +67,7 @@ curl -fsSL https://deno.land/install.sh | sh
 deno --version
 ```
 
-The download script will auto-detect which runtime is available. You can also configure a specific runtime:
-- Set `YTDLP_JS_RUNTIME=node` or `YTDLP_JS_RUNTIME=deno` in `.env`
-- Or use the `--js-runtime` flag when running the script
+The download script auto-detects Node.js or Deno (node is preferred when both are present). Runtime is not configurable via environment or CLI.
 
 ### Ollama
 
@@ -132,7 +130,7 @@ The download script uses the recommended yt-dlp invocation for optimal quality:
 - Format: `bv*+ba/b` (best video + best audio, fallback to best combined)
 - Resolution capped by default (prevents excessive file sizes)
 - Output format: MKV (better container for modern codecs)
-- **Note:** Downloaded videos are MKV, but generated clips are MP4 (H.264/AAC) for browser compatibility
+- **Note:** Downloaded full games are MKV (VP9/AV1+Opus). Safari (and some Chrome setups) will not play those files from `/api/film/...`. Generated clips are re-encoded to MP4 (H.264/AAC) for browser playback.
 
 You can configure the maximum resolution:
 
@@ -140,12 +138,9 @@ You can configure the maximum resolution:
 # Via command-line argument
 python3 src/download_video.py "URL" --resolution 1080
 
-# Via environment variable
+# Via environment variable (export it in the shell; the CLI does not load .env)
 export YTDLP_MAX_RES=1080
 python3 src/download_video.py "URL"
-
-# Via .env file (copy .env.example to .env)
-YTDLP_MAX_RES=1080
 ```
 
 Default resolution is **720p** (good balance of quality and file size). Valid range: 144-4320 (144p to 8K).
@@ -251,7 +246,7 @@ python3 src/generate_clips.py \
 - `--format FORMAT` - Output format (default: mp4, supports mkv, webm)
 
 **Features:**
-- Uses fast codec copy (no re-encoding by default)
+- MP4/MOV clips are re-encoded to H.264/AAC unless ffprobe reports the source is already H.264+AAC; other output formats may stream-copy
 - Generates descriptive filenames based on play data
 - Creates organized timestamped output directories
 - Includes detailed metadata JSON

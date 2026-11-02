@@ -74,7 +74,9 @@ def _sanitize_stderr(stderr_bytes, max_length=STDERR_MAX_LENGTH):
     stderr = " ".join(stderr.split())
 
     if len(stderr) > max_length:
-        stderr = stderr[:max_length] + "... (truncated)"
+        marker = "... (truncated)"
+        keep = max(0, max_length - len(marker))
+        stderr = stderr[:keep] + marker
 
     return stderr
 
@@ -267,7 +269,10 @@ def _with_venv_python(cmd):
     if os.path.isfile(venv_python):
         return [venv_python] + cmd
 
-    return ["python3"] + cmd
+    # Prefer the interpreter already running this script (jobs.py launched us
+    # with it). A bare `python3` on PATH is often an older system install whose
+    # yt-dlp gets 403s from YouTube.
+    return [sys.executable] + cmd
 
 
 def _kill_process_group(proc):
@@ -431,9 +436,11 @@ def download_video(url, output_folder="film", resolution=None):
     except subprocess.CalledProcessError as e:
         sanitized = _sanitize_stderr(e.stderr)
         raise subprocess.CalledProcessError(
-            e.returncode, e.cmd,
+            e.returncode,
+            e.cmd,
+            output=e.output,
             stderr=f"yt-dlp failed: {sanitized}".encode("utf-8"),
-        )
+        ) from e
 
     saved = _video_saved_since(output_path, started)
     if not saved:
@@ -443,8 +450,8 @@ def download_video(url, output_folder="film", resolution=None):
     return saved
 
 
-def main():
-    """Main function to handle command-line execution."""
+def build_arg_parser():
+    """Return the CLI parser used by main()."""
     parser = argparse.ArgumentParser(
         description="Download video from YouTube using yt-dlp",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -475,7 +482,12 @@ Examples:
         default="film",
         help="Output folder for downloaded video (default: film)",
     )
+    return parser
 
+
+def main():
+    """Main function to handle command-line execution."""
+    parser = build_arg_parser()
     args = parser.parse_args()
 
     try:

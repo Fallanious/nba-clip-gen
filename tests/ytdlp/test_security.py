@@ -341,6 +341,8 @@ class TestProcessGroupKill:
         run_ytdlp_subprocess(["true"], timeout=5)
         assert seen.get("start_new_session") is True
         assert seen.get("bufsize") == 0
+        assert seen.get("stdout") is None
+        assert seen.get("stderr") is subprocess.PIPE
 
 
 # ==================== Stderr Sanitization Tests ====================
@@ -495,10 +497,12 @@ class TestSecurityIntegration:
             download_video("http://youtube.com/watch?v=test", str(tmp_path))
 
     def test_stderr_sanitized_in_download(self, tmp_path, monkeypatch):
+        original = subprocess.CalledProcessError(
+            1, ["yt-dlp"], output=b"stdout-keep", stderr=b"Very " + b"long " * 200 + b" error"
+        )
+
         def boom(cmd, timeout=None):
-            raise subprocess.CalledProcessError(
-                1, cmd, stderr=b"Very " + b"long " * 200 + b" error"
-            )
+            raise original
 
         monkeypatch.setattr("download_video.run_ytdlp_subprocess", boom)
         with pytest.raises(subprocess.CalledProcessError) as exc:
@@ -506,7 +510,13 @@ class TestSecurityIntegration:
 
         error_msg = exc.value.stderr.decode("utf-8")
         assert "truncated" in error_msg or len(error_msg) < 600
+        assert exc.value.__cause__ is original
+        assert exc.value.output == b"stdout-keep"
 
+    def test_venv_fallback_is_sys_executable(self, monkeypatch):
+        monkeypatch.setattr(os.path, "isfile", lambda path: False)
+        cmd = build_ytdlp_cmd(SAFE_URL)
+        assert cmd[0] == sys.executable
 
 # ==================== Supply chain / repo policy Tests ====================
 
@@ -553,14 +563,22 @@ class TestSupplyChain:
         assert "-r requirements.txt" in dev
         for pkg in ("uv==", "pylint==", "black==", "ruff==", "pytest==", "pip-audit=="):
             assert pkg in dev
+        assert self._version_tuple(self._lock_version(dev, "uv")) >= (0, 11, 15)
+        assert self._version_tuple(self._lock_version(dev, "black")) >= (26, 10, 1)
+        assert self._version_tuple(self._lock_version(dev, "pylint")) >= (4, 0, 9)
+        assert self._version_tuple(self._lock_version(dev, "pytest")) >= (9, 0, 3)
 
     def test_requirements_dev_lock_has_hashes(self):
         lock_path = os.path.join(REPO_ROOT, "requirements-dev.lock")
         assert os.path.isfile(lock_path), "requirements-dev.lock is missing"
         lock = open(lock_path, encoding="utf-8").read()
         assert "--hash=sha256:" in lock
-        for pkg in ("pytest==", "pip-audit==", "black==", "ruff==", "pylint=="):
+        for pkg in ("pytest==", "pip-audit==", "black==", "ruff==", "pylint==", "uv=="):
             assert pkg in lock
+        assert self._version_tuple(self._lock_version(lock, "uv")) >= (0, 11, 15)
+        assert self._version_tuple(self._lock_version(lock, "black")) >= (26, 10, 1)
+        assert self._version_tuple(self._lock_version(lock, "pylint")) >= (4, 0, 9)
+        assert self._version_tuple(self._lock_version(lock, "pytest")) >= (9, 0, 3)
 
     def test_pip_audit_install_uses_hashed_requirements(self):
         hashed = os.path.join(REPO_ROOT, "requirements-pip-audit.txt")
@@ -581,6 +599,13 @@ class TestSupplyChain:
         assert "requirements.lock" in src
         assert "pip install -r requirements.txt" not in src
         assert "pip-audit --desc -r requirements.lock" in src
+        assert "pip-audit --desc -r requirements-dev.lock" in src
+
+    def test_readme_does_not_document_removed_js_runtime_config(self):
+        readme = open(os.path.join(REPO_ROOT, "README.md"), encoding="utf-8").read()
+        assert "YTDLP_JS_RUNTIME" not in readme
+        assert "--js-runtime " not in readme
+        assert "--js-runtime\n" not in readme
 
 
 if __name__ == "__main__":

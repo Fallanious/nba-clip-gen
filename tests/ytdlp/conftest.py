@@ -24,7 +24,7 @@ RUNTIME_ERROR = "JsRuntimeNotFound"          # exception class (subclass of Runt
 RES_ENV = "YTDLP_MAX_RES"                    # env var for default resolution
 CLIPS_MODULE = "generate_clips"              # extract_clip / combine_clips
 STORAGE_MODULE = "services.storage"          # content_type_for(path), s3_key_for_game(bbref_id, path)
-# PLAYBACK_MODULE removed: PR #1 code not on this branch
+PLAYBACK_MODULE = "services.playback"        # PR #1; skip tests that need it when absent
 SCAN_DIRS = ["src"]                          # for the leftover-.mp4 audit
 DEFAULT_RES = 720
 MKV_TYPE = "video/x-matroska"
@@ -43,10 +43,12 @@ def load(module, attr=None):
 
 
 @pytest.fixture(autouse=True)
-def no_network(monkeypatch):
-    """Strip AWS creds and block real sockets for every test."""
+def no_network(monkeypatch, request):
+    """Strip AWS creds and block real sockets for every test except @pytest.mark.network."""
     for k in ("AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_SESSION_TOKEN", "AWS_PROFILE", RES_ENV):
         monkeypatch.delenv(k, raising=False)
+    if request.node.get_closest_marker("network"):
+        return
     import socket
     def _blocked(*a, **k):
         raise AssertionError("network access attempted in unit test")
@@ -100,7 +102,7 @@ def fake_run(monkeypatch, tmp_path):
 @pytest.fixture
 def fake_s3(monkeypatch):
     """Mock S3 client for upload tests."""
-    import boto3
+    boto3 = pytest.importorskip("boto3")
     
     calls = SimpleNamespace(upload=[], put=[], presign=[])
     class C:
