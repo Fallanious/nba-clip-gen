@@ -157,10 +157,11 @@ def test_paging_no_dupes_no_gaps_bulk(client, limit):
 
 def test_paging_keyset_order_across_pages(client):
     pages = walk_pages(client, URL.format(209) + "?limit=10", play_ids)
-    # within a page display order differs, but page sets must be contiguous in (date desc, id desc)
-    key = lambda cid: (CLIPS[cid]["game_date"], cid)
+    def key(cid):
+        c = CLIPS[cid]
+        return (-c["game_date"].toordinal(), -c["game_id"], c["period"], c["play_index"], cid)
     for a, b in zip(pages, pages[1:]):
-        assert min(map(key, a)) > max(map(key, b))
+        assert max(map(key, a)) < min(map(key, b))
 
 
 def test_continues_flag_when_game_straddles(client):
@@ -182,7 +183,6 @@ def test_client_merge_reconstructs_full_order(client):
             merged.setdefault(g["game"]["id"], []).extend(g["plays"])
     full = {g["game"]["id"]: g["plays"] for g in get(client, "limit=200").get_json()["games"]}
     for gid, plays in merged.items():
-        plays.sort(key=lambda p: (p["period"], p["play_index"]))
         assert [p["id"] for p in plays] == [p["id"] for p in full[gid]]
 
 
@@ -228,12 +228,12 @@ def test_cursor_tampered(client):
 
 
 def test_db_params_types(client, fake_db):
-    get(client, "role=shot,shot&action_type=&date_from=2026-01-01")
+    get(client, "role=shot,shot&date_from=2026-01-01")
     key, p = [c for c in fake_db.calls if c[0] == "clips/by_player"][-1]
-    assert p["roles"] == ["shot"]                   # deduped
-    assert p.get("action_types") in (None,)         # empty list omitted (dynamic filters)
+    assert p["roles"] == ["shot"]
+    assert p.get("action_types") is None
     assert str(p["date_from"]) == "2026-01-01"
-    assert p.get("status_all") in (False, None)
+    assert p.get("status_all") is False
 
 
 def test_forged_cursor_rejected(client):

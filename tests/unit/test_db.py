@@ -191,7 +191,10 @@ def test_bind_types_are_native():
 
     clips = registry["clips/by_player"]
     assert isinstance(clips._bindparams["limit"].type, Integer)
-    assert "status_all" not in clips._bindparams  # spliced dynamically, not a standing bind)
+    assert isinstance(clips._bindparams["status_all"].type, Boolean)
+    from sqlalchemy import BigInteger
+    assert isinstance(clips._bindparams["c_game_id"].type, BigInteger)
+    assert isinstance(clips._bindparams["c_period"].type, Integer)
 
 
 def test_teardown_reraises(monkeypatch):
