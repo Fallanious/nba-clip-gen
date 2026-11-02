@@ -4,7 +4,6 @@ import base64
 import hashlib
 import hmac
 import json
-import os
 import time
 from typing import Any
 from config import config
@@ -13,8 +12,10 @@ from errors import ApiError
 CURSOR_VERSION = 1
 FILTER_HASH_HEX_LEN = 16  # SHA-256 truncated to >=16 hex
 MAX_AGE_DEFAULT = 86400
-CLOCK_SKEW_S = 60
+# Intended clock-skew allowance: accept iat up to 30s in the future; reject at 31s.
+CLOCK_SKEW_S = 30
 MAX_KEY_LEN = 16
+MAX_CURSOR_BYTES = 1024
 PAYLOAD_KEYS = {"v", "k", "f", "iat", "kv"}
 
 
@@ -38,11 +39,11 @@ def _filter_hash(filters: dict[str, Any]) -> str:
 
 
 def _key_version() -> int:
-    return int(os.getenv("CURSOR_KEY_VERSION", "1"))
+    return config.CURSOR_KEY_VERSION
 
 
 def _max_age() -> int:
-    return int(os.getenv("CURSOR_MAX_AGE_S", str(MAX_AGE_DEFAULT)))
+    return config.CURSOR_MAX_AGE_S
 
 
 def _sign(payload_b64: str) -> str:
@@ -76,12 +77,6 @@ def _is_int(value: Any) -> bool:
     return isinstance(value, int) and not isinstance(value, bool)
 
 
-def _is_number(value: Any) -> bool:
-    if isinstance(value, bool):
-        return False
-    return isinstance(value, (int, float))
-
-
 def _is_key_elem(value: Any) -> bool:
     if isinstance(value, bool):
         return False
@@ -91,7 +86,16 @@ def _is_key_elem(value: Any) -> bool:
 def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
     """Decode and validate a cursor."""
     try:
-        if not isinstance(cursor, str) or "." not in cursor:
+        if not isinstance(cursor, str):
+            _invalid()
+
+        # Byte-length of the raw cursor (UTF-8), including multi-byte characters.
+        # Reject before HMAC or JSON decode so an oversized value cannot be used
+        # as a hashing/decoding oracle.
+        if len(cursor.encode("utf-8")) > MAX_CURSOR_BYTES:
+            _invalid()
+
+        if "." not in cursor:
             _invalid()
 
         payload_b64, signature = cursor.rsplit(".", 1)
@@ -124,12 +128,13 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
             _invalid()
 
         iat = payload.get("iat")
-        if not _is_number(iat):
+        # Exact int: reject bool, float (incl. NaN/Inf), numeric strings, None, negatives.
+        if not _is_int(iat) or iat < 0:
             _invalid()
         now = time.time()
-        if float(iat) > now + CLOCK_SKEW_S:
+        if iat > now + CLOCK_SKEW_S:
             _invalid()
-        if now - float(iat) > _max_age():
+        if now - iat > _max_age():
             raise ApiError(
                 code="invalid_cursor",
                 message="Cursor expired",
@@ -152,5 +157,5 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
             _invalid()
         return key
 
-    except (ValueError, KeyError, TypeError, json.JSONDecodeError, AttributeError):
+    except (ValueError, KeyError, TypeError, json.JSONDecodeError, AttributeError, OverflowError):
         _invalid()
