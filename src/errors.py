@@ -39,7 +39,10 @@ def register_error_handlers(app):
     @app.errorhandler(ApiError)
     def handle_api_error(e: ApiError):
         """Handle ApiError exceptions."""
-        return jsonify(e.to_dict()), e.status
+        response = jsonify(e.to_dict())
+        if e.status == 503:
+            response.headers["Retry-After"] = "2"
+        return response, e.status
 
     @app.errorhandler(OperationalError)
     def handle_db_error(e: OperationalError):

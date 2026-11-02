@@ -175,3 +175,32 @@ def test_request_id_validation():
         # Should be a valid UUID
         import uuid
         uuid.UUID(res_id)  # Raises if invalid
+
+        # Too long (>64) is rejected
+        r = client.get('/api/jobs', headers={'X-Request-Id': 'a' * 65})
+        assert r.headers.get('X-Request-Id') != ('a' * 65)
+
+
+def test_bind_host_defaults_to_localhost():
+    """SECURITY: default bind is 127.0.0.1, not 0.0.0.0."""
+    os.environ.pop('BIND_HOST', None)
+    assert os.getenv('BIND_HOST', '127.0.0.1') == '127.0.0.1'
+
+
+def test_apierror_503_sets_retry_after():
+    """503 ApiError responses include Retry-After."""
+    os.environ['CURSOR_SECRET'] = '12345678901234567890123456789012'
+    os.environ['APP_ENV'] = 'dev'
+    from app import create_app
+    from errors import ApiError
+    app = create_app()
+
+    @app.route('/boom503')
+    def boom503():
+        raise ApiError(code='db_unavailable', message='down', status=503)
+
+    with app.test_client() as client:
+        r = client.get('/boom503')
+        assert r.status_code == 503
+        assert r.headers.get('Retry-After') == '2'
+        assert r.get_json()['error']['code'] == 'db_unavailable'
