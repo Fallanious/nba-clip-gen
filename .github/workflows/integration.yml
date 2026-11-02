@@ -4,6 +4,9 @@ on:
   pull_request:
   push:
 
+permissions:
+  contents: read
+
 jobs:
   unit:
     name: Unit tests (clean venv)
@@ -41,7 +44,7 @@ jobs:
           python-version: "3.12"
       - name: Install test dependencies
         if: steps.check_db.outputs.has_db == 'true'
-        run: pip install -r requirements.txt
+        run: pip install --require-hashes -r requirements.lock
       - name: Guard Neon target
         if: steps.check_db.outputs.has_db == 'true'
         env:
