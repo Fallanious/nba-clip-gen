@@ -52,30 +52,24 @@ def create_app():
     # Auth seam
     app.before_request(before_request_hook)
     
-    # Database session management - one session per request
-    from db import session as db_session
-    
-    @app.before_request
-    def setup_request_session():
-        """Create a database session for this request."""
-        if hasattr(g, '_db_session'):
-            return
-        g._db_session = db_session.get_session()
-        g._db_session_ctx = g._db_session.__enter__()
-    
+    # Database session management - lazy session per request
     @app.teardown_request
     def teardown_request_session(exception=None):
-        """Close the database session for this request."""
+        """Close the database session for this request (if one was opened)."""
         if hasattr(g, '_db_session'):
             try:
                 if exception:
                     g._db_session.__exit__(type(exception), exception, exception.__traceback__)
                 else:
                     g._db_session.__exit__(None, None, None)
-            except Exception:
-                pass
+            except Exception as teardown_error:
+                # Log teardown errors and surface them as 500
+                app.logger.error(f"Session teardown failed: {teardown_error}", exc_info=True)
+                # Re-raise to let Flask error handler convert to 500
+                raise
             finally:
-                delattr(g, '_db_session')
+                if hasattr(g, '_db_session'):
+                    delattr(g, '_db_session')
                 if hasattr(g, '_db_session_ctx'):
                     delattr(g, '_db_session_ctx')
 

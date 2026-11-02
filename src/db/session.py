@@ -2,7 +2,7 @@
 
 from contextlib import contextmanager
 from typing import Generator
-from sqlalchemy import create_engine, event
+from sqlalchemy import create_engine, event, text
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.exc import OperationalError
 from config import config
@@ -37,16 +37,42 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine) if e
 
 
 @contextmanager
-def get_session() -> Generator[Session, None, None]:
+def get_session(retry_on_wake: bool = True) -> Generator[Session, None, None]:
     """Get a database session with automatic commit/rollback.
     
-    Note: Retry logic for Neon autosuspend should be handled at a higher level,
-    not in the context manager which must yield exactly once.
+    Includes Neon wake logic: one retry on OperationalError, then 503.
+    
+    Args:
+        retry_on_wake: If True, retry connection once on OperationalError (for Neon autosuspend wake)
     """
     if not SessionLocal:
         raise RuntimeError("Database not configured. Set DATABASE_URL environment variable.")
 
-    session = SessionLocal()
+    # Retry logic for connection wake (before yield)
+    retries_left = 1 if retry_on_wake else 0
+    session = None
+    
+    while session is None:
+        try:
+            session = SessionLocal()
+            # Test connection with a simple query
+            session.execute(text("SELECT 1"))
+        except OperationalError as e:
+            if session:
+                session.close()
+            if retries_left > 0:
+                retries_left -= 1
+                session = None
+                continue
+            # No retries left - raise as service unavailable
+            from errors import ApiError
+            raise ApiError(
+                code="database_unavailable",
+                message="Database is temporarily unavailable",
+                status=503
+            ) from e
+    
+    # Now we have a working session, yield it
     try:
         yield session
         session.commit()
@@ -58,12 +84,16 @@ def get_session() -> Generator[Session, None, None]:
 
 
 def get_db() -> Session:
-    """Get the request-scoped database session.
+    """Get the request-scoped database session (lazy initialization).
     
-    Returns the session created in Flask's before_request hook.
+    Opens the session on first use, not eagerly for every request.
     Session is automatically committed/rolled back in teardown_request.
     """
     from flask import g
+    
+    # Lazy initialization: only open session on first use
     if not hasattr(g, '_db_session_ctx'):
-        raise RuntimeError("No database session available. Are you calling this outside a request context?")
+        g._db_session = get_session()
+        g._db_session_ctx = g._db_session.__enter__()
+    
     return g._db_session_ctx
