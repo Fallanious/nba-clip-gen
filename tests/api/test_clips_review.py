@@ -1,8 +1,13 @@
 """Coverage for Max's clips review (PR #9) and QA's PR3_REVIEW_TESTS spec."""
+import ast
+import base64
 import inspect
 import json
+import logging
 import os
+import re
 import sys
+import time
 from pathlib import Path
 
 import pytest
@@ -192,10 +197,11 @@ def test_304_skips_serialization(client, fake_db):
 # ================= M5 =================
 @pytest.mark.parametrize("param", [
     "action_type", "shot_subtype", "outcome", "season",
-    "date_from", "date_to", "game_id", "status", "limit", "cursor",
+    "date_from", "date_to", "game_id", "status", "limit",
 ])
 def test_empty_filter_values_rejected(client, param):
     assert_error(get(client, f"{param}="), 400, "invalid_param", param)
+# cursor= is invalid_cursor; see test_empty_cursor_rejected (D1).
 
 
 @pytest.mark.parametrize("qs,param", [
@@ -269,35 +275,65 @@ def test_cursor_filter_helper_single_source():
     assert src.count('"shot_subtypes"') <= 1
 
 
-# ================= M8 =================
-def test_by_player_sql_builder_emits_expected_predicates():
-    from db.sql_loader import get_raw_sql, registry
-    from repositories import clips as clips_repo
-    sql = get_raw_sql("clips/by_player")
-    assert "/*dynamic_filters*/" not in sql
-    for clause in (
-        "CAST(:roles AS clip_role[])",
-        "CAST(:date_from AS date)",
-        "CAST(:date_to AS date)",
-        "CAST(:season AS text)",
-        "CAST(:game_id AS bigint)",
-        "CAST(:action_types AS text[])",
-        "CAST(:subtypes AS text[])",
-        "CAST(:outcome AS text)",
-        "CAST(:status_all AS boolean)",
-        "CAST(:c_date AS date)",
-        ":c_game_id",
-        ":c_period",
-        ":c_play_index",
-    ):
-        assert clause in sql
-    src = inspect.getsource(clips_repo.get_player_clips)
-    assert ".replace(" not in src
-    assert "/*dynamic_filters*/" not in src
-    stmt = registry["clips/by_player"]
-    injected = "2025-26' OR 1=1"
-    assert "OR 1=1" not in str(stmt)
-    assert injected not in str(stmt)
+# ================= M8 / D3: static SQL =================
+def test_by_player_sql_is_static():
+    raw = Path("src/db/sql/queries/clips/by_player.sql").read_text()
+    assert "/*dynamic_filters*/" not in raw
+    for p in ("roles", "date_from", "date_to", "season", "game_id", "action_types", "subtypes", "outcome"):
+        assert re.search(rf"CAST\(:{p} AS \w+(?:\[\])?\) IS NULL OR", raw), p
+    assert ":status_all" in raw
+
+
+def test_repositories_never_build_sql():
+    sql_op = re.compile(r"\b(SELECT|WHERE|AND )\b", re.I)
+    for path in Path("src/repositories").glob("*.py"):
+        src = path.read_text()
+        tree = ast.parse(src)
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Call):
+                fn = node.func
+                name = fn.id if isinstance(fn, ast.Name) else (fn.attr if isinstance(fn, ast.Attribute) else "")
+                if name == "text":
+                    raise AssertionError(f"{path} calls text(")
+                if name == "execute":
+                    assert node.args, f"{path} execute missing args"
+                    arg0 = node.args[0]
+                    assert isinstance(arg0, ast.Subscript), f"{path} execute is not registry[...]: {ast.dump(arg0)}"
+                    assert isinstance(arg0.slice, ast.Constant)
+            if isinstance(node, ast.Attribute) and node.attr == "replace":
+                raise AssertionError(f"{path} uses .replace(")
+            if isinstance(node, ast.JoinedStr):
+                text = ast.get_source_segment(src, node) or ""
+                assert not sql_op.search(text), f"{path} f-string builds SQL"
+            if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
+                text = ast.get_source_segment(src, node) or ""
+                assert not sql_op.search(text), f"{path} concatenates SQL"
+
+
+def test_registry_header_params_match_sql_for_by_player():
+    from db.sql_loader import _extract_params_from_header, _extract_params_from_sql, get_raw_sql
+    raw = Path("src/db/sql/queries/clips/by_player.sql").read_text()
+    declared = _extract_params_from_header(raw)
+    used = _extract_params_from_sql(get_raw_sql("clips/by_player"))
+    expected = {
+        "pid", "roles", "date_from", "date_to", "season", "game_id",
+        "action_types", "subtypes", "outcome", "status_all",
+        "c_date", "c_game_id", "c_period", "c_play_index", "c_id", "limit",
+    }
+    assert declared == used == expected
+
+
+def test_by_player_one_prepared_statement(client, fake_db):
+    fake_db.calls.clear()
+    fake_db.statements.clear()
+    get(client, "role=shot")
+    get(client, "season=2025-26")
+    get(client, "outcome=made")
+    from db.sql_loader import registry
+    stmts = [s for s in fake_db.statements if getattr(s, "key", None) == "clips/by_player"]
+    assert len(stmts) == 3
+    assert all(s is stmts[0] for s in stmts)
+    assert stmts[0] is registry["clips/by_player"]
 
 
 @pytest.mark.integration
@@ -348,21 +384,168 @@ def test_ci_runs_integration_on_neon_branch():
     assert "NEON_DEV_DATABASE_URL" in text
 
 
-def test_mime_for_key_uses_x_matroska(monkeypatch):
+# ================= D1. empty cursor= =================
+@pytest.mark.parametrize("url", [
+    "/api/players?cursor=",
+    "/api/players?q=Jo&cursor=",
+    "/api/players/201/clips?cursor=",
+])
+def test_empty_cursor_rejected(client, url):
+    assert_error(client.get(url), 400, "invalid_cursor")
+
+
+def test_whitespace_cursor_rejected(client):
+    assert_error(client.get("/api/players?cursor=%20"), 400, "invalid_cursor")
+    assert_error(client.get("/api/players/201/clips?cursor=%20"), 400, "invalid_cursor")
+
+
+def test_absent_cursor_is_first_page(client):
+    r = client.get("/api/players")
+    assert r.status_code == 200
+    first = r.get_json()["items"][0]
+    again = client.get("/api/players").get_json()["items"][0]
+    assert first == again
+
+
+# ================= D2. MKV MIME =================
+def _playback_src():
+    return Path("src/services/playback.py")
+
+
+def test_mkv_mime_independent_of_system_db(monkeypatch, fake_db):
+    if not _playback_src().exists():
+        pytest.skip("playback lands in a later stack layer")
+    import mimetypes
+    from types import SimpleNamespace
+    from services import playback as playback_mod
+    monkeypatch.setattr(mimetypes, "guess_type", lambda *a, **k: ("video/matroska", None))
+    mimetypes.init([])
+    monkeypatch.setenv("S3_BUCKET", "qa-fake-bucket")
+    monkeypatch.setenv("AWS_REGION", "us-east-2")
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "true")
+    monkeypatch.setenv("PLAYBACK_VERIFY_OBJECT", "false")
+    stub = SimpleNamespace(calls=[], sign_exc=None, head_exc=None)
+
+    def generate_presigned_url(op, Params, ExpiresIn):
+        stub.calls.append((op, Params, ExpiresIn))
+        return f"https://{Params['Bucket']}.s3.example/{Params['Key']}"
+
+    stub.generate_presigned_url = generate_presigned_url
+    stub.head_object = lambda **k: {"ContentLength": 1}
+    monkeypatch.setattr(playback_mod, "_s3_client", lambda *a, **k: stub)
+    res = playback_mod.get_playback_url({
+        "id": 1, "status": "pending", "s3_key": None,
+        "game_key": "games/x.mkv", "video_start_s": 1.0, "video_end_s": 2.0,
+    }, mode="fallback")
+    assert stub.calls[-1][1]["ResponseContentType"] == "video/x-matroska"
+    assert res["mime"] == "video/x-matroska"
+
+
+@pytest.mark.parametrize("key,mime", [
+    ("games/x.mkv", "video/x-matroska"),
+    ("games/x.MKV", "video/x-matroska"),
+    ("clips/a.mp4", "video/mp4"),
+    ("clips/a.webm", "video/webm"),
+    ("clips/a.bin", "application/octet-stream"),
+])
+def test_playback_mime_table(key, mime):
+    if not _playback_src().exists():
+        pytest.skip("playback lands in a later stack layer")
     from services.playback import _mime_for_key
-    monkeypatch.setattr(
-        "services.playback.mimetypes.guess_type",
-        lambda key: ("video/matroska", None) if str(key).endswith(".mkv") else (None, None),
-    )
+    assert _mime_for_key(key) == mime
+
+
+def test_film_route_and_storage_agree(client, tmp_path, monkeypatch):
+    try:
+        from services.storage import content_type_for
+        from services.playback import _mime_for_key
+    except ImportError:
+        pytest.skip("PR #2 storage.py is not on this stack")
+    assert content_type_for("g.mkv") == _mime_for_key("games/g.mkv") == "video/x-matroska"
+    film_dir = tmp_path / "film"
+    film_dir.mkdir()
+    (film_dir / "g.mkv").write_bytes(b"\x00")
+    monkeypatch.setattr("routes.videos.BASE_DIR", str(tmp_path))
+    r = client.get("/api/film/g.mkv")
+    if r.status_code == 200:
+        assert r.headers["Content-Type"].split(";")[0] == "video/x-matroska"
+
+
+def test_mime_for_key_uses_x_matroska(monkeypatch):
+    if not _playback_src().exists():
+        pytest.skip("playback lands in a later stack layer")
+    import mimetypes
+    from services.playback import _mime_for_key
+    monkeypatch.setattr(mimetypes, "guess_type", lambda *a, **k: ("video/matroska", None))
     assert _mime_for_key("games/test.mkv") == "video/x-matroska"
     assert _mime_for_key("clips/a.mp4") == "video/mp4"
     assert _mime_for_key("noext") == "application/octet-stream"
 
 
 def test_stack_and_ytdlp_agree_on_mkv_mime():
+    if not _playback_src().exists():
+        pytest.skip("playback lands in a later stack layer")
     from services.playback import _mime_for_key
     try:
         from services.storage import content_type_for
     except ImportError:
         pytest.skip("PR #2 storage.py is not on this stack")
     assert content_type_for("g.mkv") == _mime_for_key("games/x.mkv") == "video/x-matroska"
+
+
+def test_no_video_matroska_without_x():
+    hits = []
+    guess = []
+    for path in Path("src").rglob("*.py"):
+        text = path.read_text()
+        if "video/matroska" in text:
+            hits.append(str(path))
+        if path.parts[:2] == ("src", "services") and "mimetypes.guess_type" in text:
+            guess.append(str(path))
+    assert hits == []
+    assert guess == []
+
+
+# ================= P4 API =================
+def _signed(obj):
+    import pagination
+    b = base64.urlsafe_b64encode(json.dumps(obj).encode()).decode().rstrip("=")
+    return b + "." + pagination._sign(b)
+
+
+def test_api_non_ascii_cursor_400(client):
+    assert_error(client.get("/api/players?cursor=%C3%A9.abc"), 400, "invalid_cursor")
+
+
+def test_key_length_enforced_by_caller(client):
+    from pagination import _filter_hash
+    browse = {"q": "", "team": None, "active": True}
+    c = _signed({
+        "v": 1, "kv": 1, "iat": int(time.time()),
+        "f": _filter_hash(browse), "k": ["A", 1, 2],
+    })
+    assert_error(client.get(f"/api/players?cursor={c}"), 400, "invalid_cursor")
+    from routes.players import _clips_cursor_filters
+    cf = _clips_cursor_filters(201, None, None, None, None, None, None, None, None, "playable")
+    c = _signed({
+        "v": 1, "kv": 1, "iat": int(time.time()),
+        "f": _filter_hash(cf), "k": [1],
+    })
+    assert_error(client.get(f"/api/players/201/clips?cursor={c}"), 400, "invalid_cursor")
+
+
+def test_key_element_types_checked(client):
+    from pagination import _filter_hash
+    from routes.players import _clips_cursor_filters
+    cf = _clips_cursor_filters(201, None, None, None, None, None, None, None, None, "playable")
+    fhash = _filter_hash(cf)
+    c = _signed({"v": 1, "kv": 1, "iat": int(time.time()), "f": fhash, "k": ["not-a-date", 5]})
+    assert_error(client.get(f"/api/players/201/clips?cursor={c}"), 400, "invalid_cursor")
+    c = _signed({"v": 1, "kv": 1, "iat": int(time.time()), "f": fhash, "k": ["2026-01-03", "x"]})
+    assert_error(client.get(f"/api/players/201/clips?cursor={c}"), 400, "invalid_cursor")
+
+
+def test_invalid_cursor_log_has_no_traceback(client, caplog):
+    caplog.set_level(logging.DEBUG)
+    client.get("/api/players?cursor=!!!.x")
+    assert "During handling of the above exception" not in caplog.text

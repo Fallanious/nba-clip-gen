@@ -13,6 +13,9 @@ from errors import ApiError
 CURSOR_VERSION = 1
 FILTER_HASH_HEX_LEN = 16  # SHA-256 truncated to >=16 hex
 MAX_AGE_DEFAULT = 86400
+CLOCK_SKEW_S = 60
+MAX_KEY_LEN = 16
+PAYLOAD_KEYS = {"v", "k", "f", "iat", "kv"}
 
 
 def _normalize_filters(filters: dict[str, Any]) -> str:
@@ -69,10 +72,26 @@ def _invalid():
     raise ApiError(code="invalid_cursor", message="Invalid cursor format", status=400) from None
 
 
+def _is_int(value: Any) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
+def _is_number(value: Any) -> bool:
+    if isinstance(value, bool):
+        return False
+    return isinstance(value, (int, float))
+
+
+def _is_key_elem(value: Any) -> bool:
+    if isinstance(value, bool):
+        return False
+    return isinstance(value, (str, int, float)) or value is None
+
+
 def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
     """Decode and validate a cursor."""
     try:
-        if "." not in cursor:
+        if not isinstance(cursor, str) or "." not in cursor:
             _invalid()
 
         payload_b64, signature = cursor.rsplit(".", 1)
@@ -95,42 +114,43 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
             payload_b64_pad = payload_b64
 
         payload = json.loads(base64.urlsafe_b64decode(payload_b64_pad).decode())
-        if not isinstance(payload, dict):
+        if not isinstance(payload, dict) or set(payload.keys()) != PAYLOAD_KEYS:
             _invalid()
 
-        if payload.get("v") != CURSOR_VERSION:
+        if not _is_int(payload.get("v")) or payload.get("v") != CURSOR_VERSION:
             _invalid()
 
-        if payload.get("kv") != _key_version():
+        if not _is_int(payload.get("kv")) or payload.get("kv") != _key_version():
             _invalid()
 
         iat = payload.get("iat")
-        if not isinstance(iat, (int, float)):
+        if not _is_number(iat):
             _invalid()
-        if time.time() - float(iat) > _max_age():
+        now = time.time()
+        if float(iat) > now + CLOCK_SKEW_S:
+            _invalid()
+        if now - float(iat) > _max_age():
             raise ApiError(
                 code="invalid_cursor",
                 message="Cursor expired",
                 status=400,
-            )
+            ) from None
 
-        if payload.get("f") != _filter_hash(filters):
+        if not isinstance(payload.get("f"), str) or payload.get("f") != _filter_hash(filters):
             raise ApiError(
                 code="invalid_cursor",
                 message="Cursor does not match current filters",
                 status=400,
-            )
+            ) from None
 
         key = payload.get("k")
-        if not isinstance(key, list):
+        if (
+            not isinstance(key, list)
+            or len(key) > MAX_KEY_LEN
+            or not all(_is_key_elem(item) for item in key)
+        ):
             _invalid()
         return key
 
-    except ApiError:
-        raise
     except (ValueError, KeyError, TypeError, json.JSONDecodeError, AttributeError):
-        raise ApiError(
-            code="invalid_cursor",
-            message="Invalid cursor format",
-            status=400,
-        ) from None
+        _invalid()
