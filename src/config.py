@@ -116,16 +116,10 @@ class Config:
     @property
     def APP_ENV(self) -> str:
         raw = os.getenv("APP_ENV")
-        if raw is None:
+        allowed = ", ".join(sorted(KNOWN_APP_ENVS))
+        if raw is None or raw not in KNOWN_APP_ENVS:
             raise ValueError(
-                "APP_ENV is required and must be one of: "
-                + ", ".join(sorted(KNOWN_APP_ENVS))
-            )
-        if raw not in KNOWN_APP_ENVS:
-            raise ValueError(
-                "APP_ENV is required and must be one of: "
-                + ", ".join(sorted(KNOWN_APP_ENVS))
-                + f" (got {raw!r})"
+                "APP_ENV is required and must be one of: " + allowed
             )
         return raw
 

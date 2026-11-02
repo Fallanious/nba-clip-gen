@@ -2,7 +2,6 @@
 import pytest
 import sys
 import os
-import re
 
 sys.path.insert(0, 'src')
 
@@ -187,13 +186,13 @@ def test_request_id_validation():
         r = client.get('/api/jobs', headers={'X-Request-Id': 'a' * 65})
         assert r.headers.get('X-Request-Id') != ('a' * 65)
 
-        import inspect
-        from app import create_app as factory
-        src = inspect.getsource(factory)
-        assert "re.fullmatch" in src
-        assert "re.match" not in src
-        # '$' in re.match allows a trailing newline; fullmatch does not
-        assert re.fullmatch(r"[A-Za-z0-9-]{1,64}", "req-123-abc\n") is None
+        # Trailing newline: re.match('$') would accept it; fullmatch must mint a new id.
+        # Set via environ so Werkzeug's Headers constructor does not strip the probe.
+        r = client.open("/api/jobs", environ_overrides={"HTTP_X_REQUEST_ID": "abc\n"})
+        got = r.headers.get("X-Request-Id")
+        assert got != "abc\n"
+        assert got != "abc"
+        uuid.UUID(got)
 
 
 def test_bind_host_defaults_to_localhost():
@@ -232,7 +231,12 @@ def test_app_env_required(raw, monkeypatch):
     from config import Config
     with pytest.raises(ValueError, match="APP_ENV") as ei:
         Config().validate()
-    assert "k" * 32 not in str(ei.value)
+    msg = str(ei.value)
+    assert "k" * 32 not in msg
+    assert "dev" in msg and "prod" in msg
+    if raw and raw.strip():
+        assert raw not in msg
+        assert repr(raw) not in msg
 
 
 @pytest.mark.parametrize("env", ["dev", "test", "prod", "production", "staging"])
