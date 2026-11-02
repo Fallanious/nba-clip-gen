@@ -8,16 +8,33 @@ jobs:
   integration:
     name: Neon integration tests
     runs-on: ubuntu-latest
-    # Skip the whole job when the secret is unset. Never point this at production.
     if: ${{ secrets.NEON_DEV_DATABASE_URL != '' }}
     steps:
+      - id: check_db
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
+        run: |
+          if [ -n "$DATABASE_URL" ]; then
+            echo "has_db=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_db=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: steps.check_db.outputs.has_db == 'true'
       - uses: actions/setup-python@v5
+        if: steps.check_db.outputs.has_db == 'true'
         with:
           python-version: "3.12"
       - name: Install test dependencies
+        if: steps.check_db.outputs.has_db == 'true'
         run: pip install -r requirements.txt
-      - name: Run integration tests against Neon dev
+      - name: Guard Neon target
+        if: steps.check_db.outputs.has_db == 'true'
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
+        run: python scripts/ci_guard_db.py
+      - name: Run integration tests against Neon
+        if: steps.check_db.outputs.has_db == 'true'
         env:
           DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
           APP_ENV: dev

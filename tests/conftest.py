@@ -142,6 +142,7 @@ class FakeDB:
     """Emulates session.execute(registry[key], params).mappings().all()/first()."""
     def __init__(self):
         self.calls = []
+        self.statements = []
         self.fail_with = None  # set to an exception to simulate Neon outage
 
     def _team(self, tid):
@@ -299,6 +300,7 @@ class _Clause:
 class _Session:
     def __init__(self, db): self.db = db
     def execute(self, clause, params=None):
+        self.db.statements.append(clause)
         if isinstance(clause, _Clause):
             return _Result(self.db.run(clause.key, params or {}))
         text_sql = getattr(clause, "text", "") or ""
@@ -312,7 +314,9 @@ class _Session:
 
 class _Registry(dict):
     def __missing__(self, key):
-        return _Clause(key)
+        clause = _Clause(key)
+        self[key] = clause
+        return clause
 
 
 # ---- fixtures -----------------------------------------------------------------
@@ -336,9 +340,10 @@ def fake_db(monkeypatch, base_env):
     
     # Patch BEFORE any app imports happen
     # Patch the registry dict itself (used by repositories as `registry["key"]`)
-    # Try both with and without src prefix
-    monkeypatch.setattr("src.db.sql_loader.registry", _Registry(), raising=False)
-    monkeypatch.setattr("db.sql_loader.registry", _Registry(), raising=False)
+    # Same instance for src.db and db so statement identity holds.
+    fake_registry = _Registry()
+    monkeypatch.setattr("src.db.sql_loader.registry", fake_registry, raising=False)
+    monkeypatch.setattr("db.sql_loader.registry", fake_registry, raising=False)
     
     # Patch get_db to return a fake session directly (not a generator)
     def fake_get_db():
@@ -395,7 +400,10 @@ def playback_configured(monkeypatch):
 
     stub.generate_presigned_url = generate_presigned_url
     stub.head_object = head_object
-    monkeypatch.setattr(S3_CLIENT_TARGET, lambda *a, **k: stub, raising=False)
+    try:
+        monkeypatch.setattr(S3_CLIENT_TARGET, lambda *a, **k: stub, raising=False)
+    except ImportError:
+        pass
     return stub
 
 
