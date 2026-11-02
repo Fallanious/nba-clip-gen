@@ -1,7 +1,7 @@
 """Downstream of the mkv change: ffmpeg clipping, extensions, S3 keys/ContentType, leftover .mp4."""
 import os, re, pytest
-from conftest import (load, flag_value, CLIPS_MODULE, STORAGE_MODULE, PLAYBACK_MODULE, SCAN_DIRS,
-                      REPO_ROOT, MKV_TYPE)
+from conftest import (load, flag_value, CLIPS_MODULE, STORAGE_MODULE,
+                      REPO_ROOT, MKV_TYPE, SCAN_DIRS)
 
 
 # ---------- ffmpeg accepts mkv input ----------
@@ -90,20 +90,6 @@ def test_upload_sets_content_type_mkv(fake_s3, tmp_path):
     call = (fake_s3.upload or fake_s3.put)[-1]
     extra = call.get("ExtraArgs", call)
     assert call["Key"].endswith(".mkv") and extra["ContentType"] == MKV_TYPE
-
-
-def test_fallback_presign_content_type_follows_key(fake_s3, monkeypatch):
-    """PR #1 services/playback.py hardcodes ResponseContentType 'video/mp4' and returns mime
-    'video/mp4'. Fallback presigns games.s3_key, which becomes .mkv."""
-    mod = load(PLAYBACK_MODULE)
-    monkeypatch.setattr(mod, "_s3_client", lambda *a, **k: __import__("boto3").client("s3"), raising=False)
-    cfg = load("config").config
-    for k, v in dict(S3_BUCKET="qa-fake-bucket", PLAYBACK_ALLOW_FALLBACK=True, PLAYBACK_VERIFY_OBJECT=False).items():
-        monkeypatch.setattr(cfg, k, v, raising=False)
-    res = mod.get_playback_url(dict(id=1, status="pending", s3_key=None, video_start_s=1.0, video_end_s=5.0,
-                                    game_key="games/202604240PHI.mkv"), "auto")
-    assert fake_s3.presign[-1]["ResponseContentType"] == MKV_TYPE
-    assert res["mime"] == MKV_TYPE
 
 
 # ---------- leftover hardcoded .mp4 audit ----------

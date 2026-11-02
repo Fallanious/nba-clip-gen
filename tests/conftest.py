@@ -24,7 +24,7 @@ RUNTIME_ERROR = "JsRuntimeNotFound"          # exception class (subclass of Runt
 RES_ENV = "YTDLP_MAX_RES"                    # env var for default resolution
 CLIPS_MODULE = "generate_clips"              # extract_clip / combine_clips
 STORAGE_MODULE = "services.storage"          # content_type_for(path), s3_key_for_game(bbref_id, path)
-PLAYBACK_MODULE = "services.playback"        # PR #1 presign; ResponseContentType must follow the key
+# PLAYBACK_MODULE removed: PR #1 code not on this branch
 SCAN_DIRS = ["src"]                          # for the leftover-.mp4 audit
 DEFAULT_RES = 720
 MKV_TYPE = "video/x-matroska"
@@ -85,6 +85,12 @@ def fake_run(monkeypatch, tmp_path):
 
 @pytest.fixture
 def fake_s3(monkeypatch):
+    """Mock S3 client. Skips tests if boto3 is unavailable."""
+    try:
+        import boto3
+    except ImportError:
+        pytest.skip("boto3 not installed (optional dependency)")
+    
     calls = SimpleNamespace(upload=[], put=[], presign=[])
     class C:
         def upload_file(self, Filename, Bucket, Key, ExtraArgs=None, **k):
@@ -96,7 +102,6 @@ def fake_s3(monkeypatch):
             return f"https://b.s3/{Params['Key']}?sig=fake"
         def head_object(self, **k):
             return {}
-    import boto3
     monkeypatch.setattr(boto3, "client", lambda *a, **k: C())
     monkeypatch.setenv("S3_BUCKET", "qa-fake-bucket")
     monkeypatch.setenv("AWS_REGION", "us-east-2")
