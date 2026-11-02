@@ -41,6 +41,33 @@ def create_app():
 
     # Auth seam
     app.before_request(before_request_hook)
+    
+    # Database session management - one session per request
+    from db import session as db_session
+    
+    @app.before_request
+    def setup_request_session():
+        """Create a database session for this request."""
+        if hasattr(g, '_db_session'):
+            return
+        g._db_session = db_session.get_session()
+        g._db_session_ctx = g._db_session.__enter__()
+    
+    @app.teardown_request
+    def teardown_request_session(exception=None):
+        """Close the database session for this request."""
+        if hasattr(g, '_db_session'):
+            try:
+                if exception:
+                    g._db_session.__exit__(type(exception), exception, exception.__traceback__)
+                else:
+                    g._db_session.__exit__(None, None, None)
+            except Exception:
+                pass
+            finally:
+                delattr(g, '_db_session')
+                if hasattr(g, '_db_session_ctx'):
+                    delattr(g, '_db_session_ctx')
 
     # Register blueprints
     app.register_blueprint(jobs_bp)

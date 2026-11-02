@@ -107,7 +107,7 @@ def _parse_team_abbr(value: str) -> Optional[int]:
 
     # Look up team by abbreviation using SQL query
     from db.sql_loader import registry
-    session = next(db_session.get_db())
+    session = db_session.get_db()
     result = session.execute(
         registry["teams/by_abbr"],
         {"abbr": value}
@@ -339,7 +339,7 @@ def search_players_endpoint():
             cursor_last_name, cursor_id = cursor_key
 
     # Query
-    session = next(db_session.get_db())
+    session = db_session.get_db()
     rows = players_repo.search_players(
         session,
         q=q,
@@ -396,7 +396,7 @@ def search_players_endpoint():
 @require_user
 def get_player_endpoint(player_id: int):
     """GET /api/players/:id - Get player detail."""
-    session = next(db_session.get_db())
+    session = db_session.get_db()
 
     # Get player
     row = players_repo.get_player(session, player_id)
@@ -434,7 +434,7 @@ def get_player_endpoint(player_id: int):
 @require_user
 def get_player_clips_endpoint(player_id: int):
     """GET /api/players/:id/clips - Get clips for a player."""
-    session = next(db_session.get_db())
+    session = db_session.get_db()
 
     # Verify player exists
     if not players_repo.player_exists(session, player_id):
@@ -629,7 +629,7 @@ def get_player_clips_endpoint(player_id: int):
 @require_user
 def get_clip_endpoint(clip_id: int):
     """GET /api/clips/:id - Get clip detail."""
-    session = next(db_session.get_db())
+    session = db_session.get_db()
 
     row = clips_repo.get_clip(session, clip_id)
     if not row:
@@ -693,7 +693,7 @@ def get_clip_endpoint(clip_id: int):
 @require_user
 def get_playback_url_endpoint(clip_id: int):
     """GET /api/clips/:id/playback-url - Get presigned playback URL."""
-    session = next(db_session.get_db())
+    session = db_session.get_db()
 
     # Get minimal clip data
     clip_data = clips_repo.get_playback_target(session, clip_id)

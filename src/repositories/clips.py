@@ -2,7 +2,7 @@
 
 from typing import Optional
 from sqlalchemy.orm import Session
-from db.sql_loader import registry
+import db.sql_loader
 from datetime import date
 
 
@@ -38,16 +38,16 @@ def get_player_clips(
         "c_id": cursor_id,
         "limit": limit,
     }
-    return session.execute(registry["clips/by_player"], params).mappings().all()
+    return session.execute(db.sql_loader.registry["clips/by_player"], params).mappings().all()
 
 
 def get_clip(session: Session, clip_id: int):
     """Get a single clip by ID."""
-    result = session.execute(registry["clips/get"], {"id": clip_id}).mappings().first()
+    result = session.execute(db.sql_loader.registry["clips/get"], {"id": clip_id}).mappings().first()
     return result
 
 
 def get_playback_target(session: Session, clip_id: int):
     """Get minimal clip data needed for playback URL generation."""
-    result = session.execute(registry["clips/playback_target"], {"id": clip_id}).mappings().first()
+    result = session.execute(db.sql_loader.registry["clips/playback_target"], {"id": clip_id}).mappings().first()
     return result

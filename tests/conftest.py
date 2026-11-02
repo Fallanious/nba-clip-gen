@@ -307,8 +307,8 @@ def base_env(monkeypatch):
 @pytest.fixture
 def fake_db(monkeypatch, base_env):
     db = FakeDB()
-    # DATABASE_URL unset triggers test mode in session.py (no engine creation)
-    monkeypatch.delenv("DATABASE_URL", raising=False)
+    # Set a fake DATABASE_URL
+    monkeypatch.setenv("DATABASE_URL", "postgresql://unit:unit@127.0.0.1:9/none")
     
     # Patch BEFORE any app imports happen
     # Patch the registry dict itself (used by repositories as `registry["key"]`)
@@ -316,12 +316,20 @@ def fake_db(monkeypatch, base_env):
     monkeypatch.setattr("src.db.sql_loader.registry", _Registry(), raising=False)
     monkeypatch.setattr("db.sql_loader.registry", _Registry(), raising=False)
     
-    # Patch get_db at the definition site BEFORE routes import it
+    # Patch get_db to return a fake session directly (not a generator)
     def fake_get_db():
-        yield _Session(db)
+        return _Session(db)
     
     monkeypatch.setattr("src.db.session.get_db", fake_get_db, raising=False)
     monkeypatch.setattr("db.session.get_db", fake_get_db, raising=False)
+    
+    # Patch get_session to return a fake context manager
+    @contextmanager
+    def fake_get_session():
+        yield _Session(db)
+    
+    monkeypatch.setattr("src.db.session.get_session", fake_get_session, raising=False)
+    monkeypatch.setattr("db.session.get_session", fake_get_session, raising=False)
     
     return db
 
