@@ -1,6 +1,6 @@
 -- name: players/search_browse
 -- Browse players alphabetically (no q). Keyset paging.
--- params: team_id smallint|null, active boolean|null, c_last_name text|null, c_id bigint|null, limit int
+-- params: team_id, active, c_last_name, c_id, limit
 -- returns: id, full_name, first_name, last_name, position, headshot_url, is_active, team_id, abbr, city, name
 SELECT p.id, p.full_name, p.first_name, p.last_name, p.position, p.headshot_url, p.is_active,
        t.id AS team_id, t.abbr, t.city, t.name

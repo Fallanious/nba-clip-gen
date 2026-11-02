@@ -119,7 +119,8 @@ def _extract_params_from_header(sql: str) -> set[str]:
 
 def _extract_params_from_sql(sql: str) -> set[str]:
     """Extract :param references from SQL."""
-    return set(re.findall(r":(\w+)", sql))
+    # Match :param but not ::type (type cast)
+    return set(re.findall(r"(?<!:):(\w+)(?!:)", sql))
 
 
 def load_queries() -> Mapping[str, TextClause]:

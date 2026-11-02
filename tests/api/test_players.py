@@ -1,7 +1,10 @@
 """GET /api/players and GET /api/players/:id (spec §1-3). Unit tests use FakeDB; integration marked."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
 import json, pytest
 from sqlalchemy.exc import OperationalError
-from conftest import assert_error, b64url, tamper_cursor, walk_pages, PLAYERS
+from tests.conftest import assert_error, b64url, tamper_cursor, walk_pages, PLAYERS
 
 ids = lambda body: [i["id"] for i in body["items"]]
 

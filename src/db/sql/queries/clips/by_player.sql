@@ -1,8 +1,6 @@
 -- name: clips/by_player
 -- A player's clips, filtered, keyset-paged on (game_date DESC, clip_id DESC). The API groups rows by game.
--- params: pid bigint, roles clip_role[]|null, date_from date|null, date_to date|null,
---         season text|null, game_id bigint|null, action_types text[]|null, subtypes text[]|null,
---         outcome text|null, status_all boolean, c_date date|null, c_id bigint|null, limit int
+-- params: pid, roles, date_from, date_to, season, game_id, action_types, subtypes, outcome, status_all, c_date, c_id, limit
 -- returns: clip_id, game_date, roles, game_id, play_index, period, game_clock, description,
 --          action_type, shot_subtype, outcome, duration_s, status, team_id, has_object,
 --          bbref_id, season, home_abbr, away_abbr  (limit+1 rows for lookahead)

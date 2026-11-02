@@ -1,7 +1,10 @@
 """GET /api/players/:id/clips, GET /api/clips/:id, GET /api/clips/:id/playback-url (spec §4-6)."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
 import pytest
 from sqlalchemy.exc import OperationalError
-from conftest import (assert_error, tamper_cursor, walk_pages, CLIPS, NOT_READY, PLAYABLE_CLIP,
+from tests.conftest import (assert_error, tamper_cursor, walk_pages, CLIPS, NOT_READY, PLAYABLE_CLIP,
                       NOT_READY_WITH_GAME_KEY, NOT_READY_NO_GAME_KEY)
 
 URL = "/api/players/{}/clips"
