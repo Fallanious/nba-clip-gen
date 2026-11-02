@@ -84,8 +84,9 @@ class Config:
         """Validate required configuration at startup."""
         errors = []
 
-        # Validate CURSOR_SECRET length
-        if len(self.CURSOR_SECRET.encode('utf-8')) < 32:
+        if self.APP_ENV != "dev" and not os.getenv("CURSOR_SECRET"):
+            errors.append("CURSOR_SECRET is required when APP_ENV is not dev")
+        elif len(self.CURSOR_SECRET.encode("utf-8")) < 32:
             errors.append("CURSOR_SECRET must be at least 32 bytes")
 
         if self.PLAYBACK_URL_TTL < 60 or self.PLAYBACK_URL_TTL > 3600:
