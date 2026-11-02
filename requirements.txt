@@ -11,3 +11,4 @@ flask-cors
 pytest==9.2.0
 python-dotenv==1.2.4
 sqlalchemy==2.1.6
+boto3==1.43.123
