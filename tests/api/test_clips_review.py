@@ -346,3 +346,20 @@ def test_ci_runs_integration_on_neon_branch():
     assert "postgresql://" not in text.lower()
     assert "postgres://" not in text.lower()
     assert "NEON_DEV_DATABASE_URL" in text
+
+
+def test_mime_for_key_uses_x_matroska(monkeypatch):
+    from services.playback import _mime_for_key
+    monkeypatch.setattr("services.playback.mimetypes.guess_type", lambda key: ("video/matroska", None))
+    assert _mime_for_key("games/test.mkv") == "video/x-matroska"
+    assert _mime_for_key("clips/a.mp4") == "video/mp4"
+    assert _mime_for_key("noext") == "application/octet-stream"
+
+
+def test_stack_and_ytdlp_agree_on_mkv_mime():
+    from services.playback import _mime_for_key
+    try:
+        from services.storage import content_type_for
+    except ImportError:
+        pytest.skip("PR #2 storage.py is not on this stack")
+    assert content_type_for("g.mkv") == _mime_for_key("games/x.mkv") == "video/x-matroska"

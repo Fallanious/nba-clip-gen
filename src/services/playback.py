@@ -11,6 +11,24 @@ from botocore.exceptions import (
 from config import config
 from errors import ApiError
 
+# Match PR #2 services.storage.CONTENT_TYPES so upload ContentType and
+# presign ResponseContentType agree. Prefer video/x-matroska over RFC 9559
+# video/matroska, which some mimetypes databases emit for .mkv.
+_MIME_BY_EXT = {
+    ".mkv": "video/x-matroska",
+    ".mp4": "video/mp4",
+    ".webm": "video/webm",
+}
+
+
+def _mime_for_key(key: str) -> str:
+    """Content-Type from the object key's extension."""
+    ext = os.path.splitext(key or "")[1].lower()
+    if ext in _MIME_BY_EXT:
+        return _MIME_BY_EXT[ext]
+    guessed, _ = mimetypes.guess_type(key or "")
+    return guessed or "application/octet-stream"
+
 
 def _allow_fallback() -> bool:
     """Fallback presigns full game video; disabled in production unless explicitly enabled."""
@@ -106,10 +124,7 @@ def generate_presigned_url(
         # Verify object exists (if configured)
         _verify_object(s3_client, bucket, s3_key)
 
-        # Derive content-type from file extension
-        content_type, _ = mimetypes.guess_type(s3_key)
-        if not content_type:
-            content_type = 'application/octet-stream'
+        content_type = _mime_for_key(s3_key)
 
         # Generate presigned URL
         url = s3_client.generate_presigned_url(
@@ -185,11 +200,7 @@ def get_playback_url(clip_data: dict, mode: Optional[str] = None) -> dict:
         ttl = config.PLAYBACK_URL_TTL
         key = clip_data['s3_key']
         url, expires_at = generate_presigned_url(key, ttl)
-
-        # Derive MIME type from file extension
-        mime, _ = mimetypes.guess_type(key)
-        if not mime:
-            mime = 'application/octet-stream'
+        mime = _mime_for_key(key)
 
         return {
             "clip_id": str(clip_data['id']),
@@ -226,11 +237,7 @@ def get_playback_url(clip_data: dict, mode: Optional[str] = None) -> dict:
         ttl = config.PLAYBACK_FALLBACK_TTL
         key = clip_data['game_key']
         url, expires_at = generate_presigned_url(key, ttl)
-
-        # Derive MIME type from file extension
-        mime, _ = mimetypes.guess_type(key)
-        if not mime:
-            mime = 'application/octet-stream'
+        mime = _mime_for_key(key)
 
         return {
             "clip_id": str(clip_data['id']),
