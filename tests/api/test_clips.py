@@ -517,13 +517,28 @@ def test_playback_authorize_called_before_sign(playback_client, monkeypatch, pla
     assert seen == [0]
 
 
-def test_allow_fallback_off_in_production_by_default(monkeypatch):
+@pytest.mark.parametrize("env", ["test", "prod", "production", "staging"])
+def test_allow_fallback_off_outside_dev_by_default(env, monkeypatch):
     from services.playback import _allow_fallback
-    monkeypatch.setenv("APP_ENV", "production")
+    monkeypatch.setenv("APP_ENV", env)
     monkeypatch.delenv("PLAYBACK_ALLOW_FALLBACK", raising=False)
     assert _allow_fallback() is False
     monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "true")
     assert _allow_fallback() is True
+
+
+def test_allow_fallback_on_in_dev_by_default(monkeypatch):
+    from services.playback import _allow_fallback
+    monkeypatch.setenv("APP_ENV", "dev")
+    monkeypatch.delenv("PLAYBACK_ALLOW_FALLBACK", raising=False)
+    assert _allow_fallback() is True
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "false")
+    assert _allow_fallback() is False
+
+
+def test_config_has_no_playback_allow_fallback_property():
+    from config import Config
+    assert not hasattr(Config, "PLAYBACK_ALLOW_FALLBACK")
 
 
 def test_playback_botocore_error_is_502(monkeypatch, fake_db, playback_configured):
