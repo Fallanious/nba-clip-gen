@@ -64,6 +64,20 @@ def _reject_empty(param_name: str, raw: Optional[str]) -> str:
     return str(raw).strip()
 
 
+def _optional_cursor() -> Optional[str]:
+    """Absent cursor -> None (first page). Present empty/whitespace -> 400."""
+    cursor_str = request.args.get("cursor")
+    if cursor_str is None:
+        return None
+    if not str(cursor_str).strip():
+        raise ApiError(
+            code="invalid_cursor",
+            message="Invalid cursor format",
+            status=400,
+        )
+    return str(cursor_str)
+
+
 def _clips_cursor_filters(
     player_id,
     roles,
@@ -395,13 +409,13 @@ def search_players_endpoint():
             details={"param": "limit"}
         )
 
-    # Parse cursor
-    cursor_str = request.args.get('cursor', '')
+    # Parse cursor. Empty cursor= is 400, not first page.
+    cursor_str = _optional_cursor()
     cursor_score = None
     cursor_last_name = None
     cursor_id = None
 
-    if cursor_str:
+    if cursor_str is not None:
         filters = {"q": q, "team": team_id, "active": active}
         cursor_key = decode_cursor(cursor_str, filters)
 
@@ -633,16 +647,14 @@ def get_player_clips_endpoint(player_id: int):
     cursor_period = None
     cursor_play_index = None
     cursor_id = None
-    cursor_str = None
-    if 'cursor' in request.args:
-        cursor_str = _reject_empty('cursor', request.args.get('cursor'))
+    cursor_str = _optional_cursor()
 
     filters = _clips_cursor_filters(
         player_id, roles, date_from, date_to, season, game_id,
         action_types, shot_subtypes, outcome, status_param,
     )
 
-    if cursor_str:
+    if cursor_str is not None:
         cursor_key = decode_cursor(cursor_str, filters)
 
         if len(cursor_key) != 5:
