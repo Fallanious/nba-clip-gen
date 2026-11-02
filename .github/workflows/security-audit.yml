@@ -40,5 +40,5 @@ jobs:
       - name: Install project and test dependencies
         run: python -m pip install --require-hashes -r requirements-dev.lock
 
-      - name: Run yt-dlp tests
-        run: pytest tests/ytdlp
+      - name: Run tests
+        run: pytest tests/ytdlp tests/unit
