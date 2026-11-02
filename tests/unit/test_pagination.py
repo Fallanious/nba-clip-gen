@@ -21,14 +21,8 @@ def test_roundtrip_and_full_hmac():
     assert decode_cursor(cur, filters) == ["Smith", 123]
 
 
-def test_sorted_list_filters_hash_the_same():
-    from pagination import encode_cursor, decode_cursor
-
-    key = ["A", 1]
-    c1 = encode_cursor(key, {"roles": ["shot", "assist"]})
-    # List order must not matter: clients may reorder query params between pages.
-    assert decode_cursor(c1, {"roles": ["assist", "shot"]}) == key
-    assert decode_cursor(c1, {"roles": ["shot", "assist"]}) == key
+# List-order hashing lives in test_list_filter_order_invariant
+# (tests/unit/test_pagination_review.py). Do not re-lock the old TypeError path.
 
 
 def test_filter_mismatch_rejected():
