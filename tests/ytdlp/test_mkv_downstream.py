@@ -120,6 +120,7 @@ ALLOWED_MP4 = {  # (relpath, exact stripped line) -> reason
     ("src/routes/timestamps.py", "# Support all video formats (mp4, mkv, webm)"): "doc (x2)",
     ("src/routes/timestamps.py", 'if not filename.endswith((".mp4", ".mkv", ".webm")):'): "clip list",
     ("src/routes/timestamps.py", 'clip_count = len([f for f in os.listdir(run_path) if f.endswith((".mp4", ".mkv", ".webm"))])'): "run count",
+    ("src/routes/videos.py", "Safari is not supported for full-game playback; clips are mp4 and work everywhere."): "R8 Safari note",
     ("src/routes/videos.py", 'if f.endswith((".mp4", ".mkv", ".webm")):'): "film list",
     ("src/services/storage.py", '".mp4": "video/mp4",'): "content-type map",
 }

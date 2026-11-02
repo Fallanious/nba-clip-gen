@@ -294,3 +294,13 @@ def test_film_route_mimetype_mkv(tmp_path, monkeypatch):
     assert resp.status_code == 200
     assert resp.headers["Content-Type"].split(";")[0].strip() == "video/x-matroska"
     assert resp.headers["Content-Type"].split(";")[0].strip() != "application/octet-stream"
+
+
+def test_full_game_docs_note_safari_unsupported():
+    readme = open(os.path.join(REPO_ROOT, "README.md"), encoding="utf-8").read()
+    import routes.videos as videos
+    doc = videos.serve_video.__doc__ or ""
+    for text in (readme, doc):
+        assert "Safari is not supported for full-game playback" in text
+        assert "not remuxed" in text or "are not remuxed" in text
+    assert "clips are MP4" in readme or "clips are mp4" in doc.lower()

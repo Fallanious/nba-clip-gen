@@ -130,7 +130,7 @@ The download script uses the recommended yt-dlp invocation for optimal quality:
 - Format: `bv*+ba/b` (best video + best audio, fallback to best combined)
 - Resolution capped by default (prevents excessive file sizes)
 - Output format: MKV (better container for modern codecs)
-- **Note:** Downloaded full games are MKV (VP9/AV1+Opus). Safari (and some Chrome setups) will not play those files from `/api/film/...`. Generated clips are re-encoded to MP4 (H.264/AAC) for browser playback.
+- **Note:** Full games stay MKV to keep file size down and are not remuxed. Safari is not supported for full-game playback. Generated clips are MP4 (H.264/AAC) and work in every browser.
 
 You can configure the maximum resolution:
 
