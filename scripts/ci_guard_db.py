@@ -90,11 +90,6 @@ def _parse_neon_host(host: str) -> tuple[str, str] | None:
     return _endpoint_from_label(match.group("label")), match.group("region")
 
 
-def _host_endpoint_id(host: str) -> str | None:
-    parsed = _parse_neon_host(host)
-    return None if parsed is None else parsed[0]
-
-
 def _query_key_list(url: str) -> list[str]:
     parsed = urlparse(url)
     if not parsed.scheme:

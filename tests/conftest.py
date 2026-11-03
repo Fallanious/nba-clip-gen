@@ -12,7 +12,7 @@ Two layers:
 ADAPT HERE: the ONLY places that know DEV's module names are the constants
 below and `_make_app()`.
 """
-import base64, json, os, re, unicodedata, datetime as dt
+import base64, importlib.util, json, os, re, unicodedata, datetime as dt
 from types import SimpleNamespace
 from contextlib import contextmanager
 import pytest
@@ -406,10 +406,8 @@ def playback_configured(monkeypatch):
 
     stub.generate_presigned_url = generate_presigned_url
     stub.head_object = head_object
-    try:
+    if importlib.util.find_spec("services.playback") is not None:
         monkeypatch.setattr(S3_CLIENT_TARGET, lambda *a, **k: stub, raising=False)
-    except ImportError:
-        pass
     return stub
 
 
@@ -428,6 +426,8 @@ def integration_client(base_env, monkeypatch):
         pytest.skip("DATABASE_URL not set (integration tests need a Neon dev/CI branch)")
     if os.environ.get("ALLOW_INTEGRATION_DB") != "1":
         pytest.skip("Set ALLOW_INTEGRATION_DB=1 to run against DATABASE_URL")
+    if re.search(r"prod|main|primary", url, re.I) and "aws.neon.tech" not in url.lower():
+        pytest.skip("Refusing to run against what looks like a production DATABASE_URL")
     monkeypatch.setenv("DATABASE_URL", url)
     a = _make_app()
     a.config.update(TESTING=True)

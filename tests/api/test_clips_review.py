@@ -265,8 +265,8 @@ def test_team_id_zero_not_dropped(client, monkeypatch):
 ])
 def test_cursor_roundtrip_every_filter_combo(client, qs):
     c = get(client, f"limit=1&status=all&{qs}", pid=209).get_json()["next_cursor"]
-    if c is not None:
-        assert get(client, f"limit=1&status=all&{qs}&cursor={c}", pid=209).status_code == 200
+    assert c is not None
+    assert get(client, f"limit=1&status=all&{qs}&cursor={c}", pid=209).status_code == 200
 
 
 def test_cursor_filter_helper_single_source():
@@ -337,39 +337,49 @@ def test_by_player_one_prepared_statement(client, fake_db):
 
 
 @pytest.mark.integration
-def test_sql_prepare_every_filter_combo(integration_client):
+@pytest.mark.parametrize("overrides", [
+    {},
+    {"roles": ["shot"]},
+    {"action_types": ["shot"], "outcome": "made"},
+    {"season": "2025-26", "game_id": 77},
+])
+def test_sql_prepare_every_filter_combo(integration_client, overrides):
     from sqlalchemy import create_engine, text, bindparam, BigInteger, Date, Text, Integer, Boolean
     from sqlalchemy.dialects.postgresql import ARRAY
     from db.sql_loader import get_raw_sql
     url = os.environ.get("DATABASE_URL", "")
     engine = create_engine(url)
-    sql = get_raw_sql("clips/by_player")
-    stmt = text("EXPLAIN " + sql).bindparams(
-        bindparam("pid", type_=BigInteger),
-        bindparam("roles", type_=ARRAY(Text)),
-        bindparam("date_from", type_=Date),
-        bindparam("date_to", type_=Date),
-        bindparam("season", type_=Text),
-        bindparam("game_id", type_=BigInteger),
-        bindparam("action_types", type_=ARRAY(Text)),
-        bindparam("subtypes", type_=ARRAY(Text)),
-        bindparam("outcome", type_=Text),
-        bindparam("status_all", type_=Boolean),
-        bindparam("c_date", type_=Date),
-        bindparam("c_game_id", type_=BigInteger),
-        bindparam("c_period", type_=Integer),
-        bindparam("c_play_index", type_=Integer),
-        bindparam("c_id", type_=BigInteger),
-        bindparam("limit", type_=Integer),
-    )
-    params = {
-        "pid": 201, "roles": None, "date_from": None, "date_to": None, "season": None,
-        "game_id": None, "action_types": None, "subtypes": None, "outcome": None,
-        "status_all": True, "c_date": None, "c_game_id": None, "c_period": None,
-        "c_play_index": None, "c_id": None, "limit": 10,
-    }
-    with engine.connect() as conn:
-        conn.execute(stmt, params)
+    try:
+        sql = get_raw_sql("clips/by_player")
+        stmt = text("EXPLAIN " + sql).bindparams(
+            bindparam("pid", type_=BigInteger),
+            bindparam("roles", type_=ARRAY(Text)),
+            bindparam("date_from", type_=Date),
+            bindparam("date_to", type_=Date),
+            bindparam("season", type_=Text),
+            bindparam("game_id", type_=BigInteger),
+            bindparam("action_types", type_=ARRAY(Text)),
+            bindparam("subtypes", type_=ARRAY(Text)),
+            bindparam("outcome", type_=Text),
+            bindparam("status_all", type_=Boolean),
+            bindparam("c_date", type_=Date),
+            bindparam("c_game_id", type_=BigInteger),
+            bindparam("c_period", type_=Integer),
+            bindparam("c_play_index", type_=Integer),
+            bindparam("c_id", type_=BigInteger),
+            bindparam("limit", type_=Integer),
+        )
+        params = {
+            "pid": 201, "roles": None, "date_from": None, "date_to": None, "season": None,
+            "game_id": None, "action_types": None, "subtypes": None, "outcome": None,
+            "status_all": True, "c_date": None, "c_game_id": None, "c_period": None,
+            "c_play_index": None, "c_id": None, "limit": 10,
+        }
+        params.update(overrides)
+        with engine.connect() as conn:
+            conn.execute(stmt, params)
+    finally:
+        engine.dispose()
 
 
 def test_ci_runs_integration_on_neon_branch():

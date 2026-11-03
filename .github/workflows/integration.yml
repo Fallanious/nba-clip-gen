@@ -4,6 +4,10 @@ on:
   pull_request:
   push:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -19,7 +23,6 @@ jobs:
       - name: Install and test in a clean venv
         run: |
           python -m venv .venv
-          .venv/bin/pip install -U pip
           .venv/bin/pip install --require-hashes -r requirements.lock
           .venv/bin/pytest -m "not integration" -q
 
@@ -58,4 +61,5 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
           APP_ENV: dev
+          ALLOW_INTEGRATION_DB: "1"
         run: pytest -m integration -q

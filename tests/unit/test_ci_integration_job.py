@@ -140,6 +140,8 @@ def test_integration_job_never_targets_default_or_production():
     for name, j in _jobs().items():
         for s in j.get("steps") or []:
             run = s.get("run") or ""
+            assert "pip install -U pip" not in run
+            assert "pip install --upgrade pip" not in run
             if "pip install" in run:
                 assert "--require-hashes" in run, f"{name} pip install is not hashed"
                 assert "requirements.lock" in run
@@ -448,6 +450,7 @@ def test_ci_guard_unused_branch_json_ignored(tmp_path):
 ])
 def test_conftest_integration_fixture_refuses_prod(monkeypatch, request, url):
     monkeypatch.setenv("DATABASE_URL", url)
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
     with pytest.raises(pytest.skip.Exception) as ei:
         request.getfixturevalue("integration_client")
     assert "production" in str(ei.value).lower()

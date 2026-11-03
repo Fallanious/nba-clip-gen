@@ -51,7 +51,8 @@ def test_display_order_games_and_plays(client):
     for g in b["games"]:
         k = [(p["period"], p["play_index"]) for p in g["plays"]]
         assert k == sorted(k)
-    # clip ids don't follow play order: game 77 must show 90977(p1,#38) before 90600? no: 90600 is p1,#5
+    # Within game 77, plays sort by (period, play_index), so 90600 (p1, #5)
+    # comes before 90977 (p1, #38). Clip ids are not in that order.
     g77 = next(g for g in b["games"] if g["game"]["id"] == "77")
     assert [p["id"] for p in g77["plays"]] == ["90600", "90977", "90500", "90412"]
 
@@ -69,10 +70,10 @@ def test_multi_role_dedup_and_aggregation(client):
     assert sorted(p["roles"]) == ["foul", "rebound"]
 
 
-def test_role_filter_lists_only_matching_roles(client):
+def test_role_filter_keeps_all_roles_on_the_clip(client):
     b = get(client, "role=foul").get_json()
     assert play_ids(b) == [90500]
-    assert b["games"][0]["plays"][0]["roles"] == ["foul"]
+    assert b["games"][0]["plays"][0]["roles"] == ["foul", "rebound"]
 
 
 @pytest.mark.parametrize("qs", ["role=shot&role=block", "role=shot,block", "role=shot,block,shot"])
@@ -148,7 +149,7 @@ def test_unknown_player_404_beats_param_errors_or_documented(client):
 @pytest.mark.parametrize("limit", [1, 2, 3, 7, 50])
 def test_paging_no_dupes_no_gaps_bulk(client, limit):
     full = play_ids(get(client, "limit=200", pid=209).get_json())
-    assert len(full) == 131  # 130 bulk + 90412 (assist)
+    assert len(full) == 132  # 130 bulk + 90412 (assist) + 95001 (same-date game 51)
     pages = walk_pages(client, URL.format(209) + f"?limit={limit}", play_ids)
     flat = [x for p in pages for x in p]
     assert sorted(flat) == sorted(full) and len(set(flat)) == len(flat)
@@ -246,7 +247,7 @@ def test_expired_clip_cursor_rejected(client, monkeypatch):
     import time
     now = time.time()
     monkeypatch.setenv("CURSOR_MAX_AGE_S", "1")
-    monkeypatch.setattr("pagination.time.time", lambda: now + 10)
+    monkeypatch.setattr("pagination._now", lambda: now + 10)
     assert_error(get(client, f"limit=2&cursor={c}", pid=209), 400, "invalid_cursor")
 
 
