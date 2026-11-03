@@ -178,7 +178,7 @@ def test_iat_boundary(monkeypatch):
     from errors import ApiError
 
     now = 1_700_000_000
-    monkeypatch.setattr("pagination.time.time", lambda: float(now))
+    monkeypatch.setattr("pagination._now", lambda: float(now))
     fhash = _filter_hash({})
     ok = signed({"v": 1, "kv": 1, "iat": now - MAX_AGE_DEFAULT, "f": fhash, "k": ["A", 1]})
     assert decode_cursor(ok, {}) == ["A", 1]

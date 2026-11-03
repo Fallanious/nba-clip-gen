@@ -25,27 +25,20 @@ ALIASES = {
     "rest_framework": "djangorestframework",
 }
 
-# Repo-owned packages/modules. Names here are local even if this stack layer
-# has not created the matching src/ path yet (e.g. services before playback).
+# Later stack layers only. Names that already exist under src/ are discovered
+# by _exists_under_src so we do not also hardcode PyPI-colliding names
+# (utils, db, auth, config, errors, app, routes).
+#   services      — playback layer
+#   repositories  — players layer
+#   playbyplay    — scraper used by scripts
+#   scripts       — load_players
+#   tests         — test package (not under src/)
+#   migrations    — Alembic env
 LOCAL_PACKAGES = frozenset({
-    "app",
-    "auth",
-    "authz",
-    "backfill_clip_attributes",
-    "config",
-    "db",
-    "download_video",
-    "errors",
-    "generate_clips",
-    "match_play_timestamps",
-    "pagination",
-    "playbyplay",
-    "repositories",
-    "routes",
-    "scrape_playbyplay",
-    "scripts",
     "services",
-    "utils",
+    "repositories",
+    "playbyplay",
+    "scripts",
     "tests",
     "migrations",
 })
@@ -76,48 +69,16 @@ def _is_local(name: str, src: Path = SRC) -> bool:
     return name in LOCAL_PACKAGES or _exists_under_src(name, src)
 
 
-def _try_import_error_guards(tree: ast.AST) -> set[str]:
-    """Imports inside ``try / except ImportError``."""
-    optional: set[str] = set()
-
-    def _is_import_error(handler: ast.ExceptHandler) -> bool:
-        t = handler.type
-        if t is None:
-            return False
-        names = []
-        if isinstance(t, ast.Name):
-            names.append(t.id)
-        elif isinstance(t, ast.Tuple):
-            names.extend(e.id for e in t.elts if isinstance(e, ast.Name))
-        return "ImportError" in names or "ModuleNotFoundError" in names
-
-    for node in ast.walk(tree):
-        if not isinstance(node, ast.Try):
-            continue
-        if not any(_is_import_error(h) for h in node.handlers):
-            continue
-        for child in node.body:
-            for sub in ast.walk(child):
-                if isinstance(sub, ast.Import):
-                    for alias in sub.names:
-                        optional.add(alias.name.split(".")[0])
-                elif isinstance(sub, ast.ImportFrom) and sub.module and sub.level == 0:
-                    optional.add(sub.module.split(".")[0])
-    return optional
-
-
-def _top_level_imports(root: Path) -> tuple[set[str], set[str]]:
-    """Return (required imports, optional ImportError-guarded imports)."""
+def _top_level_imports(root: Path) -> set[str]:
+    """Return top-level import names under root."""
     found: set[str] = set()
-    optional: set[str] = set()
     if not root.exists():
-        return found, optional
+        return found
     for path in root.rglob("*.py"):
         try:
             tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
         except (SyntaxError, UnicodeDecodeError):
             continue
-        optional |= _try_import_error_guards(tree)
         for node in ast.walk(tree):
             if isinstance(node, ast.Import):
                 for alias in node.names:
@@ -127,7 +88,7 @@ def _top_level_imports(root: Path) -> tuple[set[str], set[str]]:
                     continue
                 if node.module:
                     found.add(node.module.split(".")[0])
-    return found, optional
+    return found
 
 
 def collect_undeclared(
@@ -138,22 +99,19 @@ def collect_undeclared(
 ) -> list[str]:
     """Third-party top-level imports not declared in requirements.txt.
 
-    Local names (explicit LOCAL_PACKAGES or a matching path under src/) are
-    exempt. try/except ImportError exempts a name only when it is local;
-    an undeclared third-party import is reported even inside that guard.
+    Local names (later-layer LOCAL_PACKAGES or a matching path under src/) are
+    exempt. A try/except ImportError does not skip an undeclared third-party
+    import.
     """
     declared = _declared(requirements)
     stdlib = set(sys.stdlib_module_names)
-    src_imps, src_opt = _top_level_imports(src)
-    test_imps, test_opt = _top_level_imports(tests)
-    # try/except ImportError is recorded only so local names can be skipped
-    # via _is_local; third-party names in src_opt/test_opt are still required.
-    _optional_local = {n for n in (src_opt | test_opt) if _is_local(n, src)}
+    src_imps = _top_level_imports(src)
+    test_imps = _top_level_imports(tests)
     missing = []
     for name in sorted(src_imps | test_imps):
         if name in stdlib:
             continue
-        if _is_local(name, src) or name in _optional_local:
+        if _is_local(name, src):
             continue
         dist = ALIASES.get(name, name).replace("_", "-").lower()
         if dist in declared:
@@ -204,3 +162,23 @@ def test_try_except_local_package_is_allowed(tmp_path):
     )
     missing = collect_undeclared(src=src, tests=tests, requirements=req)
     assert not any(m.startswith("services ") for m in missing), missing
+
+
+def test_try_except_scratch_local_module_is_allowed(tmp_path):
+    """A local name discovered only via src/, not LOCAL_PACKAGES, is exempt."""
+    src, tests, req = _scratch_tree(
+        tmp_path,
+        "try:\n    from localmod.x import y\nexcept ImportError:\n    pass\n",
+    )
+    (src / "localmod").mkdir()
+    (src / "localmod" / "__init__.py").write_text("", encoding="utf-8")
+    missing = collect_undeclared(src=src, tests=tests, requirements=req)
+    assert not any(m.startswith("localmod ") for m in missing), missing
+
+
+def test_pypi_colliding_name_not_on_disk_is_caught(tmp_path):
+    """`utils`/`db` are real PyPI names; without a src/ path they are not local."""
+    src, tests, req = _scratch_tree(tmp_path, "import utils\nimport db\n")
+    missing = collect_undeclared(src=src, tests=tests, requirements=req)
+    assert any(m.startswith("utils ") for m in missing), missing
+    assert any(m.startswith("db ") for m in missing), missing
