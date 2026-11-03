@@ -166,6 +166,7 @@ def test_integration_job_never_targets_default_or_production():
     pytest_env = steps[pytest_i].get("env") or {}
     assert pytest_env.get("ALLOW_INTEGRATION_DB") == "1"
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(pytest_env.get("NEON_DEV_ENDPOINT_ID") or "")
+    assert "vars.NEON_DEV_REGION" in str(pytest_env.get("NEON_DEV_REGION") or "")
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
@@ -788,3 +789,47 @@ def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
     _require_neon_integration_url(
         "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db?sslmode=require"
     )
+
+
+_OK_NEON = "ep-dev-abc.us-east-1.aws.neon.tech"
+_PW = "secret-pass"
+
+
+@pytest.mark.parametrize("url,match", [
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&hostaddr=1.2.3.4",
+        "parameters are not allowed",
+    ),
+    (
+        f"host={_OK_NEON} hostaddr=1.2.3.4 user=u password={_PW} dbname=db sslmode=require",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&service=foo",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&options=endpoint%3Dep-prod",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&port=5433",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=disable",
+        "sslmode must be require or verify-full",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db",
+        "sslmode must be require or verify-full",
+    ),
+])
+def test_conftest_integration_fixture_fails_closed_on_guard_bypasses(monkeypatch, request, url, match):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+    monkeypatch.setenv("DATABASE_URL", url)
+    with pytest.raises(pytest.fail.Exception, match=match) as ei:
+        request.getfixturevalue("integration_client")
+    assert _PW not in str(ei.value)

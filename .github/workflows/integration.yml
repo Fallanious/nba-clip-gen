@@ -63,4 +63,5 @@ jobs:
           APP_ENV: dev
           ALLOW_INTEGRATION_DB: "1"
           NEON_DEV_ENDPOINT_ID: ${{ vars.NEON_DEV_ENDPOINT_ID }}
+          NEON_DEV_REGION: ${{ vars.NEON_DEV_REGION }}
         run: pytest -m integration -q -rs

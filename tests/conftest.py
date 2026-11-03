@@ -13,28 +13,17 @@ Two layers:
 ADAPT HERE: the ONLY places that know DEV's module names are the constants
 below and `_make_app()`.
 """
-import base64, json, os, re, unicodedata, datetime as dt
+import base64, json, os, re, subprocess, sys, unicodedata, datetime as dt
 from types import SimpleNamespace
 from contextlib import contextmanager
 import pytest
 
-# Same host rules as scripts/ci_guard_db.py.
-_NEON_HOST = re.compile(
-    r"^"
-    r"(?P<label>ep-[a-z0-9-]+)"
-    r"(?:\.(?P<cell>c-[1-9][0-9]{0,3}))?"
-    r"\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)"
-    r"\.aws\.neon\.tech"
-    r"$",
-    re.ASCII,
-)
-_POOLER_SUFFIX = "-pooler"
+_CI_GUARD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts", "ci_guard_db.py")
 
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
-import sys as _sys
 _SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src")
-if _SRC not in _sys.path:
-    _sys.path.insert(0, _SRC)   # app imports top-level modules: config, db.*, routes.*, services.*
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)   # app imports top-level modules: config, db.*, routes.*, services.*
 APP_FACTORY = "app:create_app"          # app factory import path
 SESSION_TARGET = "routes.players.get_db"  # routes call next(get_db())
 REGISTRY_TARGET = None  # real registry is used; FakeDB maps TextClause -> key
@@ -429,28 +418,23 @@ def playback_client(fake_db, playback_configured):
 
 
 def _require_neon_integration_url(url: str) -> None:
-    """Fail closed unless DATABASE_URL targets NEON_DEV_ENDPOINT_ID. Never print the URL."""
+    """Fail closed unless ci_guard_db.py accepts DATABASE_URL. Never print the URL."""
     expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
     if not expected:
         pytest.fail("NEON_DEV_ENDPOINT_ID is required to run integration tests")
-
-    try:
-        from psycopg.conninfo import conninfo_to_dict
-        info = conninfo_to_dict(url)
-    except Exception:
-        pytest.fail("DATABASE_URL is invalid")
-    host = str(info.get("host") or "").strip().lower()
-    match = _NEON_HOST.fullmatch(host)
-    if match is None:
-        pytest.fail("DATABASE_URL host is not an accepted Neon host")
-    label = match.group("label")
-    endpoint = (
-        label[: -len(_POOLER_SUFFIX)]
-        if label.endswith(_POOLER_SUFFIX) and len(label) > len(_POOLER_SUFFIX)
-        else label
+    env = os.environ.copy()
+    env["DATABASE_URL"] = url
+    if not (env.get("NEON_DEV_REGION") or "").strip():
+        env.pop("NEON_DEV_REGION", None)
+    result = subprocess.run(
+        [sys.executable, _CI_GUARD],
+        env=env,
+        capture_output=True,
+        text=True,
     )
-    if endpoint != expected:
-        pytest.fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+    if result.returncode != 0:
+        lines = (result.stderr or "").strip().splitlines()
+        pytest.fail(lines[-1] if lines else "DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
 
 
 @pytest.fixture
