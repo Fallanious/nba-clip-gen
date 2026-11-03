@@ -3,7 +3,7 @@
 -- params: q, team_id, active, c_score, c_last_name, c_id, limit
 -- returns: id, full_name, first_name, last_name, position, headshot_url, is_active,
 --          team_id, abbr, city, name, score  (limit+1 rows for lookahead)
-SELECT p.id, p.full_name, p.first_name, p.last_name, p.position, p.headshot_url, p.is_active,
+SELECT p.id, p.full_name, p.first_name, p.last_name, p.position, p.headshot_url, p.is_active, p.updated_at,
        t.id AS team_id, t.abbr, t.city, t.name,
        similarity(lower(f_unaccent(p.full_name)), lower(f_unaccent(:q))) AS score
 FROM players p LEFT JOIN teams t ON t.id = p.team_id
