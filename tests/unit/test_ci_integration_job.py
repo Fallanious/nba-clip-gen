@@ -89,7 +89,9 @@ def test_integration_job_skips_without_secret():
             check_id = step.get("id")
             for later in steps[i + 1:]:
                 later_if = str(later.get("if") or "")
-                if f"steps.{check_id}.outputs.has_db == 'true'" not in later_if:
+                gated_true = f"steps.{check_id}.outputs.has_db == 'true'" in later_if
+                gated_false = f"steps.{check_id}.outputs.has_db != 'true'" in later_if
+                if not gated_true and not gated_false:
                     later_gated = False
             break
     assert has_db_step and later_gated
@@ -99,6 +101,25 @@ def test_integration_job_skips_without_secret():
         if "pytest -m integration" in str(step.get("run") or ""):
             pytest_runs = True
     assert pytest_runs
+
+
+def test_missing_neon_secret_fails_on_protected_prs():
+    """PRs into foundation or main must not go green when the Neon secret is missing."""
+    job = _job()
+    found = False
+    for step in job.get("steps") or []:
+        if "Require Neon secret" not in str(step.get("name") or ""):
+            continue
+        found = True
+        later_if = str(step.get("if") or "")
+        run = str(step.get("run") or "")
+        assert "has_db != 'true'" in later_if
+        assert "github.event_name == 'pull_request'" in later_if
+        assert "github.base_ref == 'main'" in later_if
+        assert "github.base_ref == 'cursor/01-foundation-9d4d'" in later_if
+        assert "exit 1" in run
+        assert "NEON_DEV_DATABASE_URL is required" in run
+    assert found
 
 
 def test_integration_skip_behaviour_local():
@@ -162,6 +183,7 @@ def test_integration_job_never_targets_default_or_production():
     guard_i = next(i for i, s in enumerate(steps) if "ci_guard_db.py" in str(s.get("run") or ""))
     pytest_i = next(i for i, s in enumerate(steps) if "pytest -m integration" in str(s.get("run") or ""))
     assert guard_i < pytest_i
+    assert "-rs" in str(steps[pytest_i].get("run") or "")
     pytest_env = steps[pytest_i].get("env") or {}
     assert pytest_env.get("ALLOW_INTEGRATION_DB") == "1"
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(pytest_env.get("NEON_DEV_ENDPOINT_ID") or "")
@@ -171,6 +193,7 @@ def test_integration_job_never_targets_default_or_production():
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
     assert "NEON_DEV_REGION" in guard_env
     assert "vars.NEON_DEV_REGION" in str(guard_env["NEON_DEV_REGION"])
+    assert "unset NEON_DEV_REGION" in str(steps[guard_i].get("run") or "")
 
 
 def _ok_url(host, extra=""):
@@ -192,25 +215,33 @@ def _run_guard(env):
 
 
 def test_ci_guard_db_requires_endpoint_and_url():
-    assert _run_guard({
+    missing_endpoint = _run_guard({
         "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db",
-    }).returncode != 0
-    assert _run_guard({"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}).returncode != 0
-    assert _run_guard({}).returncode != 0
+    })
+    assert missing_endpoint.returncode != 0
+    assert "NEON_DEV_ENDPOINT_ID is required" in missing_endpoint.stderr
+    missing_url = _run_guard({"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"})
+    assert missing_url.returncode != 0
+    assert "DATABASE_URL is empty" in missing_url.stderr
+    both_missing = _run_guard({})
+    assert both_missing.returncode != 0
+    assert "NEON_DEV_ENDPOINT_ID is required" in both_missing.stderr
 
 
 def test_ci_guard_db_rejects_mismatched_or_prod_endpoint():
     env = {"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}
     mismatch = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://u:p@ep-other-xyz.us-east-1.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-other-xyz.us-east-1.aws.neon.tech"),
     })
     assert mismatch.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in mismatch.stderr
     prod = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://u:p@ep-x-production.us-east-1.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-x-production.us-east-1.aws.neon.tech"),
     })
     assert prod.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in prod.stderr
     ok = _run_guard({
         **env,
         "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
@@ -243,29 +274,78 @@ def test_ci_guard_accepts_pooled_host():
     "ep-dev-abc.c-6.us-east-2.neon.tech",
     "ep-dev-abc.c-0.us-east-2.aws.neon.tech",
     "ep-dev-abc.c-10000.us-east-2.aws.neon.tech",
+    "ep-dev-abc.c-1\u0661.us-east-1.aws.neon.tech",
+    "ep-dev-abc.us-east-\u0661.aws.neon.tech",
 ])
 def test_ci_guard_rejects_lookalike_hosts(host):
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
-        "DATABASE_URL": f"postgresql://u:p@{host}/db",
+        "DATABASE_URL": _ok_url(host),
     })
     assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
     assert "u:p" not in result.stdout + result.stderr
 
 
-def test_ci_guard_region_optional_when_unset():
+def test_ci_guard_rejects_non_ascii_cell_digit():
+    """Cell tail c-1١ must not match [0-9]; a \\d cell without re.ASCII would accept it."""
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url("ep-dev-abc.c-1\u0661.us-east-1.aws.neon.tech"),
+    })
+    assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+
+
+def test_ci_guard_rejects_non_ascii_region_digit():
+    """Region us-east-١ must not match ASCII \\d; dropping re.ASCII would accept it."""
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-\u0661.aws.neon.tech"),
+    })
+    assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+
+
+def test_qa_bad_host_with_sslmode_disable_is_rejected_for_host():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": "postgresql://u:p@evil.example/db?sslmode=disable",
+    })
+    assert result.returncode != 0
+    assert "host is not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+    assert "u:p" not in result.stdout + result.stderr
+
+
+def test_qa_region_is_not_checked_when_NEON_DEV_REGION_is_unset():
+    """Unset NEON_DEV_REGION skips the region check; any Neon region is accepted."""
     env = {"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}
     west = _run_guard({
         **env,
         "DATABASE_URL": _ok_url("ep-dev-abc.us-west-2.aws.neon.tech"),
     })
-    assert west.returncode == 0
-    empty = _run_guard({
+    assert west.returncode == 0, west.stderr
+    eu = _run_guard({
         **env,
-        "NEON_DEV_REGION": "",
         "DATABASE_URL": _ok_url("ep-dev-abc.eu-central-1.aws.neon.tech"),
     })
-    assert empty.returncode == 0
+    assert eu.returncode == 0, eu.stderr
+    assert "NEON_DEV_REGION" not in west.stderr + eu.stderr
+
+
+def test_qa_empty_NEON_DEV_REGION_fails_closed():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "NEON_DEV_REGION": "",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
+    })
+    assert result.returncode != 0
+    assert "NEON_DEV_REGION is empty" in result.stderr
+    assert "sslmode" not in result.stderr
 
 
 def test_ci_guard_region_must_match_when_set():
@@ -291,9 +371,11 @@ def test_ci_guard_region_must_match_when_set():
     assert aws_prefix.returncode == 0
     mismatch = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-west-2.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-west-2.aws.neon.tech"),
     })
     assert mismatch.returncode != 0
+    assert "region does not match NEON_DEV_REGION" in mismatch.stderr
+    assert "sslmode" not in mismatch.stderr
     out = ok.stdout + ok.stderr + mismatch.stdout + mismatch.stderr
     assert "u:p" not in out
     assert "postgresql://" not in out
@@ -326,18 +408,22 @@ def test_ci_guard_accepts_neon_cell_direct_and_pooled_hosts():
 def test_ci_guard_rejects_mismatched_id_on_cell_host():
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
-        "DATABASE_URL": "postgresql://ep-other-xyz-pooler.c-6.us-east-2.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-other-xyz-pooler.c-6.us-east-2.aws.neon.tech"),
     })
     assert result.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in result.stderr
+    assert "sslmode" not in result.stderr
     assert "postgresql://" not in result.stdout + result.stderr
 
 
 def test_ci_guard_rejects_cell_lookalike_domain():
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
-        "DATABASE_URL": f"postgresql://{DEV_POOLED_HOST}.evil.example/db",
+        "DATABASE_URL": _ok_url(f"{DEV_POOLED_HOST}.evil.example"),
     })
     assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
     assert "postgresql://" not in result.stdout + result.stderr
 
 
@@ -359,9 +445,11 @@ def test_ci_guard_cell_host_region_label_only():
     assert aws_prefix.returncode == 0
     mismatch = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://ep-rapid-smoke-b4t1v549.c-6.us-west-2.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-rapid-smoke-b4t1v549.c-6.us-west-2.aws.neon.tech"),
     })
     assert mismatch.returncode != 0
+    assert "region does not match NEON_DEV_REGION" in mismatch.stderr
+    assert "sslmode" not in mismatch.stderr
 
 
 @pytest.mark.parametrize("url", [
@@ -370,7 +458,6 @@ def test_ci_guard_cell_host_region_label_only():
     _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "service=prod"),
     _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "options=endpoint%3Dprod"),
     _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "port=6543"),
-    "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech:5433/db?sslmode=require",
 ])
 def test_ci_guard_rejects_host_hostaddr_service_options_port_overrides(url):
     result = _run_guard({
@@ -378,6 +465,37 @@ def test_ci_guard_rejects_host_hostaddr_service_options_port_overrides(url):
         "DATABASE_URL": url,
     })
     assert result.returncode != 0
+    assert "override parameters are not allowed" in result.stderr
+    assert "sslmode" not in result.stderr
+    out = result.stdout + result.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
+
+
+def test_ci_guard_rejects_authority_port_as_disallowed_parameter():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech:5433/db?sslmode=require",
+    })
+    assert result.returncode != 0
+    assert "parameters are not allowed" in result.stderr
+    assert "override parameters" not in result.stderr
+    out = result.stdout + result.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
+
+
+def test_ci_guard_rejects_non_allowlisted_extra_parameter():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url(
+            "ep-dev-abc.us-east-1.aws.neon.tech",
+            "gssencmode=disable",
+        ),
+    })
+    assert result.returncode != 0
+    assert "parameters are not allowed" in result.stderr
+    assert "override parameters" not in result.stderr
     out = result.stdout + result.stderr
     assert "u:p" not in out
     assert "postgresql://" not in out
@@ -395,6 +513,9 @@ def test_ci_guard_rejects_missing_or_weak_sslmode(sslmode):
         "DATABASE_URL": url,
     })
     assert result.returncode != 0
+    assert "sslmode must be require or verify-full" in result.stderr
+    assert "not an accepted Neon host" not in result.stderr
+    assert "does not match NEON_DEV_ENDPOINT_ID" not in result.stderr
 
 
 @pytest.mark.parametrize("sslmode", ["require", "verify-full"])
@@ -406,19 +527,35 @@ def test_ci_guard_accepts_require_or_verify_full_sslmode(sslmode):
     assert result.returncode == 0
 
 
-@pytest.mark.parametrize("url", [
-    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech") + "&sslmode=disable",
-    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech") + "&sslmode=require",
-    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "user=admin"),
-    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "dbname=prod"),
-    "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require&user=admin&dbname=other",
+@pytest.mark.parametrize("url, reason", [
+    (
+        _ok_url("ep-dev-abc.us-east-1.aws.neon.tech") + "&sslmode=disable",
+        "query has duplicate keys",
+    ),
+    (
+        _ok_url("ep-dev-abc.us-east-1.aws.neon.tech") + "&sslmode=require",
+        "query has duplicate keys",
+    ),
+    (
+        _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "user=admin"),
+        "override parameters are not allowed",
+    ),
+    (
+        _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "dbname=prod"),
+        "override parameters are not allowed",
+    ),
+    (
+        "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require&user=admin&dbname=other",
+        "override parameters are not allowed",
+    ),
 ])
-def test_ci_guard_rejects_duplicate_query_keys_and_user_dbname(url):
+def test_ci_guard_rejects_duplicate_query_keys_and_user_dbname(url, reason):
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
         "DATABASE_URL": url,
     })
     assert result.returncode != 0
+    assert reason in result.stderr
     out = result.stdout + result.stderr
     assert "u:p" not in out
     assert "postgresql://" not in out
@@ -448,6 +585,178 @@ def test_ci_guard_unused_branch_json_ignored(tmp_path):
     assert result.returncode == 0
 
 
+_QA_HOST = "ep-dev-abc.us-east-1.aws.neon.tech"
+_QA_ENDPOINT = "ep-dev-abc"
+_QA_PASSWORD = "qa-pw-must-not-leak"
+
+
+def _qa_url(host=_QA_HOST, sslmode="require", password=_QA_PASSWORD, extra=""):
+    query = f"sslmode={sslmode}" + (("&" + extra) if extra else "")
+    return f"postgresql://ciuser:{password}@{host}/db?{query}"
+
+
+def _assert_password_absent(result, password=_QA_PASSWORD):
+    out = (result.stdout or "") + (result.stderr or "")
+    assert password not in out
+    assert "ciuser:" not in out
+    assert "postgresql://" not in out
+
+
+def test_qa_good_host_without_sslmode_is_rejected_for_sslmode():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": f"postgresql://ciuser:{_QA_PASSWORD}@{_QA_HOST}/db",
+    })
+    assert result.returncode != 0
+    assert "sslmode must be require or verify-full" in result.stderr
+    assert "not an accepted Neon host" not in result.stderr
+    assert "does not match NEON_DEV_ENDPOINT_ID" not in result.stderr
+    _assert_password_absent(result)
+
+
+@pytest.mark.parametrize("sslmode", ["disable", "allow", "prefer"])
+def test_qa_weak_sslmode_is_rejected(sslmode):
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(sslmode=sslmode),
+    })
+    assert result.returncode != 0
+    assert "sslmode must be require or verify-full" in result.stderr
+    _assert_password_absent(result)
+
+
+@pytest.mark.parametrize("sslmode", ["verify-full", "require"])
+def test_qa_verify_full_and_require_sslmode_are_accepted(sslmode):
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(sslmode=sslmode),
+    })
+    assert result.returncode == 0, result.stderr
+    _assert_password_absent(result)
+
+
+def test_qa_duplicated_sslmode_require_and_disable_is_rejected_for_duplicate_key():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(sslmode="require", extra="sslmode=disable"),
+    })
+    assert result.returncode != 0
+    assert "query has duplicate keys" in result.stderr
+    assert "sslmode must be require or verify-full" not in result.stderr
+    _assert_password_absent(result)
+
+
+def test_qa_endpoint_in_userinfo_evil_host_is_rejected_for_host():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": f"postgresql://{_QA_ENDPOINT}.neon.tech@evil.com/db",
+    })
+    assert result.returncode != 0
+    assert "host is not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+    _assert_password_absent(result)
+
+
+def test_qa_uppercase_host_is_accepted_trailing_dot_host_is_rejected():
+    upper = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(host=_QA_HOST.upper()),
+    })
+    assert upper.returncode == 0, upper.stderr
+    _assert_password_absent(upper)
+
+    trailing = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(host=_QA_HOST + "."),
+    })
+    assert trailing.returncode != 0
+    assert "host is not an accepted Neon host" in trailing.stderr
+    assert "sslmode" not in trailing.stderr
+    _assert_password_absent(trailing)
+
+
+def test_qa_pooler_host_accepted_for_matching_endpoint_rejected_for_wrong_endpoint():
+    ok = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(host="ep-dev-abc-pooler.us-east-1.aws.neon.tech"),
+    })
+    assert ok.returncode == 0, ok.stderr
+    _assert_password_absent(ok)
+
+    wrong = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": _qa_url(host="ep-other-xyz-pooler.us-east-1.aws.neon.tech"),
+    })
+    assert wrong.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in wrong.stderr
+    assert "sslmode" not in wrong.stderr
+    _assert_password_absent(wrong)
+
+
+def test_qa_unset_or_empty_NEON_DEV_ENDPOINT_ID_fails_closed():
+    unset = _run_guard({
+        "DATABASE_URL": _qa_url(),
+    })
+    assert unset.returncode != 0
+    assert "NEON_DEV_ENDPOINT_ID is required" in unset.stderr
+    _assert_password_absent(unset)
+
+    empty = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "",
+        "DATABASE_URL": _qa_url(),
+    })
+    assert empty.returncode != 0
+    assert "NEON_DEV_ENDPOINT_ID is empty" in empty.stderr
+    _assert_password_absent(empty)
+
+
+def test_qa_empty_malformed_mysql_and_http_urls_rejected_for_parse_or_scheme():
+    empty = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": "",
+    })
+    assert empty.returncode != 0
+    assert "DATABASE_URL is empty" in empty.stderr
+
+    malformed = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": "not-a-url",
+    })
+    assert malformed.returncode != 0
+    assert "DATABASE_URL is invalid" in malformed.stderr
+
+    mysql = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": f"mysql://ciuser:{_QA_PASSWORD}@evil.com/db",
+    })
+    assert mysql.returncode != 0
+    assert "scheme must be postgresql" in mysql.stderr
+    _assert_password_absent(mysql)
+
+    http = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": f"http://ciuser:{_QA_PASSWORD}@evil.com/db",
+    })
+    assert http.returncode != 0
+    assert "scheme must be postgresql" in http.stderr
+    _assert_password_absent(http)
+
+
+def test_qa_rejection_output_never_contains_the_password():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": _QA_ENDPOINT,
+        "DATABASE_URL": (
+            f"postgresql://ciuser:{_QA_PASSWORD}@"
+            f"{_QA_HOST}/db?sslmode=disable"
+        ),
+    })
+    assert result.returncode != 0
+    assert "sslmode must be require or verify-full" in result.stderr
+    _assert_password_absent(result)
+    assert _QA_PASSWORD not in result.stdout
+    assert _QA_PASSWORD not in result.stderr
+
+
 @pytest.mark.parametrize("url", [
     "postgresql://u:p@ep-x-production.neon.tech/db?sslmode=require",
     "postgresql://u:p@ep-x-main.neon.tech/db?sslmode=require",
@@ -456,8 +765,109 @@ def test_conftest_integration_fixture_refuses_prod(monkeypatch, request, url):
     monkeypatch.setenv("DATABASE_URL", url)
     monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
     monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
-    with pytest.raises(
-        pytest.fail.Exception,
-        match="not an accepted Neon host|does not match NEON_DEV_ENDPOINT_ID",
-    ):
+    with pytest.raises(pytest.fail.Exception, match="not an accepted Neon host"):
         request.getfixturevalue("integration_client")
+
+
+def test_conftest_integration_fixture_requires_allow_flag(monkeypatch, request):
+    monkeypatch.setenv("DATABASE_URL", "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db")
+    monkeypatch.delenv("ALLOW_INTEGRATION_DB", raising=False)
+    with pytest.raises(pytest.skip.Exception, match="ALLOW_INTEGRATION_DB"):
+        request.getfixturevalue("integration_client")
+
+
+def test_conftest_integration_fixture_fails_closed_without_endpoint_id(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require",
+    )
+    monkeypatch.delenv("NEON_DEV_ENDPOINT_ID", raising=False)
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_ENDPOINT_ID") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_conftest_integration_fixture_fails_closed_on_mismatched_host(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@ep-other.us-east-1.aws.neon.tech/db?sslmode=require",
+    )
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_ENDPOINT_ID") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
+    from tests.conftest import _require_neon_integration_url
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
+
+
+def test_require_neon_integration_url_fails_on_guard_timeout(monkeypatch):
+    import tests.conftest as conftest
+
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+
+    def fake_run(*args, **kwargs):
+        assert kwargs.get("timeout") == 30
+        raise subprocess.TimeoutExpired(cmd=kwargs.get("args") or args[0], timeout=30)
+
+    monkeypatch.setattr(conftest.subprocess, "run", fake_run)
+    with pytest.raises(pytest.fail.Exception, match="ci_guard_db.py timed out"):
+        conftest._require_neon_integration_url(
+            "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+        )
+
+
+_OK_NEON = "ep-dev-abc.us-east-1.aws.neon.tech"
+_PW = "secret-pass"
+
+
+@pytest.mark.parametrize("url,match", [
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&hostaddr=1.2.3.4",
+        "parameters are not allowed",
+    ),
+    (
+        f"host={_OK_NEON} hostaddr=1.2.3.4 user=u password={_PW} dbname=db sslmode=require",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&service=foo",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&options=endpoint%3Dep-prod",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&port=5433",
+        "parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=disable",
+        "sslmode must be require or verify-full",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db",
+        "sslmode must be require or verify-full",
+    ),
+])
+def test_conftest_integration_fixture_fails_closed_on_guard_bypasses(monkeypatch, request, url, match):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+    monkeypatch.setenv("DATABASE_URL", url)
+    with pytest.raises(pytest.fail.Exception, match=match) as ei:
+        request.getfixturevalue("integration_client")
+    assert _PW not in str(ei.value)

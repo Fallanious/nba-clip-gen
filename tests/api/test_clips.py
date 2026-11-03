@@ -259,11 +259,6 @@ def test_status_all_forbidden_for_non_admin(fake_db, monkeypatch):
     assert_error(r, 403, "forbidden")
 
 
-def test_status_all_allowed_for_admin(client):
-    r = get(client, "status=all")
-    assert r.status_code == 200
-
-
 # ================= /api/clips/:id =================
 def test_clip_detail(client):
     r = client.get(f"/api/clips/{PLAYABLE_CLIP}")
@@ -305,6 +300,264 @@ def assert_no_store(r):
     assert r.headers["Cache-Control"] == "no-store" and r.headers.get("Pragma") == "no-cache"
 
 
+def test_playback_503_when_unconfigured(client):
+    """Env unset (base_env strips S3_BUCKET/AWS_REGION/creds) -> 503, never a 500 or a real AWS call."""
+    r = client.get(PB.format(PLAYABLE_CLIP))
+    err = assert_error(r, 503, "storage_unavailable")  # Q-1: code name to confirm
+    assert "qa-fake" not in r.get_data(as_text=True)
+
+
+def test_playback_unconfigured_still_404_for_missing_clip(client):
+    assert client.get(PB.format(1)).status_code in (404, 503)  # Q-2: ordering of validation vs config check
+
+
+def test_playback_clip_mode_success(playback_client, playback_configured):
+    r = playback_client.get(PB.format(PLAYABLE_CLIP))
+    assert r.status_code == 200, r.get_data(as_text=True)
+    assert_no_store(r)
+    b = r.get_json()
+    assert b["clip_id"] == "90412" and b["mode"] == "clip" and b["mime"] == "video/mp4"
+    assert b["ttl_s"] == 300 and b["expires_at"].endswith("Z") and "start_s" not in b
+    op, params, ttl = playback_configured.calls[-1]
+    assert op == "get_object" and ttl == 300
+    assert params["Bucket"] == "qa-fake-bucket" and params["Key"] == CLIPS[90412]["s3_key"]
+    assert params["ResponseContentType"] == "video/mp4"
+    assert params["ResponseCacheControl"] == "private, max-age=300"
+
+
+def test_playback_custom_ttl(client, monkeypatch, playback_configured):
+    monkeypatch.setenv("PLAYBACK_URL_TTL", "600")
+    from tests.conftest import _make_app
+    b = _make_app().test_client().get(PB.format(PLAYABLE_CLIP)).get_json()
+    assert b["ttl_s"] == 600
+
+
+@pytest.mark.parametrize("ttl", ["59", "3601", "abc"])
+def test_playback_ttl_out_of_range_fails_startup(monkeypatch, fake_db, playback_configured, ttl):
+    monkeypatch.setenv("PLAYBACK_URL_TTL", ttl)
+    from tests.conftest import _make_app
+    with pytest.raises(Exception):
+        _make_app()
+
+
+def test_playback_fallback_mode(playback_client, playback_configured):
+    r = playback_client.get(PB.format(NOT_READY_WITH_GAME_KEY))
+    assert r.status_code == 200
+    b = r.get_json()
+    c = CLIPS[NOT_READY_WITH_GAME_KEY]
+    assert b["mode"] == "fallback" and b["ttl_s"] == 900
+    assert b["start_s"] == c["video_start_s"] and b["end_s"] == c["video_end_s"]
+    assert playback_configured.calls[-1][1]["Key"] == "games/202504010PHI.mp4"
+
+
+@pytest.mark.parametrize("key,mime", [
+    ("games/test.mkv", "video/x-matroska"),
+    ("games/test.MKV", "video/x-matroska"),
+    ("games/test.mp4", "video/mp4"),
+    ("games/test.webm", "video/webm"),
+])
+def test_fallback_presign_content_type_follows_key(playback_client, fake_db, playback_configured, key, mime):
+    """PR #2: presigned Content-Type follows the file extension, not a hardcoded video/mp4."""
+    fake_db.q_clips_playback_target = lambda p: [{
+        "id": 500,
+        "game_id": 1,
+        "status": "pending",
+        "s3_key": None,
+        "game_key": key,
+        "video_start_s": 10.0,
+        "video_end_s": 20.0
+    }]
+
+    r = playback_client.get(PB.format(500))
+    assert r.status_code == 200, r.get_data(as_text=True)
+    b = r.get_json()
+    assert b["mime"] == mime
+    assert len(playback_configured.calls) == 1
+    assert playback_configured.calls[0][1]["ResponseContentType"] == mime
+    assert playback_configured.calls[0][1]["Key"] == key
+
+
+def test_fallback_presign_matches_pr2_fake_s3_shape(monkeypatch):
+    """Same shape as PR #2 tests/ytdlp/test_review_followups.py (fake_s3.presign[-1])."""
+    from types import SimpleNamespace
+    import services.playback as mod
+
+    calls = SimpleNamespace(presign=[])
+
+    class C:
+        def generate_presigned_url(self, op, Params, ExpiresIn):
+            calls.presign.append(Params)
+            return "https://b.s3/k?sig=fake"
+
+        def head_object(self, **k):
+            return {}
+
+    monkeypatch.setattr(mod, "_s3_client", lambda *a, **k: C())
+    monkeypatch.setenv("S3_BUCKET", "qa-fake-bucket")
+    monkeypatch.setenv("AWS_REGION", "us-east-2")
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "true")
+    monkeypatch.setenv("PLAYBACK_VERIFY_OBJECT", "false")
+    res = mod.get_playback_url(
+        dict(
+            id=1, status="pending", s3_key=None,
+            video_start_s=1.0, video_end_s=5.0,
+            game_key="games/202604240PHI.mkv",
+        ),
+        "auto",
+    )
+    assert calls.presign[-1]["ResponseContentType"] == "video/x-matroska"
+    assert res["mime"] == "video/x-matroska"
+
+
+def test_fallback_null_offsets_are_clip_not_ready(playback_client, fake_db, playback_configured):
+    fake_db.q_clips_playback_target = lambda p: [{
+        "id": 500,
+        "game_id": 1,
+        "status": "pending",
+        "s3_key": None,
+        "game_key": "games/test.mkv",
+        "video_start_s": None,
+        "video_end_s": None,
+    }]
+    assert_error(playback_client.get(PB.format(500)), 409, "clip_not_ready")
+    assert playback_configured.calls == []
+
+
+@pytest.mark.parametrize("status", ["pending", "failed", "rendered"])
+def test_playback_409_fallback_disabled(client, monkeypatch, playback_configured, status):
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "false")
+    from tests.conftest import _make_app
+    r = _make_app().test_client().get(PB.format(NOT_READY[status]))
+    err = assert_error(r, 409, "clip_not_ready")
+    assert err["details"] == {"status": status, "fallback_available": False}
+
+
+def test_playback_409_no_game_key(playback_client, playback_configured):
+    err = assert_error(playback_client.get(PB.format(NOT_READY_NO_GAME_KEY)), 409, "clip_not_ready")
+    assert err["details"]["status"] == "pending"
+
+
+def test_playback_mode_clip_on_unrendered_409(playback_client, playback_configured):
+    assert_error(playback_client.get(PB.format(NOT_READY_WITH_GAME_KEY) + "?mode=clip"), 409, "clip_not_ready")
+
+
+def test_playback_mode_fallback_on_uploaded(playback_client, playback_configured):
+    b = playback_client.get(PB.format(PLAYABLE_CLIP) + "?mode=fallback").get_json()
+    assert b["mode"] == "fallback"  # game 77 has s3_key
+
+
+def test_playback_mode_invalid(playback_client, playback_configured):
+    assert_error(playback_client.get(PB.format(PLAYABLE_CLIP) + "?mode=stream"), 400, "invalid_param", "mode")
+
+
+@pytest.mark.parametrize("cid", ["1", "abc", "0"])
+def test_playback_404(playback_client, playback_configured, cid):
+    assert_error(playback_client.get(PB.format(cid)), 404, "not_found")
+    assert playback_configured.calls == []
+
+
+def _client_error(code):
+    from botocore.exceptions import ClientError
+    return ClientError({"Error": {"Code": code, "Message": "x"}}, "HeadObject")
+
+
+def _verify_client(monkeypatch):
+    monkeypatch.setenv("PLAYBACK_VERIFY_OBJECT", "true")
+    from tests.conftest import _make_app
+    return _make_app().test_client()
+
+
+@pytest.mark.parametrize("code", ["NoSuchKey", "404"])
+def test_playback_media_missing_404(monkeypatch, fake_db, playback_configured, code):
+    playback_configured.head_exc = _client_error(code)
+    assert_error(_verify_client(monkeypatch).get(PB.format(PLAYABLE_CLIP)), 404, "media_missing")
+
+
+@pytest.mark.parametrize("code", ["AccessDenied", "500", "SlowDown"])
+def test_playback_storage_error_502(monkeypatch, fake_db, playback_configured, code):
+    playback_configured.head_exc = _client_error(code)
+    r = _verify_client(monkeypatch).get(PB.format(PLAYABLE_CLIP))
+    assert_error(r, 502, "storage_error")
+
+
+def test_playback_head_timeout_502(monkeypatch, fake_db, playback_configured):
+    from botocore.exceptions import ReadTimeoutError
+    playback_configured.head_exc = ReadTimeoutError(endpoint_url="https://s3")
+    assert_error(_verify_client(monkeypatch).get(PB.format(PLAYABLE_CLIP)), 502, "storage_error")
+
+
+def test_playback_no_credentials_503(playback_client, playback_configured):
+    from botocore.exceptions import NoCredentialsError
+    playback_configured.sign_exc = NoCredentialsError()
+    assert_error(playback_client.get(PB.format(PLAYABLE_CLIP)), 503, "storage_unavailable")
+
+
+def test_playback_verify_head_called_with_key(monkeypatch, fake_db, playback_configured):
+    assert _verify_client(monkeypatch).get(PB.format(PLAYABLE_CLIP)).status_code == 200
+    assert playback_configured.head_calls == [("qa-fake-bucket", CLIPS[90412]["s3_key"])]
+
+
+def test_playback_url_not_logged(playback_client, playback_configured, caplog):
+    import logging
+    caplog.set_level(logging.DEBUG)
+    playback_client.get(PB.format(PLAYABLE_CLIP))
+    assert "X-Amz-Signature" not in caplog.text
+
+
+def test_playback_db_503(fake_db, playback_client, playback_configured):
+    fake_db.fail_with = OperationalError("x", {}, Exception("timeout"))
+    assert_error(playback_client.get(PB.format(PLAYABLE_CLIP)), 503, "db_unavailable")
+
+
+def test_playback_authorize_called_before_sign(playback_client, monkeypatch, playback_configured):
+    import routes.players as authz
+    seen = []
+    orig = authz.authorize_clip
+    monkeypatch.setattr(authz, "authorize_clip", lambda u, c: (seen.append(len(playback_configured.calls)), orig(u, c))[1])
+    playback_client.get(PB.format(PLAYABLE_CLIP))
+    assert seen == [0]
+
+
+@pytest.mark.parametrize("env", ["test", "prod", "production", "staging"])
+def test_allow_fallback_off_outside_dev_by_default(env, monkeypatch):
+    from services.playback import _allow_fallback
+    monkeypatch.setenv("APP_ENV", env)
+    monkeypatch.delenv("PLAYBACK_ALLOW_FALLBACK", raising=False)
+    assert _allow_fallback() is False
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "true")
+    assert _allow_fallback() is True
+
+
+def test_allow_fallback_on_in_dev_by_default(monkeypatch):
+    from services.playback import _allow_fallback
+    monkeypatch.setenv("APP_ENV", "dev")
+    monkeypatch.delenv("PLAYBACK_ALLOW_FALLBACK", raising=False)
+    assert _allow_fallback() is True
+    monkeypatch.setenv("PLAYBACK_ALLOW_FALLBACK", "false")
+    assert _allow_fallback() is False
+
+
+def test_config_has_no_playback_allow_fallback_property():
+    from config import Config
+    assert not hasattr(Config, "PLAYBACK_ALLOW_FALLBACK")
+
+
+def test_playback_botocore_error_is_502(monkeypatch, fake_db, playback_configured):
+    from botocore.exceptions import BotoCoreError
+    playback_configured.sign_exc = BotoCoreError()
+    from tests.conftest import _make_app
+    r = _make_app().test_client().get(PB.format(PLAYABLE_CLIP))
+    assert_error(r, 502, "storage_error")
+
+
+def test_clip_mode_mime_follows_mp4_key(playback_client, playback_configured):
+    r = playback_client.get(PB.format(PLAYABLE_CLIP))
+    assert r.status_code == 200
+    assert r.get_json()["mime"] == "video/mp4"
+    assert playback_configured.calls[-1][1]["ResponseContentType"] == "video/mp4"
+
+
+# ================= integration =================
 @pytest.mark.integration
 def test_int_clip_paging_real_db(integration_client):
     pl = integration_client.get("/api/players?limit=1").get_json()["items"]

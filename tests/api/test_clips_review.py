@@ -484,12 +484,9 @@ def test_film_route_and_storage_agree(client, tmp_path, monkeypatch):
 def test_mime_for_key_uses_x_matroska(monkeypatch):
     if not _playback_src().exists():
         pytest.skip("playback lands in a later stack layer")
+    import mimetypes
     from services.playback import _mime_for_key
-    monkeypatch.setattr(
-        "services.playback.mimetypes.guess_type",
-        lambda *a, **k: ("video/matroska", None),
-        raising=False,
-    )
+    monkeypatch.setattr(mimetypes, "guess_type", lambda *a, **k: ("video/matroska", None))
     assert _mime_for_key("games/test.mkv") == "video/x-matroska"
     assert _mime_for_key("clips/a.mp4") == "video/mp4"
     assert _mime_for_key("noext") == "application/octet-stream"
