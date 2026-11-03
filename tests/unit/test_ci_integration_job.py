@@ -136,14 +136,15 @@ def test_integration_job_never_targets_default_or_production():
     assert "vars.NEON_DEV_REGION" in text
     assert "NEON_BRANCH_JSON" not in text
     assert _data().get("permissions") == {"contents": "read"}
-    install = next(
-        s for s in (job.get("steps") or [])
-        if "Install test dependencies" in str(s.get("name") or "")
-        or "--require-hashes" in str(s.get("run") or "")
-    )
-    run = install.get("run") or ""
-    assert "--require-hashes" in run
-    assert "requirements.lock" in run
+    hashed_installs = 0
+    for name, j in _jobs().items():
+        for s in j.get("steps") or []:
+            run = s.get("run") or ""
+            if "pip install" in run:
+                assert "--require-hashes" in run, f"{name} pip install is not hashed"
+                assert "requirements.lock" in run
+                hashed_installs += 1
+    assert hashed_installs >= 2
     assert Path("requirements.lock").is_file()
     assert "--hash=sha256:" in Path("requirements.lock").read_text()
     steps = job.get("steps") or []
@@ -388,6 +389,26 @@ def test_ci_guard_accepts_require_or_verify_full_sslmode(sslmode):
         "DATABASE_URL": f"postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode={sslmode}",
     })
     assert result.returncode == 0
+
+
+@pytest.mark.parametrize("url", [
+    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech") + "&sslmode=disable",
+    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech") + "&sslmode=require",
+    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "user=admin"),
+    _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "dbname=prod"),
+    "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require&user=admin&dbname=other",
+])
+def test_ci_guard_rejects_duplicate_query_keys_and_user_dbname(url):
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": url,
+    })
+    assert result.returncode != 0
+    out = result.stdout + result.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
+    assert "admin" not in out
+    assert "prod" not in out
 
 
 def test_ci_guard_allows_safe_extra_params():
