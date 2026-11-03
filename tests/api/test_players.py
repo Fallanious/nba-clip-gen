@@ -369,20 +369,43 @@ def test_clips_etag_changes_when_clip_status_changes(client):
 
 
 @pytest.mark.parametrize("cid", list(NOT_READY.values()))
-def test_unpublished_clip_detail_forbidden_for_non_admin(fake_db, monkeypatch, cid):
+def test_unpublished_clip_detail_is_404_for_non_admin(fake_db, monkeypatch, cid):
     from auth import User
     from tests.conftest import _make_app
     monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
     r = _make_app().test_client().get(f"/api/clips/{cid}")
-    assert_error(r, 403, "forbidden")
+    err = assert_error(r, 404, "not_found")
+    assert err["message"] == "Clip not found"
 
 
-def test_unpublished_playback_forbidden_for_non_admin(fake_db, monkeypatch):
+def test_unpublished_and_missing_clip_look_the_same_to_non_admin(fake_db, monkeypatch):
+    from auth import User
+    from tests.conftest import _make_app
+    monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
+    client = _make_app().test_client()
+    missing = client.get("/api/clips/99999999")
+    unpublished = client.get(f"/api/clips/{NOT_READY['pending']}")
+    assert missing.status_code == unpublished.status_code == 404
+    assert missing.get_json() == unpublished.get_json()
+    missing_pb = client.get("/api/clips/99999999/playback-url")
+    unpublished_pb = client.get(f"/api/clips/{NOT_READY['pending']}/playback-url")
+    assert missing_pb.status_code == unpublished_pb.status_code == 404
+    assert missing_pb.get_json() == unpublished_pb.get_json()
+
+
+def test_admin_can_get_unpublished_clip_detail(client):
+    r = client.get(f"/api/clips/{NOT_READY['pending']}")
+    assert r.status_code == 200
+    assert r.get_json()["id"] == str(NOT_READY["pending"])
+
+
+def test_unpublished_playback_is_404_for_non_admin(fake_db, monkeypatch):
     from auth import User
     from tests.conftest import _make_app
     monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
     r = _make_app().test_client().get(f"/api/clips/{NOT_READY['pending']}/playback-url")
-    assert_error(r, 403, "forbidden")
+    err = assert_error(r, 404, "not_found")
+    assert err["message"] == "Clip not found"
 
 
 def test_integration_client_requires_allow_flag(monkeypatch, request):
@@ -390,6 +413,54 @@ def test_integration_client_requires_allow_flag(monkeypatch, request):
     monkeypatch.delenv("ALLOW_INTEGRATION_DB", raising=False)
     with pytest.raises(pytest.skip.Exception, match="ALLOW_INTEGRATION_DB"):
         request.getfixturevalue("integration_client")
+
+
+def test_integration_client_fails_closed_without_endpoint_id(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require",
+    )
+    monkeypatch.delenv("NEON_DEV_ENDPOINT_ID", raising=False)
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_ENDPOINT_ID") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_integration_client_fails_closed_on_mismatched_host(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@ep-other.us-east-1.aws.neon.tech/db?sslmode=require",
+    )
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_ENDPOINT_ID") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_integration_client_fails_closed_on_non_neon_host(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@evil.example/db?sslmode=require",
+    )
+    with pytest.raises(pytest.fail.Exception, match="not an accepted Neon host") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
+    from tests.conftest import _require_neon_integration_url
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
 
 
 def test_search_bind_types_native(client, fake_db):

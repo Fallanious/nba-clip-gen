@@ -445,12 +445,12 @@ def test_ci_guard_unused_branch_json_ignored(tmp_path):
 
 
 @pytest.mark.parametrize("url", [
-    "postgresql://u:p@ep-x-production.neon.tech/db",
-    "postgresql://u:p@ep-x-main.neon.tech/db",
+    "postgresql://u:p@ep-x-production.neon.tech/db?sslmode=require",
+    "postgresql://u:p@ep-x-main.neon.tech/db?sslmode=require",
 ])
 def test_conftest_integration_fixture_refuses_prod(monkeypatch, request, url):
     monkeypatch.setenv("DATABASE_URL", url)
     monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
-    with pytest.raises(pytest.skip.Exception) as ei:
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    with pytest.raises(pytest.fail.Exception, match="not an accepted Neon host"):
         request.getfixturevalue("integration_client")
-    assert "production" in str(ei.value).lower()

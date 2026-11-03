@@ -9,7 +9,7 @@ from flask import Blueprint, request, g, jsonify, make_response
 from sqlalchemy.orm import Session
 
 from auth import require_user
-from authz import authorize_player, authorize_clip, require_admin
+from authz import authorize_player, authorize_clip, require_admin, is_admin
 from db import session as db_session
 from errors import ApiError
 from pagination import encode_cursor, decode_cursor
@@ -42,9 +42,14 @@ def _clip_is_playable(row) -> bool:
 
 
 def _require_published_or_admin(user, row) -> None:
-    """Unpublished clips are admin-only on detail and playback, matching the list."""
-    if not _clip_is_playable(row):
-        require_admin(user)
+    """Unpublished clips 404 for non-admins, same envelope as a missing clip."""
+    if _clip_is_playable(row) or is_admin(user):
+        return
+    raise ApiError(
+        code="not_found",
+        message="Clip not found",
+        status=404,
+    )
 
 
 def _weak_etag(parts) -> str:
