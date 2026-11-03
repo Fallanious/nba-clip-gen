@@ -281,6 +281,7 @@ def test_env_file_is_loaded_or_not_documented():
 # ---------- R8: full games stay mkv; film route serves video/x-matroska ----------
 
 def test_film_route_mimetype_mkv(tmp_path, monkeypatch):
+    monkeypatch.setenv("APP_ENV", "dev")
     film = tmp_path / "film"
     film.mkdir()
     (film / "g.mkv").write_bytes(b"\x1aE\xdf\xa3fake-mkv")

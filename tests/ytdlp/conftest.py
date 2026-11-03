@@ -14,6 +14,9 @@ SRC = os.path.join(REPO_ROOT, "src")
 if SRC not in sys.path:
     sys.path.insert(0, SRC)  # repo imports top-level modules (config, routes.*, ...)
 
+# PR #11 requires an explicit APP_ENV before create_app() / config.validate().
+os.environ.setdefault("APP_ENV", "dev")
+
 # ---- ADAPT: module paths / symbols (confirm with DEV) ----
 DOWNLOAD_MODULE = "download_video"           # src/download_video.py
 BUILD_CMD = "build_ytdlp_cmd"                # (url, resolution=None, runtime=None) -> list[str]

@@ -30,7 +30,7 @@ def create_app():
         """Add or validate request ID."""
         req_id = request.headers.get('X-Request-Id', '')
         # Accept only UUID or alphanumeric with hyphens (1-64 chars)
-        if req_id and re.match(r'^[A-Za-z0-9-]{1,64}$', req_id):
+        if req_id and re.fullmatch(r'[A-Za-z0-9-]{1,64}', req_id):
             g.request_id = req_id
         else:
             g.request_id = str(uuid.uuid4())
