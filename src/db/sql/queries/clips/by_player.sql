@@ -13,7 +13,6 @@ WITH page AS (
   JOIN clips c ON c.id = cp.clip_id
   JOIN games g ON g.id = c.game_id
   WHERE cp.player_id = :pid
-    AND (CAST(:roles AS clip_role[]) IS NULL OR cp.role = ANY(CAST(:roles AS clip_role[])))
     AND (CAST(:date_from AS date) IS NULL OR cp.game_date >= :date_from)
     AND (CAST(:date_to AS date) IS NULL OR cp.game_date <= :date_to)
     AND (CAST(:season AS text) IS NULL OR g.season = :season)
@@ -28,6 +27,8 @@ WITH page AS (
          OR (cp.game_date = :c_date AND c.game_id = :c_game_id
              AND (c.period, c.play_index, cp.clip_id) > (:c_period, :c_play_index, :c_id)))
   GROUP BY cp.game_date, cp.clip_id, c.game_id, c.period, c.play_index
+  HAVING CAST(:roles AS clip_role[]) IS NULL
+      OR bool_or(cp.role = ANY(CAST(:roles AS clip_role[])))
   ORDER BY cp.game_date DESC, c.game_id DESC, c.period ASC, c.play_index ASC, cp.clip_id ASC
   LIMIT :limit + 1)
 SELECT page.clip_id, page.game_date, page.roles,

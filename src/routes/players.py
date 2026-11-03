@@ -18,7 +18,10 @@ from repositories import clips as clips_repo
 
 try:
     from services.playback import get_playback_url, _allow_fallback
-except ImportError:  # playback lands in a later stack layer
+except ModuleNotFoundError as e:
+    # Only swallow a missing playback layer, not import failures inside it.
+    if e.name not in {"services", "services.playback"}:
+        raise
     get_playback_url = None
     def _allow_fallback():
         from config import config as _cfg
@@ -29,6 +32,19 @@ bp = Blueprint('players', __name__, url_prefix='/api')
 ENUM_LIST_MAX = 20
 _PLAYERS_LIST_CC = "private, max-age=60"
 _RESOURCE_CC = "private, max-age=300"
+
+
+def _clip_is_playable(row) -> bool:
+    status = row.get("status")
+    if row.get("has_object") is not None:
+        return status == "uploaded" and bool(row.get("has_object"))
+    return status == "uploaded" and row.get("s3_key") is not None
+
+
+def _require_published_or_admin(user, row) -> None:
+    """Unpublished clips are admin-only on detail and playback, matching the list."""
+    if not _clip_is_playable(row):
+        require_admin(user)
 
 
 def _weak_etag(parts) -> str:
@@ -438,18 +454,6 @@ def search_players_endpoint():
                 )
             cursor_last_name, cursor_id = cursor_key
 
-    etag = _weak_etag([
-        "GET /api/players",
-        q,
-        team_id,
-        active,
-        limit,
-        cursor_str,
-    ])
-    if request.headers.get("If-None-Match") == etag:
-        return _not_modified(etag, _PLAYERS_LIST_CC)
-
-    # Query (skipped on 304)
     session = db_session.get_db()
     rows = players_repo.search_players(
         session,
@@ -487,6 +491,17 @@ def search_players_endpoint():
         "next_cursor": next_cursor,
         "limit": limit
     }
+    etag = _weak_etag([
+        "GET /api/players",
+        q,
+        team_id,
+        active,
+        limit,
+        cursor_str,
+        [(int(r["id"]), str(r.get("updated_at") or "")) for r in rows],
+    ])
+    if request.headers.get("If-None-Match") == etag:
+        return _not_modified(etag, _PLAYERS_LIST_CC)
     return _json_cached(response, etag, _PLAYERS_LIST_CC)
 
 
@@ -519,6 +534,7 @@ def get_player_endpoint(player_id: int):
         player_id,
         row.get("clip_count"),
         row.get("last_clip_date"),
+        row.get("clips_updated_at"),
         row.get("updated_at"),
         row.get("full_name"),
     ])
@@ -684,6 +700,7 @@ def get_player_clips_endpoint(player_id: int):
         filters,
         row.get("clip_count"),
         row.get("last_clip_date"),
+        row.get("clips_updated_at"),
         limit,
         cursor_str,
     ])
@@ -762,6 +779,7 @@ def get_clip_endpoint(clip_id: int):
 
     # Check authorization
     authorize_clip(g.user, row)
+    _require_published_or_admin(g.user, row)
 
     etag = _weak_etag([
         "GET /api/clips/:id",
@@ -826,6 +844,7 @@ def get_playback_url_endpoint(clip_id: int):
 
     # Check authorization
     authorize_clip(g.user, clip_data)
+    _require_published_or_admin(g.user, clip_data)
 
     # Parse mode parameter
     mode = request.args.get('mode', 'auto')
