@@ -424,8 +424,6 @@ def _require_neon_integration_url(url: str) -> None:
         pytest.fail("NEON_DEV_ENDPOINT_ID is required to run integration tests")
     env = os.environ.copy()
     env["DATABASE_URL"] = url
-    if not (env.get("NEON_DEV_REGION") or "").strip():
-        env.pop("NEON_DEV_REGION", None)
     try:
         result = subprocess.run(
             [sys.executable, _CI_GUARD],

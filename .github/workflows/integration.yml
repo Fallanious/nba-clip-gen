@@ -41,8 +41,10 @@ jobs:
           steps.check_db.outputs.has_db != 'true'
           && github.event_name == 'pull_request'
           && (github.base_ref == 'main' || github.base_ref == 'cursor/01-foundation-9d4d')
+        env:
+          BASE_REF: ${{ github.base_ref }}
         run: |
-          echo "NEON_DEV_DATABASE_URL is required for pull requests targeting ${{ github.base_ref }}"
+          echo "NEON_DEV_DATABASE_URL is required for pull requests targeting $BASE_REF"
           exit 1
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         if: steps.check_db.outputs.has_db == 'true'
@@ -61,9 +63,8 @@ jobs:
           NEON_DEV_ENDPOINT_ID: ${{ vars.NEON_DEV_ENDPOINT_ID }}
           NEON_DEV_REGION: ${{ vars.NEON_DEV_REGION }}
         run: |
-          # GitHub expands an unset var to ""; treat that as unset so region
-          # is optional. An explicitly empty env value still fails closed.
-          if [ -z "$NEON_DEV_REGION" ]; then unset NEON_DEV_REGION; fi
+          # CI=true requires NEON_DEV_REGION. GitHub expands an unset var to
+          # "" and the guard fails closed; do not unset it here.
           python scripts/ci_guard_db.py
       - name: Run integration tests against Neon
         if: steps.check_db.outputs.has_db == 'true'
