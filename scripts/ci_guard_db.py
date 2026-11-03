@@ -3,15 +3,16 @@
 
 Requires NEON_DEV_ENDPOINT_ID (from GitHub vars.NEON_DEV_ENDPOINT_ID), the
 endpoint id of Neon branch br-odd-smoke-b465tvf8. Refuses to run if that var
-is unset or does not match the URL host. If NEON_DEV_REGION (vars.NEON_DEV_REGION)
-is set, the host region label must match it (us-east-2, also aws-us-east-2);
-if unset, any Neon region is accepted.
+is unset or empty. If NEON_DEV_REGION is unset, any Neon region is accepted.
+If it is set to an empty string, refuse to run. If it is set to a value, the
+host region label must match it (us-east-2, also aws-us-east-2).
 Never prints credentials.
 
 Accepted hosts (and the pooled variant; cell label is optional):
   ep-<id>[.c-<n>].<region>.aws.neon.tech
   ep-<id>-pooler[.c-<n>].<region>.aws.neon.tech
 Lookalikes such as ep-<id>.evil.example are rejected.
+A trailing-dot host is rejected. Matching is case-insensitive.
 The pooled form uses a hyphenated ``-pooler`` suffix on the first label, not
 a ``.pooler`` DNS label.
 
@@ -21,7 +22,8 @@ cannot hide a production target. A port in the URL authority (for example
 ``service``, ``options``, ``port``, ``user``, and ``dbname`` parameters,
 and any duplicate query key. Only sslmode, channel_binding,
 connect_timeout, and application_name are allowed as extra parameters.
-sslmode must be require or verify-full.
+sslmode must be require or verify-full. Host, endpoint, and region are
+checked before sslmode.
 """
 from __future__ import annotations
 
@@ -60,6 +62,7 @@ _FORBIDDEN_OVERRIDES = frozenset({
     "dbname",
 })
 _ALLOWED_SSLMODES = frozenset({"require", "verify-full"})
+_PG_SCHEMES = frozenset({"postgres", "postgresql"})
 
 
 def _endpoint_from_label(label: str) -> str:
@@ -82,8 +85,11 @@ def _canonical_region(value: str) -> str:
 
 
 def _parse_neon_host(host: str) -> tuple[str, str] | None:
-    """Return (endpoint_id, region) or None if the host is not an accepted Neon host."""
-    host = (host or "").lower().rstrip(".")
+    """Return (endpoint_id, region) or None if the host is not an accepted Neon host.
+
+    Matching is case-insensitive. A trailing-dot host is rejected (no rstrip).
+    """
+    host = (host or "").strip().lower()
     match = _NEON_HOST.fullmatch(host)
     if not match:
         return None
@@ -95,35 +101,38 @@ def _host_endpoint_id(host: str) -> str | None:
     return None if parsed is None else parsed[0]
 
 
-def _query_key_list(url: str) -> list[str]:
-    parsed = urlparse(url)
-    if not parsed.scheme:
-        return []
-    return [k.lower() for k, _ in parse_qsl(parsed.query, keep_blank_values=True)]
-
-
 def _fail(message: str) -> int:
     print(message, file=sys.stderr)
     return 1
 
 
 def main() -> int:
-    expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
-    if not expected:
+    if "NEON_DEV_ENDPOINT_ID" not in os.environ:
         return _fail("NEON_DEV_ENDPOINT_ID is required")
+    expected = os.environ.get("NEON_DEV_ENDPOINT_ID", "").strip().lower()
+    if not expected:
+        return _fail("NEON_DEV_ENDPOINT_ID is empty")
 
+    if "DATABASE_URL" not in os.environ or not (os.environ.get("DATABASE_URL") or "").strip():
+        return _fail("DATABASE_URL is empty")
     url = os.environ.get("DATABASE_URL") or ""
-    if not url:
-        return _fail("DATABASE_URL is required")
+
+    try:
+        parsed_url = urlparse(url)
+    except Exception:
+        return _fail("DATABASE_URL is invalid")
+    scheme = (parsed_url.scheme or "").lower()
+    if scheme and scheme not in _PG_SCHEMES:
+        return _fail("DATABASE_URL scheme must be postgresql")
 
     try:
         info = conninfo_to_dict(url)
     except Exception:
         return _fail("DATABASE_URL is invalid")
 
-    query_keys = _query_key_list(url)
+    query_keys = [k.lower() for k, _ in parse_qsl(parsed_url.query, keep_blank_values=True)]
     if len(query_keys) != len(set(query_keys)):
-        return _fail("DATABASE_URL parameters are not allowed")
+        return _fail("DATABASE_URL query has duplicate keys")
     if set(query_keys) & _FORBIDDEN_OVERRIDES:
         return _fail("DATABASE_URL parameters are not allowed")
 
@@ -141,9 +150,12 @@ def main() -> int:
     if parsed[0] != expected:
         return _fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
 
-    expected_region = (os.environ.get("NEON_DEV_REGION") or "").strip().lower()
-    if expected_region and _canonical_region(parsed[1]) != _canonical_region(expected_region):
-        return _fail("DATABASE_URL host region does not match NEON_DEV_REGION")
+    if "NEON_DEV_REGION" in os.environ:
+        raw_region = os.environ.get("NEON_DEV_REGION", "")
+        if not raw_region.strip():
+            return _fail("NEON_DEV_REGION is empty")
+        if _canonical_region(parsed[1]) != _canonical_region(raw_region):
+            return _fail("DATABASE_URL host region does not match NEON_DEV_REGION")
 
     sslmode = str(info.get("sslmode") or "").strip().lower()
     if sslmode not in _ALLOWED_SSLMODES:
