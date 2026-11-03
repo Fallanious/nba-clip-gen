@@ -4,6 +4,9 @@ on:
   pull_request:
   push:
 
+permissions:
+  contents: read
+
 jobs:
   unit:
     name: Unit tests (clean venv)
@@ -16,8 +19,7 @@ jobs:
       - name: Install and test in a clean venv
         run: |
           python -m venv .venv
-          .venv/bin/pip install -U pip
-          .venv/bin/pip install -r requirements.txt
+          .venv/bin/pip install --require-hashes -r requirements.lock
           .venv/bin/pytest -m "not integration" -q
 
   integration:
@@ -41,7 +43,7 @@ jobs:
           python-version: "3.12"
       - name: Install test dependencies
         if: steps.check_db.outputs.has_db == 'true'
-        run: pip install -r requirements.txt
+        run: pip install --require-hashes -r requirements.lock
       - name: Guard Neon target
         if: steps.check_db.outputs.has_db == 'true'
         env:
@@ -49,7 +51,11 @@ jobs:
           # Endpoint id of Neon branch br-odd-smoke-b465tvf8 (set in repo vars; never a secret).
           NEON_DEV_ENDPOINT_ID: ${{ vars.NEON_DEV_ENDPOINT_ID }}
           NEON_DEV_REGION: ${{ vars.NEON_DEV_REGION }}
-        run: python scripts/ci_guard_db.py
+        run: |
+          # GitHub expands an unset var to ""; treat that as unset so region
+          # is optional. An explicitly empty env value still fails closed.
+          if [ -z "$NEON_DEV_REGION" ]; then unset NEON_DEV_REGION; fi
+          python scripts/ci_guard_db.py
       - name: Run integration tests against Neon
         if: steps.check_db.outputs.has_db == 'true'
         env:

@@ -1,7 +1,3 @@
-uv
-pylint
-black
-ruff
 yt-dlp==2026.10.26
 requests==2.34.2
 beautifulsoup4==4.15.0
