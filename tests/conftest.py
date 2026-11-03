@@ -6,22 +6,24 @@ Two layers:
     Python over SEED data. Keyed on the registry key, so it doesn't care what
     the repository functions are named.
   * integration (@pytest.mark.integration): real Postgres via DATABASE_URL
-    (Neon *dev branch* or a per-CI branch only). Skipped when unset. Refuses
-    any URL that looks like production.
+    (Neon *dev branch* or a per-CI branch only). Skipped when unset. With
+    ALLOW_INTEGRATION_DB=1, the host must match NEON_DEV_ENDPOINT_ID (same
+    parsing as scripts/ci_guard_db.py); otherwise the fixture fails closed.
 
 ADAPT HERE: the ONLY places that know DEV's module names are the constants
 below and `_make_app()`.
 """
-import base64, json, os, re, unicodedata, datetime as dt
+import base64, json, os, re, subprocess, sys, unicodedata, datetime as dt
 from types import SimpleNamespace
 from contextlib import contextmanager
 import pytest
 
+_CI_GUARD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts", "ci_guard_db.py")
+
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
-import sys as _sys
 _SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src")
-if _SRC not in _sys.path:
-    _sys.path.insert(0, _SRC)   # app imports top-level modules: config, db.*, routes.*, services.*
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)   # app imports top-level modules: config, db.*, routes.*, services.*
 APP_FACTORY = "app:create_app"          # app factory import path
 SESSION_TARGET = "routes.players.get_db"  # routes call next(get_db())
 REGISTRY_TARGET = None  # real registry is used; FakeDB maps TextClause -> key
@@ -415,11 +417,38 @@ def playback_client(fake_db, playback_configured):
     return a.test_client()
 
 
+def _require_neon_integration_url(url: str) -> None:
+    """Fail closed unless ci_guard_db.py accepts DATABASE_URL. Never print the URL."""
+    expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
+    if not expected:
+        pytest.fail("NEON_DEV_ENDPOINT_ID is required to run integration tests")
+    env = os.environ.copy()
+    env["DATABASE_URL"] = url
+    if not (env.get("NEON_DEV_REGION") or "").strip():
+        env.pop("NEON_DEV_REGION", None)
+    try:
+        result = subprocess.run(
+            [sys.executable, _CI_GUARD],
+            env=env,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired:
+        pytest.fail("ci_guard_db.py timed out")
+    if result.returncode != 0:
+        lines = (result.stderr or "").strip().splitlines()
+        pytest.fail(lines[-1] if lines else "DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+
+
 @pytest.fixture
 def integration_client(base_env, monkeypatch):
     url = os.environ.get("DATABASE_URL", "")
-    if re.search(r"prod|main|primary", url, re.I):
-        pytest.skip("Refusing to run against what looks like a production DATABASE_URL")
+    if not url.strip():
+        pytest.skip("DATABASE_URL not set (integration tests need a Neon dev/CI branch)")
+    if os.environ.get("ALLOW_INTEGRATION_DB") != "1":
+        pytest.skip("Set ALLOW_INTEGRATION_DB=1 to run against DATABASE_URL")
+    _require_neon_integration_url(url)
     monkeypatch.setenv("DATABASE_URL", url)
     a = _make_app()
     a.config.update(TESTING=True)
