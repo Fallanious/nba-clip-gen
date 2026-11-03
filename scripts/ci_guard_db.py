@@ -35,10 +35,12 @@ from urllib.parse import parse_qsl, urlparse
 from psycopg.conninfo import conninfo_to_dict
 
 # ep-<id>[-pooler].[c-<n>.]<region>.aws.neon.tech
+# Cell digits are [0-9] so they stay ASCII even if re.ASCII is dropped.
+# re.ASCII is still required for the region's trailing \d+.
 _NEON_HOST = re.compile(
     r"^"
     r"(?P<label>ep-[a-z0-9-]+)"
-    r"(?:\.(?P<cell>c-[1-9]\d{0,3}))?"
+    r"(?:\.(?P<cell>c-[1-9][0-9]{0,3}))?"
     r"\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)"
     r"\.aws\.neon\.tech"
     r"$",
