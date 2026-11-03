@@ -13,12 +13,14 @@ Two layers:
 ADAPT HERE: the ONLY places that know DEV's module names are the constants
 below and `_make_app()`.
 """
-import base64, importlib.util, json, os, re, sys, unicodedata, datetime as dt
+import base64, importlib.util, json, os, re, subprocess, sys, unicodedata, datetime as dt
+from pathlib import Path
 from types import SimpleNamespace
 from contextlib import contextmanager
+from urllib.parse import parse_qsl, urlparse
 import pytest
 
-# Same host rules as scripts/ci_guard_db.py (players layer may not have that file).
+# Same rules as scripts/ci_guard_db.py (players layer may not have that file).
 _NEON_HOST = re.compile(
     r"^"
     r"(?P<label>ep-[a-z0-9-]+)"
@@ -29,6 +31,25 @@ _NEON_HOST = re.compile(
     re.ASCII,
 )
 _POOLER_SUFFIX = "-pooler"
+_CI_GUARD = Path(__file__).resolve().parents[1] / "scripts" / "ci_guard_db.py"
+_ALLOWED_PARAMS = frozenset({
+    "sslmode",
+    "channel_binding",
+    "connect_timeout",
+    "application_name",
+})
+_IDENTITY_KEYS = frozenset({"user", "password", "dbname", "host"})
+_FORBIDDEN_OVERRIDES = frozenset({
+    "host",
+    "hostaddr",
+    "service",
+    "options",
+    "port",
+    "user",
+    "dbname",
+})
+_ALLOWED_SSLMODES = frozenset({"require", "verify-full"})
+_PG_SCHEMES = frozenset({"postgres", "postgresql"})
 
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
 _SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src")
@@ -431,29 +452,98 @@ def playback_client(fake_db, playback_configured):
     return a.test_client()
 
 
-def _require_neon_integration_url(url: str) -> None:
-    """Fail closed unless DATABASE_URL targets NEON_DEV_ENDPOINT_ID. Never print the URL."""
+def _canonical_region(value: str) -> str:
+    region = (value or "").strip().lower()
+    if region.startswith("aws-"):
+        return region[len("aws-"):]
+    return region
+
+
+def _endpoint_from_label(label: str) -> str:
+    if label.endswith(_POOLER_SUFFIX) and len(label) > len(_POOLER_SUFFIX):
+        return label[: -len(_POOLER_SUFFIX)]
+    return label
+
+
+def _fail_closed(message: str) -> None:
+    pytest.fail(message)
+
+
+def _require_neon_integration_url_inline(url: str) -> None:
+    """Port of scripts/ci_guard_db.py for layers that do not have the script."""
     expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
     if not expected:
-        pytest.fail("NEON_DEV_ENDPOINT_ID is required to run integration tests")
+        _fail_closed("NEON_DEV_ENDPOINT_ID is required to run integration tests")
+
+    try:
+        parsed_url = urlparse(url)
+    except Exception:
+        _fail_closed("DATABASE_URL is invalid")
+    scheme = (parsed_url.scheme or "").lower()
+    if scheme and scheme not in _PG_SCHEMES:
+        _fail_closed("DATABASE_URL scheme must be postgresql")
 
     try:
         from psycopg.conninfo import conninfo_to_dict
         info = conninfo_to_dict(url)
     except Exception:
-        pytest.fail("DATABASE_URL is invalid")
+        _fail_closed("DATABASE_URL is invalid")
+
+    query_keys = [k.lower() for k, _ in parse_qsl(parsed_url.query, keep_blank_values=True)]
+    if len(query_keys) != len(set(query_keys)):
+        _fail_closed("DATABASE_URL query has duplicate keys")
+    if set(query_keys) & _FORBIDDEN_OVERRIDES:
+        _fail_closed("DATABASE_URL override parameters are not allowed")
+
+    extra = set(k.lower() for k in info) - _IDENTITY_KEYS
+    if extra - _ALLOWED_PARAMS:
+        _fail_closed("DATABASE_URL parameters are not allowed")
+
     host = str(info.get("host") or "").strip().lower()
+    if not host:
+        _fail_closed("DATABASE_URL host is required")
     match = _NEON_HOST.fullmatch(host)
     if match is None:
-        pytest.fail("DATABASE_URL host is not an accepted Neon host")
-    label = match.group("label")
-    endpoint = (
-        label[: -len(_POOLER_SUFFIX)]
-        if label.endswith(_POOLER_SUFFIX) and len(label) > len(_POOLER_SUFFIX)
-        else label
-    )
+        _fail_closed("DATABASE_URL host is not an accepted Neon host")
+    endpoint = _endpoint_from_label(match.group("label"))
     if endpoint != expected:
-        pytest.fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+        _fail_closed("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+
+    if "NEON_DEV_REGION" in os.environ:
+        raw_region = os.environ.get("NEON_DEV_REGION", "")
+        if not raw_region.strip():
+            _fail_closed("NEON_DEV_REGION is empty")
+        if _canonical_region(match.group("region")) != _canonical_region(raw_region):
+            _fail_closed("DATABASE_URL host region does not match NEON_DEV_REGION")
+
+    sslmode = str(info.get("sslmode") or "").strip().lower()
+    if sslmode not in _ALLOWED_SSLMODES:
+        _fail_closed("DATABASE_URL sslmode must be require or verify-full")
+
+
+def _require_neon_integration_url(url: str) -> None:
+    """Fail closed unless DATABASE_URL is the allowed Neon target. Never print the URL."""
+    expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
+    if not expected:
+        _fail_closed("NEON_DEV_ENDPOINT_ID is required to run integration tests")
+
+    if _CI_GUARD.is_file():
+        env = os.environ.copy()
+        env["DATABASE_URL"] = url
+        if not (env.get("NEON_DEV_REGION") or "").strip():
+            env.pop("NEON_DEV_REGION", None)
+        result = subprocess.run(
+            [sys.executable, str(_CI_GUARD)],
+            env=env,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            lines = (result.stderr or "").strip().splitlines()
+            _fail_closed(lines[-1] if lines else "DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+        return
+
+    _require_neon_integration_url_inline(url)
 
 
 @pytest.fixture

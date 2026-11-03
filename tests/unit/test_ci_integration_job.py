@@ -165,6 +165,7 @@ def test_integration_job_never_targets_default_or_production():
     pytest_env = steps[pytest_i].get("env") or {}
     assert pytest_env.get("ALLOW_INTEGRATION_DB") == "1"
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(pytest_env.get("NEON_DEV_ENDPOINT_ID") or "")
+    assert "vars.NEON_DEV_REGION" in str(pytest_env.get("NEON_DEV_REGION") or "")
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
@@ -455,5 +456,8 @@ def test_conftest_integration_fixture_refuses_prod(monkeypatch, request, url):
     monkeypatch.setenv("DATABASE_URL", url)
     monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
     monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
-    with pytest.raises(pytest.fail.Exception, match="not an accepted Neon host"):
+    with pytest.raises(
+        pytest.fail.Exception,
+        match="not an accepted Neon host|does not match NEON_DEV_ENDPOINT_ID",
+    ):
         request.getfixturevalue("integration_client")
