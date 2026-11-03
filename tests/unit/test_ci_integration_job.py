@@ -147,6 +147,15 @@ def test_integration_job_never_targets_default_or_production():
     assert hashed_installs >= 2
     assert Path("requirements.lock").is_file()
     assert "--hash=sha256:" in Path("requirements.lock").read_text()
+    req = Path("requirements.txt").read_text()
+    for name in ("uv", "pylint", "black", "ruff"):
+        assert not re.search(rf"^{name}(?:[=<>]|\s|$)", req, re.M), name
+    assert Path("requirements-dev.txt").is_file()
+    assert Path("requirements-dev.lock").is_file()
+    assert "--hash=sha256:" in Path("requirements-dev.lock").read_text()
+    dev = Path("requirements-dev.txt").read_text()
+    for name in ("uv", "pylint", "black", "ruff"):
+        assert re.search(rf"^{name}==", dev, re.M), name
     steps = job.get("steps") or []
     guard_i = next(i for i, s in enumerate(steps) if "ci_guard_db.py" in str(s.get("run") or ""))
     pytest_i = next(i for i, s in enumerate(steps) if "pytest -m integration" in str(s.get("run") or ""))
