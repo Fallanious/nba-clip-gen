@@ -3,9 +3,10 @@
 
 Requires NEON_DEV_ENDPOINT_ID (from GitHub vars.NEON_DEV_ENDPOINT_ID), the
 endpoint id of Neon branch br-odd-smoke-b465tvf8. Refuses to run if that var
-is unset or empty. If NEON_DEV_REGION is unset, any Neon region is accepted.
-If it is set to an empty string, refuse to run. If it is set to a value, the
-host region label must match it (us-east-2, also aws-us-east-2).
+is unset or empty. If CI=true, NEON_DEV_REGION is required and must match the
+host region. If CI is not true and NEON_DEV_REGION is unset, any Neon region
+is accepted. If it is set to an empty string, refuse to run. If it is set to
+a value, the host region label must match it (us-east-2, also aws-us-east-2).
 Never prints credentials.
 
 Accepted hosts (and the pooled variant; cell label is optional):
@@ -152,7 +153,10 @@ def main() -> int:
     if parsed[0] != expected:
         return _fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
 
-    if "NEON_DEV_REGION" in os.environ:
+    in_ci = os.environ.get("CI") == "true"
+    if in_ci and "NEON_DEV_REGION" not in os.environ:
+        return _fail("NEON_DEV_REGION is required")
+    if in_ci or "NEON_DEV_REGION" in os.environ:
         raw_region = os.environ.get("NEON_DEV_REGION", "")
         if not raw_region.strip():
             return _fail("NEON_DEV_REGION is empty")

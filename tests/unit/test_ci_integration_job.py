@@ -119,6 +119,38 @@ def test_missing_neon_secret_fails_on_protected_prs():
         assert "github.base_ref == 'cursor/01-foundation-9d4d'" in later_if
         assert "exit 1" in run
         assert "NEON_DEV_DATABASE_URL is required" in run
+        assert "$BASE_REF" in run
+        env = step.get("env") or {}
+        assert "github.base_ref" in str(env.get("BASE_REF") or "")
+        assert step.get("continue-on-error") in (None, False)
+    assert found
+
+
+def test_workflow_run_blocks_do_not_interpolate_expressions():
+    """GitHub expressions belong in env/if, never inside a step run script."""
+    roots = list(Path(".github/workflows").glob("*.yml")) + list(
+        Path(".github/workflows").glob("*.yaml")
+    )
+    assert roots, "expected workflow YAML"
+    for path in roots:
+        data = yaml.safe_load(path.read_text())
+        for name, job in (data.get("jobs") or {}).items():
+            for i, step in enumerate(job.get("steps") or []):
+                run = step.get("run") or ""
+                assert "${{" not in run, (
+                    f"{path} jobs.{name} steps[{i}] interpolates in run"
+                )
+
+
+def test_require_neon_secret_step_has_no_continue_on_error():
+    job = _job()
+    found = False
+    for step in job.get("steps") or []:
+        if "Require Neon secret" not in str(step.get("name") or ""):
+            continue
+        found = True
+        assert "continue-on-error" not in step
+        assert step.get("continue-on-error") is not True
     assert found
 
 
@@ -193,7 +225,7 @@ def test_integration_job_never_targets_default_or_production():
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
     assert "NEON_DEV_REGION" in guard_env
     assert "vars.NEON_DEV_REGION" in str(guard_env["NEON_DEV_REGION"])
-    assert "unset NEON_DEV_REGION" in str(steps[guard_i].get("run") or "")
+    assert "unset NEON_DEV_REGION" not in str(steps[guard_i].get("run") or "")
 
 
 def _ok_url(host, extra=""):
@@ -203,7 +235,7 @@ def _ok_url(host, extra=""):
 
 def _run_guard(env):
     cleaned = {k: v for k, v in os.environ.items() if k not in {
-        "DATABASE_URL", "NEON_DEV_ENDPOINT_ID", "NEON_DEV_REGION", "NEON_BRANCH_JSON",
+        "DATABASE_URL", "NEON_DEV_ENDPOINT_ID", "NEON_DEV_REGION", "NEON_BRANCH_JSON", "CI",
     }}
     cleaned.update(env)
     return subprocess.run(
@@ -335,6 +367,48 @@ def test_qa_region_is_not_checked_when_NEON_DEV_REGION_is_unset():
     })
     assert eu.returncode == 0, eu.stderr
     assert "NEON_DEV_REGION" not in west.stderr + eu.stderr
+
+
+def test_ci_true_requires_NEON_DEV_REGION():
+    missing = _run_guard({
+        "CI": "true",
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
+    })
+    assert missing.returncode != 0
+    assert "NEON_DEV_REGION is required" in missing.stderr
+    assert "sslmode" not in missing.stderr
+
+    empty = _run_guard({
+        "CI": "true",
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "NEON_DEV_REGION": "",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
+    })
+    assert empty.returncode != 0
+    assert "NEON_DEV_REGION is empty" in empty.stderr
+    assert "sslmode" not in empty.stderr
+
+    ok = _run_guard({
+        "CI": "true",
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "NEON_DEV_REGION": "us-east-1",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
+    })
+    assert ok.returncode == 0, ok.stderr
+
+    mismatch = _run_guard({
+        "CI": "true",
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "NEON_DEV_REGION": "us-west-2",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
+    })
+    assert mismatch.returncode != 0
+    assert "region does not match NEON_DEV_REGION" in mismatch.stderr
+    assert "sslmode" not in mismatch.stderr
+    out = missing.stdout + missing.stderr + empty.stdout + empty.stderr + ok.stdout + ok.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
 
 
 def test_qa_empty_NEON_DEV_REGION_fails_closed():
@@ -802,6 +876,7 @@ def test_conftest_integration_fixture_fails_closed_on_mismatched_host(monkeypatc
 
 def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
     from tests.conftest import _require_neon_integration_url
+    monkeypatch.delenv("CI", raising=False)
     monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
     monkeypatch.delenv("NEON_DEV_REGION", raising=False)
     _require_neon_integration_url(
@@ -809,6 +884,26 @@ def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
     )
     _require_neon_integration_url(
         "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
+
+
+def test_require_neon_integration_url_requires_region_when_ci(monkeypatch):
+    from tests.conftest import _require_neon_integration_url
+    monkeypatch.setenv("CI", "true")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_REGION is required"):
+        _require_neon_integration_url(
+            "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+        )
+    monkeypatch.setenv("NEON_DEV_REGION", "")
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_REGION is empty"):
+        _require_neon_integration_url(
+            "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+        )
+    monkeypatch.setenv("NEON_DEV_REGION", "us-east-1")
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
     )
 
 
@@ -864,6 +959,7 @@ _PW = "secret-pass"
     ),
 ])
 def test_conftest_integration_fixture_fails_closed_on_guard_bypasses(monkeypatch, request, url, match):
+    monkeypatch.delenv("CI", raising=False)
     monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
     monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
     monkeypatch.delenv("NEON_DEV_REGION", raising=False)
