@@ -426,12 +426,16 @@ def _require_neon_integration_url(url: str) -> None:
     env["DATABASE_URL"] = url
     if not (env.get("NEON_DEV_REGION") or "").strip():
         env.pop("NEON_DEV_REGION", None)
-    result = subprocess.run(
-        [sys.executable, _CI_GUARD],
-        env=env,
-        capture_output=True,
-        text=True,
-    )
+    try:
+        result = subprocess.run(
+            [sys.executable, _CI_GUARD],
+            env=env,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired:
+        pytest.fail("ci_guard_db.py timed out")
     if result.returncode != 0:
         lines = (result.stderr or "").strip().splitlines()
         pytest.fail(lines[-1] if lines else "DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")

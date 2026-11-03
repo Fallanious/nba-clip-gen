@@ -89,7 +89,9 @@ def test_integration_job_skips_without_secret():
             check_id = step.get("id")
             for later in steps[i + 1:]:
                 later_if = str(later.get("if") or "")
-                if f"steps.{check_id}.outputs.has_db == 'true'" not in later_if:
+                gated_true = f"steps.{check_id}.outputs.has_db == 'true'" in later_if
+                gated_false = f"steps.{check_id}.outputs.has_db != 'true'" in later_if
+                if not gated_true and not gated_false:
                     later_gated = False
             break
     assert has_db_step and later_gated
@@ -99,6 +101,25 @@ def test_integration_job_skips_without_secret():
         if "pytest -m integration" in str(step.get("run") or ""):
             pytest_runs = True
     assert pytest_runs
+
+
+def test_missing_neon_secret_fails_on_protected_prs():
+    """PRs into foundation or main must not go green when the Neon secret is missing."""
+    job = _job()
+    found = False
+    for step in job.get("steps") or []:
+        if "Require Neon secret" not in str(step.get("name") or ""):
+            continue
+        found = True
+        later_if = str(step.get("if") or "")
+        run = str(step.get("run") or "")
+        assert "has_db != 'true'" in later_if
+        assert "github.event_name == 'pull_request'" in later_if
+        assert "github.base_ref == 'main'" in later_if
+        assert "github.base_ref == 'cursor/01-foundation-9d4d'" in later_if
+        assert "exit 1" in run
+        assert "NEON_DEV_DATABASE_URL is required" in run
+    assert found
 
 
 def test_integration_skip_behaviour_local():
@@ -789,6 +810,23 @@ def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
     _require_neon_integration_url(
         "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db?sslmode=require"
     )
+
+
+def test_require_neon_integration_url_fails_on_guard_timeout(monkeypatch):
+    import tests.conftest as conftest
+
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+
+    def fake_run(*args, **kwargs):
+        assert kwargs.get("timeout") == 30
+        raise subprocess.TimeoutExpired(cmd=kwargs.get("args") or args[0], timeout=30)
+
+    monkeypatch.setattr(conftest.subprocess, "run", fake_run)
+    with pytest.raises(pytest.fail.Exception, match="ci_guard_db.py timed out"):
+        conftest._require_neon_integration_url(
+            "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+        )
 
 
 _OK_NEON = "ep-dev-abc.us-east-1.aws.neon.tech"
