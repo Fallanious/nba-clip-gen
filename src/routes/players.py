@@ -41,15 +41,26 @@ def _clip_is_playable(row) -> bool:
     return status == "uploaded" and row.get("s3_key") is not None
 
 
-def _require_published_or_admin(user, row) -> None:
-    """Unpublished clips 404 for non-admins, same envelope as a missing clip."""
-    if _clip_is_playable(row) or is_admin(user):
-        return
+def _clip_not_found() -> None:
     raise ApiError(
         code="not_found",
         message="Clip not found",
         status=404,
     )
+
+
+def _parse_clip_id(raw: str) -> int:
+    """Non-digit clip IDs 404 the same as a missing clip."""
+    if not re.fullmatch(r"[0-9]+", raw or ""):
+        _clip_not_found()
+    return int(raw)
+
+
+def _require_published_or_admin(user, row) -> None:
+    """Unpublished clips 404 for non-admins, same envelope as a missing clip."""
+    if _clip_is_playable(row) or is_admin(user):
+        return
+    _clip_not_found()
 
 
 def _weak_etag(parts) -> str:
@@ -768,23 +779,20 @@ def get_player_clips_endpoint(player_id: int):
     return _json_cached(response, etag, _RESOURCE_CC)
 
 
-@bp.route('/clips/<int:clip_id>', methods=['GET'])
+@bp.route('/clips/<clip_id>', methods=['GET'])
 @require_user
-def get_clip_endpoint(clip_id: int):
+def get_clip_endpoint(clip_id: str):
     """GET /api/clips/:id - Get clip detail."""
+    clip_id = _parse_clip_id(clip_id)
     session = db_session.get_db()
 
     row = clips_repo.get_clip(session, clip_id)
     if not row:
-        raise ApiError(
-            code="not_found",
-            message="Clip not found",
-            status=404
-        )
+        _clip_not_found()
 
-    # Check authorization
-    authorize_clip(g.user, row)
+    # Published check first so a future authorize 403 cannot leak existence.
     _require_published_or_admin(g.user, row)
+    authorize_clip(g.user, row)
 
     etag = _weak_etag([
         "GET /api/clips/:id",
@@ -832,24 +840,21 @@ def get_clip_endpoint(clip_id: int):
     return _json_cached(clip, etag, _RESOURCE_CC)
 
 
-@bp.route('/clips/<int:clip_id>/playback-url', methods=['GET'])
+@bp.route('/clips/<clip_id>/playback-url', methods=['GET'])
 @require_user
-def get_playback_url_endpoint(clip_id: int):
+def get_playback_url_endpoint(clip_id: str):
     """GET /api/clips/:id/playback-url - Get presigned playback URL."""
+    clip_id = _parse_clip_id(clip_id)
     session = db_session.get_db()
 
     # Get minimal clip data
     clip_data = clips_repo.get_playback_target(session, clip_id)
     if not clip_data:
-        raise ApiError(
-            code="not_found",
-            message="Clip not found",
-            status=404
-        )
+        _clip_not_found()
 
-    # Check authorization
-    authorize_clip(g.user, clip_data)
+    # Published check first so a future authorize 403 cannot leak existence.
     _require_published_or_admin(g.user, clip_data)
+    authorize_clip(g.user, clip_data)
 
     # Parse mode parameter
     mode = request.args.get('mode', 'auto')

@@ -378,19 +378,41 @@ def test_unpublished_clip_detail_is_404_for_non_admin(fake_db, monkeypatch, cid)
     assert err["message"] == "Clip not found"
 
 
+def _clip_404_signature(resp):
+    """Status, JSON, and headers a non-admin can observe (stable request id)."""
+    headers = [(k, v) for k, v in resp.headers.items() if k.lower() != "date"]
+    return resp.status_code, resp.get_json(), headers
+
+
 def test_unpublished_and_missing_clip_look_the_same_to_non_admin(fake_db, monkeypatch):
     from auth import User
     from tests.conftest import _make_app
     monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
     client = _make_app().test_client()
-    missing = client.get("/api/clips/99999999")
-    unpublished = client.get(f"/api/clips/{NOT_READY['pending']}")
-    assert missing.status_code == unpublished.status_code == 404
-    assert missing.get_json() == unpublished.get_json()
-    missing_pb = client.get("/api/clips/99999999/playback-url")
-    unpublished_pb = client.get(f"/api/clips/{NOT_READY['pending']}/playback-url")
-    assert missing_pb.status_code == unpublished_pb.status_code == 404
-    assert missing_pb.get_json() == unpublished_pb.get_json()
+    rid = {"X-Request-Id": "qa-uniform-clip-404"}
+    detail = [
+        client.get("/api/clips/99999999", headers=rid),
+        client.get(f"/api/clips/{NOT_READY['pending']}", headers=rid),
+        client.get("/api/clips/abc", headers=rid),
+        client.get("/api/clips/-1", headers=rid),
+    ]
+    first = _clip_404_signature(detail[0])
+    assert first[0] == 404
+    assert first[1] == {"error": {"code": "not_found", "message": "Clip not found"}}
+    for resp in detail[1:]:
+        assert _clip_404_signature(resp) == first
+
+    playback = [
+        client.get("/api/clips/99999999/playback-url", headers=rid),
+        client.get(f"/api/clips/{NOT_READY['pending']}/playback-url", headers=rid),
+        client.get("/api/clips/abc/playback-url", headers=rid),
+        client.get("/api/clips/-1/playback-url", headers=rid),
+    ]
+    first_pb = _clip_404_signature(playback[0])
+    assert first_pb[0] == 404
+    assert first_pb[1] == {"error": {"code": "not_found", "message": "Clip not found"}}
+    for resp in playback[1:]:
+        assert _clip_404_signature(resp) == first_pb
 
 
 def test_admin_can_get_unpublished_clip_detail(client):
@@ -406,6 +428,34 @@ def test_unpublished_playback_is_404_for_non_admin(fake_db, monkeypatch):
     r = _make_app().test_client().get(f"/api/clips/{NOT_READY['pending']}/playback-url")
     err = assert_error(r, 404, "not_found")
     assert err["message"] == "Clip not found"
+
+
+@pytest.mark.parametrize("path", ["/api/clips/abc", "/api/clips/-1",
+                                  "/api/clips/abc/playback-url", "/api/clips/-1/playback-url"])
+def test_invalid_clip_id_is_404_clip_not_found(fake_db, monkeypatch, path):
+    from auth import User
+    from tests.conftest import _make_app
+    monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
+    r = _make_app().test_client().get(path)
+    err = assert_error(r, 404, "not_found")
+    assert err["message"] == "Clip not found"
+
+
+def test_unpublished_clip_404s_before_authorize(fake_db, monkeypatch):
+    from auth import User
+    from errors import ApiError
+    from tests.conftest import _make_app
+
+    def forbid(_user, _clip):
+        raise ApiError(code="forbidden", message="Administrator access required", status=403)
+
+    monkeypatch.setattr("routes.players.authorize_clip", forbid)
+    monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
+    client = _make_app().test_client()
+    for path in (f"/api/clips/{NOT_READY['pending']}",
+                 f"/api/clips/{NOT_READY['pending']}/playback-url"):
+        err = assert_error(client.get(path), 404, "not_found")
+        assert err["message"] == "Clip not found"
 
 
 def test_integration_client_requires_allow_flag(monkeypatch, request):
@@ -480,23 +530,39 @@ def _assert_integration_url_rejected(monkeypatch, request, url, match):
 @pytest.mark.parametrize("url,match", [
     (
         f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&hostaddr=1.2.3.4",
-        "parameters are not allowed",
+        "override parameters are not allowed",
     ),
     (
         f"host={_OK_NEON} hostaddr=1.2.3.4 user=u password={_PW} dbname=db sslmode=require",
-        "parameters are not allowed",
+        r"DATABASE_URL parameters are not allowed",
     ),
     (
         f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&service=foo",
-        "parameters are not allowed",
+        "override parameters are not allowed",
     ),
     (
         f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&options=endpoint%3Dep-prod",
-        "parameters are not allowed",
+        "override parameters are not allowed",
     ),
     (
         f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&port=5433",
-        "parameters are not allowed",
+        "override parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&user=admin",
+        "override parameters are not allowed",
+    ),
+    (
+        f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=require&sslmode=disable",
+        "query has duplicate keys",
+    ),
+    (
+        f"mysql://u:{_PW}@{_OK_NEON}/db?sslmode=require",
+        "scheme must be postgresql",
+    ),
+    (
+        f"http://u:{_PW}@{_OK_NEON}/db?sslmode=require",
+        "scheme must be postgresql",
     ),
     (
         f"postgresql://u:{_PW}@{_OK_NEON}/db?sslmode=disable",
@@ -509,6 +575,67 @@ def _assert_integration_url_rejected(monkeypatch, request, url, match):
 ])
 def test_integration_client_fails_closed_on_guard_bypasses(monkeypatch, request, url, match):
     _assert_integration_url_rejected(monkeypatch, request, url, match)
+
+
+def test_conftest_inline_guard_rejects_region_mismatch(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.setenv("NEON_DEV_REGION", "us-east-1")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        f"postgresql://u:{_PW}@ep-dev-abc.us-west-2.aws.neon.tech/db?sslmode=require",
+    )
+    with pytest.raises(pytest.fail.Exception, match="region does not match NEON_DEV_REGION") as ei:
+        request.getfixturevalue("integration_client")
+    assert _PW not in str(ei.value)
+
+
+def test_conftest_inline_guard_rejects_non_ascii_region_digit(monkeypatch, request):
+    """Region us-east-١ must not match ASCII \\d; dropping re.ASCII would accept it."""
+    import re as _re
+    from tests.conftest import _NEON_HOST
+
+    host = "ep-dev-abc.us-east-\u0661.aws.neon.tech"
+    without_ascii = _re.compile(_NEON_HOST.pattern)
+    assert without_ascii.fullmatch(host)
+    assert _NEON_HOST.fullmatch(host) is None
+    _assert_integration_url_rejected(
+        monkeypatch,
+        request,
+        f"postgresql://u:{_PW}@{host}/db?sslmode=require",
+        "not an accepted Neon host",
+    )
+
+
+def test_conftest_inline_guard_rejects_non_ascii_cell_digit(monkeypatch, request):
+    """Cell tail c-1١ must not match [0-9]; a \\d cell without re.ASCII would accept it."""
+    _assert_integration_url_rejected(
+        monkeypatch,
+        request,
+        f"postgresql://u:{_PW}@ep-dev-abc.c-1\u0661.us-east-1.aws.neon.tech/db?sslmode=require",
+        "not an accepted Neon host",
+    )
+
+
+def test_require_neon_integration_url_fails_on_guard_timeout(monkeypatch, tmp_path):
+    import subprocess
+    import tests.conftest as conftest
+
+    fake_guard = tmp_path / "ci_guard_db.py"
+    fake_guard.write_text("raise SystemExit('should not run')\n")
+    monkeypatch.setattr(conftest, "_CI_GUARD", fake_guard)
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+
+    def fake_run(*args, **kwargs):
+        assert kwargs.get("timeout") == 30
+        raise subprocess.TimeoutExpired(cmd=kwargs.get("args") or args[0], timeout=30)
+
+    monkeypatch.setattr(conftest.subprocess, "run", fake_run)
+    with pytest.raises(pytest.fail.Exception, match="ci_guard_db.py timed out"):
+        conftest._require_neon_integration_url(
+            "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+        )
 
 
 def test_search_bind_types_native(client, fake_db):
