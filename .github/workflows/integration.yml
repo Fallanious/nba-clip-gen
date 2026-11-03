@@ -19,7 +19,6 @@ jobs:
       - name: Install and test in a clean venv
         run: |
           python -m venv .venv
-          .venv/bin/pip install -U pip
           .venv/bin/pip install --require-hashes -r requirements.lock
           .venv/bin/pytest -m "not integration" -q
 

@@ -131,21 +131,23 @@ def main() -> int:
     if extra - _ALLOWED_PARAMS:
         return _fail("DATABASE_URL parameters are not allowed")
 
-    sslmode = str(info.get("sslmode") or "").strip().lower()
-    if sslmode not in _ALLOWED_SSLMODES:
-        return _fail("DATABASE_URL sslmode must be require or verify-full")
-
     host = str(info.get("host") or "").lower()
     if not host:
         return _fail("DATABASE_URL host is required")
 
     parsed = _parse_neon_host(host)
-    if parsed is None or parsed[0] != expected:
+    if parsed is None:
+        return _fail("DATABASE_URL host is not an accepted Neon host")
+    if parsed[0] != expected:
         return _fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
 
     expected_region = (os.environ.get("NEON_DEV_REGION") or "").strip().lower()
     if expected_region and _canonical_region(parsed[1]) != _canonical_region(expected_region):
         return _fail("DATABASE_URL host region does not match NEON_DEV_REGION")
+
+    sslmode = str(info.get("sslmode") or "").strip().lower()
+    if sslmode not in _ALLOWED_SSLMODES:
+        return _fail("DATABASE_URL sslmode must be require or verify-full")
     return 0
 
 

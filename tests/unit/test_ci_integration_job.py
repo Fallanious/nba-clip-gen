@@ -140,6 +140,8 @@ def test_integration_job_never_targets_default_or_production():
     for name, j in _jobs().items():
         for s in j.get("steps") or []:
             run = s.get("run") or ""
+            assert "pip install -U pip" not in run
+            assert "pip install --upgrade pip" not in run
             if "pip install" in run:
                 assert "--require-hashes" in run, f"{name} pip install is not hashed"
                 assert "requirements.lock" in run
@@ -197,14 +199,16 @@ def test_ci_guard_db_rejects_mismatched_or_prod_endpoint():
     env = {"NEON_DEV_ENDPOINT_ID": "ep-dev-abc"}
     mismatch = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://u:p@ep-other-xyz.us-east-1.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-other-xyz.us-east-1.aws.neon.tech"),
     })
     assert mismatch.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in mismatch.stderr
     prod = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://u:p@ep-x-production.us-east-1.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-x-production.us-east-1.aws.neon.tech"),
     })
     assert prod.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in prod.stderr
     ok = _run_guard({
         **env,
         "DATABASE_URL": _ok_url("ep-dev-abc.us-east-1.aws.neon.tech"),
@@ -241,9 +245,11 @@ def test_ci_guard_accepts_pooled_host():
 def test_ci_guard_rejects_lookalike_hosts(host):
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
-        "DATABASE_URL": f"postgresql://u:p@{host}/db",
+        "DATABASE_URL": _ok_url(host),
     })
     assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
     assert "u:p" not in result.stdout + result.stderr
 
 
@@ -285,9 +291,11 @@ def test_ci_guard_region_must_match_when_set():
     assert aws_prefix.returncode == 0
     mismatch = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-west-2.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-west-2.aws.neon.tech"),
     })
     assert mismatch.returncode != 0
+    assert "region does not match NEON_DEV_REGION" in mismatch.stderr
+    assert "sslmode" not in mismatch.stderr
     out = ok.stdout + ok.stderr + mismatch.stdout + mismatch.stderr
     assert "u:p" not in out
     assert "postgresql://" not in out
@@ -320,18 +328,22 @@ def test_ci_guard_accepts_neon_cell_direct_and_pooled_hosts():
 def test_ci_guard_rejects_mismatched_id_on_cell_host():
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
-        "DATABASE_URL": "postgresql://ep-other-xyz-pooler.c-6.us-east-2.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-other-xyz-pooler.c-6.us-east-2.aws.neon.tech"),
     })
     assert result.returncode != 0
+    assert "does not match NEON_DEV_ENDPOINT_ID" in result.stderr
+    assert "sslmode" not in result.stderr
     assert "postgresql://" not in result.stdout + result.stderr
 
 
 def test_ci_guard_rejects_cell_lookalike_domain():
     result = _run_guard({
         "NEON_DEV_ENDPOINT_ID": DEV_ENDPOINT_ID,
-        "DATABASE_URL": f"postgresql://{DEV_POOLED_HOST}.evil.example/db",
+        "DATABASE_URL": _ok_url(f"{DEV_POOLED_HOST}.evil.example"),
     })
     assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
     assert "postgresql://" not in result.stdout + result.stderr
 
 
@@ -353,9 +365,11 @@ def test_ci_guard_cell_host_region_label_only():
     assert aws_prefix.returncode == 0
     mismatch = _run_guard({
         **env,
-        "DATABASE_URL": "postgresql://ep-rapid-smoke-b4t1v549.c-6.us-west-2.aws.neon.tech/db",
+        "DATABASE_URL": _ok_url("ep-rapid-smoke-b4t1v549.c-6.us-west-2.aws.neon.tech"),
     })
     assert mismatch.returncode != 0
+    assert "region does not match NEON_DEV_REGION" in mismatch.stderr
+    assert "sslmode" not in mismatch.stderr
 
 
 @pytest.mark.parametrize("url", [
@@ -389,6 +403,9 @@ def test_ci_guard_rejects_missing_or_weak_sslmode(sslmode):
         "DATABASE_URL": url,
     })
     assert result.returncode != 0
+    assert "sslmode must be require or verify-full" in result.stderr
+    assert "not an accepted Neon host" not in result.stderr
+    assert "does not match NEON_DEV_ENDPOINT_ID" not in result.stderr
 
 
 @pytest.mark.parametrize("sslmode", ["require", "verify-full"])
