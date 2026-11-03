@@ -163,6 +163,8 @@ def test_integration_job_never_targets_default_or_production():
     pytest_i = next(i for i, s in enumerate(steps) if "pytest -m integration" in str(s.get("run") or ""))
     assert guard_i < pytest_i
     assert "-rs" in str(steps[pytest_i].get("run") or "")
+    pytest_env = steps[pytest_i].get("env") or {}
+    assert pytest_env.get("ALLOW_INTEGRATION_DB") == "1"
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
@@ -733,11 +735,55 @@ def test_qa_rejection_output_never_contains_the_password():
 
 
 @pytest.mark.parametrize("url", [
-    "postgresql://u:p@ep-x-production.neon.tech/db",
-    "postgresql://u:p@ep-x-main.neon.tech/db",
+    "postgresql://u:p@ep-x-production.neon.tech/db?sslmode=require",
+    "postgresql://u:p@ep-x-main.neon.tech/db?sslmode=require",
 ])
 def test_conftest_integration_fixture_refuses_prod(monkeypatch, request, url):
     monkeypatch.setenv("DATABASE_URL", url)
-    with pytest.raises(pytest.skip.Exception) as ei:
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    with pytest.raises(pytest.fail.Exception, match="not an accepted Neon host"):
         request.getfixturevalue("integration_client")
-    assert "production" in str(ei.value).lower()
+
+
+def test_conftest_integration_fixture_requires_allow_flag(monkeypatch, request):
+    monkeypatch.setenv("DATABASE_URL", "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db")
+    monkeypatch.delenv("ALLOW_INTEGRATION_DB", raising=False)
+    with pytest.raises(pytest.skip.Exception, match="ALLOW_INTEGRATION_DB"):
+        request.getfixturevalue("integration_client")
+
+
+def test_conftest_integration_fixture_fails_closed_without_endpoint_id(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require",
+    )
+    monkeypatch.delenv("NEON_DEV_ENDPOINT_ID", raising=False)
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_ENDPOINT_ID") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_conftest_integration_fixture_fails_closed_on_mismatched_host(monkeypatch, request):
+    monkeypatch.setenv("ALLOW_INTEGRATION_DB", "1")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.setenv(
+        "DATABASE_URL",
+        "postgresql://u:secret-pass@ep-other.us-east-1.aws.neon.tech/db?sslmode=require",
+    )
+    with pytest.raises(pytest.fail.Exception, match="NEON_DEV_ENDPOINT_ID") as ei:
+        request.getfixturevalue("integration_client")
+    assert "secret-pass" not in str(ei.value)
+
+
+def test_require_neon_integration_url_accepts_matching_host(monkeypatch):
+    from tests.conftest import _require_neon_integration_url
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-dev-abc")
+    monkeypatch.delenv("NEON_DEV_REGION", raising=False)
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
+    _require_neon_integration_url(
+        "postgresql://u:p@ep-dev-abc-pooler.us-east-1.aws.neon.tech/db?sslmode=require"
+    )
