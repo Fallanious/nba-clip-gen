@@ -16,16 +16,19 @@ The pooled form uses a hyphenated ``-pooler`` suffix on the first label, not
 a ``.pooler`` DNS label.
 
 The URL is parsed with psycopg.conninfo.conninfo_to_dict so query overrides
-(host, hostaddr, service, options, port) cannot hide a production target.
-Only sslmode, channel_binding, connect_timeout, and application_name are
-allowed as extra parameters. sslmode must be require or verify-full.
+cannot hide a production target. A port in the URL authority (for example
+``:5433`` or ``:5432``) is rejected, as are query ``host``, ``hostaddr``,
+``service``, ``options``, ``port``, ``user``, and ``dbname`` parameters,
+and any duplicate query key. Only sslmode, channel_binding,
+connect_timeout, and application_name are allowed as extra parameters.
+sslmode must be require or verify-full.
 """
 from __future__ import annotations
 
 import os
 import re
 import sys
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qsl, urlparse
 
 from psycopg.conninfo import conninfo_to_dict
 
@@ -47,7 +50,15 @@ _ALLOWED_PARAMS = frozenset({
     "application_name",
 })
 _IDENTITY_KEYS = frozenset({"user", "password", "dbname", "host"})
-_FORBIDDEN_OVERRIDES = frozenset({"host", "hostaddr", "service", "options", "port"})
+_FORBIDDEN_OVERRIDES = frozenset({
+    "host",
+    "hostaddr",
+    "service",
+    "options",
+    "port",
+    "user",
+    "dbname",
+})
 _ALLOWED_SSLMODES = frozenset({"require", "verify-full"})
 
 
@@ -84,11 +95,11 @@ def _host_endpoint_id(host: str) -> str | None:
     return None if parsed is None else parsed[0]
 
 
-def _query_keys(url: str) -> set[str]:
+def _query_key_list(url: str) -> list[str]:
     parsed = urlparse(url)
     if not parsed.scheme:
-        return set()
-    return {k.lower() for k in parse_qs(parsed.query, keep_blank_values=True)}
+        return []
+    return [k.lower() for k, _ in parse_qsl(parsed.query, keep_blank_values=True)]
 
 
 def _fail(message: str) -> int:
@@ -110,7 +121,10 @@ def main() -> int:
     except Exception:
         return _fail("DATABASE_URL is invalid")
 
-    if _query_keys(url) & _FORBIDDEN_OVERRIDES:
+    query_keys = _query_key_list(url)
+    if len(query_keys) != len(set(query_keys)):
+        return _fail("DATABASE_URL parameters are not allowed")
+    if set(query_keys) & _FORBIDDEN_OVERRIDES:
         return _fail("DATABASE_URL parameters are not allowed")
 
     extra = set(k.lower() for k in info) - _IDENTITY_KEYS
