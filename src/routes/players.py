@@ -50,11 +50,11 @@ def _clip_not_found() -> None:
 
 
 def _parse_clip_id(raw: str) -> int:
-    """Accept only a bigint in 1..2**63-1; everything else 404s like a missing clip."""
-    if not re.fullmatch(r"[0-9]{1,19}", raw or ""):
+    """Accept only a canonical decimal bigint at most 2**63-1."""
+    if not re.fullmatch(r"[1-9][0-9]{0,18}", raw or ""):
         _clip_not_found()
     value = int(raw)
-    if not 1 <= value <= 2**63 - 1:
+    if value > 2**63 - 1:
         _clip_not_found()
     return value
 
