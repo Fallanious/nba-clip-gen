@@ -165,6 +165,7 @@ def test_integration_job_never_targets_default_or_production():
     assert "-rs" in str(steps[pytest_i].get("run") or "")
     pytest_env = steps[pytest_i].get("env") or {}
     assert pytest_env.get("ALLOW_INTEGRATION_DB") == "1"
+    assert "vars.NEON_DEV_ENDPOINT_ID" in str(pytest_env.get("NEON_DEV_ENDPOINT_ID") or "")
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])

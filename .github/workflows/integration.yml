@@ -62,4 +62,5 @@ jobs:
           DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
           APP_ENV: dev
           ALLOW_INTEGRATION_DB: "1"
+          NEON_DEV_ENDPOINT_ID: ${{ vars.NEON_DEV_ENDPOINT_ID }}
         run: pytest -m integration -q -rs
