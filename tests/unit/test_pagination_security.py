@@ -173,7 +173,7 @@ def test_expiry_at_max_age_boundary(monkeypatch):
     from errors import ApiError
 
     now = 1_700_000_000
-    monkeypatch.setattr("pagination.time.time", lambda: float(now))
+    monkeypatch.setattr("pagination._now", lambda: float(now))
     monkeypatch.setenv("CURSOR_MAX_AGE_S", str(CURSOR_MAX_AGE_S_DEFAULT))
     fhash = _filter_hash({})
     ok = signed({

@@ -26,6 +26,7 @@ CURSOR_MAX_AGE_S_DEFAULT = 86_400
 _INT_RE = re.compile(r"[+-]?\d+$")
 # Per-process random secret for APP_ENV=dev when CURSOR_SECRET is unset. Not a public constant.
 _DEV_CURSOR_SECRET = secrets.token_urlsafe(32)
+_DEV_SECRET_WARNED = False
 
 
 def _clamp_int_env(name: str, default: int, lo: int, hi: int) -> int:
@@ -106,6 +107,14 @@ class Config:
         secret = os.getenv("CURSOR_SECRET")
         if not secret:
             if self.APP_ENV == "dev":
+                global _DEV_SECRET_WARNED
+                if not _DEV_SECRET_WARNED:
+                    logger.warning(
+                        "CURSOR_SECRET is unset in APP_ENV=dev; using a per-process "
+                        "random secret. Cursors will not verify across process "
+                        "restarts or multiple workers."
+                    )
+                    _DEV_SECRET_WARNED = True
                 return _DEV_CURSOR_SECRET
             raise ValueError(
                 "CURSOR_SECRET environment variable is required "
@@ -157,10 +166,7 @@ class Config:
         errors = []
 
         # Fail closed on missing/unknown APP_ENV before touching secrets.
-        try:
-            env = self.APP_ENV
-        except ValueError:
-            raise
+        env = self.APP_ENV
 
         if env != "dev" and not os.getenv("CURSOR_SECRET"):
             errors.append("CURSOR_SECRET is required when APP_ENV is not dev")

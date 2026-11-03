@@ -55,7 +55,7 @@ def test_expired_cursor_rejected(monkeypatch):
     monkeypatch.setenv("CURSOR_MAX_AGE_S", "1")
     cur = encode_cursor(["A", 1], {"q": "a"})
     real_now = time.time()
-    monkeypatch.setattr("pagination.time.time", lambda: real_now + 10)
+    monkeypatch.setattr("pagination._now", lambda: real_now + 10)
     with pytest.raises(ApiError) as ei:
         decode_cursor(cur, {"q": "a"})
     assert "expired" in ei.value.message.lower() or ei.value.code == "invalid_cursor"
