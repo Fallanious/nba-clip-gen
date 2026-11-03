@@ -50,10 +50,13 @@ def _clip_not_found() -> None:
 
 
 def _parse_clip_id(raw: str) -> int:
-    """Non-digit clip IDs 404 the same as a missing clip."""
-    if not re.fullmatch(r"[0-9]+", raw or ""):
+    """Accept only a bigint in 1..2**63-1; everything else 404s like a missing clip."""
+    if not re.fullmatch(r"[0-9]{1,19}", raw or ""):
         _clip_not_found()
-    return int(raw)
+    value = int(raw)
+    if not 1 <= value <= 2**63 - 1:
+        _clip_not_found()
+    return value
 
 
 def _require_published_or_admin(user, row) -> None:

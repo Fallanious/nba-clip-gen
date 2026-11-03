@@ -390,11 +390,16 @@ def test_unpublished_and_missing_clip_look_the_same_to_non_admin(fake_db, monkey
     monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
     client = _make_app().test_client()
     rid = {"X-Request-Id": "qa-uniform-clip-404"}
+    huge = "1" * 5000
+    overflow = "9223372036854775808"
     detail = [
         client.get("/api/clips/99999999", headers=rid),
         client.get(f"/api/clips/{NOT_READY['pending']}", headers=rid),
         client.get("/api/clips/abc", headers=rid),
         client.get("/api/clips/-1", headers=rid),
+        client.get(f"/api/clips/{huge}", headers=rid),
+        client.get(f"/api/clips/{overflow}", headers=rid),
+        client.get("/api/clips/0", headers=rid),
     ]
     first = _clip_404_signature(detail[0])
     assert first[0] == 404
@@ -407,6 +412,9 @@ def test_unpublished_and_missing_clip_look_the_same_to_non_admin(fake_db, monkey
         client.get(f"/api/clips/{NOT_READY['pending']}/playback-url", headers=rid),
         client.get("/api/clips/abc/playback-url", headers=rid),
         client.get("/api/clips/-1/playback-url", headers=rid),
+        client.get(f"/api/clips/{huge}/playback-url", headers=rid),
+        client.get(f"/api/clips/{overflow}/playback-url", headers=rid),
+        client.get("/api/clips/0/playback-url", headers=rid),
     ]
     first_pb = _clip_404_signature(playback[0])
     assert first_pb[0] == 404
@@ -430,13 +438,13 @@ def test_unpublished_playback_is_404_for_non_admin(fake_db, monkeypatch):
     assert err["message"] == "Clip not found"
 
 
-@pytest.mark.parametrize("path", ["/api/clips/abc", "/api/clips/-1",
-                                  "/api/clips/abc/playback-url", "/api/clips/-1/playback-url"])
-def test_invalid_clip_id_is_404_clip_not_found(fake_db, monkeypatch, path):
+@pytest.mark.parametrize("cid", ["abc", "-1", "0", "9223372036854775808", "1" * 5000])
+@pytest.mark.parametrize("suffix", ["", "/playback-url"])
+def test_invalid_clip_id_is_404_clip_not_found(fake_db, monkeypatch, cid, suffix):
     from auth import User
     from tests.conftest import _make_app
     monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
-    r = _make_app().test_client().get(path)
+    r = _make_app().test_client().get(f"/api/clips/{cid}{suffix}")
     err = assert_error(r, 404, "not_found")
     assert err["message"] == "Clip not found"
 
