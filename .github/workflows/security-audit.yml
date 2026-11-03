@@ -42,5 +42,5 @@ jobs:
 
       - name: Run tests
         env:
-          APP_ENV: dev
+          APP_ENV: test
         run: pytest tests/ytdlp tests/unit
