@@ -162,6 +162,9 @@ def test_integration_job_never_targets_default_or_production():
     guard_i = next(i for i, s in enumerate(steps) if "ci_guard_db.py" in str(s.get("run") or ""))
     pytest_i = next(i for i, s in enumerate(steps) if "pytest -m integration" in str(s.get("run") or ""))
     assert guard_i < pytest_i
+    pytest_env = steps[pytest_i].get("env") or {}
+    assert pytest_env.get("ALLOW_INTEGRATION_DB") == "1"
+    assert "vars.NEON_DEV_ENDPOINT_ID" in str(pytest_env.get("NEON_DEV_ENDPOINT_ID") or "")
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
