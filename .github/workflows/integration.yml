@@ -61,4 +61,4 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.NEON_DEV_DATABASE_URL }}
           APP_ENV: dev
-        run: pytest -m integration -q
+        run: pytest -m integration -q -rs

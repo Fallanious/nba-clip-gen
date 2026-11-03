@@ -38,7 +38,7 @@ from psycopg.conninfo import conninfo_to_dict
 _NEON_HOST = re.compile(
     r"^"
     r"(?P<label>ep-[a-z0-9-]+)"
-    r"(?:\.(?P<cell>c-[1-9][0-9]{0,3}))?"
+    r"(?:\.(?P<cell>c-[1-9]\d{0,3}))?"
     r"\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)"
     r"\.aws\.neon\.tech"
     r"$",
@@ -134,7 +134,7 @@ def main() -> int:
     if len(query_keys) != len(set(query_keys)):
         return _fail("DATABASE_URL query has duplicate keys")
     if set(query_keys) & _FORBIDDEN_OVERRIDES:
-        return _fail("DATABASE_URL parameters are not allowed")
+        return _fail("DATABASE_URL override parameters are not allowed")
 
     extra = set(k.lower() for k in info) - _IDENTITY_KEYS
     if extra - _ALLOWED_PARAMS:
