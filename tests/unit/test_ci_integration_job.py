@@ -119,12 +119,27 @@ def test_missing_neon_secret_fails_on_protected_prs():
         assert "github.base_ref == 'cursor/01-foundation-9d4d'" in later_if
         assert "exit 1" in run
         assert "NEON_DEV_DATABASE_URL is required" in run
-        assert "${{ github.base_ref }}" not in run
         assert "$BASE_REF" in run
         env = step.get("env") or {}
         assert "github.base_ref" in str(env.get("BASE_REF") or "")
         assert step.get("continue-on-error") in (None, False)
     assert found
+
+
+def test_workflow_run_blocks_do_not_interpolate_expressions():
+    """GitHub expressions belong in env/if, never inside a step run script."""
+    roots = list(Path(".github/workflows").glob("*.yml")) + list(
+        Path(".github/workflows").glob("*.yaml")
+    )
+    assert roots, "expected workflow YAML"
+    for path in roots:
+        data = yaml.safe_load(path.read_text())
+        for name, job in (data.get("jobs") or {}).items():
+            for i, step in enumerate(job.get("steps") or []):
+                run = step.get("run") or ""
+                assert "${{" not in run, (
+                    f"{path} jobs.{name} steps[{i}] interpolates in run"
+                )
 
 
 def test_require_neon_secret_step_has_no_continue_on_error():
