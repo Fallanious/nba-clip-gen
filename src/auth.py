@@ -22,10 +22,15 @@ class LocalUser(User):
 
 def resolve_user(req) -> User:
     """Resolve the current user from the request.
-    
-    Currently returns a local user with full access.
-    Future: JWT/session verification returning real users.
+
+    Stub admin (LocalUser with full scope) is reachable only when APP_ENV is
+    explicitly ``dev``. Future: JWT/session verification returning real users.
     """
+    import os
+    if os.getenv("APP_ENV") != "dev":
+        raise RuntimeError(
+            "stub admin user is only available when APP_ENV is explicitly dev"
+        )
     return LocalUser()
 
 
@@ -51,10 +56,11 @@ def validate_auth_for_startup():
     Refuse to start when APP_ENV != dev until real auth exists.
     """
     import os
-    app_env = os.getenv("APP_ENV", "dev")
+    app_env = os.getenv("APP_ENV")
     if app_env != "dev":
         raise ValueError(
             f"APP_ENV={app_env} requires real authentication. "
-            "Stub auth (resolve_user always returns LocalUser with admin scope) is only allowed in dev. "
+            "Stub auth (resolve_user always returns LocalUser with admin scope) "
+            "is only allowed when APP_ENV is explicitly dev. "
             "Implement proper auth before deploying to non-dev environments."
         )
