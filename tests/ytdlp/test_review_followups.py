@@ -198,6 +198,15 @@ def test_mp4_input_with_av1_reencodes(fake_run, monkeypatch):
     assert not _has_pair(argv, "-c", "copy")
 
 
+@pytest.mark.parametrize("codecs", [("h264", "opus"), ("h264", None)])
+def test_mp4_h264_without_aac_reencodes(fake_run, monkeypatch, codecs):
+    monkeypatch.setattr(gc, "probe_codecs", lambda path: codecs)
+    assert gc.extract_clip("/v/g.mp4", 0, 5, "/o/c.mp4", fast_copy=True)
+    argv = [str(x) for x in fake_run[-1]]
+    assert "libx264" in argv
+    assert not _has_pair(argv, "-c", "copy")
+
+
 def test_probe_failure_defaults_to_reencode(fake_run, monkeypatch):
     def boom(path):
         raise subprocess.CalledProcessError(1, ["ffprobe"])
