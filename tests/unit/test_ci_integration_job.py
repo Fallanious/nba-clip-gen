@@ -162,6 +162,7 @@ def test_integration_job_never_targets_default_or_production():
     guard_i = next(i for i, s in enumerate(steps) if "ci_guard_db.py" in str(s.get("run") or ""))
     pytest_i = next(i for i, s in enumerate(steps) if "pytest -m integration" in str(s.get("run") or ""))
     assert guard_i < pytest_i
+    assert "-rs" in str(steps[pytest_i].get("run") or "")
     guard_env = (steps[guard_i].get("env") or {})
     assert "NEON_DEV_ENDPOINT_ID" in guard_env
     assert "vars.NEON_DEV_ENDPOINT_ID" in str(guard_env["NEON_DEV_ENDPOINT_ID"])
@@ -248,6 +249,8 @@ def test_ci_guard_accepts_pooled_host():
     "ep-dev-abc.c-6.us-east-2.neon.tech",
     "ep-dev-abc.c-0.us-east-2.aws.neon.tech",
     "ep-dev-abc.c-10000.us-east-2.aws.neon.tech",
+    "ep-dev-abc.c-1\u0661.us-east-1.aws.neon.tech",
+    "ep-dev-abc.us-east-\u0661.aws.neon.tech",
 ])
 def test_ci_guard_rejects_lookalike_hosts(host):
     result = _run_guard({
@@ -256,6 +259,39 @@ def test_ci_guard_rejects_lookalike_hosts(host):
     })
     assert result.returncode != 0
     assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+    assert "u:p" not in result.stdout + result.stderr
+
+
+def test_ci_guard_rejects_non_ascii_cell_digit():
+    """Cell tail c-1١ must not match [0-9]; a \\d cell without re.ASCII would accept it."""
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url("ep-dev-abc.c-1\u0661.us-east-1.aws.neon.tech"),
+    })
+    assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+
+
+def test_ci_guard_rejects_non_ascii_region_digit():
+    """Region us-east-١ must not match ASCII \\d; dropping re.ASCII would accept it."""
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url("ep-dev-abc.us-east-\u0661.aws.neon.tech"),
+    })
+    assert result.returncode != 0
+    assert "not an accepted Neon host" in result.stderr
+    assert "sslmode" not in result.stderr
+
+
+def test_qa_bad_host_with_sslmode_disable_is_rejected_for_host():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": "postgresql://u:p@evil.example/db?sslmode=disable",
+    })
+    assert result.returncode != 0
+    assert "host is not an accepted Neon host" in result.stderr
     assert "sslmode" not in result.stderr
     assert "u:p" not in result.stdout + result.stderr
 
@@ -397,7 +433,6 @@ def test_ci_guard_cell_host_region_label_only():
     _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "service=prod"),
     _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "options=endpoint%3Dprod"),
     _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "port=6543"),
-    "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech:5433/db?sslmode=require",
 ])
 def test_ci_guard_rejects_host_hostaddr_service_options_port_overrides(url):
     result = _run_guard({
@@ -405,6 +440,37 @@ def test_ci_guard_rejects_host_hostaddr_service_options_port_overrides(url):
         "DATABASE_URL": url,
     })
     assert result.returncode != 0
+    assert "override parameters are not allowed" in result.stderr
+    assert "sslmode" not in result.stderr
+    out = result.stdout + result.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
+
+
+def test_ci_guard_rejects_authority_port_as_disallowed_parameter():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech:5433/db?sslmode=require",
+    })
+    assert result.returncode != 0
+    assert "parameters are not allowed" in result.stderr
+    assert "override parameters" not in result.stderr
+    out = result.stdout + result.stderr
+    assert "u:p" not in out
+    assert "postgresql://" not in out
+
+
+def test_ci_guard_rejects_non_allowlisted_extra_parameter():
+    result = _run_guard({
+        "NEON_DEV_ENDPOINT_ID": "ep-dev-abc",
+        "DATABASE_URL": _ok_url(
+            "ep-dev-abc.us-east-1.aws.neon.tech",
+            "gssencmode=disable",
+        ),
+    })
+    assert result.returncode != 0
+    assert "parameters are not allowed" in result.stderr
+    assert "override parameters" not in result.stderr
     out = result.stdout + result.stderr
     assert "u:p" not in out
     assert "postgresql://" not in out
@@ -447,15 +513,15 @@ def test_ci_guard_accepts_require_or_verify_full_sslmode(sslmode):
     ),
     (
         _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "user=admin"),
-        "parameters are not allowed",
+        "override parameters are not allowed",
     ),
     (
         _ok_url("ep-dev-abc.us-east-1.aws.neon.tech", "dbname=prod"),
-        "parameters are not allowed",
+        "override parameters are not allowed",
     ),
     (
         "postgresql://u:p@ep-dev-abc.us-east-1.aws.neon.tech/db?sslmode=require&user=admin&dbname=other",
-        "parameters are not allowed",
+        "override parameters are not allowed",
     ),
 ])
 def test_ci_guard_rejects_duplicate_query_keys_and_user_dbname(url, reason):

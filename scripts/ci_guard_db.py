@@ -35,6 +35,8 @@ from urllib.parse import parse_qsl, urlparse
 from psycopg.conninfo import conninfo_to_dict
 
 # ep-<id>[-pooler].[c-<n>.]<region>.aws.neon.tech
+# Cell digits are [0-9] so they stay ASCII even if re.ASCII is dropped.
+# re.ASCII is still required for the region's trailing \d+.
 _NEON_HOST = re.compile(
     r"^"
     r"(?P<label>ep-[a-z0-9-]+)"
@@ -134,7 +136,7 @@ def main() -> int:
     if len(query_keys) != len(set(query_keys)):
         return _fail("DATABASE_URL query has duplicate keys")
     if set(query_keys) & _FORBIDDEN_OVERRIDES:
-        return _fail("DATABASE_URL parameters are not allowed")
+        return _fail("DATABASE_URL override parameters are not allowed")
 
     extra = set(k.lower() for k in info) - _IDENTITY_KEYS
     if extra - _ALLOWED_PARAMS:
