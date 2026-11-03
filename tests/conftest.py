@@ -5,17 +5,32 @@ Two layers:
     which emulates each registry key (players/search, clips/by_player, ...) in
     Python over SEED data. Keyed on the registry key, so it doesn't care what
     the repository functions are named.
-  * integration (@pytest.mark.integration): real Postgres via DATABASE_URL
-    (Neon *dev branch* or a per-CI branch only). Skipped when unset. Refuses
-    any URL that looks like production.
+    * integration (@pytest.mark.integration): real Postgres via DATABASE_URL
+    (Neon *dev branch* or a per-CI branch only). Skipped when unset. With
+    ALLOW_INTEGRATION_DB=1, the host must match NEON_DEV_ENDPOINT_ID (same
+    parsing as scripts/ci_guard_db.py); otherwise the fixture fails closed.
 
 ADAPT HERE: the ONLY places that know DEV's module names are the constants
 below and `_make_app()`.
 """
-import base64, json, os, re, unicodedata, datetime as dt
+import base64, json, os, re, subprocess, sys, unicodedata, datetime as dt
+from pathlib import Path
 from types import SimpleNamespace
 from contextlib import contextmanager
 import pytest
+
+# Same host rules as scripts/ci_guard_db.py (players layer may not have that file).
+_NEON_HOST = re.compile(
+    r"^"
+    r"(?P<label>ep-[a-z0-9-]+)"
+    r"(?:\.(?P<cell>c-[1-9][0-9]{0,3}))?"
+    r"\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)"
+    r"\.aws\.neon\.tech"
+    r"$",
+    re.ASCII,
+)
+_POOLER_SUFFIX = "-pooler"
+_CI_GUARD = Path(__file__).resolve().parents[1] / "scripts" / "ci_guard_db.py"
 
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
 import sys as _sys
@@ -413,6 +428,45 @@ def playback_client(fake_db, playback_configured):
     return a.test_client()
 
 
+def _require_neon_integration_url(url: str) -> None:
+    """Fail closed unless DATABASE_URL targets NEON_DEV_ENDPOINT_ID. Never print the URL."""
+    expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
+    if not expected:
+        pytest.fail("NEON_DEV_ENDPOINT_ID is required to run integration tests")
+
+    if _CI_GUARD.is_file():
+        env = os.environ.copy()
+        env["DATABASE_URL"] = url
+        result = subprocess.run(
+            [sys.executable, str(_CI_GUARD)],
+            env=env,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            msg = (result.stderr or "").strip().splitlines()
+            pytest.fail(msg[-1] if msg else "DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+        return
+
+    try:
+        from psycopg.conninfo import conninfo_to_dict
+        info = conninfo_to_dict(url)
+    except Exception:
+        pytest.fail("DATABASE_URL is invalid")
+    host = str(info.get("host") or "").strip().lower()
+    match = _NEON_HOST.fullmatch(host)
+    if match is None:
+        pytest.fail("DATABASE_URL host is not an accepted Neon host")
+    label = match.group("label")
+    endpoint = (
+        label[: -len(_POOLER_SUFFIX)]
+        if label.endswith(_POOLER_SUFFIX) and len(label) > len(_POOLER_SUFFIX)
+        else label
+    )
+    if endpoint != expected:
+        pytest.fail("DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
+
+
 @pytest.fixture
 def integration_client(base_env, monkeypatch):
     url = os.environ.get("DATABASE_URL", "")
@@ -420,6 +474,7 @@ def integration_client(base_env, monkeypatch):
         pytest.skip("DATABASE_URL not set (integration tests need a Neon dev/CI branch)")
     if os.environ.get("ALLOW_INTEGRATION_DB") != "1":
         pytest.skip("Set ALLOW_INTEGRATION_DB=1 to run against DATABASE_URL")
+    _require_neon_integration_url(url)
     monkeypatch.setenv("DATABASE_URL", url)
     a = _make_app()
     a.config.update(TESTING=True)
