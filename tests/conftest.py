@@ -13,8 +13,7 @@ Two layers:
 ADAPT HERE: the ONLY places that know DEV's module names are the constants
 below and `_make_app()`.
 """
-import base64, json, os, re, subprocess, sys, unicodedata, datetime as dt
-from pathlib import Path
+import base64, json, os, re, unicodedata, datetime as dt
 from types import SimpleNamespace
 from contextlib import contextmanager
 import pytest
@@ -30,7 +29,6 @@ _NEON_HOST = re.compile(
     re.ASCII,
 )
 _POOLER_SUFFIX = "-pooler"
-_CI_GUARD = Path(__file__).resolve().parents[1] / "scripts" / "ci_guard_db.py"
 
 # ---- ADAPT: module/attr names (confirm with DEV) --------------------------
 import sys as _sys
@@ -433,20 +431,6 @@ def _require_neon_integration_url(url: str) -> None:
     expected = (os.environ.get("NEON_DEV_ENDPOINT_ID") or "").strip().lower()
     if not expected:
         pytest.fail("NEON_DEV_ENDPOINT_ID is required to run integration tests")
-
-    if _CI_GUARD.is_file():
-        env = os.environ.copy()
-        env["DATABASE_URL"] = url
-        result = subprocess.run(
-            [sys.executable, str(_CI_GUARD)],
-            env=env,
-            capture_output=True,
-            text=True,
-        )
-        if result.returncode != 0:
-            msg = (result.stderr or "").strip().splitlines()
-            pytest.fail(msg[-1] if msg else "DATABASE_URL host does not match NEON_DEV_ENDPOINT_ID")
-        return
 
     try:
         from psycopg.conninfo import conninfo_to_dict
