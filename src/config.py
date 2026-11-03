@@ -94,10 +94,6 @@ class Config:
         return int(os.getenv("PLAYBACK_FALLBACK_TTL", "900"))
 
     @property
-    def PLAYBACK_ALLOW_FALLBACK(self) -> bool:
-        return os.getenv("PLAYBACK_ALLOW_FALLBACK", "true").lower() == "true"
-
-    @property
     def PLAYBACK_VERIFY_OBJECT(self) -> bool:
         return os.getenv("PLAYBACK_VERIFY_OBJECT", "true").lower() == "true"
 

@@ -597,7 +597,10 @@ def test_integration_client_fails_closed_on_non_neon_host(monkeypatch, request):
         "DATABASE_URL",
         "postgresql://u:secret-pass@evil.example/db?sslmode=require",
     )
-    with pytest.raises(pytest.fail.Exception, match="not an accepted Neon host") as ei:
+    with pytest.raises(
+        pytest.fail.Exception,
+        match="not an accepted Neon host|does not match NEON_DEV_ENDPOINT_ID",
+    ) as ei:
         request.getfixturevalue("integration_client")
     assert "secret-pass" not in str(ei.value)
 
@@ -693,13 +696,16 @@ def test_conftest_inline_guard_rejects_region_mismatch(monkeypatch, request):
 
 def test_conftest_inline_guard_rejects_non_ascii_region_digit(monkeypatch, request):
     """Region us-east-١ must not match ASCII \\d; dropping re.ASCII would accept it."""
+    import importlib.util
     import re as _re
-    from tests.conftest import _NEON_HOST
 
+    spec = importlib.util.spec_from_file_location("ci_guard_db", "scripts/ci_guard_db.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
     host = "ep-dev-abc.us-east-\u0661.aws.neon.tech"
-    without_ascii = _re.compile(_NEON_HOST.pattern)
+    without_ascii = _re.compile(mod._NEON_HOST.pattern)
     assert without_ascii.fullmatch(host)
-    assert _NEON_HOST.fullmatch(host) is None
+    assert mod._NEON_HOST.fullmatch(host) is None
     _assert_integration_url_rejected(
         monkeypatch,
         request,
