@@ -85,9 +85,16 @@ def parse_video_filename(filename):
 
 @bp.route("/api/film/<path:filename>")
 def serve_video(filename):
-    """Serve a video file from the film directory with range request support."""
+    """Serve a video file from the film directory with range request support.
+
+    Full games stay MKV (video/x-matroska) and are not remuxed, to keep size down.
+    Safari is not supported for full-game playback; clips are mp4 and work everywhere.
+    """
     film_dir = os.path.join(BASE_DIR, "film")
-    return send_from_directory(film_dir, filename, conditional=True)
+    kwargs = {"conditional": True}
+    if os.path.splitext(filename)[1].lower() == ".mkv":
+        kwargs["mimetype"] = "video/x-matroska"
+    return send_from_directory(film_dir, filename, **kwargs)
 
 
 @bp.route("/api/videos")

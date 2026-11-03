@@ -1,0 +1,2 @@
+# CI-only pin for installing pip-audit with --require-hashes.
+pip-audit==2.10.1

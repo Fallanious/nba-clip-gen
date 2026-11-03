@@ -34,7 +34,40 @@ Open http://localhost:5173
 ### System Dependencies
 - **Python 3.7+**
 - **ffmpeg** - Required for video processing
+- **Node.js or Deno** - Required by yt-dlp for YouTube downloads (see JS Runtime below)
 - **Ollama** - Local LLM server for vision analysis (see setup below)
+
+### JavaScript Runtime
+
+**yt-dlp requires a JavaScript runtime (Node.js or Deno) to download from YouTube.**
+
+Install one of the following:
+
+**Node.js** (recommended):
+```bash
+# macOS
+brew install node
+
+# Ubuntu/Debian
+sudo apt install nodejs
+
+# Check installation
+node --version
+```
+
+**Deno** (alternative):
+```bash
+# macOS
+brew install deno
+
+# Linux
+curl -fsSL https://deno.land/install.sh | sh
+
+# Check installation
+deno --version
+```
+
+The download script auto-detects Node.js or Deno (node is preferred when both are present). Runtime is not configurable via environment or CLI.
 
 ### Ollama
 
@@ -69,6 +102,8 @@ The backend expects Ollama at `http://localhost:11434`. The Web UI status bar sh
 ### Python Packages
 ```bash
 pip install -r requirements.txt
+# development tools (pytest, ruff, ...):
+pip install -r requirements-dev.txt
 ```
 
 Required packages:
@@ -81,18 +116,47 @@ Required packages:
 
 ### Step 1: Download Video from YouTube
 
-Download NBA game footage as MP4 (optimized for Mac QuickTime):
+Download NBA game footage as MKV (Matroska format):
 
 ```bash
-python3 download_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
+python3 src/download_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-**Output:** `film/VIDEO_TITLE.mp4`
+**Output:** `film/<VIDEO_ID>.mkv` (ASCII-restricted filename from the YouTube video id)
+
+**Configuration:**
+
+The download script uses the recommended yt-dlp invocation for optimal quality:
+- Format: `bv*+ba/b` (best video + best audio, fallback to best combined)
+- Resolution capped by default (prevents excessive file sizes)
+- Output format: MKV (better container for modern codecs)
+- **Note:** Full games stay MKV to keep file size down and are not remuxed. Safari is not supported for full-game playback. Generated clips are MP4 (H.264/AAC) and work in every browser.
+
+You can configure the maximum resolution:
+
+```bash
+# Via command-line argument
+python3 src/download_video.py "URL" --resolution 1080
+
+# Via environment variable (export it in the shell; the CLI does not load .env)
+export YTDLP_MAX_RES=1080
+python3 src/download_video.py "URL"
+```
+
+Default resolution is **720p** (good balance of quality and file size). Valid range: 144-4320 (144p to 8K).
+
+**JavaScript Runtime:**
+
+The script will auto-detect Node.js or Deno (required for YouTube downloads). To verify availability:
+
+```bash
+node --version  # or
+deno --version
+```
 
 **Options:**
-- Videos are automatically downloaded at 1080p or lower
-- Format is optimized for QuickTime playback
-- Requires `ffmpeg` for best quality merging
+- `--resolution N` - Maximum resolution in pixels (default: 720, valid range: 144-4320)
+- `--output-folder PATH` - Output folder (default: film)
 
 ---
 
@@ -127,8 +191,8 @@ python3 scrape_playbyplay.py "https://www.basketball-reference.com/boxscores/pbp
 Use LLM vision to read scoreboards from video frames and match them to play-by-play data:
 
 ```bash
-python3 match_play_timestamps.py \
-  film/YOUR_VIDEO.mp4 \
+python3 src/match_play_timestamps.py \
+  film/YOUR_VIDEO.mkv \
   playbyplay/GAME_ID.json \
   --buffer 5 \
   --max-plays 10 \
@@ -166,26 +230,27 @@ python3 match_play_timestamps.py \
 Extract individual play clips from the original full-quality video:
 
 ```bash
-python3 generate_clips.py \
-  film/YOUR_VIDEO.mp4 \
+python3 src/generate_clips.py \
+  film/YOUR_VIDEO.mkv \
   output/cliptimestamps/VIDEO_timestamps_TIMESTAMP.json
 ```
 
 **Output:** `output/clips/TIMESTAMP/`
-- Individual MP4 clips named: `clip_INDEX_TEAM_QQUARTER_TIME.mp4`
+- Individual clips named: `clip_INDEX_TEAM_QQUARTER_TIME.{format}`
 - `clips_metadata.json` - Metadata for all generated clips
 
 **Options:**
 - `--output-dir PATH` - Custom output directory
 - `--no-audio` - Generate clips without audio
 - `--re-encode` - Re-encode for compatibility (slower)
-- `--format FORMAT` - Output format (default: mp4)
+- `--format FORMAT` - Output format (default: mp4, supports mkv, webm)
 
 **Features:**
-- Uses fast codec copy (no re-encoding by default)
+- MP4/MOV clips are re-encoded to H.264/AAC unless ffprobe reports the source is already H.264+AAC; other output formats may stream-copy
 - Generates descriptive filenames based on play data
 - Creates organized timestamped output directories
 - Includes detailed metadata JSON
+- Supports MKV, MP4, and WebM input/output formats
 
 ---
 
@@ -193,30 +258,30 @@ python3 generate_clips.py \
 
 ```bash
 # 1. Download video
-python3 download_video.py "https://www.youtube.com/watch?v=EXAMPLE_ID"
+python3 src/download_video.py "https://www.youtube.com/watch?v=EXAMPLE_ID"
 
 # 2. Scrape play-by-play data
-python3 scrape_playbyplay.py "https://www.basketball-reference.com/boxscores/pbp/202511110PHI.html"
+python3 src/scrape_playbyplay.py "https://www.basketball-reference.com/boxscores/pbp/202511110PHI.html"
 
 # 3. Match timestamps (start with small test)
-python3 match_play_timestamps.py \
-  film/CELTICS_vs_76ERS.mp4 \
+python3 src/match_play_timestamps.py \
+  film/CELTICS_vs_76ERS.mkv \
   playbyplay/202511110PHI.json \
   --buffer 5 \
   --max-plays 5 \
   --start-time 10
 
 # 4. Review the clips and adjust buffer if needed, then generate more
-python3 match_play_timestamps.py \
-  film/CELTICS_vs_76ERS.mp4 \
+python3 src/match_play_timestamps.py \
+  film/CELTICS_vs_76ERS.mkv \
   playbyplay/202511110PHI.json \
   --buffer 7 \
   --max-plays 20 \
   --start-time 10
 
 # 5. Generate clips
-python3 generate_clips.py \
-  film/CELTICS_vs_76ERS.mp4 \
+python3 src/generate_clips.py \
+  film/CELTICS_vs_76ERS.mkv \
   output/cliptimestamps/CELTICS_vs_76ERS_timestamps_*.json
 ```
 
@@ -266,7 +331,7 @@ clip/
 ├── frontend/                      # React UI (see frontend/README.md)
 │   └── dist/                      # Production build (served by Flask)
 ├── film/                          # Downloaded videos
-│   └── GAME_NAME.mp4
+│   └── GAME_NAME.mkv
 ├── playbyplay/                    # Scraped play-by-play data
 │   ├── GAME_ID.json
 │   └── GAME_ID.csv
@@ -275,8 +340,8 @@ clip/
 │   │   └── VIDEO_timestamps_TIMESTAMP.json
 │   ├── clips/                    # Generated video clips
 │   │   └── TIMESTAMP/
-│   │       ├── clip_0_TEAM_Q1_TIME.mp4
-│   │       ├── clip_1_TEAM_Q2_TIME.mp4
+│   │       ├── clip_0_TEAM_Q1_TIME.{format}
+│   │       ├── clip_1_TEAM_Q2_TIME.{format}
 │   │       └── clips_metadata.json
 │   └── debug_frames/             # Debug frames from matching
 │       └── TIMESTAMP/

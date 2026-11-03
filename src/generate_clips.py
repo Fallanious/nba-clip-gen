@@ -45,7 +45,9 @@ def combine_clips(clip_paths, output_path):
         output_path: Output path for combined video
     """
     # Create concat file for ffmpeg with absolute paths
-    concat_file = output_path.replace('.mp4', '_concat.txt')
+    # Use a generic approach that works for any extension
+    base_path = os.path.splitext(output_path)[0]
+    concat_file = f"{base_path}_concat.txt"
     
     with open(concat_file, 'w') as f:
         for clip_path in clip_paths:
@@ -75,6 +77,30 @@ def combine_clips(clip_paths, output_path):
         return False
 
 
+def probe_codecs(path):
+    """Return (vcodec, acodec) for the first video and audio streams via ffprobe."""
+    cmd = [
+        'ffprobe',
+        '-v', 'error',
+        '-show_entries', 'stream=codec_type,codec_name',
+        '-of', 'json',
+        path,
+    ]
+    result = subprocess.run(
+        cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+    )
+    data = json.loads(result.stdout or '{}')
+    vcodec = acodec = None
+    for stream in data.get('streams') or []:
+        codec_type = stream.get('codec_type')
+        codec_name = stream.get('codec_name')
+        if codec_type == 'video' and vcodec is None:
+            vcodec = codec_name
+        elif codec_type == 'audio' and acodec is None:
+            acodec = codec_name
+    return vcodec, acodec
+
+
 def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True, fast_copy=True):
     """
     Extract a clip from video using ffmpeg.
@@ -86,8 +112,21 @@ def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True,
         output_path: Output clip path
         keep_audio: Include audio in clip
         fast_copy: Use codec copy for faster extraction (no re-encoding)
+                   Note: mp4/mov clip output is re-encoded unless the source is already H.264+AAC
     """
     duration = end_time - start_time
+    
+    output_ext = os.path.splitext(output_path)[1].lower()
+    
+    # mkv/webm/mov from bv*+ba/b may contain VP9/AV1+Opus. Using -c copy into mp4 can result in
+    # codecs that play poorly in Safari. Re-encode mp4/mov clips unless probe_codecs reports H.264+AAC.
+    force_reencode = not fast_copy
+    if fast_copy and output_ext in ('.mp4', '.mov'):
+        try:
+            vcodec, acodec = probe_codecs(video_path)
+            force_reencode = vcodec != 'h264' or acodec != 'aac'
+        except (subprocess.CalledProcessError, OSError, ValueError):
+            force_reencode = True
     
     # Build ffmpeg command
     # Use -ss before -i for faster seeking
@@ -98,18 +137,20 @@ def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True,
         '-i', video_path,
     ]
     
-    if fast_copy:
+    if fast_copy and not force_reencode:
         # Fast: copy codecs without re-encoding
         cmd.extend(['-c', 'copy'])
     else:
-        # Slower: re-encode for compatibility
+        # Re-encode for compatibility or quality
         cmd.extend(['-c:v', 'libx264', '-c:a', 'aac'])
     
     if not keep_audio:
         cmd.extend(['-an'])  # Remove audio
     
-    # Add faststart flag for web compatibility
-    cmd.extend(['-movflags', '+faststart'])
+    # Add faststart flag for web compatibility (only for mp4/mov)
+    if output_ext in ('.mp4', '.mov'):
+        cmd.extend(['-movflags', '+faststart'])
+    
     cmd.extend([output_path, '-y'])
     
     # Run ffmpeg
