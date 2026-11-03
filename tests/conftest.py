@@ -58,7 +58,7 @@ TEAMS = {20: ("PHI", "Philadelphia", "76ers"), 7: ("DEN", "Denver", "Nuggets"),
 def _p(i, full, first, last, team, active=True, pos="G"):
     return dict(id=i, bbref_id=f"p{i}", full_name=full, first_name=first, last_name=last,
                 position=pos, team_id=team, headshot_url=f"https://example.test/{i}.jpg",
-                is_active=active)
+                is_active=active, updated_at=dt.datetime(2026, 1, 1, 0, 0, i % 60))
 
 PLAYERS = [
     _p(201, "Joel Embiid", "Joel", "Embiid", 20, pos="C"),
@@ -92,7 +92,8 @@ def _clip(cid, gid, idx, period, at, sub, out, status="uploaded", s3=True, roles
                       game_clock=dt.timedelta(minutes=4, seconds=12), team_id=20,
                       description=f"play {cid}", action_type=at, shot_subtype=sub, outcome=out,
                       attributes={}, video_start_s=100.0 + idx, video_end_s=106.0 + idx, duration_s=6.0,
-                      s3_key=(f"clips/{g['bbref_id']}/{cid}.mp4" if s3 else None), status=status)
+                      s3_key=(f"clips/{g['bbref_id']}/{cid}.mp4" if s3 else None), status=status,
+                      updated_at=dt.datetime(2026, 1, 1, 0, 0, cid % 60))
     for pid, role in roles:
         CLIP_PLAYERS.append((int(pid), cid, role))
 
@@ -109,6 +110,7 @@ _clip(70001, 50, 1, 1, "shot", "hook", "made")
 _clip(70002, 50, 2, 4, "steal", None, None, roles=(("201", "steal"),))
 _clip(70003, 50, 3, 4, "shot", "floater", "missed", status="rendered", s3=False)
 _clip(95000, 51, 7, 1, "shot", "dunk", "made", roles=(("202", "shot"),))
+_clip(95001, 51, 8, 1, "shot", "dunk", "made", roles=(("209", "shot"),))  # same date as game 77
 for i in range(130):  # bulk for player 209 -> multi-page paging; spread across games
     gid = [77, 61, 50][i % 3]
     _clip(60000 + i, gid, 300 + i, 1 + i % 4, "shot", "layup", "made" if i % 2 else "missed",
@@ -193,8 +195,10 @@ class FakeDB:
         for pid, _, role in CLIP_PLAYERS:
             if pid == int(p["id"]):
                 cnt[role] = cnt.get(role, 0) + 1
+        clip_times = [CLIPS[c[1]]["updated_at"] for c in cps]
         return [{**x, **self._team(x["team_id"]), "clip_count": len({c[1] for c in cps}),
                  "first_clip_date": min(dates) if dates else None, "last_clip_date": max(dates) if dates else None,
+                 "clips_updated_at": max(clip_times) if clip_times else None,
                  "role_counts": cnt}]
 
     def q_players_role_counts(self, p):
@@ -238,8 +242,7 @@ class FakeDB:
             if pid != int(p["pid"]):
                 continue
             c, g = CLIPS[cid], GAMES[CLIPS[cid]["game_id"]]
-            ok = ((not p.get("roles") or role in p["roles"])
-                  and (p.get("date_from") is None or c["game_date"] >= p["date_from"])
+            ok = ((p.get("date_from") is None or c["game_date"] >= p["date_from"])
                   and (p.get("date_to") is None or c["game_date"] <= p["date_to"])
                   and (p.get("season") is None or g["season"] == p["season"])
                   and (p.get("game_id") is None or c["game_id"] == p["game_id"])
@@ -250,6 +253,9 @@ class FakeDB:
                   and self._clip_after_cursor(c, p))
             if ok:
                 grouped.setdefault(cid, []).append(role)
+        if p.get("roles"):
+            grouped = {cid: roles for cid, roles in grouped.items()
+                       if any(role in p["roles"] for role in roles)}
         keys = sorted(grouped, key=self._clip_display_key)[: p["limit"] + 1]
         out = []
         for cid in keys:
@@ -418,8 +424,10 @@ def playback_client(fake_db, playback_configured):
 @pytest.fixture
 def integration_client(base_env, monkeypatch):
     url = os.environ.get("DATABASE_URL", "")
-    if re.search(r"prod|main|primary", url, re.I):
-        pytest.skip("Refusing to run against what looks like a production DATABASE_URL")
+    if not url.strip():
+        pytest.skip("DATABASE_URL not set (integration tests need a Neon dev/CI branch)")
+    if os.environ.get("ALLOW_INTEGRATION_DB") != "1":
+        pytest.skip("Set ALLOW_INTEGRATION_DB=1 to run against DATABASE_URL")
     monkeypatch.setenv("DATABASE_URL", url)
     a = _make_app()
     a.config.update(TESTING=True)

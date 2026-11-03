@@ -46,6 +46,11 @@ def _max_age() -> int:
     return config.CURSOR_MAX_AGE_S
 
 
+def _now() -> float:
+    """Clock hook so tests can freeze time without patching the stdlib."""
+    return time.time()
+
+
 def _sign(payload_b64: str) -> str:
     """Full SHA-256 HMAC hex (64 chars)."""
     return hmac.new(
@@ -61,7 +66,7 @@ def encode_cursor(key: list[Any], filters: dict[str, Any]) -> str:
         "v": CURSOR_VERSION,
         "k": key,
         "f": _filter_hash(filters),
-        "iat": int(time.time()),
+        "iat": int(_now()),
         "kv": _key_version(),
     }
     payload_json = json.dumps(payload, separators=(",", ":"))
@@ -131,7 +136,7 @@ def decode_cursor(cursor: str, filters: dict[str, Any]) -> list[Any]:
         # Exact int: reject bool, float (incl. NaN/Inf), numeric strings, None, negatives.
         if not _is_int(iat) or iat < 0:
             _invalid()
-        now = time.time()
+        now = _now()
         if iat > now + CLOCK_SKEW_S:
             _invalid()
         if now - iat > _max_age():

@@ -16,7 +16,8 @@ The project includes a React frontend in [`frontend/`](frontend/) that wraps the
 # Terminal 1 — Ollama (skip if already running)
 ollama serve                  # only if the server is not up
 
-# Terminal 2 — backend
+# Terminal 2 — backend (APP_ENV is required; there is no implicit default)
+export APP_ENV=dev
 python3 src/app.py
 
 # Terminal 3 — frontend

@@ -135,8 +135,9 @@ def test_auth_refuses_non_dev_without_real_auth():
     
     from auth import validate_auth_for_startup
     
-    with pytest.raises(ValueError, match="APP_ENV=production requires real authentication"):
+    with pytest.raises(ValueError, match="requires real authentication") as ei:
         validate_auth_for_startup()
+    assert "production" not in str(ei.value)
 
 
 def test_auth_allows_dev():
@@ -253,7 +254,20 @@ def test_stub_admin_only_in_explicit_dev(monkeypatch):
     validate_auth_for_startup()
     resolve_user(None)
     monkeypatch.setenv("APP_ENV", "prod")
-    with pytest.raises(ValueError, match="explicitly dev"):
+    with pytest.raises(ValueError, match="explicitly dev") as ei:
         validate_auth_for_startup()
+    assert "prod" not in str(ei.value)
     with pytest.raises(RuntimeError, match="explicitly dev"):
         resolve_user(None)
+
+
+def test_dev_cursor_secret_fallback_logs_a_warning(monkeypatch, caplog):
+    import logging
+    import config as config_mod
+    monkeypatch.setenv("APP_ENV", "dev")
+    monkeypatch.delenv("CURSOR_SECRET", raising=False)
+    config_mod._DEV_SECRET_WARNED = False
+    with caplog.at_level(logging.WARNING, logger="config"):
+        secret = config_mod.Config().CURSOR_SECRET
+    assert secret
+    assert any("per-process" in r.getMessage() for r in caplog.records)

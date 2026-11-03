@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 import json, pytest
 from sqlalchemy.exc import OperationalError
-from tests.conftest import assert_error, b64url, tamper_cursor, walk_pages, PLAYERS
+from tests.conftest import assert_error, b64url, tamper_cursor, walk_pages, PLAYERS, CLIPS, NOT_READY
 
 ids = lambda body: [i["id"] for i in body["items"]]
 
@@ -35,6 +35,19 @@ def test_headers_cache_etag_304(client):
     assert etag.startswith('W/"')
     r2 = client.get("/api/players", headers={"If-None-Match": etag})
     assert r2.status_code == 304
+
+
+def test_players_etag_changes_when_row_updated_at_changes(client):
+    r1 = client.get("/api/players?limit=5")
+    etag = r1.headers["ETag"]
+    original = PLAYERS[0]["updated_at"]
+    try:
+        PLAYERS[0]["updated_at"] = original.replace(year=2099)
+        r2 = client.get("/api/players?limit=5", headers={"If-None-Match": etag})
+        assert r2.status_code == 200
+        assert r2.headers["ETag"] != etag
+    finally:
+        PLAYERS[0]["updated_at"] = original
 
 
 def test_unique_request_ids(client):
@@ -308,6 +321,75 @@ def test_status_all_requires_admin(fake_db, monkeypatch):
     monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
     r = _make_app().test_client().get("/api/players/201/clips?status=all")
     assert_error(r, 403, "forbidden")
+
+
+def test_role_filter_keeps_all_roles_on_the_clip(client):
+    r = client.get("/api/players/201/clips?role=rebound")
+    assert r.status_code == 200
+    plays = [p for g in r.get_json()["games"] for p in g["plays"]]
+    hit = next(p for p in plays if p["id"] == "90500")
+    assert hit["roles"] == ["foul", "rebound"]
+
+
+def test_player_clips_paging_no_dupes(client):
+    play_ids = lambda b: [p["id"] for g in b["games"] for p in g["plays"]]
+    full = play_ids(client.get("/api/players/209/clips?limit=200").get_json())
+    pages = walk_pages(client, "/api/players/209/clips?limit=7", play_ids)
+    flat = [x for p in pages for x in p]
+    assert flat == full and len(set(flat)) == len(flat)
+    assert all(len(p) == 7 for p in pages[:-1])
+
+
+def test_player_clips_same_date_games_ordered_and_continues(client):
+    b = client.get("/api/players/209/clips?limit=200").get_json()
+    keys = [(g["game"]["date"], int(g["game"]["id"])) for g in b["games"]]
+    assert keys == sorted(keys, reverse=True)
+    assert {"51", "77"} <= {g["game"]["id"] for g in b["games"]}
+    first = client.get("/api/players/209/clips?limit=1").get_json()
+    assert first["next_cursor"]
+    assert isinstance(first["games"][0]["continues"], bool)
+
+
+def test_clips_etag_changes_when_clip_status_changes(client):
+    r1 = client.get("/api/players/201/clips")
+    etag = r1.headers["ETag"]
+    clip = CLIPS[88104]
+    original_status, original_updated = clip["status"], clip["updated_at"]
+    try:
+        clip["status"] = "uploaded"
+        clip["s3_key"] = "clips/now-playable.mp4"
+        clip["updated_at"] = original_updated.replace(year=2099)
+        r2 = client.get("/api/players/201/clips", headers={"If-None-Match": etag})
+        assert r2.status_code == 200
+        assert r2.headers["ETag"] != etag
+    finally:
+        clip["status"] = original_status
+        clip["s3_key"] = None
+        clip["updated_at"] = original_updated
+
+
+@pytest.mark.parametrize("cid", list(NOT_READY.values()))
+def test_unpublished_clip_detail_forbidden_for_non_admin(fake_db, monkeypatch, cid):
+    from auth import User
+    from tests.conftest import _make_app
+    monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
+    r = _make_app().test_client().get(f"/api/clips/{cid}")
+    assert_error(r, 403, "forbidden")
+
+
+def test_unpublished_playback_forbidden_for_non_admin(fake_db, monkeypatch):
+    from auth import User
+    from tests.conftest import _make_app
+    monkeypatch.setattr("auth.resolve_user", lambda req: User("viewer", set()))
+    r = _make_app().test_client().get(f"/api/clips/{NOT_READY['pending']}/playback-url")
+    assert_error(r, 403, "forbidden")
+
+
+def test_integration_client_requires_allow_flag(monkeypatch, request):
+    monkeypatch.setenv("DATABASE_URL", "postgresql://u:p@ep-dev.example/db")
+    monkeypatch.delenv("ALLOW_INTEGRATION_DB", raising=False)
+    with pytest.raises(pytest.skip.Exception, match="ALLOW_INTEGRATION_DB"):
+        request.getfixturevalue("integration_client")
 
 
 def test_search_bind_types_native(client, fake_db):
