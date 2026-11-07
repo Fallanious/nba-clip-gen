@@ -32,7 +32,7 @@ def _free_port() -> int:
 @pytest.fixture(scope="session")
 def postgres_url():
     if not os.path.isfile(os.path.join(BIN, "initdb")):
-        pytest.skip("local PostgreSQL 16 binaries are not installed")
+        pytest.fail("PostgreSQL 16 initdb is required for designated DB tests")
     import psycopg
 
     tmp = tempfile.mkdtemp(prefix="nba-clip-pg-")
@@ -135,6 +135,7 @@ def test_truth_table_view_matches_python(conn):
         """
         SELECT c.id, cap.can_create, cap.reason,
                g.s3_key, g.source_kind, g.source_version, g.duration_s,
+               g.is_fictional,
                c.timing_provenance, c.matched_source_version,
                c.video_start_s, c.video_end_s, c.game_clock
         FROM clips c
@@ -246,6 +247,30 @@ def test_constraint_rejects_reversed_equal_nan(conn):
               timing_provenance, video_start_s, video_end_s)
             VALUES (%s, DATE '2026-01-03', 94, 1, 'FICTIONAL inf',
               'unvalidated_numeric', 0, 'Infinity'::numeric)
+            """,
+            (game_id,),
+        )
+    conn.rollback()
+    with pytest.raises(Exception):
+        conn.execute(
+            """
+            INSERT INTO clips (game_id, game_date, play_index, period, description,
+              timing_provenance, video_start_s, video_end_s)
+            VALUES (%s, DATE '2026-01-03', 95, 1, 'FICTIONAL end nan independent',
+              'unvalidated_numeric', 1, 'NaN'::numeric)
+            """,
+            (game_id,),
+        )
+    conn.rollback()
+    with pytest.raises(Exception):
+        conn.execute(
+            """
+            INSERT INTO clips (game_id, game_date, play_index, period, description,
+              timing_provenance, video_start_s, video_end_s, video_timestamp_s,
+              matcher_run_id, matcher_version, matched_source_version)
+            VALUES (%s, DATE '2026-01-03', 96, 1, 'FICTIONAL timestamp nan',
+              'matcher_attested', 1, 4, 'NaN'::numeric,
+              'fic-run-a', 'match_play_timestamps/fictional', 'etag-fic-a-v1')
             """,
             (game_id,),
         )
@@ -467,6 +492,16 @@ def test_policy_doc_present():
     assert "no job/limiter implementation" in text.lower() or (
         "no job/limiter" in text.lower()
     )
+    assert "equals itself" in text
+    assert "NaN = NaN" in text
+    assert "Do **not** use `x = x`" in text or "Do not use `x = x`" in text
+    assert "nba_numeric_is_finite" in text
+    assert "Published / deleted predicates are missing" in text
+    assert "unwired" in text.lower()
+    assert "explicit" in text.lower() and "dev" in text and "test" in text
+    assert "fullmatch" in text
+    assert "pg_advisory_xact_lock" in text
+    assert "incomplete canary" in text.lower() or "not** secrecy" in text.lower()
 
 
 def test_schema_has_no_owner_or_user_acl_columns(conn):
@@ -613,25 +648,310 @@ def test_stamped_0001_without_matching_schema_refuses(postgres_url):
         apply_migrations(url)
 
 
-def test_0003_failure_rolls_back_transaction(postgres_url, monkeypatch):
+def _install_dirty_0001_like(conn, *, duration_sql: str = "-1"):
+    conn.execute(
+        "CREATE TABLE teams (id int PRIMARY KEY, abbr text UNIQUE, city text, name text)"
+    )
+    conn.execute(
+        "CREATE TABLE players (id int PRIMARY KEY, bbref_id text UNIQUE, full_name text, last_name text)"
+    )
+    conn.execute(
+        """
+        CREATE TABLE games (
+          id int PRIMARY KEY, bbref_id text UNIQUE, season text,
+          game_date date, home_team_id int, away_team_id int,
+          s3_key text, duration_s numeric
+        )
+        """
+    )
+    conn.execute(
+        """
+        CREATE TABLE clips (
+          id int PRIMARY KEY, game_id int, game_date date, play_index int,
+          period int, description text, action_type text, shot_subtype text,
+          outcome text, video_start_s numeric, video_end_s numeric,
+          UNIQUE (game_id, play_index)
+        )
+        """
+    )
+    conn.execute(
+        """
+        CREATE TABLE clip_players (
+          clip_id int, player_id int, role text, game_date date,
+          PRIMARY KEY (player_id, clip_id, role)
+        )
+        """
+    )
+    conn.execute("INSERT INTO teams VALUES (1, 'AAA', 'A', 'A'), (2, 'BBB', 'B', 'B')")
+    conn.execute(
+        f"""
+        INSERT INTO games (id, bbref_id, season, game_date, home_team_id, away_team_id,
+          s3_key, duration_s)
+        VALUES (1, 'ficdirtyFIC', '2025-26', DATE '2026-01-01', 1, 2,
+          'fixtures/dirty.mkv', {duration_sql})
+        """
+    )
+    conn.execute(
+        """
+        INSERT INTO clips (id, game_id, game_date, play_index, period, description,
+          action_type, shot_subtype, outcome, video_start_s, video_end_s)
+        VALUES (1, 1, DATE '2026-01-01', 1, 1, 'FICTIONAL dirty',
+          NULL, NULL, NULL, 1, 4)
+        """
+    )
+
+
+def test_0003_failure_rolls_back_transaction(postgres_url):
+    """Actual ADD CHECK failure after 0003 DDL, not a pre-SQL monkeypatch."""
     import psycopg
-    from db import migrate
     from db.migrate import apply_migrations
 
     os.environ["APP_ENV"] = "test"
     url = _fresh_db(postgres_url, "nba_txn_fail")
-    real = migrate._exec_file
-
-    def boom(conn, path):
-        if "0003" in path.name:
-            raise RuntimeError("injected 0003 failure")
-        return real(conn, path)
-
-    monkeypatch.setattr(migrate, "_exec_file", boom)
-    with pytest.raises(RuntimeError, match="injected 0003 failure"):
+    with psycopg.connect(url, autocommit=True) as conn:
+        _install_dirty_0001_like(conn, duration_sql="-1")
+    with pytest.raises(Exception):
         apply_migrations(url)
     with psycopg.connect(url) as conn:
-        assert conn.execute("SELECT to_regclass('public.teams')").fetchone()[0] is None
+        assert conn.execute("SELECT to_regclass('public.teams')").fetchone()[0]
+        assert conn.execute("SELECT duration_s FROM games").fetchone()[0] == -1
+        cols = {
+            r[0]
+            for r in conn.execute(
+                """
+                SELECT column_name FROM information_schema.columns
+                WHERE table_schema = 'public' AND table_name = 'games'
+                """
+            )
+        }
+        assert "source_kind" not in cols
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0] is None
+        assert conn.execute(
+            "SELECT to_regprocedure('public.nba_numeric_is_finite(numeric)')"
+        ).fetchone()[0] is None
         stamped = conn.execute("SELECT to_regclass('public.schema_migrations')").fetchone()[0]
         if stamped:
-            assert conn.execute("SELECT count(*) FROM schema_migrations").fetchone()[0] == 0
+            assert conn.execute("SELECT version FROM schema_migrations").fetchall() == []
+
+
+def test_dirty_nan_duration_baseline_refused_and_preserved(postgres_url):
+    import psycopg
+    from db.migrate import apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_nan_dur")
+    with psycopg.connect(url, autocommit=True) as conn:
+        _install_dirty_0001_like(conn, duration_sql="'NaN'::numeric")
+    with pytest.raises(Exception):
+        apply_migrations(url)
+    with psycopg.connect(url) as conn:
+        nan_eq = conn.execute("SELECT duration_s = 'NaN'::numeric FROM games").fetchone()[0]
+        assert nan_eq is True
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0] is None
+        stamped = conn.execute("SELECT to_regclass('public.schema_migrations')").fetchone()[0]
+        if stamped:
+            assert conn.execute("SELECT version FROM schema_migrations").fetchall() == []
+
+
+def test_pg_numeric_nan_equals_itself_helper_rejects(conn):
+    nan_eq = conn.execute("SELECT 'NaN'::numeric = 'NaN'::numeric AS v").fetchone()["v"]
+    assert nan_eq is True
+    nan_gt = conn.execute("SELECT 'NaN'::numeric > 1e18 AS v").fetchone()["v"]
+    assert nan_gt is True
+    old_idiom = conn.execute(
+        "SELECT ('NaN'::numeric = 'NaN'::numeric AND 'NaN'::numeric > 0) AS v"
+    ).fetchone()["v"]
+    assert old_idiom is True
+    helper = conn.execute("SELECT nba_numeric_is_finite('NaN'::numeric) AS v").fetchone()["v"]
+    assert helper is False
+    helper_pos = conn.execute(
+        "SELECT (nba_numeric_is_finite('NaN'::numeric) AND 'NaN'::numeric > 0) AS v"
+    ).fetchone()["v"]
+    assert helper_pos is False
+    assert conn.execute("SELECT nba_numeric_is_finite(48::numeric) AS v").fetchone()["v"] is True
+
+
+def test_duration_nan_inf_zero_rejected_on_games(conn):
+    gid = conn.execute(
+        "SELECT id FROM games WHERE bbref_id = 'fic000001FIC'"
+    ).fetchone()["id"]
+    for value in ("'NaN'::numeric", "'Infinity'::numeric", "0", "-1"):
+        with pytest.raises(Exception):
+            conn.execute(f"UPDATE games SET duration_s = {value} WHERE id = %s", (gid,))
+        conn.rollback()
+
+
+def test_preexisting_columns_permissive_view_missing_constraints(postgres_url):
+    import psycopg
+    from db.migrate import SCHEMA_DIR, _exec_file, apply_migrations, _constraint_names, _play_capability_viewdef
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_perm_view")
+    with psycopg.connect(url, autocommit=True) as conn:
+        _exec_file(conn, SCHEMA_DIR / "0001_init.sql")
+        conn.execute(
+            """
+            DO $$ BEGIN
+              CREATE TYPE timing_provenance AS ENUM (
+                'none', 'game_clock_derived', 'unvalidated_numeric', 'matcher_attested'
+              );
+            EXCEPTION WHEN duplicate_object THEN NULL;
+            END $$
+            """
+        )
+        conn.execute(
+            """
+            DO $$ BEGIN
+              CREATE TYPE source_kind AS ENUM ('original_private', 'public', 'derived');
+            EXCEPTION WHEN duplicate_object THEN NULL;
+            END $$
+            """
+        )
+        conn.execute(
+            """
+            ALTER TABLE games
+              ADD COLUMN source_kind source_kind,
+              ADD COLUMN source_version text,
+              ADD COLUMN is_fictional boolean NOT NULL DEFAULT false
+            """
+        )
+        conn.execute(
+            """
+            ALTER TABLE clips
+              ADD COLUMN timing_provenance timing_provenance NOT NULL DEFAULT 'none',
+              ADD COLUMN matcher_run_id text,
+              ADD COLUMN matcher_version text,
+              ADD COLUMN video_timestamp_s numeric,
+              ADD COLUMN matched_source_version text
+            """
+        )
+        conn.execute(
+            """
+            CREATE VIEW play_capability AS
+            SELECT id AS play_id, true AS can_create, NULL::text AS reason
+            FROM clips
+            """
+        )
+        assert "clips_video_finite_window" not in _constraint_names(conn, "clips")
+        viewdef = _play_capability_viewdef(conn)
+        assert "nba_numeric_is_finite" not in viewdef
+    applied = apply_migrations(url)
+    assert "0003_on_demand" in applied
+    with psycopg.connect(url) as conn:
+        names = _constraint_names(conn, "clips")
+        assert "clips_video_finite_window" in names
+        assert "clips_none_requires_null_offsets" in names
+        assert "clips_attested_requires_binding" in names
+        games_names = _constraint_names(conn, "games")
+        assert "games_duration_finite_positive" in games_names
+        viewdef = _play_capability_viewdef(conn)
+        assert "nba_numeric_is_finite" in viewdef
+        assert "true AS can_create" not in viewdef.lower()
+
+
+def test_stamped_0003_constraint_drift_refuses(postgres_url):
+    import psycopg
+    from db.migrate import MigrationRefused, apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_drift")
+    apply_migrations(url)
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute("ALTER TABLE clips DROP CONSTRAINT clips_video_finite_window")
+    with pytest.raises(MigrationRefused, match="0003 schema mismatch"):
+        apply_migrations(url)
+    with psycopg.connect(url) as conn:
+        versions = {r[0] for r in conn.execute("SELECT version FROM schema_migrations")}
+        assert "0003_on_demand" in versions
+        missing = conn.execute(
+            """
+            SELECT 1 FROM pg_constraint c
+            JOIN pg_class t ON t.oid = c.conrelid
+            WHERE t.relname = 'clips' AND c.conname = 'clips_video_finite_window'
+            """
+        ).fetchone()
+        assert missing is None
+
+
+def test_down_preflight_failure_preserves_view_constraints_stamp(postgres_url):
+    import psycopg
+    from db.migrate import SCHEMA_DIR, _constraint_names, _split_sql, apply_migrations, apply_seed
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_down_fail")
+    apply_migrations(url)
+    apply_seed(url)
+    down = (SCHEMA_DIR / "down" / "0003_on_demand.down.sql").read_text(encoding="utf-8")
+    with psycopg.connect(url, autocommit=True) as conn:
+        failed = False
+        try:
+            with conn.cursor() as cur:
+                for stmt in _split_sql(down):
+                    cur.execute(stmt)
+        except Exception:
+            failed = True
+        assert failed
+    with psycopg.connect(url) as conn:
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0]
+        versions = {r[0] for r in conn.execute("SELECT version FROM schema_migrations")}
+        assert "0003_on_demand" in versions
+        assert "clips_video_finite_window" in _constraint_names(conn, "clips")
+        assert "games_duration_finite_positive" in _constraint_names(conn, "games")
+        assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] >= 8
+
+
+def test_advisory_lock_serializes_apply_migrations(postgres_url):
+    import threading
+    import psycopg
+    from db.migrate import MIGRATION_ADVISORY_LOCK_KEY, apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_lock")
+    apply_migrations(url)
+    holder = psycopg.connect(url)
+    holder.autocommit = False
+    holder.execute("SELECT pg_advisory_xact_lock(%s)", (MIGRATION_ADVISORY_LOCK_KEY,))
+    finished = threading.Event()
+    errors: list[BaseException] = []
+
+    def other():
+        try:
+            apply_migrations(url)
+        except BaseException as exc:
+            errors.append(exc)
+        finally:
+            finished.set()
+
+    thread = threading.Thread(target=other)
+    thread.start()
+    thread.join(0.4)
+    assert not finished.is_set()
+    holder.rollback()
+    holder.close()
+    thread.join(10)
+    assert finished.is_set()
+    assert errors == []
+
+
+def test_0001_rejects_nonpositive_or_nan_duration(postgres_url):
+    import psycopg
+    from db.migrate import SCHEMA_DIR, _exec_file
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_0001_dur")
+    with psycopg.connect(url, autocommit=True) as conn:
+        _exec_file(conn, SCHEMA_DIR / "0001_init.sql")
+        conn.execute(
+            "INSERT INTO teams (abbr, city, name) VALUES ('AAA', 'A', 'A'), ('BBB', 'B', 'B')"
+        )
+        ids = [r[0] for r in conn.execute("SELECT id FROM teams ORDER BY id")]
+        for i, duration in enumerate(("'NaN'::numeric", "0", "-2", "'Infinity'::numeric")):
+            with pytest.raises(Exception):
+                conn.execute(
+                    f"""
+                    INSERT INTO games (bbref_id, season, game_date, home_team_id, away_team_id,
+                      duration_s)
+                    VALUES ('ficdur{i}FIC', '2025-26', DATE '2026-01-01', %s, %s, {duration})
+                    """,
+                    (ids[0], ids[1]),
+                )
