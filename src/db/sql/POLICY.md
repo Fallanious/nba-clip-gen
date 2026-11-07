@@ -232,6 +232,17 @@ fill or override identity.
 - analyzed object key (`fixtures/...` in this slice; not a URL)
 - `matcher_run_id` generated at analysis and carried on the output
 
+`content_sha256` here is a hash of a **local fictional file opened by path**.
+Re-open plus a plain JSON envelope is cleared only for that local fictional
+path. It is **not** provenance for future untrusted or remote acquisition.
+`object_version_id` is an accepted kind; this slice does not call S3 and
+does **not** claim S3 provenance is secured.
+
+Participants from scrape: explicit roles only (primary plus recognized
+parentheticals, including `drawn by` → `fouled`). Extra player links are
+not assigned the primary role. Unsupported parentheticals and
+recognized-role/link count mismatch fail closed.
+
 **ETag is not immutable** and is refused as an identity kind. Persist does
 not guess from `games.source_version` or `MATCHER_ANALYZED_*` env. A v1
 output replayed against a current/forged v2 env and v2 DB is refused.
@@ -259,8 +270,9 @@ duration, `end <= duration`, `start < duration`, and `end - start <= 120`.
 Invalid payload leaves a current-identity good mapping in place.
 
 `clip_players` links only independently established per-play `participants`
-(`bbref_id` + `clip_role`). There is **no** default shot role and no
-config-wide player applied to unmatched/unrelated plays.
+(`bbref_id` + `clip_role`). There is **no** default shot role, no guessed
+primary role on extra links, and no config-wide player applied to
+unmatched/unrelated plays.
 
 Internal persist SQL lives under `src/db/sql/queries/persist/` and is an
 **explicit allowlist** of that designated directory only, not a public

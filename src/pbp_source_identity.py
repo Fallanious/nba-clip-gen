@@ -30,20 +30,33 @@ def player_ids_from_hrefs(hrefs: Iterable[Any]) -> list[str]:
     return out
 
 
+def _paren_role(inner: str) -> Optional[str]:
+    text = inner.lower().strip()
+    if "drawn by" in text:
+        return "fouled"
+    if "assist" in text:
+        return "assist"
+    if "block" in text:
+        return "block"
+    if "steal" in text:
+        return "steal"
+    return None
+
+
 def _paren_roles(description: str) -> list[str]:
     roles: list[str] = []
-    for inner in _PAREN.findall(description.lower()):
-        if "assist" in inner:
-            roles.append("assist")
-        elif "block" in inner:
-            roles.append("block")
-        elif "steal" in inner:
-            roles.append("steal")
+    for inner in _PAREN.findall(description):
+        role = _paren_role(inner)
+        if role is None:
+            raise SourcePbpError("unsupported or ambiguous participant parenthetical")
+        roles.append(role)
     return roles
 
 
 def _primary_role(description: str) -> Optional[str]:
     text = _PAREN.sub(" ", description.lower())
+    if "foul" in text:
+        return "foul"
     if re.search(r"\b(makes|misses|made|missed)\b", text) or any(
         token in text for token in ("jumper", "layup", "dunk", "free throw", "3-pt", "shot")
     ):
@@ -54,8 +67,6 @@ def _primary_role(description: str) -> Optional[str]:
         return "turnover"
     if "steal" in text:
         return "steal"
-    if "foul" in text:
-        return "foul"
     return None
 
 
@@ -72,13 +83,13 @@ def participants_from_source_play(play: Mapping[str, Any]) -> list[dict[str, str
     description = str(play.get("description") or "")
     paren_roles = _paren_roles(description)
     primary = _primary_role(description)
+    expected = (1 if primary is not None else 0) + len(paren_roles)
+    if len(ids) != expected:
+        raise SourcePbpError("participant link count does not match recognized roles")
+    primary_count = 1 if primary is not None else 0
     out: list[dict[str, str]] = []
-    paren_count = min(len(paren_roles), len(ids))
-    primary_count = len(ids) - paren_count
     for index, bbref in enumerate(ids):
         if index < primary_count:
-            if primary is None:
-                continue
             out.append({"bbref_id": bbref, "role": primary})
         else:
             out.append({"bbref_id": bbref, "role": paren_roles[index - primary_count]})

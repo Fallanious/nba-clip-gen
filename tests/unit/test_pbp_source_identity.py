@@ -76,6 +76,74 @@ def test_existing_participants_are_not_invented_from_links():
     assert plays[0]["participants"] == [{"bbref_id": "ficcas01", "role": "shot"}]
 
 
+def test_drawn_by_maps_second_link_to_fouled_not_primary():
+    plays = stamp_source_pbp_identity([
+        {
+            "play_index": 0,
+            "description": "Shooting foul by Casey Fixture (drawn by Other Fixture)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        }
+    ])
+    assert plays[0]["participants"] == [
+        {"bbref_id": "ficcas01", "role": "foul"},
+        {"bbref_id": "ficoth01", "role": "fouled"},
+    ]
+
+
+def test_unknown_parenthetical_fails_closed():
+    with pytest.raises(SourcePbpError, match="ambiguous participant parenthetical"):
+        stamp_source_pbp_identity([
+            {
+                "play_index": 0,
+                "description": "Casey Fixture makes 2-pt jumper (from downtown)",
+                "player_links": [
+                    "/players/f/ficcas01.html",
+                    "/players/f/ficoth01.html",
+                ],
+            }
+        ])
+
+
+def test_link_count_mismatch_fails_closed():
+    with pytest.raises(SourcePbpError, match="link count"):
+        stamp_source_pbp_identity([
+            {
+                "play_index": 0,
+                "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
+                "player_links": [
+                    "/players/f/ficcas01.html",
+                    "/players/f/ficoth01.html",
+                    "/players/f/ficzzz01.html",
+                ],
+            }
+        ])
+    with pytest.raises(SourcePbpError, match="link count"):
+        stamp_source_pbp_identity([
+            {
+                "play_index": 1,
+                "description": "Casey Fixture makes 2-pt jumper",
+                "player_links": [
+                    "/players/f/ficcas01.html",
+                    "/players/f/ficoth01.html",
+                ],
+            }
+        ])
+
+
+def test_primary_only_single_link_remains():
+    plays = stamp_source_pbp_identity([
+        {
+            "play_index": 0,
+            "description": "Casey Fixture makes 2-pt jumper",
+            "player_links": ["/players/f/ficcas01.html"],
+        }
+    ])
+    assert plays[0]["participants"] == [{"bbref_id": "ficcas01", "role": "shot"}]
+
+
 def test_html_table_stamps_source_identity_and_participants():
     from bs4 import BeautifulSoup
 
