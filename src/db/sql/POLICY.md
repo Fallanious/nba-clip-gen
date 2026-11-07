@@ -119,36 +119,76 @@ Supersedes the earlier signed-in-required note. Identity is **not** a blocker.
 **App-level policy (intentional):** anonymous callers share the full catalog
 and may browse, create, and play **eligible** clips. There is **no** sign-in
 provider for now. There are **no** user- or team-ownership filters.
+Allowed public cases do **not** require cookies or credentials.
 
-This is **not** stub identity and **not** no-op auth pretending to be a user.
-Do not create fake authenticated users, `LocalUser`, scopes, or owner IDs.
-Do not add `owner_id` / `user_id` / org ACL columns. Do not implement a
-per-user data model. Do not register `before_request_hook` to invent `g.user`.
-
-Still mandatory (shared catalog is not a bypass):
-
-- Capability / eligibility (`can_create`, reasons). Ineligible rows stay
-  browsable and are not creatable or playable.
-- Published / deleted / resource visibility when those states exist. Do not
-  resurrect deleted rows or skip unpublished hiding.
-- Serializers must not widen private metadata. Browse stays on the
-  allowlist in `metadata_allowlist.py` (`play_id`, game/play display fields,
-  `can_create`, `reason`). No keys, versions, offsets, URLs, or matcher ids.
-- S3 **source and output** stay private. Server resolves play/game IDs,
-  original source, and video windows. Reject arbitrary client keys and
-  client offsets.
-- Playback is **generated-clip-only** when the clip is ready. No full-game
-  source fallback.
-- Anonymous create is costly. Before any create HTTP: bounded **global and
-  per-client** rate limits, concurrency limits, queue and retry controls,
-  and durable duplicate safety. Those are not this slice.
-- Security is reviewing this access model. No deployment, public-bucket, or
-  new paid infra in this pass.
+This is an **explicit public-resource policy**. It is **not** no-op authorize
+and **not** stub identity. Do not create fake authenticated users, `LocalUser`,
+scopes, or owner IDs. Do not add `owner_id` / `user_id` / org ACL columns.
+Do not register `before_request_hook` to invent `g.user`.
 
 This slice does **not** change `src/auth.py` or `src/authz.py`. Existing
 helpers stay unused. Existing `/api/generate` is still out of scope.
+Routes stay unwired. Fictional fixtures only. No live DB.
 
 Offline matcher persistence is independent of this access policy and of HTTP.
+
+## Later gates (not this slice; no job/limiter implementation here)
+
+Create, status, playback, worker execution, and URL issuance (including
+cache/304) must all re-check, server-side:
+
+1. Resource is **published** and **not deleted**.
+2. Canonical **play** is server-resolved (no client-supplied source identity).
+3. Canonical **source** is server-resolved original-private object + version.
+4. Canonical **validated VIDEO-relative window** is server-resolved.
+5. Capability is eligible. Unmatched/empty/legacy rows stay **browsable** and
+   **cannot generate**.
+6. Non-public or missing resources return a **uniform unavailable** (do not
+   leak existence vs unpublished vs missing).
+7. Forged extra/nested source, window, or key fields are **rejected**.
+   Reject arbitrary client keys and offsets.
+8. Playback URLs are **generated output only**, server-derived. No full-game
+   or source fallback.
+
+### Abuse and cost (required before anonymous generation HTTP)
+
+Hard caps must be **durable and shared** (not per-process, not browser):
+
+- Global hard **queue capacity**
+- Global **worker concurrency**
+- Global **maximum new jobs per interval**
+- Global **work/generation budget cutoff**
+
+Per-client create and playback/presign quotas are **defense-in-depth** only.
+They do not replace the global budget. IP/NAT limits are not a global-budget
+substitute. CORS is not abuse protection.
+
+**Fail closed** if quota storage fails **before** enqueue or signing.
+
+Ingress: use a **canonical trusted address**. Document proxy trust. Ignore
+spoofed `X-Forwarded-For`.
+
+Canonical job uniqueness includes **play + source version + window +
+encoding**. Claims must be **atomic**. Leases must be **fenced**. Server
+retries/backoff are **bounded**. Request tokens, extra params, and retry
+storms must not bypass caps. Bound request bodies, batches, pages, runtime,
+and output size.
+
+### Presigns and egress
+
+Short-lived **private generated-only** presigns are intentionally shareable
+bearer links. Signing caps do **not** bound download/egress. Document the
+chosen delivery **bandwidth/cost ceiling**. Actual public enablement and
+deployment stay **gated** until that ceiling is configured. No new paid infra
+or deployment in this pass.
+
+### Required later tests (job/playback slices, not schema)
+
+Multi-instance concurrent duplicates; restart and timeouts; quota-storage
+failure; full queue; budget cutoff; spoofed proxy; retry storms; stale
+worker; revocation **before** worker start and **before** URL issuance;
+sanitized errors; no source fallback. Failures must **release/recover**
+bounded resources.
 
 ## Later persistence (not this slice)
 
@@ -238,16 +278,19 @@ Identity / sign-in is **not** a hard block. Do not wait on a provider.
    Partial matches keep metadata. Local/dev fixtures only. Depends on 1.
    Independent of HTTP and of this access-policy change.
 3. **Browse metadata HTTP.** Anonymous shared catalog. Allowlisted serializers
-   only. Capability + published/deleted visibility. No S3 locators. Server-
-   resolved IDs. Depends on 1. Not blocked on identity.
-4. **Abuse controls for anonymous create.** Bounded global and per-client
-   rate, concurrency, queue, retry, durable duplicate safety. **Required
-   before create HTTP.** No new paid infra in this pass.
-5. **Clip jobs / generate HTTP.** Server-resolves play + source version +
-   offsets. Rejects client keys/offsets. Depends on 2 and 4. Does not secure
-   existing `/api/generate`.
-6. **Playback URL.** Ready generated clip only. No full-game fallback. No
-   source/output key leak. Depends on 5.
+   only. Uniform unavailable for nonpublic/missing. Unmatched browsable, not
+   generatable. No S3 locators. Depends on 1. Not blocked on identity.
+4. **Durable shared global caps + per-client quotas.** Queue capacity, worker
+   concurrency, jobs/interval, generation budget; fail closed if quota store
+   fails; trusted ingress, ignore spoofed XFF. **Required before create HTTP.**
+   No job/limiter code in slice 1. No new paid infra.
+5. **Clip jobs / generate HTTP.** Canonical uniqueness play+source version+
+   window+encoding; atomic claims; fenced leases; bounded retries. Server-
+   resolved windows. Reject nested/forged keys. Depends on 2 and 4. Does not
+   secure existing `/api/generate`.
+6. **Playback URL.** Ready generated-only bearer presigns. No full-game
+   fallback. Egress/cost ceiling documented and configured before public
+   enablement. Depends on 5.
 7. **Players-tab UI.** Browse depends on 3. Play depends on 6.
 
 Requirements pin fix stays on hold (install blocker, not a pin change).

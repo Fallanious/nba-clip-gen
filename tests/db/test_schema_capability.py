@@ -451,11 +451,22 @@ def test_policy_doc_present():
     assert "user- or team-ownership filters" in text
     assert "owner_id" in text
     assert "not a hard block" in text or "Identity / sign-in is **not** a hard block" in text
-    assert "generated-clip-only" in text
-    assert "Reject arbitrary client keys" in text or "client keys" in text
+    assert "generated-clip-only" in text or "generated output only" in text
+    assert "client keys" in text
     assert "per-client" in text
-    assert "durable duplicate safety" in text
     assert "LocalUser" in text
+    assert "no-op authorize" in text
+    assert "uniform unavailable" in text
+    assert "Fail closed" in text
+    assert "X-Forwarded-For" in text
+    assert "fenced" in text
+    assert "atomic" in text
+    assert "bearer" in text
+    assert "bandwidth/cost ceiling" in text
+    assert "quota storage" in text.lower() or "quota-storage" in text
+    assert "no job/limiter implementation" in text.lower() or (
+        "no job/limiter" in text.lower()
+    )
 
 
 def test_schema_has_no_owner_or_user_acl_columns(conn):
