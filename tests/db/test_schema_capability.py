@@ -979,11 +979,16 @@ def test_stamped_0003_altered_bodies_are_reapplied(postgres_url):
 
 
 def test_verify_denies_malicious_comment_helper_and_missing_view_bound(postgres_url):
-    """Reapply is not enough if verification trusts comment tokens or incomplete view bodies."""
+    """(a) Standalone _verify_0003 refuses token-comment helper and missing VIEW
+    <=120 without reapply. Full apply_migrations then restores canonical bodies.
+    These are distinct: reapply overwrites from 0003 SQL; verify must still deny
+    a live tampered body if called alone.
+    """
     import psycopg
     from db.migrate import (
         MigrationRefused,
         _0003_definition_mismatch_reasons,
+        _functiondef,
         _verify_0003,
         apply_migrations,
         _play_capability_viewdef,
@@ -1009,6 +1014,9 @@ def test_verify_denies_malicious_comment_helper_and_missing_view_bound(postgres_
 
         apply_migrations(url)
         assert conn.execute("SELECT nba_numeric_is_finite('NaN'::numeric)").fetchone()[0] is False
+        restored_fn = _functiondef(conn)
+        assert "NaN" in restored_fn and "Infinity" in restored_fn
+        assert "SELECT true -- NaN Infinity -Infinity" not in restored_fn
 
         conn.execute("DROP VIEW play_capability")
         conn.execute(
@@ -1037,6 +1045,13 @@ def test_verify_denies_malicious_comment_helper_and_missing_view_bound(postgres_
         assert "(c.video_end_s - c.video_start_s) <= 120" not in " ".join(viewdef.lower().split())
         reasons = _0003_definition_mismatch_reasons(conn)
         assert any("<= 120" in r for r in reasons)
+        with pytest.raises(MigrationRefused, match="<= 120"):
+            _verify_0003(conn)
+
+        apply_migrations(url)
+        restored_view = " ".join(_play_capability_viewdef(conn).lower().split())
+        assert "(c.video_end_s - c.video_start_s) <= 120" in restored_view.replace(" (", "(")
+        _verify_0003(conn)
 
 
 def test_down_preflight_failure_preserves_view_constraints_stamp(postgres_url):
