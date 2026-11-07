@@ -1054,6 +1054,37 @@ def test_verify_denies_malicious_comment_helper_and_missing_view_bound(postgres_
         _verify_0003(conn)
 
 
+def test_tmp_0003_sql_missing_view_120_is_refused_not_stamped(postgres_url, tmp_path, monkeypatch):
+    """Residual P2: omitting the VIEW 120 predicate from 0003.sql must not stamp.
+
+    Does not edit the shipped file. Points SCHEMA_DIR at a tmp copy. Runner
+    reapply is not an eligibility grant; this only closes the verifier omission.
+    """
+    import shutil
+    import psycopg
+    from db.migrate import SCHEMA_DIR, MigrationRefused, apply_migrations
+    import db.migrate as migrate
+
+    os.environ["APP_ENV"] = "test"
+    dst = tmp_path / "schema"
+    shutil.copytree(SCHEMA_DIR, dst)
+    original = (dst / "0003_on_demand.sql").read_text(encoding="utf-8")
+    stripped = original.replace("AND (c.video_end_s - c.video_start_s) <= 120", "")
+    assert stripped != original
+    (dst / "0003_on_demand.sql").write_text(stripped, encoding="utf-8")
+    monkeypatch.setattr(migrate, "SCHEMA_DIR", dst)
+
+    url = _fresh_db(postgres_url, "nba_verify_bad_sql")
+    with pytest.raises(MigrationRefused, match="<= 120"):
+        apply_migrations(url)
+    with psycopg.connect(url) as conn:
+        stamped = conn.execute("SELECT to_regclass('public.schema_migrations')").fetchone()[0]
+        if stamped is not None:
+            versions = {r[0] for r in conn.execute("SELECT version FROM schema_migrations")}
+            assert "0003_on_demand" not in versions
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0] is None
+
+
 def test_down_preflight_failure_preserves_view_constraints_stamp(postgres_url):
     import psycopg
     from db.migrate import SCHEMA_DIR, _constraint_names, _split_sql, apply_migrations, apply_seed
