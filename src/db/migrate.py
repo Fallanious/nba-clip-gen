@@ -139,6 +139,37 @@ def _connect(database_url: str):
     return psycopg.connect(database_url)
 
 
+REQUIRED_0001_COLUMNS = {
+    "teams": frozenset({"id", "abbr", "city", "name"}),
+    "players": frozenset({"id", "bbref_id", "full_name", "last_name"}),
+    "games": frozenset({
+        "id", "bbref_id", "season", "game_date",
+        "home_team_id", "away_team_id", "s3_key", "duration_s",
+    }),
+    "clips": frozenset({
+        "id", "game_id", "game_date", "play_index", "period",
+        "description", "action_type", "shot_subtype", "outcome",
+        "video_start_s", "video_end_s",
+    }),
+    "clip_players": frozenset({"clip_id", "player_id", "role", "game_date"}),
+}
+
+REQUIRED_0001_UNIQUES = (
+    ("teams", ("abbr",)),
+    ("players", ("bbref_id",)),
+    ("games", ("bbref_id",)),
+    ("clips", ("game_id", "play_index")),
+)
+
+REQUIRED_0003_COLUMNS = {
+    "games": frozenset({"source_kind", "source_version", "is_fictional"}),
+    "clips": frozenset({
+        "timing_provenance", "matcher_run_id", "matcher_version",
+        "video_timestamp_s", "matched_source_version",
+    }),
+}
+
+
 def _applied(conn) -> set[str]:
     with conn.cursor() as cur:
         cur.execute(
@@ -152,10 +183,104 @@ def _applied(conn) -> set[str]:
         return {row[0] for row in cur.fetchall()}
 
 
-def _teams_exist(conn) -> bool:
-    with conn.cursor() as cur:
-        cur.execute("SELECT to_regclass('public.teams')")
-        return cur.fetchone()[0] is not None
+def _table_exists(conn, name: str) -> bool:
+    row = conn.execute("SELECT to_regclass(%s)", (f"public.{name}",)).fetchone()
+    return row[0] is not None
+
+
+def _columns(conn, table: str) -> set[str]:
+    rows = conn.execute(
+        """
+        SELECT column_name
+        FROM information_schema.columns
+        WHERE table_schema = 'public' AND table_name = %s
+        """,
+        (table,),
+    ).fetchall()
+    return {row[0] for row in rows}
+
+
+def _unique_column_sets(conn, table: str) -> set[tuple[str, ...]]:
+    rows = conn.execute(
+        """
+        SELECT array_agg(a.attname ORDER BY u.ord)::text[]
+        FROM pg_constraint c
+        JOIN pg_class t ON t.oid = c.conrelid
+        JOIN pg_namespace n ON n.oid = t.relnamespace
+        JOIN LATERAL unnest(c.conkey) WITH ORDINALITY AS u(attnum, ord) ON true
+        JOIN pg_attribute a ON a.attrelid = t.oid AND a.attnum = u.attnum
+        WHERE n.nspname = 'public'
+          AND t.relname = %s
+          AND c.contype IN ('u', 'p')
+        GROUP BY c.oid
+        """,
+        (table,),
+    ).fetchall()
+    found: set[tuple[str, ...]] = set()
+    for row in rows:
+        cols = row[0]
+        if cols is None:
+            continue
+        found.add(tuple(cols))
+    return found
+
+
+def _present_0001_tables(conn) -> set[str]:
+    return {name for name in REQUIRED_0001_COLUMNS if _table_exists(conn, name)}
+
+
+def _0001_mismatch_reasons(conn) -> list[str]:
+    reasons: list[str] = []
+    present = _present_0001_tables(conn)
+    expected = set(REQUIRED_0001_COLUMNS)
+    if present != expected:
+        reasons.append(
+            f"0001 tables present={sorted(present)} expected={sorted(expected)}"
+        )
+        return reasons
+    for table, cols in REQUIRED_0001_COLUMNS.items():
+        have = _columns(conn, table)
+        missing = cols - have
+        if missing:
+            reasons.append(f"{table} missing columns {sorted(missing)}")
+    for table, cols in REQUIRED_0001_UNIQUES:
+        uniques = _unique_column_sets(conn, table)
+        if cols not in uniques:
+            reasons.append(f"{table} missing UNIQUE {cols}")
+    return reasons
+
+
+def _verify_0001(conn) -> None:
+    reasons = _0001_mismatch_reasons(conn)
+    if reasons:
+        raise MigrationRefused(
+            "migration refused: 0001 schema mismatch: " + "; ".join(reasons)
+        )
+
+
+def _0003_flags(conn) -> dict[str, bool]:
+    games_cols = _columns(conn, "games") if _table_exists(conn, "games") else set()
+    clips_cols = _columns(conn, "clips") if _table_exists(conn, "clips") else set()
+    return {
+        "games_cols": REQUIRED_0003_COLUMNS["games"] <= games_cols,
+        "clips_cols": REQUIRED_0003_COLUMNS["clips"] <= clips_cols,
+        "view": _table_exists(conn, "play_capability"),
+    }
+
+
+def _verify_0003(conn) -> None:
+    flags = _0003_flags(conn)
+    if not all(flags.values()):
+        raise MigrationRefused(
+            "migration refused: 0003 schema mismatch: " + str(flags)
+        )
+
+
+def _stamp(conn, version: str) -> None:
+    conn.execute(
+        "INSERT INTO schema_migrations (version) VALUES (%s) ON CONFLICT DO NOTHING",
+        (version,),
+    )
 
 
 def _exec_file(conn, path: Path) -> None:
@@ -180,22 +305,46 @@ def apply_migrations(database_url: str) -> list[str]:
                 """
             )
             have = _applied(conn)
-            if "0001_init" not in have and _teams_exist(conn):
-                conn.execute(
-                    "INSERT INTO schema_migrations (version) VALUES (%s) ON CONFLICT DO NOTHING",
-                    ("0001_init",),
-                )
-                have.add("0001_init")
-            for version in VERSIONS:
-                if version in have:
-                    continue
-                path = SCHEMA_DIR / f"{version}.sql"
-                _exec_file(conn, path)
-                conn.execute(
-                    "INSERT INTO schema_migrations (version) VALUES (%s) ON CONFLICT DO NOTHING",
-                    (version,),
-                )
-                applied_now.append(version)
+
+            if "0001_init" in have:
+                _verify_0001(conn)
+            else:
+                present = _present_0001_tables(conn)
+                if not present:
+                    _exec_file(conn, SCHEMA_DIR / "0001_init.sql")
+                    _verify_0001(conn)
+                    _stamp(conn, "0001_init")
+                    applied_now.append("0001_init")
+                else:
+                    reasons = _0001_mismatch_reasons(conn)
+                    if reasons:
+                        raise MigrationRefused(
+                            "migration refused: partial or mismatched 0001 "
+                            "baseline; will not stamp: " + "; ".join(reasons)
+                        )
+                    _stamp(conn, "0001_init")
+                    applied_now.append("0001_init")
+            have = _applied(conn)
+
+            if "0003_on_demand" in have:
+                _verify_0003(conn)
+            else:
+                flags = _0003_flags(conn)
+                if any(flags.values()) and not all(flags.values()):
+                    raise MigrationRefused(
+                        "migration refused: partial 0003 schema; will not stamp: "
+                        + str(flags)
+                    )
+                if all(flags.values()):
+                    _verify_0003(conn)
+                    _stamp(conn, "0003_on_demand")
+                    applied_now.append("0003_on_demand")
+                else:
+                    _exec_file(conn, SCHEMA_DIR / "0003_on_demand.sql")
+                    _verify_0003(conn)
+                    _stamp(conn, "0003_on_demand")
+                    applied_now.append("0003_on_demand")
+
             conn.commit()
         except Exception:
             conn.rollback()

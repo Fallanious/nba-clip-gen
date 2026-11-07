@@ -238,6 +238,17 @@ def test_constraint_rejects_reversed_equal_nan(conn):
             """,
             (game_id,),
         )
+    conn.rollback()
+    with pytest.raises(Exception):
+        conn.execute(
+            """
+            INSERT INTO clips (game_id, game_date, play_index, period, description,
+              timing_provenance, video_start_s, video_end_s)
+            VALUES (%s, DATE '2026-01-03', 94, 1, 'FICTIONAL inf',
+              'unvalidated_numeric', 0, 'Infinity'::numeric)
+            """,
+            (game_id,),
+        )
 
 
 def test_url_key_rejected_on_games(conn):
@@ -369,12 +380,223 @@ def test_stable_identity_unique_for_later_persist(conn):
     conn.rollback()
 
 
+def test_tiny_positive_gap_eligible_in_view(conn):
+    from db.capability import live_media_access_permitted
+
+    game = conn.execute(
+        """
+        SELECT id, s3_key, source_kind, source_version, duration_s, is_fictional
+        FROM games WHERE bbref_id = 'fic000001FIC'
+        """
+    ).fetchone()
+    conn.execute(
+        """
+        INSERT INTO clips (game_id, game_date, play_index, period, description,
+          timing_provenance, video_start_s, video_end_s, video_timestamp_s,
+          matcher_run_id, matcher_version, matched_source_version)
+        VALUES (%s, DATE '2026-01-03', 80, 1, 'FICTIONAL tiny positive gap',
+          'matcher_attested', 0, 0.1, 0.05,
+          'fic-run-a', 'match_play_timestamps/fictional', %s)
+        """,
+        (game["id"], game["source_version"]),
+    )
+    cap = conn.execute(
+        "SELECT can_create, reason FROM play_capability WHERE play_id = "
+        "(SELECT id FROM clips WHERE game_id = %s AND play_index = 80)",
+        (game["id"],),
+    ).fetchone()
+    assert cap["can_create"] is True
+    assert cap["reason"] is None
+    assert live_media_access_permitted(dict(game)) is False
+
+
+def test_fictional_prefix_cannot_be_live(conn):
+    teams = conn.execute("SELECT id FROM teams ORDER BY id LIMIT 2").fetchall()
+    with pytest.raises(Exception):
+        conn.execute(
+            """
+            INSERT INTO games (bbref_id, season, game_date, home_team_id, away_team_id,
+              s3_key, source_kind, source_version, is_fictional)
+            VALUES ('ficlivefixFIC', '2025-26', DATE '2026-03-01', %s, %s,
+              'fixtures/nope.mkv', 'original_private', 'etag-x', false)
+            """,
+            (teams[0]["id"], teams[1]["id"]),
+        )
+    conn.rollback()
+    with pytest.raises(Exception):
+        conn.execute(
+            """
+            INSERT INTO games (bbref_id, season, game_date, home_team_id, away_team_id,
+              s3_key, source_kind, source_version, is_fictional)
+            VALUES ('ficficliveFIC', '2025-26', DATE '2026-03-02', %s, %s,
+              'games/fic000001FIC.mkv', 'original_private', 'etag-x', true)
+            """,
+            (teams[0]["id"], teams[1]["id"]),
+        )
+
+
 def test_policy_doc_present():
     text = (SQL_ROOT / "POLICY.md").read_text(encoding="utf-8")
     assert "CLIP_MAX_DURATION_S = 120" in text
-    assert "VIDEO_SECONDS_ABS_MAX = 1e9" in text
+    assert "CLIP_MIN_DURATION_S" not in text
+    assert "VIDEO_SECONDS_ABS_MAX" not in text
+    assert "no-op" in text
     assert "matcher_attested" in text
     assert "Rollback" in text or "rollback" in text
     assert "game_clock" in text.lower()
     assert "UNIQUE (clips.game_id, clips.play_index)" in text
     assert "Later persistence" in text
+    assert "never stamps 0001 merely because" in text
+
+
+def _fresh_db(postgres_url, name):
+    import psycopg
+
+    admin = postgres_url.rsplit("/", 1)[0] + "/postgres"
+    with psycopg.connect(admin, autocommit=True) as c:
+        c.execute(f"DROP DATABASE IF EXISTS {name}")
+        c.execute(f"CREATE DATABASE {name}")
+    return postgres_url.rsplit("/", 1)[0] + f"/{name}"
+
+
+def test_empty_db_applies_0001_and_0003(postgres_url):
+    from db.migrate import apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_empty_base")
+    applied = apply_migrations(url)
+    assert applied == ["0001_init", "0003_on_demand"]
+    import psycopg
+    with psycopg.connect(url) as conn:
+        assert conn.execute("SELECT version FROM schema_migrations ORDER BY 1").fetchall() == [
+            ("0001_init",),
+            ("0003_on_demand",),
+        ]
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0]
+
+
+def test_expected_complete_0001_stamps_without_recreate(postgres_url):
+    import psycopg
+    from db.migrate import SCHEMA_DIR, _exec_file, apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_expected_base")
+    with psycopg.connect(url, autocommit=True) as conn:
+        _exec_file(conn, SCHEMA_DIR / "0001_init.sql")
+        before = conn.execute("SELECT to_regclass('public.teams')").fetchone()[0]
+        assert before
+    applied = apply_migrations(url)
+    assert "0001_init" in applied
+    assert "0003_on_demand" in applied
+    with psycopg.connect(url) as conn:
+        versions = {r[0] for r in conn.execute("SELECT version FROM schema_migrations")}
+        assert versions == {"0001_init", "0003_on_demand"}
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0]
+
+
+def test_partial_teams_only_refuses_stamp(postgres_url):
+    import psycopg
+    from db.migrate import MigrationRefused, apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_partial_base")
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute("CREATE TABLE teams (id int PRIMARY KEY, abbr text)")
+    with pytest.raises(MigrationRefused, match="partial or mismatched 0001"):
+        apply_migrations(url)
+    with psycopg.connect(url) as conn:
+        stamped = conn.execute(
+            "SELECT to_regclass('public.schema_migrations')"
+        ).fetchone()[0]
+        if stamped:
+            rows = conn.execute("SELECT version FROM schema_migrations").fetchall()
+            assert rows == []
+        assert conn.execute("SELECT to_regclass('public.clips')").fetchone()[0] is None
+
+
+def test_wrong_baseline_missing_unique_refuses_stamp(postgres_url):
+    import psycopg
+    from db.migrate import MigrationRefused, apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_wrong_base")
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute("CREATE TABLE teams (id int PRIMARY KEY, abbr text UNIQUE, city text, name text)")
+        conn.execute(
+            "CREATE TABLE players (id int PRIMARY KEY, bbref_id text UNIQUE, full_name text, last_name text)"
+        )
+        conn.execute(
+            """
+            CREATE TABLE games (
+              id int PRIMARY KEY, bbref_id text UNIQUE, season text,
+              game_date date, home_team_id int, away_team_id int,
+              s3_key text, duration_s numeric
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE clips (
+              id int PRIMARY KEY, game_id int, game_date date, play_index int,
+              period int, description text, action_type text, shot_subtype text,
+              outcome text, video_start_s numeric, video_end_s numeric
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE clip_players (
+              clip_id int, player_id int, role text, game_date date,
+              PRIMARY KEY (player_id, clip_id, role)
+            )
+            """
+        )
+    with pytest.raises(MigrationRefused, match="missing UNIQUE"):
+        apply_migrations(url)
+    with psycopg.connect(url) as conn:
+        assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0] is None
+
+
+def test_stamped_0001_without_matching_schema_refuses(postgres_url):
+    import psycopg
+    from db.migrate import MigrationRefused, apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_stale_stamp")
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute(
+            """
+            CREATE TABLE schema_migrations (
+              version text PRIMARY KEY,
+              applied_at timestamptz NOT NULL DEFAULT now()
+            )
+            """
+        )
+        conn.execute("INSERT INTO schema_migrations (version) VALUES ('0001_init')")
+        conn.execute("CREATE TABLE teams (id int PRIMARY KEY, abbr text)")
+    with pytest.raises(MigrationRefused, match="0001 schema mismatch"):
+        apply_migrations(url)
+
+
+def test_0003_failure_rolls_back_transaction(postgres_url, monkeypatch):
+    import psycopg
+    from db import migrate
+    from db.migrate import apply_migrations
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_txn_fail")
+    real = migrate._exec_file
+
+    def boom(conn, path):
+        if "0003" in path.name:
+            raise RuntimeError("injected 0003 failure")
+        return real(conn, path)
+
+    monkeypatch.setattr(migrate, "_exec_file", boom)
+    with pytest.raises(RuntimeError, match="injected 0003 failure"):
+        apply_migrations(url)
+    with psycopg.connect(url) as conn:
+        assert conn.execute("SELECT to_regclass('public.teams')").fetchone()[0] is None
+        stamped = conn.execute("SELECT to_regclass('public.schema_migrations')").fetchone()[0]
+        if stamped:
+            assert conn.execute("SELECT count(*) FROM schema_migrations").fetchone()[0] == 0

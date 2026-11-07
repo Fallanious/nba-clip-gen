@@ -52,6 +52,24 @@ ALTER TABLE games
     )
   );
 
+-- Fixture keys are never live objects, even if a later runner is enabled.
+UPDATE games
+SET is_fictional = true
+WHERE s3_key LIKE 'fixtures/%' AND is_fictional = false;
+
+ALTER TABLE games DROP CONSTRAINT IF EXISTS games_fictional_key_prefix;
+ALTER TABLE games
+  ADD CONSTRAINT games_fictional_key_prefix CHECK (
+    (
+      is_fictional
+      AND (s3_key IS NULL OR s3_key LIKE 'fixtures/%')
+    )
+    OR (
+      (NOT is_fictional)
+      AND (s3_key IS NULL OR s3_key NOT LIKE 'fixtures/%')
+    )
+  );
+
 ALTER TABLE clips
   ADD COLUMN IF NOT EXISTS timing_provenance timing_provenance NOT NULL DEFAULT 'none',
   ADD COLUMN IF NOT EXISTS matcher_run_id text,
@@ -79,8 +97,8 @@ WHERE timing_provenance = 'none'
   AND video_start_s IS NOT NULL
   AND video_end_s IS NOT NULL;
 
--- NaN rejected because NaN = NaN is not true.
--- Infinity rejected by the 1e9 cap (seconds; ~31 years, not a clip window).
+-- NaN: NaN = NaN is not true. ±Inf: compare to Infinity literals.
+-- No minimum clip length. Tiny positive (end > start) is allowed.
 -- App still rejects bool/str before bind. See src/db/sql/POLICY.md.
 ALTER TABLE clips
   ADD CONSTRAINT clips_video_finite_window CHECK (
@@ -90,10 +108,12 @@ ALTER TABLE clips
       AND video_end_s IS NOT NULL
       AND video_start_s = video_start_s
       AND video_end_s = video_end_s
+      AND video_start_s <> 'Infinity'::numeric
+      AND video_start_s <> '-Infinity'::numeric
+      AND video_end_s <> 'Infinity'::numeric
+      AND video_end_s <> '-Infinity'::numeric
       AND video_start_s >= 0
-      AND video_start_s < 1e9
       AND video_end_s > video_start_s
-      AND video_end_s < 1e9
     )
   );
 
@@ -140,12 +160,17 @@ SELECT
     AND c.video_end_s = c.video_end_s
     AND c.video_start_s >= 0
     AND c.video_end_s > c.video_start_s
+    AND c.video_start_s <> 'Infinity'::numeric
+    AND c.video_end_s <> 'Infinity'::numeric
+    AND c.video_start_s <> '-Infinity'::numeric
+    AND c.video_end_s <> '-Infinity'::numeric
     AND g.duration_s IS NOT NULL
     AND g.duration_s = g.duration_s
+    AND g.duration_s <> 'Infinity'::numeric
+    AND g.duration_s <> '-Infinity'::numeric
     AND g.duration_s > 0
     AND c.video_start_s < g.duration_s
     AND c.video_end_s <= g.duration_s
-    AND (c.video_end_s - c.video_start_s) >= 0.5
     AND (c.video_end_s - c.video_start_s) <= 120
   ) AS can_create,
   CASE
@@ -170,12 +195,17 @@ SELECT
       AND c.video_end_s = c.video_end_s
       AND c.video_start_s >= 0
       AND c.video_end_s > c.video_start_s
+      AND c.video_start_s <> 'Infinity'::numeric
+      AND c.video_end_s <> 'Infinity'::numeric
+      AND c.video_start_s <> '-Infinity'::numeric
+      AND c.video_end_s <> '-Infinity'::numeric
       AND g.duration_s IS NOT NULL
       AND g.duration_s = g.duration_s
+      AND g.duration_s <> 'Infinity'::numeric
+      AND g.duration_s <> '-Infinity'::numeric
       AND g.duration_s > 0
       AND c.video_start_s < g.duration_s
       AND c.video_end_s <= g.duration_s
-      AND (c.video_end_s - c.video_start_s) >= 0.5
       AND (c.video_end_s - c.video_start_s) <= 120
     ) THEN 'video_timing_unavailable'
     ELSE NULL

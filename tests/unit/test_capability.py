@@ -9,10 +9,10 @@ import pytest
 
 sys.path.insert(0, "src")
 
-from db.bounds import CLIP_MAX_DURATION_S, CLIP_MIN_DURATION_S
+from db.bounds import CLIP_MAX_DURATION_S
 from db.capability import (
     CapabilityTypeError,
-    evaluate_capability,
+    live_media_access_permitted,
     parse_optional_seconds,
     public_capability,
 )
@@ -122,7 +122,6 @@ def test_missing_trusted_duration():
         (9, 3),
         (0, 0),
         (40, 49),
-        (0, Decimal("0.4")),
         (0, Decimal("121")),
     ],
 )
@@ -132,13 +131,19 @@ def test_invalid_windows(start, end):
     assert out["reason"] == "video_timing_unavailable"
 
 
-def test_ceiling_and_floor_constants_are_the_security_policy():
-    assert CLIP_MIN_DURATION_S == Decimal("0.5")
+def test_tiny_positive_gap_is_eligible():
+    out = public_capability(_eligible(video_start_s=0, video_end_s=Decimal("0.1")))
+    assert out == {"can_create": True, "reason": None}
+
+
+def test_ceiling_constant_is_the_security_policy():
     assert CLIP_MAX_DURATION_S == Decimal("120")
-    assert public_capability(_eligible(video_start_s=0, video_end_s=Decimal("0.5")))["can_create"] is True
     assert public_capability(
         _eligible(duration_s=Decimal("200"), video_start_s=0, video_end_s=Decimal("120"))
     )["can_create"] is True
+    assert public_capability(
+        _eligible(duration_s=Decimal("200"), video_start_s=0, video_end_s=Decimal("120.1"))
+    )["can_create"] is False
 
 
 @pytest.mark.parametrize("value", [True, False, "1.5", "0", object()])
@@ -232,6 +237,21 @@ def test_mapper_rejects_bool_offsets_as_unattested():
     )
     assert rows[0]["timing_provenance"] == "none"
     assert rows[0]["video_start_s"] is None
+
+
+def test_fictional_fixture_never_grants_live_media():
+    row = _eligible(is_fictional=True)
+    assert public_capability(row)["can_create"] is True
+    assert live_media_access_permitted(row) is False
+    assert live_media_access_permitted(_eligible()) is False
+    live = _eligible(
+        s3_key="games/fic000001FIC.mkv",
+        is_fictional=False,
+    )
+    assert live_media_access_permitted(live) is True
+    assert live_media_access_permitted(
+        _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=True)
+    ) is False
 
 
 def test_capability_module_does_not_import_boto3_or_jobs():

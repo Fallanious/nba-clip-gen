@@ -3,6 +3,5 @@
 from decimal import Decimal
 
 # Documented in src/db/sql/POLICY.md. SQL VIEW play_capability must match.
-CLIP_MIN_DURATION_S = Decimal("0.5")
+# No minimum clip length: any tiny positive window (end > start) is allowed.
 CLIP_MAX_DURATION_S = Decimal("120")
-VIDEO_SECONDS_ABS_MAX = Decimal("1e9")

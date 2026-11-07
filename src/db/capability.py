@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal
 from math import isfinite
 from typing import Any, Mapping, Optional
 
-from db.bounds import CLIP_MAX_DURATION_S, CLIP_MIN_DURATION_S, VIDEO_SECONDS_ABS_MAX
+from db.bounds import CLIP_MAX_DURATION_S
 
 REASON_FOOTAGE = "footage_not_matched"
 REASON_TIMING = "video_timing_unavailable"
@@ -15,6 +15,8 @@ PROVENANCE_CLOCK = "game_clock_derived"
 PROVENANCE_LEGACY = "unvalidated_numeric"
 PROVENANCE_ATTESTED = "matcher_attested"
 SOURCE_ORIGINAL = "original_private"
+FIXTURE_PREFIX = "fixtures/"
+LIVE_OBJECT_PREFIXES = ("games/", "clips/")
 
 CAPABILITY_PUBLIC_FIELDS = frozenset({"can_create", "reason"})
 ALLOWED_REASONS = frozenset({REASON_FOOTAGE, REASON_TIMING})
@@ -65,8 +67,32 @@ def original_private_source_ok(row: Mapping[str, Any]) -> bool:
     return True
 
 
+def live_media_access_permitted(row: Mapping[str, Any]) -> bool:
+    """Live bucket/object access. Independent of can_create. Default denied.
+
+    Fictional rows and fixtures/ keys never grant live media, even if a later
+    fixture runner is enabled and timing eligibility is true.
+    """
+    if row.get("is_fictional") is True:
+        return False
+    key = row.get("s3_key")
+    if not isinstance(key, str) or not key.strip():
+        return False
+    if key.startswith(FIXTURE_PREFIX):
+        return False
+    lowered = key.lower()
+    if lowered.startswith("http://") or lowered.startswith("https://") or lowered.startswith("s3://"):
+        return False
+    if any(key.startswith(prefix) for prefix in LIVE_OBJECT_PREFIXES):
+        return original_private_source_ok(row)
+    return False
+
+
 def evaluate_capability(row: Mapping[str, Any]) -> dict[str, Any]:
-    """Return public capability. Ignores game_clock. Never echoes refs."""
+    """Return public capability. Ignores game_clock. Never echoes refs.
+
+    can_create is timing/source-identity eligibility, not live media access.
+    """
     if not original_private_source_ok(row):
         return {"can_create": False, "reason": REASON_FOOTAGE}
 
@@ -94,14 +120,13 @@ def evaluate_capability(row: Mapping[str, Any]) -> dict[str, Any]:
         return {"can_create": False, "reason": REASON_TIMING}
     if duration <= 0:
         return {"can_create": False, "reason": REASON_TIMING}
-    if start < 0 or start >= VIDEO_SECONDS_ABS_MAX:
+    if start < 0:
         return {"can_create": False, "reason": REASON_TIMING}
-    if end <= start or end >= VIDEO_SECONDS_ABS_MAX:
+    if end <= start:
         return {"can_create": False, "reason": REASON_TIMING}
     if start >= duration or end > duration:
         return {"can_create": False, "reason": REASON_TIMING}
-    window = end - start
-    if window < CLIP_MIN_DURATION_S or window > CLIP_MAX_DURATION_S:
+    if (end - start) > CLIP_MAX_DURATION_S:
         return {"can_create": False, "reason": REASON_TIMING}
 
     return {"can_create": True, "reason": None}

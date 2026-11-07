@@ -2,6 +2,7 @@
 
 Units and types, bound policy, provenance, and rollback.
 Fictional fixtures only. No live Neon. No media access.
+This slice is schema, capability, migrations, and tests only.
 
 ## Units and types
 
@@ -23,22 +24,19 @@ These limits are the documented Security policy. Values outside them are
 **denied**, not clamped.
 
 1. Finite: not NULL (when attested), not NaN, not ±Inf.
-2. Order: `0 <= start < end`.
+   SQL uses `x = x` (rejects NaN) and `x <> 'Infinity'` / `x <> '-Infinity'`.
+   There is no `1e9` storage cap.
+2. Order: `0 <= start < end`. Tiny positive windows are valid. There is **no**
+   minimum clip length.
 3. Zero start is valid (`start = 0` is allowed).
 4. Fractional seconds are valid (`numeric`, not integer).
 5. Trusted duration: `end <= games.duration_s` and `start < games.duration_s`.
    If `duration_s` is NULL, timing is unavailable. Do not guess.
-6. Clip-length ceiling: `end - start <= 120` seconds.
-7. Clip-length floor: `end - start >= 0.5` seconds.
-8. Finite-storage cap: `start < 1e9` and `end < 1e9` seconds.
-   PostgreSQL `numeric` can store ±Inf. This cap rejects Inf. It is **not**
-   a clip-length policy. Clip length stays 0.5–120s against trusted duration.
+6. Clip-length ceiling: `end - start <= 120` seconds (Security).
 
 Constants (must match SQL VIEW, CHECKs, and Python):
 
-- `CLIP_MIN_DURATION_S = 0.5`
 - `CLIP_MAX_DURATION_S = 120`
-- `VIDEO_SECONDS_ABS_MAX = 1e9` (Inf rejection only)
 
 ## Source identity
 
@@ -51,10 +49,26 @@ Eligibility requires an **original private** object reference:
 `public` and `derived` kinds never substitute. A public URL column is not
 consulted because it is not modeled.
 
+## Fixtures never grant live media
+
 Fictional seeds use prefix `fixtures/` and `games.is_fictional = true`.
-Those rows may be eligible in the VIEW so schema/API/UI can develop.
-They **must not** be used against a real bucket. Prefix `games/` and `clips/`
-are reserved for live objects and are forbidden in seed files.
+`can_create` may be true so schema/UI can exercise eligibility. That is **not**
+live media access.
+
+`live_media_access_permitted` is independent of `can_create` and is false when:
+
+- `is_fictional` is true, or
+- `s3_key` starts with `fixtures/`, or
+- the key is a URL, or
+- the key is not a live `games/` or `clips/` object with original-private identity
+
+A later fixture runner, if enabled, must call that helper before any bucket
+access. Fixture keys cannot be rewritten onto live prefixes. CHECK
+`games_fictional_key_prefix` rejects `fixtures/` on non-fictional rows and
+rejects live prefixes on fictional rows. Seed files that contain `games/` or
+`clips/` object literals are refused.
+
+Prefix `games/` and `clips/` are reserved for live objects.
 
 ## Provenance (`timing_provenance`)
 
@@ -84,9 +98,9 @@ Do not keep serving a window that belonged to a different file.
 Allowed reason strings: `footage_not_matched`, `video_timing_unavailable`.
 Never echo keys, URLs, versions, offsets, or internal refs.
 
-`can_create` is **not a grant**. Browse may show ineligible rows.
-Create/status/playback must revalidate and must pass fail-closed authz.
-This slice does not register those routes.
+`can_create` is **not a grant** and **not live media access**.
+Browse may show ineligible rows. This slice does not register create, status,
+or playback routes.
 
 ## Reason precedence (first match)
 
@@ -98,15 +112,19 @@ This slice does not register those routes.
 
 Game clock does not rescue missing timing and does not alter a valid result.
 
-## Browse authorization
+## Auth wiring (this slice)
 
-No anonymous capability API in this slice (no HTTP). Future metadata GET
-must `require_user` then `authorize_player` **before** returning rows,
-including ineligible ones. ETag/304 must not skip authz.
+This slice does **not** change `src/auth.py` or `src/authz.py`.
+`require_user` remains the main no-op. `authorize_player` / `authorize_clip`
+remain no-ops. `before_request_hook` is **not** registered in `create_app`.
+No existing route (`/api/generate`, jobs, videos, timestamps, actions) calls
+these helpers. Cross-user isolation is **not** implied and is not implemented.
+Current-user identity/session/authorization is an open decision; do not invent
+ownership.
 
-`authorize_*` does **not** invent current-user identity or ownership.
-There is no owner column. Cross-user isolation is an open blocker for HTTP
-slices. This slice only fails closed on missing user / empty id / empty scopes.
+Future metadata GET must `require_user` then `authorize_player` **before**
+returning rows, including ineligible ones. ETag/304 must not skip authz.
+That work is a later slice.
 
 ## Later persistence (not this slice)
 
@@ -136,6 +154,7 @@ Persist must:
    the original.
 6. Use dedicated files under `src/db/sql/queries/` (later slice). Isolated
    local/dev fixtures only. No production import.
+7. Call `live_media_access_permitted` before any object access.
 
 `match_play_timestamps.py` today writes JSON and uses condensed-list
 `play_index`. Persist must map to the **stored** PBP `play_index`, not that
@@ -149,14 +168,24 @@ are enough to develop and test persist.
 
 ## Migration vs main vs Neon
 
-Git `main` has no `src/db`. Neon `dev` already has 0001-equivalent tables
-(empty games/clips) and no `schema_migrations`.
+Git `main` has no `src/db`. Neon `dev` already has a **superset** of 0001
+tables (including search helpers this slice does not recreate) and no
+`schema_migrations`.
 
-- Empty local test DB: apply `0001_init.sql` then `0003_on_demand.sql`.
-- Existing Neon `dev` (not this pass): stamp 0001 if `public.teams` exists,
-  then apply 0003 only. **Do not run against production.**
-- 0003 keeps fictional/legacy numeric rows and makes them unavailable
-  (`unvalidated_numeric` or `none`). It does not create playable rows.
+The runner **never stamps 0001 merely because `public.teams` exists**.
+
+- Empty DB (none of the required 0001 tables): apply `0001_init.sql`, verify
+  required columns and uniques, stamp 0001, then apply 0003.
+- Complete matching 0001 (all required tables, columns, uniques; extras OK):
+  stamp 0001, then apply 0003.
+- Partial or mismatched 0001: refuse. Do not stamp. Do not apply 0001 on top.
+- Stamped version that does not match schema: refuse.
+- Partial 0003 objects: refuse.
+- Apply runs in one transaction. Failure rolls back stamps and DDL.
+
+0003 keeps fictional/legacy numeric rows and makes them unavailable
+(`unvalidated_numeric` or `none`). It does not create playable live rows.
+**Do not run against production.** This pass does not apply to Neon.
 
 ### Rollback / reapply (local/dev only)
 
@@ -177,16 +206,17 @@ This schema does not secure them. New generate/playback routes stay unwired.
 ## Ordered PR dependencies (do not skip)
 
 1. **Schema / capability** (this slice). VIEW, provenance, source identity,
-   fail-closed helpers. Isolated tests. No HTTP persist.
+   isolated tests. No HTTP persist. No runtime auth file changes.
 2. **Matcher persist.** Dedicated SQL. Wire `match_timestamps` to save
    validated VIDEO-relative offsets on the keys above. Duplicate-safe.
    Partial matches keep metadata. Local/dev fixtures only. Depends on 1.
-3. **Browse metadata HTTP.** `require_user` + `authorize_player` before rows.
-   No enqueue. Depends on 1. **Blocked** until current-user identity exists.
-4. **Clip jobs / generate HTTP.** Durable jobs keyed by play + source version
-   + offsets. Depends on 2 and on identity. Does not secure existing
-   `/api/generate`.
-5. **Playback URL.** Depends on 4 and identity.
-6. **Players-tab UI.** Browse depends on 3. Play depends on 5.
+3. **Identity / session / authorization model** (decision, not invented here).
+   Blocks HTTP slices.
+4. **Browse metadata HTTP.** `require_user` + `authorize_player` before rows.
+   No enqueue. Depends on 1 and 3.
+5. **Clip jobs / generate HTTP.** Durable jobs keyed by play + source version
+   + offsets. Depends on 2 and 3. Does not secure existing `/api/generate`.
+6. **Playback URL.** Depends on 5 and 3.
+7. **Players-tab UI.** Browse depends on 4. Play depends on 6.
 
 Requirements pin fix stays on hold (install blocker, not a pin change).

@@ -7,8 +7,7 @@ DROP TABLE IF EXISTS players;
 DROP TABLE IF EXISTS teams;
 DROP TABLE IF EXISTS schema_migrations;
 
-DROP FUNCTION IF EXISTS f_unaccent(text);
-DROP TYPE IF EXISTS clip_status;
 DROP TYPE IF EXISTS clip_role;
+DROP TYPE IF EXISTS clip_status;
 DROP TYPE IF EXISTS source_kind;
 DROP TYPE IF EXISTS timing_provenance;

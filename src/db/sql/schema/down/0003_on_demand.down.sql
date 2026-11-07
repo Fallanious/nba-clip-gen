@@ -34,6 +34,7 @@ ALTER TABLE clips
   DROP COLUMN IF EXISTS matcher_run_id,
   DROP COLUMN IF EXISTS timing_provenance;
 
+ALTER TABLE games DROP CONSTRAINT IF EXISTS games_fictional_key_prefix;
 ALTER TABLE games DROP CONSTRAINT IF EXISTS games_source_version_trim;
 ALTER TABLE games DROP CONSTRAINT IF EXISTS games_s3_key_not_url;
 ALTER TABLE games

@@ -7,8 +7,8 @@ VALUES
   ('QAF', 'QA', 'Fixtures')
 ON CONFLICT (abbr) DO NOTHING;
 
-INSERT INTO players (bbref_id, full_name, first_name, last_name, team_id, position, is_active)
-SELECT 'ficcas01', 'Casey Fixture', 'Casey', 'Fixture', t.id, 'C', true
+INSERT INTO players (bbref_id, full_name, first_name, last_name, team_id)
+SELECT 'ficcas01', 'Casey Fixture', 'Casey', 'Fixture', t.id
 FROM teams t WHERE t.abbr = 'FIC'
 ON CONFLICT (bbref_id) DO NOTHING;
 
