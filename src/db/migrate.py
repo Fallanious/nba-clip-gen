@@ -13,10 +13,17 @@ from db.sql_loader import SQL_ROOT
 SCHEMA_DIR = SQL_ROOT / "schema"
 VERSIONS = ("0001_init", "0003_on_demand")
 PRODUCTION_ENVS = frozenset({"prod", "production"})
+ALLOWED_ENVS = frozenset({"dev", "test"})
+NEON_TLS_MODES = frozenset({"require", "verify-ca", "verify-full"})
+# Stable lock id for apply_migrations. Not a secret.
+MIGRATION_ADVISORY_LOCK_KEY = 0x4E424143  # 'NBAC'
 _NEON_HOST = re.compile(
     r"^ep-[a-z0-9-]+(?:-pooler)?(?:\.c-[1-9][0-9]{0,3})?\.(?P<region>[a-z]{2}-[a-z0-9]+-\d+)\.aws\.neon\.tech$",
     re.ASCII | re.IGNORECASE,
 )
+_LOCAL_HOSTS = frozenset({"127.0.0.1", "localhost", "::1"})
+_NEON_QUERY_KEYS = frozenset({"sslmode"})
+_LOCAL_QUERY_KEYS = frozenset()
 
 
 class MigrationRefused(SystemExit):
@@ -27,13 +34,18 @@ def _app_env() -> str:
     return os.getenv("APP_ENV") or ""
 
 
+def _query_pairs(database_url: str) -> list[tuple[str, str]]:
+    parsed = urlparse(database_url)
+    return parse_qsl(parsed.query, keep_blank_values=True)
+
+
 def parse_host(database_url: str) -> str:
     if not database_url or not str(database_url).strip():
         raise MigrationRefused("migration refused: missing database target")
     parsed = urlparse(database_url)
     if parsed.scheme not in {"postgres", "postgresql"}:
         raise MigrationRefused("migration refused: unsupported scheme")
-    query = parse_qsl(parsed.query, keep_blank_values=True)
+    query = _query_pairs(database_url)
     keys = [k.lower() for k, _ in query]
     if len(keys) != len(set(keys)):
         raise MigrationRefused("migration refused: duplicate query parameter")
@@ -52,16 +64,32 @@ def assert_migration_target_allowed(database_url: str, app_env: str | None = Non
     env = (app_env if app_env is not None else _app_env()).lower()
     if env in PRODUCTION_ENVS:
         raise MigrationRefused("migration refused: production APP_ENV")
+    if env not in ALLOWED_ENVS:
+        raise MigrationRefused("migration refused: APP_ENV must be explicit dev or test")
     host = parse_host(database_url)
-    if host in {"127.0.0.1", "localhost", "::1"}:
+    query = _query_pairs(database_url)
+    keys = {k.lower() for k, _ in query}
+    if host in _LOCAL_HOSTS:
+        extra = keys - _LOCAL_QUERY_KEYS
+        if extra:
+            raise MigrationRefused("migration refused: unsupported local DSN query parameter")
         return
     if host.endswith(".neon.tech"):
+        extra = keys - _NEON_QUERY_KEYS
+        if extra:
+            raise MigrationRefused("migration refused: unsupported Neon DSN query parameter")
         expected = os.getenv("NEON_DEV_ENDPOINT_ID") or ""
         if not expected:
             raise MigrationRefused("migration refused: Neon host without NEON_DEV_ENDPOINT_ID")
-        match = _NEON_HOST.match(host)
+        match = _NEON_HOST.fullmatch(host)
         if not match:
             raise MigrationRefused("migration refused: unexpected Neon host")
+        sslmode = ""
+        for key, value in query:
+            if key.lower() == "sslmode":
+                sslmode = (value or "").lower()
+        if sslmode not in NEON_TLS_MODES:
+            raise MigrationRefused("migration refused: Neon host requires TLS sslmode")
         label = host.split(".")[0]
         endpoint = label[:-7] if label.endswith("-pooler") else label
         if endpoint != expected.lower():
@@ -169,6 +197,28 @@ REQUIRED_0003_COLUMNS = {
     }),
 }
 
+REQUIRED_0003_CONSTRAINTS = {
+    "games": frozenset({
+        "games_s3_key_not_url",
+        "games_source_version_trim",
+        "games_fictional_key_prefix",
+        "games_duration_finite_positive",
+    }),
+    "clips": frozenset({
+        "clips_video_finite_window",
+        "clips_none_requires_null_offsets",
+        "clips_attested_requires_binding",
+    }),
+}
+
+REQUIRED_0003_VIEWDEF_MARKERS = (
+    "nba_numeric_is_finite",
+    "duration_s",
+    "matcher_attested",
+    "fixtures/%",
+    "is_fictional",
+)
+
 
 def _applied(conn) -> set[str]:
     with conn.cursor() as cur:
@@ -225,6 +275,33 @@ def _unique_column_sets(conn, table: str) -> set[tuple[str, ...]]:
     return found
 
 
+def _constraint_names(conn, table: str) -> set[str]:
+    rows = conn.execute(
+        """
+        SELECT c.conname
+        FROM pg_constraint c
+        JOIN pg_class t ON t.oid = c.conrelid
+        JOIN pg_namespace n ON n.oid = t.relnamespace
+        WHERE n.nspname = 'public'
+          AND t.relname = %s
+          AND c.contype = 'c'
+        """,
+        (table,),
+    ).fetchall()
+    return {row[0] for row in rows}
+
+
+def _play_capability_viewdef(conn) -> str:
+    if not _table_exists(conn, "play_capability"):
+        raise MigrationRefused("migration refused: 0003 schema mismatch: play_capability missing")
+    row = conn.execute(
+        "SELECT pg_get_viewdef('public.play_capability'::regclass, true)"
+    ).fetchone()
+    if row is None or not row[0]:
+        raise MigrationRefused("migration refused: 0003 schema mismatch: empty play_capability viewdef")
+    return row[0]
+
+
 def _present_0001_tables(conn) -> set[str]:
     return {name for name in REQUIRED_0001_COLUMNS if _table_exists(conn, name)}
 
@@ -268,11 +345,37 @@ def _0003_flags(conn) -> dict[str, bool]:
     }
 
 
-def _verify_0003(conn) -> None:
+def _0003_definition_mismatch_reasons(conn) -> list[str]:
+    reasons: list[str] = []
     flags = _0003_flags(conn)
     if not all(flags.values()):
+        reasons.append("0003 flags=" + str(flags))
+        return reasons
+    for table, names in REQUIRED_0003_CONSTRAINTS.items():
+        have = _constraint_names(conn, table)
+        missing = names - have
+        if missing:
+            reasons.append(f"{table} missing constraints {sorted(missing)}")
+    fn = conn.execute(
+        """
+        SELECT to_regprocedure('public.nba_numeric_is_finite(numeric)')
+        """
+    ).fetchone()[0]
+    if fn is None:
+        reasons.append("nba_numeric_is_finite missing")
+    viewdef = _play_capability_viewdef(conn)
+    lowered = viewdef.lower()
+    for marker in REQUIRED_0003_VIEWDEF_MARKERS:
+        if marker.lower() not in lowered:
+            reasons.append(f"play_capability viewdef missing {marker}")
+    return reasons
+
+
+def _verify_0003(conn) -> None:
+    reasons = _0003_definition_mismatch_reasons(conn)
+    if reasons:
         raise MigrationRefused(
-            "migration refused: 0003 schema mismatch: " + str(flags)
+            "migration refused: 0003 schema mismatch: " + "; ".join(reasons)
         )
 
 
@@ -296,6 +399,10 @@ def apply_migrations(database_url: str) -> list[str]:
     with _connect(database_url) as conn:
         conn.autocommit = False
         try:
+            conn.execute(
+                "SELECT pg_advisory_xact_lock(%s)",
+                (MIGRATION_ADVISORY_LOCK_KEY,),
+            )
             conn.execute(
                 """
                 CREATE TABLE IF NOT EXISTS schema_migrations (
@@ -329,21 +436,13 @@ def apply_migrations(database_url: str) -> list[str]:
             if "0003_on_demand" in have:
                 _verify_0003(conn)
             else:
-                flags = _0003_flags(conn)
-                if any(flags.values()) and not all(flags.values()):
-                    raise MigrationRefused(
-                        "migration refused: partial 0003 schema; will not stamp: "
-                        + str(flags)
-                    )
-                if all(flags.values()):
-                    _verify_0003(conn)
-                    _stamp(conn, "0003_on_demand")
-                    applied_now.append("0003_on_demand")
-                else:
-                    _exec_file(conn, SCHEMA_DIR / "0003_on_demand.sql")
-                    _verify_0003(conn)
-                    _stamp(conn, "0003_on_demand")
-                    applied_now.append("0003_on_demand")
+                # Always execute idempotent 0003 SQL when unstamped. Columns or
+                # a replaced/permissive view are not a stamp. Verify named
+                # constraints and view definition after apply.
+                _exec_file(conn, SCHEMA_DIR / "0003_on_demand.sql")
+                _verify_0003(conn)
+                _stamp(conn, "0003_on_demand")
+                applied_now.append("0003_on_demand")
 
             conn.commit()
         except Exception:
@@ -361,10 +460,19 @@ def apply_seed(database_url: str, name: str = "dev_fictional_capability") -> Non
     if re.search(r"games/[A-Za-z0-9]", text) or re.search(r"clips/[A-Za-z0-9]", text):
         raise MigrationRefused("migration refused: seed uses live object prefix")
     with _connect(database_url) as conn:
-        with conn.cursor() as cur:
-            for stmt in _split_sql(text):
-                cur.execute(stmt)
-        conn.commit()
+        conn.autocommit = False
+        try:
+            conn.execute(
+                "SELECT pg_advisory_xact_lock(%s)",
+                (MIGRATION_ADVISORY_LOCK_KEY,),
+            )
+            with conn.cursor() as cur:
+                for stmt in _split_sql(text):
+                    cur.execute(stmt)
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
 
 
 def main(argv: list[str] | None = None) -> int:
