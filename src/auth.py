@@ -2,7 +2,9 @@
 
 from functools import wraps
 from flask import g, request
-from typing import Optional, Any
+from typing import Any
+
+from errors import ApiError
 
 
 class User:
@@ -40,12 +42,16 @@ def before_request_hook():
 
 
 def require_user(f):
-    """Decorator to require authentication (no-op for now)."""
+    """Decorator to require authentication. Fail closed. Does not invent a user."""
     @wraps(f)
     def decorated(*args, **kwargs):
-        if not hasattr(g, 'user') or g.user is None:
-            # In the future, return 401 here
-            pass
+        user = getattr(g, "user", None)
+        if user is None or not getattr(user, "id", None):
+            raise ApiError(
+                code="unauthenticated",
+                message="Authentication required",
+                status=401,
+            )
         return f(*args, **kwargs)
     return decorated
 
