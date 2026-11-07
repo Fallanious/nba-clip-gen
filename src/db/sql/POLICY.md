@@ -279,11 +279,13 @@ The runner **never stamps 0001 merely because `public.teams` exists**.
   stamp 0001, then apply 0003.
 - Partial or mismatched 0001: refuse. Do not stamp. Do not apply 0001 on top.
 - Stamped version that does not match schema: refuse.
-- Unstamped 0003: **always execute** idempotent `0003_on_demand.sql`. Preexisting
-  columns, a permissive/replaced `play_capability` view, or missing named
-  constraints are **not** a stamp. After apply, verify named CHECKs, the
-  `nba_numeric_is_finite` function, and view definition markers, or refuse.
-- Stamped 0003 whose constraints or viewdef drifted: refuse. Do not restamp.
+- 0003: **always re-execute** idempotent `0003_on_demand.sql` under the
+  advisory lock, whether or not it is already stamped. Same-name
+  `CHECK (true)`, a finite helper that returns true, or a view that only
+  embeds marker literals are not sufficient. After apply, compare
+  `pg_get_constraintdef` / `pg_get_functiondef` / `pg_get_viewdef` against
+  required tokens (function call `nba_numeric_is_finite(`, NaN/Inf
+  exclusion, non-constant `can_create`) or refuse.
 - Apply runs in one transaction under `pg_advisory_xact_lock`. Failure rolls
   back stamps and DDL. Dirty baselines stay as they were.
 
