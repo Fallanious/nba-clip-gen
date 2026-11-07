@@ -112,19 +112,37 @@ or playback routes.
 
 Game clock does not rescue missing timing and does not alter a valid result.
 
-## Auth wiring (this slice)
+## Access policy (shared catalog)
+
+Decided: once a caller is a **genuinely signed-in** user, they share the **full
+catalog**. They may generate and play **eligible** clips. There are **no**
+user- or team-ownership filters. Do not add `owner_id` / `user_id` / org ACL
+columns. Do not fabricate owner IDs. Do not implement a per-user data model.
+
+Still required (shared catalog is not a bypass):
+
+- Anonymous access remains denied. Signed-in ≠ public.
+- Identity provider and session are **undecided**. No new HTTP is exposed
+  until genuine validated identity is wired.
+- Capability checks still apply (`can_create` / reasons). Ineligible rows stay
+  browsable and are not playable/generatable.
+- Published / deleted / resource visibility still applies when those states
+  exist. A shared catalog does not resurrect deleted rows or skip unpublished
+  hiding.
+- S3 source keys, versions, and URLs stay private. Shared catalog does not
+  expose original footage locators.
 
 This slice does **not** change `src/auth.py` or `src/authz.py`.
 `require_user` remains the main no-op. `authorize_player` / `authorize_clip`
 remain no-ops. `before_request_hook` is **not** registered in `create_app`.
 No existing route (`/api/generate`, jobs, videos, timestamps, actions) calls
-these helpers. Cross-user isolation is **not** implied and is not implemented.
-Current-user identity/session/authorization is an open decision; do not invent
-ownership.
+these helpers.
 
-Future metadata GET must `require_user` then `authorize_player` **before**
-returning rows, including ineligible ones. ETag/304 must not skip authz.
-That work is a later slice.
+When HTTP is later wired, `require_user` means “validated signed-in identity”,
+not “owns this player”. `authorize_*` must not add per-user row filters.
+ETag/304 must not skip the signed-in check.
+
+Offline matcher persistence is independent of this access policy and of HTTP.
 
 ## Later persistence (not this slice)
 
@@ -210,13 +228,15 @@ This schema does not secure them. New generate/playback routes stay unwired.
 2. **Matcher persist.** Dedicated SQL. Wire `match_timestamps` to save
    validated VIDEO-relative offsets on the keys above. Duplicate-safe.
    Partial matches keep metadata. Local/dev fixtures only. Depends on 1.
-3. **Identity / session / authorization model** (decision, not invented here).
-   Blocks HTTP slices.
-4. **Browse metadata HTTP.** `require_user` + `authorize_player` before rows.
-   No enqueue. Depends on 1 and 3.
+3. **Identity provider / session** (undecided). Blocks all new HTTP. Not an
+   ownership model. Signed-in users then share the full catalog.
+4. **Browse metadata HTTP.** Signed-in required; shared catalog; capability
+   and visibility preserved; no S3 locators. Depends on 1 and 3.
 5. **Clip jobs / generate HTTP.** Durable jobs keyed by play + source version
-   + offsets. Depends on 2 and 3. Does not secure existing `/api/generate`.
-6. **Playback URL.** Depends on 5 and 3.
+   + offsets. Any signed-in user may enqueue eligible plays. Depends on 2 and
+   3. Does not secure existing `/api/generate`.
+6. **Playback URL.** Eligible clips only; signed-in; no source key leak.
+   Depends on 5 and 3.
 7. **Players-tab UI.** Browse depends on 4. Play depends on 6.
 
 Requirements pin fix stays on hold (install blocker, not a pin change).

@@ -447,6 +447,25 @@ def test_policy_doc_present():
     assert "UNIQUE (clips.game_id, clips.play_index)" in text
     assert "Later persistence" in text
     assert "never stamps 0001 merely because" in text
+    assert "full catalog" in text
+    assert "user- or team-ownership filters" in text
+    assert "owner_id" in text
+    assert "Anonymous access remains denied" in text
+
+
+def test_schema_has_no_owner_or_user_acl_columns(conn):
+    rows = conn.execute(
+        """
+        SELECT table_name, column_name
+        FROM information_schema.columns
+        WHERE table_schema = 'public'
+          AND table_name IN ('teams', 'players', 'games', 'clips', 'clip_players')
+          AND column_name IN (
+            'owner_id', 'user_id', 'created_by', 'org_id', 'acl', 'owner'
+          )
+        """
+    ).fetchall()
+    assert rows == []
 
 
 def _fresh_db(postgres_url, name):
