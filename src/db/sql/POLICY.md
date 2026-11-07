@@ -24,14 +24,18 @@ These limits are the documented Security policy. Values outside them are
 **denied**, not clamped.
 
 1. Finite: not NULL (when attested), not NaN, not ±Inf.
-   SQL uses `x = x` (rejects NaN) and `x <> 'Infinity'` / `x <> '-Infinity'`.
-   There is no `1e9` storage cap.
+   PostgreSQL `numeric` NaN **equals itself** (`NaN = NaN` is TRUE) and sorts
+   **above** every finite value, including Infinity. Do **not** use `x = x` to
+   reject NaN. SQL excludes `'NaN'::numeric`, `'Infinity'::numeric`, and
+   `'-Infinity'::numeric` via `nba_numeric_is_finite`. Trusted duration must
+   also be **positive**. There is no `1e9` storage cap.
 2. Order: `0 <= start < end`. Tiny positive windows are valid. There is **no**
    minimum clip length.
 3. Zero start is valid (`start = 0` is allowed).
 4. Fractional seconds are valid (`numeric`, not integer).
-5. Trusted duration: `end <= games.duration_s` and `start < games.duration_s`.
-   If `duration_s` is NULL, timing is unavailable. Do not guess.
+5. Trusted duration: positive finite `games.duration_s` from a probe of the
+   original private object. `end <= duration_s` and `start < duration_s`.
+   NULL, NaN, ±Inf, zero, and negative duration are unavailable. Do not guess.
 6. Clip-length ceiling: `end - start <= 120` seconds (Security).
 
 Constants (must match SQL VIEW, CHECKs, and Python):
@@ -51,13 +55,16 @@ consulted because it is not modeled.
 
 ## Fixtures never grant live media
 
-Fictional seeds use prefix `fixtures/` and `games.is_fictional = true`.
-`can_create` may be true so schema/UI can exercise eligibility. That is **not**
+Fictional `can_create` true is a **fixture-only** case: `is_fictional is True`
+and `s3_key` starts with `fixtures/`. Future live S3 (`games/` / `clips/`
+objects) must **always deny** fixture keys. `can_create` may be true on
+fictional fixtures so schema/UI can exercise eligibility. That is **not**
 live media access.
 
-`live_media_access_permitted` is independent of `can_create` and is false when:
+`live_media_access_permitted` is independent of `can_create` and requires
+`is_fictional is False` **exactly**. Unknown, missing, and bool-ish values
+deny. It is also false when:
 
-- `is_fictional` is true, or
 - `s3_key` starts with `fixtures/`, or
 - the key is a URL, or
 - the key is not a live `games/` or `clips/` object with original-private identity
@@ -101,6 +108,14 @@ Never echo keys, URLs, versions, offsets, or internal refs.
 `can_create` is **not a grant** and **not live media access**.
 Browse may show ineligible rows. This slice does not register create, status,
 or playback routes.
+
+**Published / deleted predicates are missing** from capability VIEW SQL and
+browse SQL. They stay **unwired**. Later HTTP must explicitly enforce
+published AND not deleted. Do not treat this slice as that gate.
+
+Browse serializers use a **structured public-field allowlist**. Extra keys
+are rejected. Prefix/value scanning is an incomplete canary, **not** secrecy,
+and does not make allowlisted play text a URL filter.
 
 ## Reason precedence (first match)
 
@@ -220,6 +235,11 @@ Persist must:
 4. Partial / unmatched / invalid matcher rows keep PBP metadata. Offsets stay
    NULL. Provenance stays `none` unless a prior verified mapping is kept.
    Never guess from game clock or neighbors.
+   Offline merge joins on stored PBP `play_index` only (no array-position
+   fallback). Duplicate, missing, non-integer, and bool indices are refused.
+   Reversed, negative, and `> CLIP_MAX_DURATION_S` windows stay none/NULL.
+   Attested rows require canonical nonempty matcher run id, version, and
+   matched source version captured at analysis time.
 5. `public` / `derived` refs never substitute. Do not persist a public URL as
    the original.
 6. Dedicated SQL under `src/db/sql/queries/persist/`. Isolated local/dev
@@ -246,8 +266,13 @@ The runner **never stamps 0001 merely because `public.teams` exists**.
   stamp 0001, then apply 0003.
 - Partial or mismatched 0001: refuse. Do not stamp. Do not apply 0001 on top.
 - Stamped version that does not match schema: refuse.
-- Partial 0003 objects: refuse.
-- Apply runs in one transaction. Failure rolls back stamps and DDL.
+- Unstamped 0003: **always execute** idempotent `0003_on_demand.sql`. Preexisting
+  columns, a permissive/replaced `play_capability` view, or missing named
+  constraints are **not** a stamp. After apply, verify named CHECKs, the
+  `nba_numeric_is_finite` function, and view definition markers, or refuse.
+- Stamped 0003 whose constraints or viewdef drifted: refuse. Do not restamp.
+- Apply runs in one transaction under `pg_advisory_xact_lock`. Failure rolls
+  back stamps and DDL. Dirty baselines stay as they were.
 
 0003 keeps fictional/legacy numeric rows and makes them unavailable
 (`unvalidated_numeric` or `none`). It does not create playable live rows.
@@ -263,8 +288,15 @@ psql "$LOCAL_DSN" -v ON_ERROR_STOP=1 -f src/db/sql/schema/down/0003_on_demand.do
 python -m db.migrate   # from src/, after DATABASE_URL points at the local DB
 ```
 
-Runner refuses `APP_ENV` production/prod and Neon hosts that are not the
-guarded local/test or documented dev endpoint. It never prints `DATABASE_URL`.
+Runner requires **explicit** `APP_ENV` `dev` or `test` (empty is refused).
+It refuses production/prod. Local hosts are `127.0.0.1` / `localhost` / `::1`
+with no DSN query override. Neon hosts must `fullmatch` the documented
+endpoint pattern, match `NEON_DEV_ENDPOINT_ID`, and use TLS `sslmode` in
+`require` / `verify-ca` / `verify-full`. It never prints `DATABASE_URL`.
+
+0003 down SQL is a single `BEGIN`/`COMMIT` transaction. **Preflight** NULL
+offsets **before** dropping the view or constraints. A failed down leaves
+view, constraints, stamp, and data in place.
 
 Existing `/api/generate` and local clip routes on main are **out of scope**.
 This schema does not secure them. New generate/playback routes stay unwired.

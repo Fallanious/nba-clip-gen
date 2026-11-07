@@ -15,6 +15,23 @@ def test_local_hosts_allowed_for_non_prod(monkeypatch):
     assert_migration_target_allowed("postgresql://nba@localhost:5432/nba_clip_gen_test")
 
 
+def test_refuses_empty_or_unknown_app_env(monkeypatch):
+    monkeypatch.delenv("APP_ENV", raising=False)
+    with pytest.raises(MigrationRefused, match="explicit dev or test"):
+        assert_migration_target_allowed("postgresql://nba@127.0.0.1:5432/x")
+    monkeypatch.setenv("APP_ENV", "staging")
+    with pytest.raises(MigrationRefused, match="explicit dev or test"):
+        assert_migration_target_allowed("postgresql://nba@127.0.0.1:5432/x")
+
+
+def test_refuses_local_dsn_query_overrides(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "test")
+    with pytest.raises(MigrationRefused, match="unsupported local DSN"):
+        assert_migration_target_allowed(
+            "postgresql://nba@127.0.0.1:5432/x?sslmode=disable"
+        )
+
+
 def test_refuses_production_env(monkeypatch):
     monkeypatch.setenv("APP_ENV", "production")
     with pytest.raises(MigrationRefused, match="production"):
@@ -36,6 +53,24 @@ def test_refuses_neon_endpoint_mismatch(monkeypatch):
     with pytest.raises(MigrationRefused, match="mismatch"):
         assert_migration_target_allowed(
             "postgresql://u@ep-other-host-xxxx.us-east-2.aws.neon.tech/neondb?sslmode=require"
+        )
+
+
+def test_refuses_neon_without_tls_sslmode(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "dev")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-odd-smoke-b465tvf8")
+    with pytest.raises(MigrationRefused, match="TLS sslmode"):
+        assert_migration_target_allowed(
+            "postgresql://u@ep-odd-smoke-b465tvf8.us-east-2.aws.neon.tech/neondb"
+        )
+
+
+def test_neon_hostname_fullmatch_rejects_suffix(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "dev")
+    monkeypatch.setenv("NEON_DEV_ENDPOINT_ID", "ep-odd-smoke-b465tvf8")
+    with pytest.raises(MigrationRefused, match="unexpected Neon host"):
+        assert_migration_target_allowed(
+            "postgresql://u@ep-odd-smoke-b465tvf8.us-east-2.aws.neon.tech.extra.neon.tech/neondb?sslmode=require"
         )
 
 

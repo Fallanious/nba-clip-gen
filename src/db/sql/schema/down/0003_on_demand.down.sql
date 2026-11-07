@@ -1,19 +1,21 @@
 -- Rollback 0003 on local/dev only. Restores 0001 NOT NULL offsets.
--- Fails if unmatched (NULL offset) rows exist — reapply 0003 or delete those rows first.
+-- One transaction: preflight first, then drop. Failure preserves view,
+-- constraints, stamp, and data. Do not DROP before the NULL-offset check.
 
-DROP VIEW IF EXISTS play_capability;
+BEGIN;
 
-ALTER TABLE clips DROP CONSTRAINT IF EXISTS clips_attested_requires_binding;
-ALTER TABLE clips DROP CONSTRAINT IF EXISTS clips_none_requires_null_offsets;
-ALTER TABLE clips DROP CONSTRAINT IF EXISTS clips_video_finite_window;
-
--- Restore 0001 window checks only when every row has offsets (legacy shape).
 DO $$
 BEGIN
   IF EXISTS (SELECT 1 FROM clips WHERE video_start_s IS NULL OR video_end_s IS NULL) THEN
     RAISE EXCEPTION '0003 down: clips with NULL video offsets exist; cannot restore NOT NULL';
   END IF;
 END $$;
+
+DROP VIEW IF EXISTS play_capability;
+
+ALTER TABLE clips DROP CONSTRAINT IF EXISTS clips_attested_requires_binding;
+ALTER TABLE clips DROP CONSTRAINT IF EXISTS clips_none_requires_null_offsets;
+ALTER TABLE clips DROP CONSTRAINT IF EXISTS clips_video_finite_window;
 
 UPDATE clips
 SET timing_provenance = 'none'
@@ -35,6 +37,7 @@ ALTER TABLE clips
   DROP COLUMN IF EXISTS timing_provenance;
 
 ALTER TABLE games DROP CONSTRAINT IF EXISTS games_fictional_key_prefix;
+ALTER TABLE games DROP CONSTRAINT IF EXISTS games_duration_finite_positive;
 ALTER TABLE games DROP CONSTRAINT IF EXISTS games_source_version_trim;
 ALTER TABLE games DROP CONSTRAINT IF EXISTS games_s3_key_not_url;
 ALTER TABLE games
@@ -42,7 +45,11 @@ ALTER TABLE games
   DROP COLUMN IF EXISTS source_version,
   DROP COLUMN IF EXISTS source_kind;
 
+DROP FUNCTION IF EXISTS nba_numeric_is_finite(numeric);
+
 DROP TYPE IF EXISTS source_kind;
 DROP TYPE IF EXISTS timing_provenance;
 
 DELETE FROM schema_migrations WHERE version = '0003_on_demand';
+
+COMMIT;

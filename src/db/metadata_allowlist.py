@@ -1,4 +1,9 @@
-"""Recursive canaries: public metadata must not carry keys, URLs, or internal refs."""
+"""Structured public-field allowlist for browse/capability rows.
+
+The extra-field set is the control. Prefix/value scanning is an incomplete
+canary for tests; it is not secrecy and must not be treated as a URL filter
+over allowlisted public text.
+"""
 
 from __future__ import annotations
 
@@ -41,7 +46,10 @@ FORBIDDEN_KEY_SUBSTR = (
     "database_url",
 )
 
-FORBIDDEN_VALUE_PREFIXES = (
+# Incomplete canaries only. Not a secrecy scanner. Protocol-relative,
+# whitespace-prefixed, and embedded locators in allowlisted text are out of
+# scope for this helper; extra keys remain the gate.
+CANARY_VALUE_PREFIXES = (
     "http://",
     "https://",
     "s3://",
@@ -61,21 +69,26 @@ def _key_forbidden(key: str) -> bool:
     return any(part in lowered for part in FORBIDDEN_KEY_SUBSTR)
 
 
+def _canary_value(value: str) -> bool:
+    """True when a value *starts with* a locator prefix. Incomplete by design."""
+    return value.lower().startswith(CANARY_VALUE_PREFIXES)
+
+
 def assert_no_private_payload(value: Any, *, path: str = "$") -> None:
     if isinstance(value, dict):
         for key, inner in value.items():
             if not isinstance(key, str) or _key_forbidden(key):
                 raise MetadataLeak(f"forbidden key at {path}.{key!r}")
-            if isinstance(inner, str) and inner.lower().startswith(FORBIDDEN_VALUE_PREFIXES):
-                raise MetadataLeak(f"forbidden value at {path}.{key}")
+            if isinstance(inner, str) and _canary_value(inner):
+                raise MetadataLeak(f"canary locator prefix at {path}.{key}")
             assert_no_private_payload(inner, path=f"{path}.{key}")
         return
     if isinstance(value, (list, tuple)):
         for i, inner in enumerate(value):
             assert_no_private_payload(inner, path=f"{path}[{i}]")
         return
-    if isinstance(value, str) and value.lower().startswith(FORBIDDEN_VALUE_PREFIXES):
-        raise MetadataLeak(f"forbidden value at {path}")
+    if isinstance(value, str) and _canary_value(value):
+        raise MetadataLeak(f"canary locator prefix at {path}")
 
 
 def assert_browse_row(row: dict[str, Any]) -> None:

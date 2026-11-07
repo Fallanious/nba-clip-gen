@@ -27,6 +27,7 @@ def _eligible(**overrides):
         "s3_key": "fixtures/fictional-game-a.mkv",
         "source_kind": "original_private",
         "source_version": "etag-fic-a-v1",
+        "is_fictional": True,
         "duration_s": Decimal("48"),
         "timing_provenance": "matcher_attested",
         "matched_source_version": "etag-fic-a-v1",
@@ -166,7 +167,7 @@ def test_capability_shape_no_refs():
     assert "s3_key" not in row
 
 
-def test_browse_allowlist_canary():
+def test_browse_allowlist_structured_fields_are_the_control():
     assert_browse_row({
         "play_id": 1,
         "game_id": 1,
@@ -181,7 +182,7 @@ def test_browse_allowlist_canary():
         "can_create": True,
         "reason": None,
     })
-    with pytest.raises(MetadataLeak):
+    with pytest.raises(MetadataLeak, match="extra fields"):
         assert_browse_row({
             "play_id": 1,
             "s3_key": "fixtures/x.mkv",
@@ -190,6 +191,70 @@ def test_browse_allowlist_canary():
         })
     with pytest.raises(MetadataLeak):
         assert_capability_row({"can_create": False, "reason": "footage_not_matched", "url": "https://x"})
+    with pytest.raises(MetadataLeak, match="extra fields"):
+        assert_browse_row({
+            "play_id": 1,
+            "game_id": 1,
+            "game_date": "2026-01-03",
+            "play_index": 1,
+            "period": 1,
+            "game_clock": None,
+            "description": "FICTIONAL",
+            "action_type": "shot",
+            "shot_subtype": None,
+            "outcome": "made",
+            "can_create": False,
+            "reason": "footage_not_matched",
+            "note": "https://evil.example/x",
+        })
+    with pytest.raises(MetadataLeak, match="extra fields"):
+        assert_browse_row({
+            "play_id": 1,
+            "game_id": 1,
+            "game_date": "2026-01-03",
+            "play_index": 1,
+            "period": 1,
+            "game_clock": None,
+            "description": "FICTIONAL",
+            "action_type": "shot",
+            "shot_subtype": None,
+            "outcome": "made",
+            "can_create": False,
+            "reason": "footage_not_matched",
+            "href": "//evil.example/x",
+        })
+    with pytest.raises(MetadataLeak, match="extra fields"):
+        assert_browse_row({
+            "play_id": 1,
+            "game_id": 1,
+            "game_date": "2026-01-03",
+            "play_index": 1,
+            "period": 1,
+            "game_clock": None,
+            "description": "FICTIONAL",
+            "action_type": "shot",
+            "shot_subtype": None,
+            "outcome": "made",
+            "can_create": False,
+            "reason": "footage_not_matched",
+            "object_key": "games/live.mkv",
+        })
+    # Allowlisted public text may contain locator-shaped substrings. The
+    # extra-field set is the control; prefix scan is not secrecy.
+    assert_browse_row({
+        "play_id": 1,
+        "game_id": 1,
+        "game_date": "2026-01-03",
+        "play_index": 1,
+        "period": 1,
+        "game_clock": None,
+        "description": "see https://example.invalid/play  and //cdn.example/x",
+        "action_type": "shot",
+        "shot_subtype": None,
+        "outcome": "made",
+        "can_create": False,
+        "reason": "footage_not_matched",
+    })
 
 
 def test_mapper_keeps_unmatched():
@@ -252,6 +317,106 @@ def test_fictional_fixture_never_grants_live_media():
     assert live_media_access_permitted(
         _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=True)
     ) is False
+    for fictional in (None, "false", "False", 0, 1, True):
+        assert live_media_access_permitted(
+            _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=fictional)
+        ) is False
+
+
+def test_unknown_is_fictional_denies_capability():
+    missing = _eligible()
+    missing.pop("is_fictional")
+    assert public_capability(missing) == {"can_create": False, "reason": "footage_not_matched"}
+    assert public_capability(_eligible(is_fictional=None))["can_create"] is False
+    assert public_capability(_eligible(is_fictional="false"))["can_create"] is False
+
+
+def test_fictional_capability_true_only_with_fixture_prefix():
+    assert public_capability(_eligible())["can_create"] is True
+    assert public_capability(
+        _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=True)
+    )["can_create"] is False
+    live = _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=False)
+    assert public_capability(live)["can_create"] is True
+    assert public_capability(
+        _eligible(s3_key="fixtures/x.mkv", is_fictional=False)
+    )["can_create"] is False
+
+
+def test_python_nan_duration_is_timing_unavailable():
+    assert public_capability(_eligible(duration_s=math.nan)) == {
+        "can_create": False, "reason": "video_timing_unavailable",
+    }
+    assert public_capability(_eligible(video_end_s=math.nan))["can_create"] is False
+
+
+def test_mapper_rejects_duplicate_missing_noninteger_bool_play_index():
+    pbp = [{"play_index": 0, "description": "FICTIONAL"}]
+    with pytest.raises(CapabilityTypeError, match="duplicate"):
+        merge_pbp_and_matcher(
+            pbp,
+            [
+                {"play_index": 0, "video_timestamp": 1, "video_start": 0, "video_end": 1},
+                {"play_index": 0, "video_timestamp": 2, "video_start": 1, "video_end": 2},
+            ],
+            matcher_run_id="fic", matcher_version="fic", source_version="etag",
+        )
+    with pytest.raises(CapabilityTypeError, match="PBP play_index"):
+        merge_pbp_and_matcher(
+            [{"description": "FICTIONAL missing index"}],
+            [],
+            matcher_run_id="fic", matcher_version="fic", source_version="etag",
+        )
+    for bad in (True, False, 1.5, "0", None):
+        with pytest.raises(CapabilityTypeError):
+            merge_pbp_and_matcher(
+                [{"play_index": bad, "description": "FICTIONAL"}],
+                [],
+                matcher_run_id="fic", matcher_version="fic", source_version="etag",
+            )
+        with pytest.raises(CapabilityTypeError):
+            merge_pbp_and_matcher(
+                [{"play_index": 0, "description": "FICTIONAL"}],
+                [{"play_index": bad, "video_timestamp": 1, "video_start": 0, "video_end": 1}],
+                matcher_run_id="fic", matcher_version="fic", source_version="etag",
+            )
+
+
+def test_mapper_invalid_windows_stay_unattested():
+    pbp = [
+        {"play_index": 0, "description": "FICTIONAL reversed"},
+        {"play_index": 1, "description": "FICTIONAL negative"},
+        {"play_index": 2, "description": "FICTIONAL over max"},
+        {"play_index": 3, "description": "FICTIONAL ok"},
+    ]
+    matcher = [
+        {"play_index": 0, "video_timestamp": 5, "video_start": 9, "video_end": 3},
+        {"play_index": 1, "video_timestamp": 1, "video_start": -1, "video_end": 4},
+        {"play_index": 2, "video_timestamp": 1, "video_start": 0, "video_end": 121},
+        {"play_index": 3, "video_timestamp": 1, "video_start": 0, "video_end": 8},
+    ]
+    rows = merge_pbp_and_matcher(
+        pbp, matcher, matcher_run_id="fic", matcher_version="fic", source_version="etag",
+    )
+    assert [r["timing_provenance"] for r in rows] == ["none", "none", "none", "matcher_attested"]
+    assert rows[0]["video_start_s"] is None
+    assert rows[3]["matched_source_version"] == "etag"
+
+
+def test_mapper_requires_canonical_nonempty_provenance():
+    pbp = [{"play_index": 0, "description": "FICTIONAL"}]
+    matcher = [{"play_index": 0, "video_timestamp": 1, "video_start": 0, "video_end": 1}]
+    for field, value in (
+        ("matcher_run_id", ""),
+        ("matcher_run_id", "  x"),
+        ("matcher_version", " "),
+        ("source_version", None),
+        ("source_version", "etag "),
+    ):
+        kwargs = dict(matcher_run_id="fic", matcher_version="fic", source_version="etag")
+        kwargs[field] = value
+        with pytest.raises(CapabilityTypeError):
+            merge_pbp_and_matcher(pbp, matcher, **kwargs)
 
 
 def test_capability_module_does_not_import_boto3_or_jobs():

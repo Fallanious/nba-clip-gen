@@ -8,6 +8,15 @@ CREATE TABLE IF NOT EXISTS schema_migrations (
   applied_at timestamptz NOT NULL DEFAULT now()
 );
 
+-- PostgreSQL numeric: NaN = NaN is TRUE and NaN sorts above every finite value
+-- (including Infinity). Do not use x = x to reject NaN. Exclude NaN/±Inf by name.
+CREATE OR REPLACE FUNCTION nba_numeric_is_finite(x numeric) RETURNS boolean
+LANGUAGE sql IMMUTABLE STRICT AS $$
+  SELECT x <> 'NaN'::numeric
+     AND x <> 'Infinity'::numeric
+     AND x <> '-Infinity'::numeric
+$$;
+
 DO $$ BEGIN
   CREATE TYPE timing_provenance AS ENUM (
     'none',
@@ -57,6 +66,15 @@ UPDATE games
 SET is_fictional = true
 WHERE s3_key LIKE 'fixtures/%' AND is_fictional = false;
 
+ALTER TABLE games DROP CONSTRAINT IF EXISTS games_duration_finite_positive;
+ALTER TABLE games
+  ADD CONSTRAINT games_duration_finite_positive CHECK (
+    duration_s IS NULL OR (
+      nba_numeric_is_finite(duration_s) IS TRUE
+      AND duration_s > 0
+    )
+  );
+
 ALTER TABLE games DROP CONSTRAINT IF EXISTS games_fictional_key_prefix;
 ALTER TABLE games
   ADD CONSTRAINT games_fictional_key_prefix CHECK (
@@ -97,21 +115,14 @@ WHERE timing_provenance = 'none'
   AND video_start_s IS NOT NULL
   AND video_end_s IS NOT NULL;
 
--- NaN: NaN = NaN is not true. ±Inf: compare to Infinity literals.
--- No minimum clip length. Tiny positive (end > start) is allowed.
+-- Explicit NaN/±Inf exclusion. Tiny positive (end > start) is allowed.
 -- App still rejects bool/str before bind. See src/db/sql/POLICY.md.
 ALTER TABLE clips
   ADD CONSTRAINT clips_video_finite_window CHECK (
     (video_start_s IS NULL AND video_end_s IS NULL)
     OR (
-      video_start_s IS NOT NULL
-      AND video_end_s IS NOT NULL
-      AND video_start_s = video_start_s
-      AND video_end_s = video_end_s
-      AND video_start_s <> 'Infinity'::numeric
-      AND video_start_s <> '-Infinity'::numeric
-      AND video_end_s <> 'Infinity'::numeric
-      AND video_end_s <> '-Infinity'::numeric
+      nba_numeric_is_finite(video_start_s) IS TRUE
+      AND nba_numeric_is_finite(video_end_s) IS TRUE
       AND video_start_s >= 0
       AND video_end_s > video_start_s
     )
@@ -131,11 +142,10 @@ ALTER TABLE clips
       AND length(trim(matcher_run_id)) > 0
       AND matcher_version IS NOT NULL
       AND length(trim(matcher_version)) > 0
-      AND video_timestamp_s IS NOT NULL
-      AND video_timestamp_s = video_timestamp_s
+      AND nba_numeric_is_finite(video_timestamp_s) IS TRUE
       AND video_timestamp_s >= 0
-      AND video_start_s IS NOT NULL
-      AND video_end_s IS NOT NULL
+      AND nba_numeric_is_finite(video_start_s) IS TRUE
+      AND nba_numeric_is_finite(video_end_s) IS TRUE
       AND matched_source_version IS NOT NULL
       AND length(trim(matched_source_version)) > 0
     )
@@ -154,64 +164,54 @@ SELECT
     AND c.timing_provenance = 'matcher_attested'
     AND c.matched_source_version IS NOT NULL
     AND c.matched_source_version = g.source_version
-    AND c.video_start_s IS NOT NULL
-    AND c.video_end_s IS NOT NULL
-    AND c.video_start_s = c.video_start_s
-    AND c.video_end_s = c.video_end_s
+    AND nba_numeric_is_finite(c.video_start_s) IS TRUE
+    AND nba_numeric_is_finite(c.video_end_s) IS TRUE
     AND c.video_start_s >= 0
     AND c.video_end_s > c.video_start_s
-    AND c.video_start_s <> 'Infinity'::numeric
-    AND c.video_end_s <> 'Infinity'::numeric
-    AND c.video_start_s <> '-Infinity'::numeric
-    AND c.video_end_s <> '-Infinity'::numeric
-    AND g.duration_s IS NOT NULL
-    AND g.duration_s = g.duration_s
-    AND g.duration_s <> 'Infinity'::numeric
-    AND g.duration_s <> '-Infinity'::numeric
+    AND nba_numeric_is_finite(g.duration_s) IS TRUE
     AND g.duration_s > 0
     AND c.video_start_s < g.duration_s
     AND c.video_end_s <= g.duration_s
     AND (c.video_end_s - c.video_start_s) <= 120
-  ) AS can_create,
+    AND (
+      (g.is_fictional IS TRUE AND g.s3_key LIKE 'fixtures/%')
+      OR (g.is_fictional IS FALSE AND g.s3_key NOT LIKE 'fixtures/%')
+    )
+  ) IS TRUE AS can_create,
   CASE
-    WHEN NOT (
+    WHEN (
       g.s3_key IS NOT NULL
       AND length(trim(g.s3_key)) > 0
       AND g.s3_key !~* '^(https?|s3)://'
       AND g.source_kind = 'original_private'
       AND g.source_version IS NOT NULL
       AND length(trim(g.source_version)) > 0
-    ) THEN 'footage_not_matched'
+    ) IS NOT TRUE THEN 'footage_not_matched'
     WHEN c.timing_provenance = 'none' THEN 'footage_not_matched'
     WHEN c.timing_provenance IN ('game_clock_derived', 'unvalidated_numeric')
       THEN 'video_timing_unavailable'
-    WHEN NOT (
+    WHEN (
       c.timing_provenance = 'matcher_attested'
       AND c.matched_source_version IS NOT NULL
       AND c.matched_source_version = g.source_version
-      AND c.video_start_s IS NOT NULL
-      AND c.video_end_s IS NOT NULL
-      AND c.video_start_s = c.video_start_s
-      AND c.video_end_s = c.video_end_s
+      AND nba_numeric_is_finite(c.video_start_s) IS TRUE
+      AND nba_numeric_is_finite(c.video_end_s) IS TRUE
       AND c.video_start_s >= 0
       AND c.video_end_s > c.video_start_s
-      AND c.video_start_s <> 'Infinity'::numeric
-      AND c.video_end_s <> 'Infinity'::numeric
-      AND c.video_start_s <> '-Infinity'::numeric
-      AND c.video_end_s <> '-Infinity'::numeric
-      AND g.duration_s IS NOT NULL
-      AND g.duration_s = g.duration_s
-      AND g.duration_s <> 'Infinity'::numeric
-      AND g.duration_s <> '-Infinity'::numeric
+      AND nba_numeric_is_finite(g.duration_s) IS TRUE
       AND g.duration_s > 0
       AND c.video_start_s < g.duration_s
       AND c.video_end_s <= g.duration_s
       AND (c.video_end_s - c.video_start_s) <= 120
-    ) THEN 'video_timing_unavailable'
+      AND (
+        (g.is_fictional IS TRUE AND g.s3_key LIKE 'fixtures/%')
+        OR (g.is_fictional IS FALSE AND g.s3_key NOT LIKE 'fixtures/%')
+      )
+    ) IS NOT TRUE THEN 'video_timing_unavailable'
     ELSE NULL
   END AS reason
 FROM clips c
 JOIN games g ON g.id = c.game_id;
 
 COMMENT ON VIEW play_capability IS
-  'Eligibility only. Default denied. Not an authz grant. Does not expose source keys.';
+  'Eligibility only. Default denied. Not an authz grant. Does not expose source keys. Published/deleted predicates are not in this slice; later HTTP must enforce them. Unwired.';

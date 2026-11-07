@@ -71,9 +71,10 @@ def live_media_access_permitted(row: Mapping[str, Any]) -> bool:
     """Live bucket/object access. Independent of can_create. Default denied.
 
     Fictional rows and fixtures/ keys never grant live media, even if a later
-    fixture runner is enabled and timing eligibility is true.
+    fixture runner is enabled and timing eligibility is true. is_fictional must
+    be False exactly; unknown and bool-ish values deny.
     """
-    if row.get("is_fictional") is True:
+    if row.get("is_fictional") is not False:
         return False
     key = row.get("s3_key")
     if not isinstance(key, str) or not key.strip():
@@ -94,6 +95,17 @@ def evaluate_capability(row: Mapping[str, Any]) -> dict[str, Any]:
     can_create is timing/source-identity eligibility, not live media access.
     """
     if not original_private_source_ok(row):
+        return {"can_create": False, "reason": REASON_FOOTAGE}
+
+    key = row.get("s3_key")
+    fictional = row.get("is_fictional")
+    if fictional is True:
+        if not (isinstance(key, str) and key.startswith(FIXTURE_PREFIX)):
+            return {"can_create": False, "reason": REASON_FOOTAGE}
+    elif fictional is False:
+        if isinstance(key, str) and key.startswith(FIXTURE_PREFIX):
+            return {"can_create": False, "reason": REASON_FOOTAGE}
+    else:
         return {"can_create": False, "reason": REASON_FOOTAGE}
 
     provenance = row.get("timing_provenance") or PROVENANCE_NONE
