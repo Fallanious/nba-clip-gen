@@ -627,6 +627,70 @@ def test_scraped_pbp_byte_envelope_e2e(persist_url, tmp_path):
         ]
 
 
+def test_mixed_unresolved_play_persists_only_proven_participants(persist_url):
+    import psycopg
+    from psycopg.rows import dict_row
+    from pbp_source_identity import stamp_source_pbp_identity
+
+    scraped = [
+        {
+            "quarter": 1,
+            "time": "11:08.0",
+            "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+        {
+            "quarter": 1,
+            "time": "10:50.0",
+            "description": "Casey Fixture misses 2-pt jumper (from downtown)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+    ]
+    pbp = stamp_source_pbp_identity(scraped)
+    assert pbp[0]["participants"][0]["role"] == "shot"
+    assert pbp[1]["participants"] == []
+    assert pbp[1]["participants_unresolved"] is True
+    report = persist_pbp_and_matcher(
+        pbp,
+        _out([{
+            "play_index": 9,
+            "pbp_play_index": 0,
+            "quarter": 1,
+            "game_time": "11:08.0",
+            "description": pbp[0]["description"],
+            "video_timestamp": 9,
+            "video_start": 7,
+            "video_end": 11,
+        }]),
+        _cfg(persist_url),
+    )
+    assert report.attested == 1
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        linked = conn.execute(
+            """
+            SELECT c.play_index, p.bbref_id, cp.role
+            FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN players p ON p.id = cp.player_id
+            ORDER BY c.play_index, cp.role
+            """
+        ).fetchall()
+        assert [(r["play_index"], r["bbref_id"], r["role"]) for r in linked] == [
+            (0, "ficcas01", "shot"),
+            (0, "ficoth01", "assist"),
+        ]
+        unresolved = conn.execute(
+            "SELECT count(*) AS n FROM clip_players cp JOIN clips c ON c.id = cp.clip_id WHERE c.play_index = 1"
+        ).fetchone()["n"]
+        assert unresolved == 0
+
+
 def test_persist_module_has_no_s3_or_http_client():
     import inspect
     from db import matcher_persist as mod

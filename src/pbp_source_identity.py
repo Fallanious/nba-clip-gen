@@ -43,12 +43,13 @@ def _paren_role(inner: str) -> Optional[str]:
     return None
 
 
-def _paren_roles(description: str) -> list[str]:
+def _paren_roles(description: str) -> Optional[list[str]]:
+    """Recognized parenthetical roles, or None if any clause is unsupported."""
     roles: list[str] = []
     for inner in _PAREN.findall(description):
         role = _paren_role(inner)
         if role is None:
-            raise SourcePbpError("unsupported or ambiguous participant parenthetical")
+            return None
         roles.append(role)
     return roles
 
@@ -70,22 +71,26 @@ def _primary_role(description: str) -> Optional[str]:
     return None
 
 
-def participants_from_source_play(play: Mapping[str, Any]) -> list[dict[str, str]]:
+def source_play_participants(play: Mapping[str, Any]) -> tuple[list[dict[str, str]], bool]:
+    """Return (participants, unresolved). Unresolved plays get [] and no guessed roles."""
     existing = play.get("participants")
     if isinstance(existing, list):
-        return [dict(item) if isinstance(item, Mapping) else item for item in existing]
+        parts = [dict(item) if isinstance(item, Mapping) else item for item in existing]
+        return parts, False
     hrefs = play.get("player_links") or play.get("player_hrefs") or []
     if not isinstance(hrefs, list):
-        return []
+        return [], True
     ids = player_ids_from_hrefs(hrefs)
     if not ids:
-        return []
+        return [], False
     description = str(play.get("description") or "")
     paren_roles = _paren_roles(description)
+    if paren_roles is None:
+        return [], True
     primary = _primary_role(description)
     expected = (1 if primary is not None else 0) + len(paren_roles)
     if len(ids) != expected:
-        raise SourcePbpError("participant link count does not match recognized roles")
+        return [], True
     primary_count = 1 if primary is not None else 0
     out: list[dict[str, str]] = []
     for index, bbref in enumerate(ids):
@@ -93,7 +98,12 @@ def participants_from_source_play(play: Mapping[str, Any]) -> list[dict[str, str
             out.append({"bbref_id": bbref, "role": primary})
         else:
             out.append({"bbref_id": bbref, "role": paren_roles[index - primary_count]})
-    return out
+    return out, False
+
+
+def participants_from_source_play(play: Mapping[str, Any]) -> list[dict[str, str]]:
+    parts, _unresolved = source_play_participants(play)
+    return parts
 
 
 def stamp_source_pbp_identity(plays: Any) -> list[dict[str, Any]]:
@@ -113,7 +123,12 @@ def stamp_source_pbp_identity(plays: Any) -> list[dict[str, Any]]:
         for index, play in enumerate(rows):
             play["play_index"] = index
     for play in rows:
-        play["participants"] = participants_from_source_play(play)
+        parts, unresolved = source_play_participants(play)
+        play["participants"] = parts
+        if unresolved:
+            play["participants_unresolved"] = True
+        else:
+            play.pop("participants_unresolved", None)
         play.pop("player_links", None)
         play.pop("player_hrefs", None)
     return rows

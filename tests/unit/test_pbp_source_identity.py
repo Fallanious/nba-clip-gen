@@ -93,44 +93,131 @@ def test_drawn_by_maps_second_link_to_fouled_not_primary():
     ]
 
 
-def test_unknown_parenthetical_fails_closed():
-    with pytest.raises(SourcePbpError, match="ambiguous participant parenthetical"):
-        stamp_source_pbp_identity([
-            {
-                "play_index": 0,
-                "description": "Casey Fixture makes 2-pt jumper (from downtown)",
-                "player_links": [
-                    "/players/f/ficcas01.html",
-                    "/players/f/ficoth01.html",
-                ],
-            }
-        ])
+def test_unknown_parenthetical_is_unresolved_not_batch_abort():
+    plays = stamp_source_pbp_identity([
+        {
+            "play_index": 0,
+            "description": "Casey Fixture makes 2-pt jumper (from downtown)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        }
+    ])
+    assert plays[0]["participants"] == []
+    assert plays[0]["participants_unresolved"] is True
 
 
-def test_link_count_mismatch_fails_closed():
-    with pytest.raises(SourcePbpError, match="link count"):
-        stamp_source_pbp_identity([
-            {
-                "play_index": 0,
-                "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
-                "player_links": [
-                    "/players/f/ficcas01.html",
-                    "/players/f/ficoth01.html",
-                    "/players/f/ficzzz01.html",
-                ],
-            }
-        ])
-    with pytest.raises(SourcePbpError, match="link count"):
-        stamp_source_pbp_identity([
-            {
-                "play_index": 1,
-                "description": "Casey Fixture makes 2-pt jumper",
-                "player_links": [
-                    "/players/f/ficcas01.html",
-                    "/players/f/ficoth01.html",
-                ],
-            }
-        ])
+def test_link_count_mismatch_is_unresolved_not_batch_abort():
+    extra = stamp_source_pbp_identity([
+        {
+            "play_index": 0,
+            "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+                "/players/f/ficzzz01.html",
+            ],
+        }
+    ])
+    assert extra[0]["participants"] == []
+    assert extra[0]["participants_unresolved"] is True
+    two_primary = stamp_source_pbp_identity([
+        {
+            "play_index": 1,
+            "description": "Casey Fixture makes 2-pt jumper",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        }
+    ])
+    assert two_primary[0]["participants"] == []
+    assert two_primary[0]["participants_unresolved"] is True
+
+
+def test_mixed_supported_and_unresolved_rows_continue():
+    plays = stamp_source_pbp_identity([
+        {
+            "quarter": 1,
+            "time": "11:08.0",
+            "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+        {
+            "quarter": 1,
+            "time": "10:50.0",
+            "description": "Casey Fixture makes 2-pt jumper (from downtown)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+        {
+            "quarter": 1,
+            "time": "10:12.0",
+            "description": "Casey Fixture makes 2-pt jumper",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+        {
+            "quarter": 1,
+            "time": "9:40.0",
+            "description": "Shooting foul by Casey Fixture (drawn by Other Fixture)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+    ])
+    assert [play["play_index"] for play in plays] == [0, 1, 2, 3]
+    assert plays[0]["participants"] == [
+        {"bbref_id": "ficcas01", "role": "shot"},
+        {"bbref_id": "ficoth01", "role": "assist"},
+    ]
+    assert "participants_unresolved" not in plays[0]
+    assert plays[1]["participants"] == []
+    assert plays[1]["participants_unresolved"] is True
+    assert plays[2]["participants"] == []
+    assert plays[2]["participants_unresolved"] is True
+    assert plays[3]["participants"] == [
+        {"bbref_id": "ficcas01", "role": "foul"},
+        {"bbref_id": "ficoth01", "role": "fouled"},
+    ]
+
+
+def test_persist_disabled_stamp_continues_on_mixed_game(monkeypatch):
+    from db.matcher_persist import maybe_persist_after_match
+
+    monkeypatch.delenv("MATCHER_PERSIST", raising=False)
+    plays = stamp_source_pbp_identity([
+        {
+            "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+        {
+            "description": "Casey Fixture misses 2-pt jumper (from downtown)",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+    ])
+    assert len(plays) == 2
+    report = maybe_persist_after_match(raw_pbp=plays, matcher_output={"plays": []})
+    assert report.skipped_reason
+    assert report.dry_run is True
+    assert plays[0]["participants"][0]["role"] == "shot"
+    assert plays[1]["participants"] == []
+    assert plays[1]["participants_unresolved"] is True
 
 
 def test_primary_only_single_link_remains():
@@ -142,6 +229,33 @@ def test_primary_only_single_link_remains():
         }
     ])
     assert plays[0]["participants"] == [{"bbref_id": "ficcas01", "role": "shot"}]
+
+
+MIXED_HTML = """
+<html><body>
+<table class="suppress_all">
+<tr><th colspan="4">1st Q</th></tr>
+<tr>
+  <td>11:08.0</td>
+  <td><a href="/players/f/ficcas01.html">Casey</a> makes 2-pt jumper (<a href="/players/f/ficoth01.html">Other</a> assists)</td>
+  <td class="center">2-0</td>
+  <td></td>
+</tr>
+<tr>
+  <td>10:50.0</td>
+  <td><a href="/players/f/ficcas01.html">Casey</a> misses 2-pt jumper (<a href="/players/f/ficoth01.html">Other</a> from downtown)</td>
+  <td class="center">2-0</td>
+  <td></td>
+</tr>
+<tr>
+  <td>10:12.0</td>
+  <td>Shooting foul by <a href="/players/f/ficcas01.html">Casey</a> (drawn by <a href="/players/f/ficoth01.html">Other</a>)</td>
+  <td class="center">2-0</td>
+  <td></td>
+</tr>
+</table>
+</body></html>
+"""
 
 
 def test_html_table_stamps_source_identity_and_participants():
@@ -158,3 +272,22 @@ def test_html_table_stamps_source_identity_and_participants():
     ]
     assert plays[1]["participants"] == []
     assert "player_links" not in plays[0]
+
+
+def test_scraper_mixed_unknown_parenthetical_continues_other_rows():
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(MIXED_HTML, "html.parser")
+    table = soup.find("table")
+    plays = plays_from_pbp_table(table, "Fiction", "QA")
+    assert [play["play_index"] for play in plays] == [0, 1, 2]
+    assert plays[0]["participants"] == [
+        {"bbref_id": "ficcas01", "role": "shot"},
+        {"bbref_id": "ficoth01", "role": "assist"},
+    ]
+    assert plays[1]["participants"] == []
+    assert plays[1]["participants_unresolved"] is True
+    assert plays[2]["participants"] == [
+        {"bbref_id": "ficcas01", "role": "foul"},
+        {"bbref_id": "ficoth01", "role": "fouled"},
+    ]

@@ -241,7 +241,10 @@ does **not** claim S3 provenance is secured.
 Participants from scrape: explicit roles only (primary plus recognized
 parentheticals, including `drawn by` → `fouled`). Extra player links are
 not assigned the primary role. Unsupported parentheticals and
-recognized-role/link count mismatch fail closed.
+recognized-role/link count mismatch fail closed **per play**: empty
+`participants` plus `participants_unresolved`, other rows continue.
+Identity corruption (partial indexes, non-object rows) still refuses the
+batch. Scrape/match run even when persist is disabled.
 
 **ETag is not immutable** and is refused as an identity kind. Persist does
 not guess from `games.source_version` or `MATCHER_ANALYZED_*` env. A v1
