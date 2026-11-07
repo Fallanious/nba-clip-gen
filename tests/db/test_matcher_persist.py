@@ -11,7 +11,7 @@ from pathlib import Path
 import pytest
 
 from db.migrate import apply_migrations
-from db.matcher_persist import PersistConfig, PersistRefused, persist_pbp_and_matcher
+from db.matcher_persist import MATCHER_VERSION, PersistConfig, PersistRefused, persist_pbp_and_matcher
 from db.sql_loader import load_query_sql
 from test_schema_capability import postgres_url
 
@@ -88,14 +88,24 @@ def _cfg(url, **overrides):
     values = dict(
         database_url=url,
         game_bbref_id="ficpersist01",
-        matcher_run_id="fic-persist-run",
-        analyzed_source_key=ANALYZED_KEY,
-        analyzed_source_identity=V1,
-        analyzed_identity_kind="content_sha256",
         commit=True,
     )
     values.update(overrides)
     return PersistConfig(**values)
+
+
+def _out(plays, *, identity=V1, key=ANALYZED_KEY, run_id="fic-persist-run", kind="content_sha256"):
+    return {
+        "analyzed_source": {
+            "analyzed_source_key": key,
+            "analyzed_identity_kind": kind,
+            "analyzed_source_identity": identity,
+            "matcher_run_id": run_id,
+        },
+        "matcher_run_id": run_id,
+        "matcher_version": MATCHER_VERSION,
+        "plays": plays,
+    }
 
 
 def _payload():
@@ -115,7 +125,7 @@ def _cap(conn, play_index):
 def _clip_snapshot(conn):
     rows = conn.execute(
         """
-        SELECT play_index, description, timing_provenance, video_start_s, video_end_s,
+        SELECT play_index, description, game_clock, timing_provenance, video_start_s, video_end_s,
                matched_source_version, matcher_run_id
         FROM clips ORDER BY play_index
         """
@@ -131,7 +141,7 @@ def test_persist_maps_pbp_index_not_condensed(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    report = persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    report = persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     assert report.dry_run is False
     assert report.attested == 1
     assert report.unmatched == 4
@@ -171,8 +181,8 @@ def test_rerun_does_not_erase_verified_mapping(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
-    report = persist_pbp_and_matcher(pbp, [], _cfg(persist_url, matcher_run_id="fic-persist-rerun"))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    report = persist_pbp_and_matcher(pbp, _out([], run_id="fic-persist-rerun"), _cfg(persist_url))
     assert report.kept_prior == 1
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         two = conn.execute(
@@ -188,7 +198,7 @@ def test_replay_after_source_replacement_is_refused(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         conn.execute(
             "UPDATE games SET source_version = %s WHERE bbref_id = 'ficpersist01'",
@@ -200,14 +210,14 @@ def test_replay_after_source_replacement_is_refused(persist_url):
         assert cap["reason"] == "video_timing_unavailable"
         before, before_players = _clip_snapshot(conn)
     with pytest.raises(PersistRefused, match="analyzed source does not match locked game"):
-        persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url, matcher_run_id="fic-persist-replay"))
+        persist_pbp_and_matcher(pbp, _out(matcher, run_id="fic-persist-replay"), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         after, after_players = _clip_snapshot(conn)
         assert after == before
         assert after_players == before_players
         assert after[2]["matched_source_version"] == V1
     persist_pbp_and_matcher(
-        pbp, matcher, _cfg(persist_url, matcher_run_id="fic-persist-v2", analyzed_source_identity=V2)
+        pbp, _out(matcher, identity=V2, run_id="fic-persist-v2"), _cfg(persist_url)
     )
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         cap = _cap(conn, 2)
@@ -222,7 +232,7 @@ def test_wrong_analyzed_key_refused(persist_url):
     pbp, matcher = _payload()
     with pytest.raises(PersistRefused, match="fixtures/ keys only"):
         persist_pbp_and_matcher(
-            pbp, matcher, _cfg(persist_url, analyzed_source_key="games/ficpersist01.mkv")
+            pbp, _out(matcher, key="games/ficpersist01.mkv"), _cfg(persist_url)
         )
 
 
@@ -240,7 +250,7 @@ def test_identity_collision_keeps_first_mapping(persist_url):
         "video_end": 28,
         "description": "FICTIONAL collision",
     })
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         two = conn.execute("SELECT video_start_s FROM clips WHERE play_index = 2").fetchone()
         assert float(two["video_start_s"]) == 7.0
@@ -252,7 +262,7 @@ def test_unknown_participant_rolls_back(persist_url):
     pbp, matcher = _payload()
     pbp[2]["participants"] = [{"bbref_id": "missing01", "role": "shot"}]
     with pytest.raises(PersistRefused, match="participant player not found"):
-        persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+        persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url) as conn:
         assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] == 0
 
@@ -263,7 +273,7 @@ def test_invalid_period_rolls_back_partial_batch(persist_url):
     pbp, matcher = _payload()
     pbp[4]["quarter"] = 99
     with pytest.raises(PersistRefused, match="invalid period"):
-        persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+        persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url) as conn:
         assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] == 0
 
@@ -272,7 +282,7 @@ def test_explicit_commit_required(persist_url):
     import psycopg
 
     pbp, matcher = _payload()
-    report = persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url, commit=False))
+    report = persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url, commit=False))
     assert report.dry_run is True
     with psycopg.connect(persist_url) as conn:
         assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] == 0
@@ -284,24 +294,66 @@ def test_entry_point_requires_explicit_env(persist_url, monkeypatch):
     pbp, matcher = _payload()
     monkeypatch.delenv("MATCHER_PERSIST", raising=False)
     skipped = maybe_persist_after_match(
-        raw_pbp=pbp, matcher_plays=matcher, game_bbref_id="ficpersist01", matcher_run_id="x"
+        raw_pbp=pbp, matcher_output=_out(matcher), game_bbref_id="ficpersist01"
     )
     assert skipped.skipped_reason
     monkeypatch.setenv("APP_ENV", "test")
     monkeypatch.setenv("MATCHER_PERSIST", "1")
     monkeypatch.setenv("MATCHER_PERSIST_COMMIT", "1")
     monkeypatch.setenv("DATABASE_URL", persist_url)
-    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_KEY", ANALYZED_KEY)
-    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_IDENTITY", V1)
+    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_KEY", "fixtures/forged-from-env.mkv")
+    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_IDENTITY", V2)
     monkeypatch.setenv("MATCHER_ANALYZED_IDENTITY_KIND", "content_sha256")
+    monkeypatch.setenv("MATCHER_PERSIST_RUN_ID", "forged-env-run")
     report = maybe_persist_after_match(
         raw_pbp=pbp,
-        matcher_plays=matcher,
+        matcher_output=_out(matcher, run_id="fic-env-run"),
         game_bbref_id="ficpersist01",
-        matcher_run_id="fic-env-run",
     )
     assert report.dry_run is False
     assert report.attested == 1
+    assert report.source_version == V1
+
+
+def test_v1_output_forged_v2_env_and_db_is_refused(persist_url, monkeypatch):
+    import psycopg
+    from psycopg.rows import dict_row
+    from db.matcher_persist import maybe_persist_after_match
+
+    pbp, matcher = _payload()
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        conn.execute(
+            "UPDATE games SET source_version = %s WHERE bbref_id = 'ficpersist01'",
+            (V2,),
+        )
+        conn.commit()
+        before, before_players = _clip_snapshot(conn)
+    monkeypatch.setenv("APP_ENV", "test")
+    monkeypatch.setenv("MATCHER_PERSIST", "1")
+    monkeypatch.setenv("MATCHER_PERSIST_COMMIT", "1")
+    monkeypatch.setenv("DATABASE_URL", persist_url)
+    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_KEY", ANALYZED_KEY)
+    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_IDENTITY", V2)
+    monkeypatch.setenv("MATCHER_ANALYZED_IDENTITY_KIND", "content_sha256")
+    monkeypatch.setenv("MATCHER_PERSIST_RUN_ID", "forged-v2-run")
+    with pytest.raises(PersistRefused, match="analyzed source does not match locked game"):
+        maybe_persist_after_match(
+            raw_pbp=pbp,
+            matcher_output=_out(matcher, identity=V1, run_id="stale-v1-output"),
+            game_bbref_id="ficpersist01",
+        )
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        after, after_players = _clip_snapshot(conn)
+        assert after == before
+        assert after_players == before_players
+        assert after[2]["matched_source_version"] == V1
+
+
+def test_matcher_list_without_envelope_is_refused(persist_url):
+    pbp, matcher = _payload()
+    with pytest.raises(PersistRefused, match="analyzed_source envelope"):
+        persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
 
 
 def test_invalid_121s_window_preserves_verified_mapping(persist_url):
@@ -309,12 +361,12 @@ def test_invalid_121s_window_preserves_verified_mapping(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     bad = copy.deepcopy(matcher)
     bad[0]["video_start"] = 0
     bad[0]["video_end"] = 121
     bad[0]["video_timestamp"] = 1
-    report = persist_pbp_and_matcher(pbp, bad, _cfg(persist_url, matcher_run_id="fic-121"))
+    report = persist_pbp_and_matcher(pbp, _out(bad, run_id="fic-121"), _cfg(persist_url))
     assert report.kept_prior == 1
     assert report.attested == 0
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
@@ -331,11 +383,11 @@ def test_past_duration_window_preserves_verified_mapping(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url) as conn:
         conn.execute("UPDATE games SET duration_s = 5 WHERE bbref_id = 'ficpersist01'")
         conn.commit()
-    report = persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url, matcher_run_id="fic-past-dur"))
+    report = persist_pbp_and_matcher(pbp, _out(matcher, run_id="fic-past-dur"), _cfg(persist_url))
     assert report.kept_prior == 1
     assert report.attested == 0
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
@@ -351,11 +403,11 @@ def test_null_duration_preserves_verified_mapping(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url) as conn:
         conn.execute("UPDATE games SET duration_s = NULL WHERE bbref_id = 'ficpersist01'")
         conn.commit()
-    report = persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url, matcher_run_id="fic-null-dur"))
+    report = persist_pbp_and_matcher(pbp, _out(matcher, run_id="fic-null-dur"), _cfg(persist_url))
     assert report.kept_prior == 1
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         two = conn.execute(
@@ -370,7 +422,7 @@ def test_shifted_pbp_zero_mutation(persist_url):
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         before, before_players = _clip_snapshot(conn)
     shifted = copy.deepcopy(pbp)
@@ -379,11 +431,35 @@ def test_shifted_pbp_zero_mutation(persist_url):
         play["description"] = descs[(i + 1) % len(descs)]
         play.pop("participants", None)
     with pytest.raises(PersistRefused, match="play identity mismatch"):
-        persist_pbp_and_matcher(shifted, matcher, _cfg(persist_url, matcher_run_id="fic-shift"))
+        persist_pbp_and_matcher(shifted, _out(matcher, run_id="fic-shift"), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         after, after_players = _clip_snapshot(conn)
         assert after == before
         assert after_players == before_players
+
+
+def test_repeated_description_changed_clock_zero_mutation(persist_url):
+    import psycopg
+    from psycopg.rows import dict_row
+
+    pbp = [
+        {"play_index": 0, "quarter": 1, "time": "11:00.0", "description": "FICTIONAL same wording"},
+        {"play_index": 1, "quarter": 1, "time": "10:00.0", "description": "FICTIONAL same wording"},
+    ]
+    persist_pbp_and_matcher(pbp, _out([]), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        before, before_players = _clip_snapshot(conn)
+        clocks = [row["game_clock"] for row in before]
+        assert clocks[0] != clocks[1]
+    shifted = copy.deepcopy(pbp)
+    shifted[1]["time"] = "9:00.0"
+    with pytest.raises(PersistRefused, match="play identity mismatch"):
+        persist_pbp_and_matcher(shifted, _out([], run_id="fic-clock-shift"), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        after, after_players = _clip_snapshot(conn)
+        assert after == before
+        assert after_players == before_players
+        assert [row["game_clock"] for row in after] == clocks
 
 
 def test_reordered_filtered_pbp_without_indexes_zero_mutation(persist_url):
@@ -392,7 +468,7 @@ def test_reordered_filtered_pbp_without_indexes_zero_mutation(persist_url):
     from db.capability import CapabilityTypeError
 
     pbp, matcher = _payload()
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         before, before_players = _clip_snapshot(conn)
     reordered = copy.deepcopy(pbp)
@@ -400,12 +476,12 @@ def test_reordered_filtered_pbp_without_indexes_zero_mutation(persist_url):
     for play in reordered:
         play.pop("play_index")
     with pytest.raises(CapabilityTypeError, match="explicit int"):
-        persist_pbp_and_matcher(reordered, matcher, _cfg(persist_url, matcher_run_id="fic-reorder"))
+        persist_pbp_and_matcher(reordered, _out(matcher, run_id="fic-reorder"), _cfg(persist_url))
     filtered = copy.deepcopy(pbp)[1:]
     for play in filtered:
         play.pop("play_index")
     with pytest.raises(CapabilityTypeError, match="explicit int"):
-        persist_pbp_and_matcher(filtered, matcher, _cfg(persist_url, matcher_run_id="fic-filter"))
+        persist_pbp_and_matcher(filtered, _out(matcher, run_id="fic-filter"), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         after, after_players = _clip_snapshot(conn)
         assert after == before
@@ -418,7 +494,7 @@ def test_unrelated_and_other_player_not_default_shot(persist_url):
 
     pbp, matcher = _payload()
     pbp[4]["participants"] = [{"bbref_id": "ficoth01", "role": "steal"}]
-    persist_pbp_and_matcher(pbp, matcher, _cfg(persist_url))
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
         rows = conn.execute(
             """
@@ -459,9 +535,96 @@ def test_non_fictional_game_refused(postgres_url):
     pbp, matcher = _payload()
     with pytest.raises(PersistRefused, match="fixtures/ keys only"):
         persist_pbp_and_matcher(
-            pbp, matcher,
-            _cfg(url, analyzed_source_key="games/ficpersist01.mkv"),
+            pbp, _out(matcher, key="games/ficpersist01.mkv"),
+            _cfg(url),
         )
+
+
+def test_scraped_pbp_byte_envelope_e2e(persist_url, tmp_path):
+    import psycopg
+    from psycopg.rows import dict_row
+    from db.analyzed_source import (
+        assert_local_input_unmutated,
+        capture_local_analyzed_source,
+        matcher_output_document,
+    )
+    from pbp_source_identity import stamp_source_pbp_identity
+
+    video = tmp_path / "fictional-persist.mkv"
+    video.write_bytes(b"FICTIONAL-LOCAL-BYTES-V1")
+    captured = capture_local_analyzed_source(
+        path=str(video),
+        key=ANALYZED_KEY,
+        matcher_run_id="fic-scrape-e2e",
+    )
+    assert_local_input_unmutated(str(video), captured)
+    with psycopg.connect(persist_url) as conn:
+        conn.execute(
+            "UPDATE games SET source_version = %s WHERE bbref_id = 'ficpersist01'",
+            (captured["analyzed_source_identity"],),
+        )
+        conn.commit()
+
+    scraped = [
+        {
+            "quarter": 1,
+            "time": "11:42.0",
+            "description": "Jump ball",
+            "team": "Fiction",
+        },
+        {
+            "quarter": 1,
+            "time": "11:08.0",
+            "description": "Casey Fixture makes 2-pt jumper (Other Fixture assists)",
+            "team": "Fiction",
+            "player_links": [
+                "/players/f/ficcas01.html",
+                "/players/f/ficoth01.html",
+            ],
+        },
+    ]
+    pbp = stamp_source_pbp_identity(scraped)
+    assert [play["play_index"] for play in pbp] == [0, 1]
+    assert pbp[1]["participants"] == [
+        {"bbref_id": "ficcas01", "role": "shot"},
+        {"bbref_id": "ficoth01", "role": "assist"},
+    ]
+    document = matcher_output_document(
+        plays=[{
+            "play_index": 0,
+            "pbp_play_index": 1,
+            "quarter": 1,
+            "game_time": "11:08.0",
+            "description": pbp[1]["description"],
+            "video_timestamp": 9,
+            "video_start": 7,
+            "video_end": 11,
+        }],
+        analyzed_source=captured,
+        matcher_version=MATCHER_VERSION,
+    )
+    report = persist_pbp_and_matcher(pbp, document, _cfg(persist_url))
+    assert report.attested == 1
+    assert report.source_version == captured["analyzed_source_identity"]
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        row = conn.execute(
+            "SELECT play_index, timing_provenance FROM clips WHERE play_index = 1"
+        ).fetchone()
+        assert row["timing_provenance"] == "matcher_attested"
+        linked = conn.execute(
+            """
+            SELECT p.bbref_id, cp.role
+            FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN players p ON p.id = cp.player_id
+            WHERE c.play_index = 1
+            ORDER BY cp.role
+            """
+        ).fetchall()
+        assert [(r["bbref_id"], r["role"]) for r in linked] == [
+            ("ficcas01", "shot"),
+            ("ficoth01", "assist"),
+        ]
 
 
 def test_persist_module_has_no_s3_or_http_client():
@@ -471,3 +634,5 @@ def test_persist_module_has_no_s3_or_http_client():
     assert "boto3" not in source
     assert "presign" not in source
     assert "enqueue" not in source
+    assert "config_from_env" in source
+    assert "MATCHER_ANALYZED_SOURCE_IDENTITY" not in source

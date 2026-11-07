@@ -15,6 +15,8 @@ import re
 from datetime import datetime
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 
 def video_dimensions(video_path):
     """Return width and height of the first video stream."""
@@ -380,6 +382,8 @@ def main():
     parser.add_argument('--model', default='qwen3-vl:4b', help='Ollama vision model (default: qwen3-vl:4b)')
     parser.add_argument('--crop', default=None, help='Scoreboard crop as x,y,w,h fractions of the frame')
     parser.add_argument('--output', '-o', help='Output JSON file path')
+    parser.add_argument('--source-key', default=None, help='Catalog key of the local video bytes consumed')
+    parser.add_argument('--game-bbref-id', default=None, help='Game bbref_id when persisting matcher output')
     
     args = parser.parse_args()
     
@@ -402,11 +406,27 @@ def main():
         print("Error: Cannot connect to Ollama")
         sys.exit(1)
     
-    # Load play-by-play data
+    # Load play-by-play data. Stamp source event identity before matching.
+    from pbp_source_identity import stamp_source_pbp_identity
     with open(args.playbyplay, 'r') as f:
-        raw_plays = json.load(f)
+        raw_plays = stamp_source_pbp_identity(json.load(f))
     
     print(f"Loaded {len(raw_plays)} plays from play-by-play data")
+
+    from db.matcher_persist import MATCHER_VERSION, persist_enabled
+    if persist_enabled() and not args.source_key:
+        print("Error: MATCHER_PERSIST=1 requires --source-key bound to consumed local video")
+        sys.exit(1)
+
+    analyzed_source = None
+    if args.source_key:
+        from db.analyzed_source import capture_local_analyzed_source
+        run_id = datetime.now().strftime('match-%Y%m%d-%H%M%S')
+        analyzed_source = capture_local_analyzed_source(
+            path=args.video,
+            key=args.source_key,
+            matcher_run_id=run_id,
+        )
     
     # Condense plays to prevent clips that overlap / cover the same action
     # Ex. player gets offensive rebound and putback layup = 1 clip, not 3
@@ -538,10 +558,19 @@ def main():
         worker_suffix = f"_worker{args.worker_id}" if args.worker_id is not None else ""
         output_path = f'output/cliptimestamps/{video_name}_timestamps_{timestamp}{worker_suffix}.json'
     
-    # Save results
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    # Save results. Persistable output carries analyzed source from consumed bytes.
+    output_document = matched_plays
+    if analyzed_source is not None:
+        from db.analyzed_source import assert_local_input_unmutated, matcher_output_document
+        assert_local_input_unmutated(args.video, analyzed_source)
+        output_document = matcher_output_document(
+            plays=matched_plays,
+            analyzed_source=analyzed_source,
+            matcher_version=MATCHER_VERSION,
+        )
+    os.makedirs(os.path.dirname(output_path) or '.', exist_ok=True)
     with open(output_path, 'w') as f:
-        json.dump(matched_plays, f, indent=2)
+        json.dump(output_document, f, indent=2)
     
     print(f"\n✓ Timestamps saved to: {output_path}")
     print(f"✓ Debug frames saved to: {debug_dir}")
@@ -559,7 +588,8 @@ def main():
         from db.matcher_persist import maybe_persist_after_match
         persist_report = maybe_persist_after_match(
             raw_pbp=raw_plays,
-            matcher_plays=matched_plays,
+            matcher_output=output_document,
+            game_bbref_id=args.game_bbref_id,
         )
         if persist_report.skipped_reason:
             print(f"Persist skipped: {persist_report.skipped_reason}")

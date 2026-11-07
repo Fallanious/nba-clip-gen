@@ -222,17 +222,22 @@ description natural-key fallback.
 
 ### Analyzed source binding (not a copy of the current DB version)
 
-Capture at acquisition and carry on `PersistConfig`:
+Bind provenance at actual acquisition/analysis, then emit it on matcher
+**output**. Persist reads that envelope; env and the locked DB row do not
+fill or override identity.
 
+- hash the exact stable local bytes consumed (`content_sha256`), with
+  mutation detection before emit, **or**
+- an immutable object `VersionId` captured at download (`object_version_id`)
 - analyzed object key (`fixtures/...` in this slice; not a URL)
-- immutable identity kind: `content_sha256` or `object_version_id`
-- identity value (sha256 must be `sha256:` + 64 hex)
+- `matcher_run_id` generated at analysis and carried on the output
 
-**ETag is not immutable** and is refused as an identity kind. Persist locks
-the game row (`FOR UPDATE`) and compares analyzed key + identity +
-`original_private` **before** attestation. Replay after a source replacement,
-wrong key, or race mismatch is refused. `matched_source_version` is stamped
-from the **analyzed** identity, never by copying `games.source_version`.
+**ETag is not immutable** and is refused as an identity kind. Persist does
+not guess from `games.source_version` or `MATCHER_ANALYZED_*` env. A v1
+output replayed against a current/forged v2 env and v2 DB is refused.
+Locked DB compare alone cannot prove analysis: the output identity must
+match the locked game. `matched_source_version` is stamped from the
+**output** identity, never by copying `games.source_version`.
 
 Prior `matcher_attested` rows for that same analyzed identity are kept when a
 rerun does not rematch that play. A new persist after the game identity
@@ -242,9 +247,13 @@ changes requires a new analysis bound to the new identity.
 
 Stable identity remains `UNIQUE (clips.game_id, clips.play_index)` plus
 `games.bbref_id` and `players.bbref_id`. PBP rows require an **explicit**
-integer `play_index` (no array-position fallback). On conflict, period +
-description must match the stored row or the **entire batch is refused**
-(zero mutation). Attestation SQL requires
+integer `play_index` stamped at scrape/load from source event order (no
+persist-time array-position fallback). Participants come from source PBP
+player links and description roles, not array position. On conflict, the
+full stored natural key (`period` + `description` + `game_clock`
+`IS NOT DISTINCT FROM`) must match; identity columns are not rewritten.
+Mismatch refuses the **entire batch** (zero mutation), including repeated
+descriptions in the same period whose clocks differ. Attestation SQL requires
 nonnegative finite timestamp/start, ordered window, positive finite trusted
 duration, `end <= duration`, `start < duration`, and `end - start <= 120`.
 Invalid payload leaves a current-identity good mapping in place.
@@ -254,8 +263,12 @@ Invalid payload leaves a current-identity good mapping in place.
 config-wide player applied to unmatched/unrelated plays.
 
 Internal persist SQL lives under `src/db/sql/queries/persist/` and is an
-**explicit allowlist**, not a public serializer. Public `queries/plays`
-files still must not select private columns.
+**explicit allowlist** of that designated directory only, not a public
+serializer and not an arbitrary nested `persist/` path. Public
+`queries/plays` files still must not select private columns. Per-play
+attestation savepoints catch only expected validation exceptions
+(`IntegrityError`, `DataError`); locking, connectivity, and programming
+faults propagate.
 
 Trusted `games.duration_s` is a probe of the original object at footage
 ingest, not at matcher persist. Matcher persist does not set duration.

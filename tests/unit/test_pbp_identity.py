@@ -10,23 +10,41 @@ sys.path.insert(0, "src")
 
 from db.capability import CapabilityTypeError
 from db.pbp_identity import matcher_offsets, normalize_pbp, resolve_matcher_pbp_index
-from db.matcher_persist import PersistConfig, PersistRefused, maybe_persist_after_match, persist_pbp_and_matcher
+from db.matcher_persist import (
+    EXPECTED_ATTESTATION_ERRORS,
+    MATCHER_VERSION,
+    PersistConfig,
+    PersistRefused,
+    maybe_persist_after_match,
+    persist_pbp_and_matcher,
+)
 
 FIXTURES = Path("tests/fixtures/plays")
+IDENTITY = "sha256:" + ("a" * 64)
 
 
 def _cfg(**overrides):
     values = dict(
         database_url="postgresql://nba@127.0.0.1:1/unused",
         game_bbref_id="ficpersist01",
-        matcher_run_id="fic-run",
-        analyzed_source_key="fixtures/fictional-persist.mkv",
-        analyzed_source_identity="sha256:" + ("a" * 64),
-        analyzed_identity_kind="content_sha256",
         commit=False,
     )
     values.update(overrides)
     return PersistConfig(**values)
+
+
+def _out(plays, *, identity=IDENTITY, key="fixtures/fictional-persist.mkv", run_id="fic-run", kind="content_sha256"):
+    return {
+        "analyzed_source": {
+            "analyzed_source_key": key,
+            "analyzed_identity_kind": kind,
+            "analyzed_source_identity": identity,
+            "matcher_run_id": run_id,
+        },
+        "matcher_run_id": run_id,
+        "matcher_version": MATCHER_VERSION,
+        "plays": plays,
+    }
 
 
 def test_condensed_play_index_is_not_pbp_identity():
@@ -81,7 +99,7 @@ def test_matcher_offsets_reject_over_max_and_negative_timestamp():
 
 def test_maybe_persist_skips_without_flag(monkeypatch):
     monkeypatch.delenv("MATCHER_PERSIST", raising=False)
-    report = maybe_persist_after_match(raw_pbp=[], matcher_plays=[])
+    report = maybe_persist_after_match(raw_pbp=[], matcher_output=_out([]))
     assert report.skipped_reason
     assert report.dry_run is True
 
@@ -90,7 +108,7 @@ def test_dry_run_does_not_need_a_database(monkeypatch):
     monkeypatch.setenv("APP_ENV", "test")
     pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
     matcher = json.loads((FIXTURES / "persist_matcher_condensed_fictional.json").read_text())
-    report = persist_pbp_and_matcher(pbp, matcher, _cfg())
+    report = persist_pbp_and_matcher(pbp, _out(matcher), _cfg())
     assert report.dry_run is True
     assert report.attested == 1
     assert report.unmatched == 4
@@ -102,8 +120,8 @@ def test_etag_identity_kind_refused(monkeypatch):
     pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
     with pytest.raises(PersistRefused, match="not immutable"):
         persist_pbp_and_matcher(
-            pbp, [],
-            _cfg(analyzed_identity_kind="etag", analyzed_source_identity="etag-v1"),
+            pbp, _out([], kind="etag", identity="etag-v1"),
+            _cfg(),
         )
 
 
@@ -111,4 +129,34 @@ def test_persist_guards_target_before_connect(monkeypatch):
     monkeypatch.setenv("APP_ENV", "production")
     pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
     with pytest.raises(PersistRefused, match="production"):
-        persist_pbp_and_matcher(pbp, [], _cfg(commit=True))
+        persist_pbp_and_matcher(pbp, _out([]), _cfg(commit=True))
+
+
+def test_env_cannot_fill_missing_envelope(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "test")
+    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_IDENTITY", IDENTITY)
+    monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_KEY", "fixtures/fictional-persist.mkv")
+    monkeypatch.setenv("MATCHER_ANALYZED_IDENTITY_KIND", "content_sha256")
+    pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
+    with pytest.raises(PersistRefused, match="analyzed_source envelope"):
+        persist_pbp_and_matcher(pbp, [], _cfg())
+
+
+def test_attestation_savepoint_does_not_catch_infra_faults():
+    from psycopg.errors import (
+        DeadlockDetected,
+        InternalError,
+        LockNotAvailable,
+        OperationalError,
+        ProgrammingError,
+    )
+
+    for exc in (
+        ProgrammingError,
+        OperationalError,
+        DeadlockDetected,
+        LockNotAvailable,
+        InternalError,
+        Exception,
+    ):
+        assert not issubclass(exc, EXPECTED_ATTESTATION_ERRORS)

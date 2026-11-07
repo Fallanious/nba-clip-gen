@@ -1,6 +1,7 @@
 -- Internal persist. Insert PBP display fields. Does not write video offsets.
--- On conflict, verify stable identity (period + description). Mismatch updates
--- zero rows so the batch can refuse atomically. Never relabel a play.
+-- On conflict, verify the full stored natural key (period + description +
+-- game_clock). Mismatch updates zero rows so the batch can refuse atomically.
+-- Identity columns are never rewritten.
 INSERT INTO clips (
   game_id,
   game_date,
@@ -28,11 +29,11 @@ INSERT INTO clips (
 )
 ON CONFLICT (game_id, play_index) DO UPDATE SET
   game_date = EXCLUDED.game_date,
-  game_clock = EXCLUDED.game_clock,
   action_type = EXCLUDED.action_type,
   outcome = EXCLUDED.outcome
 WHERE clips.period IS NOT DISTINCT FROM EXCLUDED.period
   AND clips.description IS NOT DISTINCT FROM EXCLUDED.description
+  AND clips.game_clock IS NOT DISTINCT FROM EXCLUDED.game_clock
 RETURNING
   id,
   timing_provenance,
@@ -40,4 +41,5 @@ RETURNING
   video_start_s,
   video_end_s,
   period,
-  description;
+  description,
+  game_clock;

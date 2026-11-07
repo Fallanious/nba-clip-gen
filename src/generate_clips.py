@@ -197,9 +197,11 @@ Examples:
         print(f"Error: Timestamps file not found: {args.timestamps}")
         sys.exit(1)
     
-    # Load timestamps JSON
+    # Load timestamps JSON (list, or matcher envelope with plays)
     with open(args.timestamps, 'r') as f:
         plays = json.load(f)
+    if isinstance(plays, dict) and isinstance(plays.get("plays"), list):
+        plays = plays["plays"]
     
     if not plays or len(plays) == 0:
         print("Error: No plays found in timestamps JSON")
