@@ -708,12 +708,28 @@ def test_mixed_unresolved_play_persists_only_proven_participants(persist_url):
 
 
 def test_clip_players_replace_current_set_and_clear(persist_url):
+    """(b) Fresh first persist matches incoming shot only. Populated rerun
+    must replace (shot→assist) and clear (empty/unresolved), not retain the
+    prior association set. Additive INSERT would only show on rerun.
+    """
     import psycopg
     from psycopg.rows import dict_row
     from pbp_source_identity import stamp_source_pbp_identity
 
     pbp, matcher = _payload()
     persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        fresh = conn.execute(
+            """
+            SELECT p.bbref_id, cp.role
+            FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN players p ON p.id = cp.player_id
+            WHERE c.play_index = 2
+            ORDER BY cp.role
+            """
+        ).fetchall()
+        assert [(r["bbref_id"], r["role"]) for r in fresh] == [("ficcas01", "shot")]
     corrected = copy.deepcopy(pbp)
     corrected[2]["participants"] = [{"bbref_id": "ficcas01", "role": "assist"}]
     persist_pbp_and_matcher(corrected, _out(matcher, run_id="fic-role-fix"), _cfg(persist_url))
@@ -787,6 +803,10 @@ def test_replace_clip_players_rolls_back_on_unknown_player(persist_url):
 
 
 def test_v1_attested_v2_unmatched_clears_stale_windows(persist_url):
+    """(c) After source V2, stored V1 numeric windows remain until persist
+    clears them. play_capability is denied (video_timing_unavailable), not
+    fail-open. Clearing stale storage is still required.
+    """
     import psycopg
     from psycopg.rows import dict_row
 
@@ -798,6 +818,16 @@ def test_v1_attested_v2_unmatched_clears_stale_windows(persist_url):
             (V2,),
         )
         conn.commit()
+        stored = conn.execute(
+            """
+            SELECT timing_provenance, video_start_s, video_end_s, matched_source_version
+            FROM clips WHERE play_index = 2
+            """
+        ).fetchone()
+        assert stored["timing_provenance"] == "matcher_attested"
+        assert float(stored["video_start_s"]) == 7.0
+        assert float(stored["video_end_s"]) == 11.0
+        assert stored["matched_source_version"] == V1
         cap = _cap(conn, 2)
         assert cap["can_create"] is False
         assert cap["reason"] == "video_timing_unavailable"
