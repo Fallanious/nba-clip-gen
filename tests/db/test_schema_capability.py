@@ -332,6 +332,43 @@ def test_rollback_and_reapply_0003(postgres_url):
         assert conn.execute("SELECT to_regclass('public.play_capability')").fetchone()[0]
 
 
+def test_stable_identity_unique_for_later_persist(conn):
+    """Later matcher persist upserts on these keys. This slice must keep them."""
+    from psycopg.errors import UniqueViolation
+
+    game_id = conn.execute(
+        "SELECT id FROM games WHERE bbref_id = 'fic000001FIC'"
+    ).fetchone()["id"]
+    with pytest.raises(UniqueViolation):
+        conn.execute(
+            """
+            INSERT INTO clips (game_id, game_date, play_index, period, description,
+              timing_provenance, video_start_s, video_end_s)
+            VALUES (%s, DATE '2026-01-03', 1, 1, 'FICTIONAL duplicate play identity',
+              'none', NULL, NULL)
+            """,
+            (game_id,),
+        )
+    conn.rollback()
+    with pytest.raises(UniqueViolation):
+        conn.execute(
+            """
+            INSERT INTO games (bbref_id, season, game_date, home_team_id, away_team_id)
+            SELECT 'fic000001FIC', season, game_date, home_team_id, away_team_id
+            FROM games WHERE bbref_id = 'fic000001FIC'
+            """
+        )
+    conn.rollback()
+    with pytest.raises(UniqueViolation):
+        conn.execute(
+            """
+            INSERT INTO players (bbref_id, full_name, last_name)
+            VALUES ('ficcas01', 'Casey Fixture', 'Fixture')
+            """
+        )
+    conn.rollback()
+
+
 def test_policy_doc_present():
     text = (SQL_ROOT / "POLICY.md").read_text(encoding="utf-8")
     assert "CLIP_MAX_DURATION_S = 120" in text
@@ -339,3 +376,5 @@ def test_policy_doc_present():
     assert "matcher_attested" in text
     assert "Rollback" in text or "rollback" in text
     assert "game_clock" in text.lower()
+    assert "UNIQUE (clips.game_id, clips.play_index)" in text
+    assert "Later persistence" in text

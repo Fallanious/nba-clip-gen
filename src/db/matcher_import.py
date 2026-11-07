@@ -1,4 +1,8 @@
-"""Offline PBP + matcher JSON merge. No database, S3, or Ollama."""
+"""Offline PBP + matcher JSON merge. No database writes, S3, or Ollama.
+
+Persist SQL and match_timestamps Neon wiring are a later slice. This helper
+only LEFT JOINs matcher rows onto stored PBP play_index.
+"""
 
 from __future__ import annotations
 

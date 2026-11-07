@@ -108,6 +108,45 @@ including ineligible ones. ETag/304 must not skip authz.
 There is no owner column. Cross-user isolation is an open blocker for HTTP
 slices. This slice only fails closed on missing user / empty id / empty scopes.
 
+## Later persistence (not this slice)
+
+Matcher → Neon save is a **following** slice. This schema is the contract it
+must reuse. Do not add persist SQL, `match_timestamps` DB writes, or clip_jobs
+here.
+
+Stable identity (already in 0001 + 0003):
+
+| Thing | Key | Notes |
+| --- | --- | --- |
+| Game | `games.bbref_id` UNIQUE | Basketball-Reference game id |
+| Play | `UNIQUE (clips.game_id, clips.play_index)` | Stored PBP index, not matcher array order |
+| Player | `players.bbref_id` UNIQUE + `clip_players` | Role on that play |
+| Footage | `games.s3_key` + `source_kind = original_private` + `games.source_version` | Original object only |
+
+Persist must:
+
+1. Look up the game by `bbref_id`, the play by `(game_id, play_index)`, the
+   player by `bbref_id`. Never invent ids.
+2. Upsert on `(game_id, play_index)` (duplicate-safe reruns).
+3. Write offsets only when provenance can be `matcher_attested` **and** the
+   source identity/version matches **and** VIDEO-relative bounds pass.
+4. Partial / unmatched / invalid matcher rows keep PBP metadata. Offsets stay
+   NULL. Provenance stays `none`. Never guess from game clock or neighbors.
+5. `public` / `derived` refs never substitute. Do not persist a public URL as
+   the original.
+6. Use dedicated files under `src/db/sql/queries/` (later slice). Isolated
+   local/dev fixtures only. No production import.
+
+`match_play_timestamps.py` today writes JSON and uses condensed-list
+`play_index`. Persist must map to the **stored** PBP `play_index`, not that
+array position. Do not rewrite the matcher model in the persist slice.
+
+Trusted `games.duration_s` is a probe of the original object at footage
+ingest, not at matcher persist. Matcher persist does not set duration.
+
+Real source media is only for later real-media validation. Fictional fixtures
+are enough to develop and test persist.
+
 ## Migration vs main vs Neon
 
 Git `main` has no `src/db`. Neon `dev` already has 0001-equivalent tables
@@ -134,3 +173,20 @@ guarded local/test or documented dev endpoint. It never prints `DATABASE_URL`.
 
 Existing `/api/generate` and local clip routes on main are **out of scope**.
 This schema does not secure them. New generate/playback routes stay unwired.
+
+## Ordered PR dependencies (do not skip)
+
+1. **Schema / capability** (this slice). VIEW, provenance, source identity,
+   fail-closed helpers. Isolated tests. No HTTP persist.
+2. **Matcher persist.** Dedicated SQL. Wire `match_timestamps` to save
+   validated VIDEO-relative offsets on the keys above. Duplicate-safe.
+   Partial matches keep metadata. Local/dev fixtures only. Depends on 1.
+3. **Browse metadata HTTP.** `require_user` + `authorize_player` before rows.
+   No enqueue. Depends on 1. **Blocked** until current-user identity exists.
+4. **Clip jobs / generate HTTP.** Durable jobs keyed by play + source version
+   + offsets. Depends on 2 and on identity. Does not secure existing
+   `/api/generate`.
+5. **Playback URL.** Depends on 4 and identity.
+6. **Players-tab UI.** Browse depends on 3. Play depends on 5.
+
+Requirements pin fix stays on hold (install blocker, not a pin change).
