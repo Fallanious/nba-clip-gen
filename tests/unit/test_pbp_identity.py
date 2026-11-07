@@ -132,6 +132,42 @@ def test_persist_guards_target_before_connect(monkeypatch):
         persist_pbp_and_matcher(pbp, _out([]), _cfg(commit=True))
 
 
+def test_empty_or_missing_matcher_version_is_refused(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "test")
+    pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
+    empty = _out([])
+    empty["matcher_version"] = ""
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, empty, _cfg())
+    missing = _out([])
+    del missing["matcher_version"]
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, missing, _cfg())
+
+
+def test_duplicate_resolved_pbp_index_refused_before_connect(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "test")
+    pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
+    matcher = json.loads((FIXTURES / "persist_matcher_condensed_fictional.json").read_text())
+    matcher = list(matcher)
+    matcher.append({
+        "play_index": 9,
+        "pbp_play_index": 2,
+        "video_timestamp": 30,
+        "video_start": 20,
+        "video_end": 28,
+    })
+    with pytest.raises(PersistRefused, match="duplicate matcher original play_index"):
+        persist_pbp_and_matcher(pbp, _out(matcher), _cfg(commit=True))
+
+
+def test_resolve_matcher_pbp_index_is_shared_helper():
+    from db.pbp_index import resolve_matcher_pbp_index as shared
+    from db.pbp_identity import resolve_matcher_pbp_index as persist_helper
+
+    assert persist_helper is shared
+
+
 def test_env_cannot_fill_missing_envelope(monkeypatch):
     monkeypatch.setenv("APP_ENV", "test")
     monkeypatch.setenv("MATCHER_ANALYZED_SOURCE_IDENTITY", IDENTITY)

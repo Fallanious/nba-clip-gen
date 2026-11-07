@@ -7,15 +7,24 @@ from typing import Any, Iterable, Mapping, Optional
 
 from db.bounds import CLIP_MAX_DURATION_S
 from db.capability import CapabilityTypeError, parse_optional_seconds
+from db.pbp_index import is_int_index, resolve_matcher_pbp_index
 
 MAX_PBP_PLAYS = 500
 CLIP_ROLES = frozenset({
     "shot", "assist", "block", "steal", "rebound", "foul", "fouled", "turnover",
 })
 
-
-def is_int_index(value: Any) -> bool:
-    return isinstance(value, int) and not isinstance(value, bool)
+__all__ = (
+    "CLIP_ROLES",
+    "MAX_PBP_PLAYS",
+    "is_int_index",
+    "matcher_offsets",
+    "normalize_pbp",
+    "original_pbp_index_from_condensed_play",
+    "pbp_clock_timedelta",
+    "play_participants",
+    "resolve_matcher_pbp_index",
+)
 
 
 def normalize_pbp(pbp_plays: Iterable[Mapping[str, Any]], *, max_plays: int = MAX_PBP_PLAYS) -> list[dict[str, Any]]:
@@ -88,28 +97,6 @@ def play_participants(play: Mapping[str, Any]) -> list[dict[str, str]]:
         seen.add(key)
         out.append({"bbref_id": bbref, "role": role})
     return out
-
-
-def resolve_matcher_pbp_index(
-    matcher_row: Mapping[str, Any],
-    pbp: list[Mapping[str, Any]],
-) -> Optional[int]:
-    """Return original PBP play_index. Ignores condensed matcher play_index.
-
-    Compound descriptions fail closed: they are not identity. There is no
-    quarter/time/description natural-key fallback.
-    """
-    if matcher_row.get("is_compound") is True:
-        return None
-    explicit = matcher_row.get("pbp_play_index")
-    if explicit is None:
-        explicit = matcher_row.get("original_play_index")
-    if not is_int_index(explicit):
-        return None
-    known = {int(p["play_index"]) for p in pbp}
-    if explicit not in known:
-        return None
-    return explicit
 
 
 def matcher_offsets(matcher_row: Mapping[str, Any]) -> Optional[tuple[Any, Any, Any]]:

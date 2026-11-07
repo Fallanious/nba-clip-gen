@@ -242,9 +242,10 @@ does **not** claim S3 provenance is secured.
 
 Participants from scrape: explicit roles only (primary plus recognized
 parentheticals, including `drawn by` → `fouled`). Extra player links are
-not assigned the primary role. Unsupported parentheticals and
-recognized-role/link count mismatch fail closed **per play**: empty
-`participants` plus `participants_unresolved`, other rows continue.
+not assigned the primary role. Unsupported parentheticals,
+recognized-role/link count mismatch, and **invalid preset participant
+rows** (unknown `clip_role` such as `coach`) fail closed **per play**:
+empty `participants` plus `participants_unresolved`, other rows continue.
 Identity corruption (partial indexes, non-object rows) still refuses the
 batch. Scrape/match run even when persist is disabled.
 
@@ -257,7 +258,15 @@ match the locked game. `matched_source_version` is stamped from the
 
 Prior `matcher_attested` rows for that same analyzed identity are kept when a
 rerun does not rematch that play. A new persist after the game identity
-changes requires a new analysis bound to the new identity.
+changes requires a new analysis bound to the new identity. Unmatched plays
+against a **different** current identity clear stale attested numeric
+windows to `none`/NULL. Only a valid current-identity attestation is
+preserved.
+
+Matcher output must carry an explicit nonempty `matcher_version`. Empty or
+missing envelope version is refused; persist does not substitute a default
+constant. Duplicate matcher rows that resolve to the same original PBP
+index refuse the **entire batch** (zero mutation).
 
 ### Play identity and bounds
 
@@ -277,7 +286,12 @@ Invalid payload leaves a current-identity good mapping in place.
 `clip_players` links only independently established per-play `participants`
 (`bbref_id` + `clip_role`). There is **no** default shot role, no guessed
 primary role on extra links, and no config-wide player applied to
-unmatched/unrelated plays.
+unmatched/unrelated plays. Each persist **replaces** the current
+association set for that clip with the exact validated incoming list
+(empty incoming clears prior rows). Additive ON CONFLICT inserts must not
+leave a previous role after a correction. Unresolved/empty plays clear
+associations. A later insert failure rolls the replace back with the
+batch.
 
 Internal persist SQL lives under `src/db/sql/queries/persist/` and is an
 **explicit allowlist** of that designated directory only, not a public

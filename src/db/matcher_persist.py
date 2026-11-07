@@ -111,7 +111,9 @@ def parse_matcher_output(document: Any) -> tuple[dict[str, str], list[Mapping[st
     if not isinstance(plays, list):
         raise PersistRefused("persist refused: matcher output plays must be a list")
     run_id = document.get("matcher_run_id") or source.get("matcher_run_id")
-    version = document.get("matcher_version") or source.get("matcher_version") or MATCHER_VERSION
+    version = document.get("matcher_version")
+    if version is None:
+        version = source.get("matcher_version")
     key, identity, kind = validate_analyzed_source(
         key=source.get("analyzed_source_key") or "",
         identity=source.get("analyzed_source_identity") or "",
@@ -182,12 +184,14 @@ def _window_within_trusted_duration(start, end, ts, duration) -> bool:
 def _attested_incoming(pbp: list[dict[str, Any]], matcher_plays: list[Mapping[str, Any]]) -> dict[int, dict[str, Any]]:
     by_index = {int(p["play_index"]): p for p in pbp}
     attested: dict[int, dict[str, Any]] = {}
+    seen: set[int] = set()
     for row in matcher_plays:
         idx = resolve_matcher_pbp_index(row, pbp)
         if idx is None or idx not in by_index:
             continue
-        if idx in attested:
-            continue
+        if idx in seen:
+            raise PersistRefused("persist refused: duplicate matcher original play_index")
+        seen.add(idx)
         offsets = matcher_offsets(row)
         if offsets is None:
             continue
@@ -317,6 +321,16 @@ def persist_pbp_and_matcher(
                     report.kept_prior += 1
                 else:
                     report.unmatched += 1
+                    conn.execute(
+                        _sql("clear_unmatched_timing"),
+                        {
+                            "clip_id": clip_id,
+                            "game_id": game["id"],
+                            "play_index": play["play_index"],
+                            "analyzed_source_identity": identity,
+                        },
+                    )
+            conn.execute(_sql("replace_clip_players"), {"clip_id": clip_id})
             for part in play_participants(play):
                 bbref = part["bbref_id"]
                 if bbref not in player_ids:

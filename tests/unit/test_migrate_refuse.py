@@ -93,9 +93,11 @@ def _sql_without_comments(body: str) -> str:
 
 INTERNAL_PERSIST_SQL = frozenset({
     "apply_attestation.sql",
+    "clear_unmatched_timing.sql",
     "insert_clip_player.sql",
     "lookup_game.sql",
     "lookup_player.sql",
+    "replace_clip_players.sql",
     "select_play_capability.sql",
     "upsert_play_metadata.sql",
 })

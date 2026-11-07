@@ -236,13 +236,16 @@ def test_wrong_analyzed_key_refused(persist_url):
         )
 
 
-def test_identity_collision_keeps_first_mapping(persist_url):
+def test_duplicate_resolved_pbp_index_zero_mutation(persist_url):
     import psycopg
     from psycopg.rows import dict_row
 
     pbp, matcher = _payload()
-    matcher = list(matcher)
-    matcher.append({
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        before, before_players = _clip_snapshot(conn)
+    dup = list(matcher)
+    dup.append({
         "play_index": 9,
         "pbp_play_index": 2,
         "video_timestamp": 30,
@@ -250,10 +253,23 @@ def test_identity_collision_keeps_first_mapping(persist_url):
         "video_end": 28,
         "description": "FICTIONAL collision",
     })
-    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    with pytest.raises(PersistRefused, match="duplicate matcher original play_index"):
+        persist_pbp_and_matcher(pbp, _out(dup, run_id="fic-dup"), _cfg(persist_url))
     with psycopg.connect(persist_url, row_factory=dict_row) as conn:
-        two = conn.execute("SELECT video_start_s FROM clips WHERE play_index = 2").fetchone()
-        assert float(two["video_start_s"]) == 7.0
+        after, after_players = _clip_snapshot(conn)
+        assert after == before
+        assert after_players == before_players
+        assert float(after[2]["video_start_s"]) == 7.0
+    empty_url = persist_url
+    with psycopg.connect(empty_url) as conn:
+        conn.execute("DELETE FROM clip_players")
+        conn.execute("DELETE FROM clips")
+        conn.commit()
+    with pytest.raises(PersistRefused, match="duplicate matcher original play_index"):
+        persist_pbp_and_matcher(pbp, _out(dup, run_id="fic-dup-empty"), _cfg(persist_url))
+    with psycopg.connect(persist_url) as conn:
+        assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] == 0
+        assert conn.execute("SELECT count(*) FROM clip_players").fetchone()[0] == 0
 
 
 def test_unknown_participant_rolls_back(persist_url):
@@ -689,6 +705,171 @@ def test_mixed_unresolved_play_persists_only_proven_participants(persist_url):
             "SELECT count(*) AS n FROM clip_players cp JOIN clips c ON c.id = cp.clip_id WHERE c.play_index = 1"
         ).fetchone()["n"]
         assert unresolved == 0
+
+
+def test_clip_players_replace_current_set_and_clear(persist_url):
+    import psycopg
+    from psycopg.rows import dict_row
+    from pbp_source_identity import stamp_source_pbp_identity
+
+    pbp, matcher = _payload()
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    corrected = copy.deepcopy(pbp)
+    corrected[2]["participants"] = [{"bbref_id": "ficcas01", "role": "assist"}]
+    persist_pbp_and_matcher(corrected, _out(matcher, run_id="fic-role-fix"), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        linked = conn.execute(
+            """
+            SELECT p.bbref_id, cp.role
+            FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN players p ON p.id = cp.player_id
+            WHERE c.play_index = 2
+            ORDER BY cp.role
+            """
+        ).fetchall()
+        assert [(r["bbref_id"], r["role"]) for r in linked] == [("ficcas01", "assist")]
+    emptied = copy.deepcopy(pbp)
+    emptied[2]["participants"] = []
+    persist_pbp_and_matcher(emptied, _out(matcher, run_id="fic-empty-parts"), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        n = conn.execute(
+            """
+            SELECT count(*) AS n FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            WHERE c.play_index = 2
+            """
+        ).fetchone()["n"]
+        assert n == 0
+    persist_pbp_and_matcher(pbp, _out(matcher, run_id="fic-restore-shot"), _cfg(persist_url))
+    unresolved = copy.deepcopy(pbp)
+    unresolved[2]["participants"] = [{"bbref_id": "ficcas01", "role": "coach"}]
+    stamped = stamp_source_pbp_identity(unresolved)
+    assert stamped[2]["participants"] == []
+    assert stamped[2]["participants_unresolved"] is True
+    persist_pbp_and_matcher(stamped, _out(matcher, run_id="fic-unresolved"), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        n = conn.execute(
+            """
+            SELECT count(*) AS n FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            WHERE c.play_index = 2
+            """
+        ).fetchone()["n"]
+        assert n == 0
+
+
+def test_replace_clip_players_rolls_back_on_unknown_player(persist_url):
+    import psycopg
+    from psycopg.rows import dict_row
+
+    pbp, matcher = _payload()
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        before, before_players = _clip_snapshot(conn)
+    broken = copy.deepcopy(pbp)
+    broken[2]["participants"] = [{"bbref_id": "missing01", "role": "assist"}]
+    with pytest.raises(PersistRefused, match="participant player not found"):
+        persist_pbp_and_matcher(broken, _out(matcher, run_id="fic-replace-fail"), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        after, after_players = _clip_snapshot(conn)
+        assert after == before
+        assert after_players == before_players
+        linked = conn.execute(
+            """
+            SELECT p.bbref_id, cp.role FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN players p ON p.id = cp.player_id
+            WHERE c.play_index = 2
+            """
+        ).fetchone()
+        assert linked["role"] == "shot"
+
+
+def test_v1_attested_v2_unmatched_clears_stale_windows(persist_url):
+    import psycopg
+    from psycopg.rows import dict_row
+
+    pbp, matcher = _payload()
+    persist_pbp_and_matcher(pbp, _out(matcher), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        conn.execute(
+            "UPDATE games SET source_version = %s WHERE bbref_id = 'ficpersist01'",
+            (V2,),
+        )
+        conn.commit()
+        cap = _cap(conn, 2)
+        assert cap["can_create"] is False
+        assert cap["reason"] == "video_timing_unavailable"
+    report = persist_pbp_and_matcher(pbp, _out([], identity=V2, run_id="fic-v2-unmatched"), _cfg(persist_url))
+    assert report.attested == 0
+    assert report.kept_prior == 0
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        two = conn.execute(
+            """
+            SELECT timing_provenance, video_start_s, video_end_s, video_timestamp_s,
+                   matcher_run_id, matcher_version, matched_source_version
+            FROM clips WHERE play_index = 2
+            """
+        ).fetchone()
+        assert two["timing_provenance"] == "none"
+        assert two["video_start_s"] is None
+        assert two["video_end_s"] is None
+        assert two["video_timestamp_s"] is None
+        assert two["matcher_run_id"] is None
+        assert two["matcher_version"] is None
+        assert two["matched_source_version"] is None
+        cap = _cap(conn, 2)
+        assert cap["can_create"] is False
+        assert cap["reason"] == "footage_not_matched"
+
+
+def test_empty_matcher_version_is_refused(persist_url):
+    import psycopg
+
+    pbp, matcher = _payload()
+    empty = _out(matcher)
+    empty["matcher_version"] = ""
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, empty, _cfg(persist_url))
+    missing = _out(matcher)
+    del missing["matcher_version"]
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, missing, _cfg(persist_url))
+    with psycopg.connect(persist_url) as conn:
+        assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] == 0
+
+
+def test_preset_coach_unresolved_neighbor_survives_persist(persist_url):
+    import psycopg
+    from psycopg.rows import dict_row
+    from pbp_source_identity import stamp_source_pbp_identity
+
+    pbp, matcher = _payload()
+    pbp[2]["participants"] = [{"bbref_id": "ficcas01", "role": "coach"}]
+    pbp[4]["participants"] = [{"bbref_id": "ficoth01", "role": "steal"}]
+    stamped = stamp_source_pbp_identity(pbp)
+    assert stamped[2]["participants"] == []
+    assert stamped[2]["participants_unresolved"] is True
+    assert stamped[4]["participants"] == [{"bbref_id": "ficoth01", "role": "steal"}]
+    persist_pbp_and_matcher(stamped, _out(matcher), _cfg(persist_url))
+    with psycopg.connect(persist_url, row_factory=dict_row) as conn:
+        rows = conn.execute(
+            """
+            SELECT c.play_index, p.bbref_id, cp.role
+            FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN players p ON p.id = cp.player_id
+            ORDER BY c.play_index, p.bbref_id
+            """
+        ).fetchall()
+        assert [(r["play_index"], r["bbref_id"], r["role"]) for r in rows] == [
+            (4, "ficoth01", "steal"),
+        ]
+        two = conn.execute(
+            "SELECT timing_provenance FROM clips WHERE play_index = 2"
+        ).fetchone()
+        assert two["timing_provenance"] == "matcher_attested"
 
 
 def test_persist_module_has_no_s3_or_http_client():

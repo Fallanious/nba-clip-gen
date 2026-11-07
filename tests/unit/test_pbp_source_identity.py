@@ -64,6 +64,32 @@ def test_partial_indexes_are_refused():
         ])
 
 
+def test_preset_unsupported_role_is_unresolved_neighbor_survives():
+    plays = stamp_source_pbp_identity([
+        {
+            "play_index": 0,
+            "description": "FICTIONAL jumper",
+            "participants": [{"bbref_id": "ficcas01", "role": "shot"}],
+        },
+        {
+            "play_index": 1,
+            "description": "FICTIONAL timeout",
+            "participants": [{"bbref_id": "ficcas01", "role": "coach"}],
+        },
+        {
+            "play_index": 2,
+            "description": "FICTIONAL steal",
+            "participants": [{"bbref_id": "ficoth01", "role": "steal"}],
+        },
+    ])
+    assert plays[0]["participants"] == [{"bbref_id": "ficcas01", "role": "shot"}]
+    assert "participants_unresolved" not in plays[0]
+    assert plays[1]["participants"] == []
+    assert plays[1]["participants_unresolved"] is True
+    assert plays[2]["participants"] == [{"bbref_id": "ficoth01", "role": "steal"}]
+    assert "participants_unresolved" not in plays[2]
+
+
 def test_existing_participants_are_not_invented_from_links():
     plays = stamp_source_pbp_identity([
         {

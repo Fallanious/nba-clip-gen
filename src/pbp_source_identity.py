@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 from typing import Any, Iterable, Mapping, Optional
 
+from db.pbp_identity import CLIP_ROLES
+
 BBREF_PLAYER_HREF = re.compile(r"/players/[a-z]/([a-z][a-z0-9]+)\.html", re.I)
 _PAREN = re.compile(r"\(([^)]*)\)")
 
@@ -71,11 +73,34 @@ def _primary_role(description: str) -> Optional[str]:
     return None
 
 
+def _preset_participants(raw: list[Any]) -> Optional[list[dict[str, str]]]:
+    """Return canonical participants, or None if any row is invalid."""
+    out: list[dict[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for item in raw:
+        if not isinstance(item, Mapping):
+            return None
+        bbref = item.get("bbref_id")
+        role = item.get("role")
+        if not isinstance(bbref, str) or not bbref.strip() or bbref != bbref.strip():
+            return None
+        if not isinstance(role, str) or role not in CLIP_ROLES:
+            return None
+        key = (bbref, role)
+        if key in seen:
+            return None
+        seen.add(key)
+        out.append({"bbref_id": bbref, "role": role})
+    return out
+
+
 def source_play_participants(play: Mapping[str, Any]) -> tuple[list[dict[str, str]], bool]:
     """Return (participants, unresolved). Unresolved plays get [] and no guessed roles."""
     existing = play.get("participants")
     if isinstance(existing, list):
-        parts = [dict(item) if isinstance(item, Mapping) else item for item in existing]
+        parts = _preset_participants(existing)
+        if parts is None:
+            return [], True
         return parts, False
     hrefs = play.get("player_links") or play.get("player_hrefs") or []
     if not isinstance(hrefs, list):

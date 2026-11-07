@@ -1,7 +1,8 @@
 -- Internal persist. Insert PBP display fields. Does not write video offsets.
 -- On conflict, verify the full stored natural key (period + description +
 -- game_clock). Mismatch updates zero rows so the batch can refuse atomically.
--- Identity columns are never rewritten.
+-- Identity columns and video windows are never rewritten here. Stale unmatched
+-- timing is cleared only by clear_unmatched_timing.sql after attestation.
 INSERT INTO clips (
   game_id,
   game_date,
