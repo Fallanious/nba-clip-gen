@@ -38,7 +38,16 @@ CREATE TABLE IF NOT EXISTS games (
   s3_key text,
   duration_s numeric,
   created_at timestamptz NOT NULL DEFAULT now(),
-  CHECK (home_team_id <> away_team_id)
+  CHECK (home_team_id <> away_team_id),
+  -- PostgreSQL numeric NaN equals itself and sorts above finite values.
+  CHECK (
+    duration_s IS NULL OR (
+      duration_s <> 'NaN'::numeric
+      AND duration_s <> 'Infinity'::numeric
+      AND duration_s <> '-Infinity'::numeric
+      AND duration_s > 0
+    )
+  )
 );
 
 CREATE TABLE IF NOT EXISTS clips (
@@ -57,7 +66,15 @@ CREATE TABLE IF NOT EXISTS clips (
   created_at timestamptz NOT NULL DEFAULT now(),
   UNIQUE (game_id, play_index),
   CHECK (video_end_s > video_start_s),
-  CHECK (video_start_s >= 0)
+  CHECK (video_start_s >= 0),
+  CHECK (
+    video_start_s <> 'NaN'::numeric
+    AND video_end_s <> 'NaN'::numeric
+    AND video_start_s <> 'Infinity'::numeric
+    AND video_end_s <> 'Infinity'::numeric
+    AND video_start_s <> '-Infinity'::numeric
+    AND video_end_s <> '-Infinity'::numeric
+  )
 );
 
 CREATE TABLE IF NOT EXISTS clip_players (
