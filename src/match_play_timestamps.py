@@ -296,6 +296,8 @@ def merge_play_group(plays):
         play['is_compound'] = False
         play['play_count'] = 1
         play['primary_action'] = extract_action_type(play['description'])
+        if play.get('pbp_play_index') is None:
+            play['pbp_play_index'] = play.get('play_index')
         return play
     
     # Combine descriptions with arrow
@@ -317,6 +319,8 @@ def merge_play_group(plays):
         'play_count': len(plays),
         'primary_action': primary_action,
         'original_plays': plays,  # Keep originals for reference
+        # Original PBP identity if present. Condensed list position is not this.
+        'pbp_play_index': plays[0].get('play_index'),
     }
 
 
@@ -493,7 +497,9 @@ def main():
                     clip_end = min(video_duration, current_time + 1)
                     
                     matched_plays.append({
+                        # Condensed-list position. Persist must not use this as clips.play_index.
                         'play_index': match_idx,
+                        'pbp_play_index': matched_play.get('pbp_play_index', matched_play.get('play_index')),
                         'team': matched_play['team'],
                         'description': matched_play['description'],
                         'quarter': matched_play['quarter'],
@@ -548,6 +554,28 @@ def main():
         print(f"   Action: {play['primary_action']}")
         print(f"   {play['description']}")
         print(f"   Video: {play['video_start']:.1f}s - {play['video_end']:.1f}s")
+
+    try:
+        from db.matcher_persist import maybe_persist_after_match
+        persist_report = maybe_persist_after_match(
+            raw_pbp=raw_plays,
+            matcher_plays=matched_plays,
+        )
+        if persist_report.skipped_reason:
+            print(f"Persist skipped: {persist_report.skipped_reason}")
+        elif persist_report.dry_run:
+            print(
+                f"Persist dry-run: upserted={persist_report.upserted} "
+                f"attested={persist_report.attested} unmatched={persist_report.unmatched}"
+            )
+        else:
+            print(
+                f"Persist committed: upserted={persist_report.upserted} "
+                f"attested={persist_report.attested} unmatched={persist_report.unmatched}"
+            )
+    except Exception as persist_exc:
+        print(f"Error: persist failed: {persist_exc}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

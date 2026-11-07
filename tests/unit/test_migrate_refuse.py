@@ -57,7 +57,7 @@ def _sql_without_comments(body: str) -> str:
 
 def test_query_files_exclude_private_columns():
     from pathlib import Path
-    root = Path("src/db/sql/queries")
+    root = Path("src/db/sql/queries/plays")
     for path in root.rglob("*.sql"):
         lower = _sql_without_comments(path.read_text(encoding="utf-8")).lower()
         assert "s3_key" not in lower

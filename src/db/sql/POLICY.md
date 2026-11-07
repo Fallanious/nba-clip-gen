@@ -190,13 +190,17 @@ worker; revocation **before** worker start and **before** URL issuance;
 sanitized errors; no source fallback. Failures must **release/recover**
 bounded resources.
 
-## Later persistence (not this slice)
+## Matcher persist (slice B; Later persistence implemented here)
 
-Matcher → Neon save is a **following** slice. This schema is the contract it
-must reuse. Do not add persist SQL, `match_timestamps` DB writes, or clip_jobs
-here.
+Offline matcher → local DB save. No HTTP, no S3, no Neon in this pass.
+`match_timestamps` calls `maybe_persist_after_match` only when
+`MATCHER_PERSIST=1`. Writes require `MATCHER_PERSIST_COMMIT=1`. Dry-run is the
+default. Condensed matcher `play_index` is **not** `clips.play_index`.
+Prior `matcher_attested` rows for the current `games.source_version` are kept
+when a rerun does not rematch that play. Stale `matched_source_version`
+invalidates eligibility until a new attested persist.
 
-Stable identity (already in 0001 + 0003):
+Stable identity:
 
 | Thing | Key | Notes |
 | --- | --- | --- |
@@ -212,17 +216,15 @@ Persist must:
 2. Upsert on `(game_id, play_index)` (duplicate-safe reruns).
 3. Write offsets only when provenance can be `matcher_attested` **and** the
    source identity/version matches **and** VIDEO-relative bounds pass.
+   `games.source_version` is server-resolved. Matcher `play_index` is ignored.
 4. Partial / unmatched / invalid matcher rows keep PBP metadata. Offsets stay
-   NULL. Provenance stays `none`. Never guess from game clock or neighbors.
+   NULL. Provenance stays `none` unless a prior verified mapping is kept.
+   Never guess from game clock or neighbors.
 5. `public` / `derived` refs never substitute. Do not persist a public URL as
    the original.
-6. Use dedicated files under `src/db/sql/queries/` (later slice). Isolated
-   local/dev fixtures only. No production import.
-7. Call `live_media_access_permitted` before any object access.
-
-`match_play_timestamps.py` today writes JSON and uses condensed-list
-`play_index`. Persist must map to the **stored** PBP `play_index`, not that
-array position. Do not rewrite the matcher model in the persist slice.
+6. Dedicated SQL under `src/db/sql/queries/persist/`. Isolated local/dev
+   fixtures only. No production import.
+7. Do not call live object APIs. Fictional `fixtures/` keys only in this pass.
 
 Trusted `games.duration_s` is a probe of the original object at footage
 ingest, not at matcher persist. Matcher persist does not set duration.

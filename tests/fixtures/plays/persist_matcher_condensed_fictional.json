@@ -1,0 +1,22 @@
+[
+  {
+    "play_index": 0,
+    "pbp_play_index": 2,
+    "quarter": 1,
+    "game_time": "11:08.0",
+    "description": "FICTIONAL Casey Fixture jumper",
+    "video_timestamp": 9.5,
+    "video_start": 7.0,
+    "video_end": 11.0
+  },
+  {
+    "play_index": 1,
+    "pbp_play_index": 3,
+    "quarter": 1,
+    "game_time": "10:50.0",
+    "description": "FICTIONAL invalid matcher offsets",
+    "video_timestamp": true,
+    "video_start": 1,
+    "video_end": 2
+  }
+]
