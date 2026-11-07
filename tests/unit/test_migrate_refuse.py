@@ -90,10 +90,24 @@ def _sql_without_comments(body: str) -> str:
     return "\n".join(lines)
 
 
+INTERNAL_PERSIST_SQL = frozenset({
+    "apply_attestation.sql",
+    "insert_clip_player.sql",
+    "lookup_game.sql",
+    "lookup_player.sql",
+    "select_play_capability.sql",
+    "upsert_play_metadata.sql",
+})
+
+
 def test_query_files_exclude_private_columns():
     from pathlib import Path
-    root = Path("src/db/sql/queries/plays")
+    root = Path("src/db/sql/queries")
+    persist_names = {p.name for p in (root / "persist").glob("*.sql")}
+    assert persist_names == INTERNAL_PERSIST_SQL
     for path in root.rglob("*.sql"):
+        if path.parent.name == "persist":
+            continue
         lower = _sql_without_comments(path.read_text(encoding="utf-8")).lower()
         assert "s3_key" not in lower
         assert "source_version" not in lower

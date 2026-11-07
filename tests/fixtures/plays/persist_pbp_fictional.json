@@ -1,7 +1,14 @@
 [
   {"play_index": 0, "quarter": 1, "time": "11:42.0", "description": "FICTIONAL unmatched jump ball", "team": "Fiction"},
   {"play_index": 1, "quarter": 1, "time": "11:20.0", "description": "FICTIONAL unmatched rebound", "team": "Fiction"},
-  {"play_index": 2, "quarter": 1, "time": "11:08.0", "description": "FICTIONAL Casey Fixture jumper", "team": "Fiction"},
+  {
+    "play_index": 2,
+    "quarter": 1,
+    "time": "11:08.0",
+    "description": "FICTIONAL Casey Fixture jumper",
+    "team": "Fiction",
+    "participants": [{"bbref_id": "ficcas01", "role": "shot"}]
+  },
   {"play_index": 3, "quarter": 1, "time": "10:50.0", "description": "FICTIONAL invalid matcher offsets", "team": "Fiction"},
   {"play_index": 4, "quarter": 1, "time": "10:12.0", "description": "FICTIONAL unmatched steal", "team": "Fiction"}
 ]
