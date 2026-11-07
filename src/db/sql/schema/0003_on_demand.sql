@@ -125,6 +125,7 @@ ALTER TABLE clips
       AND nba_numeric_is_finite(video_end_s) IS TRUE
       AND video_start_s >= 0
       AND video_end_s > video_start_s
+      AND (video_end_s - video_start_s) <= 120
     )
   );
 
@@ -186,6 +187,10 @@ SELECT
       AND g.source_kind = 'original_private'
       AND g.source_version IS NOT NULL
       AND length(trim(g.source_version)) > 0
+    ) IS NOT TRUE THEN 'footage_not_matched'
+    WHEN (
+      (g.is_fictional IS TRUE AND g.s3_key LIKE 'fixtures/%')
+      OR (g.is_fictional IS FALSE AND g.s3_key NOT LIKE 'fixtures/%')
     ) IS NOT TRUE THEN 'footage_not_matched'
     WHEN c.timing_provenance = 'none' THEN 'footage_not_matched'
     WHEN c.timing_provenance IN ('game_clock_derived', 'unvalidated_numeric')

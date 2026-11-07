@@ -36,7 +36,9 @@ These limits are the documented Security policy. Values outside them are
 5. Trusted duration: positive finite `games.duration_s` from a probe of the
    original private object. `end <= duration_s` and `start < duration_s`.
    NULL, NaN, ±Inf, zero, and negative duration are unavailable. Do not guess.
-6. Clip-length ceiling: `end - start <= 120` seconds (Security).
+6. Clip-length ceiling: `end - start <= 120` seconds (Security). Stored on
+   `clips_video_finite_window` as well as the VIEW and Python. Cross-table
+   `end <= duration_s` stays on the VIEW and attestation SQL.
 
 Constants (must match SQL VIEW, CHECKs, and Python):
 
@@ -265,12 +267,13 @@ The runner **never stamps 0001 merely because `public.teams` exists**.
 - Partial or mismatched 0001: refuse. Do not stamp. Do not apply 0001 on top.
 - Stamped version that does not match schema: refuse.
 - 0003: **always re-execute** idempotent `0003_on_demand.sql` under the
-  advisory lock, whether or not it is already stamped. Same-name
-  `CHECK (true)`, a finite helper that returns true, or a view that only
-  embeds marker literals are not sufficient. After apply, compare
-  `pg_get_constraintdef` / `pg_get_functiondef` / `pg_get_viewdef` against
-  required tokens (function call `nba_numeric_is_finite(`, NaN/Inf
-  exclusion, non-constant `can_create`) or refuse.
+  advisory lock, whether or not it is already stamped. After apply, prove
+  canonical expected structure and semantics, not comment/marker tokens:
+  execute `nba_numeric_is_finite` on NaN/±Inf/finite/NULL; require complete
+  predicates on comment-stripped `pg_get_constraintdef` /
+  `pg_get_viewdef` including `(video_end_s - video_start_s) <= 120` and
+  `c.video_end_s <= g.duration_s`. A helper `SELECT true -- NaN Infinity`
+  or a view missing the 120s bound is refused even if names match.
 - Apply runs in one transaction under `pg_advisory_xact_lock`. Failure rolls
   back stamps and DDL. Dirty baselines stay as they were.
 

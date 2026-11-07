@@ -406,6 +406,86 @@ def test_stable_identity_unique_for_later_persist(conn):
     conn.rollback()
 
 
+def test_attested_121s_window_rejected_by_storage_check(conn):
+    game_id = conn.execute(
+        "SELECT id FROM games WHERE bbref_id = 'fic000001FIC'"
+    ).fetchone()["id"]
+    with pytest.raises(Exception):
+        conn.execute(
+            """
+            INSERT INTO clips (game_id, game_date, play_index, period, description,
+              timing_provenance, video_start_s, video_end_s, video_timestamp_s,
+              matcher_run_id, matcher_version, matched_source_version)
+            VALUES (%s, DATE '2026-01-03', 97, 1, 'FICTIONAL attested 121s',
+              'matcher_attested', 0, 121, 1,
+              'fic-run-a', 'match_play_timestamps/fictional', 'etag-fic-a-v1')
+            """,
+            (game_id,),
+        )
+    conn.rollback()
+    conn.execute(
+        """
+        INSERT INTO clips (game_id, game_date, play_index, period, description,
+          timing_provenance, video_start_s, video_end_s, video_timestamp_s,
+          matcher_run_id, matcher_version, matched_source_version)
+        VALUES (%s, DATE '2026-01-03', 98, 1, 'FICTIONAL attested 120s',
+          'matcher_attested', 0, 120, 1,
+          'fic-run-a', 'match_play_timestamps/fictional', 'etag-fic-a-v1')
+        """,
+        (game_id,),
+    )
+
+
+def test_fictional_live_prefix_reason_is_footage_when_check_bypassed(conn):
+    """Python and VIEW source-reason parity for legacy pairing even if CHECK is dropped."""
+    from db.capability import public_capability
+
+    teams = conn.execute("SELECT id FROM teams ORDER BY id LIMIT 2").fetchall()
+    conn.execute("ALTER TABLE games DROP CONSTRAINT IF EXISTS games_fictional_key_prefix")
+    conn.execute(
+        """
+        INSERT INTO games (
+          bbref_id, season, game_date, home_team_id, away_team_id,
+          s3_key, duration_s, source_kind, source_version, is_fictional
+        )
+        VALUES (
+          'ficbypass01FIC', '2025-26', DATE '2026-01-03', %s, %s,
+          'games/ficbypass01FIC.mkv', 48, 'original_private', 'etag-bypass-v1', true
+        )
+        """,
+        (teams[0]["id"], teams[1]["id"]),
+    )
+    game = conn.execute(
+        "SELECT id, s3_key, source_kind, source_version, duration_s, is_fictional FROM games WHERE bbref_id = 'ficbypass01FIC'"
+    ).fetchone()
+    conn.execute(
+        """
+        INSERT INTO clips (game_id, game_date, play_index, period, description,
+          timing_provenance, video_start_s, video_end_s, video_timestamp_s,
+          matcher_run_id, matcher_version, matched_source_version)
+        VALUES (%s, DATE '2026-01-03', 1, 1, 'FICTIONAL bypass pairing',
+          'matcher_attested', 0, 8, 1,
+          'fic-run-a', 'match_play_timestamps/fictional', %s)
+        """,
+        (game["id"], game["source_version"]),
+    )
+    cap = conn.execute(
+        "SELECT can_create, reason FROM play_capability WHERE play_id = "
+        "(SELECT id FROM clips WHERE game_id = %s AND play_index = 1)",
+        (game["id"],),
+    ).fetchone()
+    py = public_capability({
+        **dict(game),
+        "timing_provenance": "matcher_attested",
+        "matched_source_version": game["source_version"],
+        "video_start_s": 0,
+        "video_end_s": 8,
+    })
+    assert cap["can_create"] is False
+    assert cap["reason"] == "footage_not_matched"
+    assert py == {"can_create": False, "reason": "footage_not_matched"}
+
+
 def test_tiny_positive_gap_eligible_in_view(conn):
     from db.capability import live_media_access_permitted
 
@@ -895,6 +975,68 @@ def test_stamped_0003_altered_bodies_are_reapplied(postgres_url):
         assert not re.search(r"(?<!is )true\s+as\s+can_create\b", viewdef, re.I)
         versions = {r[0] for r in conn.execute("SELECT version FROM schema_migrations")}
         assert "0003_on_demand" in versions
+        assert "(video_end_s - video_start_s) <= 120" in " ".join(window.lower().split()).replace(" (", "(")
+
+
+def test_verify_denies_malicious_comment_helper_and_missing_view_bound(postgres_url):
+    """Reapply is not enough if verification trusts comment tokens or incomplete view bodies."""
+    import psycopg
+    from db.migrate import (
+        MigrationRefused,
+        _0003_definition_mismatch_reasons,
+        _verify_0003,
+        apply_migrations,
+        _play_capability_viewdef,
+    )
+
+    os.environ["APP_ENV"] = "test"
+    url = _fresh_db(postgres_url, "nba_verify_semantics")
+    apply_migrations(url)
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute(
+            """
+            CREATE OR REPLACE FUNCTION nba_numeric_is_finite(x numeric) RETURNS boolean
+            LANGUAGE sql IMMUTABLE STRICT AS $$
+              SELECT true -- NaN Infinity -Infinity
+            $$
+            """
+        )
+        reasons = _0003_definition_mismatch_reasons(conn)
+        assert any("nba_numeric_is_finite" in r for r in reasons)
+        assert conn.execute("SELECT nba_numeric_is_finite('NaN'::numeric)").fetchone()[0] is True
+        with pytest.raises(MigrationRefused, match="nba_numeric_is_finite"):
+            _verify_0003(conn)
+
+        apply_migrations(url)
+        assert conn.execute("SELECT nba_numeric_is_finite('NaN'::numeric)").fetchone()[0] is False
+
+        conn.execute("DROP VIEW play_capability")
+        conn.execute(
+            """
+            CREATE VIEW play_capability AS
+            SELECT
+              c.id AS play_id,
+              (
+                g.source_kind = 'original_private'
+                AND c.timing_provenance = 'matcher_attested'
+                AND nba_numeric_is_finite(c.video_start_s) IS TRUE
+                AND nba_numeric_is_finite(c.video_end_s) IS TRUE
+                AND nba_numeric_is_finite(g.duration_s) IS TRUE
+                AND g.duration_s > 0
+                AND c.video_start_s < g.duration_s
+                AND c.video_end_s <= g.duration_s
+                AND g.is_fictional IS TRUE
+                AND g.s3_key LIKE 'fixtures/%'
+              ) IS TRUE AS can_create,
+              NULL::text AS reason
+            FROM clips c
+            JOIN games g ON g.id = c.game_id
+            """
+        )
+        viewdef = _play_capability_viewdef(conn)
+        assert "(c.video_end_s - c.video_start_s) <= 120" not in " ".join(viewdef.lower().split())
+        reasons = _0003_definition_mismatch_reasons(conn)
+        assert any("<= 120" in r for r in reasons)
 
 
 def test_down_preflight_failure_preserves_view_constraints_stamp(postgres_url):

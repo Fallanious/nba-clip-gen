@@ -266,8 +266,8 @@ def test_mapper_keeps_unmatched():
         {"play_index": 4, "quarter": 1, "time": "9:12.0", "description": "FICTIONAL e"},
     ]
     matcher = [
-        {"play_index": 1, "video_timestamp": 12, "video_start": 7, "video_end": 13},
-        {"play_index": 2, "video_timestamp": 20, "video_start": 15, "video_end": 21},
+        {"play_index": 1, "pbp_play_index": 1, "video_timestamp": 12, "video_start": 7, "video_end": 13},
+        {"play_index": 2, "pbp_play_index": 2, "video_timestamp": 20, "video_start": 15, "video_end": 21},
     ]
     rows = merge_pbp_and_matcher(
         pbp, matcher,
@@ -296,7 +296,7 @@ def test_mapper_checked_in_fixtures_labeled_and_unmatched():
 
 def test_mapper_rejects_bool_offsets_as_unattested():
     pbp = [{"play_index": 0, "description": "FICTIONAL"}]
-    matcher = [{"play_index": 0, "video_timestamp": True, "video_start": 0, "video_end": 1}]
+    matcher = [{"play_index": 0, "pbp_play_index": 0, "video_timestamp": True, "video_start": 0, "video_end": 1}]
     rows = merge_pbp_and_matcher(
         pbp, matcher, matcher_run_id="x", matcher_version="x", source_version="v"
     )
@@ -333,9 +333,10 @@ def test_unknown_is_fictional_denies_capability():
 
 def test_fictional_capability_true_only_with_fixture_prefix():
     assert public_capability(_eligible())["can_create"] is True
-    assert public_capability(
+    mismatched = public_capability(
         _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=True)
-    )["can_create"] is False
+    )
+    assert mismatched == {"can_create": False, "reason": "footage_not_matched"}
     live = _eligible(s3_key="games/fic000001FIC.mkv", is_fictional=False)
     assert public_capability(live)["can_create"] is True
     assert public_capability(
@@ -352,12 +353,12 @@ def test_python_nan_duration_is_timing_unavailable():
 
 def test_mapper_rejects_duplicate_missing_noninteger_bool_play_index():
     pbp = [{"play_index": 0, "description": "FICTIONAL"}]
-    with pytest.raises(CapabilityTypeError, match="duplicate"):
+    with pytest.raises(CapabilityTypeError, match="duplicate matcher original"):
         merge_pbp_and_matcher(
             pbp,
             [
-                {"play_index": 0, "video_timestamp": 1, "video_start": 0, "video_end": 1},
-                {"play_index": 0, "video_timestamp": 2, "video_start": 1, "video_end": 2},
+                {"play_index": 9, "pbp_play_index": 0, "video_timestamp": 1, "video_start": 0, "video_end": 1},
+                {"play_index": 8, "pbp_play_index": 0, "video_timestamp": 2, "video_start": 1, "video_end": 2},
             ],
             matcher_run_id="fic", matcher_version="fic", source_version="etag",
         )
@@ -374,12 +375,6 @@ def test_mapper_rejects_duplicate_missing_noninteger_bool_play_index():
                 [],
                 matcher_run_id="fic", matcher_version="fic", source_version="etag",
             )
-        with pytest.raises(CapabilityTypeError):
-            merge_pbp_and_matcher(
-                [{"play_index": 0, "description": "FICTIONAL"}],
-                [{"play_index": bad, "video_timestamp": 1, "video_start": 0, "video_end": 1}],
-                matcher_run_id="fic", matcher_version="fic", source_version="etag",
-            )
 
 
 def test_mapper_invalid_windows_stay_unattested():
@@ -390,10 +385,10 @@ def test_mapper_invalid_windows_stay_unattested():
         {"play_index": 3, "description": "FICTIONAL ok"},
     ]
     matcher = [
-        {"play_index": 0, "video_timestamp": 5, "video_start": 9, "video_end": 3},
-        {"play_index": 1, "video_timestamp": 1, "video_start": -1, "video_end": 4},
-        {"play_index": 2, "video_timestamp": 1, "video_start": 0, "video_end": 121},
-        {"play_index": 3, "video_timestamp": 1, "video_start": 0, "video_end": 8},
+        {"play_index": 0, "pbp_play_index": 0, "video_timestamp": 5, "video_start": 9, "video_end": 3},
+        {"play_index": 1, "pbp_play_index": 1, "video_timestamp": 1, "video_start": -1, "video_end": 4},
+        {"play_index": 2, "pbp_play_index": 2, "video_timestamp": 1, "video_start": 0, "video_end": 121},
+        {"play_index": 3, "pbp_play_index": 3, "video_timestamp": 1, "video_start": 0, "video_end": 8},
     ]
     rows = merge_pbp_and_matcher(
         pbp, matcher, matcher_run_id="fic", matcher_version="fic", source_version="etag",
@@ -405,7 +400,7 @@ def test_mapper_invalid_windows_stay_unattested():
 
 def test_mapper_requires_canonical_nonempty_provenance():
     pbp = [{"play_index": 0, "description": "FICTIONAL"}]
-    matcher = [{"play_index": 0, "video_timestamp": 1, "video_start": 0, "video_end": 1}]
+    matcher = [{"play_index": 0, "pbp_play_index": 0, "video_timestamp": 1, "video_start": 0, "video_end": 1}]
     for field, value in (
         ("matcher_run_id", ""),
         ("matcher_run_id", "  x"),
@@ -417,6 +412,33 @@ def test_mapper_requires_canonical_nonempty_provenance():
         kwargs[field] = value
         with pytest.raises(CapabilityTypeError):
             merge_pbp_and_matcher(pbp, matcher, **kwargs)
+
+
+def test_mapper_uses_original_pbp_index_not_condensed():
+    from db.pbp_index import resolve_matcher_pbp_index
+    from db.matcher_import import merge_pbp_and_matcher as merge_fn
+
+    pbp = [
+        {"play_index": 0, "description": "FICTIONAL zero"},
+        {"play_index": 2, "description": "FICTIONAL two"},
+    ]
+    matcher = [{
+        "play_index": 0,
+        "pbp_play_index": 2,
+        "video_timestamp": 1,
+        "video_start": 0,
+        "video_end": 8,
+    }]
+    assert resolve_matcher_pbp_index(matcher[0], pbp) == 2
+    assert merge_fn is merge_pbp_and_matcher
+    rows = merge_pbp_and_matcher(
+        pbp, matcher, matcher_run_id="fic", matcher_version="fic", source_version="etag",
+    )
+    by_index = {row["play_index"]: row for row in rows}
+    assert by_index[0]["timing_provenance"] == "none"
+    assert by_index[0]["video_start_s"] is None
+    assert by_index[2]["timing_provenance"] == "matcher_attested"
+    assert by_index[2]["video_start_s"] == 0
 
 
 def test_capability_module_does_not_import_boto3_or_jobs():

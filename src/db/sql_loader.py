@@ -10,10 +10,21 @@ QUERIES_ROOT = SQL_ROOT / "queries"
 
 def load_query_sql(name: str) -> str:
     """name like plays/capability maps to queries/plays/capability.sql"""
-    path = QUERIES_ROOT.joinpath(*name.split("/")).with_suffix(".sql")
-    if not path.is_file():
-        raise FileNotFoundError(path)
-    body = path.read_text(encoding="utf-8")
+    if not isinstance(name, str) or not name.strip() or name != name.strip():
+        raise ValueError("query name must be a nonempty canonical relative path")
+    parts = name.split("/")
+    if any(part in ("", ".", "..") for part in parts):
+        raise ValueError("query path escapes queries root")
+    root = QUERIES_ROOT.resolve()
+    path = QUERIES_ROOT.joinpath(*parts).with_suffix(".sql")
+    resolved = path.resolve()
+    try:
+        resolved.relative_to(root)
+    except ValueError as exc:
+        raise ValueError("query path escapes queries root") from exc
+    if not resolved.is_file():
+        raise FileNotFoundError(resolved)
+    body = resolved.read_text(encoding="utf-8")
     lines = []
     skipping = True
     for line in body.splitlines():

@@ -15,6 +15,7 @@ from db.capability import (
     CapabilityTypeError,
     parse_optional_seconds,
 )
+from db.pbp_index import resolve_matcher_pbp_index
 
 
 def _canonical_token(value: Any, *, field: str) -> str:
@@ -37,25 +38,32 @@ def merge_pbp_and_matcher(
     matcher_version: str,
     source_version: str,
 ) -> list[dict[str, Any]]:
-    """LEFT JOIN matcher onto PBP by stored play_index. No array-position fallback.
+    """LEFT JOIN matcher onto PBP by original play_index. No condensed fallback.
 
-    Duplicate, missing, non-integer, or bool play_index values are refused.
-    Invalid windows (reversed, negative, longer than CLIP_MAX_DURATION_S) stay
-    none/NULL, not attested.
+    Duplicate, missing, non-integer, or bool PBP play_index values are refused.
+    Matcher rows resolve only through resolve_matcher_pbp_index. Invalid windows
+    (reversed, negative, longer than CLIP_MAX_DURATION_S) stay none/NULL, not
+    attested. Duplicate resolved original indexes are refused.
     """
     run_id = _canonical_token(matcher_run_id, field="matcher_run_id")
     version = _canonical_token(matcher_version, field="matcher_version")
     matched_version = _canonical_token(source_version, field="source_version")
 
-    by_index: dict[int, dict[str, Any]] = {}
+    pbp_list = list(pbp_plays)
+    for play in pbp_list:
+        _require_play_index(play.get("play_index"), field="PBP play_index")
+
+    resolved: dict[int, dict[str, Any]] = {}
     for item in matcher_plays:
-        idx = _require_play_index(item.get("play_index"), field="matcher play_index")
-        if idx in by_index:
-            raise CapabilityTypeError("duplicate matcher play_index")
-        by_index[idx] = item
+        orig = resolve_matcher_pbp_index(item, pbp_list)
+        if orig is None:
+            continue
+        if orig in resolved:
+            raise CapabilityTypeError("duplicate matcher original play_index")
+        resolved[orig] = item
 
     rows = []
-    for play in pbp_plays:
+    for play in pbp_list:
         idx = _require_play_index(play.get("play_index"), field="PBP play_index")
         unmatched = {
             "play_index": idx,
@@ -70,7 +78,7 @@ def merge_pbp_and_matcher(
             "matcher_version": None,
             "matched_source_version": None,
         }
-        matched = by_index.get(idx)
+        matched = resolved.get(idx)
         if not matched:
             rows.append(unmatched)
             continue

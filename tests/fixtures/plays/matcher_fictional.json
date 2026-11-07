@@ -1,4 +1,4 @@
 [
-  {"play_index": 1, "video_timestamp": 12.0, "video_start": 7.0, "video_end": 13.0, "description": "FICTIONAL matched jumper"},
-  {"play_index": 2, "video_timestamp": 20.5, "video_start": 15.25, "video_end": 21.0, "description": "FICTIONAL matched layup"}
+  {"play_index": 1, "pbp_play_index": 1, "video_timestamp": 12.0, "video_start": 7.0, "video_end": 13.0, "description": "FICTIONAL matched jumper"},
+  {"play_index": 2, "pbp_play_index": 2, "video_timestamp": 20.5, "video_start": 15.25, "video_end": 21.0, "description": "FICTIONAL matched layup"}
 ]
