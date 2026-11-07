@@ -211,11 +211,33 @@ REQUIRED_0003_CONSTRAINTS = {
     }),
 }
 
-REQUIRED_0003_VIEWDEF_MARKERS = (
-    "nba_numeric_is_finite",
-    "duration_s",
+# Canonical body tokens. Names plus substring markers are not enough:
+# CHECK (true), a function that returns true, or a view that embeds marker
+# text as a literal would pass a name/marker scan.
+REQUIRED_0003_CONSTRAINT_TOKENS = {
+    ("games", "games_s3_key_not_url"): ("s3_key", "https?", "s3"),
+    ("games", "games_source_version_trim"): ("source_version", "trim"),
+    ("games", "games_fictional_key_prefix"): ("is_fictional", "fixtures/%"),
+    ("games", "games_duration_finite_positive"): (
+        "nba_numeric_is_finite", "duration_s", "> 0",
+    ),
+    ("clips", "clips_video_finite_window"): (
+        "nba_numeric_is_finite", "video_start_s", "video_end_s",
+    ),
+    ("clips", "clips_none_requires_null_offsets"): (
+        "timing_provenance", "none", "video_start_s", "video_end_s",
+    ),
+    ("clips", "clips_attested_requires_binding"): (
+        "matcher_attested", "nba_numeric_is_finite", "matcher_run_id",
+        "video_timestamp_s",
+    ),
+}
+REQUIRED_FUNCTION_TOKENS = ("NaN", "Infinity", "-Infinity")
+REQUIRED_VIEW_CALL_TOKENS = (
+    "nba_numeric_is_finite(",
+    "timing_provenance",
     "matcher_attested",
-    "fixtures/%",
+    "duration_s",
     "is_fictional",
 )
 
@@ -273,6 +295,35 @@ def _unique_column_sets(conn, table: str) -> set[tuple[str, ...]]:
             continue
         found.add(tuple(cols))
     return found
+
+
+def _constraintdef(conn, table: str, name: str) -> str | None:
+    row = conn.execute(
+        """
+        SELECT pg_get_constraintdef(c.oid, true)
+        FROM pg_constraint c
+        JOIN pg_class t ON t.oid = c.conrelid
+        JOIN pg_namespace n ON n.oid = t.relnamespace
+        WHERE n.nspname = 'public'
+          AND t.relname = %s
+          AND c.conname = %s
+        """,
+        (table, name),
+    ).fetchone()
+    if row is None or not row[0]:
+        return None
+    return row[0]
+
+
+def _functiondef(conn) -> str | None:
+    row = conn.execute(
+        """
+        SELECT pg_get_functiondef('public.nba_numeric_is_finite(numeric)'::regprocedure)
+        """
+    ).fetchone()
+    if row is None or not row[0]:
+        return None
+    return row[0]
 
 
 def _constraint_names(conn, table: str) -> set[str]:
@@ -351,23 +402,38 @@ def _0003_definition_mismatch_reasons(conn) -> list[str]:
     if not all(flags.values()):
         reasons.append("0003 flags=" + str(flags))
         return reasons
-    for table, names in REQUIRED_0003_CONSTRAINTS.items():
-        have = _constraint_names(conn, table)
-        missing = names - have
-        if missing:
-            reasons.append(f"{table} missing constraints {sorted(missing)}")
-    fn = conn.execute(
-        """
-        SELECT to_regprocedure('public.nba_numeric_is_finite(numeric)')
-        """
-    ).fetchone()[0]
+    for (table, name), tokens in REQUIRED_0003_CONSTRAINT_TOKENS.items():
+        defn = _constraintdef(conn, table, name)
+        if defn is None:
+            reasons.append(f"{table} missing constraint {name}")
+            continue
+        compact = " ".join(defn.lower().split())
+        if compact in {"check (true)", "check(true)"}:
+            reasons.append(f"{name} body is CHECK (true)")
+            continue
+        for token in tokens:
+            if token.lower() not in defn.lower():
+                reasons.append(f"{name} definition missing {token}")
+    fn = _functiondef(conn)
     if fn is None:
         reasons.append("nba_numeric_is_finite missing")
-    viewdef = _play_capability_viewdef(conn)
-    lowered = viewdef.lower()
-    for marker in REQUIRED_0003_VIEWDEF_MARKERS:
-        if marker.lower() not in lowered:
-            reasons.append(f"play_capability viewdef missing {marker}")
+    else:
+        for token in REQUIRED_FUNCTION_TOKENS:
+            if token not in fn:
+                reasons.append("nba_numeric_is_finite body missing " + token)
+        if re.search(r"\bSELECT\s+true\b", fn, re.IGNORECASE) and "NaN" not in fn:
+            reasons.append("nba_numeric_is_finite body is permissive")
+    try:
+        viewdef = _play_capability_viewdef(conn)
+    except MigrationRefused as exc:
+        reasons.append(str(exc))
+        return reasons
+    compact_view = " ".join(viewdef.lower().split()).replace(" (", "(")
+    if re.search(r"(?<!is )true\s+as\s+can_create\b", compact_view):
+        reasons.append("play_capability can_create is a constant true")
+    for token in REQUIRED_VIEW_CALL_TOKENS:
+        if token.lower() not in compact_view:
+            reasons.append(f"play_capability viewdef missing {token}")
     return reasons
 
 
@@ -433,14 +499,12 @@ def apply_migrations(database_url: str) -> list[str]:
                     applied_now.append("0001_init")
             have = _applied(conn)
 
-            if "0003_on_demand" in have:
-                _verify_0003(conn)
-            else:
-                # Always execute idempotent 0003 SQL when unstamped. Columns or
-                # a replaced/permissive view are not a stamp. Verify named
-                # constraints and view definition after apply.
-                _exec_file(conn, SCHEMA_DIR / "0003_on_demand.sql")
-                _verify_0003(conn)
+            # Authoritatively reapply idempotent 0003 under the lock, even when
+            # already stamped. Same-name CHECK (true) / permissive function or
+            # view bodies are replaced. Then verify canonical definitions.
+            _exec_file(conn, SCHEMA_DIR / "0003_on_demand.sql")
+            _verify_0003(conn)
+            if "0003_on_demand" not in have:
                 _stamp(conn, "0003_on_demand")
                 applied_now.append("0003_on_demand")
 

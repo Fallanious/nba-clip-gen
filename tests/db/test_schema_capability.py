@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 import shutil
 import socket
 import subprocess
@@ -849,28 +850,51 @@ def test_preexisting_columns_permissive_view_missing_constraints(postgres_url):
         assert "true AS can_create" not in viewdef.lower()
 
 
-def test_stamped_0003_constraint_drift_refuses(postgres_url):
+def test_stamped_0003_altered_bodies_are_reapplied(postgres_url):
+    """Same-name CHECK (true), permissive function, and marker-literal view are not enough."""
     import psycopg
-    from db.migrate import MigrationRefused, apply_migrations
+    from db.migrate import apply_migrations, _constraintdef, _functiondef, _play_capability_viewdef
 
     os.environ["APP_ENV"] = "test"
-    url = _fresh_db(postgres_url, "nba_drift")
+    url = _fresh_db(postgres_url, "nba_drift_body")
     apply_migrations(url)
     with psycopg.connect(url, autocommit=True) as conn:
         conn.execute("ALTER TABLE clips DROP CONSTRAINT clips_video_finite_window")
-    with pytest.raises(MigrationRefused, match="0003 schema mismatch"):
-        apply_migrations(url)
+        conn.execute(
+            "ALTER TABLE clips ADD CONSTRAINT clips_video_finite_window CHECK (true)"
+        )
+        conn.execute(
+            """
+            CREATE OR REPLACE FUNCTION nba_numeric_is_finite(x numeric) RETURNS boolean
+            LANGUAGE sql IMMUTABLE AS $$ SELECT true $$
+            """
+        )
+        conn.execute("DROP VIEW play_capability")
+        conn.execute(
+            """
+            CREATE VIEW play_capability AS
+            SELECT id AS play_id,
+                   true AS can_create,
+                   'nba_numeric_is_finite duration_s matcher_attested fixtures/% is_fictional'::text AS reason
+            FROM clips
+            """
+        )
+        assert " ".join(_constraintdef(conn, "clips", "clips_video_finite_window").lower().split()) == "check (true)"
+        assert "NaN" not in _functiondef(conn)
+        assert "true AS can_create" in _play_capability_viewdef(conn)
+    apply_migrations(url)
     with psycopg.connect(url) as conn:
+        window = _constraintdef(conn, "clips", "clips_video_finite_window")
+        assert "nba_numeric_is_finite" in window
+        assert "check (true)" not in " ".join(window.lower().split())
+        fn = _functiondef(conn)
+        assert "NaN" in fn and "Infinity" in fn
+        assert conn.execute("SELECT nba_numeric_is_finite('NaN'::numeric)").fetchone()[0] is False
+        viewdef = _play_capability_viewdef(conn)
+        assert "nba_numeric_is_finite(" in " ".join(viewdef.lower().split()).replace(" (", "(")
+        assert not re.search(r"(?<!is )true\s+as\s+can_create\b", viewdef, re.I)
         versions = {r[0] for r in conn.execute("SELECT version FROM schema_migrations")}
         assert "0003_on_demand" in versions
-        missing = conn.execute(
-            """
-            SELECT 1 FROM pg_constraint c
-            JOIN pg_class t ON t.oid = c.conrelid
-            WHERE t.relname = 'clips' AND c.conname = 'clips_video_finite_window'
-            """
-        ).fetchone()
-        assert missing is None
 
 
 def test_down_preflight_failure_preserves_view_constraints_stamp(postgres_url):
