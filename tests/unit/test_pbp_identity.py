@@ -132,7 +132,7 @@ def test_persist_guards_target_before_connect(monkeypatch):
         persist_pbp_and_matcher(pbp, _out([]), _cfg(commit=True))
 
 
-def test_empty_or_missing_matcher_version_is_refused(monkeypatch):
+def test_noncanonical_matcher_version_is_refused(monkeypatch):
     monkeypatch.setenv("APP_ENV", "test")
     pbp = json.loads((FIXTURES / "persist_pbp_fictional.json").read_text())
     empty = _out([])
@@ -143,6 +143,14 @@ def test_empty_or_missing_matcher_version_is_refused(monkeypatch):
     del missing["matcher_version"]
     with pytest.raises(PersistRefused, match="matcher_version"):
         persist_pbp_and_matcher(pbp, missing, _cfg())
+    whitespace = _out([])
+    whitespace["matcher_version"] = " "
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, whitespace, _cfg())
+    nonstring = _out([])
+    nonstring["matcher_version"] = 1
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, nonstring, _cfg())
 
 
 def test_duplicate_resolved_pbp_index_refused_before_connect(monkeypatch):

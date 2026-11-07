@@ -708,9 +708,9 @@ def test_mixed_unresolved_play_persists_only_proven_participants(persist_url):
 
 
 def test_clip_players_replace_current_set_and_clear(persist_url):
-    """(b) Fresh first persist matches incoming shot only. Populated rerun
-    must replace (shot→assist) and clear (empty/unresolved), not retain the
-    prior association set. Additive INSERT would only show on rerun.
+    """P1 current-head rerun: replace the live association set, not leftover
+    residue from a prior schema. Fresh persist is shot-only; populated
+    shot→assist and empty/unresolved reruns must replace, not accumulate.
     """
     import psycopg
     from psycopg.rows import dict_row
@@ -803,9 +803,8 @@ def test_replace_clip_players_rolls_back_on_unknown_player(persist_url):
 
 
 def test_v1_attested_v2_unmatched_clears_stale_windows(persist_url):
-    """(c) After source V2, stored V1 numeric windows remain until persist
-    clears them. play_capability is denied (video_timing_unavailable), not
-    fail-open. Clearing stale storage is still required.
+    """P8 current-head: after V1 attested windows, persist unmatched V2 must
+    write timing_provenance none and NULL timestamps. Capability stays denied.
     """
     import psycopg
     from psycopg.rows import dict_row
@@ -854,7 +853,7 @@ def test_v1_attested_v2_unmatched_clears_stale_windows(persist_url):
         assert cap["reason"] == "footage_not_matched"
 
 
-def test_empty_matcher_version_is_refused(persist_url):
+def test_noncanonical_matcher_version_is_refused(persist_url):
     import psycopg
 
     pbp, matcher = _payload()
@@ -866,6 +865,14 @@ def test_empty_matcher_version_is_refused(persist_url):
     del missing["matcher_version"]
     with pytest.raises(PersistRefused, match="matcher_version"):
         persist_pbp_and_matcher(pbp, missing, _cfg(persist_url))
+    whitespace = _out(matcher)
+    whitespace["matcher_version"] = "  "
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, whitespace, _cfg(persist_url))
+    nonstring = _out(matcher)
+    nonstring["matcher_version"] = ["match_play_timestamps/persist"]
+    with pytest.raises(PersistRefused, match="matcher_version"):
+        persist_pbp_and_matcher(pbp, nonstring, _cfg(persist_url))
     with psycopg.connect(persist_url) as conn:
         assert conn.execute("SELECT count(*) FROM clips").fetchone()[0] == 0
 

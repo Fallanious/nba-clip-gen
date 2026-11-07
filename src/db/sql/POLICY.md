@@ -263,10 +263,11 @@ against a **different** current identity clear stale attested numeric
 windows to `none`/NULL. Only a valid current-identity attestation is
 preserved.
 
-Matcher output must carry an explicit nonempty `matcher_version`. Empty or
-missing envelope version is refused; persist does not substitute a default
-constant. Duplicate matcher rows that resolve to the same original PBP
-index refuse the **entire batch** (zero mutation).
+Matcher output must carry an explicit nonempty canonical `matcher_version`.
+Missing, empty, whitespace, and non-string envelope versions are refused;
+persist does not substitute a default constant. Duplicate matcher rows that
+resolve to the same original PBP index refuse the **entire batch** (zero
+mutation).
 
 ### Play identity and bounds
 
