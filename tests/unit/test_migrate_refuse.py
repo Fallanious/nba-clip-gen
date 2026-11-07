@@ -112,6 +112,19 @@ def is_designated_persist_query(path: Path) -> bool:
     return resolved.parent == designated and resolved.name in INTERNAL_PERSIST_SQL
 
 
+def test_sql_loader_rejects_path_traversal():
+    from db.sql_loader import load_query_sql
+
+    with pytest.raises(ValueError, match="escapes queries root"):
+        load_query_sql("persist/../../schema/0001_init")
+    with pytest.raises(ValueError, match="escapes queries root"):
+        load_query_sql("../schema/0001_init")
+    with pytest.raises((ValueError, FileNotFoundError)):
+        load_query_sql("/etc/passwd")
+    body = load_query_sql("plays/capability")
+    assert "can_create" in body.lower() or "play_capability" in body.lower()
+
+
 def test_query_files_exclude_private_columns():
     from pathlib import Path
     root = Path("src/db/sql/queries")

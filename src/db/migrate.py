@@ -211,34 +211,58 @@ REQUIRED_0003_CONSTRAINTS = {
     }),
 }
 
-# Canonical body tokens. Names plus substring markers are not enough:
-# CHECK (true), a function that returns true, or a view that embeds marker
-# text as a literal would pass a name/marker scan.
-REQUIRED_0003_CONSTRAINT_TOKENS = {
-    ("games", "games_s3_key_not_url"): ("s3_key", "https?", "s3"),
-    ("games", "games_source_version_trim"): ("source_version", "trim"),
-    ("games", "games_fictional_key_prefix"): ("is_fictional", "fixtures/%"),
+# Complete predicates on comment-stripped pg_get_* text. Marker tokens in
+# comments or unrelated literals are not sufficient.
+REQUIRED_0003_CONSTRAINT_PREDICATES = {
+    ("games", "games_s3_key_not_url"): (
+        "s3_key !~* '^(https?|s3)://'",
+    ),
+    ("games", "games_source_version_trim"): (
+        "source_version = trim(source_version)",
+    ),
+    ("games", "games_fictional_key_prefix"): (
+        "s3_key like 'fixtures/%'",
+        "s3_key not like 'fixtures/%'",
+    ),
     ("games", "games_duration_finite_positive"): (
-        "nba_numeric_is_finite", "duration_s", "> 0",
+        "nba_numeric_is_finite(duration_s) is true",
+        "duration_s > 0",
     ),
     ("clips", "clips_video_finite_window"): (
-        "nba_numeric_is_finite", "video_start_s", "video_end_s",
+        "nba_numeric_is_finite(video_start_s) is true",
+        "nba_numeric_is_finite(video_end_s) is true",
+        "video_start_s >= 0",
+        "video_end_s > video_start_s",
+        "(video_end_s - video_start_s) <= 120",
     ),
     ("clips", "clips_none_requires_null_offsets"): (
-        "timing_provenance", "none", "video_start_s", "video_end_s",
+        "timing_provenance <> 'none'",
+        "video_start_s is null",
+        "video_end_s is null",
     ),
     ("clips", "clips_attested_requires_binding"): (
-        "matcher_attested", "nba_numeric_is_finite", "matcher_run_id",
-        "video_timestamp_s",
+        "timing_provenance <> 'matcher_attested'",
+        "nba_numeric_is_finite(video_timestamp_s) is true",
+        "matcher_run_id is not null",
     ),
 }
-REQUIRED_FUNCTION_TOKENS = ("NaN", "Infinity", "-Infinity")
-REQUIRED_VIEW_CALL_TOKENS = (
-    "nba_numeric_is_finite(",
-    "timing_provenance",
-    "matcher_attested",
-    "duration_s",
-    "is_fictional",
+REQUIRED_VIEW_PREDICATES = (
+    "nba_numeric_is_finite(c.video_start_s) is true",
+    "nba_numeric_is_finite(c.video_end_s) is true",
+    "nba_numeric_is_finite(g.duration_s) is true",
+    "c.video_end_s <= g.duration_s",
+    "c.video_start_s < g.duration_s",
+    "(c.video_end_s - c.video_start_s) <= 120",
+    "c.timing_provenance = 'matcher_attested'",
+    "g.is_fictional is true and g.s3_key like 'fixtures/%'",
+)
+FINITE_HELPER_PROBES = (
+    ("'NaN'::numeric", False),
+    ("'Infinity'::numeric", False),
+    ("'-Infinity'::numeric", False),
+    ("0::numeric", True),
+    ("1::numeric", True),
+    ("(-1)::numeric", True),
 )
 
 
@@ -396,44 +420,88 @@ def _0003_flags(conn) -> dict[str, bool]:
     }
 
 
+def _strip_sql_comments(body: str) -> str:
+    body = re.sub(r"/\*.*?\*/", " ", body, flags=re.S)
+    lines = []
+    for line in body.splitlines():
+        cut = line.find("--")
+        if cut >= 0:
+            line = line[:cut]
+        lines.append(line)
+    return "\n".join(lines)
+
+
+def _compact_sql(body: str) -> str:
+    stripped = _strip_sql_comments(body).lower()
+    compact = " ".join(stripped.split())
+    compact = compact.replace(" (", "(")
+    compact = compact.replace("::text", "").replace("::numeric", "")
+    compact = compact.replace(" ~~* ", " ilike ").replace(" !~~* ", " not ilike ")
+    compact = compact.replace(" ~~ ", " like ").replace(" !~~ ", " not like ")
+    compact = compact.replace("btrim(", "trim(")
+    compact = re.sub(r"trim\(both from ([^)]+)\)", r"trim(\1)", compact)
+    return compact
+
+
+def _finite_helper_semantic_failures(conn) -> list[str]:
+    reasons: list[str] = []
+    for expr, expected in FINITE_HELPER_PROBES:
+        try:
+            value = conn.execute(f"SELECT nba_numeric_is_finite({expr})").fetchone()[0]
+        except Exception:
+            reasons.append(f"nba_numeric_is_finite({expr}) is not callable")
+            continue
+        if value is not expected:
+            reasons.append(
+                f"nba_numeric_is_finite({expr}) expected {expected} got {value}"
+            )
+    try:
+        null_value = conn.execute("SELECT nba_numeric_is_finite(NULL)").fetchone()[0]
+    except Exception:
+        reasons.append("nba_numeric_is_finite(NULL) is not callable")
+        return reasons
+    if null_value is not None:
+        reasons.append("nba_numeric_is_finite is not STRICT")
+    return reasons
+
+
 def _0003_definition_mismatch_reasons(conn) -> list[str]:
     reasons: list[str] = []
     flags = _0003_flags(conn)
     if not all(flags.values()):
         reasons.append("0003 flags=" + str(flags))
         return reasons
-    for (table, name), tokens in REQUIRED_0003_CONSTRAINT_TOKENS.items():
+    for (table, name), predicates in REQUIRED_0003_CONSTRAINT_PREDICATES.items():
         defn = _constraintdef(conn, table, name)
         if defn is None:
             reasons.append(f"{table} missing constraint {name}")
             continue
-        compact = " ".join(defn.lower().split())
+        compact = _compact_sql(defn)
         if compact in {"check (true)", "check(true)"}:
             reasons.append(f"{name} body is CHECK (true)")
             continue
-        for token in tokens:
-            if token.lower() not in defn.lower():
-                reasons.append(f"{name} definition missing {token}")
+        for predicate in predicates:
+            if predicate not in compact:
+                reasons.append(f"{name} definition missing {predicate}")
     fn = _functiondef(conn)
     if fn is None:
         reasons.append("nba_numeric_is_finite missing")
     else:
-        for token in REQUIRED_FUNCTION_TOKENS:
-            if token not in fn:
-                reasons.append("nba_numeric_is_finite body missing " + token)
-        if re.search(r"\bSELECT\s+true\b", fn, re.IGNORECASE) and "NaN" not in fn:
-            reasons.append("nba_numeric_is_finite body is permissive")
+        reasons.extend(_finite_helper_semantic_failures(conn))
+        compact_fn = _compact_sql(fn)
+        if "<> 'nan'" not in compact_fn or "<> 'infinity'" not in compact_fn or "<> '-infinity'" not in compact_fn:
+            reasons.append("nba_numeric_is_finite executable body is not the canonical exclusion")
     try:
         viewdef = _play_capability_viewdef(conn)
     except MigrationRefused as exc:
         reasons.append(str(exc))
         return reasons
-    compact_view = " ".join(viewdef.lower().split()).replace(" (", "(")
+    compact_view = _compact_sql(viewdef)
     if re.search(r"(?<!is )true\s+as\s+can_create\b", compact_view):
         reasons.append("play_capability can_create is a constant true")
-    for token in REQUIRED_VIEW_CALL_TOKENS:
-        if token.lower() not in compact_view:
-            reasons.append(f"play_capability viewdef missing {token}")
+    for predicate in REQUIRED_VIEW_PREDICATES:
+        if predicate not in compact_view:
+            reasons.append(f"play_capability viewdef missing {predicate}")
     return reasons
 
 
