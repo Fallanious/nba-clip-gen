@@ -3,22 +3,26 @@
 from __future__ import annotations
 
 import os
+import re
 from dataclasses import dataclass, field
 from typing import Any, Mapping, Optional
 
-from db.capability import PROVENANCE_ATTESTED, PROVENANCE_NONE
-from db.migrate import MigrationRefused, assert_migration_target_allowed
+from db.bounds import CLIP_MAX_DURATION_S
+from db.capability import FIXTURE_PREFIX, PROVENANCE_ATTESTED, SOURCE_ORIGINAL
+from db.migrate import _LOCAL_HOSTS, MigrationRefused, assert_migration_target_allowed, parse_host
 from db.pbp_identity import (
     MAX_PBP_PLAYS,
     matcher_offsets,
     normalize_pbp,
     pbp_clock_timedelta,
+    play_participants,
     resolve_matcher_pbp_index,
-    _unique_natural_key,
 )
 from db.sql_loader import load_query_sql
 
 MATCHER_VERSION = "match_play_timestamps/persist"
+IMMUTABLE_IDENTITY_KINDS = frozenset({"content_sha256", "object_version_id"})
+_SHA256_IDENTITY = re.compile(r"^sha256:[0-9a-f]{64}$")
 
 
 class PersistRefused(RuntimeError):
@@ -30,8 +34,10 @@ class PersistConfig:
     database_url: str
     game_bbref_id: str
     matcher_run_id: str
-    player_bbref_id: Optional[str] = None
-    player_role: str = "shot"
+    analyzed_source_key: str
+    analyzed_source_identity: str
+    analyzed_identity_kind: str
+    analyzed_source_bucket: Optional[str] = None
     matcher_version: str = MATCHER_VERSION
     commit: bool = False
     max_plays: int = MAX_PBP_PLAYS
@@ -59,11 +65,55 @@ def persist_commit_enabled() -> bool:
     return os.getenv("MATCHER_PERSIST_COMMIT", "") == "1"
 
 
-def config_from_env(*, game_bbref_id: str, matcher_run_id: str, player_bbref_id: Optional[str] = None) -> PersistConfig:
+def _canonical_token(value: Any, *, field: str) -> str:
+    if not isinstance(value, str) or not value.strip() or value != value.strip():
+        raise PersistRefused(f"persist refused: {field} must be a nonempty canonical token")
+    return value
+
+
+def validate_analyzed_source(
+    *,
+    key: str,
+    identity: str,
+    kind: str,
+    bucket: Optional[str] = None,
+) -> tuple[str, str, str]:
+    key = _canonical_token(key, field="analyzed_source_key")
+    identity = _canonical_token(identity, field="analyzed_source_identity")
+    kind = _canonical_token(kind, field="analyzed_identity_kind")
+    if kind not in IMMUTABLE_IDENTITY_KINDS:
+        raise PersistRefused(
+            "persist refused: analyzed identity kind is not immutable "
+            "(ETag is not accepted)"
+        )
+    if kind == "content_sha256" and _SHA256_IDENTITY.fullmatch(identity) is None:
+        raise PersistRefused("persist refused: content_sha256 identity is malformed")
+    if bucket is not None and str(bucket).strip():
+        raise PersistRefused("persist refused: source bucket is not used in this local slice")
+    lowered = key.lower()
+    if lowered.startswith("http://") or lowered.startswith("https://") or lowered.startswith("s3://"):
+        raise PersistRefused("persist refused: analyzed source key must not be a URL")
+    if not key.startswith(FIXTURE_PREFIX):
+        raise PersistRefused("persist refused: this slice allows fixtures/ keys only")
+    return key, identity, kind
+
+
+def assert_persist_target_allowed(database_url: str) -> None:
+    """Guard before connect. Local-only for this slice; migrate DSN/APP_ENV still apply."""
+    try:
+        assert_migration_target_allowed(database_url)
+    except MigrationRefused as exc:
+        raise PersistRefused(str(exc)) from exc
+    host = parse_host(database_url)
+    if host not in _LOCAL_HOSTS:
+        raise PersistRefused("persist refused: local target required")
+
+
+def config_from_env(*, game_bbref_id: str, matcher_run_id: str) -> PersistConfig:
     url = os.getenv("DATABASE_URL", "")
     if not url.strip():
         raise PersistRefused("persist refused: missing DATABASE_URL")
-    assert_migration_target_allowed(url)
+    assert_persist_target_allowed(url)
     commit = persist_commit_enabled()
     max_plays = int(os.getenv("MATCHER_PERSIST_MAX_PLAYS") or MAX_PBP_PLAYS)
     if max_plays < 1 or max_plays > MAX_PBP_PLAYS:
@@ -74,13 +124,19 @@ def config_from_env(*, game_bbref_id: str, matcher_run_id: str, player_bbref_id:
     run_id = (matcher_run_id or os.getenv("MATCHER_PERSIST_RUN_ID") or "").strip()
     if not run_id:
         raise PersistRefused("persist refused: missing matcher_run_id")
-    player = player_bbref_id if player_bbref_id is not None else os.getenv("MATCHER_PERSIST_PLAYER_BBREF_ID")
-    player = player.strip() if isinstance(player, str) and player.strip() else None
+    key, identity, kind = validate_analyzed_source(
+        key=os.getenv("MATCHER_ANALYZED_SOURCE_KEY") or "",
+        identity=os.getenv("MATCHER_ANALYZED_SOURCE_IDENTITY") or "",
+        kind=os.getenv("MATCHER_ANALYZED_IDENTITY_KIND") or "",
+        bucket=os.getenv("MATCHER_ANALYZED_SOURCE_BUCKET"),
+    )
     return PersistConfig(
         database_url=url,
         game_bbref_id=bbref,
         matcher_run_id=run_id,
-        player_bbref_id=player,
+        analyzed_source_key=key,
+        analyzed_source_identity=identity,
+        analyzed_identity_kind=kind,
         commit=commit,
         max_plays=max_plays,
         matcher_version=(os.getenv("MATCHER_PERSIST_MATCHER_VERSION") or MATCHER_VERSION).strip(),
@@ -91,16 +147,31 @@ def _sql(name: str) -> str:
     return load_query_sql(f"persist/{name}")
 
 
+def _window_within_trusted_duration(start, end, ts, duration) -> bool:
+    if duration is None:
+        return False
+    try:
+        if duration <= 0:
+            return False
+        if ts < 0 or start < 0 or end <= start:
+            return False
+        if (end - start) > CLIP_MAX_DURATION_S:
+            return False
+        if start >= duration or end > duration:
+            return False
+    except TypeError:
+        return False
+    return True
+
+
 def _attested_incoming(pbp: list[dict[str, Any]], matcher_plays: list[Mapping[str, Any]]) -> dict[int, dict[str, Any]]:
-    natural = _unique_natural_key(pbp)
     by_index = {int(p["play_index"]): p for p in pbp}
     attested: dict[int, dict[str, Any]] = {}
     for row in matcher_plays:
-        idx = resolve_matcher_pbp_index(row, pbp, natural_keys=natural)
+        idx = resolve_matcher_pbp_index(row, pbp)
         if idx is None or idx not in by_index:
             continue
         if idx in attested:
-            # Identity collision: keep the first valid mapping. Do not apply extras.
             continue
         offsets = matcher_offsets(row)
         if offsets is None:
@@ -122,6 +193,15 @@ def persist_pbp_and_matcher(
     conn=None,
 ) -> PersistReport:
     """Transactionally upsert PBP, attest valid matches, preserve prior verified mapping."""
+    assert_persist_target_allowed(config.database_url)
+    key, identity, _kind = validate_analyzed_source(
+        key=config.analyzed_source_key,
+        identity=config.analyzed_source_identity,
+        kind=config.analyzed_identity_kind,
+        bucket=config.analyzed_source_bucket,
+    )
+    run_id = _canonical_token(config.matcher_run_id, field="matcher_run_id")
+    matcher_version = _canonical_token(config.matcher_version, field="matcher_version")
     pbp = normalize_pbp(pbp_plays, max_plays=config.max_plays)
     if len(matcher_plays) > config.max_plays:
         raise PersistRefused("persist refused: matcher batch exceeds bound")
@@ -131,6 +211,7 @@ def persist_pbp_and_matcher(
         report.upserted = len(pbp)
         report.attested = len(incoming)
         report.unmatched = len(pbp) - len(incoming)
+        report.source_version = identity
         return report
 
     own_conn = conn is None
@@ -143,23 +224,28 @@ def persist_pbp_and_matcher(
         game = conn.execute(_sql("lookup_game"), {"bbref_id": config.game_bbref_id}).fetchone()
         if game is None:
             raise PersistRefused("persist refused: game not found")
-        source_version = game["source_version"]
-        if not isinstance(source_version, str) or not source_version.strip():
-            raise PersistRefused("persist refused: game missing source_version")
+        if game.get("is_fictional") is not True:
+            raise PersistRefused("persist refused: this slice requires is_fictional is True")
+        if game.get("source_kind") != SOURCE_ORIGINAL:
+            raise PersistRefused("persist refused: game is not original_private")
+        game_key = game.get("s3_key")
+        game_identity = game.get("source_version")
+        if game_key != key or game_identity != identity:
+            raise PersistRefused("persist refused: analyzed source does not match locked game")
         report.game_id = game["id"]
-        report.source_version = source_version
-        player_id = None
-        if config.player_bbref_id:
-            player = conn.execute(_sql("lookup_player"), {"bbref_id": config.player_bbref_id}).fetchone()
-            if player is None:
-                raise PersistRefused("persist refused: player not found")
-            player_id = player["id"]
+        report.source_version = identity
+        duration = game.get("duration_s")
+
+        player_ids: dict[str, int] = {}
 
         for play in pbp:
             clock = pbp_clock_timedelta(play.get("time") or play.get("game_clock"))
             period = play.get("quarter") or play.get("period")
             if not isinstance(period, int) or isinstance(period, bool) or period < 1 or period > 10:
                 raise PersistRefused("persist refused: invalid period")
+            description = play.get("description") or ""
+            if not isinstance(description, str):
+                raise PersistRefused("persist refused: description must be text")
             row = conn.execute(
                 _sql("upsert_play_metadata"),
                 {
@@ -168,22 +254,31 @@ def persist_pbp_and_matcher(
                     "play_index": play["play_index"],
                     "period": period,
                     "game_clock": clock,
-                    "description": play.get("description") or "",
+                    "description": description,
                     "action_type": play.get("action_type") or play.get("primary_action"),
                     "outcome": play.get("outcome"),
                 },
             ).fetchone()
+            if row is None:
+                raise PersistRefused(
+                    "persist refused: play identity mismatch at "
+                    f"play_index={play['play_index']}"
+                )
             report.upserted += 1
             clip_id = row["id"]
             attested = incoming.get(play["play_index"])
             prior_verified = (
                 row["timing_provenance"] == PROVENANCE_ATTESTED
-                and row["matched_source_version"] == source_version
+                and row["matched_source_version"] == identity
             )
-            if attested:
+            applied = False
+            if attested and _window_within_trusted_duration(
+                attested["video_start_s"], attested["video_end_s"],
+                attested["video_timestamp_s"], duration,
+            ):
                 conn.execute("SAVEPOINT persist_play")
                 try:
-                    conn.execute(
+                    updated = conn.execute(
                         _sql("apply_attestation"),
                         {
                             "clip_id": clip_id,
@@ -192,32 +287,37 @@ def persist_pbp_and_matcher(
                             "video_start_s": attested["video_start_s"],
                             "video_end_s": attested["video_end_s"],
                             "video_timestamp_s": attested["video_timestamp_s"],
-                            "matcher_run_id": config.matcher_run_id,
-                            "matcher_version": config.matcher_version,
-                            "source_version": source_version,
+                            "matcher_run_id": run_id,
+                            "matcher_version": matcher_version,
+                            "analyzed_source_key": key,
+                            "analyzed_source_identity": identity,
                         },
-                    )
+                    ).fetchone()
                     conn.execute("RELEASE SAVEPOINT persist_play")
-                    report.attested += 1
+                    if updated is not None:
+                        report.attested += 1
+                        applied = True
                 except Exception:
                     conn.execute("ROLLBACK TO SAVEPOINT persist_play")
                     conn.execute("RELEASE SAVEPOINT persist_play")
-                    if prior_verified:
-                        report.kept_prior += 1
-                    else:
-                        report.unmatched += 1
-            else:
+            if not applied:
                 if prior_verified:
                     report.kept_prior += 1
                 else:
                     report.unmatched += 1
-            if player_id is not None:
+            for part in play_participants(play):
+                bbref = part["bbref_id"]
+                if bbref not in player_ids:
+                    player = conn.execute(_sql("lookup_player"), {"bbref_id": bbref}).fetchone()
+                    if player is None:
+                        raise PersistRefused("persist refused: participant player not found")
+                    player_ids[bbref] = player["id"]
                 conn.execute(
                     _sql("insert_clip_player"),
                     {
                         "clip_id": clip_id,
-                        "player_id": player_id,
-                        "role": config.player_role,
+                        "player_id": player_ids[bbref],
+                        "role": part["role"],
                         "game_date": game["game_date"],
                     },
                 )
@@ -238,7 +338,6 @@ def maybe_persist_after_match(
     matcher_plays: list[Mapping[str, Any]],
     game_bbref_id: Optional[str] = None,
     matcher_run_id: Optional[str] = None,
-    player_bbref_id: Optional[str] = None,
 ) -> PersistReport:
     """Entry point from match_timestamps. No-op unless MATCHER_PERSIST=1."""
     if not persist_enabled():
@@ -246,6 +345,5 @@ def maybe_persist_after_match(
     config = config_from_env(
         game_bbref_id=game_bbref_id or "",
         matcher_run_id=matcher_run_id or "",
-        player_bbref_id=player_bbref_id,
     )
     return persist_pbp_and_matcher(list(raw_pbp), list(matcher_plays), config)

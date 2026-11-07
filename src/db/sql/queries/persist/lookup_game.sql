@@ -1,4 +1,5 @@
--- Internal persist lookup. Not a public serializer.
+-- Internal persist lookup. Not a public serializer. Locks the current
+-- original-private source identity for compare-before-attest.
 SELECT
   g.id,
   g.bbref_id,

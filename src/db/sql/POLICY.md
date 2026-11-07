@@ -207,50 +207,63 @@ bounded resources.
 
 ## Matcher persist (slice B; Later persistence implemented here)
 
-Offline matcher → local DB save. No HTTP, no S3, no Neon in this pass.
-`match_timestamps` calls `maybe_persist_after_match` only when
+Offline matcher → **local** DB save. No HTTP, no S3, no Neon, no routes in this
+pass. `match_timestamps` calls `maybe_persist_after_match` only when
 `MATCHER_PERSIST=1`. Writes require `MATCHER_PERSIST_COMMIT=1`. Dry-run is the
-default. Condensed matcher `play_index` is **not** `clips.play_index`.
-Prior `matcher_attested` rows for the current `games.source_version` are kept
-when a rerun does not rematch that play. Stale `matched_source_version`
-invalidates eligibility until a new attested persist.
+default. The persist entry **guards the DSN before connect** (explicit
+`APP_ENV` `dev`/`test`, local host only). This slice also requires the locked
+game `is_fictional is True` and a `fixtures/` key. Future live S3 must deny
+fixture keys. Published/deleted predicates stay **unwired** here; later HTTP
+must enforce them.
 
-Stable identity:
+Condensed matcher `play_index` is **not** `clips.play_index`. Compound
+descriptions fail closed and are not identity. There is no quarter/time/
+description natural-key fallback.
 
-| Thing | Key | Notes |
-| --- | --- | --- |
-| Game | `games.bbref_id` UNIQUE | Basketball-Reference game id |
-| Play | `UNIQUE (clips.game_id, clips.play_index)` | Stored PBP index, not matcher array order |
-| Player | `players.bbref_id` UNIQUE + `clip_players` | Role on that play |
-| Footage | `games.s3_key` + `source_kind = original_private` + `games.source_version` | Original object only |
+### Analyzed source binding (not a copy of the current DB version)
 
-Persist must:
+Capture at acquisition and carry on `PersistConfig`:
 
-1. Look up the game by `bbref_id`, the play by `(game_id, play_index)`, the
-   player by `bbref_id`. Never invent ids.
-2. Upsert on `(game_id, play_index)` (duplicate-safe reruns).
-3. Write offsets only when provenance can be `matcher_attested` **and** the
-   source identity/version matches **and** VIDEO-relative bounds pass.
-   `games.source_version` is server-resolved. Matcher `play_index` is ignored.
-4. Partial / unmatched / invalid matcher rows keep PBP metadata. Offsets stay
-   NULL. Provenance stays `none` unless a prior verified mapping is kept.
-   Never guess from game clock or neighbors.
-   Offline merge joins on stored PBP `play_index` only (no array-position
-   fallback). Duplicate, missing, non-integer, and bool indices are refused.
-   Reversed, negative, and `> CLIP_MAX_DURATION_S` windows stay none/NULL.
-   Attested rows require canonical nonempty matcher run id, version, and
-   matched source version captured at analysis time.
-5. `public` / `derived` refs never substitute. Do not persist a public URL as
-   the original.
-6. Dedicated SQL under `src/db/sql/queries/persist/`. Isolated local/dev
-   fixtures only. No production import.
-7. Do not call live object APIs. Fictional `fixtures/` keys only in this pass.
+- analyzed object key (`fixtures/...` in this slice; not a URL)
+- immutable identity kind: `content_sha256` or `object_version_id`
+- identity value (sha256 must be `sha256:` + 64 hex)
+
+**ETag is not immutable** and is refused as an identity kind. Persist locks
+the game row (`FOR UPDATE`) and compares analyzed key + identity +
+`original_private` **before** attestation. Replay after a source replacement,
+wrong key, or race mismatch is refused. `matched_source_version` is stamped
+from the **analyzed** identity, never by copying `games.source_version`.
+
+Prior `matcher_attested` rows for that same analyzed identity are kept when a
+rerun does not rematch that play. A new persist after the game identity
+changes requires a new analysis bound to the new identity.
+
+### Play identity and bounds
+
+Stable identity remains `UNIQUE (clips.game_id, clips.play_index)` plus
+`games.bbref_id` and `players.bbref_id`. PBP rows require an **explicit**
+integer `play_index` (no array-position fallback). On conflict, period +
+description must match the stored row or the **entire batch is refused**
+(zero mutation). Attestation SQL requires
+nonnegative finite timestamp/start, ordered window, positive finite trusted
+duration, `end <= duration`, `start < duration`, and `end - start <= 120`.
+Invalid payload leaves a current-identity good mapping in place.
+
+`clip_players` links only independently established per-play `participants`
+(`bbref_id` + `clip_role`). There is **no** default shot role and no
+config-wide player applied to unmatched/unrelated plays.
+
+Internal persist SQL lives under `src/db/sql/queries/persist/` and is an
+**explicit allowlist**, not a public serializer. Public `queries/plays`
+files still must not select private columns.
 
 Trusted `games.duration_s` is a probe of the original object at footage
 ingest, not at matcher persist. Matcher persist does not set duration.
 
 Real source media is only for later real-media validation. Fictional fixtures
-are enough to develop and test persist.
+are enough to develop and test persist. This persist pass does **not** claim
+Security clearance. First-slice inherited blockers are merged in; QA/Security
+review of both slices remains pending.
 
 ## Migration vs main vs Neon
 

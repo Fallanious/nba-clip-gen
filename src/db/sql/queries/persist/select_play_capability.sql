@@ -1,3 +1,4 @@
+-- Internal persist capability check. Not a public serializer.
 SELECT
   c.id AS play_id,
   c.play_index,
