@@ -30,11 +30,15 @@ These limits are the documented Security policy. Values outside them are
    If `duration_s` is NULL, timing is unavailable. Do not guess.
 6. Clip-length ceiling: `end - start <= 120` seconds.
 7. Clip-length floor: `end - start >= 0.5` seconds.
+8. Finite-storage cap: `start < 1e9` and `end < 1e9` seconds.
+   PostgreSQL `numeric` can store ±Inf. This cap rejects Inf. It is **not**
+   a clip-length policy. Clip length stays 0.5–120s against trusted duration.
 
-Constants (must match SQL VIEW and Python):
+Constants (must match SQL VIEW, CHECKs, and Python):
 
 - `CLIP_MIN_DURATION_S = 0.5`
 - `CLIP_MAX_DURATION_S = 120`
+- `VIDEO_SECONDS_ABS_MAX = 1e9` (Inf rejection only)
 
 ## Source identity
 

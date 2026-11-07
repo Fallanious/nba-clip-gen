@@ -335,6 +335,7 @@ def test_rollback_and_reapply_0003(postgres_url):
 def test_policy_doc_present():
     text = (SQL_ROOT / "POLICY.md").read_text(encoding="utf-8")
     assert "CLIP_MAX_DURATION_S = 120" in text
+    assert "VIDEO_SECONDS_ABS_MAX = 1e9" in text
     assert "matcher_attested" in text
     assert "Rollback" in text or "rollback" in text
     assert "game_clock" in text.lower()
