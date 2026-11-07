@@ -447,10 +447,15 @@ def test_policy_doc_present():
     assert "UNIQUE (clips.game_id, clips.play_index)" in text
     assert "Later persistence" in text
     assert "never stamps 0001 merely because" in text
-    assert "full catalog" in text
+    assert "anonymous shared catalog" in text.lower()
     assert "user- or team-ownership filters" in text
     assert "owner_id" in text
-    assert "Anonymous access remains denied" in text
+    assert "not a hard block" in text or "Identity / sign-in is **not** a hard block" in text
+    assert "generated-clip-only" in text
+    assert "Reject arbitrary client keys" in text or "client keys" in text
+    assert "per-client" in text
+    assert "durable duplicate safety" in text
+    assert "LocalUser" in text
 
 
 def test_schema_has_no_owner_or_user_acl_columns(conn):

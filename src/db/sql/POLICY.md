@@ -112,35 +112,41 @@ or playback routes.
 
 Game clock does not rescue missing timing and does not alter a valid result.
 
-## Access policy (shared catalog)
+## Access policy (anonymous shared catalog)
 
-Decided: once a caller is a **genuinely signed-in** user, they share the **full
-catalog**. They may generate and play **eligible** clips. There are **no**
-user- or team-ownership filters. Do not add `owner_id` / `user_id` / org ACL
-columns. Do not fabricate owner IDs. Do not implement a per-user data model.
+Supersedes the earlier signed-in-required note. Identity is **not** a blocker.
 
-Still required (shared catalog is not a bypass):
+**App-level policy (intentional):** anonymous callers share the full catalog
+and may browse, create, and play **eligible** clips. There is **no** sign-in
+provider for now. There are **no** user- or team-ownership filters.
 
-- Anonymous access remains denied. Signed-in ≠ public.
-- Identity provider and session are **undecided**. No new HTTP is exposed
-  until genuine validated identity is wired.
-- Capability checks still apply (`can_create` / reasons). Ineligible rows stay
-  browsable and are not playable/generatable.
-- Published / deleted / resource visibility still applies when those states
-  exist. A shared catalog does not resurrect deleted rows or skip unpublished
-  hiding.
-- S3 source keys, versions, and URLs stay private. Shared catalog does not
-  expose original footage locators.
+This is **not** stub identity and **not** no-op auth pretending to be a user.
+Do not create fake authenticated users, `LocalUser`, scopes, or owner IDs.
+Do not add `owner_id` / `user_id` / org ACL columns. Do not implement a
+per-user data model. Do not register `before_request_hook` to invent `g.user`.
 
-This slice does **not** change `src/auth.py` or `src/authz.py`.
-`require_user` remains the main no-op. `authorize_player` / `authorize_clip`
-remain no-ops. `before_request_hook` is **not** registered in `create_app`.
-No existing route (`/api/generate`, jobs, videos, timestamps, actions) calls
-these helpers.
+Still mandatory (shared catalog is not a bypass):
 
-When HTTP is later wired, `require_user` means “validated signed-in identity”,
-not “owns this player”. `authorize_*` must not add per-user row filters.
-ETag/304 must not skip the signed-in check.
+- Capability / eligibility (`can_create`, reasons). Ineligible rows stay
+  browsable and are not creatable or playable.
+- Published / deleted / resource visibility when those states exist. Do not
+  resurrect deleted rows or skip unpublished hiding.
+- Serializers must not widen private metadata. Browse stays on the
+  allowlist in `metadata_allowlist.py` (`play_id`, game/play display fields,
+  `can_create`, `reason`). No keys, versions, offsets, URLs, or matcher ids.
+- S3 **source and output** stay private. Server resolves play/game IDs,
+  original source, and video windows. Reject arbitrary client keys and
+  client offsets.
+- Playback is **generated-clip-only** when the clip is ready. No full-game
+  source fallback.
+- Anonymous create is costly. Before any create HTTP: bounded **global and
+  per-client** rate limits, concurrency limits, queue and retry controls,
+  and durable duplicate safety. Those are not this slice.
+- Security is reviewing this access model. No deployment, public-bucket, or
+  new paid infra in this pass.
+
+This slice does **not** change `src/auth.py` or `src/authz.py`. Existing
+helpers stay unused. Existing `/api/generate` is still out of scope.
 
 Offline matcher persistence is independent of this access policy and of HTTP.
 
@@ -223,20 +229,26 @@ This schema does not secure them. New generate/playback routes stay unwired.
 
 ## Ordered PR dependencies (do not skip)
 
+Identity / sign-in is **not** a hard block. Do not wait on a provider.
+
 1. **Schema / capability** (this slice). VIEW, provenance, source identity,
-   isolated tests. No HTTP persist. No runtime auth file changes.
+   isolated tests. No HTTP persist. No runtime auth file changes. No fake users.
 2. **Matcher persist.** Dedicated SQL. Wire `match_timestamps` to save
    validated VIDEO-relative offsets on the keys above. Duplicate-safe.
    Partial matches keep metadata. Local/dev fixtures only. Depends on 1.
-3. **Identity provider / session** (undecided). Blocks all new HTTP. Not an
-   ownership model. Signed-in users then share the full catalog.
-4. **Browse metadata HTTP.** Signed-in required; shared catalog; capability
-   and visibility preserved; no S3 locators. Depends on 1 and 3.
-5. **Clip jobs / generate HTTP.** Durable jobs keyed by play + source version
-   + offsets. Any signed-in user may enqueue eligible plays. Depends on 2 and
-   3. Does not secure existing `/api/generate`.
-6. **Playback URL.** Eligible clips only; signed-in; no source key leak.
-   Depends on 5 and 3.
-7. **Players-tab UI.** Browse depends on 4. Play depends on 6.
+   Independent of HTTP and of this access-policy change.
+3. **Browse metadata HTTP.** Anonymous shared catalog. Allowlisted serializers
+   only. Capability + published/deleted visibility. No S3 locators. Server-
+   resolved IDs. Depends on 1. Not blocked on identity.
+4. **Abuse controls for anonymous create.** Bounded global and per-client
+   rate, concurrency, queue, retry, durable duplicate safety. **Required
+   before create HTTP.** No new paid infra in this pass.
+5. **Clip jobs / generate HTTP.** Server-resolves play + source version +
+   offsets. Rejects client keys/offsets. Depends on 2 and 4. Does not secure
+   existing `/api/generate`.
+6. **Playback URL.** Ready generated clip only. No full-game fallback. No
+   source/output key leak. Depends on 5.
+7. **Players-tab UI.** Browse depends on 3. Play depends on 6.
 
 Requirements pin fix stays on hold (install blocker, not a pin change).
+No deployment or public-bucket changes authorized.
