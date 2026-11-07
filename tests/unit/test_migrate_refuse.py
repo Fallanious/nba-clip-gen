@@ -1,6 +1,7 @@
 """Migration runner refuses production/Neon mismatch. Never prints secrets."""
 
 import sys
+from pathlib import Path
 
 import pytest
 
@@ -90,6 +91,29 @@ def _sql_without_comments(body: str) -> str:
     return "\n".join(lines)
 
 
+INTERNAL_PERSIST_SQL = frozenset({
+    "apply_attestation.sql",
+    "clear_unmatched_timing.sql",
+    "insert_clip_player.sql",
+    "lookup_game.sql",
+    "lookup_player.sql",
+    "replace_clip_players.sql",
+    "select_play_capability.sql",
+    "upsert_play_metadata.sql",
+})
+DESIGNATED_PERSIST_DIR = Path("src/db/sql/queries/persist")
+
+
+def is_designated_persist_query(path: Path) -> bool:
+    designated = DESIGNATED_PERSIST_DIR.resolve()
+    resolved = path if path.is_absolute() else path
+    try:
+        resolved = resolved.resolve()
+    except OSError:
+        return False
+    return resolved.parent == designated and resolved.name in INTERNAL_PERSIST_SQL
+
+
 def test_sql_loader_rejects_path_traversal():
     from db.sql_loader import load_query_sql
 
@@ -106,13 +130,26 @@ def test_sql_loader_rejects_path_traversal():
 def test_query_files_exclude_private_columns():
     from pathlib import Path
     root = Path("src/db/sql/queries")
+    persist_names = {
+        p.name for p in (root / "persist").glob("*.sql") if p.parent.resolve() == DESIGNATED_PERSIST_DIR.resolve()
+    }
+    assert persist_names == INTERNAL_PERSIST_SQL
     for path in root.rglob("*.sql"):
+        if is_designated_persist_query(path):
+            continue
         lower = _sql_without_comments(path.read_text(encoding="utf-8")).lower()
         assert "s3_key" not in lower
         assert "source_version" not in lower
         assert "video_start_s" not in lower
         assert "http://" not in lower
         assert "s3://" not in lower
+
+
+def test_scanner_excludes_only_designated_persist_dir():
+    assert is_designated_persist_query(Path("src/db/sql/queries/persist/lookup_game.sql"))
+    assert not is_designated_persist_query(Path("src/db/sql/queries/plays/persist/lookup_game.sql"))
+    assert not is_designated_persist_query(Path("src/db/sql/queries/nested/persist/apply_attestation.sql"))
+    assert not is_designated_persist_query(Path("src/db/sql/queries/persist/nested/lookup_game.sql"))
 
 
 def test_seed_labeled_fictional_and_not_live_prefix():

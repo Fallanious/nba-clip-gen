@@ -10,6 +10,9 @@ import csv
 import os
 from datetime import datetime
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pbp_source_identity import stamp_source_pbp_identity
+
 try:
     import requests
 except ImportError:
@@ -84,10 +87,18 @@ def scrape_playbyplay(url):
         team2 = "Team 2"
     
     print(f"Teams: {team1} vs {team2}")
-    
+    return plays_from_pbp_table(table, team1, team2)
+
+
+def _cell_player_hrefs(cell):
+    return [a.get("href") for a in cell.find_all("a", href=True) if a.get("href")]
+
+
+def plays_from_pbp_table(table, team1, team2):
+    """Normalize Basketball-Reference PBP rows. Source event order becomes play_index."""
     plays = []
     current_quarter = None
-    
+
     # Iterate through table rows
     for row in table.find_all('tr'):
         # Check if this is a quarter header
@@ -137,49 +148,58 @@ def scrape_playbyplay(url):
         team2_text = ""
         
         # Get team 1 text (between time and center)
+        team1_hrefs = []
         for i in range(1, center_idx):
             text = cells[i].text.strip()
             # Skip score change indicators like "+2", "+3", "-2"
             if text and not (text.startswith('+') or text.startswith('-')):
                 team1_text = text
+                team1_hrefs = _cell_player_hrefs(cells[i])
                 break
         
         # Get team 2 text (after center)
+        team2_hrefs = []
         for i in range(center_idx + 1, len(cells)):
             text = cells[i].text.strip()
             # Skip score change indicators like "+2", "+3", "-2"
             if text and not (text.startswith('+') or text.startswith('-')):
                 team2_text = text
+                team2_hrefs = _cell_player_hrefs(cells[i])
                 break
         
         # Determine which team made the play
         if team1_text and not team2_text:
             team = team1
             description = team1_text
+            player_links = team1_hrefs
         elif team2_text and not team1_text:
             team = team2
             description = team2_text
+            player_links = team2_hrefs
         elif team1_text and team2_text:
             # Both teams have text (rare)
             team = "Both"
             description = f"{team1}: {team1_text} | {team2}: {team2_text}"
+            player_links = team1_hrefs + team2_hrefs
         else:
             # Neither has text, skip
             continue
         
-        # Create play dictionary
+        # Create play dictionary. play_index is stamped from source row order below.
         play = {
             'quarter': current_quarter,
             'time': time_text,
             'score': score_text,
             'team': team,
-            'description': description
+            'description': description,
+            'player_links': player_links,
         }
         
         plays.append(play)
     
-    print(f"✓ Scraped {len(plays)} plays")
-    return plays
+    stamped = stamp_source_pbp_identity(plays)
+    print(f"✓ Scraped {len(stamped)} plays")
+    return stamped
 
 
 def save_to_json(plays, output_path):
@@ -196,8 +216,8 @@ def save_to_csv(plays, output_path):
         return
     
     with open(output_path, 'w', newline='') as f:
-        fieldnames = ['quarter', 'time', 'score', 'team', 'description']
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        fieldnames = ['play_index', 'quarter', 'time', 'score', 'team', 'description']
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
         
         writer.writeheader()
         for play in plays:
