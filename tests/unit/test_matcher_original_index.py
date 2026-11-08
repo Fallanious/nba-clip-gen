@@ -1,11 +1,12 @@
 """Original full-game indexes, grouping-before-filter, persist expansion."""
 
 from match_play_timestamps import (
+    cluster_play_groups,
     condense_plays,
     original_members,
     stamp_original_play_indexes,
 )
-from persist_matcher_clips import PersistRefused, expand_matched_groups
+from persist_matcher_clips import PersistRefused, canonical_group_indexes, expand_matched_groups
 
 
 def _raw():
@@ -57,6 +58,16 @@ def test_expand_compound_shares_group_window_keeps_event_metadata():
     assert "→" not in rows[0]["description"]
     assert rows[0]["shared_sequence_indexes"] == [2, 3]
     assert rows[1]["shared_sequence_indexes"] == [2, 3]
+
+
+def test_persist_grouping_uses_shared_cluster_partition():
+    stamped = stamp_original_play_indexes(_raw())
+    condensed = condense_plays(stamped)
+    clustered = tuple(tuple(item["play_index"] for item in group) for group in cluster_play_groups(stamped))
+    assert canonical_group_indexes(stamped) == clustered
+    assert canonical_group_indexes(stamped) == tuple(
+        tuple(group["original_play_indexes"]) for group in condensed
+    )
 
 
 def test_expand_rejects_duplicate_original_indexes():

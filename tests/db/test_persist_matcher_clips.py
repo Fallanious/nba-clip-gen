@@ -583,6 +583,101 @@ def test_concurrent_disjoint_v1_v2_serialized(postgres_url):
         assert rows[0][0] in {0, 5}
 
 
+def test_main_stubbed_vision_persists_matcher_output_shape(postgres_url, tmp_path, monkeypatch):
+    import psycopg
+    from psycopg.rows import dict_row
+
+    from match_play_timestamps import main
+
+    _reset(postgres_url)
+    monkeypatch.chdir(tmp_path)
+    video = tmp_path / "game.mkv"
+    video.write_bytes(b"fake")
+    pbp = tmp_path / "202601010FIC.json"
+    pbp.write_text(
+        json.dumps(
+            [
+                {
+                    "quarter": 1,
+                    "time": "10:34.0",
+                    "score": "2-4",
+                    "team": "Celtics",
+                    "description": "D. White misses 3-pt jump shot from 25 ft",
+                },
+                {
+                    "quarter": 1,
+                    "time": "10:32.0",
+                    "score": "2-4",
+                    "team": "Celtics",
+                    "description": "Offensive rebound by Team",
+                },
+            ]
+        )
+    )
+    monkeypatch.setenv("MATCHER_PERSIST", "1")
+    monkeypatch.setenv("DATABASE_URL", postgres_url)
+    monkeypatch.setenv("MATCHER_GAME_BBREF_ID", GAME)
+
+    class Probe:
+        stdout = "5.0\n"
+        stderr = ""
+        returncode = 0
+
+    def fake_run(cmd, **_kwargs):
+        if cmd and cmd[0] == "ffprobe":
+            return Probe()
+        raise AssertionError(cmd)
+
+    monkeypatch.setattr("match_play_timestamps.subprocess.run", fake_run)
+    monkeypatch.setattr("match_play_timestamps.extract_frame_at_time", lambda *_a, **_k: None)
+    monkeypatch.setattr(
+        "match_play_timestamps.analyze_frame_scoreboard",
+        lambda *_a, **_k: '{"quarter": 1, "time": "10:34", "score": "2-4"}',
+    )
+    monkeypatch.setattr(
+        "match_play_timestamps.requests.get",
+        lambda *_a, **_k: type("R", (), {"status_code": 200})(),
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "match_play_timestamps.py",
+            str(video),
+            str(pbp),
+            "--max-plays",
+            "1",
+            "--buffer",
+            "5",
+            "--start-time",
+            "0",
+            "--sample-interval",
+            "10",
+            "--output",
+            str(tmp_path / "out.json"),
+        ],
+    )
+    main()
+    with psycopg.connect(postgres_url, row_factory=dict_row) as conn:
+        rows = list(
+            conn.execute(
+                "SELECT play_index, description, video_start_s, video_end_s "
+                "FROM clips ORDER BY play_index"
+            )
+        )
+        assert conn.execute("SELECT count(*) FROM clip_players").fetchone()["count"] == 0
+    assert [row["play_index"] for row in rows] == [0, 1]
+    assert rows[0]["video_start_s"] == rows[1]["video_start_s"]
+    assert rows[0]["video_end_s"] == rows[1]["video_end_s"]
+    assert float(rows[0]["video_start_s"]) == 0
+    assert float(rows[0]["video_end_s"]) == 1
+    assert "White" in rows[0]["description"]
+    assert rows[1]["description"] == "Offensive rebound by Team"
+    saved = json.loads((tmp_path / "out.json").read_text())
+    assert saved[0]["video_start"] == 0
+    assert saved[0]["video_end"] == 1
+    assert saved[0]["original_play_indexes"] == [0, 1]
+
+
 def test_other_neon_host_is_refused_before_connect():
     digest, stamped = _frozen(MEMBERS)
     with pytest.raises(PersistRefused, match="allowlisted"):

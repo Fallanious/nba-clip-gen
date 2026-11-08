@@ -168,6 +168,9 @@ def parse_scoreboard_response(response_text):
         return None
 
 
+GROUP_WINDOW_S = 5
+
+
 def time_to_seconds(time_str):
     """Convert MM:SS.S format to seconds."""
     try:
@@ -385,39 +388,37 @@ def merge_play_group(plays):
     }
 
 
-def condense_plays(plays, time_window=5):
+def cluster_play_groups(plays, time_window=GROUP_WINDOW_S):
+    """Partition consecutive plays by same quarter and window vs group start.
+
+    Game clock counts down, so prev_time - play_time is elapsed time in the
+    cluster. Matcher condensation and persist grouping identity both use this.
+    """
+    if not plays:
+        return []
+    groups = []
+    current_group = [plays[0]]
+    for play in plays[1:]:
+        prev = current_group[0]
+        same_quarter = play["quarter"] == prev["quarter"]
+        time_diff = time_to_seconds(prev["time"]) - time_to_seconds(play["time"])
+        if same_quarter and 0 <= time_diff <= time_window:
+            current_group.append(play)
+        else:
+            groups.append(current_group)
+            current_group = [play]
+    groups.append(current_group)
+    return groups
+
+
+def condense_plays(plays, time_window=GROUP_WINDOW_S):
     """
     Merge plays that happen within time_window seconds of each other.
     Creates compound descriptions and assigns compound labels.
     """
     if not plays:
         return plays
-    
-    condensed = []
-    current_group = [plays[0]]
-    
-    for play in plays[1:]:
-        prev = current_group[0]  # Compare to first play in group
-        
-        # Check if same quarter and within time window
-        same_quarter = play['quarter'] == prev['quarter']
-        prev_time = time_to_seconds(prev['time'])
-        play_time = time_to_seconds(play['time'])
-        # Game clock counts DOWN, so prev_time > play_time means play is later
-        time_diff = prev_time - play_time
-        
-        if same_quarter and 0 <= time_diff <= time_window:
-            # Add to current group
-            current_group.append(play)
-        else:
-            # Finalize current group and start new one
-            condensed.append(merge_play_group(current_group))
-            current_group = [play]
-    
-    # Don't forget the last group
-    condensed.append(merge_play_group(current_group))
-    
-    return condensed
+    return [merge_play_group(group) for group in cluster_play_groups(plays, time_window)]
 
 
 
@@ -452,6 +453,17 @@ def main():
     if not os.path.exists(args.playbyplay):
         print(f"Error: Play-by-play file not found: {args.playbyplay}")
         sys.exit(1)
+
+    # Advisory only: catch persist misconfig before the slow vision pass.
+    # Authoritative assert_persist_ready still runs immediately before connect.
+    if os.environ.get("MATCHER_PERSIST") == "1":
+        from persist_matcher_clips import PersistRefused, assert_persist_ready
+
+        try:
+            assert_persist_ready(os.environ.get("DATABASE_URL", ""))
+        except PersistRefused as exc:
+            print(str(exc))
+            sys.exit(1)
     
     # Check Ollama
     try:
@@ -471,7 +483,7 @@ def main():
 
     # Stamp already happened in load_pbp_source. Group, then optional name filter.
     # Filter selects groups; it must not restamp or shrink membership.
-    plays = condense_plays(frozen_plays, time_window=5)
+    plays = condense_plays(frozen_plays, time_window=GROUP_WINDOW_S)
     compound_count = sum(1 for p in plays if p.get('is_compound'))
     print(f"Condensed to {len(plays)} distinct plays ({compound_count} compound plays)")
     print(f"Will match first {args.max_plays} plays")
@@ -623,28 +635,6 @@ def main():
     print(f"\n✓ Timestamps saved to: {output_path}")
     print(f"✓ Debug frames saved to: {debug_dir}")
 
-    if os.environ.get("MATCHER_PERSIST") == "1":
-        from persist_matcher_clips import assert_persist_ready, persist_matched_output
-
-        database_url = os.environ.get("DATABASE_URL", "")
-        assert_persist_ready(database_url)
-        print(
-            "Persisting one clips row per original member of each matched group "
-            "(shared group video window). Player filter does not drop unnamed "
-            "members. clip_players are not written."
-        )
-        game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
-            os.path.basename(args.playbyplay)
-        )[0]
-        persist_matched_output(
-            matched_plays,
-            database_url=database_url,
-            game_bbref_id=game_bbref_id,
-            pbp_hash=pbp_hash,
-            original_plays=frozen_plays,
-        )
-    
-    # Print summary
     print("\nMATCHED PLAYS:")
     for i, play in enumerate(matched_plays, 1):
         compound_marker = " [COMPOUND]" if play.get('is_compound') else ""
@@ -652,6 +642,35 @@ def main():
         print(f"   Action: {play['primary_action']}")
         print(f"   {play['description']}")
         print(f"   Video: {play['video_start']:.1f}s - {play['video_end']:.1f}s")
+
+    if os.environ.get("MATCHER_PERSIST") == "1":
+        from persist_matcher_clips import (
+            PersistRefused,
+            assert_persist_ready,
+            persist_matched_output,
+        )
+
+        database_url = os.environ.get("DATABASE_URL", "")
+        try:
+            assert_persist_ready(database_url)
+            print(
+                "Persisting one clips row per original member of each matched group "
+                "(shared group video window). Player filter does not drop unnamed "
+                "members. clip_players are not written."
+            )
+            game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
+                os.path.basename(args.playbyplay)
+            )[0]
+            persist_matched_output(
+                matched_plays,
+                database_url=database_url,
+                game_bbref_id=game_bbref_id,
+                pbp_hash=pbp_hash,
+                original_plays=frozen_plays,
+            )
+        except PersistRefused as exc:
+            print(str(exc))
+            sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -215,12 +215,112 @@ def test_direct_entrypoint_guards_before_persist():
     persist_at = text.index("persist_matched_output(")
     ready_at = text.index("assert_persist_ready(")
     flag_at = text.index('os.environ.get("MATCHER_PERSIST") == "1"')
-    assert flag_at < ready_at < persist_at
+    vision_at = text.index("analyze_frame_scoreboard(frame_path")
+    summary_at = text.index('print("\\nMATCHED PLAYS:")')
+    assert flag_at < ready_at < vision_at < persist_at
+    assert summary_at < persist_at
+    assert "except PersistRefused" in text
     source = (SRC / "persist_matcher_clips.py").read_text(encoding="utf-8")
     connect_at = source.index("psycopg.connect(**conn_params)")
     ready_def = source.index("def assert_persist_ready")
     routing_def = source.index("def assert_libpq_routing_env")
     assert ready_def < connect_at
     assert routing_def < connect_at
+    assert "conn.transaction()" in source
+    assert 'conn.execute("BEGIN")' not in source
+    assert 'conn.execute("COMMIT")' not in source
     assert "psycopg.connect(database_url)" not in source
     assert "psycopg.connect(conninfo" not in source
+
+
+def test_advisory_persist_ready_exits_before_vision(tmp_path, monkeypatch, capsys):
+    video = tmp_path / "g.mkv"
+    pbp = tmp_path / "202601010FIC.json"
+    video.write_bytes(b"x")
+    pbp.write_text("[]")
+    monkeypatch.setenv("MATCHER_PERSIST", "1")
+    monkeypatch.setenv("APP_ENV", "production")
+    monkeypatch.setenv("DATABASE_URL", LOCAL_URL)
+    monkeypatch.chdir(tmp_path)
+    called = {"vision": False}
+
+    def boom(*_args, **_kwargs):
+        called["vision"] = True
+        raise AssertionError("vision should not run")
+
+    monkeypatch.setattr("match_play_timestamps.analyze_frame_scoreboard", boom)
+    monkeypatch.setattr("match_play_timestamps.extract_frame_at_time", boom)
+    monkeypatch.setattr(
+        "sys.argv",
+        ["match_play_timestamps.py", str(video), str(pbp), "--max-plays", "1"],
+    )
+    from match_play_timestamps import main
+
+    with pytest.raises(SystemExit) as excinfo:
+        main()
+    assert excinfo.value.code == 1
+    assert called["vision"] is False
+    out = capsys.readouterr().out + capsys.readouterr().err
+    assert "APP_ENV" in out
+    assert "Traceback" not in out
+
+
+def test_persist_refused_after_match_prints_summary_without_traceback(
+    tmp_path, monkeypatch, capsys
+):
+    video = tmp_path / "g.mkv"
+    pbp = tmp_path / "202601010FIC.json"
+    video.write_bytes(b"x")
+    pbp.write_text(
+        '[{"quarter": 1, "time": "10:34.0", "score": "2-4", "team": "Celtics",'
+        ' "description": "D. White misses 3-pt jump shot from 25 ft"}]'
+    )
+    monkeypatch.setenv("MATCHER_PERSIST", "1")
+    monkeypatch.setenv("APP_ENV", "test")
+    monkeypatch.setenv("DATABASE_URL", LOCAL_URL)
+    monkeypatch.chdir(tmp_path)
+
+    class Probe:
+        stdout = "5.0\n"
+        stderr = ""
+        returncode = 0
+
+    monkeypatch.setattr(
+        "match_play_timestamps.subprocess.run",
+        lambda cmd, **_k: Probe() if cmd and cmd[0] == "ffprobe" else (_ for _ in ()).throw(AssertionError(cmd)),
+    )
+    monkeypatch.setattr("match_play_timestamps.extract_frame_at_time", lambda *_a, **_k: None)
+    monkeypatch.setattr(
+        "match_play_timestamps.analyze_frame_scoreboard",
+        lambda *_a, **_k: '{"quarter": 1, "time": "10:34", "score": "2-4"}',
+    )
+    monkeypatch.setattr(
+        "match_play_timestamps.requests.get",
+        lambda *_a, **_k: type("R", (), {"status_code": 200})(),
+    )
+
+    def refuse(*_a, **_k):
+        raise PersistRefused("persist refused: parent game is missing")
+
+    monkeypatch.setattr("persist_matcher_clips.persist_matched_output", refuse)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "match_play_timestamps.py",
+            str(video),
+            str(pbp),
+            "--max-plays",
+            "1",
+            "--output",
+            str(tmp_path / "out.json"),
+        ],
+    )
+    from match_play_timestamps import main
+
+    with pytest.raises(SystemExit) as excinfo:
+        main()
+    assert excinfo.value.code == 1
+    out = capsys.readouterr().out
+    assert "MATCHED PLAYS:" in out
+    assert "parent game is missing" in out
+    assert "Traceback" not in out

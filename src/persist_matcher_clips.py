@@ -35,7 +35,12 @@ from decimal import Decimal, ROUND_HALF_EVEN
 from typing import Any, Mapping
 from urllib.parse import parse_qsl, unquote, urlparse
 
-from match_play_timestamps import extract_action_type, original_members, time_to_seconds
+from match_play_timestamps import (
+    GROUP_WINDOW_S,
+    cluster_play_groups,
+    extract_action_type,
+    original_members,
+)
 
 BBREF_ID_RE = re.compile(r"[0-9]{9}[A-Z]{3}")
 SHA256_HEX_RE = re.compile(r"[0-9a-f]{64}")
@@ -69,7 +74,6 @@ DEV_PROJECT_ID = "morning-mud-60538825"
 DEV_BRANCH_ID = "br-odd-smoke-b465tvf8"
 DEV_DATABASE = "neondb"
 VIDEO_SCALE = Decimal("0.001")
-GROUP_WINDOW_S = 5
 ATTR_INDEXES = "shared_sequence_indexes"
 ATTR_PBP = "pbp_sha256"
 ATTR_GROUPING = "grouping_sha256"
@@ -120,39 +124,23 @@ def period_value(quarter: Any) -> int:
 def canonical_group_indexes(original_plays: Any) -> tuple[tuple[int, ...], ...]:
     """Full-PBP grouping membership. Independent of which groups were selected.
 
-    Same 5s same-quarter clustering as matcher condense_plays; only the index
-    partition is used as group identity.
+    Uses the same cluster_play_groups partition as matcher condense_plays.
+    Only the index partition is used as group identity.
     """
     if not isinstance(original_plays, list):
         raise PersistRefused("persist refused: frozen PBP source must be a list")
     if not original_plays:
         return ()
-
-    def play_index(play: Any) -> int:
+    for play in original_plays:
         if not isinstance(play, Mapping):
             raise PersistRefused("persist refused: frozen PBP source is not indexed events")
-        index = play.get("play_index")
-        if type(index) is not int:
+        if type(play.get("play_index")) is not int:
             raise PersistRefused("persist refused: frozen PBP indexes are not 0..n-1")
-        return index
-
-    membership: list[tuple[int, ...]] = []
-    current = [original_plays[0]]
-    for play in original_plays[1:]:
-        if not isinstance(play, Mapping) or not isinstance(current[0], Mapping):
-            raise PersistRefused("persist refused: frozen PBP source is not indexed events")
-        prev = current[0]
-        same_quarter = play.get("quarter") == prev.get("quarter")
-        time_diff = time_to_seconds(prev.get("time", "0:0.0")) - time_to_seconds(
-            play.get("time", "0:0.0")
-        )
-        if same_quarter and 0 <= time_diff <= GROUP_WINDOW_S:
-            current.append(play)
-        else:
-            membership.append(tuple(play_index(item) for item in current))
-            current = [play]
-    membership.append(tuple(play_index(item) for item in current))
-    return tuple(membership)
+    try:
+        groups = cluster_play_groups(original_plays, time_window=GROUP_WINDOW_S)
+    except (KeyError, TypeError) as exc:
+        raise PersistRefused("persist refused: frozen PBP source is not indexed events") from exc
+    return tuple(tuple(item["play_index"] for item in group) for group in groups)
 
 
 def grouping_sha256(membership: tuple[tuple[int, ...], ...]) -> str:
@@ -412,102 +400,95 @@ def persist_matched_output(
     from psycopg.types.json import Jsonb
 
     with psycopg.connect(**conn_params) as conn:
-        conn.execute("BEGIN")
+        conn.autocommit = True
         try:
-            game = conn.execute(
-                """
-                SELECT id, game_date
-                FROM games
-                WHERE bbref_id = %s
-                FOR UPDATE
-                """,
-                (game_bbref_id,),
-            ).fetchone()
-            if game is None:
-                raise PersistRefused("persist refused: parent game is missing")
-            game_id, game_date = game
+            with conn.transaction():
+                game = conn.execute(
+                    """
+                    SELECT id, game_date
+                    FROM games
+                    WHERE bbref_id = %s
+                    FOR UPDATE
+                    """,
+                    (game_bbref_id,),
+                ).fetchone()
+                if game is None:
+                    raise PersistRefused("persist refused: parent game is missing")
+                game_id, game_date = game
 
-            existing_rows = conn.execute(
-                """
-                SELECT play_index, period, description, game_clock,
-                       video_start_s, video_end_s, attributes
-                FROM clips
-                WHERE game_id = %s
-                FOR UPDATE
-                """,
-                (game_id,),
-            ).fetchall()
-            occupied: dict[int, dict[str, Any]] = {}
-            existing_attrs: list[Any] = []
-            for rec in existing_rows:
-                occupied[int(rec[0])] = {
-                    "period": rec[1],
-                    "description": rec[2],
-                    "game_clock": rec[3],
-                    "video_start_s": rec[4],
-                    "video_end_s": rec[5],
-                    "attributes": rec[6],
-                }
-                existing_attrs.append(rec[6])
-            if game_source_conflict(existing_attrs, pbp_hash):
-                raise PersistRefused(
-                    "persist refused: saved PBP does not match clips already stored for this game"
-                )
-            if game_grouping_conflict(existing_attrs, grouping_hash):
-                raise PersistRefused(
-                    "persist refused: canonical grouping does not match clips already stored for this game"
-                )
-
-            for row in rows:
-                existing = occupied.get(row["play_index"])
-                if existing is None:
-                    conn.execute(
-                        """
-                        INSERT INTO clips (
-                          game_id, game_date, play_index, period, game_clock,
-                          description, action_type, attributes,
-                          video_start_s, video_end_s
-                        ) VALUES (
-                          %s, %s, %s, %s, %s,
-                          %s, %s, %s,
-                          %s, %s
-                        )
-                        """,
-                        (
-                            game_id,
-                            game_date,
-                            row["play_index"],
-                            row["period"],
-                            row["game_clock"],
-                            row["description"],
-                            row["action_type"],
-                            Jsonb(
-                                {
-                                    ATTR_INDEXES: row["shared_sequence_indexes"],
-                                    ATTR_PBP: pbp_hash,
-                                    ATTR_GROUPING: grouping_hash,
-                                    ATTR_TIMING: TIMING_SHARED,
-                                }
-                            ),
-                            row["video_start_s"],
-                            row["video_end_s"],
-                        ),
-                    )
-                    report["inserted"] += 1
-                    continue
-                if _rows_conflict(existing, row, pbp_hash):
+                existing_rows = conn.execute(
+                    """
+                    SELECT play_index, period, description, game_clock,
+                           video_start_s, video_end_s, attributes
+                    FROM clips
+                    WHERE game_id = %s
+                    FOR UPDATE
+                    """,
+                    (game_id,),
+                ).fetchall()
+                occupied: dict[int, dict[str, Any]] = {}
+                existing_attrs: list[Any] = []
+                for rec in existing_rows:
+                    occupied[int(rec[0])] = {
+                        "period": rec[1],
+                        "description": rec[2],
+                        "game_clock": rec[3],
+                        "video_start_s": rec[4],
+                        "video_end_s": rec[5],
+                        "attributes": rec[6],
+                    }
+                    existing_attrs.append(rec[6])
+                if game_source_conflict(existing_attrs, pbp_hash):
                     raise PersistRefused(
-                        "persist refused: occupied play_index does not match this event"
+                        "persist refused: saved PBP does not match clips already stored for this game"
                     )
-                report["noop"] += 1
-            conn.execute("COMMIT")
-        except PersistRefused:
-            conn.execute("ROLLBACK")
-            raise
+                if game_grouping_conflict(existing_attrs, grouping_hash):
+                    raise PersistRefused(
+                        "persist refused: canonical grouping does not match clips already stored for this game"
+                    )
+
+                for row in rows:
+                    existing = occupied.get(row["play_index"])
+                    if existing is None:
+                        conn.execute(
+                            """
+                            INSERT INTO clips (
+                              game_id, game_date, play_index, period, game_clock,
+                              description, action_type, attributes,
+                              video_start_s, video_end_s
+                            ) VALUES (
+                              %s, %s, %s, %s, %s,
+                              %s, %s, %s,
+                              %s, %s
+                            )
+                            """,
+                            (
+                                game_id,
+                                game_date,
+                                row["play_index"],
+                                row["period"],
+                                row["game_clock"],
+                                row["description"],
+                                row["action_type"],
+                                Jsonb(
+                                    {
+                                        ATTR_INDEXES: row["shared_sequence_indexes"],
+                                        ATTR_PBP: pbp_hash,
+                                        ATTR_GROUPING: grouping_hash,
+                                        ATTR_TIMING: TIMING_SHARED,
+                                    }
+                                ),
+                                row["video_start_s"],
+                                row["video_end_s"],
+                            ),
+                        )
+                        report["inserted"] += 1
+                        continue
+                    if _rows_conflict(existing, row, pbp_hash):
+                        raise PersistRefused(
+                            "persist refused: occupied play_index does not match this event"
+                        )
+                    report["noop"] += 1
         except UniqueViolation as exc:
-            conn.execute("ROLLBACK")
             raise PersistRefused("persist refused: concurrent write conflict") from exc
-        except Exception:
-            conn.execute("ROLLBACK")
-            raise
     return report
