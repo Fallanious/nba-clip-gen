@@ -10,6 +10,7 @@ import sys
 import subprocess
 import shutil
 import base64
+import hashlib
 import json
 import re
 from datetime import datetime
@@ -289,6 +290,15 @@ def pick_primary_action(plays):
     return best_play
 
 
+def load_pbp_source(path):
+    """Read, hash, and parse the same PBP bytes. Callers must not reread the file."""
+    with open(path, "rb") as handle:
+        data = handle.read()
+    digest = hashlib.sha256(data).hexdigest()
+    parsed = json.loads(data.decode("utf-8"))
+    return digest, stamp_original_play_indexes(parsed)
+
+
 def stamp_original_play_indexes(plays):
     """Stamp 0..n-1 on the full saved PBP list before grouping or filtering.
 
@@ -453,26 +463,43 @@ def main():
         print("Error: Cannot connect to Ollama")
         sys.exit(1)
     
-    # Load play-by-play data
-    with open(args.playbyplay, 'r') as f:
-        raw_plays = json.load(f)
+    # Load play-by-play data from one byte read: hash and parse those same bytes.
+    pbp_hash, frozen_plays = load_pbp_source(args.playbyplay)
 
-    print(f"Loaded {len(raw_plays)} plays from play-by-play data")
+    print(f"Loaded {len(frozen_plays)} plays from play-by-play data")
+    print("Frozen PBP source hashed at load; persist will not reread the file")
 
-    # Stamp full-game indexes, then group, then optional name filter.
+    # Stamp already happened in load_pbp_source. Group, then optional name filter.
     # Filter selects groups; it must not restamp or shrink membership.
-    raw_plays = stamp_original_play_indexes(raw_plays)
-    plays = condense_plays(raw_plays, time_window=5)
+    plays = condense_plays(frozen_plays, time_window=5)
     compound_count = sum(1 for p in plays if p.get('is_compound'))
     print(f"Condensed to {len(plays)} distinct plays ({compound_count} compound plays)")
     print(f"Will match first {args.max_plays} plays")
     print(f"Vision model: {args.model}")
     if args.player_name:
         print(f"Filtering groups whose combined description includes: {args.player_name}")
+        print(
+            "Player filter selects entire condensed groups. Original membership "
+            "is unchanged; unnamed events in a selected group stay in the group "
+            "and persist as their own clips rows if the group matches. "
+            "This is not a per-player event filter and writes no clip_players rows."
+        )
         plays = [
             play for play in plays
             if play['description'].find(args.player_name) != -1
         ]
+        named = 0
+        unnamed = 0
+        for play in plays:
+            for member in original_members(play):
+                if args.player_name in member["description"]:
+                    named += 1
+                else:
+                    unnamed += 1
+        print(
+            f"Selected {len(plays)} groups with {named + unnamed} original events "
+            f"({unnamed} original events do not name the player and still persist if matched)."
+        )
     
     # Get video duration
     cmd = ['ffprobe', '-v', 'error', '-show_entries', 'format=duration',
@@ -597,16 +624,29 @@ def main():
     print(f"✓ Debug frames saved to: {debug_dir}")
 
     if os.environ.get("MATCHER_PERSIST") == "1":
-        from persist_matcher_clips import persist_matched_output
+        from persist_matcher_clips import (
+            assert_persist_app_env,
+            assert_persist_database_url,
+            persist_matched_output,
+        )
 
+        database_url = os.environ.get("DATABASE_URL", "")
+        assert_persist_app_env()
+        assert_persist_database_url(database_url)
+        print(
+            "Persisting one clips row per original member of each matched group "
+            "(shared group video window). Player filter does not drop unnamed "
+            "members. clip_players are not written."
+        )
         game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
             os.path.basename(args.playbyplay)
         )[0]
         persist_matched_output(
             matched_plays,
-            database_url=os.environ.get("DATABASE_URL", ""),
+            database_url=database_url,
             game_bbref_id=game_bbref_id,
-            pbp_path=args.playbyplay,
+            pbp_hash=pbp_hash,
+            original_plays=frozen_plays,
         )
     
     # Print summary

@@ -34,6 +34,12 @@ def test_group_then_filter_does_not_change_membership_or_indexes():
     assert [m["play_index"] for m in original_members(still)] == [2, 3]
     assert still["original_plays"][0]["description"].startswith("D. White misses")
     assert still["original_plays"][1]["description"] == "Offensive rebound by Team"
+    rows = expand_matched_groups(
+        [{**still, "video_start": 12.5, "video_end": 18.5}]
+    )
+    assert [r["play_index"] for r in rows] == [2, 3]
+    assert rows[1]["description"] == "Offensive rebound by Team"
+    assert "White" not in rows[1]["description"]
 
 
 def test_expand_compound_shares_group_window_keeps_event_metadata():
