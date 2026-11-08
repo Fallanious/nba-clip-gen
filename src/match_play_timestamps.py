@@ -10,6 +10,7 @@ import sys
 import subprocess
 import shutil
 import base64
+import hashlib
 import json
 import re
 from datetime import datetime
@@ -167,6 +168,9 @@ def parse_scoreboard_response(response_text):
         return None
 
 
+GROUP_WINDOW_S = 5
+
+
 def time_to_seconds(time_str):
     """Convert MM:SS.S format to seconds."""
     try:
@@ -289,70 +293,132 @@ def pick_primary_action(plays):
     return best_play
 
 
-def merge_play_group(plays):
-    """Merge a group of plays into one combined play."""
-    if len(plays) == 1:
-        play = plays[0].copy()
-        play['is_compound'] = False
-        play['play_count'] = 1
-        play['primary_action'] = extract_action_type(play['description'])
-        return play
-    
-    # Combine descriptions with arrow
-    descriptions = [p['description'] for p in plays]
-    combined_desc = " → ".join(descriptions)
-    
-    # Get compound label if available, otherwise use primary action
-    compound_label = get_compound_label(descriptions)
-    primary = pick_primary_action(plays)
-    primary_action = compound_label if compound_label else extract_action_type(primary['description'])
-    
+def load_pbp_source(path):
+    """Read, hash, and parse the same PBP bytes. Callers must not reread the file."""
+    with open(path, "rb") as handle:
+        data = handle.read()
+    digest = hashlib.sha256(data).hexdigest()
+    parsed = json.loads(data.decode("utf-8"))
+    return digest, stamp_original_play_indexes(parsed)
+
+
+def stamp_original_play_indexes(plays):
+    """Stamp 0..n-1 on the full saved PBP list before grouping or filtering.
+
+    This index is unique for this saved file only, not a Basketball-Reference
+    event id and not stable across a revised scrape.
+    """
+    if not isinstance(plays, list):
+        raise ValueError("PBP plays must be a list")
+    stamped = []
+    for index, play in enumerate(plays):
+        if not isinstance(play, dict):
+            raise ValueError("PBP play must be an object")
+        row = dict(play)
+        existing = row.get("play_index")
+        if existing is not None and existing != index:
+            raise ValueError("play_index does not match full-game input order")
+        row["play_index"] = index
+        stamped.append(row)
+    return stamped
+
+
+def original_member_record(play):
+    """Event fields for one original PBP row. No composite group description."""
+    index = play.get("play_index")
+    if type(index) is not int:
+        raise ValueError("original play_index must be a full-game int")
+    quarter = play.get("quarter")
+    time_str = play.get("time")
+    team = play.get("team")
+    description = play.get("description")
+    if quarter is None or not time_str or not isinstance(description, str) or not description:
+        raise ValueError("original PBP member is missing quarter, time, or description")
     return {
-        'quarter': plays[0]['quarter'],
-        'time': plays[0]['time'],  # Use earliest time
-        'team': primary['team'],
-        'score': plays[-1]['score'],  # Use final score
-        'description': combined_desc,
-        'is_compound': True,
-        'play_count': len(plays),
-        'primary_action': primary_action,
-        'original_plays': plays,  # Keep originals for reference
+        "play_index": index,
+        "quarter": quarter,
+        "time": time_str,
+        "team": team,
+        "description": description,
+        "score": play.get("score"),
     }
 
 
-def condense_plays(plays, time_window=5):
+def original_members(play):
+    """Original full-game members of a condensed group, in input order."""
+    raw = play.get("original_plays")
+    if isinstance(raw, list) and raw:
+        return [original_member_record(item) for item in raw]
+    return [original_member_record(play)]
+
+
+def merge_play_group(plays):
+    """Merge a group of plays into one combined play for matching only.
+
+    original_plays keeps each event's own index/period/clock/description.
+    Grouping does not invent per-player indexes. Persist expands members
+    into separate clips rows that may share this group's video window.
+    """
+    members = [original_member_record(play) for play in plays]
+    if len(plays) == 1:
+        play = dict(plays[0])
+        play["is_compound"] = False
+        play["play_count"] = 1
+        play["primary_action"] = extract_action_type(play["description"])
+        play["original_plays"] = members
+        play["original_play_indexes"] = [members[0]["play_index"]]
+        return play
+
+    descriptions = [p["description"] for p in plays]
+    combined_desc = " → ".join(descriptions)
+    compound_label = get_compound_label(descriptions)
+    primary = pick_primary_action(plays)
+    primary_action = compound_label if compound_label else extract_action_type(primary["description"])
+    return {
+        "quarter": plays[0]["quarter"],
+        "time": plays[0]["time"],
+        "team": primary["team"],
+        "score": plays[-1]["score"],
+        "description": combined_desc,
+        "is_compound": True,
+        "play_count": len(plays),
+        "primary_action": primary_action,
+        "original_plays": members,
+        "original_play_indexes": [item["play_index"] for item in members],
+    }
+
+
+def cluster_play_groups(plays, time_window=GROUP_WINDOW_S):
+    """Partition consecutive plays by same quarter and window vs group start.
+
+    Game clock counts down, so prev_time - play_time is elapsed time in the
+    cluster. Matcher condensation and persist grouping identity both use this.
+    """
+    if not plays:
+        return []
+    groups = []
+    current_group = [plays[0]]
+    for play in plays[1:]:
+        prev = current_group[0]
+        same_quarter = play["quarter"] == prev["quarter"]
+        time_diff = time_to_seconds(prev["time"]) - time_to_seconds(play["time"])
+        if same_quarter and 0 <= time_diff <= time_window:
+            current_group.append(play)
+        else:
+            groups.append(current_group)
+            current_group = [play]
+    groups.append(current_group)
+    return groups
+
+
+def condense_plays(plays, time_window=GROUP_WINDOW_S):
     """
     Merge plays that happen within time_window seconds of each other.
     Creates compound descriptions and assigns compound labels.
     """
     if not plays:
         return plays
-    
-    condensed = []
-    current_group = [plays[0]]
-    
-    for play in plays[1:]:
-        prev = current_group[0]  # Compare to first play in group
-        
-        # Check if same quarter and within time window
-        same_quarter = play['quarter'] == prev['quarter']
-        prev_time = time_to_seconds(prev['time'])
-        play_time = time_to_seconds(play['time'])
-        # Game clock counts DOWN, so prev_time > play_time means play is later
-        time_diff = prev_time - play_time
-        
-        if same_quarter and 0 <= time_diff <= time_window:
-            # Add to current group
-            current_group.append(play)
-        else:
-            # Finalize current group and start new one
-            condensed.append(merge_play_group(current_group))
-            current_group = [play]
-    
-    # Don't forget the last group
-    condensed.append(merge_play_group(current_group))
-    
-    return condensed
+    return [merge_play_group(group) for group in cluster_play_groups(plays, time_window)]
 
 
 
@@ -387,6 +453,17 @@ def main():
     if not os.path.exists(args.playbyplay):
         print(f"Error: Play-by-play file not found: {args.playbyplay}")
         sys.exit(1)
+
+    # Advisory only: catch persist misconfig before the slow vision pass.
+    # Authoritative assert_persist_ready still runs immediately before connect.
+    if os.environ.get("MATCHER_PERSIST") == "1":
+        from persist_matcher_clips import PersistRefused, assert_persist_ready
+
+        try:
+            assert_persist_ready(os.environ.get("DATABASE_URL", ""))
+        except PersistRefused as exc:
+            print(str(exc))
+            sys.exit(1)
     
     # Check Ollama
     try:
@@ -398,28 +475,43 @@ def main():
         print("Error: Cannot connect to Ollama")
         sys.exit(1)
     
-    # Load play-by-play data
-    with open(args.playbyplay, 'r') as f:
-        raw_plays = json.load(f)
-    
-    print(f"Loaded {len(raw_plays)} plays from play-by-play data")
-    
-    # Condense plays to prevent clips that overlap / cover the same action
-    # Ex. player gets offensive rebound and putback layup = 1 clip, not 3
-    plays = condense_plays(raw_plays, time_window=5)
+    # Load play-by-play data from one byte read: hash and parse those same bytes.
+    pbp_hash, frozen_plays = load_pbp_source(args.playbyplay)
+
+    print(f"Loaded {len(frozen_plays)} plays from play-by-play data")
+    print("Frozen PBP source hashed at load; persist will not reread the file")
+
+    # Stamp already happened in load_pbp_source. Group, then optional name filter.
+    # Filter selects groups; it must not restamp or shrink membership.
+    plays = condense_plays(frozen_plays, time_window=GROUP_WINDOW_S)
     compound_count = sum(1 for p in plays if p.get('is_compound'))
     print(f"Condensed to {len(plays)} distinct plays ({compound_count} compound plays)")
     print(f"Will match first {args.max_plays} plays")
     print(f"Vision model: {args.model}")
     if args.player_name:
-      new_plays_by_player = []
-      print(f"Filtering for plays involving: {args.player_name}")
-      # shrink plays into a condensed version that only includes plays with the player
-      for idx, play in enumerate(plays):
-        play = plays[idx]
-        if play['description'].find(args.player_name) != -1:
-          new_plays_by_player.append(play)
-      plays = new_plays_by_player
+        print(f"Filtering groups whose combined description includes: {args.player_name}")
+        print(
+            "Player filter selects entire condensed groups. Original membership "
+            "is unchanged; unnamed events in a selected group stay in the group "
+            "and persist as their own clips rows if the group matches. "
+            "This is not a per-player event filter and writes no clip_players rows."
+        )
+        plays = [
+            play for play in plays
+            if play['description'].find(args.player_name) != -1
+        ]
+        named = 0
+        unnamed = 0
+        for play in plays:
+            for member in original_members(play):
+                if args.player_name in member["description"]:
+                    named += 1
+                else:
+                    unnamed += 1
+        print(
+            f"Selected {len(plays)} groups with {named + unnamed} original events "
+            f"({unnamed} original events do not name the player and still persist if matched)."
+        )
     
     # Get video duration
     cmd = ['ffprobe', '-v', 'error', '-show_entries', 'format=duration',
@@ -492,8 +584,11 @@ def main():
                     clip_start = max(0, current_time - args.buffer)
                     clip_end = min(video_duration, current_time + 1)
                     
+                    members = original_members(matched_play)
                     matched_plays.append({
-                        'play_index': match_idx,
+                        'play_index': members[0]['play_index'],
+                        'original_play_indexes': [item['play_index'] for item in members],
+                        'original_plays': members,
                         'team': matched_play['team'],
                         'description': matched_play['description'],
                         'quarter': matched_play['quarter'],
@@ -504,7 +599,7 @@ def main():
                         'video_end': clip_end,
                         'primary_action': matched_play.get('primary_action', extract_action_type(matched_play['description'])),
                         'is_compound': matched_play.get('is_compound', False),
-                        'play_count': matched_play.get('play_count', 1),
+                        'play_count': len(members),
                     })
                     
                     # Move to next play for sequential matching
@@ -539,8 +634,7 @@ def main():
     
     print(f"\n✓ Timestamps saved to: {output_path}")
     print(f"✓ Debug frames saved to: {debug_dir}")
-    
-    # Print summary
+
     print("\nMATCHED PLAYS:")
     for i, play in enumerate(matched_plays, 1):
         compound_marker = " [COMPOUND]" if play.get('is_compound') else ""
@@ -548,6 +642,35 @@ def main():
         print(f"   Action: {play['primary_action']}")
         print(f"   {play['description']}")
         print(f"   Video: {play['video_start']:.1f}s - {play['video_end']:.1f}s")
+
+    if os.environ.get("MATCHER_PERSIST") == "1":
+        from persist_matcher_clips import (
+            PersistRefused,
+            assert_persist_ready,
+            persist_matched_output,
+        )
+
+        database_url = os.environ.get("DATABASE_URL", "")
+        try:
+            assert_persist_ready(database_url)
+            print(
+                "Persisting one clips row per original member of each matched group "
+                "(shared group video window). Player filter does not drop unnamed "
+                "members. clip_players are not written."
+            )
+            game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
+                os.path.basename(args.playbyplay)
+            )[0]
+            persist_matched_output(
+                matched_plays,
+                database_url=database_url,
+                game_bbref_id=game_bbref_id,
+                pbp_hash=pbp_hash,
+                original_plays=frozen_plays,
+            )
+        except PersistRefused as exc:
+            print(str(exc))
+            sys.exit(1)
 
 
 if __name__ == "__main__":
