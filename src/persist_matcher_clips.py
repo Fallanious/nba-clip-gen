@@ -15,10 +15,13 @@ canonical grouping, not the player-filter selected subset.
 Never deletes. Never overwrites. No clip_players. No migrations.
 duration_s is generated — omit it from INSERT.
 
-Connection targets are checked from the URI before connect. libpq query
-overrides (host, hostaddr, service, options) are refused. Production is
-never allowlisted. The Neon DEV hostname is the sanctioned metadata host
-only; pooled or other endpoints are refused.
+Connection targets are checked from the URI and process environment before
+connect. URI query keys use a narrow allowlist (sslmode only). Neon DEV
+requires explicit sslmode=require or verify-full. libpq routing/service
+environment variables are refused so they cannot fill hostaddr/service.
+Connect uses explicit parameters, not the raw URI. Production is never
+allowlisted. The Neon DEV hostname is the sanctioned metadata host only;
+pooled or other endpoints are refused.
 """
 
 from __future__ import annotations
@@ -30,7 +33,7 @@ import re
 from datetime import timedelta
 from decimal import Decimal, ROUND_HALF_EVEN
 from typing import Any, Mapping
-from urllib.parse import parse_qsl, urlparse
+from urllib.parse import parse_qsl, unquote, urlparse
 
 from match_play_timestamps import extract_action_type, original_members, time_to_seconds
 
@@ -38,7 +41,26 @@ BBREF_ID_RE = re.compile(r"[0-9]{9}[A-Z]{3}")
 SHA256_HEX_RE = re.compile(r"[0-9a-f]{64}")
 LOCAL_HOSTS = frozenset({"127.0.0.1", "localhost", "::1"})
 PERSIST_APP_ENVS = frozenset({"dev", "test"})
-FORBIDDEN_URI_QUERY_KEYS = frozenset({"host", "hostaddr", "service", "options"})
+ALLOWED_URI_QUERY_KEYS = frozenset({"sslmode"})
+DEV_SSLMODES = frozenset({"require", "verify-full"})
+# libpq uses env vars as defaults for unspecified parameters, including
+# hostaddr alongside a URI host (PGHOSTADDR). Refuse routing/service vars
+# before connect; do not rely on a post-connect check.
+LIBPQ_ROUTING_ENV = frozenset({
+    "PGHOST",
+    "PGHOSTADDR",
+    "PGPORT",
+    "PGDATABASE",
+    "PGUSER",
+    "PGSERVICE",
+    "PGSERVICEFILE",
+    "PGOPTIONS",
+    "PGSYSCONFDIR",
+    "PGTARGETSESSIONATTRS",
+    "PGLOADBALANCEHOSTS",
+    "PGREQUIRESSL",
+    "PGSSLMODE",
+})
 # Sanctioned Neon METADATA-only lookup, 2026-11-08. Not a DSN. No pooled host.
 DEV_ENDPOINT_ID = "ep-rapid-smoke-b4t1v549"
 DEV_ENDPOINT_HOST = "ep-rapid-smoke-b4t1v549.c-6.us-east-2.aws.neon.tech"
@@ -150,22 +172,33 @@ def _database_name(path: str) -> str:
     name = (path or "").lstrip("/")
     if not name:
         return ""
-    return name.split("/", 1)[0].rstrip("/")
+    name = name.rstrip("/")
+    if not name or "/" in name:
+        return ""
+    return name
 
 
-def _uri_query_keys(query: str) -> set[str]:
-    keys = set()
-    for key, _value in parse_qsl(query or "", keep_blank_values=True):
-        keys.add(key.lower())
-    return keys
+def _sslmode_query(query: str) -> str | None:
+    pairs = [(key.lower(), value) for key, value in parse_qsl(query or "", keep_blank_values=True)]
+    keys = [key for key, _value in pairs]
+    if len(keys) != len(set(keys)):
+        raise PersistRefused("persist refused: database URI query has duplicate keys")
+    disallowed = [key for key in keys if key not in ALLOWED_URI_QUERY_KEYS]
+    if disallowed:
+        raise PersistRefused("persist refused: database URI query is not allowlisted")
+    if not pairs:
+        return None
+    return pairs[0][1]
 
 
-def assert_persist_database_url(database_url: str) -> str:
-    """Allow isolated local fixtures or the single verified Neon DEV endpoint.
+def assert_libpq_routing_env() -> None:
+    """Refuse libpq env vars that can route or service-select before connect."""
+    if any(name in os.environ for name in LIBPQ_ROUTING_ENV):
+        raise PersistRefused("persist refused: libpq routing environment overrides the target")
 
-    Inspects the URI before any connect. Does not log the URL or userinfo.
-    Query host/hostaddr/service/options, multi-host, and missing hosts refuse.
-    """
+
+def persist_connect_params(database_url: str) -> tuple[str, dict[str, Any]]:
+    """Parse DATABASE_URL into explicit connect kwargs. Does not log userinfo."""
     if not database_url or not database_url.strip():
         raise PersistRefused("persist refused: missing DATABASE_URL")
     parsed = urlparse(database_url)
@@ -174,9 +207,7 @@ def assert_persist_database_url(database_url: str) -> str:
     netloc = parsed.netloc or ""
     if "," in netloc:
         raise PersistRefused("persist refused: database target is not allowlisted")
-    query_keys = _uri_query_keys(parsed.query)
-    if query_keys & FORBIDDEN_URI_QUERY_KEYS:
-        raise PersistRefused("persist refused: database URI query overrides the target")
+    sslmode = _sslmode_query(parsed.query)
     try:
         host = (parsed.hostname or "").lower()
         port = parsed.port
@@ -189,20 +220,52 @@ def assert_persist_database_url(database_url: str) -> str:
     dbname = _database_name(parsed.path)
     if not dbname:
         raise PersistRefused("persist refused: database target is not allowlisted")
+    user = unquote(parsed.username) if parsed.username else ""
+    if not user:
+        raise PersistRefused("persist refused: database target is not allowlisted")
+    password = unquote(parsed.password) if parsed.password is not None else ""
+    params: dict[str, Any] = {
+        "host": host,
+        "port": port if port is not None else 5432,
+        "dbname": dbname,
+        "user": user,
+        "password": password,
+    }
 
     if host in LOCAL_HOSTS:
-        return "local"
+        if sslmode is not None:
+            params["sslmode"] = sslmode
+        return "local", params
 
     if (
         host == DEV_ENDPOINT_HOST
         and host.startswith(DEV_ENDPOINT_ID + ".")
         and ".us-east-2.aws.neon.tech" in host
         and dbname == DEV_DATABASE
-        and port in (None, 5432)
+        and params["port"] == 5432
     ):
-        return "dev"
+        if sslmode not in DEV_SSLMODES:
+            raise PersistRefused(
+                "persist refused: Neon DEV requires sslmode=require or verify-full"
+            )
+        params["sslmode"] = sslmode
+        return "dev", params
 
     raise PersistRefused("persist refused: database target is not allowlisted")
+
+
+def assert_persist_database_url(database_url: str) -> str:
+    """Allow isolated local fixtures or the single verified Neon DEV endpoint."""
+    kind, _params = persist_connect_params(database_url)
+    return kind
+
+
+def assert_persist_ready(database_url: str) -> dict[str, Any]:
+    """App env, libpq routing env, and URI allowlist. Call before connect."""
+    assert_persist_app_env()
+    assert_libpq_routing_env()
+    _kind, params = persist_connect_params(database_url)
+    return params
 
 
 def expand_matched_groups(matched_plays: Any) -> list[dict[str, Any]]:
@@ -328,8 +391,7 @@ def persist_matched_output(
     original_plays: Any,
 ) -> dict[str, int]:
     """Insert matched original events. One transaction. Guard before connect."""
-    assert_persist_app_env()
-    assert_persist_database_url(database_url)
+    conn_params = assert_persist_ready(database_url)
     if not BBREF_ID_RE.fullmatch(game_bbref_id or ""):
         raise PersistRefused("persist refused: game bbref_id is not a Basketball-Reference id")
     rows = expand_matched_groups(matched_plays)
@@ -349,7 +411,7 @@ def persist_matched_output(
     from psycopg.errors import UniqueViolation
     from psycopg.types.json import Jsonb
 
-    with psycopg.connect(database_url) as conn:
+    with psycopg.connect(**conn_params) as conn:
         conn.execute("BEGIN")
         try:
             game = conn.execute(

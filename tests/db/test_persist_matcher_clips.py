@@ -37,6 +37,22 @@ def _free_port() -> int:
 @pytest.fixture(autouse=True)
 def _persist_env(monkeypatch):
     monkeypatch.setenv("APP_ENV", "test")
+    for name in (
+        "PGHOST",
+        "PGHOSTADDR",
+        "PGPORT",
+        "PGDATABASE",
+        "PGUSER",
+        "PGSERVICE",
+        "PGSERVICEFILE",
+        "PGOPTIONS",
+        "PGSYSCONFDIR",
+        "PGTARGETSESSIONATTRS",
+        "PGLOADBALANCEHOSTS",
+        "PGREQUIRESSL",
+        "PGSSLMODE",
+    ):
+        monkeypatch.delenv(name, raising=False)
 
 
 @pytest.fixture(scope="session")

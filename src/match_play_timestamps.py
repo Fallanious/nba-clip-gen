@@ -624,15 +624,10 @@ def main():
     print(f"✓ Debug frames saved to: {debug_dir}")
 
     if os.environ.get("MATCHER_PERSIST") == "1":
-        from persist_matcher_clips import (
-            assert_persist_app_env,
-            assert_persist_database_url,
-            persist_matched_output,
-        )
+        from persist_matcher_clips import assert_persist_ready, persist_matched_output
 
         database_url = os.environ.get("DATABASE_URL", "")
-        assert_persist_app_env()
-        assert_persist_database_url(database_url)
+        assert_persist_ready(database_url)
         print(
             "Persisting one clips row per original member of each matched group "
             "(shared group video window). Player filter does not drop unnamed "
