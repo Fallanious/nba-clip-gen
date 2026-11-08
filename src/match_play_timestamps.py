@@ -289,34 +289,89 @@ def pick_primary_action(plays):
     return best_play
 
 
+def stamp_original_play_indexes(plays):
+    """Stamp 0..n-1 on the full saved PBP list before grouping or filtering.
+
+    This index is unique for this saved file only, not a Basketball-Reference
+    event id and not stable across a revised scrape.
+    """
+    if not isinstance(plays, list):
+        raise ValueError("PBP plays must be a list")
+    stamped = []
+    for index, play in enumerate(plays):
+        if not isinstance(play, dict):
+            raise ValueError("PBP play must be an object")
+        row = dict(play)
+        existing = row.get("play_index")
+        if existing is not None and existing != index:
+            raise ValueError("play_index does not match full-game input order")
+        row["play_index"] = index
+        stamped.append(row)
+    return stamped
+
+
+def original_member_record(play):
+    """Event fields for one original PBP row. No composite group description."""
+    index = play.get("play_index")
+    if type(index) is not int:
+        raise ValueError("original play_index must be a full-game int")
+    quarter = play.get("quarter")
+    time_str = play.get("time")
+    team = play.get("team")
+    description = play.get("description")
+    if quarter is None or not time_str or not isinstance(description, str) or not description:
+        raise ValueError("original PBP member is missing quarter, time, or description")
+    return {
+        "play_index": index,
+        "quarter": quarter,
+        "time": time_str,
+        "team": team,
+        "description": description,
+        "score": play.get("score"),
+    }
+
+
+def original_members(play):
+    """Original full-game members of a condensed group, in input order."""
+    raw = play.get("original_plays")
+    if isinstance(raw, list) and raw:
+        return [original_member_record(item) for item in raw]
+    return [original_member_record(play)]
+
+
 def merge_play_group(plays):
-    """Merge a group of plays into one combined play."""
+    """Merge a group of plays into one combined play for matching only.
+
+    original_plays keeps each event's own index/period/clock/description.
+    Grouping does not invent per-player indexes. Persist expands members
+    into separate clips rows that may share this group's video window.
+    """
+    members = [original_member_record(play) for play in plays]
     if len(plays) == 1:
-        play = plays[0].copy()
-        play['is_compound'] = False
-        play['play_count'] = 1
-        play['primary_action'] = extract_action_type(play['description'])
+        play = dict(plays[0])
+        play["is_compound"] = False
+        play["play_count"] = 1
+        play["primary_action"] = extract_action_type(play["description"])
+        play["original_plays"] = members
+        play["original_play_indexes"] = [members[0]["play_index"]]
         return play
-    
-    # Combine descriptions with arrow
-    descriptions = [p['description'] for p in plays]
+
+    descriptions = [p["description"] for p in plays]
     combined_desc = " → ".join(descriptions)
-    
-    # Get compound label if available, otherwise use primary action
     compound_label = get_compound_label(descriptions)
     primary = pick_primary_action(plays)
-    primary_action = compound_label if compound_label else extract_action_type(primary['description'])
-    
+    primary_action = compound_label if compound_label else extract_action_type(primary["description"])
     return {
-        'quarter': plays[0]['quarter'],
-        'time': plays[0]['time'],  # Use earliest time
-        'team': primary['team'],
-        'score': plays[-1]['score'],  # Use final score
-        'description': combined_desc,
-        'is_compound': True,
-        'play_count': len(plays),
-        'primary_action': primary_action,
-        'original_plays': plays,  # Keep originals for reference
+        "quarter": plays[0]["quarter"],
+        "time": plays[0]["time"],
+        "team": primary["team"],
+        "score": plays[-1]["score"],
+        "description": combined_desc,
+        "is_compound": True,
+        "play_count": len(plays),
+        "primary_action": primary_action,
+        "original_plays": members,
+        "original_play_indexes": [item["play_index"] for item in members],
     }
 
 
@@ -401,25 +456,23 @@ def main():
     # Load play-by-play data
     with open(args.playbyplay, 'r') as f:
         raw_plays = json.load(f)
-    
+
     print(f"Loaded {len(raw_plays)} plays from play-by-play data")
-    
-    # Condense plays to prevent clips that overlap / cover the same action
-    # Ex. player gets offensive rebound and putback layup = 1 clip, not 3
+
+    # Stamp full-game indexes, then group, then optional name filter.
+    # Filter selects groups; it must not restamp or shrink membership.
+    raw_plays = stamp_original_play_indexes(raw_plays)
     plays = condense_plays(raw_plays, time_window=5)
     compound_count = sum(1 for p in plays if p.get('is_compound'))
     print(f"Condensed to {len(plays)} distinct plays ({compound_count} compound plays)")
     print(f"Will match first {args.max_plays} plays")
     print(f"Vision model: {args.model}")
     if args.player_name:
-      new_plays_by_player = []
-      print(f"Filtering for plays involving: {args.player_name}")
-      # shrink plays into a condensed version that only includes plays with the player
-      for idx, play in enumerate(plays):
-        play = plays[idx]
-        if play['description'].find(args.player_name) != -1:
-          new_plays_by_player.append(play)
-      plays = new_plays_by_player
+        print(f"Filtering groups whose combined description includes: {args.player_name}")
+        plays = [
+            play for play in plays
+            if play['description'].find(args.player_name) != -1
+        ]
     
     # Get video duration
     cmd = ['ffprobe', '-v', 'error', '-show_entries', 'format=duration',
@@ -492,8 +545,11 @@ def main():
                     clip_start = max(0, current_time - args.buffer)
                     clip_end = min(video_duration, current_time + 1)
                     
+                    members = original_members(matched_play)
                     matched_plays.append({
-                        'play_index': match_idx,
+                        'play_index': members[0]['play_index'],
+                        'original_play_indexes': [item['play_index'] for item in members],
+                        'original_plays': members,
                         'team': matched_play['team'],
                         'description': matched_play['description'],
                         'quarter': matched_play['quarter'],
@@ -504,7 +560,7 @@ def main():
                         'video_end': clip_end,
                         'primary_action': matched_play.get('primary_action', extract_action_type(matched_play['description'])),
                         'is_compound': matched_play.get('is_compound', False),
-                        'play_count': matched_play.get('play_count', 1),
+                        'play_count': len(members),
                     })
                     
                     # Move to next play for sequential matching
@@ -539,6 +595,19 @@ def main():
     
     print(f"\n✓ Timestamps saved to: {output_path}")
     print(f"✓ Debug frames saved to: {debug_dir}")
+
+    if os.environ.get("MATCHER_PERSIST") == "1":
+        from persist_matcher_clips import persist_matched_output
+
+        game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
+            os.path.basename(args.playbyplay)
+        )[0]
+        persist_matched_output(
+            matched_plays,
+            database_url=os.environ.get("DATABASE_URL", ""),
+            game_bbref_id=game_bbref_id,
+            pbp_path=args.playbyplay,
+        )
     
     # Print summary
     print("\nMATCHED PLAYS:")
