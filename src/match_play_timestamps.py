@@ -68,59 +68,73 @@ def extract_frame_at_time(video_path, time_seconds, output_path, crop=None):
     subprocess.run(cmd, check=True, stderr=subprocess.PIPE)
 
 
-def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b', cropped=False):
-    """Send frame to Ollama to read scoreboard information."""
-    with open(image_path, 'rb') as f:
-        image_data = base64.b64encode(f.read()).decode('utf-8')
+FRAME_READ_TIMEOUT_S = 90
+# Keep the model loaded for a match so the system prompt prefix can be reused.
+MODEL_KEEP_ALIVE = "30m"
 
+
+def scoreboard_system_prompt(cropped):
+    """Instructions that stay the same for every frame in a match."""
     where = (
-        "This image is a crop of the scoreboard from an NBA broadcast."
+        "The image is a crop of the scoreboard from an NBA broadcast."
         if cropped else
-        "This is a frame from an NBA basketball broadcast between two teams.\n\nLook at the bottom of the screen for a scoreboard overlay. The scoreboard shows the score, quarter, and time remaining."
+        "The image is a frame from an NBA basketball broadcast. The scoreboard overlay is at the bottom of the screen."
     )
-    prompt = f"""{where}
+    return f"""{where}
+Read the quarter and the time remaining.
 
 Respond with ONLY a JSON object in this exact format:
 {{
   "quarter": <number 1-4>,
-  "score": "<team1_score>-<team2_score>",
   "time": "<minutes>:<seconds>"
 }}
 
-CRITICAL RULES:
-- Only include fields you can CLEARLY READ from the actual scoreboard in THIS specific image
-- If the scoreboard is not visible or you cannot read it with certainty, respond with: {{}}
-- DO NOT make up values or use placeholder data
-- DO NOT include any text outside the JSON object
-- The score format should be two numbers separated by a dash
-- The time format should be minutes:seconds
+Rules:
+- Only include fields you can clearly read in this image
+- If the scoreboard is not visible or you cannot read it, respond with: {{}}
+- Do not make up values
+- Do not include any text outside the JSON object
+- Time format is minutes:seconds
+- Do not include the score"""
 
-If you cannot see a scoreboard clearly, respond with an empty JSON object: {{}}"""
-    
+
+def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b', cropped=False):
+    """Send one frame to Ollama. The rules live in the system prompt."""
+    with open(image_path, 'rb') as f:
+        image_data = base64.b64encode(f.read()).decode('utf-8')
+
     payload = {
         "model": model,
-        "prompt": prompt,
+        "system": scoreboard_system_prompt(cropped),
+        "prompt": "Read this frame and gather the scoreboard information.",
         "images": [image_data],
-        "stream": False
+        "stream": False,
+        "keep_alive": MODEL_KEEP_ALIVE,
     }
-    
-    try:
-        response = requests.post(
-            'http://localhost:11434/api/generate',
-            json=payload,
-            timeout=90
-        )
-        
-        if response.status_code == 200:
-            text = response.json().get('response', '')
-            if not text:
-                print("  Ollama returned an empty response")
-            return text
-        print(f"  Ollama returned {response.status_code}: {response.text[:300]}")
-        return None
-    except Exception as e:
-        print(f"  Error analyzing frame: {e}")
-        return None
+
+    for attempt in (1, 2):
+        try:
+            response = requests.post(
+                'http://localhost:11434/api/generate',
+                json=payload,
+                timeout=FRAME_READ_TIMEOUT_S
+            )
+            if response.status_code == 200:
+                text = response.json().get('response', '')
+                if not text:
+                    print("  Ollama returned an empty response")
+                return text
+            print(f"  Ollama returned {response.status_code}: {response.text[:300]}")
+            return None
+        except requests.Timeout:
+            if attempt == 1:
+                print(f"  Frame read timed out after {FRAME_READ_TIMEOUT_S}s. Trying once more.")
+                continue
+            print(f"  Error analyzing frame: read timed out after {FRAME_READ_TIMEOUT_S}s")
+            return None
+        except Exception as e:
+            print(f"  Error analyzing frame: {e}")
+            return None
 
 
 def parse_scoreboard_response(response_text):
@@ -572,7 +586,7 @@ def main():
             frame_data = parse_scoreboard_response(response)
             
             if frame_data and frame_data.get('quarter'):
-                print(f"  Quarter: {frame_data['quarter']}, Time: {frame_data.get('time', 'N/A')}, Score: {frame_data.get('score', 'N/A')}")
+                print(f"  Quarter: {frame_data['quarter']}, Time: {frame_data.get('time', 'N/A')}")
                 
                 match_idx, matched_play = find_next_matching_play(frame_data, plays, next_play_idx, player_name=args.player_name)
                 
@@ -638,7 +652,7 @@ def main():
     print("\nMATCHED PLAYS:")
     for i, play in enumerate(matched_plays, 1):
         compound_marker = " [COMPOUND]" if play.get('is_compound') else ""
-        print(f"{i}. Q{play['quarter']} {play['game_time']} | {play['score']} | {play['team']}{compound_marker}")
+        print(f"{i}. Q{play['quarter']} {play['game_time']} | {play['team']}{compound_marker}")
         print(f"   Action: {play['primary_action']}")
         print(f"   {play['description']}")
         print(f"   Video: {play['video_start']:.1f}s - {play['video_end']:.1f}s")
