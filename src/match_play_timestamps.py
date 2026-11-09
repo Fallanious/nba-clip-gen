@@ -98,19 +98,30 @@ Rules:
 - Do not include the score"""
 
 
-def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b', cropped=False):
-    """Send one frame to Ollama. The rules live in the system prompt."""
+# glm-ocr transcribes the crop. The period is a small "1st"/"2nd" label,
+# so we read that glyph ourselves instead of asking the model to name it.
+GLM_OCR_PROMPT = "Text Recognition:"
+
+
+def _is_glm_ocr(model):
+    return str(model or "").startswith("glm-ocr")
+
+
+def analyze_frame_scoreboard(image_path, model='glm-ocr:latest', cropped=False):
+    """Send one frame to Ollama."""
     with open(image_path, 'rb') as f:
         image_data = base64.b64encode(f.read()).decode('utf-8')
 
     payload = {
         "model": model,
-        "system": scoreboard_system_prompt(cropped),
-        "prompt": "Read this frame and gather the scoreboard information.",
+        "prompt": GLM_OCR_PROMPT if _is_glm_ocr(model) else "Read this frame and gather the scoreboard information.",
         "images": [image_data],
         "stream": False,
         "keep_alive": MODEL_KEEP_ALIVE,
     }
+    if not _is_glm_ocr(model):
+        payload["system"] = scoreboard_system_prompt(cropped)
+        payload["think"] = False
 
     for attempt in (1, 2):
         try:
@@ -137,49 +148,123 @@ def analyze_frame_scoreboard(image_path, model='qwen3-vl:4b', cropped=False):
             return None
 
 
-def parse_scoreboard_response(response_text):
-    """Parse LLM JSON response to extract quarter, time, and score."""
-    if not response_text:
+_PERIOD_WORDS = {
+    "1ST": 1, "IST": 1, "LST": 1,
+    "2ND": 2, "2NO": 2,
+    "3RD": 3, "3RO": 3,
+    "4TH": 4,
+    "OT": 5, "OVERTIME": 5,
+}
+
+
+def normalize_quarter(value):
+    """Turn 1, 'Q2', or '2nd' into 1-4. A score like 28 is not a quarter."""
+    if isinstance(value, bool) or value is None:
         return None
-    
+    if isinstance(value, int):
+        return value if 1 <= value <= 4 else None
+    text = str(value).strip()
+    if not text:
+        return None
+    compact = re.sub(r"[^A-Z0-9]", "", text.upper())
+    if compact in _PERIOD_WORDS:
+        return _PERIOD_WORDS[compact]
+    found = re.fullmatch(r"Q?([1-4])", compact)
+    if found:
+        return int(found.group(1))
+    return None
+
+
+def normalize_clock(value):
+    """Turn a game clock into M:SS.0. Rejects a bare shot-clock number."""
+    if value is None:
+        return None
+    text = str(value).strip().replace("：", ":")
+    found = re.search(r"(\d{1,2})\s*:\s*(\d{2})", text)
+    if not found:
+        return None
+    minutes = int(found.group(1))
+    seconds = int(found.group(2))
+    if seconds > 59 or minutes > 12:
+        return None
+    return f"{minutes}:{seconds:02d}.0"
+
+
+def _quarter_in_text(text):
+    """Find the period label. A bare digit is a score, so it does not count."""
+    pattern = re.compile(
+        r"\b(?:Q\s*([1-4])|([1-4])\s*(?:st|nd|rd|th)|IST|LST|2NO|3RO|OT)\b",
+        re.IGNORECASE,
+    )
+    found = pattern.search(text)
+    if not found:
+        return None
+    if found.group(1):
+        return int(found.group(1))
+    if found.group(2):
+        return int(found.group(2))
+    word = found.group(0).upper()
+    if word == "OT":
+        return 5
+    return _PERIOD_WORDS[word]
+
+
+def _clock_in_text(text):
+    """Prefer the game clock when a shot clock is in the same transcription."""
+    found = []
+    for match in re.finditer(r"(\d{1,2})\s*[:：]\s*(\d{2})", text):
+        clock = normalize_clock(f"{match.group(1)}:{match.group(2)}")
+        if clock:
+            found.append(clock)
+    if not found:
+        return None
+    return max(found, key=time_to_seconds)
+
+
+def _json_object(response_text):
+    start = response_text.find("{")
+    if start == -1:
+        return None
     try:
-        # Try to find JSON in the response
-        # Sometimes the LLM adds extra text, so extract just the JSON part
-        json_start = response_text.find('{')
-        json_end = response_text.rfind('}') + 1
-        
-        if json_start == -1 or json_end == 0:
-            print(f"  Warning: No JSON found in response")
-            return None
-        
-        json_str = response_text[json_start:json_end]
-        data = json.loads(json_str)
-        
-        # Check if empty JSON (no scoreboard visible)
-        if not data or len(data) == 0:
-            print(f"  Info: LLM indicates no scoreboard visible in this frame")
-            return None
-        
-        # Normalize the time format to include .0
-        if 'time' in data and data['time']:
-            time_parts = data['time'].split(':')
-            if len(time_parts) == 2:
-                data['time'] = f"{time_parts[0]}:{time_parts[1]}.0"
-        
-        # Return data only if we have at least quarter
-        if data.get('quarter'):
-            return data
-        else:
-            print(f"  Warning: Incomplete data (missing quarter)")
-            return None
-            
-    except json.JSONDecodeError as e:
-        print(f"  Warning: Failed to parse JSON: {e}")
-        print(f"  Response was: {response_text[:200]}")
+        data, _ = json.JSONDecoder().raw_decode(response_text[start:])
+    except json.JSONDecodeError:
         return None
-    except Exception as e:
-        print(f"  Warning: Error parsing response: {e}")
+    if isinstance(data, dict):
+        return data
+    return None
+
+
+def _scoreboard(quarter, time):
+    quarter = normalize_quarter(quarter)
+    clock = normalize_clock(time)
+    if quarter is None or clock is None:
         return None
+    return {"quarter": quarter, "time": clock}
+
+
+def parse_scoreboard_response(response_text):
+    """Read quarter and game clock from JSON or from plain OCR text."""
+    if not response_text or not str(response_text).strip():
+        return None
+
+    clock = _clock_in_text(response_text)
+    quarter = _quarter_in_text(response_text)
+    data = _json_object(response_text)
+    if data is not None:
+        if clock is None:
+            clock = normalize_clock(data.get("time"))
+        if quarter is None:
+            quarter = normalize_quarter(data.get("quarter"))
+        if clock is None and quarter is None and data.get("quarter") in (None, "") and data.get("time") in (None, ""):
+            print("  Info: no scoreboard read in this frame")
+            return None
+
+    parsed = _scoreboard(quarter, clock)
+    if parsed:
+        return parsed
+    print("  Warning: No quarter and time found in response")
+    print(f"  Response was: {response_text[:200]}")
+    return None
 
 
 GROUP_WINDOW_S = 5
@@ -453,7 +538,7 @@ def main():
     parser.add_argument('--start-time', type=int, default=0, help='Start sampling from this time in seconds (default: 0, useful to skip pre-game footage)')
     parser.add_argument('--end-time', type=int, default=None, help='Stop sampling at this time in seconds (default: end of video)')
     parser.add_argument('--worker-id', type=int, default=None, help='Worker ID for parallel processing (used in output filename)')
-    parser.add_argument('--model', default='qwen3-vl:4b', help='Ollama vision model (default: qwen3-vl:4b)')
+    parser.add_argument('--model', default='glm-ocr:latest', help='Ollama vision model (default: qwen3-vl:4b)')
     parser.add_argument('--crop', default=None, help='Scoreboard crop as x,y,w,h fractions of the frame')
     parser.add_argument('--output', '-o', help='Output JSON file path')
     
