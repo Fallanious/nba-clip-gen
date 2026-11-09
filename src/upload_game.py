@@ -7,9 +7,16 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from routes.videos import game_output_name
+from persist_matcher_clips import PersistRefused, direct_database_url, save_uploaded_game
+from routes.videos import TEAM_CODES, game_output_name
 from services.storage import s3_key_for_game, upload_game
-from utils.video import is_upload_ready, probe_video, resolve_film_file, transcode_to_mkv
+from utils.video import (
+    get_video_duration,
+    is_upload_ready,
+    probe_video,
+    resolve_film_file,
+    transcode_to_mkv,
+)
 
 
 def _progress(total_bytes):
@@ -53,6 +60,10 @@ def prepare_and_upload(video_arg):
         return 1
 
     bbref_id = parsed["bbref_id"]
+    away_code = TEAM_CODES.get(parsed["away_team"])
+    if not away_code:
+        print(f"Error: {parsed['away_team']} is not a known team.")
+        return 1
     upload_path = path
     work_path = None
     named = None
@@ -79,8 +90,18 @@ def prepare_and_upload(video_arg):
         print(f"Uploading {key} ({size / (1024 * 1024):.0f} MB) in 64 MB parts.", flush=True)
         upload_game(upload_path, bbref_id, progress=_progress(size))
         print(f"✓ UPLOAD COMPLETE: {key}", flush=True)
+        game_id = save_uploaded_game(
+            database_url=direct_database_url(os.environ.get("DATABASE_URL", "")),
+            bbref_id=bbref_id,
+            game_date=parsed["date"],
+            home_code=parsed["home_code"],
+            away_code=away_code,
+            s3_key=key,
+            duration_s=get_video_duration(upload_path),
+        )
+        print(f"✓ Game stored: id {game_id}, s3_key {key}", flush=True)
         return 0
-    except (ValueError, RuntimeError) as exc:
+    except (ValueError, RuntimeError, PersistRefused) as exc:
         print(f"Error: {exc}")
         if (
             work_path
