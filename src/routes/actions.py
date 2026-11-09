@@ -150,3 +150,29 @@ def generate_clips():
     job_id = _start_job(cmd, kind="Generate clips", label=os.path.basename(video))
     return jsonify({"job_id": job_id, "message": "Generating clips"})
 
+
+@bp.route("/api/upload", methods=["POST"])
+def upload_video():
+    """Convert a local game to 720p MKV when needed, then upload it to S3."""
+    from routes.videos import parse_video_filename
+    from utils.video import resolve_film_file
+
+    video = (request.json or {}).get("video", "").strip()
+    if not video:
+        return jsonify({"error": "Video is required"}), 400
+    try:
+        path = resolve_film_file(video)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+
+    parsed = parse_video_filename(os.path.basename(path))
+    if not parsed:
+        return jsonify({"error": "Filename needs teams and a date, like TEAM at TEAM | FULL GAME HIGHLIGHTS | Month D, YYYY."}), 400
+
+    job_id = _start_job(
+        ["python3", "src/upload_game.py", os.path.relpath(path, BASE_DIR)],
+        kind="Upload",
+        label=os.path.basename(path),
+    )
+    return jsonify({"job_id": job_id, "message": "Upload started", "bbref_id": parsed["bbref_id"]})
+

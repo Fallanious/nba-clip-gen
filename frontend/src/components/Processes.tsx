@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { stopJob } from '../api';
 import type { ProcessJob } from '../types';
 
@@ -41,57 +41,45 @@ function ProcessLog({ text }: { text: string }) {
   );
 }
 
+const progressUnit: Record<string, string> = {
+  Upload: 'MB uploaded',
+  'Match timestamps': 'plays matched',
+};
+
+const runningCopy: Record<string, string> = {
+  Download: 'Downloading the video.',
+  Upload: 'Preparing the file. Transfer progress shows once the upload starts.',
+  'Match timestamps': 'Working. A match can take up to 30 minutes.',
+  'Scrape play-by-play': 'Scraping the play-by-play.',
+  'Generate clips': 'Cutting clips from the game.',
+};
+
+const finishedCopy: Record<string, string> = {
+  Download: 'Download finished.',
+  Upload: 'Upload finished.',
+  'Match timestamps': 'Match finished.',
+  'Scrape play-by-play': 'Scrape finished.',
+  'Generate clips': 'Clips are ready.',
+};
+
+function statusCopy(job: ProcessJob) {
+  if (job.progress) {
+    const unit = progressUnit[job.kind];
+    const count = `${job.progress.done} of ${job.progress.total}`;
+    return unit ? `${count} ${unit}` : count;
+  }
+  if (job.status === 'running') return runningCopy[job.kind] || 'Working.';
+  if (job.error) return job.error;
+  if (job.status === 'cancelled') return 'Stopped.';
+  if (job.status === 'completed') return finishedCopy[job.kind] || 'Finished.';
+  return '';
+}
+
 function ProcessActivity({ job }: { job: ProcessJob }) {
-  const [tab, setTab] = useState('highlights');
-  const id = useId();
-  const events = job.highlights?.events ?? [];
-  const summaries = job.highlights?.summaries ?? [];
-  const tabs = ['highlights', 'technical'];
   return (
-    <section className="process-activity" aria-label="Process activity">
-      <div className="tabs" role="tablist" aria-label="Log view">
-        {tabs.map((name, index) => (
-          <button key={name} id={`${id}-${name}`} role="tab"
-            className={tab === name ? 'selected' : 'quiet'}
-            aria-selected={tab === name} aria-controls={`${id}-${name}-panel`}
-            tabIndex={tab === name ? 0 : -1}
-            onClick={() => setTab(name)}
-            onKeyDown={event => {
-              const next = event.key === 'Home' ? 0 : event.key === 'End' ? 1
-                : event.key === 'ArrowRight' || event.key === 'ArrowLeft' ? 1 - index : null;
-              if (next !== null) {
-                event.preventDefault();
-                setTab(tabs[next]);
-                document.getElementById(`${id}-${tabs[next]}`)?.focus();
-              }
-            }}>
-            {name === 'highlights' ? 'Highlights' : 'Technical log'}
-          </button>
-        ))}
-      </div>
-      <div id={`${id}-highlights-panel`} role="tabpanel" aria-labelledby={`${id}-highlights`} hidden={tab !== 'highlights'}>
-        {job.error && <p className="notice">{job.error}</p>}
-        {summaries.map((item, i) => (
-          <details className={`process-summary ${item.level}`} key={i}>
-            <summary>{item.title}</summary><p>{item.detail}</p>
-          </details>
-        ))}
-        {events.length ? <>
-          <p className="process-meta">Latest activity first · Up to 20 highlights</p>
-          <ul className="process-highlights">
-            {events.map((item, i) => <li key={i} className={item.level}>
-              <span className="highlight-mark" aria-label={item.level}>{item.level === 'success' ? '✓' : item.level === 'error' ? '!' : '·'}</span>
-              <div><strong>{item.title}</strong>{item.detail && <p>{item.detail}</p>}</div>
-            </li>)}
-          </ul>
-        </> : <p className="process-meta process-empty">
-          {job.status === 'running' ? 'Waiting for the first highlight. Technical log shows live output.' : 'No highlights recorded. See Technical log for output.'}
-        </p>}
-      </div>
-      <div id={`${id}-technical-panel`} role="tabpanel" aria-labelledby={`${id}-technical`} hidden={tab !== 'technical'}>
-        <p className="process-meta">Most recent 80 lines of raw output</p>
-        {tab === 'technical' && <ProcessLog text={job.log} />}
-      </div>
+    <section className="process-activity" aria-label="Technical log">
+      {job.error && <p className="notice">{job.error}</p>}
+      <ProcessLog text={job.log} />
     </section>
   );
 }
@@ -119,11 +107,11 @@ export default function Processes({ jobs, onChanged }: Props) {
         <div>
           <p className="eyebrow">WHAT IS RUNNING</p>
           <h1>Processes</h1>
-          <p>Matching can take up to 30 minutes. Progress shows up here.</p>
+          <p>Downloads, uploads, and matches each keep their own log.</p>
         </div>
       </header>
       {error && <p role="alert" className="notice">{error}</p>}
-      {!jobs.length && <p className="empty">No jobs yet. Start a match from Splice.</p>}
+      {!jobs.length && <p className="empty">No jobs yet. Start one from Splice or Upload.</p>}
       <div className="process-list">
         {jobs.map(job => {
           const pct = job.progress && job.progress.total
@@ -157,13 +145,7 @@ export default function Processes({ jobs, onChanged }: Props) {
                     : <div className="process-fill" style={{ width: `${pct}%` }} />}
                 </div>
               )}
-              <p className="process-meta">
-                {job.progress
-                  ? `${job.progress.done} of ${job.progress.total} plays matched`
-                  : job.status === 'running'
-                    ? 'Working. A match can take up to 30 minutes.'
-                    : job.error || ''}
-              </p>
+              <p className="process-meta">{statusCopy(job)}</p>
               <ProcessActivity job={job} />
             </article>
           );

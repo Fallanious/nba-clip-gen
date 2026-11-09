@@ -83,13 +83,14 @@ def s3_key_for_game(bbref_id, video_path):
     return f"games/{bbref_id}{ext}"
 
 
-def upload_game(video_path, bbref_id):
+def upload_game(video_path, bbref_id, progress=None):
     """
-    Upload a game video to S3.
+    Upload a game video to S3 in multipart chunks.
 
     Args:
         video_path: Path to the video file to upload
         bbref_id: Basketball Reference game ID (validated format)
+        progress: Optional callback. boto3 calls it with the size of each chunk sent.
 
     Returns:
         str: S3 key of the uploaded file
@@ -112,11 +113,22 @@ def upload_game(video_path, bbref_id):
     key = s3_key_for_game(bbref_id, video_path)
     content_type = content_type_for(video_path)
 
-    s3.upload_file(
-        video_path,
-        bucket,
-        key,
-        ExtraArgs={"ContentType": content_type},
-    )
+    # upload_file splits large games into parts and sends several parts at once.
+    # A private bucket does not need CloudFront for this step. CloudFront only
+    # helps later, when many people watch the same object.
+    from boto3.s3.transfer import TransferConfig
+    kwargs = {
+        "ExtraArgs": {"ContentType": content_type},
+        "Config": TransferConfig(
+            multipart_threshold=64 * 1024 * 1024,
+            multipart_chunksize=64 * 1024 * 1024,
+            max_concurrency=4,
+            use_threads=True,
+        ),
+    }
+    if progress is not None:
+        kwargs["Callback"] = progress
+
+    s3.upload_file(video_path, bucket, key, **kwargs)
 
     return key

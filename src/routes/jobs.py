@@ -142,6 +142,10 @@ def _mark_finished(job):
 def _match_progress(output):
     """Pull the latest play count out of matcher logs."""
     found = re.findall(r"Progress: (\d+)/(\d+) plays matched", output or "")
+    uploaded = re.findall(r"Progress: (\d+)/(\d+) MB uploaded", output or "")
+    if uploaded and (not found or output.rfind("MB uploaded") > output.rfind("plays matched")):
+        done, total = uploaded[-1]
+        return {"done": int(done), "total": int(total)}
     if found:
         done, total = found[-1]
         return {"done": int(done), "total": int(total)}
@@ -158,49 +162,6 @@ def _latest_line(output):
     return lines[-1][:160]
 
 
-def _log_tail(output, limit=80):
-    """Recent lines only. The full log can grow for the whole match."""
-    lines = (output or "").splitlines()
-    return "\n".join(lines[-limit:])
-
-
-def _highlights(output):
-    """Summarize known script events, keeping noisy model output in the log."""
-    events = []
-    scoreboard = ""
-    match = None
-    skipped = 0
-    warnings = {}
-    for raw in (output or "").splitlines():
-        line = raw.strip()
-        if line.startswith("Sampling frame at"):
-            scoreboard = ""
-            match = None
-        if line.startswith("Quarter:"):
-            scoreboard = line
-        found = re.match(r"✓ MATCH FOUND \(Play #(\d+)\): (.*)", line)
-        if found:
-            match = {"level": "success", "title": f"Play {found[1]} matched · {found[2]}", "detail": scoreboard}
-            events.append(match)
-        elif line.startswith("Clip:") and match is not None:
-            match["detail"] = " · ".join(filter(None, [scoreboard, line]))
-        elif line == "Info: LLM indicates no scoreboard visible in this frame":
-            skipped += 1
-        elif line.startswith(("Warning:", "Could not extract complete scoreboard data", "Failed to analyze frame", "Error analyzing frame:", "Ollama returned")):
-            warnings[line] = warnings.get(line, 0) + 1
-        elif line.startswith(("Error:", "ERROR:", "✗")):
-            events.append({"level": "error", "title": line.lstrip("✗ "), "detail": ""})
-        elif line.startswith(("✓", "Loaded ", "Condensed to ", "MATCHING COMPLETE:", "CLIP GENERATION COMPLETE", "SCRAPING COMPLETE")):
-            if not line.startswith("✓ Debug frames"):
-                events.append({"level": "success" if line.startswith("✓") else "info", "title": line.lstrip("✓ "), "detail": ""})
-    summaries = []
-    if skipped:
-        summaries.append({"level": "info", "title": f"{skipped} frames without a visible scoreboard", "detail": "These samples were skipped."})
-    if warnings:
-        summaries.append({"level": "warning", "title": f"{sum(warnings.values())} diagnostic messages", "detail": "\n".join(f"{message} ({count}×)" for message, count in warnings.items())})
-    return {"events": list(reversed(events[-20:])), "summaries": summaries}
-
-
 def _public_job(job_id, job):
     return {
         "id": job_id,
@@ -212,14 +173,13 @@ def _public_job(job_id, job):
         "error": job.get("error"),
         "progress": _match_progress(job.get("output", "")),
         "latest": _latest_line(job.get("output", "")),
-        "log": _log_tail(job.get("output", "")),
-        "highlights": _highlights(job.get("output", "")),
+        "log": job.get("output", "") or "",
     }
 
 
 @bp.route("/api/jobs")
 def list_jobs():
-    """List in-memory jobs without their full logs."""
+    """List in-memory jobs, including each job's full log."""
     items = [_public_job(job_id, job) for job_id, job in jobs.items()]
     items.sort(key=lambda item: (item["status"] != "running", -(item["started_at"] or 0)))
     return jsonify({"jobs": items})

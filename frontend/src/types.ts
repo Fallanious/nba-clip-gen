@@ -13,6 +13,7 @@ export interface ParsedVideo {
   home_team: string;
   home_code: string;
   date: string;
+  bbref_id: string;
   bbref_url: string;
   expected_pbp: string;
 }
@@ -84,12 +85,6 @@ export interface Job {
   pid: number | null;
 }
 
-export interface ProcessHighlight {
-  level: 'success' | 'info' | 'warning' | 'error';
-  title: string;
-  detail: string;
-}
-
 export interface ProcessJob {
   id: string;
   status: 'running' | 'completed' | 'failed' | 'cancelled';
@@ -99,7 +94,6 @@ export interface ProcessJob {
   finished_at: number | null;
   error: string | null;
   progress: { done: number; total: number } | null;
-  highlights?: { events: ProcessHighlight[]; summaries: ProcessHighlight[] };
   latest: string;
   log: string;
 }

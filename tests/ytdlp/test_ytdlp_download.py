@@ -137,7 +137,7 @@ def test_output_template_and_returned_path_mkv(which, fake_run, tmp_path):
     argv = [str(x) for x in fake_run[0]]
     tmpl = flag_value(argv, "-o")
     assert tmpl.startswith(str(tmp_path)) and tmpl.endswith(".%(ext)s")
-    assert "%(id)s" in tmpl and "%(title)s" not in tmpl
+    assert "%(title)s" in tmpl and "%(id)s" not in tmpl
     assert path and str(path).endswith(".mkv") and os.path.isfile(path)
 
 
@@ -148,7 +148,7 @@ def test_double_dash_is_second_to_last_and_url_is_last(which, fake_run, tmp_path
     assert argv[-1] == URL
     assert argv[-2] == "--"
     assert argv.index("-o") < argv.index("--")
-    assert "%(id)s" in flag_value(argv, "-o")
+    assert "%(title)s" in flag_value(argv, "-o")
 
 
 def test_ytdlp_failure_surfaces(which, monkeypatch, tmp_path):

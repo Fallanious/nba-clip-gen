@@ -356,7 +356,7 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None, output_template=None):
         url: Video URL to download (must be HTTPS YouTube URL)
         resolution: Maximum resolution (int, string, or None for default/env)
         runtime: JavaScript runtime to use ('node', 'deno', or None for auto-detect)
-        output_template: yt-dlp -o template; defaults to %(id)s.%(ext)s
+        output_template: yt-dlp -o template; defaults to %(title)s.%(ext)s
 
     Returns:
         list: Command line arguments for yt-dlp
@@ -371,7 +371,7 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None, output_template=None):
     socket_timeout = resolve_socket_timeout()
     max_filesize = resolve_max_filesize()
     if not output_template:
-        output_template = "%(id)s.%(ext)s"
+        output_template = "%(title)s.%(ext)s"
 
     cmd = [
         "-m", "yt_dlp",
@@ -381,7 +381,6 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None, output_template=None):
         "-S", f"res:{res},+size",
         "-f", "bv*+ba/b",
         "--merge-output-format", "mkv",
-        "--restrict-filenames",
         "--socket-timeout", str(socket_timeout),
         "--max-filesize", str(max_filesize),
         "-o", output_template,
@@ -421,7 +420,7 @@ def download_video(url, output_folder="film", resolution=None):
         os.makedirs(output_path)
         print(f"Created folder: {output_path}")
 
-    template = os.path.join(os.path.abspath(output_path), "%(id)s.%(ext)s")
+    template = os.path.join(os.path.abspath(output_path), "%(title)s.%(ext)s")
     cmd = build_ytdlp_cmd(url, resolution=resolution, output_template=template)
 
     print(f"Downloading to {output_folder}...")

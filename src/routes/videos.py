@@ -45,7 +45,9 @@ TEAM_CODES = {
 
 def parse_video_filename(filename):
     """Parse video filename to extract teams and date."""
-    pattern = r"(.+?)\s+at\s+(.+?)\s+[｜|]\s+FULL GAME HIGHLIGHTS\s+[｜|]\s+(\w+)\s+(\d+),?\s+(\d{4})"
+    # Titles look like "AWAY at HOME ｜ FULL GAME HIGHLIGHTS ｜ February 2, 2026".
+    # Extra words such as "NBA PRESEASON" may sit in front of FULL GAME HIGHLIGHTS.
+    pattern = r"(.+?)\s+at\s+(.+?)\s+[｜|].*?\bFULL GAME HIGHLIGHTS\s+[｜|]\s+(\w+)\s+(\d+),?\s+(\d{4})"
     match = re.search(pattern, filename, re.IGNORECASE)
 
     if not match:
@@ -70,15 +72,39 @@ def parse_video_filename(filename):
         return None
 
     date_str = f"{year}{month:02d}{day:02d}0"
+    bbref_id = f"{date_str}{home_code}"
 
     return {
         "away_team": away_team,
         "home_team": home_team,
         "home_code": home_code,
         "date": f"{year}-{month:02d}-{day:02d}",
-        "bbref_url": f"https://www.basketball-reference.com/boxscores/pbp/{date_str}{home_code}.html",
-        "expected_pbp": f"{date_str}{home_code}.json",
+        "bbref_id": bbref_id,
+        "bbref_url": f"https://www.basketball-reference.com/boxscores/pbp/{bbref_id}.html",
+        "expected_pbp": f"{bbref_id}.json",
     }
+
+
+def game_output_name(filename, ext=".mkv"):
+    """Keep the teams and date when a file's extension changes.
+
+    The game id is the date plus the home-team code. A converted file has to
+    keep both, or that id cannot be built again.
+    """
+    parsed = parse_video_filename(filename)
+    if not parsed:
+        raise ValueError(
+            "Filename needs teams and a date, like "
+            "TEAM at TEAM | FULL GAME HIGHLIGHTS | Month D, YYYY."
+        )
+    if not ext.startswith("."):
+        raise ValueError("Extension must start with a dot")
+    stem = os.path.splitext(os.path.basename(filename))[0]
+    new_name = f"{stem}{ext}"
+    again = parse_video_filename(new_name)
+    if not again or again["bbref_id"] != parsed["bbref_id"]:
+        raise ValueError("The new filename would lose the teams or the date.")
+    return new_name, parsed
 
 
 # ---------- endpoints ----------

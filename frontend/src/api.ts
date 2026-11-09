@@ -124,6 +124,10 @@ export async function startGenerate(params: GenerateParams): Promise<JobStartRes
   return postJSON('/api/generate', params as unknown as Record<string, unknown>);
 }
 
+export async function startUpload(video: string): Promise<JobStartResponse> {
+  return postJSON('/api/upload', { video });
+}
+
 // ============ Video URL ============
 
 export function getVideoUrl(videoPath: string, start?: number, end?: number): string {

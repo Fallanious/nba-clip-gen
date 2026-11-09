@@ -208,9 +208,10 @@ class TestCommandStructure:
         with pytest.raises(ValueError):
             build_ytdlp_cmd("--exec=malicious")
 
-    def test_restrict_filenames_present(self):
+    def test_does_not_restrict_filenames(self):
+        """Restricting filenames rewrites the YouTube title. Keep the title."""
         cmd = build_ytdlp_cmd(SAFE_URL)
-        assert "--restrict-filenames" in cmd
+        assert "--restrict-filenames" not in cmd
 
     def test_ignore_config_and_no_playlist_present(self):
         cmd = build_ytdlp_cmd(SAFE_URL)
@@ -220,11 +221,11 @@ class TestCommandStructure:
         assert cmd.index("--ignore-config") < dash
         assert cmd.index("--no-playlist") < dash
 
-    def test_uses_video_id_not_title(self):
+    def test_uses_video_title(self):
         cmd = build_ytdlp_cmd(SAFE_URL)
         tmpl = flag_value(cmd, "-o")
-        assert "%(id)s" in tmpl
-        assert "%(title)s" not in tmpl
+        assert "%(title)s" in tmpl
+        assert "%(id)s" not in tmpl
 
 
 # ==================== Real yt-dlp CLI parse test ====================
@@ -279,11 +280,11 @@ class TestRealYtDlpCli:
         assert parsed.urls == [SAFE_URL]
         opts = parsed.ydl_opts
         assert opts["merge_output_format"] == "mkv"
-        assert opts["restrictfilenames"] is True
+        assert opts["restrictfilenames"] is False
         assert opts["noplaylist"] is True
         assert opts["format"] == "bv*+ba/b"
         assert "node" in opts["js_runtimes"]
-        assert "%(id)s" in str(opts["outtmpl"])
+        assert "%(title)s" in str(opts["outtmpl"])
 
 
 # ==================== Process group kill ====================
