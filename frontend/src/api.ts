@@ -24,6 +24,15 @@ async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   return data;
 }
 
+async function fetchBlob(url: string, init?: RequestInit): Promise<Blob> {
+  const res = await fetch(`${BASE}${url}`, init);
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new Error(data.error || `Request failed (${res.status})`);
+  }
+  return res.blob();
+}
+
 function postJSON<T>(url: string, body: Record<string, unknown>): Promise<T> {
   return fetchJSON<T>(url, {
     method: 'POST',
@@ -136,6 +145,10 @@ export async function fetchPlayerLibrary(): Promise<PlayerLibrary> {
 
 export async function fetchPlayerClips(playerId: number): Promise<{ player: string; team: string; clips: PlayerClip[] }> {
   return fetchJSON(`/api/players/${playerId}/clips`);
+}
+
+export async function fetchPlayerClip(playerId: number, clipId: number): Promise<Blob> {
+  return fetchBlob(`/api/players/${playerId}/clips/${clipId}`);
 }
 
 // ============ Video URL ============

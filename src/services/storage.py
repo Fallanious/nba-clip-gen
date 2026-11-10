@@ -83,6 +83,25 @@ def s3_key_for_game(bbref_id, video_path):
     return f"games/{bbref_id}{ext}"
 
 
+def presign_get_url(key, expires_in=None):
+    """A short-lived GET URL for one object. The URL is a credential. Do not log it."""
+    if boto3 is None:
+        raise RuntimeError("boto3 is required for S3. Install it with: pip install boto3")
+    bucket = os.environ.get("S3_BUCKET")
+    if not bucket:
+        raise RuntimeError("S3_BUCKET is not set")
+    if not isinstance(key, str) or not key or key.startswith("/") or ".." in key.split("/"):
+        raise ValueError("s3 key is not usable")
+    expires = int(expires_in if expires_in is not None else os.environ.get("PLAYBACK_URL_TTL", "300"))
+    region = os.environ.get("AWS_REGION") or os.environ.get("AWS_DEFAULT_REGION") or "us-east-2"
+    client = boto3.client("s3", region_name=region)
+    return client.generate_presigned_url(
+        "get_object",
+        Params={"Bucket": bucket, "Key": key},
+        ExpiresIn=expires,
+    )
+
+
 def upload_game(video_path, bbref_id, progress=None):
     """
     Upload a game video to S3 in multipart chunks.

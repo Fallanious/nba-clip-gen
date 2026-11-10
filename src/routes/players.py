@@ -1,26 +1,25 @@
-"""Players who have clips, and the plays for one player."""
+"""Players who have clips, and one cut of a clip from the S3 game."""
 
 import os
+import tempfile
 from datetime import timedelta
 from decimal import Decimal
 
-from flask import Blueprint, jsonify
-
-from routes.videos import parse_video_filename
+from flask import Blueprint, jsonify, send_file
 
 bp = Blueprint("players", __name__)
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+MAX_CLIP_S = 120
 
 ROLE_LABELS = {
-    "shot": "Shots",
-    "assist": "Assists",
-    "rebound": "Rebounds",
-    "block": "Blocks",
-    "steal": "Steals",
-    "foul": "Fouls",
+    "shot": "Shot",
+    "assist": "Assist",
+    "rebound": "Rebound",
+    "block": "Block",
+    "steal": "Steal",
+    "foul": "Foul",
     "fouled": "Fouled",
-    "turnover": "Turnovers",
+    "turnover": "Turnover",
 }
 
 POSITION_LABELS = {
@@ -84,18 +83,13 @@ def matchup_label(player_team, home, away):
     return f"{away} at {home}"
 
 
-def film_paths_by_game(film_dir):
-    """Map a game id to the local film file, when that file is on disk."""
-    found = {}
-    if not os.path.isdir(film_dir):
-        return found
-    for name in os.listdir(film_dir):
-        if not name.lower().endswith((".mp4", ".mkv", ".webm")):
-            continue
-        parsed = parse_video_filename(name)
-        if parsed:
-            found[parsed["bbref_id"]] = f"film/{name}"
-    return found
+def clip_window(start_s, end_s):
+    """Seconds to keep. A bad row must not ask ffmpeg to cut the whole game."""
+    start = float(start_s)
+    end = float(end_s)
+    if start < 0 or end <= start or end - start > MAX_CLIP_S:
+        raise ValueError("Clip window is not usable")
+    return start, end
 
 
 def _db_params():
@@ -169,14 +163,13 @@ def list_players_with_clips():
 
 @bp.route("/api/players/<int:player_id>/clips")
 def list_player_clips(player_id):
-    """Plays linked to one player, in film order."""
+    """Metadata for every clip linked to this player. No video bytes."""
     params, error = _db_params()
     if error:
         return error
     conn, error = _open(params)
     if error:
         return error
-    films = film_paths_by_game(os.path.join(BASE_DIR, "film"))
     with conn:
         player = conn.execute(
             """
@@ -221,7 +214,73 @@ def list_player_clips(player_id):
                 "game_date": row[9].isoformat(),
                 "season": season_label(row[10]),
                 "matchup": matchup_label(player[1], row[11], row[12]),
-                "film_path": films.get(row[8]),
             }
         )
     return jsonify({"player": player[0], "team": player[1] or "", "clips": clips})
+
+
+def _remove(path):
+    try:
+        os.remove(path)
+    except OSError:
+        pass
+
+
+@bp.route("/api/players/<int:player_id>/clips/<int:clip_id>")
+def serve_player_clip(player_id, clip_id):
+    """Cut this play from the S3 game and return only that file."""
+    params, error = _db_params()
+    if error:
+        return error
+    conn, error = _open(params)
+    if error:
+        return error
+    with conn:
+        row = conn.execute(
+            """
+            SELECT c.video_start_s, c.video_end_s, g.s3_key
+            FROM clip_players cp
+            JOIN clips c ON c.id = cp.clip_id
+            JOIN games g ON g.id = c.game_id
+            WHERE cp.player_id = %s AND c.id = %s
+            LIMIT 1
+            """,
+            (player_id, clip_id),
+        ).fetchone()
+    if row is None:
+        return jsonify({"error": "Clip not found."}), 404
+    if not row[2]:
+        return jsonify({"error": "This game has no film in storage."}), 404
+    try:
+        start, end = clip_window(row[0], row[1])
+    except (TypeError, ValueError):
+        return jsonify({"error": "Clip window is not usable."}), 422
+    try:
+        from services.storage import presign_get_url
+
+        source = presign_get_url(row[2])
+    except Exception:
+        return jsonify({"error": "Could not open the game film."}), 502
+
+    fd, path = tempfile.mkstemp(suffix=".mp4")
+    os.close(fd)
+    try:
+        from generate_clips import extract_clip
+
+        ok = extract_clip(source, start, end, path, quiet=True)
+        if not ok or os.path.getsize(path) <= 0:
+            _remove(path)
+            return jsonify({"error": "Could not cut this clip."}), 502
+    except Exception:
+        _remove(path)
+        return jsonify({"error": "Could not cut this clip."}), 502
+
+    response = send_file(
+        path,
+        mimetype="video/mp4",
+        conditional=True,
+        download_name=f"{clip_id}.mp4",
+    )
+    response.headers["Cache-Control"] = "private, max-age=3600"
+    response.call_on_close(lambda: _remove(path))
+    return response

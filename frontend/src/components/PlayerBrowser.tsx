@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { fetchPlayerClips, fetchPlayerLibrary, getVideoUrl } from '../api';
+import { useEffect, useRef, useState } from 'react';
+import { fetchPlayerClip, fetchPlayerClips, fetchPlayerLibrary } from '../api';
 import type { BrowserPlayer, PlayerClip } from '../types';
 
 const TEAM_COLOR: Record<string, string> = {
@@ -54,6 +54,21 @@ export default function PlayerBrowser() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [clipsLoading, setClipsLoading] = useState(false);
+  const [cutting, setCutting] = useState(false);
+  const [cutError, setCutError] = useState('');
+  const [clipUrl, setClipUrl] = useState('');
+  const clipUrlRef = useRef('');
+  const requestId = useRef(0);
+
+  function clearClip() {
+    if (clipUrlRef.current) URL.revokeObjectURL(clipUrlRef.current);
+    clipUrlRef.current = '';
+    setClipUrl('');
+  }
+
+  useEffect(() => () => {
+    if (clipUrlRef.current) URL.revokeObjectURL(clipUrlRef.current);
+  }, []);
 
   useEffect(() => {
     let stop = false;
@@ -101,7 +116,7 @@ export default function PlayerBrowser() {
     <>
       {selected ? (
         <>
-          <button className="pb-back" onClick={() => { setSelected(null); setActive(null); setError(''); }}>← All players</button>
+          <button className="pb-back" onClick={() => { requestId.current += 1; setSelected(null); setActive(null); setError(''); setCutError(''); setCutting(false); clearClip(); }}>← All players</button>
           <div className="pb-card pb-selected" aria-label={`${selected.full_name} selected player`}>
             <PlayerCard
               player={selected}
@@ -118,30 +133,42 @@ export default function PlayerBrowser() {
             {error && <p role="alert" className="notice">{error}</p>}
             <div className="pb-types">
               {roles.map(label => (
-                <button key={label} aria-pressed={role === label} className={role === label ? 'active' : ''} onClick={() => { setRole(label); setActive(null); }}>{label}</button>
+                <button key={label} aria-pressed={role === label} className={role === label ? 'active' : ''} onClick={() => { requestId.current += 1; setRole(label); setActive(null); setCutting(false); setCutError(''); clearClip(); }}>{label}</button>
               ))}
             </div>
-            {active?.film_path && (
-              <video
-                className="main-player pb-film"
-                key={`${active.film_path}-${active.video_start_s}-${active.role}`}
-                controls
-                preload="metadata"
-                src={getVideoUrl(active.film_path, active.video_start_s, active.video_end_s)}
-                onLoadedMetadata={event => { event.currentTarget.currentTime = active.video_start_s; }}
-                onTimeUpdate={event => {
-                  if (event.currentTarget.currentTime >= active.video_end_s) event.currentTarget.pause();
-                }}
-              />
+            {cutting && !clipUrl && <div className="pb-shimmer" role="status" aria-label="Cutting this play" />}
+            {cutError && <p role="alert" className="notice">{cutError}</p>}
+            {clipUrl && (
+              <video className="main-player pb-film" controls preload="none" src={clipUrl} />
             )}
-            {active && !active.film_path && <p className="pb-missing">This game is not in the film folder.</p>}
             <ul className="pb-list">
               {shownClips.map(clip => (
                 <li key={`${clip.id}-${clip.role}`}>
                   <button
                     className={`pb-row ${active?.id === clip.id && active.role === clip.role ? 'current' : ''}`}
                     aria-pressed={active?.id === clip.id && active.role === clip.role}
-                    onClick={() => setActive(clip)}
+                    onClick={() => {
+                      if (active?.id === clip.id && clipUrl) return;
+                      const token = ++requestId.current;
+                      setCutError('');
+                      setCutting(true);
+                      setActive(clip);
+                      clearClip();
+                      void fetchPlayerClip(selected.id, clip.id)
+                        .then(blob => {
+                          if (requestId.current !== token) return;
+                          const url = URL.createObjectURL(blob);
+                          clipUrlRef.current = url;
+                          setClipUrl(url);
+                        })
+                        .catch(err => {
+                          if (requestId.current !== token) return;
+                          setCutError(err instanceof Error ? err.message : 'Could not cut this clip.');
+                        })
+                        .finally(() => {
+                          if (requestId.current === token) setCutting(false);
+                        });
+                    }}
                   >
                     <span>
                       <strong>{clip.description}</strong>

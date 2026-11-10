@@ -4,6 +4,7 @@ from datetime import timedelta
 from decimal import Decimal
 
 from routes.players import (
+    clip_window,
     clock_label,
     duration_label,
     matchup_label,
@@ -37,3 +38,13 @@ def test_matchup_puts_the_player_team_first():
 def test_season_uses_the_archive_dash():
     assert season_label("2026-27") == "2026–27"
     assert season_label("") == ""
+
+
+def test_clip_window_rejects_a_span_that_would_cut_the_game():
+    assert clip_window(22, 27) == (22.0, 27.0)
+    for start, end in ((-1, 5), (10, 10), (0, 121)):
+        try:
+            clip_window(start, end)
+        except ValueError:
+            continue
+        raise AssertionError(f"window {start},{end} should be refused")

@@ -172,5 +172,4 @@ export interface PlayerClip {
   game_date: string;
   season: string;
   matchup: string;
-  film_path: string | null;
 }
