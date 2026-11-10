@@ -18,7 +18,9 @@ CREATE TABLE players (
   id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   bbref_id text UNIQUE NOT NULL,
   full_name text NOT NULL,
-  last_name text NOT NULL
+  first_name text NOT NULL,
+  last_name text NOT NULL,
+  team_id smallint REFERENCES teams(id)
 );
 
 CREATE TABLE games (

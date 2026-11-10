@@ -21,9 +21,25 @@ from persist_matcher_clips import PersistRefused, persist_matched_output
 
 pytestmark = pytest.mark.postgres
 
-BIN = "/usr/lib/postgresql/16/bin"
+def _postgres_bin() -> str:
+    for candidate in ("/usr/lib/postgresql/16/bin", "/usr/local/bin", "/opt/homebrew/bin"):
+        if os.path.isfile(os.path.join(candidate, "initdb")):
+            return candidate
+    pytest.fail("PostgreSQL initdb is required for designated DB tests")
+
+
+BIN = _postgres_bin()
 SCHEMA = Path(__file__).with_name("schema_dev_clips.sql")
 GAME = "202601010FIC"
+
+
+def _stored(inserted, noop, linked=0, skipped=0):
+    return {
+        "inserted": inserted,
+        "noop": noop,
+        "players_linked": linked,
+        "players_skipped": skipped,
+    }
 
 
 def _free_port() -> int:
@@ -71,6 +87,11 @@ def postgres_url():
         stderr=subprocess.DEVNULL,
     )
     port = _free_port()
+    server_env = os.environ.copy()
+    # Homebrew Postgres on macOS aborts if it becomes multithreaded during startup
+    # without a valid locale. The child server is the only process that needs this.
+    server_env["LC_ALL"] = "en_US.UTF-8"
+    server_env["LANG"] = "en_US.UTF-8"
     proc = subprocess.Popen(
         [
             os.path.join(BIN, "postgres"),
@@ -83,6 +104,7 @@ def postgres_url():
         ],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
+        env=server_env,
     )
     admin = f"postgresql://nba@127.0.0.1:{port}/postgres"
     last_err = None
@@ -108,7 +130,7 @@ def postgres_url():
 def _reset(url):
     import psycopg
 
-    psql = "/usr/lib/postgresql/16/bin/psql"
+    psql = os.path.join(BIN, "psql")
     with psycopg.connect(url, autocommit=True) as conn:
         conn.execute("DROP TABLE IF EXISTS clip_players CASCADE")
         conn.execute("DROP TABLE IF EXISTS clips CASCADE")
@@ -224,7 +246,7 @@ def test_compound_inserts_one_row_per_original_event_shared_window(postgres_url)
     _reset(postgres_url)
     digest, stamped = _frozen(MEMBERS)
     report = _persist(postgres_url, [_group(MEMBERS)], digest, stamped)
-    assert report == {"inserted": 2, "noop": 0}
+    assert report == _stored(2, 0, skipped=1)
     with psycopg.connect(postgres_url, row_factory=dict_row) as conn:
         rows = conn.execute(
             """
@@ -273,7 +295,7 @@ def test_exact_rerun_is_noop(postgres_url):
     digest, stamped = _frozen(MEMBERS)
     _persist(postgres_url, [_group(MEMBERS)], digest, stamped)
     report = _persist(postgres_url, [_group(MEMBERS)], digest, stamped)
-    assert report == {"inserted": 0, "noop": 2}
+    assert report == _stored(0, 2, skipped=1)
 
 
 def test_occupied_mismatch_rolls_back_entire_transaction(postgres_url):
@@ -344,7 +366,7 @@ def test_changed_pbp_disjoint_index0_then_index5_refuses_zero_inserts(postgres_u
     }
     v1_digest, v1_stamped = _frozen([v1])
     report = _persist(postgres_url, [_group([v1])], v1_digest, v1_stamped)
-    assert report == {"inserted": 1, "noop": 0}
+    assert report == _stored(1, 0)
 
     v2 = {
         "play_index": 5,
@@ -376,11 +398,10 @@ def test_same_source_same_grouping_incremental_disjoint_selection_inserts(postgr
         "description": "T. Maxey makes 3-pt jump shot",
     }
     digest, stamped = _frozen(MEMBERS + [later])
-    assert _persist(postgres_url, [_group(MEMBERS)], digest, stamped) == {"inserted": 2, "noop": 0}
-    assert _persist(postgres_url, [_group([later], start=20, end=26)], digest, stamped) == {
-        "inserted": 1,
-        "noop": 0,
-    }
+    assert _persist(postgres_url, [_group(MEMBERS)], digest, stamped) == _stored(2, 0, skipped=1)
+    assert _persist(postgres_url, [_group([later], start=20, end=26)], digest, stamped) == _stored(
+        1, 0, skipped=1
+    )
     with psycopg.connect(postgres_url) as conn:
         indexes = [r[0] for r in conn.execute("SELECT play_index FROM clips ORDER BY play_index")]
         hashes = {r[0]["pbp_sha256"] for r in conn.execute("SELECT attributes FROM clips")}
@@ -402,7 +423,7 @@ def test_changed_full_grouping_disjoint_keys_refuses(postgres_url):
         "description": "T. Maxey makes 3-pt jump shot",
     }
     digest, stamped = _frozen(MEMBERS + [later])
-    assert _persist(postgres_url, [_group(MEMBERS)], digest, stamped) == {"inserted": 2, "noop": 0}
+    assert _persist(postgres_url, [_group(MEMBERS)], digest, stamped) == _stored(2, 0, skipped=1)
     regrouped = [dict(play) for play in stamped]
     regrouped[3] = dict(regrouped[3], time="1:11.0")
     with pytest.raises(PersistRefused, match="canonical grouping"):
@@ -459,7 +480,7 @@ def test_file_mutation_after_load_persists_frozen_hash(postgres_url, tmp_path):
     )
     assert digest != hashlib.sha256(path.read_bytes()).hexdigest()
     report = _persist(postgres_url, [_group([stamped[0]])], digest, stamped)
-    assert report == {"inserted": 1, "noop": 0}
+    assert report == _stored(1, 0)
     with psycopg.connect(postgres_url, row_factory=dict_row) as conn:
         row = conn.execute("SELECT attributes, description FROM clips").fetchone()
         assert row["attributes"]["pbp_sha256"] == digest
@@ -614,7 +635,6 @@ def test_main_stubbed_vision_persists_matcher_output_shape(postgres_url, tmp_pat
             ]
         )
     )
-    monkeypatch.setenv("MATCHER_PERSIST", "1")
     monkeypatch.setenv("DATABASE_URL", postgres_url)
     monkeypatch.setenv("MATCHER_GAME_BBREF_ID", GAME)
 
@@ -676,6 +696,115 @@ def test_main_stubbed_vision_persists_matcher_output_shape(postgres_url, tmp_pat
     assert saved[0]["video_start"] == 0
     assert saved[0]["video_end"] == 1
     assert saved[0]["original_play_indexes"] == [0, 1]
+
+
+def test_links_players_as_each_clip_is_written_and_fills_them_on_rerun(postgres_url):
+    import psycopg
+    from psycopg.rows import dict_row
+
+    _reset(postgres_url)
+    with psycopg.connect(postgres_url, autocommit=True) as conn:
+        conn.execute(
+            """
+            INSERT INTO players (bbref_id, full_name, first_name, last_name, team_id)
+            VALUES
+              ('okorois01', 'Isaac Okoro', 'Isaac', 'Okoro', (SELECT id FROM teams WHERE abbr = 'FIC')),
+              ('giddejo01', 'Josh Giddey', 'Josh', 'Giddey', (SELECT id FROM teams WHERE abbr = 'FIC')),
+              ('brownja02', 'Jaylen Brown', 'Jaylen', 'Brown', (SELECT id FROM teams WHERE abbr = 'QAF')),
+              ('edgecvj01', 'VJ Edgecombe', 'VJ', 'Edgecombe', (SELECT id FROM teams WHERE abbr = 'QAF')),
+              ('smithja04', 'Jalen Smith', 'Jalen', 'Smith', (SELECT id FROM teams WHERE abbr = 'FIC')),
+              ('smithja05', 'Jabari Smith Jr.', 'Jabari', 'Smith', (SELECT id FROM teams WHERE abbr = 'QAF'))
+            """
+        )
+    members = [
+        {
+            "play_index": 0,
+            "quarter": 1,
+            "time": "12:00.0",
+            "team": "FIC",
+            "description": "I. Okoro makes 2-pt layup from 1 ft (assist by J. Giddey)",
+        },
+        {
+            "play_index": 1,
+            "quarter": 1,
+            "time": "11:00.0",
+            "team": "FIC",
+            "description": "Offensive rebound by I. Okoro",
+        },
+        {
+            "play_index": 2,
+            "quarter": 1,
+            "time": "10:00.0",
+            "team": "QAF",
+            "description": "Shooting foul by J. Brown (drawn by I. Okoro)",
+        },
+        {
+            "play_index": 3,
+            "quarter": 1,
+            "time": "9:00.0",
+            "team": "FIC",
+            "description": "J. Smith misses 3-pt jump shot from 26 ft",
+        },
+        {
+            "play_index": 4,
+            "quarter": 1,
+            "time": "8:00.0",
+            "team": "FIC",
+            "description": "Offensive rebound by Team",
+        },
+        {
+            "play_index": 5,
+            "quarter": 1,
+            "time": "7:00.0",
+            "team": "QAF",
+            "description": "V. Edgecombe makes 3-pt jump shot from 25 ft",
+        },
+        {
+            "play_index": 6,
+            "quarter": 1,
+            "time": "6:00.0",
+            "team": "FIC",
+            "description": "Turnover by J. Giddey (bad pass; steal by J. Brown)",
+        },
+    ]
+    digest, stamped = _frozen(members)
+    matched = [_group([member], start=10 + index, end=16 + index) for index, member in enumerate(members)]
+    expected = {
+        (0, "Okoro", "shot"),
+        (0, "Giddey", "assist"),
+        (1, "Okoro", "rebound"),
+        (2, "Brown", "foul"),
+        (2, "Okoro", "fouled"),
+        (5, "Edgecombe", "shot"),
+        (6, "Giddey", "turnover"),
+        (6, "Brown", "steal"),
+    }
+
+    def linked_rows():
+        with psycopg.connect(postgres_url, row_factory=dict_row) as conn:
+            return {
+                (row["play_index"], row["last_name"], row["role"])
+                for row in conn.execute(
+                    """
+                    SELECT c.play_index, p.last_name, cp.role::text AS role
+                    FROM clip_players cp
+                    JOIN clips c ON c.id = cp.clip_id
+                    JOIN players p ON p.id = cp.player_id
+                    """
+                )
+            }
+
+    report = _persist(postgres_url, matched, digest, stamped)
+    assert report == _stored(7, 0, linked=8, skipped=1)
+    assert linked_rows() == expected
+    with psycopg.connect(postgres_url, autocommit=True) as conn:
+        conn.execute("DELETE FROM clip_players")
+    again = _persist(postgres_url, matched, digest, stamped)
+    assert again == _stored(0, 7, linked=8, skipped=1)
+    assert linked_rows() == expected
+    third = _persist(postgres_url, matched, digest, stamped)
+    assert third == _stored(0, 7, linked=0, skipped=1)
+    assert linked_rows() == expected
 
 
 def test_other_neon_host_is_refused_before_connect():

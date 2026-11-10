@@ -6,6 +6,7 @@ import pytest
 
 from persist_matcher_clips import (
     DEV_ENDPOINT_HOST,
+    DEV_ENDPOINT_ID,
     PersistRefused,
     assert_libpq_routing_env,
     assert_persist_app_env,
@@ -13,6 +14,7 @@ from persist_matcher_clips import (
     assert_persist_ready,
     persist_connect_params,
     persist_matched_output,
+    direct_database_url,
 )
 
 DEV_URL = f"postgresql://u@{DEV_ENDPOINT_HOST}/neondb"
@@ -85,7 +87,21 @@ def test_dev_wrong_database_refused():
         )
 
 
+def test_pooler_url_becomes_the_direct_host():
+    pooler_host = DEV_ENDPOINT_HOST.replace(DEV_ENDPOINT_ID + ".", DEV_ENDPOINT_ID + "-pooler.", 1)
+    pooler = f"postgresql://u:secret@{pooler_host}/neondb?sslmode=require"
+    direct = direct_database_url(pooler)
+    assert DEV_ENDPOINT_HOST in direct
+    assert "-pooler" not in direct
+    assert assert_persist_database_url(direct) == "dev"
+
+
 def test_pooled_or_other_neon_endpoint_refused():
+    pooler_host = DEV_ENDPOINT_HOST.replace(DEV_ENDPOINT_ID + ".", DEV_ENDPOINT_ID + "-pooler.", 1)
+    with pytest.raises(PersistRefused, match="allowlisted"):
+        assert_persist_database_url(
+            f"postgresql://u@{pooler_host}/neondb?sslmode=require"
+        )
     with pytest.raises(PersistRefused, match="allowlisted"):
         assert_persist_database_url(
             "postgresql://u@ep-rapid-smoke-b4t1v549-pooler.c-6.us-east-2.aws.neon.tech/neondb?sslmode=require"
@@ -98,6 +114,12 @@ def test_pooled_or_other_neon_endpoint_refused():
         assert_persist_database_url(
             "postgresql://u@ep-other-endpoint-x123.us-east-2.aws.neon.tech/neondb?sslmode=require"
         )
+
+
+def test_channel_binding_is_passed_through():
+    _kind, params = persist_connect_params(DEV_REQUIRE + "&channel_binding=require")
+    assert params["sslmode"] == "require"
+    assert params["channel_binding"] == "require"
 
 
 def test_query_keys_outside_allowlist_refused_including_percent_encoded():
@@ -214,18 +236,22 @@ def test_direct_entrypoint_guards_before_persist():
     text = (SRC / "match_play_timestamps.py").read_text(encoding="utf-8")
     persist_at = text.index("persist_matched_output(")
     ready_at = text.index("assert_persist_ready(")
-    flag_at = text.index('os.environ.get("MATCHER_PERSIST") == "1"')
     vision_at = text.index("analyze_frame_scoreboard(frame_path")
     summary_at = text.index('print("\\nMATCHED PLAYS:")')
-    assert flag_at < ready_at < vision_at < persist_at
+    assert "MATCHER_PERSIST" not in text
+    assert ready_at < vision_at < persist_at
     assert summary_at < persist_at
     assert "except PersistRefused" in text
     source = (SRC / "persist_matcher_clips.py").read_text(encoding="utf-8")
-    connect_at = source.index("psycopg.connect(**conn_params)")
-    ready_def = source.index("def assert_persist_ready")
-    routing_def = source.index("def assert_libpq_routing_env")
-    assert ready_def < connect_at
-    assert routing_def < connect_at
+    # Both writers connect. Each function body calls the guard before connect.
+    # Definition order is not the check: save_uploaded_game sits above the guard defs.
+    for fn_name in ("save_uploaded_game", "persist_matched_output"):
+        start = source.index(f"def {fn_name}")
+        nxt = source.find("\ndef ", start + 1)
+        body = source[start:nxt if nxt != -1 else None]
+        assert body.index("assert_persist_ready(") < body.index("psycopg.connect(**conn_params)")
+    assert "def assert_libpq_routing_env" in source
+    assert "assert_libpq_routing_env()" in source
     assert "conn.transaction()" in source
     assert 'conn.execute("BEGIN")' not in source
     assert 'conn.execute("COMMIT")' not in source
@@ -238,7 +264,6 @@ def test_advisory_persist_ready_exits_before_vision(tmp_path, monkeypatch, capsy
     pbp = tmp_path / "202601010FIC.json"
     video.write_bytes(b"x")
     pbp.write_text("[]")
-    monkeypatch.setenv("MATCHER_PERSIST", "1")
     monkeypatch.setenv("APP_ENV", "production")
     monkeypatch.setenv("DATABASE_URL", LOCAL_URL)
     monkeypatch.chdir(tmp_path)
@@ -275,7 +300,6 @@ def test_persist_refused_after_match_prints_summary_without_traceback(
         '[{"quarter": 1, "time": "10:34.0", "score": "2-4", "team": "Celtics",'
         ' "description": "D. White misses 3-pt jump shot from 25 ft"}]'
     )
-    monkeypatch.setenv("MATCHER_PERSIST", "1")
     monkeypatch.setenv("APP_ENV", "test")
     monkeypatch.setenv("DATABASE_URL", LOCAL_URL)
     monkeypatch.chdir(tmp_path)

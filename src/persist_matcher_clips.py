@@ -6,13 +6,16 @@ timing, not per-event timing). Each row keeps that event's own play_index,
 period, game_clock, and description.
 
 Writes run in one transaction after matcher output is complete.
-Exact reruns no-op. Occupied mismatching keys abort the whole transaction.
+Exact reruns leave clip rows unchanged. Occupied mismatching keys abort the whole transaction.
 Changed PBP source or changed canonical full-PBP grouping aborts the whole
 transaction, including when incoming play_index keys are disjoint.
 Identical source plus identical full grouping may insert additional selected
 groups whose indexes do not overlap stored rows. Group identity is that full
 canonical grouping, not the player-filter selected subset.
-Never deletes. Never overwrites. No clip_players.
+Never deletes. Never overwrites a clip row.
+Each clip is linked to clip_players in that same pass, using the clip id just
+inserted. A rerun that leaves the clip row unchanged still fills missing links.
+A display name that is not exactly one player on the game's two teams is skipped.
 The only schema change is adding UNIQUE (game_id, play_index) when it is missing.
 duration_s is generated — omit it from INSERT.
 
@@ -44,6 +47,20 @@ from match_play_timestamps import (
 )
 
 BBREF_ID_RE = re.compile(r"[0-9]{9}[A-Z]{3}")
+_PLAYER_NAME = (
+    r"[A-Z](?:\.[A-Z])*\. [A-Z][A-Za-z'’\-]+(?: Jr\.| Sr\.| II| III| IV)?"
+)
+_ROLE_PATTERNS = (
+    ("shot", re.compile(rf"^({_PLAYER_NAME}) (?i:makes|misses)\b")),
+    ("assist", re.compile(rf"(?i:\bassist by) ({_PLAYER_NAME})")),
+    ("block", re.compile(rf"(?i:\bblock by) ({_PLAYER_NAME})")),
+    ("steal", re.compile(rf"(?i:\bsteal by) ({_PLAYER_NAME})")),
+    ("rebound", re.compile(rf"(?i:\brebound by) ({_PLAYER_NAME})")),
+    ("foul", re.compile(rf"(?i:\bfoul by) ({_PLAYER_NAME})")),
+    ("fouled", re.compile(rf"(?i:\bdrawn by) ({_PLAYER_NAME})")),
+    ("turnover", re.compile(rf"(?i:\bturnover by) ({_PLAYER_NAME})")),
+)
+_NAME_SUFFIX = re.compile(r" (?:Jr\.|Sr\.|II|III|IV)$")
 SHA256_HEX_RE = re.compile(r"[0-9a-f]{64}")
 LOCAL_HOSTS = frozenset({"127.0.0.1", "localhost", "::1"})
 PERSIST_APP_ENVS = frozenset({"dev", "test"})
@@ -478,6 +495,80 @@ def _ensure_game_play_unique(conn) -> None:
         ) from exc
 
 
+def clip_player_roles(description: str) -> list[tuple[str, str]]:
+    """Names and roles named by one play-by-play sentence.
+
+    A free throw is a shot. "Team" is not a player name, so a team rebound
+    returns nothing. One sentence can name two people.
+    """
+    if not isinstance(description, str) or not description:
+        return []
+    found: list[tuple[int, str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for role, pattern in _ROLE_PATTERNS:
+        for match in pattern.finditer(description):
+            item = (match.group(1), role)
+            if item in seen:
+                continue
+            seen.add(item)
+            found.append((match.start(1), item[0], role))
+    found.sort()
+    return [(name, role) for _start, name, role in found]
+
+
+def player_initial_and_last(display: str) -> tuple[str, str] | None:
+    """'P.J. Washington' -> ('P', 'Washington'). 'T. Hardaway Jr.' -> ('T', 'Hardaway')."""
+    trimmed = _NAME_SUFFIX.sub("", display.strip())
+    first, sep, last = trimmed.rpartition(" ")
+    if not sep or not last or not first.endswith("."):
+        return None
+    initial = first[0]
+    if not initial.isascii() or not initial.isupper():
+        return None
+    return initial, last
+
+
+def _resolve_roster_player(conn, cache: dict[str, int | None], display: str, team_ids: tuple[Any, Any]):
+    """One player on the game's two teams. Zero or several matches resolve to None."""
+    if display in cache:
+        return cache[display]
+    parsed = player_initial_and_last(display)
+    if parsed is None:
+        cache[display] = None
+        return None
+    initial, last = parsed
+    rows = conn.execute(
+        """
+        SELECT id
+        FROM players
+        WHERE last_name = %s
+          AND left(first_name, 1) = %s
+          AND team_id IN (%s, %s)
+        """,
+        (last, initial, team_ids[0], team_ids[1]),
+    ).fetchall()
+    cache[display] = rows[0][0] if len(rows) == 1 else None
+    return cache[display]
+
+
+def _link_clip_players(conn, cache, clip_id, description, game_date, team_ids, report) -> None:
+    """Write this clip's players before the next play is processed."""
+    for display, role in clip_player_roles(description):
+        player_id = _resolve_roster_player(conn, cache, display, team_ids)
+        if player_id is None:
+            report["players_skipped"] += 1
+            continue
+        cur = conn.execute(
+            """
+            INSERT INTO clip_players (clip_id, player_id, role, game_date)
+            VALUES (%s, %s, %s::clip_role, %s)
+            ON CONFLICT (player_id, clip_id, role) DO NOTHING
+            """,
+            (clip_id, player_id, role, game_date),
+        )
+        report["players_linked"] += cur.rowcount
+
+
 def persist_matched_output(
     matched_plays: Any,
     *,
@@ -501,7 +592,7 @@ def persist_matched_output(
                 "persist refused: matched group is not in the canonical full-PBP grouping"
             )
         row["grouping_sha256"] = grouping_hash
-    report = {"inserted": 0, "noop": 0}
+    report = {"inserted": 0, "noop": 0, "players_linked": 0, "players_skipped": 0}
 
     import psycopg
     from psycopg.errors import UniqueViolation
@@ -513,7 +604,7 @@ def persist_matched_output(
             with conn.transaction():
                 game = conn.execute(
                     """
-                    SELECT id, game_date
+                    SELECT id, game_date, home_team_id, away_team_id
                     FROM games
                     WHERE bbref_id = %s
                     FOR UPDATE
@@ -522,13 +613,14 @@ def persist_matched_output(
                 ).fetchone()
                 if game is None:
                     raise PersistRefused("persist refused: parent game is missing")
-                game_id, game_date = game
+                game_id, game_date, home_team_id, away_team_id = game
+                roster_cache: dict[str, int | None] = {}
                 _ensure_game_play_unique(conn)
 
                 existing_rows = conn.execute(
                     """
                     SELECT play_index, period, description, game_clock,
-                           video_start_s, video_end_s, attributes
+                           video_start_s, video_end_s, attributes, id
                     FROM clips
                     WHERE game_id = %s
                     FOR UPDATE
@@ -545,6 +637,7 @@ def persist_matched_output(
                         "video_start_s": rec[4],
                         "video_end_s": rec[5],
                         "attributes": rec[6],
+                        "id": rec[7],
                     }
                     existing_attrs.append(rec[6])
                 if game_source_conflict(existing_attrs, pbp_hash):
@@ -559,7 +652,7 @@ def persist_matched_output(
                 for row in rows:
                     existing = occupied.get(row["play_index"])
                     if existing is None:
-                        conn.execute(
+                        inserted = conn.execute(
                             """
                             INSERT INTO clips (
                               game_id, game_date, play_index, period, game_clock,
@@ -570,6 +663,7 @@ def persist_matched_output(
                               %s, %s, %s,
                               %s, %s
                             )
+                            RETURNING id
                             """,
                             (
                                 game_id,
@@ -590,14 +684,25 @@ def persist_matched_output(
                                 row["video_start_s"],
                                 row["video_end_s"],
                             ),
-                        )
+                        ).fetchone()
                         report["inserted"] += 1
-                        continue
-                    if _rows_conflict(existing, row, pbp_hash):
-                        raise PersistRefused(
-                            "persist refused: occupied play_index does not match this event"
-                        )
-                    report["noop"] += 1
+                        clip_id = inserted[0]
+                    else:
+                        if _rows_conflict(existing, row, pbp_hash):
+                            raise PersistRefused(
+                                "persist refused: occupied play_index does not match this event"
+                            )
+                        report["noop"] += 1
+                        clip_id = existing["id"]
+                    _link_clip_players(
+                        conn,
+                        roster_cache,
+                        clip_id,
+                        row["description"],
+                        game_date,
+                        (home_team_id, away_team_id),
+                        report,
+                    )
         except UniqueViolation as exc:
             raise PersistRefused("persist refused: concurrent write conflict") from exc
     return report

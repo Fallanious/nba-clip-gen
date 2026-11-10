@@ -592,7 +592,8 @@ def main():
             "Player filter selects entire condensed groups. Original membership "
             "is unchanged; unnamed events in a selected group stay in the group "
             "and persist as their own clips rows if the group matches. "
-            "This is not a per-player event filter and writes no clip_players rows."
+            "Player links are written for every stored clip, including events "
+            "that do not contain the filter name."
         )
         plays = [
             play for play in plays
@@ -748,8 +749,8 @@ def main():
         assert_persist_ready(database_url)
         print(
             "Persisting one clips row per original member of each matched group "
-            "(shared group video window). Player filter does not drop unnamed "
-            "members. clip_players are not written."
+            "(shared group video window). Each clip then gets its player links. "
+            "A name that is not exactly one player on the two teams is skipped."
         )
         game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
             os.path.basename(args.playbyplay)
@@ -763,8 +764,14 @@ def main():
         )
         print(
             f"✓ Clips stored: {report['inserted']} inserted, "
-            f"{report['noop']} already stored"
+            f"{report['noop']} already stored, "
+            f"{report['players_linked']} player links"
         )
+        if report["players_skipped"]:
+            print(
+                f"  {report['players_skipped']} names did not match one player "
+                "on the two teams"
+            )
     except PersistRefused as exc:
         print(str(exc))
         sys.exit(1)
