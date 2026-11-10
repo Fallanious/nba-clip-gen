@@ -32,7 +32,7 @@ def _with_venv_python(cmd):
     return [executable, "-u", *rest]
 
 
-def run_script_async(job_id, cmd, cwd=None):
+def run_script_async(job_id, cmd, cwd=None, env=None):
     """Run a script asynchronously and store output."""
     from routes.jobs import jobs  # ensure we reference the module-level dict
 
@@ -52,8 +52,11 @@ def run_script_async(job_id, cmd, cwd=None):
     })
 
     try:
-        env = os.environ.copy()
-        env["PYTHONUNBUFFERED"] = "1"
+        proc_env = os.environ.copy()
+        proc_env["PYTHONUNBUFFERED"] = "1"
+        if env:
+            proc_env.update(env)
+        env = proc_env
 
         process = subprocess.Popen(
             cmd,

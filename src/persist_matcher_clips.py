@@ -12,7 +12,8 @@ transaction, including when incoming play_index keys are disjoint.
 Identical source plus identical full grouping may insert additional selected
 groups whose indexes do not overlap stored rows. Group identity is that full
 canonical grouping, not the player-filter selected subset.
-Never deletes. Never overwrites. No clip_players. No migrations.
+Never deletes. Never overwrites. No clip_players.
+The only schema change is adding UNIQUE (game_id, play_index) when it is missing.
 duration_s is generated — omit it from INSERT.
 
 Connection targets are checked from the URI and process environment before
@@ -33,7 +34,7 @@ import re
 from datetime import timedelta
 from decimal import Decimal, ROUND_HALF_EVEN
 from typing import Any, Mapping
-from urllib.parse import parse_qsl, unquote, urlparse
+from urllib.parse import parse_qsl, unquote, urlparse, urlunparse
 
 from match_play_timestamps import (
     GROUP_WINDOW_S,
@@ -46,7 +47,7 @@ BBREF_ID_RE = re.compile(r"[0-9]{9}[A-Z]{3}")
 SHA256_HEX_RE = re.compile(r"[0-9a-f]{64}")
 LOCAL_HOSTS = frozenset({"127.0.0.1", "localhost", "::1"})
 PERSIST_APP_ENVS = frozenset({"dev", "test"})
-ALLOWED_URI_QUERY_KEYS = frozenset({"sslmode"})
+ALLOWED_URI_QUERY_KEYS = frozenset({"sslmode", "channel_binding"})
 DEV_SSLMODES = frozenset({"require", "verify-full"})
 # libpq uses env vars as defaults for unspecified parameters, including
 # hostaddr alongside a URI host (PGHOSTADDR). Refuse routing/service vars
@@ -166,7 +167,7 @@ def _database_name(path: str) -> str:
     return name
 
 
-def _sslmode_query(query: str) -> str | None:
+def _uri_query(query: str) -> dict[str, str]:
     pairs = [(key.lower(), value) for key, value in parse_qsl(query or "", keep_blank_values=True)]
     keys = [key for key, _value in pairs]
     if len(keys) != len(set(keys)):
@@ -174,9 +175,7 @@ def _sslmode_query(query: str) -> str | None:
     disallowed = [key for key in keys if key not in ALLOWED_URI_QUERY_KEYS]
     if disallowed:
         raise PersistRefused("persist refused: database URI query is not allowlisted")
-    if not pairs:
-        return None
-    return pairs[0][1]
+    return dict(pairs)
 
 
 def assert_libpq_routing_env() -> None:
@@ -195,7 +194,9 @@ def persist_connect_params(database_url: str) -> tuple[str, dict[str, Any]]:
     netloc = parsed.netloc or ""
     if "," in netloc:
         raise PersistRefused("persist refused: database target is not allowlisted")
-    sslmode = _sslmode_query(parsed.query)
+    query = _uri_query(parsed.query)
+    sslmode = query.get("sslmode")
+    channel_binding = query.get("channel_binding")
     try:
         host = (parsed.hostname or "").lower()
         port = parsed.port
@@ -220,6 +221,11 @@ def persist_connect_params(database_url: str) -> tuple[str, dict[str, Any]]:
         "password": password,
     }
 
+    if channel_binding is not None:
+        if channel_binding not in {"disable", "prefer", "require"}:
+            raise PersistRefused("persist refused: channel_binding is not allowlisted")
+        params["channel_binding"] = channel_binding
+
     if host in LOCAL_HOSTS:
         if sslmode is not None:
             params["sslmode"] = sslmode
@@ -240,6 +246,79 @@ def persist_connect_params(database_url: str) -> tuple[str, dict[str, Any]]:
         return "dev", params
 
     raise PersistRefused("persist refused: database target is not allowlisted")
+
+
+def nba_season(game_date: str) -> str:
+    """NBA season label. October through June belongs to the season that started that fall."""
+    year_s, month_s, _day_s = game_date.split("-")
+    year = int(year_s)
+    month = int(month_s)
+    start = year if month >= 10 else year - 1
+    return f"{start}-{str(start + 1)[-2:]}"
+
+
+def save_uploaded_game(
+    *,
+    database_url: str,
+    bbref_id: str,
+    game_date: str,
+    home_code: str,
+    away_code: str,
+    s3_key: str,
+    duration_s: Any = None,
+) -> int:
+    """Insert the game row for an uploaded film. A repeat upload updates the S3 key."""
+    conn_params = assert_persist_ready(database_url)
+    if not BBREF_ID_RE.fullmatch(bbref_id or ""):
+        raise PersistRefused("persist refused: game bbref_id is not a Basketball-Reference id")
+    if home_code == away_code:
+        raise PersistRefused("persist refused: home and away team are the same")
+    duration = None if duration_s is None else quantize_video_s(duration_s, field="duration_s")
+    import psycopg
+
+    with psycopg.connect(**conn_params) as conn:
+        conn.autocommit = True
+        with conn.transaction():
+            home = conn.execute("SELECT id FROM teams WHERE abbr = %s", (home_code,)).fetchone()
+            away = conn.execute("SELECT id FROM teams WHERE abbr = %s", (away_code,)).fetchone()
+            if home is None or away is None:
+                raise PersistRefused("persist refused: team is not in the teams table")
+            row = conn.execute(
+                """
+                INSERT INTO games (
+                  bbref_id, season, game_date, home_team_id, away_team_id, s3_key, duration_s
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (bbref_id) DO UPDATE
+                  SET s3_key = EXCLUDED.s3_key,
+                      duration_s = EXCLUDED.duration_s
+                RETURNING id
+                """,
+                (
+                    bbref_id,
+                    nba_season(game_date),
+                    game_date,
+                    home[0],
+                    away[0],
+                    s3_key,
+                    duration,
+                ),
+            ).fetchone()
+    return int(row[0])
+
+
+def direct_database_url(database_url: str) -> str:
+    """Use the direct Neon host. The pooled host is not a persist target."""
+    if not database_url:
+        return database_url
+    parsed = urlparse(database_url)
+    host = (parsed.hostname or "").lower()
+    if not host.endswith(".neon.tech") or "-pooler." not in host:
+        return database_url
+    direct_host = host.replace("-pooler.", ".", 1)
+    userinfo, _, _old_host = parsed.netloc.rpartition("@")
+    port = f":{parsed.port}" if parsed.port else ""
+    netloc = f"{userinfo}@{direct_host}{port}" if userinfo else f"{direct_host}{port}"
+    return urlunparse(parsed._replace(netloc=netloc))
 
 
 def assert_persist_database_url(database_url: str) -> str:
@@ -370,6 +449,35 @@ def _rows_conflict(existing: Mapping[str, Any], incoming: Mapping[str, Any], pbp
     )
 
 
+def _ensure_game_play_unique(conn) -> None:
+    """One clip per game and play. Add the key when the table does not have it."""
+    found = conn.execute(
+        """
+        SELECT pg_get_constraintdef(con.oid)
+        FROM pg_constraint con
+        JOIN pg_class rel ON rel.oid = con.conrelid
+        JOIN pg_namespace nsp ON nsp.oid = rel.relnamespace
+        WHERE nsp.nspname = 'public'
+          AND rel.relname = 'clips'
+          AND con.contype = 'u'
+        """
+    ).fetchall()
+    for (definition,) in found:
+        if "".join(definition.split()) == "UNIQUE(game_id,play_index)":
+            return
+    try:
+        conn.execute(
+            """
+            ALTER TABLE clips
+            ADD CONSTRAINT clips_game_id_play_index_key UNIQUE (game_id, play_index)
+            """
+        )
+    except Exception as exc:
+        raise PersistRefused(
+            "persist refused: clips needs a unique key on game_id and play_index"
+        ) from exc
+
+
 def persist_matched_output(
     matched_plays: Any,
     *,
@@ -415,6 +523,7 @@ def persist_matched_output(
                 if game is None:
                     raise PersistRefused("persist refused: parent game is missing")
                 game_id, game_date = game
+                _ensure_game_play_unique(conn)
 
                 existing_rows = conn.execute(
                     """

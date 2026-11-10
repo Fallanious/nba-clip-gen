@@ -553,16 +553,15 @@ def main():
         print(f"Error: Play-by-play file not found: {args.playbyplay}")
         sys.exit(1)
 
-    # Advisory only: catch persist misconfig before the slow vision pass.
+    # Catch a bad database target before the slow vision pass.
     # Authoritative assert_persist_ready still runs immediately before connect.
-    if os.environ.get("MATCHER_PERSIST") == "1":
-        from persist_matcher_clips import PersistRefused, assert_persist_ready
+    from persist_matcher_clips import PersistRefused, assert_persist_ready
 
-        try:
-            assert_persist_ready(os.environ.get("DATABASE_URL", ""))
-        except PersistRefused as exc:
-            print(str(exc))
-            sys.exit(1)
+    try:
+        assert_persist_ready(os.environ.get("DATABASE_URL", ""))
+    except PersistRefused as exc:
+        print(str(exc))
+        sys.exit(1)
     
     # Check Ollama
     try:
@@ -742,34 +741,33 @@ def main():
         print(f"   {play['description']}")
         print(f"   Video: {play['video_start']:.1f}s - {play['video_end']:.1f}s")
 
-    if os.environ.get("MATCHER_PERSIST") == "1":
-        from persist_matcher_clips import (
-            PersistRefused,
-            assert_persist_ready,
-            persist_matched_output,
-        )
+    from persist_matcher_clips import persist_matched_output
 
-        database_url = os.environ.get("DATABASE_URL", "")
-        try:
-            assert_persist_ready(database_url)
-            print(
-                "Persisting one clips row per original member of each matched group "
-                "(shared group video window). Player filter does not drop unnamed "
-                "members. clip_players are not written."
-            )
-            game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
-                os.path.basename(args.playbyplay)
-            )[0]
-            persist_matched_output(
-                matched_plays,
-                database_url=database_url,
-                game_bbref_id=game_bbref_id,
-                pbp_hash=pbp_hash,
-                original_plays=frozen_plays,
-            )
-        except PersistRefused as exc:
-            print(str(exc))
-            sys.exit(1)
+    database_url = os.environ.get("DATABASE_URL", "")
+    try:
+        assert_persist_ready(database_url)
+        print(
+            "Persisting one clips row per original member of each matched group "
+            "(shared group video window). Player filter does not drop unnamed "
+            "members. clip_players are not written."
+        )
+        game_bbref_id = os.environ.get("MATCHER_GAME_BBREF_ID") or os.path.splitext(
+            os.path.basename(args.playbyplay)
+        )[0]
+        report = persist_matched_output(
+            matched_plays,
+            database_url=database_url,
+            game_bbref_id=game_bbref_id,
+            pbp_hash=pbp_hash,
+            original_plays=frozen_plays,
+        )
+        print(
+            f"✓ Clips stored: {report['inserted']} inserted, "
+            f"{report['noop']} already stored"
+        )
+    except PersistRefused as exc:
+        print(str(exc))
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -28,7 +28,7 @@ def _crop_args(data):
     return ["--crop", ",".join(str(value) for value in values)]
 
 
-def _start_job(cmd, kind="Task", label=""):
+def _start_job(cmd, kind="Task", label="", env=None):
     """Create a job record, launch it, and return the id."""
     job_id = str(uuid.uuid4())[:8]
     jobs[job_id] = {
@@ -42,9 +42,44 @@ def _start_job(cmd, kind="Task", label=""):
         "started_at": time.time(),
         "finished_at": None,
     }
-    thread = threading.Thread(target=run_script_async, args=(job_id, cmd))
+    thread = threading.Thread(
+        target=run_script_async,
+        args=(job_id, cmd),
+        kwargs={"env": env} if env else {},
+    )
     thread.start()
     return job_id
+
+
+def _persist_login_error(database_url):
+    """Return a short error when the clip save cannot sign in."""
+    from persist_matcher_clips import PersistRefused, assert_persist_ready
+
+    try:
+        params = assert_persist_ready(database_url)
+    except PersistRefused as exc:
+        return str(exc)
+    try:
+        import psycopg
+
+        with psycopg.connect(**params, connect_timeout=8) as conn:
+            conn.execute("SELECT 1")
+    except Exception:
+        return "Database login failed. Fix DATABASE_URL before matching."
+    return None
+
+
+def _match_persist_env(playbyplay):
+    """Point the match job at the direct database and the game id."""
+    import re
+
+    from persist_matcher_clips import direct_database_url
+
+    bbref_id = os.path.splitext(os.path.basename(playbyplay or ""))[0]
+    env = {"DATABASE_URL": direct_database_url(os.getenv("DATABASE_URL", ""))}
+    if re.fullmatch(r"[0-9]{9}[A-Z]{3}", bbref_id):
+        env["MATCHER_GAME_BBREF_ID"] = bbref_id
+    return env
 
 
 @bp.route("/api/download", methods=["POST"])
@@ -86,6 +121,10 @@ def match_timestamps():
 
     label = os.path.basename(video)
     crop_args = _crop_args(data)
+    persist_env = _match_persist_env(playbyplay)
+    login_error = _persist_login_error(persist_env["DATABASE_URL"])
+    if login_error:
+        return jsonify({"error": login_error}), 400
     if num_workers <= 1:
         job_id = _start_job([
             "python3", "src/match_play_timestamps.py",
@@ -95,7 +134,7 @@ def match_timestamps():
             "--max-plays", str(max_plays),
             "--start-time", str(start_time),
             *crop_args,
-        ], kind="Match timestamps", label=label)
+        ], kind="Match timestamps", label=label, env=persist_env)
         return jsonify({"job_id": job_id, "job_ids": [job_id], "message": "Matching started"})
 
     # Multiple workers — split video into time ranges
@@ -122,7 +161,7 @@ def match_timestamps():
             "--worker-id", str(i + 1),
             *crop_args,
         ]
-        job_id = _start_job(cmd, kind="Match timestamps", label=f"Worker {i + 1} · {label}")
+        job_id = _start_job(cmd, kind="Match timestamps", label=f"Worker {i + 1} · {label}", env=persist_env)
         job_ids.append(job_id)
 
     return jsonify({
