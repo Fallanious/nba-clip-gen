@@ -11,6 +11,8 @@ import type {
   JobStartResponse,
   MatchResponse,
   ProcessJob,
+  PlayerLibrary,
+  PlayerClip,
 } from './types';
 
 const BASE = '';
@@ -126,6 +128,14 @@ export async function startGenerate(params: GenerateParams): Promise<JobStartRes
 
 export async function startUpload(video: string): Promise<JobStartResponse> {
   return postJSON('/api/upload', { video });
+}
+
+export async function fetchPlayerLibrary(): Promise<PlayerLibrary> {
+  return fetchJSON('/api/players');
+}
+
+export async function fetchPlayerClips(playerId: number): Promise<{ player: string; team: string; clips: PlayerClip[] }> {
+  return fetchJSON(`/api/players/${playerId}/clips`);
 }
 
 // ============ Video URL ============

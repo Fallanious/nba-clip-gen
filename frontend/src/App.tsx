@@ -8,6 +8,7 @@ import EditLabels from './components/EditLabels';
 import GenerateClips from './components/GenerateClips';
 import Processes from './components/Processes';
 import UploadGame from './components/UploadGame';
+import PlayerBrowser from './components/PlayerBrowser';
 
 type Clip = { filename: string; source_video: string; url: string; run: string; description?: string; label?: string; quarter?: number; game_time?: string; duration?: number; attributes?: { action_type?: string } };
 const steps = ['Footage', 'Game data', 'Match plays', 'Review', 'Generate'];
@@ -26,7 +27,7 @@ export default function App() {
   const [run, setRun] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
-  const [view, setView] = useState<'library' | 'splice' | 'upload' | 'processes'>('library');
+  const [view, setView] = useState<'library' | 'players' | 'splice' | 'upload' | 'processes'>('library');
   const [step, setStep] = useState(0);
   const [jobs, setJobs] = useState<ProcessJob[]>([]);
   const seenJobs = useRef<Record<string, string>>({});
@@ -79,7 +80,7 @@ export default function App() {
 
 
   return <div className="app-shell">
-    <aside className="sidebar"><a className="brand" href="/">CLIP<span>FILM ROOM</span></a><nav className="side-nav" aria-label="Workspace"><button className={view === 'library' ? 'nav-selected' : 'nav-item'} onClick={() => setView('library')}>{view === 'library' ? '▸ ' : ''}Library</button><button className={view === 'splice' ? 'nav-selected' : 'nav-item'} onClick={() => { setStep(0); setView('splice'); }}>{view === 'splice' ? '▸ ' : ''}Splice</button><button className={view === 'upload' ? 'nav-selected' : 'nav-item'} onClick={() => setView('upload')}>{view === 'upload' ? '▸ ' : ''}Upload</button><button className={view === 'processes' ? 'nav-selected' : 'nav-item'} onClick={() => setView('processes')}>{view === 'processes' ? '▸ ' : ''}Processes{jobs.some(job => job.status === 'running') ? ` (${jobs.filter(job => job.status === 'running').length})` : ''}</button></nav><p className="local-note">YOUR LOCAL WORKSPACE</p></aside>
+    <aside className="sidebar"><a className="brand" href="/">CLIP<span>FILM ROOM</span></a><nav className="side-nav" aria-label="Workspace"><button className={view === 'library' ? 'nav-selected' : 'nav-item'} onClick={() => setView('library')}>{view === 'library' ? '▸ ' : ''}Library</button><button className={view === 'players' ? 'nav-selected' : 'nav-item'} onClick={() => setView('players')}>{view === 'players' ? '▸ ' : ''}Players</button><button className={view === 'splice' ? 'nav-selected' : 'nav-item'} onClick={() => { setStep(0); setView('splice'); }}>{view === 'splice' ? '▸ ' : ''}Splice</button><button className={view === 'upload' ? 'nav-selected' : 'nav-item'} onClick={() => setView('upload')}>{view === 'upload' ? '▸ ' : ''}Upload</button><button className={view === 'processes' ? 'nav-selected' : 'nav-item'} onClick={() => setView('processes')}>{view === 'processes' ? '▸ ' : ''}Processes{jobs.some(job => job.status === 'running') ? ` (${jobs.filter(job => job.status === 'running').length})` : ''}</button></nav><p className="local-note">YOUR LOCAL WORKSPACE</p></aside>
     <main>
       {view === 'library' && <>
         <header><div><p className="eyebrow">SCOUT. STUDY. REPEAT.</p><h1>Game Library</h1><p>Find the plays worth a closer look.</p></div></header>
@@ -93,6 +94,7 @@ export default function App() {
         </section><section className="highlights"><h2>Highlights</h2><p>{gameClips.length} clips stored locally</p>{runs.length > 1 && <select aria-label="Clip generation run" value={run} onChange={e => { setRun(e.target.value); setActiveClip(null); }}><option value="">All runs</option>{runs.map(r => <option key={r}>{r}</option>)}</select>}<div className="clip-list">{shownClips.map(c => <button key={c.url} className={`clip-row ${activeClip?.url === c.url ? 'current' : ''}`} onClick={() => setActiveClip(c)}><span><strong>{c.description || 'Play'}</strong><small>Q{c.quarter ?? '-'} · {clock(c.game_time)}{c.duration ? ` · ${Math.round(c.duration)} sec` : ''}</small></span></button>)}{!shownClips.length && <div className="empty"><h3>Your next scouting session starts here</h3><p>Add footage to find plays and generate local clips.</p><button onClick={() => { setStep(0); setView('splice'); }}>Generate clips</button></div>}</div></section></div>}
         <footer>LOCAL FOOTAGE. A CLEARER VIEW OF THE GAME.</footer>
       </>}
+      {view === 'players' && <PlayerBrowser />}
       {view === 'splice' && <>
         <header><div><p className="eyebrow">FROM FOOTAGE TO CLIPS</p><h1>Splice</h1><p>Download a broadcast, match the play-by-play, then cut local clips.</p></div></header>
         <nav className="steps" aria-label="Clip generation">{steps.map((s, i) => <button aria-current={step === i ? 'step' : undefined} className={step === i ? 'selected' : 'quiet'} onClick={() => setStep(i)} key={s}>{i + 1}. {s}</button>)}</nav>
