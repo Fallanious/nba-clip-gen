@@ -1044,13 +1044,33 @@ button.pb-card:hover {
   background: #ececef;
 }
 
-.pb-shimmer::after {
+.pb-shimmer::after,
+.pb-skeleton::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
   transform: translateX(-100%);
   animation: pb-shimmer 2.4s ease-in-out infinite;
+}
+
+.pb-skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e4e4e8;
+}
+
+.pb-skeleton-card { pointer-events: none; }
+
+.pb-skeleton-line {
+  height: 14px;
+  border-radius: 7px;
+}
+
+.pb-skeleton-line.short {
+  width: 46%;
+  height: 10px;
+  margin-top: 10px;
 }
 
 @keyframes pb-shimmer {
@@ -1154,7 +1174,8 @@ button.pb-card:hover {
     transition: none;
   }
 
-  .pb-shimmer::after {
+  .pb-shimmer::after,
+  .pb-skeleton::after {
     animation: none;
   }
 }

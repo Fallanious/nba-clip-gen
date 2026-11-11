@@ -68,7 +68,7 @@ export default function PlayerBrowser() {
           <section className="pb-plays" aria-label="Player plays">
             <div className="pb-plays-head">
               <h2>Plays</h2>
-              <span>{clips.clips.length ? `${countLabel(clips.clips.length, 'play', 'plays')}${library.season ? ` · ${library.season}` : ''}` : ''}</span>
+              <span role="status">{clips.loading ? 'Loading plays…' : clips.clips.length ? `${countLabel(clips.clips.length, 'play', 'plays')}${library.season ? ` · ${library.season}` : ''}` : ''}</span>
             </div>
             {clips.error && <p role="alert" className="notice">{clips.error}</p>}
             <div className="pb-types">
@@ -79,9 +79,21 @@ export default function PlayerBrowser() {
             {film.cutting && !film.url && <div className="pb-shimmer" role="status" aria-label="Cutting this play" />}
             {film.error && <p role="alert" className="notice">{film.error}</p>}
             {film.url && (
-              <video className="main-player pb-film" controls preload="none" src={film.url} />
+              <video className="main-player pb-film" controls preload="auto" src={film.url} />
             )}
             <ul className="pb-list">
+              {clips.loading && Array.from({ length: 5 }, (_, index) => (
+                <li key={index} aria-hidden="true">
+                  <div className="pb-row">
+                    <div>
+                      <div className="pb-skeleton pb-skeleton-line" />
+                      <div className="pb-skeleton pb-skeleton-line short" />
+                    </div>
+                    <div className="pb-skeleton pb-skeleton-line pb-kind" />
+                    <div className="pb-skeleton pb-skeleton-line" />
+                  </div>
+                </li>
+              ))}
               {clips.shown.map(clip => (
                 <li key={`${clip.id}-${clip.role}`}>
                   <button
@@ -122,18 +134,32 @@ export default function PlayerBrowser() {
             </select>
           </div>
           {library.error && <p role="alert" className="notice">{library.error}</p>}
-          <p className="pb-count">{library.loading ? 'Loading players…' : countLabel(library.shown.length, 'player with clips', 'players with clips')}</p>
-          <div className="pb-grid">
-            {library.shown.map(player => (
-              <button className="pb-card" key={player.id} onClick={() => void clips.open(player)}>
-                <PlayerCard
-                  player={player}
-                  broken={!!broken[player.id]}
-                  onBroken={() => markBroken(player.id)}
-                />
-              </button>
-            ))}
-          </div>
+          <p className="pb-count" role="status">{library.loading ? 'Loading players…' : countLabel(library.shown.length, 'player with clips', 'players with clips')}</p>
+          {library.loading ? (
+            <div className="pb-grid" aria-hidden="true">
+              {Array.from({ length: 6 }, (_, index) => (
+                <div className="pb-card pb-skeleton-card" key={index}>
+                  <div className="pb-portrait pb-skeleton" />
+                  <div className="pb-info">
+                    <div className="pb-skeleton pb-skeleton-line" />
+                    <div className="pb-skeleton pb-skeleton-line short" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="pb-grid">
+              {library.shown.map(player => (
+                <button className="pb-card" key={player.id} onClick={() => void clips.open(player)}>
+                  <PlayerCard
+                    player={player}
+                    broken={!!broken[player.id]}
+                    onBroken={() => markBroken(player.id)}
+                  />
+                </button>
+              ))}
+            </div>
+          )}
           {!library.loading && !library.shown.length && <p className="empty">{library.players.length ? 'No players match your search.' : 'No players with clips yet.'}</p>}
         </>
       )}
