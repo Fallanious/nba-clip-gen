@@ -197,11 +197,6 @@ header {
   flex: 1
 }
 
-.tabs {
-  display: flex;
-  gap: 8px
-}
-
 .quiet {
   background: transparent;
   color: #44444a;
@@ -217,81 +212,6 @@ header {
   color: white
 }
 
-.game-strip {
-  display: flex;
-  gap: 10px;
-  overflow: auto;
-  padding-bottom: 16px;
-  margin-bottom: 10px
-}
-
-.game-choice {
-  background: white;
-  color: #444;
-  text-align: left;
-  min-width: 230px;
-  max-width: 290px;
-  border: 1px solid #e8e8eb;
-  padding: 14px 16px;
-  flex-shrink: 0
-}
-
-.game-choice strong {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 13px
-}
-
-.game-choice span {
-  display: block;
-  color: #888;
-  font-size: 11px;
-  margin-top: 7px
-}
-
-.game-choice span span {
-  display: inline;
-  padding: 0 5px
-}
-
-.game-choice:hover,
-.current {
-  background: #eeeef0 !important;
-  border-color: #999 !important
-}
-
-.workspace {
-  display: grid;
-  grid-template-columns: minmax(0, 1.75fr) minmax(300px, 1fr);
-  gap: 20px;
-  align-items: start
-}
-
-.player-card,
-.highlights {
-  background: #fff;
-  border: 1px solid #e7e7e9;
-  border-radius: 18px;
-  padding: 20px;
-  box-shadow: 0 5px 20px #00000002
-}
-
-.card-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 14px
-}
-
-.full-game {
-  padding: 6px 10px;
-  font-size: 12px;
-  border-radius: 8px
-}
-
 .upload-game {
   display: flex;
   flex-direction: column;
@@ -303,10 +223,6 @@ header {
 .upload-game + .upload-game { margin-top: 36px; }
 
 .upload-game h2 { margin-bottom: 8px; }
-
-.card-heading p {
-  font-size: 13px
-}
 
 .main-player {
   width: 100%;
@@ -321,55 +237,6 @@ header {
   overflow-wrap: anywhere;
   color: #999;
   margin: 16px 0 0
-}
-
-.highlights>p {
-  font-size: 13px
-}
-
-.highlights>select {
-  width: 100%;
-  margin-bottom: 12px
-}
-
-.clip-list {
-  max-height: 600px;
-  overflow: auto
-}
-
-.clip-row {
-  display: flex;
-  gap: 12px;
-  width: 100%;
-  padding: 12px 8px;
-  text-align: left;
-  border-radius: 10px;
-  background: white;
-  color: #26262a;
-  border-bottom: 1px solid #f0f0f2
-}
-
-.clip-row:hover {
-  background: #f5f5f6
-}
-
-.clip-row>span {
-  min-width: 0
-}
-
-.clip-row strong {
-  font-size: 13px;
-  font-weight: 600;
-  display: block;
-  margin: 4px 0 7px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis
-}
-
-.clip-row small {
-  font-size: 11px;
-  color: #929299
 }
 
 .empty {
@@ -388,13 +255,6 @@ header {
   padding: 14px;
   border-radius: 10px;
   color: #333
-}
-
-footer {
-  font-size: 9px;
-  letter-spacing: 2px;
-  color: #aaa;
-  margin-top: 32px
 }
 
 .steps {
@@ -743,13 +603,8 @@ footer {
     padding: 28px 22px
   }
 
-  .workspace,
   .match-layout {
     grid-template-columns: 1fr
-  }
-
-  .clip-list {
-    max-height: 350px
   }
 
   .toolbar {
@@ -826,11 +681,6 @@ footer {
 
   .toolbar input {
     width: 100%
-  }
-
-  .player-card,
-  .highlights {
-    padding: 14px
   }
 
   .form-row-3 {
