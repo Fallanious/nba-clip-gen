@@ -7,7 +7,7 @@ interface Props {
   onStarted?: () => void;
 }
 
-const title = (name: string) => name.replace(/\.(mp4|mkv|webm)$/i, '').split(/[｜|]/)[0].trim();
+const title = (name: string) => name.replace(/\.(mp4|mkv|webm)$/i, '').trim();
 
 export default function UploadGame({ videos, onStarted }: Props) {
   const [video, setVideo] = useState('');

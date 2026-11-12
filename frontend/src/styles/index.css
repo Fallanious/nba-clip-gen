@@ -295,9 +295,9 @@ header {
 .upload-game {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 8px;
-  max-width: 560px
+  max-width: 920px
 }
 
 .card-heading p {
