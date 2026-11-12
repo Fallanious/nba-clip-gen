@@ -300,6 +300,10 @@ header {
   max-width: 920px
 }
 
+.upload-game + .upload-game { margin-top: 36px; }
+
+.upload-game h2 { margin-bottom: 8px; }
+
 .card-heading p {
   font-size: 13px
 }

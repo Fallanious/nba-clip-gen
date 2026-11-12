@@ -62,7 +62,7 @@ export default function EditLabels({ timestampFiles, onRefreshTimestamps }: Prop
   };
 
   return (
-    <Section title="4. Review Plays">
+    <Section title="3. Review Plays">
       <div className="form-group">
         <label>Timestamps File</label>
         <div className="form-row">

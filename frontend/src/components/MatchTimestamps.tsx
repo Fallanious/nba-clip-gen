@@ -247,7 +247,7 @@ export default function MatchTimestamps({
   const shownBox = draft || crop;
 
   return (
-    <Section title="3. Match Timestamps">
+    <Section title="2. Match Timestamps">
       <div className="match-layout">
         <div className="match-preview">
           {video ? (

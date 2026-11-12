@@ -92,7 +92,7 @@ export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
   };
 
   return (
-    <Section title="2. Scrape Play-by-Play">
+    <Section title="1. Scrape Play-by-Play">
       <div className="form-group">
         <label>Game</label>
         <select value={selectedVideo} onChange={e => { setSelectedVideo(e.target.value); setLookupNote(''); }}>

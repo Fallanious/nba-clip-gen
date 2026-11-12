@@ -33,7 +33,7 @@ export default function GenerateClips({ videos, timestampFiles, onRefreshTimesta
   };
 
   return (
-    <Section title="5. Generate Clips">
+    <Section title="4. Generate Clips">
       <div className="form-group">
         <label>Video File</label>
         <select value={video} onChange={e => setVideo(e.target.value)}>

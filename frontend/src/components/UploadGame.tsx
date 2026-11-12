@@ -38,9 +38,9 @@ export default function UploadGame({ videos, onStarted }: Props) {
     }
   };
 
-  return <>
-    <header><div><p className="eyebrow">STORE THE GAME</p><h1>Upload</h1><p>A 720p MKV goes up as-is. Anything larger is converted first, then sent to the private bucket.</p></div></header>
+  return (
     <div className="upload-game">
+      <h2>Upload</h2>
       <div className="form-group">
         <label htmlFor="upload-video">Film file</label>
         <select id="upload-video" value={video} onChange={e => { setVideo(e.target.value); setMessage(''); }}>
@@ -58,5 +58,5 @@ export default function UploadGame({ videos, onStarted }: Props) {
       {message && <p className={`download-message ${ok ? 'success' : 'failure'}`}>{message}</p>}
       {!videos.length && <p className="empty">No local footage yet. Add a file to the film folder first.</p>}
     </div>
-  </>;
+  );
 }
