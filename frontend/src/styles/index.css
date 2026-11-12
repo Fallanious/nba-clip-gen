@@ -1034,14 +1034,14 @@ button.pb-card:hover {
 }
 
 .main-player.pb-film {
-  width: min(100%, 480px);
+  width: min(100%, 800px);
   margin-bottom: 18px;
 }
 
 .pb-shimmer {
   position: relative;
   overflow: hidden;
-  width: min(100%, 480px);
+  width: min(100%, 800px);
   aspect-ratio: 16 / 9;
   margin-bottom: 18px;
   border-radius: 12px;
