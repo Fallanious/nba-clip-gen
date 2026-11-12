@@ -49,6 +49,7 @@ export default function PlayerBrowser() {
   const film = usePlayerClip();
   const [broken, setBroken] = useState<Record<number, boolean>>({});
   const endRef = useRef<HTMLLIElement>(null);
+  const playersEndRef = useRef<HTMLDivElement>(null);
   const selected = clips.selected;
   const archive = library.season ? `${library.season} archive` : '';
   const markBroken = (id: number) => setBroken(prev => ({ ...prev, [id]: true }));
@@ -63,6 +64,16 @@ export default function PlayerBrowser() {
     observer.observe(node);
     return () => observer.disconnect();
   }, [clips.hasMore, clips.clips.length, clips.loadMore, selected]);
+
+  useEffect(() => {
+    const node = playersEndRef.current;
+    if (!node || !library.hasMore || selected) return;
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) void library.loadMore();
+    });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [library.hasMore, library.players.length, library.loadMore, selected]);
 
   return (
     <>
@@ -159,8 +170,8 @@ export default function PlayerBrowser() {
             </select>
           </div>
           {library.error && <p role="alert" className="notice">{library.error}</p>}
-          <p className="pb-count" role="status">{library.loading ? 'Loading players…' : countLabel(library.shown.length, 'player with clips', 'players with clips')}</p>
-          {library.loading ? (
+          <p className="pb-count" role="status">{library.loading ? 'Loading players…' : countLabel(library.total, 'player with clips', 'players with clips')}</p>
+          {library.loading && !library.players.length ? (
             <div className="pb-grid" aria-hidden="true">
               {Array.from({ length: 6 }, (_, index) => (
                 <div className="pb-card pb-skeleton-card" key={index}>
@@ -174,7 +185,7 @@ export default function PlayerBrowser() {
             </div>
           ) : (
             <div className="pb-grid">
-              {library.shown.map(player => (
+              {library.players.map(player => (
                 <button className="pb-card" key={player.id} onClick={() => void clips.open(player)}>
                   <PlayerCard
                     player={player}
@@ -185,7 +196,21 @@ export default function PlayerBrowser() {
               ))}
             </div>
           )}
-          {!library.loading && !library.shown.length && <p className="empty">{library.players.length ? 'No players match your search.' : 'No players with clips yet.'}</p>}
+          {library.loadingMore && (
+            <div className="pb-grid" aria-hidden="true">
+              {Array.from({ length: 3 }, (_, index) => (
+                <div className="pb-card pb-skeleton-card" key={index}>
+                  <div className="pb-portrait pb-skeleton" />
+                  <div className="pb-info">
+                    <div className="pb-skeleton pb-skeleton-line" />
+                    <div className="pb-skeleton pb-skeleton-line short" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {library.hasMore && <div ref={playersEndRef} className="pb-more" aria-hidden="true" />}
+          {!library.loading && !library.loadingMore && !library.players.length && <p className="empty">{library.query || library.team ? 'No players match your search.' : 'No players with clips yet.'}</p>}
         </>
       )}
     </>

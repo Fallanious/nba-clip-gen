@@ -1,6 +1,7 @@
 """Players who have clips, and one cut of a clip from the S3 game."""
 
 import os
+import re
 import tempfile
 from datetime import timedelta
 from decimal import Decimal
@@ -84,6 +85,31 @@ def matchup_label(player_team, home, away):
     return f"{away} at {home}"
 
 
+def _like(text):
+    escaped = text.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+    return f"%{escaped}%"
+
+
+def player_page_request(args):
+    """The player id to start after, plus the search and team on this list."""
+    raw_cursor = args.get("cursor", "")
+    cursor = None
+    if raw_cursor != "":
+        try:
+            cursor = int(raw_cursor)
+        except (TypeError, ValueError):
+            raise ValueError("Cursor is not a player id")
+        if cursor < 1:
+            raise ValueError("Cursor is not a player id")
+    team = args.get("team", "").strip().upper()
+    if team and not re.fullmatch(r"[A-Z]{2,3}", team):
+        raise ValueError("Team is not valid")
+    query = " ".join(args.get("q", "").split())
+    if len(query) > 80:
+        raise ValueError("Search is too long")
+    return cursor, team or None, query or None
+
+
 def clip_page_request(args):
     """The clip id to start after, and an optional role. The first page has no cursor."""
     raw_cursor = args.get("cursor", "")
@@ -128,15 +154,41 @@ def _open(params):
         return None, (jsonify({"error": "Database login failed."}), 503)
 
 
+def _player_payload(row):
+    return {
+        "id": row[0],
+        "bbref_id": row[1],
+        "full_name": row[2],
+        "position": position_label(row[3]),
+        "headshot_url": row[4],
+        "team": row[5] or "",
+        "clips": row[6],
+        "games": row[7],
+    }
+
+
 @bp.route("/api/players")
 def list_players_with_clips():
-    """Players that already have at least one clip link."""
+    """One page of players who have clips. The cursor is the last player id already shown."""
+    try:
+        cursor, team, query = player_page_request(request.args)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
     params, error = _db_params()
     if error:
         return error
     conn, error = _open(params)
     if error:
         return error
+    filters = []
+    filter_params = []
+    if team:
+        filters.append("t.abbr = %s")
+        filter_params.append(team)
+    if query:
+        filters.append("p.full_name ILIKE %s ESCAPE '\\'")
+        filter_params.append(_like(query))
+    filter_sql = (" AND " + " AND ".join(filters)) if filters else ""
     with conn:
         seasons = [
             season_label(row[0])
@@ -149,8 +201,41 @@ def list_players_with_clips():
                 """
             )
         ]
+        teams = [
+            row[0]
+            for row in conn.execute(
+                """
+                SELECT DISTINCT t.abbr
+                FROM players p
+                JOIN clip_players cp ON cp.player_id = p.id
+                JOIN teams t ON t.id = p.team_id
+                ORDER BY t.abbr
+                """
+            )
+        ]
+        mark = None
+        if cursor is not None:
+            mark = conn.execute(
+                f"""
+                SELECT p.full_name, p.id
+                FROM players p
+                LEFT JOIN teams t ON t.id = p.team_id
+                WHERE p.id = %s
+                  AND EXISTS (SELECT 1 FROM clip_players cp WHERE cp.player_id = p.id)
+                  {filter_sql}
+                """,
+                [cursor, *filter_params],
+            ).fetchone()
+            if mark is None:
+                return jsonify({"error": "Cursor player was not found."}), 404
+        after_sql = ""
+        page_params = list(filter_params)
+        if mark is not None:
+            after_sql = "AND (p.full_name, p.id) > (%s, %s)"
+            page_params.extend(mark)
+        page_params.append(CLIP_PAGE + 1)
         rows = conn.execute(
-            """
+            f"""
             SELECT p.id, p.bbref_id, p.full_name, p.position, p.headshot_url,
                    t.abbr,
                    COUNT(DISTINCT cp.clip_id),
@@ -159,24 +244,39 @@ def list_players_with_clips():
             JOIN clip_players cp ON cp.player_id = p.id
             JOIN clips c ON c.id = cp.clip_id
             LEFT JOIN teams t ON t.id = p.team_id
+            WHERE TRUE
+            {filter_sql}
+            {after_sql}
             GROUP BY p.id, t.abbr
-            ORDER BY p.full_name
-            """
+            ORDER BY p.full_name, p.id
+            LIMIT %s
+            """,
+            page_params,
         ).fetchall()
-    players = [
-        {
-            "id": row[0],
-            "bbref_id": row[1],
-            "full_name": row[2],
-            "position": position_label(row[3]),
-            "headshot_url": row[4],
-            "team": row[5] or "",
-            "clips": row[6],
-            "games": row[7],
-        }
-        for row in rows
-    ]
-    return jsonify({"season": seasons[0] if len(seasons) == 1 else "", "seasons": seasons, "players": players})
+        total = conn.execute(
+            f"""
+            SELECT COUNT(*) FROM (
+                SELECT p.id
+                FROM players p
+                JOIN clip_players cp ON cp.player_id = p.id
+                LEFT JOIN teams t ON t.id = p.team_id
+                WHERE TRUE
+                {filter_sql}
+                GROUP BY p.id
+            ) counted
+            """,
+            filter_params,
+        ).fetchone()[0]
+    has_more = len(rows) > CLIP_PAGE
+    page = rows[:CLIP_PAGE]
+    return jsonify({
+        "season": seasons[0] if len(seasons) == 1 else "",
+        "seasons": seasons,
+        "teams": teams,
+        "players": [_player_payload(row) for row in page],
+        "cursor": page[-1][0] if has_more else None,
+        "total": total,
+    })
 
 
 def _clip_payload(row, team):

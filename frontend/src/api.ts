@@ -139,8 +139,13 @@ export async function startUpload(video: string): Promise<JobStartResponse> {
   return postJSON('/api/upload', { video });
 }
 
-export async function fetchPlayerLibrary(): Promise<PlayerLibrary> {
-  return fetchJSON('/api/players');
+export async function fetchPlayerLibrary(page?: { cursor?: number | null; team?: string; q?: string }): Promise<PlayerLibrary> {
+  const params = new URLSearchParams();
+  if (page?.cursor) params.set('cursor', String(page.cursor));
+  if (page?.team) params.set('team', page.team);
+  if (page?.q) params.set('q', page.q);
+  const query = params.toString();
+  return fetchJSON(`/api/players${query ? `?${query}` : ''}`);
 }
 
 export async function fetchPlayerClips(playerId: number, page?: { cursor?: number | null; role?: string }): Promise<PlayerClipPage> {

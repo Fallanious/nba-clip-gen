@@ -155,7 +155,10 @@ export interface BrowserPlayer {
 export interface PlayerLibrary {
   season: string;
   seasons: string[];
+  teams: string[];
   players: BrowserPlayer[];
+  cursor: number | null;
+  total: number;
 }
 
 export interface PlayerClipRole {

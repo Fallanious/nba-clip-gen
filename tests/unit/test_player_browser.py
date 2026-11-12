@@ -9,6 +9,7 @@ from routes.players import (
     clock_label,
     duration_label,
     matchup_label,
+    player_page_request,
     position_label,
     season_label,
 )
@@ -50,6 +51,17 @@ def test_clip_page_starts_at_the_beginning_and_rejects_a_bad_cursor():
         except ValueError:
             continue
         raise AssertionError(f"page request {args} should be refused")
+
+
+def test_player_page_starts_at_the_beginning_and_keeps_the_search():
+    assert player_page_request({}) == (None, None, None)
+    assert player_page_request({"cursor": "2066", "team": "phi", "q": "okoro"}) == (2066, "PHI", "okoro")
+    for args in ({"cursor": "nope"}, {"team": "Philadelphia"}, {"q": "x" * 81}):
+        try:
+            player_page_request(args)
+        except ValueError:
+            continue
+        raise AssertionError(f"player page {args} should be refused")
 
 
 def test_clip_window_rejects_a_span_that_would_cut_the_game():
