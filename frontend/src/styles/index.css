@@ -1094,6 +1094,8 @@ button.pb-card:hover {
   border-top: 1px solid #e2e2e7;
 }
 
+.pb-more { height: 1px; }
+
 .pb-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 85px 45px;

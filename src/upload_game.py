@@ -4,6 +4,7 @@
 import argparse
 import os
 import sys
+import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -11,6 +12,7 @@ from persist_matcher_clips import PersistRefused, direct_database_url, save_uplo
 from routes.videos import TEAM_CODES, game_output_name
 from services.storage import s3_key_for_game, upload_game
 from utils.video import (
+    TARGET_BYTES,
     get_video_duration,
     is_upload_ready,
     probe_video,
@@ -40,16 +42,18 @@ def _converted_path(path, parsed_name):
     """Put the 720p file beside the source, under the same game title."""
     folder = os.path.dirname(path)
     final_path = os.path.join(folder, parsed_name)
-    if os.path.realpath(final_path) == os.path.realpath(path):
-        work_name, _parsed = game_output_name(os.path.basename(path), ".converting.mkv")
-        return os.path.join(folder, work_name), final_path
-    return final_path, final_path
+    fd, work_path = tempfile.mkstemp(
+        prefix=os.path.splitext(parsed_name)[0] + ".",
+        suffix=".converting.mkv", dir=folder,
+    )
+    os.close(fd)
+    return work_path, final_path
 
 
 def prepare_and_upload(video_arg):
     path = resolve_film_file(video_arg)
     try:
-        mkv_name, parsed = game_output_name(os.path.basename(path), ".mkv")
+        mkv_name, parsed = game_output_name(os.path.basename(path), ".storage.mkv")
     except ValueError as exc:
         print(f"Error: {exc}")
         return 1
@@ -69,13 +73,20 @@ def prepare_and_upload(video_arg):
     named = None
     try:
         if is_upload_ready(info):
-            print(f"Already 720p MKV ({info['height']}px). Uploading as-is.", flush=True)
+            print(f"Already silent, within 250 MB, <=720p MKV ({info['height']}px). Uploading as-is.", flush=True)
             named = path
         else:
             height = info["height"] or "unknown"
             work_path, upload_path = _converted_path(path, mkv_name)
-            print(f"Converting {height}px video to 720p MKV: {os.path.basename(upload_path)}", flush=True)
+            print(f"Converting {height}px video to silent 720p HEVC (~250 MB): {os.path.basename(upload_path)}", flush=True)
             mode = transcode_to_mkv(path, work_path, info["height"])
+            encoded = probe_video(work_path)
+            if (
+                not encoded or not encoded.get("height")
+                or encoded["height"] > 720 or encoded.get("has_audio")
+                or not 0 < encoded.get("size", 0) <= TARGET_BYTES * 1.02
+            ):
+                raise RuntimeError("Converted video failed the silent 720p/~250 MB storage check.")
             kept_name, kept = game_output_name(os.path.basename(work_path), os.path.splitext(work_path)[1])
             if kept["bbref_id"] != bbref_id or kept_name != os.path.basename(work_path):
                 raise ValueError("Converted filename lost the teams or the date.")

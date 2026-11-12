@@ -4,6 +4,7 @@ from datetime import timedelta
 from decimal import Decimal
 
 from routes.players import (
+    clip_page_request,
     clip_window,
     clock_label,
     duration_label,
@@ -38,6 +39,17 @@ def test_matchup_puts_the_player_team_first():
 def test_season_uses_the_archive_dash():
     assert season_label("2026-27") == "2026–27"
     assert season_label("") == ""
+
+
+def test_clip_page_starts_at_the_beginning_and_rejects_a_bad_cursor():
+    assert clip_page_request({}) == (None, None)
+    assert clip_page_request({"cursor": "50015", "role": "shot"}) == (50015, "shot")
+    for args in ({"cursor": "0"}, {"cursor": "next"}, {"role": "dunk"}):
+        try:
+            clip_page_request(args)
+        except ValueError:
+            continue
+        raise AssertionError(f"page request {args} should be refused")
 
 
 def test_clip_window_rejects_a_span_that_would_cut_the_game():

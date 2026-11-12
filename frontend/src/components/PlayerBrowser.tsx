@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePlayerClip } from '../hooks/usePlayerClip';
 import { usePlayerClips } from '../hooks/usePlayerClips';
 import { usePlayerLibrary } from '../hooks/usePlayerLibrary';
@@ -48,9 +48,21 @@ export default function PlayerBrowser() {
   const clips = usePlayerClips();
   const film = usePlayerClip();
   const [broken, setBroken] = useState<Record<number, boolean>>({});
+  const endRef = useRef<HTMLLIElement>(null);
   const selected = clips.selected;
   const archive = library.season ? `${library.season} archive` : '';
   const markBroken = (id: number) => setBroken(prev => ({ ...prev, [id]: true }));
+  const filters = [{ role: '', label: 'All plays' }, ...clips.roles];
+
+  useEffect(() => {
+    const node = endRef.current;
+    if (!node || !clips.hasMore) return;
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) void clips.loadMore();
+    });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [clips.hasMore, clips.clips.length, clips.loadMore, selected]);
 
   return (
     <>
@@ -68,12 +80,12 @@ export default function PlayerBrowser() {
           <section className="pb-plays" aria-label="Player plays">
             <div className="pb-plays-head">
               <h2>Plays</h2>
-              <span role="status">{clips.loading ? 'Loading plays…' : clips.clips.length ? `${countLabel(clips.clips.length, 'play', 'plays')}${library.season ? ` · ${library.season}` : ''}` : ''}</span>
+              <span role="status">{clips.loading ? 'Loading plays…' : !clips.role && selected.clips ? `${countLabel(selected.clips, 'play', 'plays')}${library.season ? ` · ${library.season}` : ''}` : ''}</span>
             </div>
             {clips.error && <p role="alert" className="notice">{clips.error}</p>}
             <div className="pb-types">
-              {clips.roles.map(label => (
-                <button key={label} aria-pressed={clips.role === label} className={clips.role === label ? 'active' : ''} onClick={() => { film.clear(); clips.setRole(label); }}>{label}</button>
+              {filters.map(item => (
+                <button key={item.label} aria-pressed={clips.role === item.role} className={clips.role === item.role ? 'active' : ''} onClick={() => { film.clear(); clips.chooseRole(item.role); }}>{item.label}</button>
               ))}
             </div>
             {film.cutting && !film.url && <div className="pb-shimmer" role="status" aria-label="Cutting this play" />}
@@ -82,8 +94,8 @@ export default function PlayerBrowser() {
               <video className="main-player pb-film" controls preload="auto" src={film.url} />
             )}
             <ul className="pb-list">
-              {clips.loading && Array.from({ length: 5 }, (_, index) => (
-                <li key={index} aria-hidden="true">
+              {clips.loading && !clips.shown.length && Array.from({ length: 5 }, (_, index) => (
+                <li key={`loading-${index}`} aria-hidden="true">
                   <div className="pb-row">
                     <div>
                       <div className="pb-skeleton pb-skeleton-line" />
@@ -110,8 +122,21 @@ export default function PlayerBrowser() {
                   </button>
                 </li>
               ))}
+              {clips.loadingMore && Array.from({ length: 2 }, (_, index) => (
+                <li key={`more-${index}`} aria-hidden="true">
+                  <div className="pb-row">
+                    <div>
+                      <div className="pb-skeleton pb-skeleton-line" />
+                      <div className="pb-skeleton pb-skeleton-line short" />
+                    </div>
+                    <div className="pb-skeleton pb-skeleton-line pb-kind" />
+                    <div className="pb-skeleton pb-skeleton-line" />
+                  </div>
+                </li>
+              ))}
+              {clips.hasMore && <li ref={endRef} className="pb-more" aria-hidden="true" />}
             </ul>
-            {!clips.loading && !clips.shown.length && <p className="empty">No plays in this group.</p>}
+            {!clips.loading && !clips.loadingMore && !clips.shown.length && <p className="empty">No plays in this group.</p>}
           </section>
         </>
       ) : (

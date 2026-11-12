@@ -19,6 +19,7 @@ def test_remote_cut_seeks_before_reading(monkeypatch, tmp_path):
     assert ffmpeg.index("-ss") < ffmpeg.index("-t") < ffmpeg.index("-i")
     assert "-reconnect" in ffmpeg
     assert "libx264" in ffmpeg
+    assert ffmpeg[ffmpeg.index("-crf") + 1] == "18"
 
 
 def test_remote_failure_does_not_print_the_signed_url(monkeypatch, tmp_path, capsys):

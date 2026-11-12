@@ -144,7 +144,7 @@ def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True,
         cmd.extend(['-c', 'copy'])
     else:
         # Re-encode for compatibility or quality
-        cmd.extend(['-c:v', 'libx264', '-c:a', 'aac'])
+        cmd.extend(['-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-c:a', 'aac'])
     
     if not keep_audio:
         cmd.extend(['-an'])  # Remove audio

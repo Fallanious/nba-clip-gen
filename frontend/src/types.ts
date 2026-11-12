@@ -158,6 +158,19 @@ export interface PlayerLibrary {
   players: BrowserPlayer[];
 }
 
+export interface PlayerClipRole {
+  role: string;
+  label: string;
+}
+
+export interface PlayerClipPage {
+  player: string;
+  team: string;
+  roles: PlayerClipRole[];
+  clips: PlayerClip[];
+  cursor: number | null;
+}
+
 export interface PlayerClip {
   id: number;
   role: string;

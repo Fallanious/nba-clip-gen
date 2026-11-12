@@ -12,7 +12,7 @@ import type {
   MatchResponse,
   ProcessJob,
   PlayerLibrary,
-  PlayerClip,
+  PlayerClipPage,
 } from './types';
 
 const BASE = '';
@@ -143,8 +143,12 @@ export async function fetchPlayerLibrary(): Promise<PlayerLibrary> {
   return fetchJSON('/api/players');
 }
 
-export async function fetchPlayerClips(playerId: number): Promise<{ player: string; team: string; clips: PlayerClip[] }> {
-  return fetchJSON(`/api/players/${playerId}/clips`);
+export async function fetchPlayerClips(playerId: number, page?: { cursor?: number | null; role?: string }): Promise<PlayerClipPage> {
+  const params = new URLSearchParams();
+  if (page?.cursor) params.set('cursor', String(page.cursor));
+  if (page?.role) params.set('role', page.role);
+  const query = params.toString();
+  return fetchJSON(`/api/players/${playerId}/clips${query ? `?${query}` : ''}`);
 }
 
 export async function fetchPlayerClip(playerId: number, clipId: number): Promise<Blob> {

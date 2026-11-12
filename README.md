@@ -354,3 +354,23 @@ clip/
 
 This project is for educational and personal use only. Respect YouTube's Terms of Service and Basketball Reference's usage policies when downloading and scraping data.
 
+
+### S3 game storage compression
+
+The upload action prepares games at **up to 720p, approximately 250 MB (decimal),
+with no audio**, preserving the source frame rate. Larger files use FFmpeg's
+`libx265` encoder, `slow` preset, and two-pass average bitrate calculated from the
+recording's duration, reserving 0.5% for MKV overhead. The budget is approximate;
+outputs over 255 MB fail validation rather than being uploaded unexpectedly.
+Encoding can take substantially longer than the video's running time.
+
+A silent MKV already at or below 720p and 250 MB uploads unchanged. Other small
+sources at or below 720p are remuxed with video only, avoiding another lossy
+encode. Converted games are saved beside the original as `*.storage.mkv`; the
+original is retained. Pass statistics are temporary, and conversion errors stop
+the upload. Existing S3 games are not automatically recompressed.
+
+MP4 clips requiring re-encoding use H.264, `medium`, CRF 18 to limit further
+quality loss. Storage sources have no audio, so their generated clips are silent.
+A fixed 250 MB budget allocates less bitrate to longer recordings; it does not
+guarantee the same visual quality for every game.

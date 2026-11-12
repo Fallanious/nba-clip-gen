@@ -5,11 +5,12 @@ import tempfile
 from datetime import timedelta
 from decimal import Decimal
 
-from flask import Blueprint, jsonify, send_file
+from flask import Blueprint, jsonify, request, send_file
 
 bp = Blueprint("players", __name__)
 
 MAX_CLIP_S = 120
+CLIP_PAGE = 15
 
 ROLE_LABELS = {
     "shot": "Shot",
@@ -81,6 +82,23 @@ def matchup_label(player_team, home, away):
     if player_team and player_team == away:
         return f"{away} vs {home}"
     return f"{away} at {home}"
+
+
+def clip_page_request(args):
+    """The clip id to start after, and an optional role. The first page has no cursor."""
+    raw_cursor = args.get("cursor", "")
+    cursor = None
+    if raw_cursor != "":
+        try:
+            cursor = int(raw_cursor)
+        except (TypeError, ValueError):
+            raise ValueError("Cursor is not a clip id")
+        if cursor < 1:
+            raise ValueError("Cursor is not a clip id")
+    raw_role = args.get("role", "")
+    if raw_role and raw_role not in ROLE_LABELS:
+        raise ValueError("Role is not valid")
+    return cursor, raw_role or None
 
 
 def clip_window(start_s, end_s):
@@ -161,9 +179,31 @@ def list_players_with_clips():
     return jsonify({"season": seasons[0] if len(seasons) == 1 else "", "seasons": seasons, "players": players})
 
 
+def _clip_payload(row, team):
+    return {
+        "id": row[0],
+        "role": row[1],
+        "role_label": ROLE_LABELS.get(row[1], row[1]),
+        "description": row[2],
+        "period": row[3],
+        "game_clock": clock_label(row[4]),
+        "duration_label": duration_label(row[5]),
+        "video_start_s": float(row[6]),
+        "video_end_s": float(row[7]),
+        "bbref_id": row[8],
+        "game_date": row[9].isoformat(),
+        "season": season_label(row[10]),
+        "matchup": matchup_label(team, row[11], row[12]),
+    }
+
+
 @bp.route("/api/players/<int:player_id>/clips")
 def list_player_clips(player_id):
-    """Metadata for every clip linked to this player. No video bytes."""
+    """One page of clip metadata. The cursor is the last clip id already shown."""
+    try:
+        cursor, role = clip_page_request(request.args)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
     params, error = _db_params()
     if error:
         return error
@@ -182,41 +222,81 @@ def list_player_clips(player_id):
         ).fetchone()
         if player is None:
             return jsonify({"error": "Player not found."}), 404
-        rows = conn.execute(
-            """
-            SELECT c.id, cp.role::text, c.description, c.period, c.game_clock,
-                   c.duration_s, c.video_start_s, c.video_end_s,
-                   g.bbref_id, g.game_date, g.season, ht.abbr, at.abbr
+        found_roles = {
+            row[0]
+            for row in conn.execute(
+                "SELECT DISTINCT cp.role::text FROM clip_players cp WHERE cp.player_id = %s",
+                (player_id,),
+            )
+        }
+        mark = None
+        if cursor is not None:
+            mark = conn.execute(
+                """
+                SELECT c.video_start_s, c.play_index, c.id
+                FROM clips c
+                JOIN clip_players cp ON cp.clip_id = c.id
+                WHERE cp.player_id = %s AND c.id = %s
+                  AND (%s::text IS NULL OR cp.role::text = %s)
+                LIMIT 1
+                """,
+                (player_id, cursor, role, role),
+            ).fetchone()
+            if mark is None:
+                return jsonify({"error": "Cursor clip was not found."}), 404
+        page_params = [player_id]
+        role_sql = ""
+        if role:
+            role_sql = "AND cp.role::text = %s"
+            page_params.append(role)
+        after_sql = ""
+        if mark is not None:
+            after_sql = "AND (c.video_start_s, c.play_index, c.id) > (%s, %s, %s)"
+            page_params.extend(mark)
+        page_params.append(CLIP_PAGE + 1)
+        page = conn.execute(
+            f"""
+            SELECT c.id
             FROM clip_players cp
             JOIN clips c ON c.id = cp.clip_id
-            JOIN games g ON g.id = c.game_id
-            JOIN teams ht ON ht.id = g.home_team_id
-            JOIN teams at ON at.id = g.away_team_id
             WHERE cp.player_id = %s
-            ORDER BY c.video_start_s, c.play_index, cp.role::text
+            {role_sql}
+            {after_sql}
+            GROUP BY c.id, c.video_start_s, c.play_index
+            ORDER BY c.video_start_s, c.play_index, c.id
+            LIMIT %s
             """,
-            (player_id,),
+            page_params,
         ).fetchall()
-    clips = []
-    for row in rows:
-        clips.append(
-            {
-                "id": row[0],
-                "role": row[1],
-                "role_label": ROLE_LABELS.get(row[1], row[1]),
-                "description": row[2],
-                "period": row[3],
-                "game_clock": clock_label(row[4]),
-                "duration_label": duration_label(row[5]),
-                "video_start_s": float(row[6]),
-                "video_end_s": float(row[7]),
-                "bbref_id": row[8],
-                "game_date": row[9].isoformat(),
-                "season": season_label(row[10]),
-                "matchup": matchup_label(player[1], row[11], row[12]),
-            }
-        )
-    return jsonify({"player": player[0], "team": player[1] or "", "clips": clips})
+        has_more = len(page) > CLIP_PAGE
+        clip_ids = [row[0] for row in page[:CLIP_PAGE]]
+        rows = []
+        if clip_ids:
+            rows = conn.execute(
+                """
+                SELECT c.id, cp.role::text, c.description, c.period, c.game_clock,
+                       c.duration_s, c.video_start_s, c.video_end_s,
+                       g.bbref_id, g.game_date, g.season, ht.abbr, at.abbr
+                FROM clip_players cp
+                JOIN clips c ON c.id = cp.clip_id
+                JOIN games g ON g.id = c.game_id
+                JOIN teams ht ON ht.id = g.home_team_id
+                JOIN teams at ON at.id = g.away_team_id
+                WHERE cp.player_id = %s AND c.id = ANY(%s)
+                  AND (%s::text IS NULL OR cp.role::text = %s)
+                ORDER BY c.video_start_s, c.play_index, c.id, cp.role::text
+                """,
+                (player_id, clip_ids, role, role),
+            ).fetchall()
+    roles = [{"role": name, "label": ROLE_LABELS[name]} for name in ROLE_LABELS if name in found_roles]
+    roles.extend({"role": name, "label": name} for name in sorted(found_roles - set(ROLE_LABELS)))
+    return jsonify({
+        "player": player[0],
+        "team": player[1] or "",
+        "roles": roles,
+        "clips": [_clip_payload(row, player[1]) for row in rows],
+        "cursor": clip_ids[-1] if has_more else None,
+    })
 
 
 def _remove(path):
