@@ -13,7 +13,6 @@ def create_app():
     from routes.videos import bp as videos_bp
     from routes.timestamps import bp as timestamps_bp
     from routes.actions import bp as actions_bp
-    from routes.players import bp as players_bp
     
     app = Flask(__name__)
     config.validate()
@@ -25,7 +24,6 @@ def create_app():
     app.register_blueprint(videos_bp)
     app.register_blueprint(timestamps_bp)
     app.register_blueprint(actions_bp)
-    app.register_blueprint(players_bp)
     
     @app.before_request
     def add_request_id():
@@ -51,5 +49,5 @@ if __name__ == "__main__":
     app.run(
         debug=config.DEBUG,
         host=os.getenv("BIND_HOST", "127.0.0.1"),  # Default to localhost; use 0.0.0.0 or gunicorn in prod
-        port=int(os.getenv("PORT", "5001"))
+        port=int(os.getenv("PORT", "5008"))
     )

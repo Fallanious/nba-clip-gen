@@ -6,24 +6,14 @@ A Python-based toolkit for downloading NBA game footage from YouTube, analyzing 
 
 This project uses computer vision (via Ollama LLMs) to read game scoreboards from video frames and match them with official play-by-play data from Basketball Reference, enabling automatic generation of individual play clips from full game footage.
 
-## Web UI
+## Web apps
 
-The project includes a React frontend in [`frontend/`](frontend/) that wraps the full clip pipeline in a browser UI. It talks to the Flask API in `src/app.py` and mirrors the CLI workflow: download video, scrape play-by-play, match timestamps, review labels, and generate clips.
+The project has two independently built apps sharing the existing Neon database:
 
-**Development** (hot reload, API proxied to Flask on port 5001):
+- **CLIP** (`frontend/`, `src/app.py`): private upload/download, splice, and processes workspace. Run `python3 src/app.py`, then `cd frontend && npm ci && npm run dev`. UI: http://localhost:5173; API: port 5008.
+- **Eye Test** now lives in the standalone [eyetest project](../eyetest/README.md), with its own frontend, API, scripts and tests. UI: http://localhost:5174; API: port 5009.
 
-```bash
-# Terminal 1 — Ollama (skip if already running)
-ollama serve                  # only if the server is not up
-
-# Terminal 2 — backend
-python3 src/app.py
-
-# Terminal 3 — frontend
-cd frontend && npm install && npm run dev
-```
-
-Open http://localhost:5173
+See [Eye Test setup and deployment](../eyetest/README.md) for database access, rate limits, and production hosting. Ollama is only required for CLIP's matching workflow.
 
 ## Focused Workflow Docs
 

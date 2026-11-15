@@ -101,7 +101,7 @@ def probe_codecs(path):
     return vcodec, acodec
 
 
-def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True, fast_copy=True, quiet=False):
+def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True, fast_copy=True):
     """
     Extract a clip from video using ffmpeg.
     
@@ -129,15 +129,12 @@ def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True,
             force_reencode = True
 
     # -ss and -t before -i seek and then read only this window.
-    # A remote game otherwise has to be copied in full before the cut.
-    cmd = ['ffmpeg']
-    if str(video_path).startswith('http'):
-        cmd.extend(['-reconnect', '1', '-reconnect_streamed', '1', '-reconnect_delay_max', '5'])
-    cmd.extend([
+    cmd = [
+        'ffmpeg',
         '-ss', str(start_time),
         '-t', str(duration),
         '-i', video_path,
-    ])
+    ]
     
     if fast_copy and not force_reencode:
         # Fast: copy codecs without re-encoding
@@ -160,9 +157,6 @@ def extract_clip(video_path, start_time, end_time, output_path, keep_audio=True,
         subprocess.run(cmd, check=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE, timeout=180)
         return True
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
-        if quiet or str(video_path).startswith('http'):
-            print("    Error: ffmpeg could not cut this clip")
-            return False
         print(f"    Error: {e}")
         stderr = getattr(e, 'stderr', None)
         if stderr:

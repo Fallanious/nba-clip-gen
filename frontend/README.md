@@ -1,3 +1,7 @@
+# CLIP operations workspace
+
+Upload/download, splice, and process management live here. The public Players experience has moved to [Eye Test](../../eyetest/README.md).
+
 # NBA Clip Generator — Frontend
 
 React + TypeScript UI for the NBA clip pipeline. Each section in the app maps to a CLI step in the root [README](../README.md).
@@ -5,7 +9,7 @@ React + TypeScript UI for the NBA clip pipeline. Each section in the app maps to
 ## Prerequisites
 
 - **Node.js 18+**
-- **Python backend** running at http://localhost:5001 (`python3 src/app.py` from the project root)
+- **Python backend** running at http://localhost:5008 (`python3 src/app.py` from the project root)
 - **Ollama** running locally (required for timestamp matching) — the status bar at the top shows whether it is online
 
 ### Ollama
@@ -44,7 +48,7 @@ python3 src/app.py
 cd frontend && npm run dev
 ```
 
-Open http://localhost:5173. Vite proxies `/api` requests to the backend on port 5001.
+Open http://localhost:5173. Vite proxies `/api` requests to the backend on port 5008.
 
 ## Production build
 
@@ -55,7 +59,7 @@ cd frontend && npm run build
 python3 ../src/app.py
 ```
 
-Open http://localhost:5001.
+Open http://localhost:5008.
 
 ## UI walkthrough
 
