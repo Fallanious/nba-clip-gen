@@ -1,24 +1,16 @@
 #!/usr/bin/env python3
-"""Prepare a local game and upload it to the private S3 bucket."""
+"""Upload a local game unchanged to the private S3 bucket."""
 
 import argparse
 import os
 import sys
-import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from persist_matcher_clips import PersistRefused, direct_database_url, save_uploaded_game
 from routes.videos import TEAM_CODES, game_output_name
 from services.storage import s3_key_for_game, upload_game
-from utils.video import (
-    TARGET_BYTES,
-    get_video_duration,
-    is_upload_ready,
-    probe_video,
-    resolve_film_file,
-    transcode_to_mkv,
-)
+from utils.video import get_video_duration, probe_video, resolve_film_file
 
 
 def _progress(total_bytes):
@@ -38,22 +30,10 @@ def _progress(total_bytes):
     return callback
 
 
-def _converted_path(path, parsed_name):
-    """Put the 720p file beside the source, under the same game title."""
-    folder = os.path.dirname(path)
-    final_path = os.path.join(folder, parsed_name)
-    fd, work_path = tempfile.mkstemp(
-        prefix=os.path.splitext(parsed_name)[0] + ".",
-        suffix=".converting.mkv", dir=folder,
-    )
-    os.close(fd)
-    return work_path, final_path
-
-
 def prepare_and_upload(video_arg):
     path = resolve_film_file(video_arg)
     try:
-        mkv_name, parsed = game_output_name(os.path.basename(path), ".storage.mkv")
+        _, parsed = game_output_name(os.path.basename(path), os.path.splitext(path)[1])
     except ValueError as exc:
         print(f"Error: {exc}")
         return 1
@@ -69,33 +49,8 @@ def prepare_and_upload(video_arg):
         print(f"Error: {parsed['away_team']} is not a known team.")
         return 1
     upload_path = path
-    work_path = None
-    named = None
     try:
-        if is_upload_ready(info):
-            print(f"Already silent, within 250 MB, <=720p MKV ({info['height']}px). Uploading as-is.", flush=True)
-            named = path
-        else:
-            height = info["height"] or "unknown"
-            work_path, upload_path = _converted_path(path, mkv_name)
-            print(f"Converting {height}px video to silent 720p HEVC (~250 MB): {os.path.basename(upload_path)}", flush=True)
-            mode = transcode_to_mkv(path, work_path, info["height"])
-            encoded = probe_video(work_path)
-            if (
-                not encoded or not encoded.get("height")
-                or encoded["height"] > 720 or encoded.get("has_audio")
-                or not 0 < encoded.get("size", 0) <= TARGET_BYTES * 1.02
-            ):
-                raise RuntimeError("Converted video failed the silent 720p/~250 MB storage check.")
-            kept_name, kept = game_output_name(os.path.basename(work_path), os.path.splitext(work_path)[1])
-            if kept["bbref_id"] != bbref_id or kept_name != os.path.basename(work_path):
-                raise ValueError("Converted filename lost the teams or the date.")
-            if os.path.realpath(work_path) != os.path.realpath(upload_path):
-                os.replace(work_path, upload_path)
-                work_path = None
-            named = upload_path
-            print(f"Convert finished ({mode}). Game id {bbref_id}.", flush=True)
-
+        print("Uploading original file without conversion.", flush=True)
         size = os.path.getsize(upload_path)
         key = s3_key_for_game(bbref_id, upload_path)
         print(f"Uploading {key} ({size / (1024 * 1024):.0f} MB) in 64 MB parts.", flush=True)
@@ -114,13 +69,6 @@ def prepare_and_upload(video_arg):
         return 0
     except (ValueError, RuntimeError, PersistRefused) as exc:
         print(f"Error: {exc}")
-        if (
-            work_path
-            and os.path.exists(work_path)
-            and os.path.realpath(work_path) != os.path.realpath(path)
-            and (named is None or os.path.realpath(work_path) != os.path.realpath(named))
-        ):
-            os.remove(work_path)
         return 1
 
 

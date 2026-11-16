@@ -279,10 +279,10 @@ class TestRealYtDlpCli:
         parsed = parse_options(_ytdlp_args(cmd))
         assert parsed.urls == [SAFE_URL]
         opts = parsed.ydl_opts
-        assert opts["merge_output_format"] == "mkv"
+        assert opts["merge_output_format"] == "mp4"
         assert opts["restrictfilenames"] is False
         assert opts["noplaylist"] is True
-        assert opts["format"] == "bv*+ba/b"
+        assert opts["format"] == "bv[vcodec^=av01][height<=720]+ba[acodec^=mp4a]/b[vcodec^=av01][height<=720]"
         assert "node" in opts["js_runtimes"]
         assert "%(title)s" in str(opts["outtmpl"])
 

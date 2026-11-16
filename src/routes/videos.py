@@ -113,8 +113,7 @@ def game_output_name(filename, ext=".mkv"):
 def serve_video(filename):
     """Serve a video file from the film directory with range request support.
 
-    Full games stay MKV (video/x-matroska) and are not remuxed, to keep size down.
-    Safari is not supported for full-game playback; clips are mp4 and work everywhere.
+    Full games are served unchanged. Playback requires AV1 support for AV1 downloads.
     """
     film_dir = os.path.join(BASE_DIR, "film")
     kwargs = {"conditional": True}

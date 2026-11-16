@@ -106,21 +106,22 @@ Required packages:
 
 ### Step 1: Download Video from YouTube
 
-Download NBA game footage as MKV (Matroska format):
+Download NBA game footage as AV1 in MP4:
 
 ```bash
 python3 src/download_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-**Output:** `film/<VIDEO_ID>.mkv` (ASCII-restricted filename from the YouTube video id)
+**Output:** `film/<video title>.mp4`
 
 **Configuration:**
 
-The download script uses the recommended yt-dlp invocation for optimal quality:
-- Format: `bv*+ba/b` (best video + best audio, fallback to best combined)
-- Resolution capped by default (prevents excessive file sizes)
-- Output format: MKV (better container for modern codecs)
-- **Note:** Full games stay MKV to keep file size down and are not remuxed. Safari is not supported for full-game playback. Generated clips are MP4 (H.264/AAC) and work in every browser.
+The downloader selects native AV1 video with AAC audio and packages it as MP4.
+Resolution is capped at 720p by default. Files above 180 MB are encoded with
+SVT-AV1 preset 6 to target 180 MB, preserving frame rate and copying audio.
+Smaller files are kept unchanged. Encoding can take several minutes. Downloads fail if no matching format
+exists. Playback requires AV1 support in the browser/device. MP4 clips are
+currently converted to H.264/AAC for compatibility.
 
 You can configure the maximum resolution:
 
@@ -345,22 +346,16 @@ clip/
 This project is for educational and personal use only. Respect YouTube's Terms of Service and Basketball Reference's usage policies when downloading and scraping data.
 
 
-### S3 game storage compression
+### S3 game storage
 
-The upload action prepares games at **up to 720p, approximately 250 MB (decimal),
-with no audio**, preserving the source frame rate. Larger files use FFmpeg's
-`libx265` encoder, `slow` preset, and two-pass average bitrate calculated from the
-recording's duration, reserving 0.5% for MKV overhead. The budget is approximate;
-outputs over 255 MB fail validation rather than being uploaded unexpectedly.
-Encoding can take substantially longer than the video's running time.
+Uploads send the original local file unchanged: no codec conversion, resizing,
+audio removal, remuxing, or size-targeted encoding. Existing stored games are unchanged.
 
-A silent MKV already at or below 720p and 250 MB uploads unchanged. Other small
-sources at or below 720p are remuxed with video only, avoiding another lossy
-encode. Converted games are saved beside the original as `*.storage.mkv`; the
-original is retained. Pass statistics are temporary, and conversion errors stop
-the upload. Existing S3 games are not automatically recompressed.
+Downloads require native AV1 video (up to 720p by default) and prefer AAC audio,
+merged/remuxed into MP4 without re-encoding. If no matching stream is available,
+the download fails rather than falling back to a different codec. Files over 180 MB are re-encoded during download, using a duration-based bitrate
+budget including audio and container overhead. Outputs allow 2% size tolerance,
+with one retry if oversized. Files already within budget avoid another encode.
+Uploads never perform this conversion.
 
-MP4 clips requiring re-encoding use H.264, `medium`, CRF 18 to limit further
-quality loss. Storage sources have no audio, so their generated clips are silent.
-A fixed 250 MB budget allocates less bitrate to longer recordings; it does not
-guarantee the same visual quality for every game.
+Generated MP4 clips currently use H.264/AAC when the source requires conversion.

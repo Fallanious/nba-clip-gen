@@ -104,6 +104,11 @@ def test_upload_sets_content_type_mkv(fake_s3, tmp_path):
 # ---------- leftover hardcoded .mp4 audit ----------
 # Exact (relpath, stripped line) -> reason. Unanchored regexes were matching stray lines.
 ALLOWED_MP4 = {  # (relpath, exact stripped line) -> reason
+    ("src/download_video.py", 'prepared = prepare_download(saved, os.path.join(encode_dir, "encoded.mp4"), run_ytdlp_subprocess)'): "Staged AV1 size-targeted output",
+    ('src/download_video.py', '"-f", f"bv[vcodec^=av01][height<={res}]+ba[acodec^=mp4a]/b[vcodec^=av01][height<={res}]",'): "AV1 MP4 downloads and original-file uploads",
+    ('src/download_video.py', '"--merge-output-format", "mp4",'): "AV1 MP4 downloads and original-file uploads",
+    ('src/download_video.py', '"--remux-video", "mp4",'): "AV1 MP4 downloads and original-file uploads",
+    ('src/utils/video.py', 'if not inside or not os.path.isfile(path) or ext not in (".mp4", ".mkv", ".webm"):'): "AV1 MP4 downloads and original-file uploads",
     ("src/download_video.py", 'if not name.endswith((".mp4", ".mkv", ".webm")):'): "saved-file scan",
     ("src/generate_clips.py", "Note: mp4/mov clip output is re-encoded unless the source is already H.264+AAC"): "doc",
     ("src/generate_clips.py", "# mkv/webm/mov from bv*+ba/b may contain VP9/AV1+Opus. Using -c copy into mp4 can result in"): "doc",
@@ -120,7 +125,6 @@ ALLOWED_MP4 = {  # (relpath, exact stripped line) -> reason
     ("src/routes/timestamps.py", "# Support all video formats (mp4, mkv, webm)"): "doc (x2)",
     ("src/routes/timestamps.py", 'if not filename.endswith((".mp4", ".mkv", ".webm")):'): "clip list",
     ("src/routes/timestamps.py", 'clip_count = len([f for f in os.listdir(run_path) if f.endswith((".mp4", ".mkv", ".webm"))])'): "run count",
-    ("src/routes/videos.py", "Safari is not supported for full-game playback; clips are mp4 and work everywhere."): "R8 Safari note",
     ("src/routes/videos.py", 'if f.endswith((".mp4", ".mkv", ".webm")):'): "film list",
     ("src/services/storage.py", '".mp4": "video/mp4",'): "content-type map",
 }

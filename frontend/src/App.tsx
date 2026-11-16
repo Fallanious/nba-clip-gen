@@ -67,7 +67,7 @@ export default function App() {
         <div className="wizard-footer"><button className="quiet" disabled={step === 0} onClick={() => setStep(step - 1)}>Back</button>{step < 3 ? <button onClick={() => setStep(step + 1)}>Continue</button> : <a href={import.meta.env.VITE_EYE_TEST_URL || "http://localhost:5174"}>Open Eye Test ↗</a>}</div>
       </>}
       {view === 'upload' && <>
-        <header><div><p className="eyebrow">STORE THE GAME</p><h1>Upload/Download</h1><p>Download a broadcast into the film folder, or send a local file to the private bucket. A 720p MKV goes up as-is. Anything larger is converted first.</p></div></header>
+        <header><div><p className="eyebrow">STORE THE GAME</p><h1>Upload/Download</h1><p>Download a broadcast into the film folder, or send a local file to the private bucket. Downloads target 180 MB using AV1 in MP4. Uploads preserve the original file, including its video and audio.</p></div></header>
         <DownloadVideo onStarted={() => void refreshJobs()} />
         <UploadGame videos={videos} onStarted={() => void refreshJobs()} />
       </>}

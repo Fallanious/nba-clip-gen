@@ -7,6 +7,9 @@ import signal
 import argparse
 import subprocess
 import threading
+import tempfile
+
+from prepare_download import prepare_download
 from urllib.parse import urlparse
 
 
@@ -328,6 +331,12 @@ def run_ytdlp_subprocess(cmd, timeout):
 
     reader = threading.Thread(target=_reader, daemon=True)
     reader.start()
+    previous = None
+    if threading.current_thread() is threading.main_thread():
+        def stop(signum, frame):
+            _kill_process_group(proc)
+            raise SystemExit(1)
+        previous = signal.signal(signal.SIGTERM, stop)
     try:
         proc.wait(timeout=timeout)
     except subprocess.TimeoutExpired:
@@ -339,6 +348,12 @@ def run_ytdlp_subprocess(cmd, timeout):
             pass
         reader.join(timeout=5)
         raise subprocess.TimeoutExpired(cmd, timeout, output=b"Download timed out")
+    except BaseException:
+        _kill_process_group(proc)
+        raise
+    finally:
+        if previous is not None:
+            signal.signal(signal.SIGTERM, previous)
     reader.join(timeout=5)
     stderr = captured[0] if captured else b""
     if proc.returncode:
@@ -379,8 +394,9 @@ def build_ytdlp_cmd(url, resolution=None, runtime=None, output_template=None):
         "--no-playlist",
         "--js-runtimes", runtime,
         "-S", f"res:{res},+size",
-        "-f", "bv*+ba/b",
-        "--merge-output-format", "mkv",
+        "-f", f"bv[vcodec^=av01][height<={res}]+ba[acodec^=mp4a]/b[vcodec^=av01][height<={res}]",
+        "--merge-output-format", "mp4",
+        "--remux-video", "mp4",
         "--socket-timeout", str(socket_timeout),
         "--max-filesize", str(max_filesize),
         "-o", output_template,
@@ -420,33 +436,38 @@ def download_video(url, output_folder="film", resolution=None):
         os.makedirs(output_path)
         print(f"Created folder: {output_path}")
 
-    template = os.path.join(os.path.abspath(output_path), "%(title)s.%(ext)s")
-    cmd = build_ytdlp_cmd(url, resolution=resolution, output_template=template)
+    with tempfile.TemporaryDirectory(prefix=".download-", dir=output_path) as staging:
+        template = os.path.join(staging, "%(title)s.%(ext)s")
+        cmd = build_ytdlp_cmd(url, resolution=resolution, output_template=template)
 
-    print(f"Downloading to {output_folder}...")
-    print(f"Resolution: {resolve_resolution(resolution)}p")
-    print(f"Runtime: {cmd[cmd.index('--js-runtimes') + 1]}")
+        print(f"Downloading to {output_folder}...")
+        print(f"Resolution: {resolve_resolution(resolution)}p")
+        print(f"Runtime: {cmd[cmd.index('--js-runtimes') + 1]}")
 
-    started = time.time()
-    timeout = resolve_timeout()
+        started = time.time()
+        timeout = resolve_timeout()
 
-    try:
-        run_ytdlp_subprocess(cmd, timeout)
-    except subprocess.CalledProcessError as e:
-        sanitized = _sanitize_stderr(e.stderr)
-        raise subprocess.CalledProcessError(
-            e.returncode,
-            e.cmd,
-            output=e.output,
-            stderr=f"yt-dlp failed: {sanitized}".encode("utf-8"),
-        ) from e
+        try:
+            run_ytdlp_subprocess(cmd, timeout)
+        except subprocess.CalledProcessError as e:
+            sanitized = _sanitize_stderr(e.stderr)
+            raise subprocess.CalledProcessError(
+                e.returncode,
+                e.cmd,
+                output=e.output,
+                stderr=f"yt-dlp failed: {sanitized}".encode("utf-8"),
+            ) from e
 
-    saved = _video_saved_since(output_path, started)
-    if not saved:
-        raise RuntimeError("Download failed: no video file was saved")
+        saved = _video_saved_since(staging, started)
+        if not saved:
+            raise RuntimeError("Download failed: no video file was saved")
 
-    print(f"Saved {os.path.basename(saved)}")
-    return saved
+        encode_dir = tempfile.mkdtemp(prefix=".encode-", dir=staging)
+        prepared = prepare_download(saved, os.path.join(encode_dir, "encoded.mp4"), run_ytdlp_subprocess)
+        final_path = os.path.join(output_path, os.path.basename(saved))
+        os.replace(prepared, final_path)
+        print(f"Saved {os.path.basename(final_path)}")
+        return final_path
 
 
 def build_arg_parser():

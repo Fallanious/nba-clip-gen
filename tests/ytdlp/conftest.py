@@ -80,7 +80,7 @@ def fake_run(monkeypatch, tmp_path):
         argv = [str(x) for x in cmd]
         if any("yt-dlp" in x or x == "yt_dlp" for x in argv[:3]) and "-o" in argv:
             tmpl = argv[argv.index("-o") + 1]
-            out = tmpl.replace("%(title)s", "Game").replace("%(id)s", "abc").replace("%(ext)s", "mkv")
+            out = tmpl.replace("%(title)s", "Game").replace("%(id)s", "abc").replace("%(ext)s", "mp4")
             os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
             open(out, "wb").write(b"\x1aE\xdf\xa3fake-mkv")
 
@@ -99,6 +99,7 @@ def fake_run(monkeypatch, tmp_path):
         lambda cmd, *a, **k: (_ for _ in ()).throw(AssertionError(f"Popen not mocked: {cmd}")),
     )
     monkeypatch.setattr(importlib.import_module("download_video"), "run_ytdlp_subprocess", ytdlp_run)
+    monkeypatch.setattr(importlib.import_module("download_video"), "prepare_download", lambda source, dest, run: source)
     return calls
 
 

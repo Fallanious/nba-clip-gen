@@ -192,7 +192,7 @@ def generate_clips():
 
 @bp.route("/api/upload", methods=["POST"])
 def upload_video():
-    """Convert a local game to 720p MKV when needed, then upload it to S3."""
+    """Upload a local game to S3 without changing its media."""
     from routes.videos import parse_video_filename
     from utils.video import resolve_film_file
 

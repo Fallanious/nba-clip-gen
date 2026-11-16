@@ -16,15 +16,16 @@ def test_exact_argv_default(which):
     assert os.path.basename(argv[0]) in ("yt-dlp", "yt-dlp.exe") or argv[:3][-1] == "yt_dlp"  # binary or `python -m yt_dlp`
     assert flag_value(argv, "--js-runtimes") == "node"
     assert flag_value(argv, "-S") == "res:720,+size"
-    assert flag_value(argv, "-f") == "bv*+ba/b"
-    assert flag_value(argv, "--merge-output-format") == "mkv"
+    assert flag_value(argv, "-f") == "bv[vcodec^=av01][height<=720]+ba[acodec^=mp4a]/b[vcodec^=av01][height<=720]"
+    assert flag_value(argv, "--merge-output-format") == "mp4"
+    assert flag_value(argv, "--remux-video") == "mp4"
     assert argv[-1] == URL                      # URL last, never interpolated into another arg
     assert argv.count(URL) == 1
 
 
 def test_no_legacy_options(which):
     argv = " ".join(build(URL))
-    for legacy in ("ext=mp4", "ext=m4a", "--merge-output-format mp4", "faststart", "height<=1080"):
+    for legacy in ("ext=mp4", "ext=m4a", "faststart", "height<=1080"):
         assert legacy not in argv
 
 
@@ -132,13 +133,13 @@ def test_cli_main_runtime_missing_exits_nonzero(which, monkeypatch, capsys):
 
 
 # ---------- mkv output ----------
-def test_output_template_and_returned_path_mkv(which, fake_run, tmp_path):
+def test_output_template_and_returned_path_mp4(which, fake_run, tmp_path):
     path = load(DOWNLOAD_MODULE, DOWNLOAD_FN)(URL, output_folder=str(tmp_path))
     argv = [str(x) for x in fake_run[0]]
     tmpl = flag_value(argv, "-o")
     assert tmpl.startswith(str(tmp_path)) and tmpl.endswith(".%(ext)s")
     assert "%(title)s" in tmpl and "%(id)s" not in tmpl
-    assert path and str(path).endswith(".mkv") and os.path.isfile(path)
+    assert path and str(path).endswith(".mp4") and os.path.isfile(path)
 
 
 def test_double_dash_is_second_to_last_and_url_is_last(which, fake_run, tmp_path):
@@ -167,3 +168,16 @@ def test_saved_file_detection_accepts_mkv(tmp_path):
     p = tmp_path / "Game.mkv"; p.write_bytes(b"x")
     found = load(DOWNLOAD_MODULE, "_video_saved_since")(str(tmp_path), started)
     assert found and found.endswith(".mkv")
+
+
+def test_encode_failure_preserves_existing_download(which, fake_run, tmp_path, monkeypatch):
+    mod = load(DOWNLOAD_MODULE)
+    existing = tmp_path / "Game.mp4"
+    existing.write_bytes(b"previous good download")
+    def fail(*args):
+        raise RuntimeError("encoder failed")
+    monkeypatch.setattr(mod, "prepare_download", fail)
+    with pytest.raises(RuntimeError, match="encoder failed"):
+        mod.download_video(URL, output_folder=str(tmp_path))
+    assert existing.read_bytes() == b"previous good download"
+    assert list(tmp_path.iterdir()) == [existing]
