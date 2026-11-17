@@ -65,7 +65,15 @@ def extract_frame_at_time(video_path, time_seconds, output_path, crop=None):
         x, y, w, h = crop
         cmd.extend(['-vf', f'crop={w}:{h}:{x}:{y}'])
     cmd.extend(['-q:v', '2', output_path, '-y'])
-    subprocess.run(cmd, check=True, stderr=subprocess.PIPE)
+    try:
+        subprocess.run(cmd, check=True, stderr=subprocess.PIPE)
+    except subprocess.CalledProcessError as exc:
+        detail = exc.stderr or b''
+        if isinstance(detail, bytes):
+            detail = detail.decode('utf-8', errors='replace')
+        raise RuntimeError(
+            f'Frame extraction failed at {time_seconds}s (ffmpeg exit {exc.returncode}):\n{detail[-4000:]}'
+        ) from exc
 
 
 FRAME_READ_TIMEOUT_S = 90
@@ -154,46 +162,61 @@ _PERIOD_WORDS = {
     "3RD": 3, "3RO": 3,
     "4TH": 4,
     "OT": 5, "OVERTIME": 5,
+    "2OT": 6, "3OT": 7,
 }
 
 
 def normalize_quarter(value):
-    """Turn 1, 'Q2', or '2nd' into 1-4. A score like 28 is not a quarter."""
+    """Normalize regulation and overtime periods. A score like 28 is invalid."""
     if isinstance(value, bool) or value is None:
         return None
     if isinstance(value, int):
-        return value if 1 <= value <= 4 else None
+        return value if 1 <= value <= 7 else None
     text = str(value).strip()
     if not text:
         return None
     compact = re.sub(r"[^A-Z0-9]", "", text.upper())
     if compact in _PERIOD_WORDS:
         return _PERIOD_WORDS[compact]
-    found = re.fullmatch(r"Q?([1-4])", compact)
+    found = re.fullmatch(r"Q?([1-7])", compact)
     if found:
         return int(found.group(1))
     return None
 
 
+# A seconds-only clock must include a decimal to distinguish it from a score.
+_CLOCK_PATTERN = re.compile(
+    r"(?<![\d.:：])(?:(?P<minutes>\d{1,2})\s*[:：]\s*"
+    r"(?P<seconds>\d{2})(?P<fraction>\.\d+)?|"
+    r"(?P<decimal_seconds>\d{1,2}\.\d+))(?![\d.:：])"
+)
+
+
 def normalize_clock(value):
-    """Turn a game clock into M:SS.0. Rejects a bare shot-clock number."""
+    """Normalize M:SS or decimal seconds to M:SS.s without losing precision."""
     if value is None:
         return None
-    text = str(value).strip().replace("：", ":")
-    found = re.search(r"(\d{1,2})\s*:\s*(\d{2})", text)
+    found = _CLOCK_PATTERN.search(str(value).strip())
     if not found:
         return None
-    minutes = int(found.group(1))
-    seconds = int(found.group(2))
+    if found.group("decimal_seconds") is not None:
+        seconds, fraction = found.group("decimal_seconds").split(".")
+        minutes = 0
+        fraction = f".{fraction}"
+    else:
+        minutes = int(found.group("minutes"))
+        seconds = found.group("seconds")
+        fraction = found.group("fraction") or ".0"
+    seconds = int(seconds)
     if seconds > 59 or minutes > 12:
         return None
-    return f"{minutes}:{seconds:02d}.0"
+    return f"{minutes}:{seconds:02d}{fraction}"
 
 
 def _quarter_in_text(text):
     """Find the period label. A bare digit is a score, so it does not count."""
     pattern = re.compile(
-        r"\b(?:Q\s*([1-4])|([1-4])\s*(?:st|nd|rd|th)|IST|LST|2NO|3RO|OT)\b",
+        r"\b(?:Q\s*([1-4])|([1-4])\s*(?:st|nd|rd|th)|IST|LST|2NO|3RO|OT|2OT|3OT|OVERTIME)\b",
         re.IGNORECASE,
     )
     found = pattern.search(text)
@@ -204,16 +227,14 @@ def _quarter_in_text(text):
     if found.group(2):
         return int(found.group(2))
     word = found.group(0).upper()
-    if word == "OT":
-        return 5
     return _PERIOD_WORDS[word]
 
 
 def _clock_in_text(text):
     """Prefer the game clock when a shot clock is in the same transcription."""
     found = []
-    for match in re.finditer(r"(\d{1,2})\s*[:：]\s*(\d{2})", text):
-        clock = normalize_clock(f"{match.group(1)}:{match.group(2)}")
+    for match in _CLOCK_PATTERN.finditer(text):
+        clock = normalize_clock(match.group(0))
         if clock:
             found.append(clock)
     if not found:
@@ -273,9 +294,9 @@ GROUP_WINDOW_S = 5
 def time_to_seconds(time_str):
     """Convert MM:SS.S format to seconds."""
     try:
-        parts = time_str.replace('.0', '').split(':')
+        parts = time_str.split(':')
         if len(parts) == 2:
-            return int(parts[0]) * 60 + int(parts[1])
+            return int(parts[0]) * 60 + float(parts[1])
         return 0
     except:
         return 0
@@ -283,7 +304,7 @@ def time_to_seconds(time_str):
 
 def find_next_matching_play(frame_data, plays, next_play_idx, player_name=None):
     """
-    Find if the frame matches the next expected play in chronological order.
+    Find the next play to match starting from next_play_idx.
     Iterate through the list of plays until we find a match. Next time this is called we should start from the following play
     
     Args:
@@ -657,7 +678,7 @@ def main():
         if next_play_idx == 0:
             print(f"  Looking for FIRST match (highlight video - could be any play)")
         else:
-            print(f"  Looking for play #{next_play_idx + 1} (matched {len(matched_plays)}/{args.max_plays})")
+            print(f"  Looking for the next play starting from #{next_play_idx} (matched {len(matched_plays)}/{args.max_plays})")
         
         frame_path = os.path.join(debug_dir, f'frame_{current_time}.jpg')
         extract_frame_at_time(args.video, current_time, frame_path, crop_px)

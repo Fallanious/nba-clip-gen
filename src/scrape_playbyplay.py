@@ -8,6 +8,7 @@ import sys
 import json
 import csv
 import os
+import re
 from datetime import datetime
 
 try:
@@ -92,18 +93,17 @@ def scrape_playbyplay(url):
     for row in table.find_all('tr'):
         # Check if this is a quarter header
         th = row.find('th')
-        if th and 'Q' in th.text:
-            quarter_text = th.text.strip()
-            if '1st Q' in quarter_text:
-                current_quarter = 1
-            elif '2nd Q' in quarter_text:
-                current_quarter = 2
-            elif '3rd Q' in quarter_text:
-                current_quarter = 3
-            elif '4th Q' in quarter_text:
-                current_quarter = 4
-            continue
-        
+        if th:
+            period_text = th.get_text(" ", strip=True)
+            regulation = re.fullmatch(r"([1-4])(?:st|nd|rd|th)\s+Q(?:uarter)?", period_text, re.I)
+            overtime = re.fullmatch(r"(?:(\d+)(?:st|nd|rd|th)?\s*)?(?:OT|Overtime)", period_text, re.I)
+            if regulation:
+                current_quarter = int(regulation.group(1))
+            elif overtime:
+                current_quarter = 4 + int(overtime.group(1) or 1)
+            if regulation or overtime:
+                continue
+
         # Get all cells
         cells = row.find_all('td')
         
