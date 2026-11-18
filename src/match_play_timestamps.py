@@ -94,11 +94,13 @@ Read the quarter and the time remaining.
 Respond with ONLY a JSON object in this exact format:
 {{
   "quarter": <number 1-4>,
-  "time": "<minutes>:<seconds>"
+  "time": "<minutes>:<seconds>",
+  "over": true
 }}
 
 Rules:
 - Only include fields you can clearly read in this image
+- Include "over": true when the scoreboard says FINAL
 - If the scoreboard is not visible or you cannot read it, respond with: {{}}
 - Do not make up values
 - Do not include any text outside the JSON object
@@ -157,10 +159,10 @@ def analyze_frame_scoreboard(image_path, model='glm-ocr:latest', cropped=False):
 
 
 _PERIOD_WORDS = {
-    "1ST": 1, "IST": 1, "LST": 1,
-    "2ND": 2, "2NO": 2,
-    "3RD": 3, "3RO": 3,
-    "4TH": 4,
+    "1ST": 1, "IST": 1, "LST": 1, "FIRST": 1,
+    "2ND": 2, "2NO": 2, "SECOND": 2,
+    "3RD": 3, "3RO": 3, "THIRD" : 3,
+    "4TH": 4, "FOURTH": 4,
     "OT": 5, "OVERTIME": 5,
     "2OT": 6, "3OT": 7,
 }
@@ -216,7 +218,7 @@ def normalize_clock(value):
 def _quarter_in_text(text):
     """Find the period label. A bare digit is a score, so it does not count."""
     pattern = re.compile(
-        r"\b(?:Q\s*([1-4])|([1-4])\s*(?:st|nd|rd|th)|IST|LST|2NO|3RO|OT|2OT|3OT|OVERTIME)\b",
+        r"\b(?:Q\s*([1-4])|([1-4])\s*(?:st|nd|rd|th)|IST|LST|FIRST|SECOND|THIRD|FOURTH|2NO|3RO|OT|2OT|3OT|OVERTIME)\b",
         re.IGNORECASE,
     )
     found = pattern.search(text)
@@ -255,7 +257,16 @@ def _json_object(response_text):
     return None
 
 
-def _scoreboard(quarter, time):
+def _game_is_over(response_text, data):
+    """FINAL on the scoreboard means this broadcast is done with the game."""
+    if isinstance(data, dict) and data.get("over") is True:
+        return True
+    return re.search(r"\bFINAL\b", response_text, re.IGNORECASE) is not None
+
+
+def _scoreboard(quarter, time, over=False):
+    if over:
+        return {"over": True}
     quarter = normalize_quarter(quarter)
     clock = normalize_clock(time)
     if quarter is None or clock is None:
@@ -271,16 +282,23 @@ def parse_scoreboard_response(response_text):
     clock = _clock_in_text(response_text)
     quarter = _quarter_in_text(response_text)
     data = _json_object(response_text)
+    over = _game_is_over(response_text, data)
     if data is not None:
         if clock is None:
             clock = normalize_clock(data.get("time"))
         if quarter is None:
             quarter = normalize_quarter(data.get("quarter"))
-        if clock is None and quarter is None and data.get("quarter") in (None, "") and data.get("time") in (None, ""):
+        if (
+            not over
+            and clock is None
+            and quarter is None
+            and data.get("quarter") in (None, "")
+            and data.get("time") in (None, "")
+        ):
             print("  Info: no scoreboard read in this frame")
             return None
 
-    parsed = _scoreboard(quarter, clock)
+    parsed = _scoreboard(quarter, clock, over)
     if parsed:
         return parsed
     print("  Warning: No quarter and time found in response")
@@ -690,6 +708,10 @@ def main():
         if response:
             print(f"  LLM Response: {response}")
             frame_data = parse_scoreboard_response(response)
+
+            if frame_data and frame_data.get("over"):
+                print("  Scoreboard says FINAL. Stopping the frame scan.")
+                break
             
             if frame_data and frame_data.get('quarter'):
                 print(f"  Quarter: {frame_data['quarter']}, Time: {frame_data.get('time', 'N/A')}")

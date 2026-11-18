@@ -66,6 +66,13 @@ def test_decimal_clock_comparison_retains_fraction():
     assert time_to_seconds("1:00.05") == 60.05
 
 
+def test_final_marks_the_game_over_with_or_without_a_clock():
+    assert parse_scoreboard_response("FINAL\nNY 112 TOR 108") == {"over": True}
+    assert parse_scoreboard_response('{"quarter": 4, "time": "0:00", "over": true}') == {"over": True}
+    assert parse_scoreboard_response("4th 0:02.1 FINAL") == {"over": True}
+    assert parse_scoreboard_response("4th 2:11\nFINALS") == {"quarter": 4, "time": "2:11.0"}
+
+
 def test_invalid_and_bare_clocks_are_rejected():
     for clock in ("18", "60.5", "130.5", "0:60.5", "13:00", "100:30.5"):
         assert parse_scoreboard_response(f"Q4 {clock}") is None
