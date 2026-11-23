@@ -4,7 +4,7 @@ A Python-based toolkit for downloading NBA game footage from YouTube, analyzing 
 
 ## Overview
 
-This project uses computer vision (via Ollama LLMs) to read game scoreboards from video frames and match them with official play-by-play data from Basketball Reference, enabling automatic generation of individual play clips from full game footage.
+This project uses computer vision (via Ollama LLMs) to read game scoreboards from video frames and match them with NBA Stats play-by-play through `nba_api`, enabling automatic generation of individual play clips from full game footage.
 
 ## Web apps
 
@@ -99,8 +99,7 @@ pip install -r requirements-dev.txt
 Required packages:
 - `yt-dlp` - YouTube video downloading
 - `requests` - HTTP requests for Ollama API
-- `beautifulsoup4` - Web scraping
-- `lxml` - HTML parsing
+- `nba-api` - NBA Stats game lookup and play-by-play
 
 ## Workflow
 
@@ -151,29 +150,30 @@ deno --version
 
 ---
 
-### Step 2: Scrape Play-by-Play Data
+### Step 2: Fetch NBA play-by-play
 
-Download official play-by-play data from Basketball Reference:
+From the project root, use the local date/home key or the ten-digit NBA game ID.
 
 ```bash
-python3 scrape_playbyplay.py "https://www.basketball-reference.com/boxscores/pbp/GAME_ID.html"
+.venv/bin/python src/scrape_playbyplay.py 202511110PHI
+.venv/bin/python src/scrape_playbyplay.py 0022500209 --format json
 ```
 
-**Example:**
-```bash
-python3 scrape_playbyplay.py "https://www.basketball-reference.com/boxscores/pbp/202511110PHI.html"
-```
+Both identify the same game. NBA JSON and CSV files live under
+`playbyplay/nba/` using the local game key. Events include the NBA action ID,
+period, precise game clock, running visitor–home score, and NBA description.
+The matcher can still read the original Basketball Reference files.
 
-**Output:**
-- `output/playbyplay/GAME_ID_playbyplay.json` - Structured JSON data
-- `output/playbyplay/GAME_ID_playbyplay.csv` - CSV format
+To preview a database backfill, fetch the NBA files for the catalog games,
+then run `.venv/bin/python src/backfill_nba_catalog.py`. Add `--apply` to
+commit. The migration preserves clip IDs, linked players, original event
+metadata and prior video offsets. Unmatched legacy rows retain their source
+and use negative indexes to avoid collisions with NBA events.
 
-**Data includes:**
-- Quarter
-- Game time
-- Score
-- Team
-- Play description
+Changed clocks require footage review. Pass `--footage-review FILE` when
+applying verified cuts. The JSON object is keyed by clip ID. Each entry
+records the local game key, NBA action ID, NBA clock, previous video window,
+review status and optional replacement window in seconds.
 
 ---
 
@@ -184,7 +184,7 @@ Use LLM vision to read scoreboards from video frames and match them to play-by-p
 ```bash
 python3 src/match_play_timestamps.py \
   film/YOUR_VIDEO.mkv \
-  playbyplay/GAME_ID.json \
+  playbyplay/nba/GAME_ID.json \
   --buffer 5 \
   --max-plays 10 \
   --start-time 10 \
@@ -252,12 +252,12 @@ python3 src/generate_clips.py \
 python3 src/download_video.py "https://www.youtube.com/watch?v=EXAMPLE_ID"
 
 # 2. Scrape play-by-play data
-python3 src/scrape_playbyplay.py "https://www.basketball-reference.com/boxscores/pbp/202511110PHI.html"
+.venv/bin/python src/scrape_playbyplay.py 202511110PHI
 
 # 3. Match timestamps (start with small test)
 python3 src/match_play_timestamps.py \
   film/CELTICS_vs_76ERS.mkv \
-  playbyplay/202511110PHI.json \
+  playbyplay/nba/202511110PHI.json \
   --buffer 5 \
   --max-plays 5 \
   --start-time 10
@@ -265,7 +265,7 @@ python3 src/match_play_timestamps.py \
 # 4. Review the clips and adjust buffer if needed, then generate more
 python3 src/match_play_timestamps.py \
   film/CELTICS_vs_76ERS.mkv \
-  playbyplay/202511110PHI.json \
+  playbyplay/nba/202511110PHI.json \
   --buffer 7 \
   --max-plays 20 \
   --start-time 10
@@ -343,7 +343,7 @@ clip/
 
 ## License
 
-This project is for educational and personal use only. Respect YouTube's Terms of Service and Basketball Reference's usage policies when downloading and scraping data.
+This project is for educational and personal use only. Respect YouTube's Terms of Service and the NBA's usage policies when downloading and scraping data.
 
 
 ### S3 game storage

@@ -81,7 +81,7 @@ def parse_video_filename(filename):
         "date": f"{year}-{month:02d}-{day:02d}",
         "bbref_id": bbref_id,
         "bbref_url": f"https://www.basketball-reference.com/boxscores/pbp/{bbref_id}.html",
-        "expected_pbp": f"{bbref_id}.json",
+        "expected_pbp": f"nba/{bbref_id}.json",
     }
 
 

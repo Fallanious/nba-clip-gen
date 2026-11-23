@@ -95,13 +95,18 @@ def download_video():
 
 @bp.route("/api/scrape", methods=["POST"])
 def scrape_playbyplay():
-    """Scrape play-by-play data from Basketball Reference."""
+    """Fetch play-by-play from NBA Stats."""
     url = (request.json or {}).get("url", "").strip()
     if not url:
-        return jsonify({"error": "URL is required"}), 400
+        return jsonify({"error": "Game ID is required"}), 400
 
-    job_id = _start_job(["python3", "src/scrape_playbyplay.py", url], kind="Scrape play-by-play", label=url)
-    return jsonify({"job_id": job_id, "message": "Scraping started"})
+    from scrape_playbyplay import game_key
+    try:
+        key = game_key(url)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+    job_id = _start_job(["python3", "src/scrape_playbyplay.py", key], kind="Fetch NBA play-by-play", label=url)
+    return jsonify({"job_id": job_id, "message": "NBA fetch started"})
 
 
 @bp.route("/api/match", methods=["POST"])

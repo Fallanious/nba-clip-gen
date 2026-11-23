@@ -104,6 +104,7 @@ export interface OllamaStatus {
 }
 
 export interface BBRefResult {
+  bbref_id?: string;
   away_team?: string;
   home_team?: string;
   home_code?: string;

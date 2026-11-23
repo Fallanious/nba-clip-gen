@@ -2,6 +2,7 @@
 
 import os
 import re as _re
+from pathlib import Path
 import json
 from flask import Blueprint, jsonify, request
 
@@ -36,15 +37,14 @@ def list_playbyplay():
         return jsonify({"files": []})
 
     files = []
-    for f in sorted(os.listdir(pbp_dir)):
-        if f.endswith(".json"):
-            path = os.path.join(pbp_dir, f)
-            files.append({
-                "name": f,
-                "path": f"playbyplay/{f}",
-                "mtime": os.path.getmtime(path),
-                "size": os.path.getsize(path),
-            })
+    for path in sorted(Path(pbp_dir).glob("**/*.json")):
+        name = path.relative_to(pbp_dir).as_posix()
+        files.append({
+            "name": name,
+            "path": f"playbyplay/{name}",
+            "mtime": path.stat().st_mtime,
+            "size": path.stat().st_size,
+        })
     return jsonify({"files": files})
 
 

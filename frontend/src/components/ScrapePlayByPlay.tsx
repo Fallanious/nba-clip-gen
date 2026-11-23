@@ -9,7 +9,6 @@ interface Props {
   onComplete: () => void;
 }
 
-const gameIdFromUrl = (url: string) => (url.trim().split('/').pop() || '').replace(/\.html.*$/, '');
 
 export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
   const [selectedVideo, setSelectedVideo] = useState('');
@@ -18,9 +17,7 @@ export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
   const [outcome, setOutcome] = useState<'idle' | 'running' | 'success' | 'failure'>('idle');
   const [message, setMessage] = useState('');
   const job = useJob();
-  const started = useRef(0);
   const checking = useRef(false);
-  const targetId = useRef('');
 
   useEffect(() => {
     if (job.status !== 'completed' && job.status !== 'failed' && job.status !== 'cancelled') return;
@@ -29,14 +26,14 @@ export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
 
     const confirmSaved = async () => {
       try {
+        if (job.status !== 'completed') {
+          setOutcome('failure');
+          setMessage(job.output.trim() || 'Fetch failed.');
+          return;
+        }
+        const path = job.output.match(/^Saved (playbyplay\/nba\/\w+\.json)$/m)?.[1];
         const files = await fetchPlayByPlay();
-        const saved = files
-          .filter(file => {
-            const fresh = file.mtime * 1000 >= started.current - 2000 && file.size > 2;
-            const named = !targetId.current || file.name === `${targetId.current}.json`;
-            return fresh && named;
-          })
-          .sort((a, b) => b.mtime - a.mtime)[0];
+        const saved = files.find(file => file.path === path && file.size > 2);
         if (saved) {
           setOutcome('success');
           setMessage(`Saved to playbyplay/${saved.name}`);
@@ -53,30 +50,28 @@ export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
     };
 
     void confirmSaved();
-  }, [job.status, onComplete]);
+  }, [job.status, job.output, onComplete]);
 
   const handleFindUrl = async () => {
     if (!selectedVideo) return;
     setLookupNote('');
     try {
       const data = await fetchBBRefUrl(selectedVideo);
-      if (data.bbref_url) {
-        setUrl(data.bbref_url);
+      if (data.bbref_id) {
+        setUrl(data.bbref_id);
         return;
       }
-      setLookupNote("Couldn't match this title to a Basketball Reference game.");
+      setLookupNote("Couldn't match this title to a game key.");
     } catch {
-      setLookupNote("Couldn't match this title to a Basketball Reference game.");
+      setLookupNote("Couldn't match this title to a game key.");
     }
   };
 
   const handleScrape = async () => {
     if (!url.trim() || outcome === 'running') return;
     checking.current = false;
-    started.current = Date.now();
-    targetId.current = gameIdFromUrl(url);
     setOutcome('running');
-    setMessage('Scraping play-by-play...');
+    setMessage('Fetching NBA play-by-play...');
     try {
       const data = await startScrape(url.trim());
       if (data.error) {
@@ -92,7 +87,7 @@ export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
   };
 
   return (
-    <Section title="1. Scrape Play-by-Play">
+    <Section title="1. Fetch NBA Play-by-Play">
       <div className="form-group">
         <label>Game</label>
         <select value={selectedVideo} onChange={e => { setSelectedVideo(e.target.value); setLookupNote(''); }}>
@@ -105,23 +100,23 @@ export default function ScrapePlayByPlay({ videos, onComplete }: Props) {
         </select>
       </div>
       <div className="form-group">
-        <label>Basketball Reference URL</label>
+        <label>NBA game ID or local game key</label>
         <div className="form-row">
           <input
             type="text"
             value={url}
             onChange={e => setUrl(e.target.value)}
-            placeholder="https://www.basketball-reference.com/boxscores/pbp/..."
+            placeholder="0022500209 or 202511110PHI"
           />
-          <button className="btn-small" onClick={handleFindUrl} disabled={!selectedVideo}>Find URL</button>
+          <button className="btn-small" onClick={handleFindUrl} disabled={!selectedVideo}>Find game</button>
         </div>
         <p className="info-text">
-          Find URL tries to match the game on Basketball Reference from the video title.
+          Find game reads the date and home team from the video title.
         </p>
         {lookupNote && <p className="download-message failure">{lookupNote}</p>}
       </div>
       <button onClick={handleScrape} disabled={outcome === 'running'}>
-        Scrape Data
+        Fetch NBA data
       </button>
       {outcome !== 'idle' && (
         <div className="download-status" role="status">

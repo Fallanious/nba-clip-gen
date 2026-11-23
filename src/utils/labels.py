@@ -55,11 +55,11 @@ _SUBTYPE_PATTERNS = [
     ("layup", r"\blayup\b|finger roll|\btip[- ]?in\b"),
     # "jump shot", "pull-up", "fade-away", "turnaround" collapse to midrange
     # unless a 3-pt indicator matched above.
-    ("midrange", r"jump shot|pull.?up|fade.?away|turnaround"),
+    ("midrange", r"jump shot|jumper|pull.?up|fade.?away|turnaround"),
 ]
 
-_ASSIST_RE = re.compile(r"\(assist by", re.IGNORECASE)
-_DISTANCE_RE = re.compile(r"from\s+(\d+)\s*ft", re.IGNORECASE)
+_ASSIST_RE = re.compile(r"\(assist by|\bAST\)", re.IGNORECASE)
+_DISTANCE_RE = re.compile(r"(?:from\s+)?(\d+)(?:\s*ft\b|')", re.IGNORECASE)
 _MAKE_RE = re.compile(r"\bmakes?\b", re.IGNORECASE)
 _MISS_RE = re.compile(r"\bmiss(?:es)?\b", re.IGNORECASE)
 
@@ -118,6 +118,8 @@ def extract_attributes(description, team=None):
         attrs["outcome"] = "made"
     elif _MISS_RE.search(desc):
         attrs["outcome"] = "missed"
+    elif re.search(r"\(\d+ PTS\)", desc, re.I):
+        attrs["outcome"] = "made"
 
     # Free throw is its own action_type so the model can learn the very
     # different visual pattern (stationary shooter at the line).

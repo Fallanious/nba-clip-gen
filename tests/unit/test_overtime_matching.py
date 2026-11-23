@@ -4,7 +4,7 @@ from match_play_timestamps import (
     condense_plays, find_next_matching_play, parse_scoreboard_response,
     stamp_original_play_indexes,
 )
-from scrape_playbyplay import scrape_playbyplay
+from scrape_playbyplay import normalize_game
 
 
 def play(clock, quarter=4, description="Player makes jump shot"):
@@ -30,15 +30,11 @@ def test_overtime_matching_after_player_filter():
     assert matched["original_play_indexes"] == [2]
 
 
-def test_scraper_recognizes_overtime_headers(monkeypatch):
-    rows = []
-    for header in ("4th Q", "1st OT", "2nd OT", "3OT"):
-        rows.append(f'<tr><th>{header}</th></tr>')
-        rows.append('<tr><td>4:47.0</td><td>Player makes jump shot</td><td class="center">95-95</td><td></td></tr>')
-    html = '<title>Knicks at Raptors Play-By-Play</title><table class="suppress_all">' + ''.join(rows) + '</table>'
-    class Response:
-        status_code = 200
-        content = html.encode()
-    monkeypatch.setattr("scrape_playbyplay.requests.get", lambda url: Response())
-    plays = scrape_playbyplay("https://example.test/pbp")
+def test_nba_feed_preserves_periods_precision_and_score():
+    events = [dict(period=q, clock="PT04M47.20S", teamTricode="NYK", description="Test",
+                   actionType="Rebound", actionId=q, scoreAway="95" if q == 4 else "",
+                   scoreHome="94" if q == 4 else "", playerNameI="A. Test", personId=7)
+              for q in (4, 5, 6, 7)]
+    plays = normalize_game({"gameId": "0022500209", "actions": events}, "0022500209")
     assert [p["quarter"] for p in plays] == [4, 5, 6, 7]
+    assert all(p["time"] == "4:47.2" and p["score"] == "95-94" for p in plays)

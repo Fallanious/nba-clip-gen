@@ -551,9 +551,27 @@ def _resolve_roster_player(conn, cache: dict[str, int | None], display: str, tea
     return cache[display]
 
 
-def _link_clip_players(conn, cache, clip_id, description, game_date, team_ids, report) -> None:
+def source_player_roles(event, plays):
+    if "nba_action_id" not in event:
+        return clip_player_roles(event["description"])
+    role = {"Made Shot": "shot", "Missed Shot": "shot", "Free Throw": "shot", "Foul": "foul",
+            "Turnover": "turnover", "Rebound": "rebound"}.get(event["action_type"])
+    text = event["description"]
+    if not role and event["action_type"] == "":
+        role = "block" if " BLOCK " in text else "steal" if " STEAL " in text else None
+    roles = [(event["player"], role)] if role and event["player"] else []
+    assist = re.search(r"\(([^()]+) \d+ AST\)", text)
+    if assist:
+        names = {p["player"] for p in plays if p["team"] == event["team"]
+                 and p["player"].partition(". ")[2] == assist[1]}
+        if len(names) == 1:
+            roles.append((names.pop(), "assist"))
+    return roles
+
+
+def _link_clip_players(conn, cache, clip_id, roles, game_date, team_ids, report) -> None:
     """Write this clip's players before the next play is processed."""
-    for display, role in clip_player_roles(description):
+    for display, role in roles:
         player_id = _resolve_roster_player(conn, cache, display, team_ids)
         if player_id is None:
             report["players_skipped"] += 1
@@ -639,7 +657,8 @@ def persist_matched_output(
                         "attributes": rec[6],
                         "id": rec[7],
                     }
-                    existing_attrs.append(rec[6])
+                    if rec[0] >= 0 or (rec[6] or {}).get("nba_unmatched_for") != pbp_hash:
+                        existing_attrs.append(rec[6])
                 if game_source_conflict(existing_attrs, pbp_hash):
                     raise PersistRefused(
                         "persist refused: saved PBP does not match clips already stored for this game"
@@ -650,6 +669,8 @@ def persist_matched_output(
                     )
 
                 for row in rows:
+                    source = original_plays[row["play_index"]]
+                    nba_identity = {k: source[k] for k in ("nba_action_id", "nba_game_id") if k in source}
                     existing = occupied.get(row["play_index"])
                     if existing is None:
                         inserted = conn.execute(
@@ -675,6 +696,7 @@ def persist_matched_output(
                                 row["action_type"],
                                 Jsonb(
                                     {
+                                        **nba_identity,
                                         ATTR_INDEXES: row["shared_sequence_indexes"],
                                         ATTR_PBP: pbp_hash,
                                         ATTR_GROUPING: grouping_hash,
@@ -688,7 +710,12 @@ def persist_matched_output(
                         report["inserted"] += 1
                         clip_id = inserted[0]
                     else:
-                        if _rows_conflict(existing, row, pbp_hash):
+                        # A reviewed migration preserves the cut from the original
+                        # footage. A later scan may sample a different frame.
+                        migrated = (nba_identity and "legacy_event" in existing["attributes"]
+                                    and all(existing["attributes"].get(k) == v for k,v in nba_identity.items())
+                                    and all(existing[k] == row[k] for k in ("description", "game_clock", "period")))
+                        if not migrated and _rows_conflict(existing, row, pbp_hash):
                             raise PersistRefused(
                                 "persist refused: occupied play_index does not match this event"
                             )
@@ -698,7 +725,7 @@ def persist_matched_output(
                         conn,
                         roster_cache,
                         clip_id,
-                        row["description"],
+                        source_player_roles(source, original_plays),
                         game_date,
                         (home_team_id, away_team_id),
                         report,
