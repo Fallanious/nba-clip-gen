@@ -143,9 +143,9 @@ export default function MatchTimestamps({
     try {
       const data = await startMatch({
         video, playbyplay: pbp,
-        buffer: buffer === '' ? 3 : buffer,
-        sample_interval: interval === '' ? 2 : interval,
-        max_plays: maxPlays === '' ? 50 : maxPlays,
+        buffer: buffer === '' ? 5 : buffer,
+        sample_interval: interval === '' ? 1 : interval,
+        max_plays: maxPlays === '' ? 100 : maxPlays,
         start_time: startTime === '' ? 0 : startTime,
         num_workers: workers === '' ? 1 : workers,
         crop,

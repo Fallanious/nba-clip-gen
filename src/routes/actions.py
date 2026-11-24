@@ -115,9 +115,9 @@ def match_timestamps():
     data = request.json
     video = data.get("video", "").strip()
     playbyplay = data.get("playbyplay", "").strip()
-    buffer = data.get("buffer", 3)
-    sample_interval = data.get("sample_interval", 2)
-    max_plays = data.get("max_plays", 50)
+    buffer = data.get("buffer", 5)
+    sample_interval = data.get("sample_interval", 1)
+    max_plays = data.get("max_plays", 100)
     start_time = data.get("start_time", 0)
     num_workers = data.get("num_workers", 1)
 

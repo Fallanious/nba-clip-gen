@@ -574,7 +574,7 @@ def main():
     parser.add_argument('--player-name', type=str, default=None, help='Last Name of the player')
     parser.add_argument('--buffer', type=int, default=5, help='Buffer seconds before/after play (default: 5)')
     parser.add_argument('--max-plays', type=int, default=5, help='Maximum number of plays to match (default: 5)')
-    parser.add_argument('--sample-interval', type=int, default=10, help='Seconds between frame samples (default: 10)')
+    parser.add_argument('--sample-interval', type=int, default=1, help='Seconds between frame samples (default: 10)')
     parser.add_argument('--start-time', type=int, default=0, help='Start sampling from this time in seconds (default: 0, useful to skip pre-game footage)')
     parser.add_argument('--end-time', type=int, default=None, help='Stop sampling at this time in seconds (default: end of video)')
     parser.add_argument('--worker-id', type=int, default=None, help='Worker ID for parallel processing (used in output filename)')

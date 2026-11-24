@@ -34,6 +34,7 @@ import hashlib
 import json
 import os
 import re
+import unicodedata
 from datetime import timedelta
 from decimal import Decimal, ROUND_HALF_EVEN
 from typing import Any, Mapping
@@ -48,7 +49,7 @@ from match_play_timestamps import (
 
 BBREF_ID_RE = re.compile(r"[0-9]{9}[A-Z]{3}")
 _PLAYER_NAME = (
-    r"[A-Z](?:\.[A-Z])*\. [A-Z][A-Za-z'’\-]+(?: Jr\.| Sr\.| II| III| IV)?"
+    r"[A-Z](?:\.[A-Z])*\. (?:[^\W\d_])(?:[^\W\d_]|['’\-])+(?: Jr\.| Sr\.| II| III| IV)?"
 )
 _ROLE_PATTERNS = (
     ("shot", re.compile(rf"^({_PLAYER_NAME}) (?i:makes|misses)\b")),
@@ -495,6 +496,12 @@ def _ensure_game_play_unique(conn) -> None:
         ) from exc
 
 
+def name_key(value: str) -> str:
+    """Fold case and accents for matching, retaining punctuation and spacing."""
+    return "".join(c for c in unicodedata.normalize("NFD", value.casefold())
+                   if not unicodedata.combining(c))
+
+
 def clip_player_roles(description: str) -> list[tuple[str, str]]:
     """Names and roles named by one play-by-play sentence.
 
@@ -503,6 +510,7 @@ def clip_player_roles(description: str) -> list[tuple[str, str]]:
     """
     if not isinstance(description, str) or not description:
         return []
+    description = unicodedata.normalize("NFC", description)
     found: list[tuple[int, str, str]] = []
     seen: set[tuple[str, str]] = set()
     for role, pattern in _ROLE_PATTERNS:
@@ -537,17 +545,13 @@ def _resolve_roster_player(conn, cache: dict[str, int | None], display: str, tea
         cache[display] = None
         return None
     initial, last = parsed
-    rows = conn.execute(
-        """
-        SELECT id
-        FROM players
-        WHERE last_name = %s
-          AND left(first_name, 1) = %s
-          AND team_id IN (%s, %s)
-        """,
-        (last, initial, team_ids[0], team_ids[1]),
-    ).fetchall()
-    cache[display] = rows[0][0] if len(rows) == 1 else None
+    surname = name_key(last)
+    candidates = conn.execute(
+        "SELECT id, last_name FROM players WHERE left(first_name, 1) = %s "
+        "AND team_id IN (%s, %s)", (initial, *team_ids)
+    )
+    matches = [player_id for player_id, last_name in candidates if name_key(last_name) == surname]
+    cache[display] = matches[0] if len(matches) == 1 else None
     return cache[display]
 
 
@@ -563,7 +567,7 @@ def source_player_roles(event, plays):
     assist = re.search(r"\(([^()]+) \d+ AST\)", text)
     if assist:
         names = {p["player"] for p in plays if p["team"] == event["team"]
-                 and p["player"].partition(". ")[2] == assist[1]}
+                 and name_key(p["player"].partition(". ")[2]) == name_key(assist[1])}
         if len(names) == 1:
             roles.append((names.pop(), "assist"))
     return roles
