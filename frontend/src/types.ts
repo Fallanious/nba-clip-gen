@@ -26,6 +26,7 @@ export interface PlayByPlayFile {
 }
 
 export interface TimestampFile {
+  video: string | null;
   name: string;
   path: string;
   play_count: number;

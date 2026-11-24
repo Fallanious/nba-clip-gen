@@ -225,7 +225,8 @@ Examples:
         play_index = play.get('play_index', idx - 1)
         team = play.get('team', 'Unknown')
         quarter = play.get('quarter', 0)
-        game_time = play.get('game_time', '0:00').replace(':', '-').replace('.0', '')
+        game_time = play.get('game_time', '0:00')
+        filename_clock = sanitize_filename(game_time.removesuffix('.0').replace(':', '-'))
         video_start = play.get('video_start', 0)
         video_end = play.get('video_end', 0)
         description = play.get('description', '')
@@ -235,7 +236,7 @@ Examples:
         attributes = extract_attributes(description, team)
         primary = primary_action(attributes)
 
-        filename = f"clip_{play_index}_{sanitize_filename(team)}_Q{quarter}_{game_time}.{args.format}"
+        filename = f"clip_{play_index}_{sanitize_filename(team)}_Q{quarter}_{filename_clock}.{args.format}"
         output_path = os.path.join(base_output_dir, filename)
         
         print(f"\n[{idx}/{len(plays)}] Generating: {filename}")
@@ -266,6 +267,7 @@ Examples:
                 'team': team,
                 'quarter': quarter,
                 'game_time': game_time,
+                **({'original_plays': play['original_plays']} if play.get('original_plays') else {}),
                 'description': description,
                 'video_start': video_start,
                 'video_end': video_end,

@@ -86,3 +86,34 @@ def test_nba_roles_use_team_actor_and_unambiguous_assist():
         ("A. Test", "shot"),
         ("J. Jones", "assist"),
     ]
+
+
+def test_splice_preserves_compound_nba_actions_and_fractional_clock(tmp_path, monkeypatch):
+    import sys
+    from pathlib import Path
+
+    import generate_clips
+    from match_play_timestamps import condense_plays, original_members, stamp_original_play_indexes
+
+    shot = dict(quarter=4, time="0:00.05", team="PHI", score="99-99",
+                nba_game_id="0022500209", nba_action_id=90, description="MISS Maxey Jump Shot")
+    rebound = dict(shot, nba_action_id=91, description="Embiid REBOUND (Off:2 Def:4)")
+    group, = condense_plays(stamp_original_play_indexes([shot, rebound]))
+    window = dict(group, original_plays=original_members(group), game_time=shot["time"],
+                  video_start=2, video_end=6)
+    timestamps = tmp_path / "timestamps.json"
+    timestamps.write_text(json.dumps([window]))
+    video = tmp_path / "game.mkv"
+    video.touch()
+    def extract(video, start, end, path, **kwargs):
+        Path(path).touch()
+        return True
+    monkeypatch.setattr(generate_clips, "extract_clip", extract)
+    monkeypatch.setattr(sys, "argv", ["generate_clips", str(video), str(timestamps),
+                                      "--output-dir", str(tmp_path)])
+    generate_clips.main()
+    manifest, = tmp_path.glob("*/clips_metadata.json")
+    clip, = json.loads(manifest.read_text())["clips"]
+    assert clip["game_time"] == "0:00.05"
+    assert "0-00.05" in clip["filename"]
+    assert [p["nba_action_id"] for p in clip["original_plays"]] == [90, 91]

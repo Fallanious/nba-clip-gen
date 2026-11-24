@@ -479,6 +479,7 @@ def original_member_record(play):
         "team": team,
         "description": description,
         "score": play.get("score"),
+        **{key: play[key] for key in ("nba_game_id", "nba_action_id") if key in play},
     }
 
 

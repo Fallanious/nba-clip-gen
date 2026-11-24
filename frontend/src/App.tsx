@@ -16,12 +16,38 @@ export default function App() {
   const [pbpFiles, setPbpFiles] = useState<PlayByPlayFile[]>([]);
   const [timestampFiles, setTimestampFiles] = useState<TimestampFile[]>([]);
   const [view, setView] = useState<'splice' | 'upload' | 'processes'>('splice');
+  const [video, setVideo] = useState('');
+  const [manualPbp, setManualPbp] = useState<string | null>(null);
+  const parsed = videos.find(file => file.path === video)?.parsed;
+  const expected = parsed && `playbyplay/${parsed.expected_pbp}`;
+  const pbp = manualPbp ?? pbpFiles.find(file => file.path === expected)?.path ?? '';
+  const [timestamps, setTimestamps] = useState('');
+  const chooseVideo = (path: string) => {
+    setVideo(path);
+    setTimestamps('');
+    setManualPbp(null);
+  };
+  const chooseTimestamps = (path: string) => {
+    const source = timestampFiles.find(file => file.path === path)?.video;
+    if (source && source !== video) chooseVideo(source);
+    setTimestamps(path);
+  };
+  const useFetchedGame = useCallback((file: PlayByPlayFile, files: PlayByPlayFile[]) => {
+    setPbpFiles(files);
+    if (video && (!expected || file.path === expected)) {
+      setManualPbp(file.path);
+    } else if (!video) {
+      const candidates = videos.filter(v => v.parsed?.expected_pbp === file.name);
+      if (candidates.length === 1) setVideo(candidates[0].path);
+      setManualPbp(file.path);
+    }
+  }, [video, videos, expected]);
   const [step, setStep] = useState(0);
   const [jobs, setJobs] = useState<ProcessJob[]>([]);
   const seenJobs = useRef<Record<string, string>>({});
-  const loadVideos = useCallback(async () => { setVideos(await fetchVideos()); }, []);
-  const loadPBP = useCallback(async () => { setPbpFiles(await fetchPlayByPlay()); }, []);
-  const loadTimestamps = useCallback(async () => { setTimestampFiles(await fetchTimestamps()); }, []);
+  const loadVideos = useCallback(() => fetchVideos().then(setVideos), []);
+  const loadPBP = useCallback(() => fetchPlayByPlay().then(setPbpFiles), []);
+  const loadTimestamps = useCallback(() => fetchTimestamps().then(setTimestampFiles), []);
   const refreshJobs = useCallback(async () => {
     const list = await fetchJobs();
     setJobs(list);
@@ -30,7 +56,7 @@ export default function App() {
     for (const job of list) {
       const prev = seenJobs.current[job.id];
       seenJobs.current[job.id] = job.status;
-      const justFinished = prev === 'running' && job.status === 'completed';
+      const justFinished = prev !== 'completed' && job.status === 'completed';
       if (justFinished && job.kind === 'Match timestamps') finishedMatch = true;
       if (justFinished && job.kind === 'Download') finishedDownload = true;
     }
@@ -60,10 +86,10 @@ export default function App() {
       {view === 'splice' && <>
         <header><div><p className="eyebrow">FROM FOOTAGE TO CLIPS</p><h1>Splice</h1><p>Match the play-by-play, then cut local clips.</p></div></header>
         <nav className="steps" aria-label="Clip generation">{steps.map((s, i) => <button aria-current={step === i ? 'step' : undefined} className={step === i ? 'selected' : 'quiet'} onClick={() => setStep(i)} key={s}>{i + 1}. {s}</button>)}</nav>
-        <div hidden={step !== 0}><ScrapePlayByPlay videos={videos} onComplete={loadPBP} /></div>
-        <div hidden={step !== 1}><MatchTimestamps videos={videos} pbpFiles={pbpFiles} onRefreshVideos={loadVideos} onRefreshPBP={loadPBP} /></div>
-        <div hidden={step !== 2}><EditLabels timestampFiles={timestampFiles} onRefreshTimestamps={loadTimestamps} /></div>
-        <div hidden={step !== 3}><GenerateClips videos={videos} timestampFiles={timestampFiles} onRefreshTimestamps={loadTimestamps} /><p className="step-note">Clips are saved for each player. Open Eye Test to watch them.</p></div>
+        <div hidden={step !== 0}><ScrapePlayByPlay pbpFiles={pbpFiles} videos={videos} video={video} chooseVideo={chooseVideo} onComplete={useFetchedGame} /></div>
+        <div hidden={step !== 1}><MatchTimestamps key={video} video={video} chooseVideo={chooseVideo} pbp={pbp} setPbp={setManualPbp} videos={videos} pbpFiles={pbpFiles.filter(file => expected ? file.path === expected : file.path.startsWith("playbyplay/nba/"))} onRefreshVideos={loadVideos} onRefreshPBP={loadPBP} /></div>
+        <div hidden={step !== 2}><EditLabels key={timestamps} selectedFile={timestamps} chooseFile={chooseTimestamps} timestampFiles={timestampFiles} onRefreshTimestamps={loadTimestamps} /></div>
+        <div hidden={step !== 3}><GenerateClips timestamps={timestamps} chooseFile={chooseTimestamps} video={video} chooseVideo={chooseVideo} videos={videos} timestampFiles={timestampFiles} onRefreshTimestamps={loadTimestamps} /><p className="step-note">Clips are saved for each player. Open Eye Test to watch them.</p></div>
         <div className="wizard-footer"><button className="quiet" disabled={step === 0} onClick={() => setStep(step - 1)}>Back</button>{step < 3 ? <button onClick={() => setStep(step + 1)}>Continue</button> : <a href={import.meta.env.VITE_EYE_TEST_URL || "http://localhost:5174"}>Open Eye Test ↗</a>}</div>
       </>}
       {view === 'upload' && <>

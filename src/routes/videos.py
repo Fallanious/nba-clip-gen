@@ -47,14 +47,14 @@ def parse_video_filename(filename):
     """Parse video filename to extract teams and date."""
     # Titles look like "AWAY at HOME ｜ FULL GAME HIGHLIGHTS ｜ February 2, 2026".
     # Extra words such as "NBA PRESEASON" may sit in front of FULL GAME HIGHLIGHTS.
-    pattern = r"(.+?)\s+at\s+(.+?)\s+[｜|].*?\bFULL GAME HIGHLIGHTS\s+[｜|]\s+(\w+)\s+(\d+),?\s+(\d{4})"
+    pattern = r"(.+?)\s+at\s+(.+?)\s+[｜|].*?\bFULL GAME(?: \d+)? HIGHLIGHTS\s+[｜|]\s+(\w+)\s+(\d+),?\s+(\d{4})"
     match = re.search(pattern, filename, re.IGNORECASE)
 
     if not match:
         return None
 
-    away_team = match.group(1).strip().upper()
-    home_team = match.group(2).strip().upper()
+    away_team = re.sub(r"^#\d+\s+", "", match.group(1).strip().upper())
+    home_team = re.sub(r"^#\d+\s+", "", match.group(2).strip().upper())
     month_str = match.group(3)
     day = int(match.group(4))
     year = int(match.group(5))

@@ -50,7 +50,7 @@ const runningCopy: Record<string, string> = {
   Download: 'Downloading the video.',
   Upload: 'Preparing the file. Transfer progress shows once the upload starts.',
   'Match timestamps': 'Working. A match can take up to 30 minutes.',
-  'Scrape play-by-play': 'Scraping the play-by-play.',
+  'Fetch NBA play-by-play': 'Fetching NBA play-by-play.',
   'Generate clips': 'Cutting clips from the game.',
 };
 
@@ -58,7 +58,7 @@ const finishedCopy: Record<string, string> = {
   Download: 'Download finished.',
   Upload: 'Upload finished.',
   'Match timestamps': 'Match finished.',
-  'Scrape play-by-play': 'Scrape finished.',
+  'Fetch NBA play-by-play': 'NBA play-by-play saved.',
   'Generate clips': 'Clips are ready.',
 };
 

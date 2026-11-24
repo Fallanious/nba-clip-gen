@@ -1,5 +1,5 @@
-import { useState, useRef, useCallback, useEffect } from 'react';
-import { startMatch, fetchSuggestedPBP, getVideoUrl } from '../api';
+import { useState, useRef, useEffect } from 'react';
+import { startMatch, getVideoUrl } from '../api';
 import type { Video, PlayByPlayFile } from '../types';
 import Section from './Section';
 
@@ -8,13 +8,6 @@ interface Crop {
   y: number;
   w: number;
   h: number;
-}
-
-interface Props {
-  videos: Video[];
-  pbpFiles: PlayByPlayFile[];
-  onRefreshVideos: () => void;
-  onRefreshPBP: () => void;
 }
 
 function contentBox(stage: HTMLElement, player: HTMLVideoElement) {
@@ -59,6 +52,10 @@ function boxStyle(box: Crop) {
 }
 
 interface Props {
+  video: string;
+  chooseVideo: (path: string) => void;
+  pbp: string;
+  setPbp: (path: string) => void;
   videos: Video[];
   pbpFiles: PlayByPlayFile[];
   onRefreshVideos: () => void;
@@ -66,12 +63,8 @@ interface Props {
 }
 
 export default function MatchTimestamps({
-  videos, pbpFiles, onRefreshVideos, onRefreshPBP,
+  videos, video, chooseVideo, pbp, setPbp, pbpFiles, onRefreshVideos, onRefreshPBP,
 }: Props) {
-  const [video, setVideo] = useState('');
-  const [pbp, setPbp] = useState('');
-  const [pbpHint, setPbpHint] = useState('');
-  const [pbpHintColor, setPbpHintColor] = useState('#666');
   const [buffer, setBuffer] = useState<number | ''>(3);
   const [interval, setInterval_] = useState<number | ''>(2);
   const [maxPlays, setMaxPlays] = useState<number | ''>(50);
@@ -141,33 +134,6 @@ export default function MatchTimestamps({
     }
     setStartTime(Math.max(0, Math.round(player.currentTime)));
   };
-
-  const handleVideoChange = useCallback(async (value: string) => {
-    setVideo(value);
-    setCrop(null);
-    setDraft(null);
-    setMarking(false);
-    if (!value) {
-      setPbpHint('');
-      return;
-    }
-    try {
-      const data = await fetchSuggestedPBP(value);
-      if (data.suggested) {
-        setPbp(data.suggested);
-        setPbpHint(`Auto-selected: ${data.game_info}`);
-        setPbpHintColor('#2ed573');
-      } else if (data.expected) {
-        setPbpHint(data.reason || '');
-        setPbpHintColor('#f39c12');
-      } else {
-        setPbpHint(data.reason || 'Could not determine matching file');
-        setPbpHintColor('#666');
-      }
-    } catch {
-      setPbpHint('');
-    }
-  }, []);
 
   const handleStart = async () => {
     if (!video || !pbp || starting) return;
@@ -296,7 +262,7 @@ export default function MatchTimestamps({
           <div className="form-group">
             <label>Video File</label>
             <div className="form-row">
-              <select value={video} onChange={e => handleVideoChange(e.target.value)}>
+              <select value={video} onChange={e => chooseVideo(e.target.value)}>
                 <option value="">-- Select Video --</option>
                 {videos.map(v => (
                   <option key={v.path} value={v.path}>
@@ -319,7 +285,7 @@ export default function MatchTimestamps({
               </select>
               <button className="btn-small" onClick={onRefreshPBP}>Refresh</button>
             </div>
-            {pbpHint && <p className="info-text" style={{ color: pbpHintColor }}>{pbpHint}</p>}
+            {video && !pbp && <p className="info-text">Fetch NBA play-by-play in Game data or select a saved file.</p>}
           </div>
 
           <div className="form-row-3">

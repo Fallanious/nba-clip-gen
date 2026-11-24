@@ -124,6 +124,11 @@ def match_timestamps():
     if not video or not playbyplay:
         return jsonify({"error": "Video and playbyplay are required"}), 400
 
+    from routes.videos import parse_video_filename
+    game = parse_video_filename(os.path.basename(video))
+    if game and os.path.basename(playbyplay) != game["bbref_id"] + ".json":
+        return jsonify({"error": "Select the play-by-play file for this video."}), 400
+
     label = os.path.basename(video)
     crop_args = _crop_args(data)
     persist_env = _match_persist_env(playbyplay)

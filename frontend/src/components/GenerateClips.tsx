@@ -6,29 +6,33 @@ import Section from './Section';
 import OutputArea from './OutputArea';
 
 interface Props {
+  video: string;
+  chooseVideo: (path: string) => void;
+  timestamps: string;
+  chooseFile: (path: string) => void;
   videos: Video[];
   timestampFiles: TimestampFile[];
   onRefreshTimestamps: () => void;
 }
 
-export default function GenerateClips({ videos, timestampFiles, onRefreshTimestamps }: Props) {
-  const [video, setVideo] = useState('');
-  const [timestamps, setTimestamps] = useState('');
+export default function GenerateClips({ videos, video, chooseVideo, timestamps, chooseFile, timestampFiles, onRefreshTimestamps }: Props) {
+  const [error, setError] = useState('');
   const [noAudio, setNoAudio] = useState(true);
   const job = useJob();
 
   const handleGenerate = async () => {
     if (!video || !timestamps) return;
+    setError('');
     try {
       const data = await startGenerate({
         video,
         timestamps,
         no_audio: noAudio,
       });
-      if (data.error) return;
+      if (data.error) throw new Error(data.error);
       job.startPolling(data.job_id);
     } catch (err) {
-      console.error(err);
+      setError(err instanceof Error ? err.message : 'Could not generate clips.');
     }
   };
 
@@ -36,7 +40,7 @@ export default function GenerateClips({ videos, timestampFiles, onRefreshTimesta
     <Section title="4. Generate Clips">
       <div className="form-group">
         <label>Video File</label>
-        <select value={video} onChange={e => setVideo(e.target.value)}>
+        <select value={video} onChange={e => chooseVideo(e.target.value)}>
           <option value="">-- Select Video --</option>
           {videos.map(v => (
             <option key={v.path} value={v.path}>
@@ -48,7 +52,7 @@ export default function GenerateClips({ videos, timestampFiles, onRefreshTimesta
       <div className="form-group">
         <label>Timestamps File</label>
         <div className="form-row">
-          <select value={timestamps} onChange={e => setTimestamps(e.target.value)}>
+          <select value={timestamps} onChange={e => chooseFile(e.target.value)}>
             <option value="">-- Select Timestamps --</option>
             {timestampFiles.map(f => (
               <option key={f.path} value={f.path}>
@@ -65,10 +69,10 @@ export default function GenerateClips({ videos, timestampFiles, onRefreshTimesta
           <label htmlFor="gen-noaudio">No audio (faster)</label>
         </div>
       </div>
-      <button onClick={handleGenerate} disabled={job.status === 'running'}>
+      <button onClick={handleGenerate} disabled={!video || !timestamps || job.status === 'running'}>
         Generate Clips
       </button>
-      <OutputArea text={job.output} status={job.status} />
+      <OutputArea text={error || job.output} status={error ? 'failed' : job.status} />
     </Section>
   );
 }

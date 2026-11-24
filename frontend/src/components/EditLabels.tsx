@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { fetchPlays } from '../api';
 import type { Play, TimestampFile } from '../types';
 import Section from './Section';
@@ -6,44 +6,31 @@ import OutputArea from './OutputArea';
 import VideoPreview from './VideoPreview';
 
 interface Props {
+  selectedFile: string;
+  chooseFile: (path: string) => void;
   timestampFiles: TimestampFile[];
   onRefreshTimestamps: () => void;
 }
 
-export default function EditLabels({ timestampFiles, onRefreshTimestamps }: Props) {
-  const [selectedFile, setSelectedFile] = useState('');
+export default function EditLabels({ selectedFile, chooseFile, timestampFiles, onRefreshTimestamps }: Props) {
   const [plays, setPlays] = useState<Play[]>([]);
   const [videoPath, setVideoPath] = useState<string | null>(null);
   const [previewIndex, setPreviewIndex] = useState<number>(-1);
   const [error, setError] = useState('');
 
-  const loadPlays = useCallback(async (filePath: string) => {
-    if (!filePath) {
-      setPlays([]);
-      setVideoPath(null);
-      setPreviewIndex(-1);
-      return;
+  useEffect(() => {
+    let current = true;
+    if (selectedFile) {
+      fetchPlays(selectedFile).then(data => {
+        if (!current) return;
+        setPlays(data.plays);
+        setVideoPath(data.video);
+      }).catch(err => {
+        if (current) setError(err instanceof Error ? err.message : 'Failed to load plays');
+      });
     }
-    try {
-      const data = await fetchPlays(filePath);
-      if ('error' in data && (data as { error: string }).error) {
-        setError((data as { error: string }).error);
-        setPlays([]);
-        return;
-      }
-      setPlays(data.plays);
-      setVideoPath(data.video);
-      setPreviewIndex(-1);
-      setError('');
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load plays');
-    }
-  }, []);
-
-  const handleFileChange = (value: string) => {
-    setSelectedFile(value);
-    loadPlays(value);
-  };
+    return () => { current = false; };
+  }, [selectedFile]);
 
   const labelCounts: Record<string, number> = {};
   plays.forEach(p => {
@@ -66,7 +53,7 @@ export default function EditLabels({ timestampFiles, onRefreshTimestamps }: Prop
       <div className="form-group">
         <label>Timestamps File</label>
         <div className="form-row">
-          <select value={selectedFile} onChange={e => handleFileChange(e.target.value)}>
+          <select value={selectedFile} onChange={e => chooseFile(e.target.value)}>
             <option value="">-- Select Timestamps --</option>
             {timestampFiles.map(f => (
               <option key={f.path} value={f.path}>

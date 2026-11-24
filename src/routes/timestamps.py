@@ -32,7 +32,7 @@ def infer_video_from_timestamps(ts_filename):
 @bp.route("/api/playbyplay")
 def list_playbyplay():
     """List available play-by-play files."""
-    pbp_dir = os.path.join(BASE_DIR, "playbyplay")
+    pbp_dir = os.path.join(BASE_DIR, "playbyplay/nba")
     if not os.path.exists(pbp_dir):
         return jsonify({"files": []})
 
@@ -41,7 +41,7 @@ def list_playbyplay():
         name = path.relative_to(pbp_dir).as_posix()
         files.append({
             "name": name,
-            "path": f"playbyplay/{name}",
+            "path": f"playbyplay/nba/{name}",
             "mtime": path.stat().st_mtime,
             "size": path.stat().st_size,
         })
@@ -69,6 +69,7 @@ def list_timestamps():
                 "name": f,
                 "path": f"output/cliptimestamps/{f}",
                 "play_count": play_count,
+                "video": infer_video_from_timestamps(f),
             })
     return jsonify({"files": files})
 
